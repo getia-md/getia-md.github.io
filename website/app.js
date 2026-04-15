@@ -220,7 +220,8 @@ searchInput.addEventListener('input', () => {
 // ============================================
 // Update brand count
 // ============================================
-document.getElementById('brand-count').textContent = brands.length;
+const brandCountEl = document.getElementById('brand-count');
+if (brandCountEl) brandCountEl.textContent = brands.length;
 
 // ============================================
 // Init
