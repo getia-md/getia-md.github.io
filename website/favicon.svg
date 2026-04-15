@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!--
+    getIA.md favicon
+    Concept: Three stacked page rectangles connected by a vertical tree line on the left,
+    forming a minimal sitemap / information architecture symbol.
+  -->
+
+  <!-- Vertical connector line (navigation tree trunk) -->
+  <rect x="6" y="5" width="2" height="22" rx="1" fill="#60a5fa"/>
+
+  <!-- Horizontal branch lines -->
+  <rect x="6" y="6"  width="6" height="2" rx="1" fill="#60a5fa"/>
+  <rect x="6" y="14" width="6" height="2" rx="1" fill="#60a5fa"/>
+  <rect x="6" y="22" width="6" height="2" rx="1" fill="#60a5fa"/>
+
+  <!-- Page rectangle 1 (top) -->
+  <rect x="14" y="3" width="14" height="8" rx="2" stroke="#60a5fa" stroke-width="1.5" fill="none"/>
+  <!-- Content lines inside page 1 -->
+  <rect x="17" y="5.5" width="8" height="1.2" rx="0.6" fill="#60a5fa" opacity="0.5"/>
+  <rect x="17" y="8"   width="5" height="1.2" rx="0.6" fill="#60a5fa" opacity="0.3"/>
+
+  <!-- Page rectangle 2 (middle) -->
+  <rect x="14" y="12.5" width="14" height="8" rx="2" stroke="#60a5fa" stroke-width="1.5" fill="rgba(96,165,250,0.08)"/>
+  <!-- Content lines inside page 2 -->
+  <rect x="17" y="15" width="8" height="1.2" rx="0.6" fill="#60a5fa" opacity="0.5"/>
+  <rect x="17" y="17.5" width="6" height="1.2" rx="0.6" fill="#60a5fa" opacity="0.3"/>
+
+  <!-- Page rectangle 3 (bottom) -->
+  <rect x="14" y="22" width="14" height="8" rx="2" stroke="#60a5fa" stroke-width="1.5" fill="none"/>
+  <!-- Content lines inside page 3 -->
+  <rect x="17" y="24.5" width="7" height="1.2" rx="0.6" fill="#60a5fa" opacity="0.5"/>
+  <rect x="17" y="27"   width="4" height="1.2" rx="0.6" fill="#60a5fa" opacity="0.3"/>
+</svg>

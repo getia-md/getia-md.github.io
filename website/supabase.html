@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supabase — IA.md | getIA.md</title>
+  <meta name="description" content="Open-source Firebase. Postgres, Auth, Storage, Realtime. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=supabase.com&sz=64" alt="Supabase" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Supabase</h1>
+      <p class="detail-brand-tagline">Open-source Firebase. Postgres, Auth, Storage, Realtime.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/supabase/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://supabase.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/supabase/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Supabase — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Supabase is an open-source developer platform built on PostgreSQL. The mental model is <strong>Firebase but with Postgres</strong> — developers get a full backend (database, auth, storage, realtime, edge functions) with a dashboard that exposes raw Postgres power while remaining approachable. Supabase differentiates through its SQL-first approach: the Table Editor looks like a spreadsheet but runs real SQL, the SQL Editor is a first-class citizen, and Row Level Security (RLS) replaces backend authorization logic. Every feature auto-generates REST and GraphQL APIs.</p>
+<h2>Site Map</h2>
+<pre><code>├── Dashboard (Organization Overview)
+│   ├── Projects List
+│   │   ├── Project Card (name, region, status, plan)
+│   │   └── Quick Actions (pause, settings)
+│   ├── Create New Project
+│   ├── Organization Settings
+│   └── Usage Overview
+├── Project Dashboard
+│   ├── Home
+│   │   ├── Project Status (healthy, paused, upgrading)
+│   │   ├── API URL &amp; Keys (anon key, service role key)
+│   │   ├── Getting Started (connect guide)
+│   │   ├── Database Size
+│   │   ├── API Requests (24h chart)
+│   │   ├── Auth Users Count
+│   │   ├── Storage Usage
+│   │   └── Edge Function Invocations
+│   ├── Table Editor
+│   │   ├── Table List (sidebar)
+│   │   ├── Table View (spreadsheet-like grid)
+│   │   │   ├── Add / Edit / Delete Rows (inline)
+│   │   │   ├── Column Types (text, int, uuid, json, enum, array, etc.)
+│   │   │   ├── Add Column
+│   │   │   ├── Foreign Key Relationships (visual)
+│   │   │   ├── Filters (column-based)
+│   │   │   ├── Sort
+│   │   │   ├── CSV Import / Export
+│   │   │   └── JSON View Toggle
+│   │   ├── Create Table (UI or SQL)
+│   │   ├── Views (virtual tables)
+│   │   └── Foreign Tables (external data sources)
+│   ├── SQL Editor
+│   │   ├── Query Editor (Monaco editor)
+│   │   ├── Results Table (below editor)
+│   │   ├── Saved Queries (snippets)
+│   │   ├── Templates (common queries)
+│   │   ├── AI Assistant (generate SQL from natural language)
+│   │   ├── Query History
+│   │   └── Multiple Tabs
+│   ├── Database
+│   │   ├── Tables (schema browser)
+│   │   ├── Schemas (public, auth, storage, custom)
+│   │   ├── Roles
+│   │   ├── Extensions (PostGIS, pgvector, pg_cron, etc.)
+│   │   ├── Triggers
+│   │   ├── Functions (Postgres functions)
+│   │   ├── Indexes
+│   │   ├── Types (enums, composites)
+│   │   ├── Migrations (schema diff, migration history)
+│   │   ├── Wrappers (foreign data wrappers — Stripe, Firebase, S3)
+│   │   ├── Backups (point-in-time recovery)
+│   │   └── Replication
+│   ├── Authentication
+│   │   ├── Users
+│   │   │   ├── User List (email, provider, created, last sign-in)
+│   │   │   ├── User Detail (metadata, sessions, factors)
+│   │   │   └── Create User / Invite
+│   │   ├── Policies (Row Level Security)
+│   │   │   ├── Policy List (per table)
+│   │   │   ├── Create Policy (template or custom SQL)
+│   │   │   └── Policy Editor
+│   │   ├── Providers
+│   │   │   ├── Email / Password
+│   │   │   ├── Phone / OTP
+│   │   │   ├── Social (Google, GitHub, Apple, Twitter, etc.)
+│   │   │   ├── SAML / SSO
+│   │   │   └── Anonymous Sign-in
+│   │   ├── Rate Limits
+│   │   ├── Email Templates (confirmation, reset, invite, magic link)
+│   │   ├── URL Configuration (redirect URLs)
+│   │   ├── Hooks (pre/post auth events)
+│   │   └── Sessions &amp; MFA Settings
+│   ├── Storage
+│   │   ├── Buckets
+│   │   │   ├── Bucket List (public / private)
+│   │   │   ├── File Browser (folder tree)
+│   │   │   ├── Upload Files (drag &amp; drop)
+│   │   │   ├── File Preview (images, PDFs)
+│   │   │   ├── File URL (public or signed)
+│   │   │   └── Bucket Policies (RLS on storage)
+│   │   └── Settings (file size limits, MIME types)
+│   ├── Edge Functions
+│   │   ├── Function List
+│   │   ├── Function Detail
+│   │   │   ├── URL Endpoint
+│   │   │   ├── Logs (invocations)
+│   │   │   ├── Metrics (invocation count, duration)
+│   │   │   └── Secrets (env vars)
+│   │   ├── Deploy (via CLI: `supabase functions deploy`)
+│   │   └── Documentation (auto-generated)
+│   ├── Realtime
+│   │   ├── Inspector (live WebSocket messages)
+│   │   ├── Channels (active subscriptions)
+│   │   ├── Broadcast (pub/sub)
+│   │   ├── Presence (online users)
+│   │   └── Postgres Changes (CDC — Change Data Capture)
+│   ├── API
+│   │   ├── Auto-generated Docs
+│   │   │   ├── REST API (from schema)
+│   │   │   ├── GraphQL API
+│   │   │   ├── Auth API
+│   │   │   └── Storage API
+│   │   ├── API Settings (URL, keys)
+│   │   ├── API Logs
+│   │   └── GraphQL (Playground / GraphiQL)
+│   ├── Advisors
+│   │   ├── Performance (query analysis, index recommendations)
+│   │   ├── Security (RLS checks, exposed tables)
+│   │   └── Lint (schema issues)
+│   ├── Reports
+│   │   ├── API Usage
+│   │   ├── Database Performance
+│   │   ├── Auth Usage
+│   │   └── Storage Usage
+│   ├── Logs
+│   │   ├── API Logs (PostgREST)
+│   │   ├── Postgres Logs
+│   │   ├── Auth Logs
+│   │   ├── Storage Logs
+│   │   ├── Edge Function Logs
+│   │   ├── Realtime Logs
+│   │   ├── Log Explorer (custom SQL queries over logs)
+│   │   └── Filters (status, method, path, timestamp)
+│   ├── Integrations
+│   │   ├── Vercel
+│   │   ├── GitHub (branching — database branching per PR)
+│   │   └── Third-party
+│   └── Settings
+│       ├── General (name, region, pause project)
+│       ├── Database (connection string, connection pooling, SSL)
+│       ├── API (URL, keys, JWT secret, rate limiting)
+│       ├── Auth (site URL, redirects, session length, MFA)
+│       ├── Storage (file size limits)
+│       ├── Edge Functions (secrets)
+│       ├── Addons (compute, PITR, custom domains, IPv4)
+│       ├── Vault (secrets management — encrypted at rest)
+│       └── Danger Zone (pause, delete)
+├── Organization
+│   ├── General (name, billing email)
+│   ├── Team (members, roles: owner/admin/developer/read-only)
+│   ├── Integrations
+│   ├── Billing (plan, usage, invoices)
+│   ├── Usage (per project breakdown)
+│   ├── OAuth Apps
+│   ├── Audit Logs
+│   └── Legal / DPA
+├── CLI (`supabase`)
+│   ├── supabase init (create local project)
+│   ├── supabase start (local dev with Docker)
+│   ├── supabase db diff (migration generation)
+│   ├── supabase db push (apply migrations)
+│   ├── supabase functions serve/deploy
+│   ├── supabase gen types (TypeScript types from schema)
+│   └── supabase link (connect to remote project)
+└── Docs (supabase.com/docs)
+    ├── Getting Started
+    ├── Database
+    ├── Auth
+    ├── Storage
+    ├── Edge Functions
+    ├── Realtime
+    ├── Client Libraries (JavaScript, Flutter, Swift, Kotlin, Python)
+    └── Self-Hosting
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Supabase logo, org/project breadcrumb, project switcher, feedback, help, user menu</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible (icon or expanded)</td>
+<td>Table Editor, SQL Editor, Database, Auth, Storage, Edge Functions, Realtime, API, Advisors, Reports, Logs, Settings</td>
+</tr>
+<tr>
+<td><strong>Table Sidebar</strong></td>
+<td>Within Table Editor</td>
+<td>List of tables, views, foreign tables (expandable)</td>
+</tr>
+<tr>
+<td><strong>SQL Tabs</strong></td>
+<td>Tab bar in SQL Editor</td>
+<td>Multiple query tabs (like browser tabs)</td>
+</tr>
+<tr>
+<td><strong>Schema Selector</strong></td>
+<td>Dropdown in Database section</td>
+<td>Switch between schemas (public, auth, storage, custom)</td>
+</tr>
+<tr>
+<td><strong>Command Palette</strong></td>
+<td>⌘K</td>
+<td>Navigate pages, tables, switch projects</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Project Switcher ▾]
+───────────────
+📊 Home
+📋 Table Editor
+📝 SQL Editor
+🗄 Database
+🔐 Authentication
+📁 Storage
+⚡ Edge Functions
+🔄 Realtime
+📡 API
+───────────────
+🔍 Advisors
+📈 Reports
+📋 Logs
+🔌 Integrations
+⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Organization</td>
+<td>name, billing_email, plan, members[]</td>
+<td>has many Projects</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>name, ref (unique ID), region, status (active/paused), database_url, api_url, anon_key, service_role_key</td>
+<td>belongs to Organization</td>
+</tr>
+<tr>
+<td>Table</td>
+<td>schema, name, columns[], primary_key, rls_enabled, rls_forced</td>
+<td>belongs to Project, has Policies</td>
+</tr>
+<tr>
+<td>Column</td>
+<td>name, type (Postgres types), default, nullable, unique, foreign_key</td>
+<td>belongs to Table</td>
+</tr>
+<tr>
+<td>Policy (RLS)</td>
+<td>name, table, command (SELECT/INSERT/UPDATE/DELETE), definition (SQL), check (SQL), roles</td>
+<td>belongs to Table</td>
+</tr>
+<tr>
+<td>User (Auth)</td>
+<td>id, email, phone, provider, last_sign_in, created_at, user_metadata, app_metadata, factors[]</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Bucket</td>
+<td>name, public, file_size_limit, allowed_mime_types</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>File</td>
+<td>name, path, bucket, size, mime_type, created_at, metadata</td>
+<td>belongs to Bucket</td>
+</tr>
+<tr>
+<td>EdgeFunction</td>
+<td>name, slug, status, verify_jwt, import_map</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>name, schema, version, comment</td>
+<td>belongs to Project database</td>
+</tr>
+<tr>
+<td>Migration</td>
+<td>version, name, sql, applied_at</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Secret (Vault)</td>
+<td>name, value (encrypted), created_at</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Backup</td>
+<td>type (scheduled/manual), status, size, created_at</td>
+<td>belongs to Project</td>
+</tr>
+</tbody></table>
+<h3>Project Status</h3>
+<pre><code>active_healthy → pausing → paused → restoring → active_healthy
+              → upgrading → active_healthy
+</code></pre>
+<h3>RLS Policy Model</h3>
+<pre><code class="language-sql">-- Policy structure
+CREATE POLICY &quot;policy_name&quot;
+  ON table_name
+  FOR SELECT | INSERT | UPDATE | DELETE
+  TO role
+  USING (condition)         -- row-level filter
+  WITH CHECK (condition);   -- write validation
+</code></pre>
+<h2>User Flows</h2>
+<h3>Create Backend in 2 Minutes</h3>
+<pre><code>Sign up → New Project (name, region, DB password) → Wait ~2 min (provisioning) → Dashboard → Get API URL + anon key → Install supabase-js → Connect from frontend → Query data
+</code></pre>
+<h3>Schema Design via Table Editor</h3>
+<pre><code>Table Editor → [+ New Table] → Name table → Add columns (pick types) → Set primary key → Enable RLS → Create → Add rows via spreadsheet UI → Set foreign keys (visual relationship)
+</code></pre>
+<h3>Write SQL Directly</h3>
+<pre><code>SQL Editor → Write query → Run (⌘+Enter) → Results table → Save as snippet → Share with team → Use AI assistant for complex queries
+</code></pre>
+<h3>Set Up Authentication</h3>
+<pre><code>Auth → Providers → Enable Google OAuth → Add client ID/secret → Configure redirect URLs → Auth → Policies → Create RLS policy (users can only read own data) → Test in API playground
+</code></pre>
+<h3>Upload Files</h3>
+<pre><code>Storage → Create Bucket (public or private) → Upload files (drag &amp; drop) → Get public URL → Or create signed URL (time-limited) → Set bucket policies for access control
+</code></pre>
+<h3>Deploy Edge Function</h3>
+<pre><code>CLI: supabase functions new my-func → Write Deno/TypeScript → supabase functions serve (local test) → supabase functions deploy → Dashboard: Edge Functions → View logs → Set secrets
+</code></pre>
+<h3>Database Branching (Preview)</h3>
+<pre><code>Connect GitHub repo → Create PR → Supabase creates preview branch (separate database) → Run migrations on branch → Test → Merge PR → Migrations applied to production
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                      → Organization overview
+/new/:orgSlug                          → Create project
+/project/:ref                          → Project home
+/project/:ref/editor                   → Table Editor
+/project/:ref/editor/:tableId          → Table view
+/project/:ref/sql                      → SQL Editor
+/project/:ref/sql/new                  → New query tab
+/project/:ref/sql/:queryId             → Saved query
+/project/:ref/database/tables          → Database tables
+/project/:ref/database/schemas         → Schemas
+/project/:ref/database/roles           → Roles
+/project/:ref/database/extensions      → Extensions
+/project/:ref/database/triggers        → Triggers
+/project/:ref/database/functions       → Functions
+/project/:ref/database/indexes         → Indexes
+/project/:ref/database/backups         → Backups
+/project/:ref/database/migrations      → Migrations
+/project/:ref/database/wrappers        → Foreign data wrappers
+/project/:ref/auth/users               → Auth users
+/project/:ref/auth/policies            → RLS policies
+/project/:ref/auth/providers           → Auth providers
+/project/:ref/auth/templates           → Email templates
+/project/:ref/auth/hooks               → Auth hooks
+/project/:ref/storage/buckets          → Storage buckets
+/project/:ref/storage/buckets/:id      → Bucket file browser
+/project/:ref/functions                → Edge functions
+/project/:ref/functions/:slug          → Function detail
+/project/:ref/realtime/inspector       → Realtime inspector
+/project/:ref/api                      → API docs
+/project/:ref/api/graphql              → GraphQL playground
+/project/:ref/advisors                 → Advisors
+/project/:ref/reports                  → Reports
+/project/:ref/logs/explorer            → Log explorer
+/project/:ref/logs/api-logs            → API logs
+/project/:ref/logs/postgres-logs       → Postgres logs
+/project/:ref/settings/general         → Project settings
+/project/:ref/settings/database        → Database settings
+/project/:ref/settings/api             → API settings
+/project/:ref/settings/auth            → Auth settings
+/project/:ref/settings/storage         → Storage settings
+/project/:ref/settings/vault           → Vault (secrets)
+/org/:orgSlug/settings                 → Org settings
+/org/:orgSlug/team                     → Team members
+/org/:orgSlug/billing                  → Billing
+/org/:orgSlug/usage                    → Usage
+/org/:orgSlug/audit                    → Audit logs
+/account/me                            → User profile
+/account/tokens                        → Access tokens
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Command Palette (⌘K)</td>
+<td>Tables, pages, settings, projects</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Table Editor</td>
+<td>Row data (column filters)</td>
+<td>Column values, operators (eq, neq, gt, lt, in, like)</td>
+<td>Any column</td>
+</tr>
+<tr>
+<td>SQL Editor</td>
+<td>Query text, snippet names</td>
+<td>—</td>
+<td>Name, Last Modified</td>
+</tr>
+<tr>
+<td>Auth Users</td>
+<td>Email, user ID, phone</td>
+<td>Provider, Created Date, Last Sign In</td>
+<td>Created, Last Sign In</td>
+</tr>
+<tr>
+<td>Logs</td>
+<td>Log message, path, status code</td>
+<td>Level, Status Code, Method, Path, Time Range</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>File name, path</td>
+<td>Bucket, MIME type, Size</td>
+<td>Name, Created, Size</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Table Editor</th>
+<th>SQL Editor</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1280px)</td>
+<td>Expanded with labels</td>
+<td>Full spreadsheet grid</td>
+<td>Full editor + results</td>
+</tr>
+<tr>
+<td>Tablet (768-1279px)</td>
+<td>Collapsed (icons)</td>
+<td>Horizontal scroll</td>
+<td>Stacked editor/results</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger</td>
+<td>Card view per row</td>
+<td>Not optimized (use CLI)</td>
+</tr>
+</tbody></table>
+<h3>Supabase-Specific UX</h3>
+<ul>
+<li><strong>Table Editor</strong> looks like a spreadsheet but is backed by real Postgres (supports JSON columns, arrays, enums)</li>
+<li><strong>SQL Editor</strong> with Monaco editor (VS Code-like), AI assistant, and TypeScript type generation</li>
+<li><strong>RLS Policy editor</strong> with SQL templates and visual helpers</li>
+<li><strong>Realtime Inspector</strong> shows live WebSocket messages</li>
+<li><strong>Auto-generated API docs</strong> update as schema changes</li>
+<li><strong>Connection string</strong> always visible in settings (copy-to-clipboard)</li>
+<li><strong>Database branching</strong> creates isolated preview databases per PR</li>
+<li><strong>CLI-first</strong> deployment for edge functions and migrations</li>
+<li><strong>Dark mode</strong> default</li>
+<li><strong>Postgres extension marketplace</strong> (enable pgvector, PostGIS, pg_cron with one click)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>Table Editor</th>
+<th>SQL Editor</th>
+<th>Auth</th>
+<th>Storage</th>
+<th>Functions</th>
+<th>Settings</th>
+<th>Billing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>Deploy</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>Deploy</td>
+<td>✅</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>View</td>
+<td>CRUD</td>
+<td>Deploy</td>
+<td>Limited</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Read-only</td>
+<td>✅</td>
+<td>Read</td>
+<td>Read</td>
+<td>View</td>
+<td>Read</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Database-Level Security</h3>
+<ul>
+<li>Row Level Security (RLS) is the primary access control mechanism</li>
+<li>RLS policies use SQL expressions with <code>auth.uid()</code>, <code>auth.jwt()</code> functions</li>
+<li>Service role key bypasses RLS (for admin/server-side operations)</li>
+<li>Anon key respects RLS (for client-side operations)</li>
+<li>Connection pooling via PgBouncer (Supavisor)</li>
+<li>SSL enforced for all database connections</li>
+<li>Vault for encrypted secrets storage</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

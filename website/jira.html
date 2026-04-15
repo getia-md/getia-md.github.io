@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jira — IA.md | getIA.md</title>
+  <meta name="description" content="Enterprise project management. Scrum, Kanban, roadmaps. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=jira.atlassian.com&sz=64" alt="Jira" onerror="this.parentElement.textContent='J'">
+      </div>
+      <h1 class="detail-brand-name">Jira</h1>
+      <p class="detail-brand-tagline">Enterprise project management. Scrum, Kanban, roadmaps.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/jira/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://atlassian.com/jira" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/jira/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Jira — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Jira is Atlassian&#39;s enterprise-grade issue tracking and agile project management platform. The mental model is <strong>configurable workflows for work items</strong> — issues flow through customizable statuses, organized by projects with Scrum or Kanban methodologies. Jira differentiates through deep configurability (custom fields, workflows, schemes, permissions), JQL (Jira Query Language) for advanced filtering, and tight integration with the Atlassian ecosystem (Confluence, Bitbucket, Opsgenie). It serves teams from small startups to 100,000+ user enterprises.</p>
+<h2>Site Map</h2>
+<pre><code>├── Your Work (Home)
+│   ├── Assigned to Me
+│   ├── Recent Issues
+│   ├── Recent Projects
+│   ├── Recent Boards
+│   ├── Starred Items
+│   └── Worked On
+├── Projects
+│   ├── All Projects
+│   ├── Project Detail
+│   │   ├── Summary / Dashboard
+│   │   ├── Board (Scrum or Kanban)
+│   │   │   ├── Kanban Board (continuous flow)
+│   │   │   └── Scrum Board (sprint-based)
+│   │   ├── Backlog
+│   │   │   ├── Sprint Planning (Scrum)
+│   │   │   │   ├── Backlog Pool
+│   │   │   │   ├── Sprint 1 (drag issues in)
+│   │   │   │   ├── Sprint 2
+│   │   │   │   └── Start Sprint (set dates, goal)
+│   │   │   └── Backlog Refinement
+│   │   ├── Timeline (Gantt-style)
+│   │   ├── List View
+│   │   ├── Calendar View
+│   │   ├── Reports
+│   │   │   ├── Burndown Chart
+│   │   │   ├── Velocity Chart
+│   │   │   ├── Sprint Report
+│   │   │   ├── Cumulative Flow Diagram
+│   │   │   ├── Control Chart
+│   │   │   ├── Created vs. Resolved
+│   │   │   └── Custom Reports
+│   │   ├── Releases (Versions)
+│   │   │   ├── Version Detail
+│   │   │   ├── Release Hub
+│   │   │   └── Release Burndown
+│   │   ├── Code (Bitbucket/GitHub integration)
+│   │   │   ├── Branches linked to issues
+│   │   │   ├── Pull Requests
+│   │   │   ├── Commits
+│   │   │   └── Deployments
+│   │   ├── Components
+│   │   ├── Pages (Confluence integration)
+│   │   └── Project Settings
+│   │       ├── Details (name, key, type)
+│   │       ├── Access &amp; Permissions
+│   │       ├── Notifications
+│   │       ├── Issue Types
+│   │       ├── Workflows (status transitions + rules)
+│   │       ├── Screens (field layout per transition)
+│   │       ├── Fields (custom fields)
+│   │       ├── Features (enable/disable board, backlog, etc.)
+│   │       ├── Automation Rules
+│   │       └── Apps &amp; Integrations
+│   └── Create Project (templates: Scrum, Kanban, Bug Tracking, Team-managed, Company-managed)
+├── Issue Detail (modal or full page)
+│   ├── Issue Key + Summary (e.g., PROJ-1234)
+│   ├── Description (rich text, Atlassian editor)
+│   ├── Issue Type (Epic / Story / Task / Sub-task / Bug)
+│   ├── Status (with workflow transitions)
+│   ├── Priority (Highest / High / Medium / Low / Lowest)
+│   ├── Assignee
+│   ├── Reporter
+│   ├── Labels
+│   ├── Sprint
+│   ├── Story Points / Estimate
+│   ├── Fix Version / Release
+│   ├── Component
+│   ├── Due Date
+│   ├── Parent (Epic or parent issue)
+│   ├── Child Issues (sub-tasks)
+│   ├── Linked Issues (blocks, is blocked by, relates to, duplicates)
+│   ├── Custom Fields (unlimited)
+│   ├── Attachments
+│   ├── Comments
+│   ├── Activity Log (all changes, transitions)
+│   ├── Watchers
+│   ├── Development Panel (branches, PRs, commits, builds, deploys)
+│   └── Time Tracking (estimated, logged, remaining)
+├── Filters (Saved JQL)
+│   ├── My Filters
+│   ├── Shared Filters
+│   ├── Filter Detail → Issue List
+│   └── Create Filter (JQL editor)
+├── Dashboards
+│   ├── My Dashboards
+│   ├── Shared Dashboards
+│   ├── Dashboard Detail (gadgets grid)
+│   │   ├── Filter Results Gadget
+│   │   ├── Pie Chart
+│   │   ├── Two-Dimensional Filter
+│   │   ├── Sprint Health
+│   │   ├── Assigned to Me
+│   │   ├── Activity Stream
+│   │   └── Custom Gadgets
+│   └── Create Dashboard
+├── Plans (Advanced Roadmaps / Premium)
+│   ├── Cross-project timeline
+│   ├── Capacity planning
+│   ├── Dependency mapping
+│   ├── Scenario planning
+│   └── Release scheduling
+├── Teams
+│   ├── Team Directory
+│   ├── Team Workload
+│   └── Team Sprint View
+├── Apps (Atlassian Marketplace)
+│   ├── Installed Apps
+│   ├── Browse Marketplace
+│   └── App Settings
+├── Search
+│   ├── Quick Search (top bar)
+│   ├── Basic Search (field-based)
+│   ├── Advanced Search (JQL editor)
+│   └── Recent Searches
+├── Notifications
+│   ├── Bell notifications
+│   └── Email notifications
+├── Administration (site admin)
+│   ├── User Management
+│   ├── Groups &amp; Roles
+│   ├── Global Permissions
+│   ├── Issue Types (schemes)
+│   ├── Workflows (schemes)
+│   ├── Screens (schemes)
+│   ├── Fields (custom field config)
+│   ├── Priorities
+│   ├── Notification Schemes
+│   ├── Permission Schemes
+│   ├── Automation (global rules)
+│   ├── Security Schemes
+│   └── Audit Log
+└── Personal Settings
+    ├── Profile
+    ├── Email Preferences
+    ├── Notification Preferences
+    └── Connected Apps
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Nav Bar</strong></td>
+<td>Fixed</td>
+<td>Jira logo (home), Projects dropdown, Filters dropdown, Dashboards dropdown, Teams dropdown, Apps, Create (+) button, Search, Notifications, Help, Profile</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Per-project context</td>
+<td>Summary, Board, Backlog, Timeline, List, Calendar, Reports, Releases, Code, Pages, Settings</td>
+</tr>
+<tr>
+<td><strong>Board View</strong></td>
+<td>Kanban columns (drag-and-drop)</td>
+<td>Columns = workflow statuses; swimlanes by assignee/epic/priority</td>
+</tr>
+<tr>
+<td><strong>Issue Modal</strong></td>
+<td>Click issue → modal overlay</td>
+<td>Detail panel without leaving board/list; full-page option</td>
+</tr>
+<tr>
+<td><strong>Quick Search</strong></td>
+<td>Top bar (/)</td>
+<td>Search issues by key, summary; switch to JQL for advanced</td>
+</tr>
+<tr>
+<td><strong>Context Menu</strong></td>
+<td>Right-click on issue card</td>
+<td>Assign, change status, set priority, link issue</td>
+</tr>
+<tr>
+<td><strong>Breadcrumb</strong></td>
+<td>Top of issue/project views</td>
+<td>Home &gt; Project &gt; Board/Backlog &gt; Issue</td>
+</tr>
+</tbody></table>
+<h3>Top Navigation Dropdowns</h3>
+<pre><code>Projects ▾               Filters ▾               Dashboards ▾
+├── Recent Projects       ├── My Filters           ├── My Dashboards
+├── View All Projects     ├── Shared Filters       ├── Shared Dashboards
+└── Create Project        └── Create Filter        └── Create Dashboard
+</code></pre>
+<h2>Content Model</h2>
+<h3>Core Entities</h3>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>name, key (e.g., &quot;PROJ&quot;), project_type (scrum/kanban/team-managed), lead, category</td>
+<td>has many Issues, Boards, Sprints, Versions, Components</td>
+</tr>
+<tr>
+<td>Issue</td>
+<td>key (PROJ-1234), summary, description, issue_type, status, priority, resolution, assignee, reporter, labels[], components[], fix_versions[], story_points, time_estimate, custom_fields{}</td>
+<td>belongs to Project, Sprint, Epic; has Sub-tasks, Links, Comments, Attachments</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td>issue + color, child_issues[]</td>
+<td>specialized Issue type that groups Stories/Tasks</td>
+</tr>
+<tr>
+<td>Sprint</td>
+<td>name, goal, start_date, end_date, state (future/active/closed)</td>
+<td>belongs to Board; has many Issues</td>
+</tr>
+<tr>
+<td>Board</td>
+<td>name, type (scrum/kanban), filter (JQL), column_config</td>
+<td>belongs to Project; shows filtered Issues</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td>name, statuses[], transitions[], conditions[], validators[], post_functions[]</td>
+<td>assigned to Project via scheme</td>
+</tr>
+<tr>
+<td>Version / Release</td>
+<td>name, description, start_date, release_date, status (unreleased/released/archived)</td>
+<td>has many Issues (fix version)</td>
+</tr>
+<tr>
+<td>Component</td>
+<td>name, description, lead</td>
+<td>belongs to Project; tagged on Issues</td>
+</tr>
+<tr>
+<td>Filter</td>
+<td>name, jql_query, owner, shared_with</td>
+<td>generates Issue Lists; used by Boards and Dashboards</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>name, layout, gadgets[], owner, shared_with</td>
+<td>displays Gadgets (data visualization widgets)</td>
+</tr>
+<tr>
+<td>Automation Rule</td>
+<td>name, trigger, conditions[], actions[], enabled</td>
+<td>belongs to Project or Global</td>
+</tr>
+</tbody></table>
+<h3>Issue Type Hierarchy</h3>
+<pre><code>Initiative (optional)
+ └── Epic
+      ├── Story
+      │    └── Sub-task
+      ├── Task
+      │    └── Sub-task
+      └── Bug
+           └── Sub-task
+</code></pre>
+<h3>Priority Levels</h3>
+<pre><code>Highest (▲▲ red) → High (▲ red) → Medium (● yellow) → Low (▼ blue) → Lowest (▼▼ blue)
+</code></pre>
+<h3>Workflow Example (Scrum)</h3>
+<pre><code>Open → In Development → Code Review → QA → Done
+       ↕ (reopen)                      ↕ (reject)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Sprint Planning (Scrum)</h3>
+<pre><code>Backlog → Drag issues from Backlog to Sprint → Set Sprint Goal → Set Dates → Start Sprint → Board View → Daily standups
+</code></pre>
+<h3>Daily Work</h3>
+<pre><code>Your Work → Assigned Issues → Open Issue → Update Status (transition button) → Log Work → Add Comment → Next
+</code></pre>
+<h3>Issue Creation</h3>
+<pre><code>[+ Create] → Select Project → Issue Type (Story/Bug/Task) → Summary → Description → Assign → Set Sprint/Priority → Create
+— or —
+Quick create on Board: [+ Create Issue] at bottom of column
+</code></pre>
+<h3>JQL Power Search</h3>
+<pre><code>Search bar → Switch to Advanced → Write JQL:
+  project = PROJ AND status = &quot;In Progress&quot; AND assignee = currentUser() AND sprint in openSprints()
+→ Save as Filter → Pin to sidebar → Use in Dashboard gadget
+</code></pre>
+<h3>Automation</h3>
+<pre><code>Project Settings → Automation → Create Rule →
+Trigger: &quot;Issue transitioned to Done&quot; →
+Condition: &quot;Issue type is Story&quot; →
+Action: &quot;Transition all sub-tasks to Done&quot; + &quot;Post Slack message&quot; → Enable
+</code></pre>
+<h3>Release Management</h3>
+<pre><code>Create Version → Tag issues with Fix Version → Track progress → Release: mark version as Released → Release notes auto-generated
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                          → Your Work
+/jira/your-work                            → Your Work
+/jira/projects                             → All Projects
+/jira/software/projects/:key/summary       → Project Summary
+/jira/software/projects/:key/boards/:id    → Board View
+/jira/software/projects/:key/backlog       → Backlog
+/jira/software/projects/:key/timeline      → Timeline
+/jira/software/projects/:key/list          → List View
+/jira/software/projects/:key/calendar      → Calendar
+/jira/software/projects/:key/reports        → Reports
+/jira/software/projects/:key/releases       → Releases
+/jira/software/projects/:key/code           → Code panel
+/jira/software/projects/:key/settings       → Project Settings
+/browse/:issueKey                           → Issue Detail (e.g., /browse/PROJ-1234)
+/issues/?jql=:query                         → JQL Search Results
+/jira/filters                              → Saved Filters
+/jira/dashboards                           → Dashboards
+/jira/dashboards/:id                       → Dashboard Detail
+/jira/plans                                → Advanced Roadmaps
+/jira/people                               → Teams
+/jira/settings                             → Site Administration
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Quick Search (/)</td>
+<td>Issue key, summary, people, projects, boards</td>
+<td>—</td>
+<td>Relevance, Recent</td>
+</tr>
+<tr>
+<td>Basic Search</td>
+<td>Issues</td>
+<td>Project, Type, Status, Assignee, Reporter, Priority, Label, Sprint, Fix Version, Created, Updated</td>
+<td>Any field</td>
+</tr>
+<tr>
+<td>JQL (Advanced)</td>
+<td>All issue fields + custom fields</td>
+<td>Full query language with functions</td>
+<td>ORDER BY any field</td>
+</tr>
+<tr>
+<td>Board</td>
+<td>Issues on current board</td>
+<td>Quick filters (My Issues, Recently Updated) + board filter (JQL)</td>
+<td>Board column order</td>
+</tr>
+</tbody></table>
+<h3>JQL (Jira Query Language) — Power Feature</h3>
+<pre><code class="language-sql">-- Find critical bugs assigned to me in active sprints
+project = PROJ AND type = Bug AND priority in (Highest, High)
+  AND assignee = currentUser() AND sprint in openSprints()
+  ORDER BY priority ASC, created DESC
+
+-- Unresolved issues created this week
+resolution = Unresolved AND created &gt;= startOfWeek()
+
+-- Issues with no assignee in backlog
+assignee is EMPTY AND status = Backlog AND project in (PROJ, PLAT)
+
+-- Functions: currentUser(), now(), startOfDay(), startOfWeek(), membersOf(&quot;team&quot;), openSprints()
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Board</th>
+<th>Issue Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Top nav + left sidebar + content</td>
+<td>Full Kanban board (all columns)</td>
+<td>Modal overlay or full page</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Collapsed sidebar, full content</td>
+<td>Horizontal scroll columns</td>
+<td>Full-screen overlay</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom nav (Your Work, Projects, Create, Search, Notifications)</td>
+<td>Vertical card list (tap to expand)</td>
+<td>Full-screen page</td>
+</tr>
+</tbody></table>
+<h3>Mobile App (Jira Cloud)</h3>
+<ul>
+<li>Create and edit issues</li>
+<li>Transition issues with swipe</li>
+<li>Board view (simplified)</li>
+<li>Barcode/QR scanning for asset tracking</li>
+<li>Push notifications</li>
+<li>Offline viewing with sync</li>
+<li>Apple Watch: notifications + quick actions</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Create</th>
+<th>Edit</th>
+<th>Transition</th>
+<th>Delete</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Viewer</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own issues</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>✅</td>
+<td>✅</td>
+<td>All issues</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Project Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Project settings</td>
+</tr>
+<tr>
+<td>Site Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full site admin</td>
+</tr>
+</tbody></table>
+<h3>Permission Schemes (Enterprise)</h3>
+<ul>
+<li><strong>Project-level</strong>: Browse, Create, Edit, Transition, Delete, Manage Sprints, Administer</li>
+<li><strong>Issue-level</strong>: Security levels (restrict visibility to specific roles)</li>
+<li><strong>Workflow conditions</strong>: Only certain roles can execute certain transitions</li>
+<li><strong>Field-level</strong>: Screens control which fields appear per transition</li>
+<li><strong>Global</strong>: System admin, Jira admin, browse users, create shared objects</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

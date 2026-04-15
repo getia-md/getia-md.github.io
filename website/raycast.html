@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raycast — IA.md | getIA.md</title>
+  <meta name="description" content="Productivity launcher. Extensions, AI, clipboard history. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=raycast.com&sz=64" alt="Raycast" onerror="this.parentElement.textContent='R'">
+      </div>
+      <h1 class="detail-brand-name">Raycast</h1>
+      <p class="detail-brand-tagline">Productivity launcher. Extensions, AI, clipboard history.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/raycast/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://raycast.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/raycast/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Raycast — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Raycast is a macOS productivity launcher that replaces Spotlight with a command palette for everything — app launching, clipboard history, window management, snippets, AI chat, and an extensible API with 1000+ community extensions. The mental model is <strong>type to do anything</strong> — a single keyboard shortcut (usually Option+Space) opens a command bar where users type commands, search files, control apps, and run automations. Raycast differentiates through its extension ecosystem (built with React/TypeScript), built-in AI, and developer-first design (everything is scriptable, everything has a keyboard shortcut).</p>
+<h2>Site Map</h2>
+<pre><code>├── Command Bar (Main Interface)
+│   ├── Search (files, apps, calculations, clipboard)
+│   ├── Built-in Commands
+│   │   ├── Applications (launch, switch, quit)
+│   │   ├── Calculator (inline math, currency conversion, unit conversion)
+│   │   ├── File Search (filename, content, recent)
+│   │   ├── Clipboard History
+│   │   │   ├── Text Entries (searchable)
+│   │   │   ├── Image Entries
+│   │   │   ├── File Entries
+│   │   │   ├── Pin Items
+│   │   │   └── Clear History
+│   │   ├── Window Management
+│   │   │   ├── Layout Commands (left half, right half, maximize, center)
+│   │   │   ├── Custom Layouts
+│   │   │   └── Move to Display
+│   │   ├── Snippets
+│   │   │   ├── Snippet List (searchable)
+│   │   │   ├── Create Snippet (keyword trigger + expansion)
+│   │   │   ├── Dynamic Placeholders ({date}, {clipboard}, {cursor})
+│   │   │   └── Import / Export
+│   │   ├── Quicklinks (bookmarks to URLs/files with query support)
+│   │   ├── Floating Notes (scratchpad windows)
+│   │   ├── Calendar (view schedule, join meetings)
+│   │   ├── Reminders (create, view, complete)
+│   │   ├── System Commands (sleep, shutdown, lock, empty trash, toggle)
+│   │   ├── Script Commands (custom shell/Python/etc. scripts)
+│   │   └── Confetti (celebration command)
+│   ├── Extension Commands
+│   │   ├── Extension-specific commands (e.g., &quot;Search GitHub Repos&quot;)
+│   │   ├── Actions within results (⌘K for action panel)
+│   │   └── Deep links (protocol URLs)
+│   └── AI (Raycast AI)
+│       ├── AI Chat (conversational, multi-model)
+│       ├── AI Commands (summarize, fix grammar, explain code, etc.)
+│       ├── Quick AI (highlight text → run AI command)
+│       ├── AI Presets (custom prompts)
+│       ├── Models (GPT-4, Claude, etc.)
+│       └── AI Extensions (community AI commands)
+├── Store (Extension Marketplace)
+│   ├── Featured Extensions
+│   ├── Categories
+│   │   ├── Developer Tools (GitHub, Jira, Linear, Docker, npm)
+│   │   ├── Communication (Slack, Discord, Notion, Zoom)
+│   │   ├── Design (Figma, Color Picker, Icon Search)
+│   │   ├── Productivity (Todoist, Obsidian, Bear, Apple Notes)
+│   │   ├── Finance (Currency Converter, Crypto Prices)
+│   │   ├── System (Brew, Caffeinate, Kill Process)
+│   │   ├── Media (Spotify, Apple Music, YouTube)
+│   │   ├── Fun (Random Facts, Colors, Placeholder)
+│   │   └── AI (ChatGPT, Perplexity, Custom Models)
+│   ├── Extension Detail
+│   │   ├── Description + Screenshots
+│   │   ├── Commands List
+│   │   ├── Author
+│   │   ├── Install Count
+│   │   ├── Source Code (GitHub link)
+│   │   └── Install Button
+│   ├── Search Extensions
+│   └── Submit Extension
+├── Preferences (Settings)
+│   ├── General
+│   │   ├── Hotkey (default: Option+Space)
+│   │   ├── Launch at Login
+│   │   └── Theme (light/dark/auto + accent color)
+│   ├── Extensions
+│   │   ├── Installed Extensions (list)
+│   │   ├── Extension Settings (per-extension configuration)
+│   │   ├── Hotkey Assignment (per-command custom hotkeys)
+│   │   ├── Alias Assignment
+│   │   └── Enable / Disable
+│   ├── Clipboard History
+│   │   ├── Toggle On/Off
+│   │   ├── History Duration
+│   │   ├── App Exclusions (password managers)
+│   │   └── Sensitive Content Handling
+│   ├── Window Management
+│   │   ├── Enable/Disable
+│   │   ├── Custom Shortcuts
+│   │   └── Padding / Gaps
+│   ├── Snippets
+│   │   ├── Enable Auto-Expansion
+│   │   └── Keyword Prefix
+│   ├── AI
+│   │   ├── Default Model
+│   │   ├── Custom API Key (BYOK)
+│   │   └── AI Presets
+│   ├── Quicklinks
+│   ├── Script Commands
+│   │   ├── Script Directory
+│   │   └── Language Settings
+│   ├── Appearance
+│   │   ├── Theme
+│   │   ├── Icon Style
+│   │   ├── Font Size
+│   │   └── Compact Mode
+│   ├── Advanced
+│   │   ├── Proxy Settings
+│   │   ├── API Tokens
+│   │   ├── Sync (across devices via iCloud)
+│   │   ├── Import / Export Settings
+│   │   └── Beta Features
+│   └── Account
+│       ├── Pro Subscription
+│       ├── Teams (shared extensions, snippets, quicklinks)
+│       └── Usage Stats
+├── Extension Development (for developers)
+│   ├── Create Extension (CLI: `npx create-raycast-extension`)
+│   ├── API Documentation (raycast.com/developers)
+│   │   ├── Components (List, Detail, Form, Grid, Action Panel)
+│   │   ├── API Reference (Clipboard, Environment, OAuth, Storage)
+│   │   ├── Lifecycle (commands, background tasks)
+│   │   └── UI Kit
+│   ├── Dev Tools (within Raycast)
+│   │   ├── Console (debug output)
+│   │   ├── Hot Reload (during development)
+│   │   └── Script Command Editor
+│   └── Publish to Store
+└── Teams (Raycast for Teams)
+    ├── Shared Snippets
+    ├── Shared Quicklinks
+    ├── Shared Extensions (private distribution)
+    ├── Team Settings
+    ├── Member Management
+    └── AI Usage (team-level)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Command Bar</strong></td>
+<td>Single-line input (Spotlight-style)</td>
+<td>Type to search/filter commands, results appear below</td>
+</tr>
+<tr>
+<td><strong>Result List</strong></td>
+<td>Vertical list below command bar</td>
+<td>Keyboard navigation (↑↓), hover for preview</td>
+</tr>
+<tr>
+<td><strong>Action Panel</strong></td>
+<td>⌘K or Enter</td>
+<td>Context menu for selected item (open, copy, reveal, delete, etc.)</td>
+</tr>
+<tr>
+<td><strong>Detail View</strong></td>
+<td>Right panel (metadata preview)</td>
+<td>Shows details for selected item without leaving list</td>
+</tr>
+<tr>
+<td><strong>Back Navigation</strong></td>
+<td>Escape or ⌘←</td>
+<td>Go back to previous view / close</td>
+</tr>
+<tr>
+<td><strong>Nested Navigation</strong></td>
+<td>Enter on list item</td>
+<td>Drill into extension views (list → detail → sublist)</td>
+</tr>
+<tr>
+<td><strong>Root Search</strong></td>
+<td>Start typing from any view</td>
+<td>Filters current context or returns to root search</td>
+</tr>
+<tr>
+<td><strong>Hotkeys</strong></td>
+<td>Per-command customizable</td>
+<td>Direct launch of any command without opening command bar first</td>
+</tr>
+</tbody></table>
+<h3>Interaction Flow</h3>
+<pre><code>[Option+Space] → Command Bar appears
+↓
+Type &quot;gh&quot; → Results: [GitHub Search Repos] [GitHub My PRs] [GitHub Create Issue]
+↓
+Select with ↑↓ → Press Enter → Extension view loads (e.g., repo list)
+↓
+Select repo → ⌘K (Action Panel) → [Open in Browser] [Copy URL] [View Issues] [Star]
+↓
+Escape → Back to command bar
+</code></pre>
+<h3>Keyboard-First Design</h3>
+<pre><code>Option+Space     → Open Raycast
+⌘K              → Action Panel on selected item
+⌘⇧K             → Quick AI on selected text
+Tab              → Autocomplete / Next section
+⌘,              → Preferences
+⌘⇧,             → Extension preferences
+Escape           → Back / Close
+⌘↵              → Default Action
+⌘⇧C             → Copy to clipboard
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Command</td>
+<td>name, description, icon, hotkey, alias, mode (view/no-view/menu-bar)</td>
+<td>belongs to Extension</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>name, title, description, author, icon, commands[], preferences[]</td>
+<td>installed from Store</td>
+</tr>
+<tr>
+<td>SearchResult</td>
+<td>title, subtitle, icon, actions[], accessories[], detail</td>
+<td>returned by Command</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>title, icon, shortcut, handler</td>
+<td>belongs to SearchResult</td>
+</tr>
+<tr>
+<td>Snippet</td>
+<td>name, keyword, text (with placeholders), tags[]</td>
+<td>user-created</td>
+</tr>
+<tr>
+<td>Quicklink</td>
+<td>name, url_template (with {query} placeholder), icon</td>
+<td>user-created</td>
+</tr>
+<tr>
+<td>ClipboardEntry</td>
+<td>content, type (text/image/file), application, timestamp</td>
+<td>auto-captured</td>
+</tr>
+<tr>
+<td>FloatingNote</td>
+<td>title, content (markdown), position, size</td>
+<td>user-created</td>
+</tr>
+<tr>
+<td>ScriptCommand</td>
+<td>name, description, language (bash/python/ruby/etc.), script_path, arguments[]</td>
+<td>user-created</td>
+</tr>
+<tr>
+<td>AIChat</td>
+<td>id, messages[], model, title</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>AIPreset</td>
+<td>name, prompt_template, model, creativity, icon</td>
+<td>user-created</td>
+</tr>
+<tr>
+<td>WindowLayout</td>
+<td>name, position, size, display, shortcut</td>
+<td>user-configured</td>
+</tr>
+<tr>
+<td>Theme</td>
+<td>name, appearance (light/dark), colors{}</td>
+<td>installed from Store</td>
+</tr>
+</tbody></table>
+<h3>Extension Architecture</h3>
+<pre><code>Extension Package (npm)
+├── package.json (manifest: commands, preferences, icon)
+├── src/
+│   ├── command-a.tsx (React component → List/Detail/Form/Grid)
+│   └── command-b.tsx
+├── assets/ (icons, images)
+└── README.md
+</code></pre>
+<h3>Command Modes</h3>
+<ul>
+<li><strong>View</strong>: Full UI (List, Detail, Form, Grid)</li>
+<li><strong>No-View</strong>: Background action (no UI shown, e.g., toggle dark mode)</li>
+<li><strong>Menu Bar</strong>: Persistent icon in macOS menu bar</li>
+</ul>
+<h2>User Flows</h2>
+<h3>Instant Launch</h3>
+<pre><code>Option+Space → Type &quot;sl&quot; → &quot;Slack&quot; appears → Enter → Slack opens
+(Total time: ~0.5 seconds)
+</code></pre>
+<h3>Clipboard History</h3>
+<pre><code>Option+Space → Type &quot;clip&quot; or use ⌘⇧V hotkey → Clipboard History → Search → Select entry → Paste (auto-paste to active app)
+</code></pre>
+<h3>Quick AI</h3>
+<pre><code>Select text in any app → ⌘⇧K → Choose AI command (Summarize / Fix Grammar / Translate) → Result appears → Paste or Copy
+</code></pre>
+<h3>Snippet Expansion</h3>
+<pre><code>In any text field → Type keyword (e.g., &quot;!email&quot;) → Auto-expands to full template with dynamic values (&quot;Dear {cursor}, ...&quot;)
+</code></pre>
+<h3>Window Management</h3>
+<pre><code>Option+Space → &quot;left half&quot; → Current window snaps to left half
+Or: Use hotkey (e.g., ⌘⌃←) → Instant snap
+</code></pre>
+<h3>Extension Installation</h3>
+<pre><code>Store → Search &quot;GitHub&quot; → GitHub Extension → Install → Preferences → Add access token → Option+Space → &quot;GitHub Search Repos&quot; → Search repos → Open / Clone / Star
+</code></pre>
+<h3>Developer: Build Extension</h3>
+<pre><code>npx create-raycast-extension → Choose template → Code (React + TypeScript) → npm run dev → Raycast auto-loads extension → Test in command bar → Publish to Store
+</code></pre>
+<h2>URL / Route Structure</h2>
+<p>Raycast is a native macOS app, not web-based. Navigation is through the command bar, not URLs. However, deep links use the <code>raycast://</code> protocol:</p>
+<pre><code>raycast://                                 → Open Raycast
+raycast://extensions/:author/:extension/:command → Open specific command
+raycast://extensions/store                 → Open Store
+raycast://ai-chat                          → Open AI Chat
+raycast://ai-chat/new?prompt=:text         → Start AI chat with prompt
+raycast://clipboard/history                → Open Clipboard History
+raycast://snippets                         → Open Snippets
+raycast://quicklinks                       → Open Quicklinks
+raycast://window-management                → Window Management
+raycast://confetti                         → Launch confetti
+raycast://preferences                      → Open Preferences
+raycast://preferences/:extensionName       → Extension preferences
+raycast://script-commands                  → Script Commands
+</code></pre>
+<h3>Store URLs (Web)</h3>
+<pre><code>https://www.raycast.com/store              → Extension Store
+https://www.raycast.com/:author/:extension → Extension detail
+https://www.raycast.com/developers         → Developer docs
+https://www.raycast.com/changelog          → Changelog
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Command Bar (root)</td>
+<td>Commands, apps, files, calculations, clipboard, snippets, quicklinks</td>
+<td>— (all-in-one)</td>
+<td>Relevance + Frecency (frequency + recency)</td>
+</tr>
+<tr>
+<td>Clipboard History</td>
+<td>Entry content</td>
+<td>Type (text/image/file), App</td>
+<td>Timestamp (newest)</td>
+</tr>
+<tr>
+<td>Extension Store</td>
+<td>Extension name, description, author, commands</td>
+<td>Category</td>
+<td>Featured, Popular, Recent</td>
+</tr>
+<tr>
+<td>Extension Results</td>
+<td>Extension-specific (e.g., GitHub repos, Jira issues)</td>
+<td>Extension-specific filters</td>
+<td>Extension-specific</td>
+</tr>
+<tr>
+<td>Snippets</td>
+<td>Snippet name, keyword, content</td>
+<td>Tags</td>
+<td>Name, Keyword, Last Used</td>
+</tr>
+</tbody></table>
+<h3>Frecency Algorithm</h3>
+<p>Raycast learns from usage patterns — frequently and recently used commands rank higher in search results. This is the core ranking mechanism.</p>
+<h2>Responsive Behavior</h2>
+<p>Raycast is a native macOS app. &quot;Responsive&quot; applies to the command bar window size:</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Command bar only</strong></td>
+<td>Compact floating window, keyboard input</td>
+</tr>
+<tr>
+<td><strong>With results</strong></td>
+<td>Window expands vertically to show result list (up to ~8 items)</td>
+</tr>
+<tr>
+<td><strong>With detail preview</strong></td>
+<td>Window expands horizontally to show metadata panel</td>
+</tr>
+<tr>
+<td><strong>Grid view</strong></td>
+<td>Window expands to show grid of items (e.g., icons, colors)</td>
+</tr>
+<tr>
+<td><strong>AI Chat</strong></td>
+<td>Full-height window with conversation thread</td>
+</tr>
+<tr>
+<td><strong>Compact mode</strong></td>
+<td>User preference for smaller result items</td>
+</tr>
+</tbody></table>
+<h3>Raycast-Specific UX</h3>
+<ul>
+<li><strong>Keyboard-first</strong>: designed to never require a mouse</li>
+<li><strong>Frecency ranking</strong>: results learn from your habits</li>
+<li><strong>Sub-second performance</strong>: native Swift app, no web overhead</li>
+<li><strong>Action Panel</strong> (⌘K): context menu for any selected item with keyboard shortcuts</li>
+<li><strong>Rich previews</strong>: metadata panel shows details without opening apps</li>
+<li><strong>Hotkey-per-command</strong>: assign any global shortcut to any command</li>
+<li><strong>Snippet placeholders</strong>: <code>{date}</code>, <code>{time}</code>, <code>{clipboard}</code>, <code>{cursor}</code> for dynamic expansion</li>
+<li><strong>Menu bar commands</strong>: persistent status in macOS menu bar (weather, status, timers)</li>
+<li><strong>Fallback commands</strong>: when no result matches, offer web search, calculator, etc.</li>
+<li><strong>Dark mode</strong> follows macOS system preference</li>
+<li><strong>Minimal chrome</strong>: no title bar, no toolbar — just the command bar and results</li>
+<li><strong>Sync across devices</strong>: settings, snippets, quicklinks via iCloud</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Individual (Free / Pro)</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Command bar</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Extensions</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Clipboard History</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Snippets</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Window Management</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>AI Chat</td>
+<td>—</td>
+<td>✅ (unlimited)</td>
+</tr>
+<tr>
+<td>AI Commands</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Custom AI Models</td>
+<td>—</td>
+<td>✅ (BYOK)</td>
+</tr>
+<tr>
+<td>Cloud Sync</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Custom Themes</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Teams</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Team Plan</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shared Snippets</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Shared Quicklinks</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Private Extensions (internal distribution)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Team AI Usage Management</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin Dashboard</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>SSO</td>
+<td>✅ (Enterprise)</td>
+</tr>
+</tbody></table>
+<h3>Extension Permissions</h3>
+<ul>
+<li>Extensions declare required permissions in manifest (clipboard, system commands, network)</li>
+<li>OAuth integrations are per-user (each user authenticates individually)</li>
+<li>Local storage is sandboxed per extension</li>
+<li>Script Commands run with user&#39;s shell permissions</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

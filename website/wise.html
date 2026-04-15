@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wise — IA.md | getIA.md</title>
+  <meta name="description" content="International money transfer. Real exchange rate, multi-currency. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=wise.com&sz=64" alt="Wise" onerror="this.parentElement.textContent='W'">
+      </div>
+      <h1 class="detail-brand-name">Wise</h1>
+      <p class="detail-brand-tagline">International money transfer. Real exchange rate, multi-currency.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/wise/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://wise.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/wise/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Wise — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Wise (formerly TransferWise) is built around one core premise: <strong>transparent, low-cost international money transfers at the real mid-market exchange rate.</strong> Unlike traditional banks that hide fees in inflated exchange rates, Wise shows the real rate plus a small, upfront fee. The product has expanded into multi-currency accounts (hold 50+ currencies), debit cards for spending abroad, and a business account. The IA is deliberately simple — the transfer flow is always front and center.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Balances (multi-currency, swipeable)
+│   ├── Recent Activity
+│   ├── Quick Actions (Send, Convert, Add Money)
+│   ├── Rate Alerts Summary
+│   └── Wise Card Summary
+├── Send Money (Primary Flow)
+│   ├── Amount Input
+│   │   ├── You Send (amount + currency)
+│   │   ├── Recipient Gets (amount + currency)
+│   │   ├── Real Exchange Rate (mid-market, live)
+│   │   ├── Fee Breakdown (transparent, itemized)
+│   │   ├── Estimated Arrival Time
+│   │   └── Comparison vs Banks (savings shown)
+│   ├── Recipient
+│   │   ├── Select Existing Recipient
+│   │   ├── Add New Recipient
+│   │   │   ├── Name
+│   │   │   ├── Bank Details (varies by country: IBAN, SWIFT, local)
+│   │   │   ├── Email (for email-based transfers)
+│   │   │   └── Reason for Transfer
+│   │   └── Recent Recipients
+│   ├── Review
+│   │   ├── Transfer Summary
+│   │   ├── Fee + Rate Guarantee Window
+│   │   └── Delivery Estimate
+│   ├── Pay for Transfer
+│   │   ├── Bank Transfer (cheapest)
+│   │   ├── Debit Card
+│   │   ├── Credit Card (higher fee, shown clearly)
+│   │   ├── Wise Balance
+│   │   ├── Apple Pay / Google Pay
+│   │   └── SWIFT Transfer
+│   └── Confirmation &amp; Tracking
+│       ├── Transfer Created
+│       ├── Tracking Timeline (steps shown)
+│       └── Estimated Delivery
+├── Multi-Currency Account
+│   ├── Currency Balances (50+ currencies)
+│   ├── Get Account Details
+│   │   ├── GBP (sort code + account number)
+│   │   ├── EUR (IBAN, Belgian)
+│   │   ├── USD (routing + account number, via Mercury)
+│   │   ├── AUD (BSB + account number)
+│   │   └── ... (local details per currency)
+│   ├── Add Money
+│   ├── Convert Between Currencies
+│   ├── Auto-Convert (set target rate)
+│   ├── Transaction History (per currency)
+│   └── Direct Debits
+├── Wise Card
+│   ├── Physical Card (green signature card)
+│   ├── Digital Card (instant, for Apple/Google Pay)
+│   ├── Card Controls
+│   │   ├── Freeze / Unfreeze
+│   │   ├── Spending Limits
+│   │   ├── Online / In-Store / ATM Toggles
+│   │   └── PIN Management
+│   ├── Spending Currency Priority (auto-select cheapest)
+│   └── ATM Limits &amp; Fees
+├── Recipients
+│   ├── Saved Recipients
+│   ├── Add Recipient
+│   ├── Recipient Detail (bank details, transfer history)
+│   └── Request Money
+├── Track Transfer
+│   ├── Active Transfers
+│   ├── Transfer Detail
+│   │   ├── Timeline (money sent → converted → delivered)
+│   │   ├── Reference Number
+│   │   ├── Rate Locked
+│   │   └── Delivery Status
+│   └── Past Transfers
+├── Rate Alerts
+│   ├── Active Alerts
+│   ├── Create Alert (currency pair + target rate)
+│   └── Alert History
+├── Wise Business
+│   ├── Batch Payments (CSV upload)
+│   ├── API Integration
+│   ├── Multi-User Access
+│   ├── Invoice Payments
+│   └── Accounting Integrations (Xero, QuickBooks)
+├── Account
+│   ├── Personal Details
+│   ├── Verification (ID + address proof)
+│   ├── Statements
+│   ├── Tax Documents
+│   ├── Referrals (invite friends, earn £75)
+│   └── Settings
+│       ├── Security (2FA, login notifications)
+│       ├── Notifications
+│       ├── Connected Apps
+│       └── Close Account
+└── Help
+    ├── Help Center (searchable FAQ)
+    ├── Chat Support
+    ├── Status Page
+    └── Community
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>4 tabs (mobile)</td>
+<td>Home, Cards, Recipients, Account</td>
+</tr>
+<tr>
+<td><strong>Send Button</strong></td>
+<td>Prominent CTA on Home</td>
+<td>Always-visible &quot;Send money&quot; — the primary action</td>
+</tr>
+<tr>
+<td><strong>Currency Tabs</strong></td>
+<td>Horizontal scroll on Home</td>
+<td>Switch between currency balances</td>
+</tr>
+<tr>
+<td><strong>Transfer Tracker</strong></td>
+<td>Banner on Home (when active)</td>
+<td>&quot;Transfer in progress&quot; with step indicator</td>
+</tr>
+<tr>
+<td><strong>Top Bar (web)</strong></td>
+<td>Fixed</td>
+<td>Home, Send, Card, Recipients, Business, Help</td>
+</tr>
+</tbody></table>
+<h3>Signature UX: Transfer Calculator</h3>
+<p>The transfer flow starts with a <strong>live calculator widget</strong> (visible on homepage and landing page) that shows:</p>
+<ul>
+<li>You Send: [amount] [currency]</li>
+<li>Recipient Gets: [amount] [currency]</li>
+<li>Mid-market rate: X.XXXX (verifiable on Google)</li>
+<li>Fee: £X.XX (no hidden markup)</li>
+<li>Arrival: by [date]</li>
+<li>You save: £XX vs your bank</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Transfer</td>
+<td>amount_send, currency_send, amount_receive, currency_receive, rate, fee, status, created_at, estimated_delivery, reference</td>
+<td>belongs to User, has one Recipient</td>
+</tr>
+<tr>
+<td>Recipient</td>
+<td>name, currency, bank_details{}, country, email</td>
+<td>belongs to User, has many Transfers</td>
+</tr>
+<tr>
+<td>Balance</td>
+<td>currency, amount, account_details{}</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Card</td>
+<td>type (physical/digital), status, currency_priority[], limits, controls{}</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>RateAlert</td>
+<td>currency_pair, target_rate, direction (above/below), triggered</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Conversion</td>
+<td>from_currency, to_currency, amount, rate, fee</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>AutoConversion</td>
+<td>currency_pair, target_rate, amount, status (pending/triggered)</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Transfer Status Flow</h3>
+<pre><code>created → funded → processing → in_transit → delivered
+           ↘ cancelled
+           ↘ bounced_back (wrong details)
+</code></pre>
+<h3>Transfer Timeline Steps</h3>
+<pre><code>1. Transfer created
+2. Money received by Wise
+3. Converting (rate locked)
+4. Sending to recipient&#39;s bank
+5. Money delivered ✓
+</code></pre>
+<h2>User Flows</h2>
+<h3>Send Money Abroad (Core Flow)</h3>
+<pre><code>Home → [Send Money] → Enter Amount (see rate + fee + savings) → Select Recipient → Review → Pay (bank/card/balance) → Confirm → Track Timeline → Delivered
+</code></pre>
+<h3>Get Paid Like a Local</h3>
+<pre><code>Account → GBP Balance → Get Account Details → Share Sort Code + Account Number → Employer/Client Pays In → GBP Balance Updated → Convert to Home Currency
+</code></pre>
+<h3>Auto-Convert at Target Rate</h3>
+<pre><code>Convert → Set Target Rate (e.g., 1 GBP = 1.30 EUR) → Amount → Enable Auto-Convert → Wait → Rate Hits Target → Converted Automatically → Notification
+</code></pre>
+<h3>Spend Abroad with Card</h3>
+<pre><code>Arrive in France → Pay with Wise Card → App Auto-Selects EUR Balance → If No EUR, Converts from Cheapest Balance → Transaction Notification with Rate Used
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home / Balances
+/send                          → Send Money
+/send/:transferId              → Transfer Detail
+/send/:transferId/track        → Transfer Tracking
+/balances                      → All Balances
+/balances/:currency            → Currency Balance Detail
+/balances/:currency/details    → Account Details (IBAN, etc.)
+/convert                       → Currency Conversion
+/card                          → Wise Card
+/recipients                    → Saved Recipients
+/recipients/new                → Add Recipient
+/recipients/:id                → Recipient Detail
+/rate-alerts                   → Rate Alerts
+/activity                      → All Activity
+/business                      → Business Account
+/account                       → Account Settings
+/account/verification          → Verification
+/account/statements            → Statements
+/help                          → Help Center
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Activity</td>
+<td>Recipient, amount, reference</td>
+<td>Currency, Date Range, Type (send/receive/convert), Status</td>
+<td>Date, amount</td>
+</tr>
+<tr>
+<td>Recipients</td>
+<td>Name, bank details</td>
+<td>Currency, Country</td>
+<td>Frequency, name, recent</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>FAQ articles, topics</td>
+<td>Category</td>
+<td>Relevance</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Transfer Flow</th>
+<th>Balances</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Full-screen step-by-step</td>
+<td>Horizontal card carousel</td>
+<td>Bottom tab bar</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Single-page calculator</td>
+<td>Grid layout</td>
+<td>Bottom tabs</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Calculator widget + side panel</td>
+<td>Dashboard grid</td>
+<td>Top nav</td>
+</tr>
+</tbody></table>
+<h3>Design Principles</h3>
+<ul>
+<li><strong>Radical transparency</strong>: Fee, rate, and savings comparison shown upfront before any commitment</li>
+<li><strong>Rate verifiability</strong>: &quot;Check our rate on Google&quot; link next to exchange rate</li>
+<li>Green brand color: trust, money, go</li>
+<li>Transfer tracker as a timeline (package-tracking mental model)</li>
+<li>Push notifications at every transfer step</li>
+<li>Multi-currency card auto-selects cheapest balance</li>
+<li>Biometric for all transactions</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Send</th>
+<th>Hold Balances</th>
+<th>Card</th>
+<th>Business Features</th>
+<th>API</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unverified</td>
+<td>Limited (£500)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Verified Personal</td>
+<td>✅ (limits by route)</td>
+<td>✅ (50+ currencies)</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Business Account</td>
+<td>✅ + batch payments</td>
+<td>✅</td>
+<td>✅ (team cards)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>API User</td>
+<td>Via API</td>
+<td>Via API</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Compliance</h3>
+<ul>
+<li>FCA-regulated (UK), FinCEN (US), licensed in 50+ countries</li>
+<li>ID verification required (passport/driving license + selfie)</li>
+<li>Source of funds checks for large transfers</li>
+<li>Address verification for account details</li>
+<li>Transaction monitoring for AML</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

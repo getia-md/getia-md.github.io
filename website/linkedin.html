@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn — IA.md | getIA.md</title>
+  <meta name="description" content="Professional network. Jobs, feed, messaging, recruiter. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=64" alt="LinkedIn" onerror="this.parentElement.textContent='L'">
+      </div>
+      <h1 class="detail-brand-name">LinkedIn</h1>
+      <p class="detail-brand-tagline">Professional network. Jobs, feed, messaging, recruiter.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/linkedin/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/linkedin/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>LinkedIn — Information Architecture</h1>
+<h2>Overview</h2>
+<p>LinkedIn is the world&#39;s largest professional networking platform with 900M+ members. The mental model combines <strong>social network + job board + professional identity</strong>. Unlike pure job boards (Indeed), LinkedIn is your living professional resume that also serves as a news feed, networking tool, learning platform, and recruitment engine. The IA must serve three distinct user modes: <strong>networking</strong> (connect, share, engage), <strong>job seeking</strong> (search, apply, track), and <strong>recruiting/hiring</strong> (post jobs, source candidates, manage pipeline).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Feed
+│   ├── Status Update Box (&quot;Start a post&quot;)
+│   ├── Feed (algorithm-curated)
+│   │   ├── Post Types
+│   │   │   ├── Text Posts
+│   │   │   ├── Articles
+│   │   │   ├── Images / Carousels
+│   │   │   ├── Videos
+│   │   │   ├── Polls
+│   │   │   ├── Documents (PDFs, slides)
+│   │   │   ├── Event Shares
+│   │   │   ├── Job Change Celebrations
+│   │   │   └── Newsletters
+│   │   ├── Reactions (Like, Celebrate, Support, Funny, Love, Insightful)
+│   │   ├── Comments (threaded)
+│   │   ├── Reposts
+│   │   └── Share
+│   ├── Sidebar (left): Profile Card (photo, headline, connections)
+│   ├── Sidebar (right): News, Trending, Events, Ads
+│   └── People You May Know
+├── My Network
+│   ├── Invitations (pending connection requests)
+│   ├── Connections (list, searchable)
+│   ├── People You May Know (suggestions)
+│   ├── Groups
+│   ├── Events
+│   ├── Pages (companies) Followed
+│   ├── Newsletters Subscribed
+│   └── Manage My Network
+├── Jobs
+│   ├── Job Search
+│   │   ├── Search Bar (title, keyword, company)
+│   │   ├── Location
+│   │   ├── Filters
+│   │   │   ├── Date Posted
+│   │   │   ├── Experience Level (Intern, Entry, Associate, Mid, Senior, Director, Executive)
+│   │   │   ├── Company
+│   │   │   ├── Job Type (Full-time, Part-time, Contract, Internship)
+│   │   │   ├── Remote (On-site, Remote, Hybrid)
+│   │   │   ├── Salary Range
+│   │   │   ├── Industry
+│   │   │   ├── Job Function
+│   │   │   └── Easy Apply (LinkedIn apply)
+│   │   └── Sort (Most Relevant, Most Recent)
+│   ├── Job Detail (split-pane: list + detail)
+│   │   ├── Title, Company, Location
+│   │   ├── Match Score (&quot;How you match&quot;)
+│   │   ├── Job Description
+│   │   ├── Company Info (size, industry, followers)
+│   │   ├── Who&#39;s Hiring (recruiter profile)
+│   │   ├── Similar Jobs
+│   │   ├── [Easy Apply] or [Apply on Company Site]
+│   │   └── Save / Share
+│   ├── Easy Apply Flow
+│   │   ├── Resume (pre-populated from profile)
+│   │   ├── Contact Info (pre-filled)
+│   │   ├── Screening Questions
+│   │   ├── Cover Letter (optional)
+│   │   └── Submit
+│   ├── My Jobs
+│   │   ├── Applied
+│   │   ├── Saved
+│   │   ├── Interview Prep
+│   │   ├── Job Alerts
+│   │   └── Salary Insights
+│   ├── Career Interests (signal to recruiters)
+│   │   ├── Open to Work (banner)
+│   │   ├── Desired Titles
+│   │   ├── Location Preferences
+│   │   └── Visibility (recruiters only, all members)
+│   └── Post a Job (for employers)
+├── Messaging
+│   ├── Conversation List
+│   ├── Chat View
+│   │   ├── Text Messages
+│   │   ├── Files / Images
+│   │   ├── GIFs
+│   │   ├── Voice Messages
+│   │   ├── Video Call
+│   │   └── InMail (for non-connections, premium)
+│   ├── Connection Requests with Messages
+│   ├── Sponsored InMail (from recruiters)
+│   └── Focused / Other (inbox tabs)
+├── Notifications
+│   ├── Reactions / Comments on Posts
+│   ├── Connection Requests
+│   ├── Job Recommendations
+│   ├── Profile Views
+│   ├── Work Anniversaries / Birthdays
+│   ├── News / Trending
+│   └── Recruiter Messages
+├── Profile
+│   ├── Cover Photo + Profile Photo
+│   ├── Headline (title + company)
+│   ├── About (summary)
+│   ├── Open to Work / Hiring / Providing Services (badges)
+│   ├── Featured (pinned posts, articles, links)
+│   ├── Activity (recent posts, comments)
+│   ├── Experience (jobs with dates, descriptions)
+│   ├── Education
+│   ├── Licenses &amp; Certifications
+│   ├── Skills (endorsements)
+│   ├── Recommendations (given/received)
+│   ├── Accomplishments (publications, patents, honors)
+│   ├── Interests (following companies, influencers)
+│   └── Analytics (profile views, post impressions, search appearances)
+├── Company Pages
+│   ├── Overview (about, specialties, size, headquarters)
+│   ├── Posts
+│   ├── Jobs (open positions)
+│   ├── People (employees at company)
+│   ├── Life (culture, employee stories)
+│   └── Follow
+├── LinkedIn Learning
+│   ├── Course Catalog
+│   ├── My Learning
+│   ├── Skill Assessments
+│   ├── Certificates
+│   └── Learning Paths
+├── Creator Tools
+│   ├── Newsletter (create + subscribers)
+│   ├── LinkedIn Live (streaming)
+│   ├── Events (create + host)
+│   ├── Analytics (post performance, audience)
+│   └── Creator Mode (reorders profile)
+├── Sales Navigator (Premium)
+│   ├── Lead Search (advanced filters)
+│   ├── Account Lists
+│   ├── InMail Credits
+│   └── Relationship Intelligence
+├── Recruiter (Premium)
+│   ├── Talent Search (boolean + filters)
+│   ├── InMail
+│   ├── Talent Pipeline (Kanban)
+│   ├── Job Posts
+│   └── Analytics
+├── Settings &amp; Privacy
+│   ├── Account (email, password, 2FA)
+│   ├── Visibility (profile, connections, activity)
+│   ├── Communications (frequency, types)
+│   ├── Data Privacy
+│   ├── Advertising Preferences
+│   └── Subscription (Premium, Learning, Sales Nav, Recruiter)
+└── Premium Plans
+    ├── Career (job insights, InMail)
+    ├── Business (unlimited search, company insights)
+    ├── Sales Navigator
+    ├── Recruiter Lite
+    └── LinkedIn Learning
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Nav</strong></td>
+<td>Fixed header</td>
+<td>Logo, Search, Home, Network, Jobs, Messaging (badge), Notifications (badge), Me, Work Grid</td>
+</tr>
+<tr>
+<td><strong>Work Grid</strong></td>
+<td>Dropdown from &quot;Work&quot;</td>
+<td>Quick links to all LinkedIn products (Learning, Sales Nav, Post a Job, etc.)</td>
+</tr>
+<tr>
+<td><strong>Search</strong></td>
+<td>Universal top bar</td>
+<td>Search people, jobs, companies, posts, groups</td>
+</tr>
+<tr>
+<td><strong>Jobs Split Pane</strong></td>
+<td>List + detail (desktop)</td>
+<td>Click job in list → detail loads right</td>
+</tr>
+<tr>
+<td><strong>Profile Sections</strong></td>
+<td>Vertical scroll with section anchors</td>
+<td>Experience, Education, Skills, etc.</td>
+</tr>
+<tr>
+<td><strong>Messaging</strong></td>
+<td>Right-side panel (desktop)</td>
+<td>Persistent chat panel, overlays on any page</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Member</td>
+<td>name, headline, photo, location, industry, connections_count, summary, experience[], education[], skills[], recommendations[]</td>
+<td>has Posts, Connections, Applications</td>
+</tr>
+<tr>
+<td>Post</td>
+<td>author, type (text/image/video/article/poll/document), content, reactions{}, comments[], shares, impressions, created_at</td>
+<td>belongs to Member or Company</td>
+</tr>
+<tr>
+<td>Job</td>
+<td>title, company, location, remote_policy, type, salary_range, description, requirements[], posted_at, applicants_count, easy_apply</td>
+<td>belongs to Company</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>job, member, resume, cover_letter, answers[], status, applied_at</td>
+<td>connects Member and Job</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>name, logo, industry, size, headquarters, description, followers, employees[]</td>
+<td>has Jobs, Posts</td>
+</tr>
+<tr>
+<td>Connection</td>
+<td>member_a, member_b, connected_at</td>
+<td>between Members</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>sender, recipient, body, attachments[], read, type (standard/inmail)</td>
+<td>between Members</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>name, description, members_count, rules</td>
+<td>has Posts, Members</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>title, organizer, date, location, type (online/in-person), attendees</td>
+<td>has RSVPs</td>
+</tr>
+<tr>
+<td>Skill</td>
+<td>name, endorsements_count, assessments_passed</td>
+<td>belongs to Member</td>
+</tr>
+<tr>
+<td>Recommendation</td>
+<td>recommender, recommendee, relationship, text</td>
+<td>between Members</td>
+</tr>
+</tbody></table>
+<h3>Connection Degree</h3>
+<pre><code>1st degree: direct connections
+2nd degree: connections of connections
+3rd degree: connections of 2nd-degree connections
+Out of network: no connection path
+</code></pre>
+<h2>User Flows</h2>
+<h3>Job Search &amp; Easy Apply</h3>
+<pre><code>Jobs → Search &quot;Product Manager, San Francisco&quot; → Filter (Remote, Senior, $150K+) → Browse Results → Click Job → Review Match Score → [Easy Apply] → Resume Pre-filled → Answer 3 Questions → Submit → Track in &quot;Applied&quot;
+</code></pre>
+<h3>Network &amp; Engage</h3>
+<pre><code>Feed → See Post from Connection → Like (Insightful) → Comment → View Their Profile → [Connect] → Add Note → Sent → They Accept → Now 1st Degree
+</code></pre>
+<h3>Open to Work</h3>
+<pre><code>Profile → [Open to Work] → Set Titles (Product Manager, Head of Product) → Location (SF Bay Area, Remote) → Visibility: Recruiters Only → Save → &quot;#OpenToWork&quot; Badge on Photo (optional) → Recruiter InMails Start Coming
+</code></pre>
+<h3>Post Content</h3>
+<pre><code>Feed → [Start a Post] → Write Insight → Add Image → Add Hashtags → [Post] → Track Impressions → Respond to Comments → Check Analytics
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/feed                          → Home Feed
+/mynetwork                     → My Network
+/jobs                          → Jobs Home
+/jobs/search/?keywords=:q      → Job Search Results
+/jobs/view/:id                 → Job Detail
+/jobs/tracker                  → Applied Jobs
+/messaging                     → Messaging
+/notifications                 → Notifications
+/in/:slug                      → Member Profile
+/company/:slug                 → Company Page
+/company/:slug/jobs            → Company Jobs
+/company/:slug/people          → Company Employees
+/groups/:id                    → Group
+/events/:id                    → Event
+/learning                      → LinkedIn Learning
+/learning/courses/:slug        → Course
+/pulse/:slug                   → Article
+/sales                         → Sales Navigator
+/talent                        → Recruiter
+/settings                      → Settings &amp; Privacy
+/premium                       → Premium Plans
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>People</td>
+<td>Name, title, company, school, keyword</td>
+<td>Connection Degree, Location, Current Company, Industry, School</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Jobs</td>
+<td>Title, keyword, company</td>
+<td>Location, Remote, Date Posted, Experience, Type, Salary, Easy Apply, Company Size</td>
+<td>Most Relevant, Most Recent</td>
+</tr>
+<tr>
+<td>Companies</td>
+<td>Name, industry</td>
+<td>Size, Location, Industry</td>
+<td>Followers, Name</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>Post text, hashtag</td>
+<td>Date, Author, Type</td>
+<td>Relevance, Recent</td>
+</tr>
+<tr>
+<td>Groups</td>
+<td>Group name, topic</td>
+<td>Size, Activity</td>
+<td>Relevance</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Feed</th>
+<th>Jobs</th>
+<th>Profile</th>
+<th>Messaging</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Feed + left/right sidebar</td>
+<td>Split pane (list + detail)</td>
+<td>Full sections</td>
+<td>Overlay panel + full page</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Feed + minimal sidebar</td>
+<td>List, detail on click</td>
+<td>Full page</td>
+<td>Full page</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Feed only, bottom nav</td>
+<td>Card list</td>
+<td>Scrollable sections</td>
+<td>Full page chat</td>
+</tr>
+</tbody></table>
+<h3>LinkedIn-Specific UX</h3>
+<ul>
+<li>Profile completeness meter (drives profile enrichment)</li>
+<li>&quot;Who viewed your profile&quot; (premium insight)</li>
+<li>Easy Apply: 1-click application from profile data</li>
+<li>Connection degree badges (1st, 2nd, 3rd)</li>
+<li>Endorsement skill badges with assessment verification</li>
+<li>Content creator mode (reorders profile for audience building)</li>
+<li>InMail for reaching non-connections</li>
+<li>&quot;Open to Work&quot; badge visible to recruiters or everyone</li>
+<li>Real-time notification for profile views, job matches</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Basic (Free)</th>
+<th>Premium Career</th>
+<th>Premium Business</th>
+<th>Sales Navigator</th>
+<th>Recruiter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Feed &amp; Post</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Job Search</td>
+<td>✅</td>
+<td>✅ + insights</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Easy Apply</td>
+<td>✅</td>
+<td>✅ + featured</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Profile Views</td>
+<td>5 recent</td>
+<td>Full list</td>
+<td>Full list</td>
+<td>Advanced</td>
+<td>Advanced</td>
+</tr>
+<tr>
+<td>InMail</td>
+<td>—</td>
+<td>5/mo</td>
+<td>15/mo</td>
+<td>50/mo</td>
+<td>150/mo</td>
+</tr>
+<tr>
+<td>Search Filters</td>
+<td>Basic</td>
+<td>Advanced</td>
+<td>Advanced</td>
+<td>Advanced boolean</td>
+<td>Advanced boolean</td>
+</tr>
+<tr>
+<td>Learning</td>
+<td>Limited</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Applicant Insights</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Lead Lists</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Talent Pipeline</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking.com — IA.md | getIA.md</title>
+  <meta name="description" content="Travel booking. Hotels, flights, map search, reviews. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=booking.com&sz=64" alt="Booking.com" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">Booking.com</h1>
+      <p class="detail-brand-tagline">Travel booking. Hotels, flights, map search, reviews.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/booking-com/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://booking.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/booking-com/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Booking.com — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Booking.com is the world&#39;s largest online travel agency (OTA), listing 28M+ properties across hotels, apartments, hostels, villas, and unique stays. The mental model is <strong>search → compare → book → stay</strong> with an emphasis on <strong>urgency and social proof</strong>. The interface is famously data-dense, using psychological nudges (&quot;Only 2 rooms left!&quot;, &quot;12 people looking at this right now&quot;, &quot;Free cancellation&quot;) to drive conversions. Booking.com&#39;s IA is optimized for hotel booking first, with flights, car rentals, and attractions as secondary offerings.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Search Box (Where, Check-in/out, Guests/Rooms)
+│   ├── Genius Loyalty Banner
+│   ├── Recent Searches
+│   ├── Trending Destinations
+│   ├── Deals of the Day
+│   ├── Property Type Tabs (Hotels, Apartments, Resorts, Villas, Hostels)
+│   ├── Explore Nearby
+│   ├── Travel Articles / Inspiration
+│   └── App Download CTA
+├── Search Results
+│   ├── Filter Sidebar (left, desktop)
+│   │   ├── Price Range (slider)
+│   │   ├── Star Rating
+│   │   ├── Guest Rating (Superb 9+, Very Good 8+, Good 7+)
+│   │   ├── Property Type (hotel, apartment, hostel, resort)
+│   │   ├── Facilities (wifi, parking, pool, gym, restaurant)
+│   │   ├── Bed Type
+│   │   ├── Room Facilities (kitchen, balcony, AC)
+│   │   ├── Meal Plans (breakfast included)
+│   │   ├── Cancellation Policy (free cancellation)
+│   │   ├── Payment (pay at property, pay now)
+│   │   ├── Deals (Genius, Black Friday, Mobile)
+│   │   └── Distance from Center
+│   ├── Property Cards
+│   │   ├── Photo
+│   │   ├── Name + Star Rating
+│   │   ├── Location + Distance
+│   │   ├── Guest Rating (score + label + review count)
+│   │   ├── Room Type + Price
+│   │   ├── Urgency: &quot;Only 2 rooms left!&quot; (red text)
+│   │   ├── Social Proof: &quot;Booked 15 times in last 24h&quot;
+│   │   ├── Deal Badge (Genius, Black Friday, Secret Deal)
+│   │   ├── Free Cancellation Badge
+│   │   └── [See Availability]
+│   ├── Map View (toggle)
+│   │   ├── Property Pins (with prices)
+│   │   ├── Map + List Split
+│   │   └── Drag to Search This Area
+│   ├── Sort Options (Top Picks, Price, Rating, Distance, Stars)
+│   └── Number of Results Found
+├── Property Page
+│   ├── Photo Gallery (30+ photos, categorized: room, bathroom, view, building)
+│   ├── Property Name + Stars + Location
+│   ├── Guest Rating Score (e.g., 8.7/10 &quot;Fabulous&quot;) + Category Scores
+│   ├── Key Highlights (WiFi, parking, airport shuttle)
+│   ├── Description
+│   ├── Facilities &amp; Amenities (detailed list)
+│   ├── Room Options Table
+│   │   ├── Room Type (name + photos)
+│   │   ├── Sleeps (guests + bed configuration)
+│   │   ├── Price (per night + total)
+│   │   ├── Conditions (cancellation policy, payment terms)
+│   │   ├── Meal Plan (breakfast included / room only)
+│   │   ├── Genius Discount (if applicable)
+│   │   └── [Reserve] per room type
+│   ├── Map &amp; Location
+│   │   ├── Map
+│   │   ├── Nearby Attractions + Distances
+│   │   ├── Public Transport
+│   │   └── Airport Distance
+│   ├── Reviews
+│   │   ├── Overall Score + Category Breakdown (cleanliness, location, staff, facilities)
+│   │   ├── Review List (filterable by type, language, score)
+│   │   └── AI Summary of Reviews
+│   ├── House Rules (check-in/out times, pets, smoking)
+│   ├── Fine Print (extra charges, deposits)
+│   ├── FAQ about the Property
+│   └── Similar Properties Nearby
+├── Booking Flow / Checkout
+│   ├── Your Selection Summary (dates, room, price)
+│   ├── Guest Details (name, email, phone)
+│   ├── Special Requests (late check-in, extra bed, etc.)
+│   ├── Add to Trip (link to flight, car)
+│   ├── Price Breakdown (room rate × nights + taxes + fees)
+│   ├── Payment
+│   │   ├── Pay Now (sometimes discounted)
+│   │   ├── Pay at Property
+│   │   └── Card Required as Guarantee
+│   ├── Terms &amp; Cancellation Policy
+│   └── [Complete Booking]
+├── Confirmation
+│   ├── Confirmation Number
+│   ├── Stay Details (dates, property, address)
+│   ├── Map &amp; Directions
+│   ├── Add to Calendar
+│   ├── Download Confirmation
+│   ├── Add Flights / Car Rental / Activities
+│   └── Share with Travel Companion
+├── My Trips / Bookings
+│   ├── Upcoming Bookings
+│   ├── Booking Detail
+│   │   ├── Property Info + Contact
+│   │   ├── Dates + Room
+│   │   ├── Confirmation Number (+ PIN)
+│   │   ├── Map + Directions
+│   │   ├── Cancel / Modify
+│   │   ├── Add to Trip (flights, car, activities)
+│   │   └── Contact Property
+│   ├── Past Bookings
+│   │   ├── Write Review
+│   │   └── Book Again
+│   └── Cancelled
+├── Flights (Secondary)
+│   ├── Search (origin, destination, dates)
+│   ├── Results
+│   └── Booking
+├── Car Rentals
+├── Attractions &amp; Tours
+│   ├── Things to Do by Destination
+│   ├── Activity Detail
+│   └── Book Activity
+├── Account
+│   ├── Profile
+│   ├── Genius Loyalty Level (1, 2, 3)
+│   │   ├── Genius 1: 10% discounts
+│   │   ├── Genius 2: 15% + free breakfast
+│   │   └── Genius 3: 20% + upgrades + priority support
+│   ├── Saved Properties (wishlist)
+│   ├── Reviews Written
+│   ├── Payment Cards
+│   ├── Wallet &amp; Credits
+│   ├── Notification Preferences
+│   ├── Currency / Language
+│   └── Settings
+├── Help
+│   ├── FAQ
+│   ├── Contact Customer Service (24/7)
+│   ├── Manage Booking
+│   └── Partner Help
+└── Footer
+    ├── About
+    ├── Careers
+    ├── Partner (List Your Property)
+    ├── Affiliate Program
+    ├── Terms &amp; Privacy
+    └── Country / Currency / Language Selector
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Fixed top bar</td>
+<td>Logo, Currency/Language, Genius badge, List Property, My Trips, Sign In</td>
+</tr>
+<tr>
+<td><strong>Search Box</strong></td>
+<td>Prominent on home, compact in header</td>
+<td>Where + Check-in/out + Guests + [Search]</td>
+</tr>
+<tr>
+<td><strong>Tabs</strong></td>
+<td>Below header on home</td>
+<td>Stays, Flights, Car Rental, Attractions, Airport Taxis</td>
+</tr>
+<tr>
+<td><strong>Filters</strong></td>
+<td>Left sidebar (desktop), bottom sheet (mobile)</td>
+<td>Extensive filters (20+ facets)</td>
+</tr>
+<tr>
+<td><strong>Map Toggle</strong></td>
+<td>Button on results</td>
+<td>Switch between list and map view</td>
+</tr>
+<tr>
+<td><strong>Room Table</strong></td>
+<td>Core of property page</td>
+<td>Scrollable table comparing all room options</td>
+</tr>
+<tr>
+<td><strong>Urgency Nudges</strong></td>
+<td>Inline on cards and property pages</td>
+<td>Red text: &quot;Only 1 left!&quot;, &quot;12 people looking now&quot;</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Property</td>
+<td>name, type, address, coordinates, star_rating, user_rating, photos[], amenities[], description, check_in_time, check_out_time, policies{}</td>
+<td>has many RoomTypes, Reviews</td>
+</tr>
+<tr>
+<td>RoomType</td>
+<td>name, description, max_guests, bed_config, price_per_night, photos[], amenities[], cancellation_policy, meal_plan, availability_count</td>
+<td>belongs to Property</td>
+</tr>
+<tr>
+<td>Booking</td>
+<td>property, room_type, check_in, check_out, guests, total_price, status, confirmation_number, pin, special_requests</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>overall_score (1-10), scores{staff, facilities, cleanliness, comfort, value, location, wifi}, title, text, reviewer{name, country, trip_type}, date</td>
+<td>belongs to Property</td>
+</tr>
+<tr>
+<td>GeniusLevel</td>
+<td>level (1/2/3), discount_pct, perks[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>SavedProperty</td>
+<td>property, list_name</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Booking Status</h3>
+<pre><code>confirmed → modified → checked_in → completed → reviewed
+             ↘ cancelled → refunded (if policy allows)
+</code></pre>
+<h3>Urgency / Social Proof Signals</h3>
+<pre><code>&quot;Only X rooms left on our site!&quot; (low inventory)
+&quot;Booked X times in the last 24 hours&quot; (popularity)
+&quot;X people are looking at this right now&quot; (competition)
+&quot;Last booked X minutes ago&quot; (recency)
+&quot;Great Value Today&quot; (price vs market)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Search &amp; Book Hotel</h3>
+<pre><code>Home → Search (Paris, May 1-5, 2 adults) → 1,247 Results → Filter (Free Cancellation, 8+ Rating, Pool) → Sort by Top Picks → Property Card → Photo Gallery → Check Room Options → Select &quot;Deluxe Double, Free Cancellation, €150/night&quot; → [Reserve] → Guest Details → Payment → [Complete Booking] → Confirmation Email
+</code></pre>
+<h3>Modify or Cancel</h3>
+<pre><code>My Trips → Upcoming → Select Booking → [Cancel Booking] → Review Policy (Free Cancellation Before May 1) → Confirm → Cancelled → Refund Processed
+</code></pre>
+<h3>Leave a Review</h3>
+<pre><code>Past Bookings → Select Stay → &quot;How was your stay?&quot; → Rate Categories (1-10) → Write Review → Submit → Published
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                          → Home
+/searchresults.html?dest=Paris&amp;checkin=...  → Search Results (query string heavy)
+/hotel/:slug                               → Property Page
+/hotel/:slug/reviews                       → Property Reviews
+/hotel/:slug/photos                        → Photo Gallery
+/booking                                   → Checkout
+/confirmation/:id                          → Booking Confirmation
+/mysettings                                → My Trips / Bookings
+/mysettings/booking/:id                    → Booking Detail
+/flights                                   → Flight Search
+/cars                                      → Car Rental Search
+/attractions                               → Attractions
+/deals                                     → Deals Page
+/genius                                    → Genius Loyalty
+/wishlist                                  → Saved Properties
+/myaccount                                 → Account
+/help                                      → Help Center
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Properties</td>
+<td>Destination, property name</td>
+<td>Price, Stars, Rating, Property Type, Facilities, Room Features, Cancellation, Payment, Meal, Deals, Distance, Bed Preferences, Neighborhood</td>
+<td>Top Picks, Price (low/high), Rating, Stars, Distance</td>
+</tr>
+<tr>
+<td>Flights</td>
+<td>Origin, Destination</td>
+<td>Stops, Airlines, Duration, Departure Time, Price</td>
+<td>Price, Duration, Departure</td>
+</tr>
+<tr>
+<td>Reviews</td>
+<td>Review text</td>
+<td>Score Range, Trip Type (couple/family/solo/business), Language, Date</td>
+<td>Newest, Highest, Lowest</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Search</th>
+<th>Results</th>
+<th>Property</th>
+<th>Booking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Inline full search bar</td>
+<td>List + filter sidebar + optional map</td>
+<td>Gallery + room table + reviews</td>
+<td>Multi-column form</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Stacked search</td>
+<td>List, filter toggle</td>
+<td>Full-width gallery, stacked table</td>
+<td>Single column</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Search modal</td>
+<td>Cards, filter sheet, map toggle</td>
+<td>Swipe gallery, accordion sections, sticky CTA</td>
+<td>Step-by-step</td>
+</tr>
+</tbody></table>
+<h3>Booking.com-Specific UX</h3>
+<ul>
+<li>Urgency signals everywhere (scarcity, popularity, competition)</li>
+<li>Social proof: review scores prominently displayed</li>
+<li>Free cancellation badges (key conversion driver)</li>
+<li>Genius loyalty discounts visible on search results</li>
+<li>Price per night + total stay shown simultaneously</li>
+<li>Breadcrumb location context (Country &gt; City &gt; Hotel)</li>
+<li>Multi-currency display</li>
+<li>Translation of reviews to user&#39;s language</li>
+<li>Mobile app deep-linking for better rates</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Search</th>
+<th>Book</th>
+<th>Manage</th>
+<th>Reviews</th>
+<th>Genius</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>✅ (guest checkout)</td>
+<td>Via confirmation email</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Level 1 (after 2 stays)</td>
+</tr>
+<tr>
+<td>Genius 2</td>
+<td>✅</td>
+<td>✅ + 15% off</td>
+<td>✅</td>
+<td>✅</td>
+<td>15% + breakfast + upgrades</td>
+</tr>
+<tr>
+<td>Genius 3</td>
+<td>✅</td>
+<td>✅ + 20% off</td>
+<td>✅ + priority support</td>
+<td>✅</td>
+<td>20% + all perks</td>
+</tr>
+<tr>
+<td>Property Partner</td>
+<td>—</td>
+<td>—</td>
+<td>Own listings</td>
+<td>Respond to reviews</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

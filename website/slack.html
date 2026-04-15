@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slack — IA.md | getIA.md</title>
+  <meta name="description" content="Team messaging with channels, threads, and integrations. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=slack.com&sz=64" alt="Slack" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Slack</h1>
+      <p class="detail-brand-tagline">Team messaging with channels, threads, and integrations.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/slack/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://slack.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/slack/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Slack — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Slack is a channel-based workplace messaging platform built around the <strong>workspace → channel → message</strong> hierarchy. The mental model is organized conversations — instead of a single chat list, communication is structured into public/private channels by topic, team, or project, with direct messages for person-to-person communication. Slack differentiates through its integration ecosystem (2,600+ apps), threaded conversations, Slack Connect (cross-organization channels), Huddles (lightweight audio), and Workflow Builder for no-code automation.</p>
+<h2>Site Map</h2>
+<pre><code>├── Workspace Switcher (left icon rail)
+│   ├── Workspace A
+│   ├── Workspace B
+│   └── + Add Workspace
+├── Home Tab
+│   ├── Catch-Up Summary (AI-generated)
+│   ├── Suggested Actions
+│   └── App Home Tabs (bot/app surfaces)
+├── DMs (Direct Messages)
+│   ├── Recent DMs
+│   ├── Multi-person DMs (group)
+│   └── Self DM (personal scratchpad)
+├── Activity
+│   ├── Mentions &amp; Reactions
+│   ├── Threads (all threads I&#39;m in)
+│   ├── Unreads (unread channels summary)
+│   └── Saved Items (bookmarked messages)
+├── Channels
+│   ├── Starred Channels (pinned to top)
+│   ├── Public Channels (joined)
+│   ├── Private Channels (joined)
+│   ├── Slack Connect Channels (external orgs)
+│   ├── Browse Channels (discover)
+│   └── Create Channel
+├── Channel View
+│   ├── Channel Header
+│   │   ├── Channel Name + Topic
+│   │   ├── Members Count
+│   │   ├── Huddle (audio/video)
+│   │   ├── Pin / Bookmark bar
+│   │   ├── Canvas (collaborative doc)
+│   │   └── Search in Channel
+│   ├── Message Stream
+│   │   ├── Text Messages (rich text, Markdown-like)
+│   │   ├── Files (images, documents, code snippets)
+│   │   ├── Code Blocks (with syntax highlighting)
+│   │   ├── Reactions (emoji)
+│   │   ├── Thread Indicators (reply count)
+│   │   ├── Bot / App Messages (structured blocks)
+│   │   ├── Workflow Messages (forms, approvals)
+│   │   ├── Link Unfurls (previews)
+│   │   └── System Messages (joined, topic changed)
+│   ├── Message Composer
+│   │   ├── Rich Text Editor (bold, italic, lists, code, quote, link)
+│   │   ├── @mentions (person, channel, @here, @channel, @everyone)
+│   │   ├── /slash commands
+│   │   ├── Emoji Picker (custom emoji support)
+│   │   ├── File Upload (drag &amp; drop)
+│   │   ├── Audio/Video Clips (record &amp; send)
+│   │   ├── Schedule Send
+│   │   └── Formatting Toolbar
+│   └── Channel Details Panel (right)
+│       ├── About (description, topic, created)
+│       ├── Members List
+│       ├── Integrations (apps, webhooks)
+│       ├── Canvases
+│       ├── Bookmarks
+│       ├── Pinned Messages
+│       ├── Files Shared
+│       └── Channel Settings
+├── Threads Panel
+│   ├── All Threads (from all channels)
+│   ├── Thread Detail
+│   │   ├── Parent Message
+│   │   ├── Replies
+│   │   └── &quot;Also send to channel&quot; toggle
+│   └── Unread Threads (badge)
+├── Huddles
+│   ├── Start Huddle (lightweight audio call)
+│   ├── Screen Share
+│   ├── Video (optional toggle)
+│   ├── Shared Notes (live during huddle)
+│   ├── Invite Others
+│   └── Huddle Thread (persistent chat)
+├── Canvas (collaborative docs)
+│   ├── Channel Canvas
+│   ├── DM Canvas
+│   ├── Standalone Canvas
+│   └── Canvas Elements (text, checklists, media, embeds)
+├── Search
+│   ├── Messages
+│   ├── Files
+│   ├── Channels
+│   ├── People
+│   └── Apps
+├── Automations
+│   ├── Workflow Builder
+│   │   ├── Triggers (emoji reaction, form submitted, schedule, webhook)
+│   │   ├── Steps (send message, create channel, collect info, external service)
+│   │   └── Published Workflows
+│   └── Slack Apps (custom bots, slash commands)
+├── Slack Connect
+│   ├── External Channel Invitations
+│   ├── Shared Channels (with other organizations)
+│   └── DMs with External Users
+├── Apps &amp; Integrations
+│   ├── App Directory
+│   ├── Installed Apps
+│   ├── Custom Integrations (webhooks, bots)
+│   └── App Home Tabs
+├── Settings &amp; Administration
+│   ├── Preferences
+│   │   ├── Notifications (per-channel, schedule, keywords)
+│   │   ├── Themes &amp; Appearance (sidebar colors, dark mode)
+│   │   ├── Messages &amp; Media (names, emoji style, inline media)
+│   │   ├── Accessibility
+│   │   ├── Language &amp; Region
+│   │   ├── Advanced (performance, links)
+│   │   └── Audio &amp; Video (huddle settings)
+│   └── Workspace Admin
+│       ├── Members &amp; Guests
+│       ├── User Groups (@team-name)
+│       ├── Channel Management (default channels, prefixes)
+│       ├── Permissions (who can create channels, invite, etc.)
+│       ├── Authentication (SSO/SAML, 2FA)
+│       ├── Message Retention &amp; Deletion Policies
+│       ├── Compliance (DLP, eDiscovery, exports)
+│       ├── App Management
+│       ├── Billing
+│       └── Slack AI Settings
+└── Slack AI (paid feature)
+    ├── Channel Summaries (AI recap)
+    ├── Thread Summaries
+    ├── Search Answers (natural language)
+    └── Catch-Up (daily digest)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Workspace Rail</strong></td>
+<td>Left icon column (36px)</td>
+<td>Workspace icons stacked vertically; notifications badge per workspace</td>
+</tr>
+<tr>
+<td><strong>Channel Sidebar</strong></td>
+<td>Second column (260px)</td>
+<td>Home, DMs, Activity, Channels (organized by sections), Apps</td>
+</tr>
+<tr>
+<td><strong>Chat View</strong></td>
+<td>Main content area (flex)</td>
+<td>Message stream, composer at bottom</td>
+</tr>
+<tr>
+<td><strong>Thread Panel</strong></td>
+<td>Right side panel</td>
+<td>Opens inline without leaving channel</td>
+</tr>
+<tr>
+<td><strong>Details Panel</strong></td>
+<td>Right side panel (replaces thread)</td>
+<td>Channel info, members, files, pins</td>
+</tr>
+<tr>
+<td><strong>Quick Switcher</strong></td>
+<td>⌘K</td>
+<td>Jump to any channel, DM, or person</td>
+</tr>
+<tr>
+<td><strong>Slash Commands</strong></td>
+<td>Type <code>/</code> in composer</td>
+<td>Run app commands, set status, search</td>
+</tr>
+<tr>
+<td><strong>Message Actions</strong></td>
+<td>Hover toolbar</td>
+<td>React, reply in thread, share, pin, bookmark, more (...)</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Workspace Switcher Rail]
+│
+├── 🏠 Home
+├── 💬 DMs
+├── 🔔 Activity
+├── ⋯ More (Canvases, Files, People, Apps)
+─────────────
+📌 Channels
+  Sections (custom groupable):
+  ├── ⭐ Starred
+  │   #general
+  │   #engineering
+  ├── Team
+  │   #team-ios
+  │   #team-android
+  ├── Projects
+  │   #proj-redesign
+  │   #proj-migration
+  └── Other
+      #random
+      #announcements
+─────────────
+📱 Apps
+  Slackbot
+  GitHub
+  Jira
+─────────────
+[+ Add channels]
+</code></pre>
+<h3>Channel Sections (Unique to Slack)</h3>
+<p>Users can organize channels into custom collapsible sections in the sidebar (e.g., &quot;Starred&quot;, &quot;Team&quot;, &quot;Projects&quot;, &quot;Clients&quot;). This is a key IA feature for managing large workspaces with 100+ channels.</p>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>name, domain, icon, plan, settings</td>
+<td>has many Channels, Members, Apps</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>name, topic, purpose, visibility (public/private), archived, shared (Slack Connect)</td>
+<td>has many Messages, Members, Pins, Bookmarks, Canvases</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>text (mrkdwn), blocks[] (Block Kit), user, timestamp, edited, reactions[], reply_count, reply_users[], files[]</td>
+<td>belongs to Channel; can have Thread</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>parent_message, replies[], reply_count, last_reply</td>
+<td>extends from Message</td>
+</tr>
+<tr>
+<td>Reaction</td>
+<td>emoji, users[]</td>
+<td>belongs to Message</td>
+</tr>
+<tr>
+<td>File</td>
+<td>name, type, size, url, thumbnail, title, initial_comment</td>
+<td>belongs to Message and Channel</td>
+</tr>
+<tr>
+<td>User</td>
+<td>display_name, real_name, avatar, status_emoji, status_text, timezone, role</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>User Group</td>
+<td>handle (@team-name), members[], channels[]</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>App / Bot</td>
+<td>name, icon, slash_commands[], home_tab, message_shortcuts</td>
+<td>installed in Workspace</td>
+</tr>
+<tr>
+<td>Canvas</td>
+<td>title, content (blocks), shared_with</td>
+<td>belongs to Channel or standalone</td>
+</tr>
+<tr>
+<td>Huddle</td>
+<td>channel, participants[], screen_share, notes</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td>name, trigger, steps[], published</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>Bookmark</td>
+<td>title, url, icon</td>
+<td>belongs to Channel (pinned below header)</td>
+</tr>
+</tbody></table>
+<h3>Message Formatting (mrkdwn + Block Kit)</h3>
+<pre><code>*bold*  _italic_  ~strikethrough~  `code`  ```code block```
+&gt; blockquote
+:emoji:  @user  #channel  @here @channel @everyone
+• bulleted list    1. numbered list
+
+Block Kit (structured messages):
+  section, divider, image, context, actions (buttons, menus),
+  input, header, rich_text, video
+</code></pre>
+<h3>Presence States</h3>
+<pre><code>🟢 Active | 🟡 Away (idle &gt;10 min) | ⛔ Do Not Disturb | ⚪ Offline
++ Custom status: emoji + text + expiry (e.g., 🏖 &quot;On vacation until Friday&quot;)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Send Message</h3>
+<pre><code>Sidebar → Click channel → Type message → @mention if needed → Enter to send → Reactions appear
+</code></pre>
+<h3>Reply in Thread</h3>
+<pre><code>Hover message → &quot;Reply in thread&quot; → Thread panel opens → Type reply → Toggle &quot;Also send to #channel&quot; if needed → Send
+</code></pre>
+<h3>Start Huddle</h3>
+<pre><code>Channel header → 🎧 Huddle icon → Audio starts → Others join → Toggle video/screen share → Shared notes → Leave huddle
+</code></pre>
+<h3>Workflow (No-Code Automation)</h3>
+<pre><code>Workflow Builder → New Workflow → Trigger: &quot;Emoji reaction (✅) added&quot; → Action: &quot;Send DM to reactor&quot; + &quot;Update Google Sheet&quot; → Publish → Team uses it
+</code></pre>
+<h3>Channel Discovery</h3>
+<pre><code>Sidebar → Browse Channels → Search or scroll → Preview channel (description, member count, recent messages) → Join → Channel appears in sidebar
+</code></pre>
+<h3>Slack Connect (External)</h3>
+<pre><code>Channel Settings → Invite External → Enter partner&#39;s email → Partner accepts → Shared channel established → Cross-org messaging
+</code></pre>
+<h3>Search</h3>
+<pre><code>⌘G or Search bar → &quot;from:@alice in:#engineering has:link after:2024-01-01&quot; → Results with context → Click to jump to message in channel
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                          → Last active channel
+/client/:teamId/:channelId                → Channel view
+/client/:teamId/:channelId/thread/:ts     → Thread view
+/client/:teamId/:channelId/canvas         → Channel canvas
+/archives/:channelId                       → Channel (web view)
+/archives/:channelId/p:timestamp           → Specific message (permalink)
+/files/:teamId                             → Files browser
+/huddle/:channelId                         → Active huddle
+/app                                       → App Home
+/customize/emoji                           → Custom emoji manager
+/admin                                     → Workspace admin
+/admin/settings                            → Workspace settings
+/admin/members                             → Member management
+/admin/analytics                           → Usage analytics
+/intl/apps                                 → App Directory
+</code></pre>
+<h3>Deep Links</h3>
+<pre><code>slack://channel?team=:teamId&amp;id=:channelId          → Open channel in app
+slack://user?team=:teamId&amp;id=:userId                → Open DM in app
+https://:workspace.slack.com/archives/:channelId/p:timestamp → Message permalink
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global (⌘G)</td>
+<td>Messages, files, channels, people, apps</td>
+<td>from: (person), in: (channel), has: (link/file/reaction/pin), before:/after:/on: (date), is: (saved/thread)</td>
+<td>Relevance, Recent</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>Messages in current channel</td>
+<td>⌘F or Search in Channel</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Files</td>
+<td>All shared files</td>
+<td>Type, From, In Channel, Date</td>
+<td>Date, Size</td>
+</tr>
+<tr>
+<td>People</td>
+<td>Name, display name, email</td>
+<td>Status, Role</td>
+<td>Name</td>
+</tr>
+</tbody></table>
+<h3>Search Operators</h3>
+<pre><code>from:@alice                   → Messages from Alice
+in:#engineering               → Messages in #engineering
+has:file                      → Messages with files
+has::thumbsup:                → Messages with specific reaction
+before:2024-06-01             → Messages before date
+after:2024-01-01              → Messages after date
+&quot;exact phrase&quot;                → Exact text match
+from:me is:saved              → My saved messages
+to:me                         → DMs sent to me
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Workspace rail + sidebar + chat + thread/details panel</td>
+<td>All panels visible, resizable</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Sidebar + chat (thread as overlay)</td>
+<td>Two-panel mode</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tabs: Home, DMs, Mentions, Search, You</td>
+<td>Single-panel stack navigation</td>
+</tr>
+</tbody></table>
+<h3>Mobile App</h3>
+<ul>
+<li>Swipe right for sidebar navigation</li>
+<li>Swipe left on channel for mute/leave</li>
+<li>Long-press message for actions</li>
+<li>Voice/video clip recording (hold to record)</li>
+<li>Huddle participation</li>
+<li>Push notifications with inline reply</li>
+<li>Widgets: unread count, recent DMs</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read Public</th>
+<th>Read Private</th>
+<th>Post</th>
+<th>Manage Channels</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Single-Channel Guest</td>
+<td>One channel only</td>
+<td>If invited</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Multi-Channel Guest</td>
+<td>Invited channels</td>
+<td>If invited</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>✅</td>
+<td>If joined</td>
+<td>✅</td>
+<td>Create, archive own</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Channel Admin</td>
+<td>✅</td>
+<td>If joined</td>
+<td>✅</td>
+<td>Edit channel settings</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Workspace Admin</td>
+<td>✅</td>
+<td>✅ (audit)</td>
+<td>✅</td>
+<td>All channels</td>
+<td>Workspace settings</td>
+</tr>
+<tr>
+<td>Workspace Owner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full control, billing</td>
+</tr>
+<tr>
+<td>Org Admin (Enterprise Grid)</td>
+<td>All workspaces</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Cross-workspace policies</td>
+</tr>
+</tbody></table>
+<h3>Channel Types</h3>
+<ul>
+<li><strong>Public</strong>: Any member can find and join; messages visible to all</li>
+<li><strong>Private</strong>: Invite-only; hidden from browse; cannot be converted to public</li>
+<li><strong>Shared (Slack Connect)</strong>: Visible to members of multiple organizations</li>
+<li><strong>Read-only (Announcement)</strong>: Only specific people/apps can post</li>
+<li><strong>DM</strong>: 1:1 or group (up to 9 people)</li>
+</ul>
+<h3>Enterprise Grid</h3>
+<ul>
+<li><strong>Organization-level</strong>: Policies cascade across all workspaces</li>
+<li><strong>Channel types</strong>: Org-wide channels spanning workspaces</li>
+<li><strong>DLP</strong>: Data loss prevention policies</li>
+<li><strong>eDiscovery</strong>: Legal hold and export</li>
+<li><strong>SCIM</strong>: Automated user provisioning</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

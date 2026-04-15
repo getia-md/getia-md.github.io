@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps — IA.md | getIA.md</title>
+  <meta name="description" content="Maps & navigation. Places, reviews, Street View, transit. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=maps.google.com&sz=64" alt="Google Maps" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">Google Maps</h1>
+      <p class="detail-brand-tagline">Maps & navigation. Places, reviews, Street View, transit.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/google-maps/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/google-maps/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Google Maps — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Google Maps is the world&#39;s most-used mapping and navigation application, serving 1B+ monthly users. The mental model is <strong>the digital map of the real world</strong> — a zoomable, searchable map where every location, road, business, and transit route is indexed. The IA serves three distinct modes: <strong>Explore</strong> (discover places and businesses), <strong>Navigate</strong> (turn-by-turn driving/walking/transit directions), and <strong>Contribute</strong> (reviews, photos, local guide contributions). Google Maps also functions as a local business directory, competing with Yelp and Yellow Pages.</p>
+<h2>Site Map</h2>
+<pre><code>├── Map View (Primary)
+│   ├── Full-Screen Map (satellite, terrain, default)
+│   ├── Search Bar (&quot;Search Google Maps&quot;)
+│   ├── Current Location (GPS blue dot)
+│   ├── Zoom Controls
+│   ├── Layers (traffic, transit, cycling, satellite, terrain, COVID, wildfires)
+│   ├── Street View (drag Pegman onto map)
+│   └── 3D Buildings (in major cities)
+├── Search
+│   ├── Search Bar (addresses, businesses, categories, coordinates)
+│   ├── Autocomplete Suggestions
+│   │   ├── Places
+│   │   ├── Addresses
+│   │   ├── Businesses
+│   │   ├── Categories (&quot;coffee near me&quot;)
+│   │   └── Transit Stations
+│   ├── Search Results (sidebar or bottom sheet)
+│   │   ├── Place Cards (name, rating, type, distance, hours, photo)
+│   │   ├── Map Pins (with labels)
+│   │   └── &quot;More places&quot; (scroll)
+│   ├── Category Quick Filters (Restaurants, Gas, Coffee, Hotels, Groceries, Pharmacies)
+│   └── Recent Searches
+├── Place Detail
+│   ├── Place Header (name, type, rating, review count)
+│   ├── Actions Row (Directions, Save, Share, Call, Website)
+│   ├── Key Info
+│   │   ├── Address
+│   │   ├── Hours (open/closed status, hours per day)
+│   │   ├── Phone Number
+│   │   ├── Website
+│   │   ├── Price Level ($-$$$$)
+│   │   └── Service Options (dine-in, takeout, delivery)
+│   ├── Photos (user-submitted + Google)
+│   ├── Reviews
+│   │   ├── Overall Rating (stars + count)
+│   │   ├── AI Review Summary
+│   │   ├── Review Highlights (frequent topics)
+│   │   ├── Sort (most relevant, newest, highest, lowest)
+│   │   └── Individual Reviews (photo, text, date, helpful)
+│   ├── Popular Times (bar chart, per hour)
+│   ├── Menu (for restaurants, scraped or manual)
+│   ├── Questions &amp; Answers
+│   ├── About (description, attributes)
+│   ├── Related Places (&quot;People also search for&quot;)
+│   └── Reviews from the Web
+├── Directions / Navigation
+│   ├── Input Panel
+│   │   ├── Origin (current location or custom)
+│   │   ├── Destination
+│   │   ├── Add Stop (multi-waypoint)
+│   │   └── Swap Origin/Destination
+│   ├── Mode Tabs
+│   │   ├── Driving (car icon)
+│   │   ├── Transit (bus/train icon)
+│   │   ├── Walking
+│   │   ├── Cycling
+│   │   └── Ride Service (Uber/Lyft integration)
+│   ├── Route Options
+│   │   ├── Multiple Route Alternatives (with times)
+│   │   ├── Avoid (highways, tolls, ferries)
+│   │   ├── Units (km/miles)
+│   │   └── Depart At / Arrive By (transit scheduling)
+│   ├── Route Detail
+│   │   ├── Step-by-Step Directions
+│   │   ├── Time + Distance
+│   │   ├── Traffic Conditions (green/yellow/red)
+│   │   ├── Tolls Estimate
+│   │   └── Fuel / EV Charging Stops
+│   ├── Transit Detail
+│   │   ├── Route Options (bus, subway, rail combinations)
+│   │   ├── Departure Times (real-time)
+│   │   ├── Walking Segments
+│   │   ├── Transfer Points
+│   │   └── Fare Estimate
+│   └── Turn-by-Turn Navigation (full screen)
+│       ├── Map with Route Highlighted
+│       ├── Next Maneuver (arrow + distance)
+│       ├── Lane Guidance
+│       ├── Speed Limit
+│       ├── Voice Navigation
+│       ├── Incident Reports (accidents, road closures)
+│       ├── ETA (updates with traffic)
+│       ├── Music Controls (Spotify, Apple Music)
+│       ├── Search Along Route
+│       └── Share ETA
+├── Explore Tab (Mobile)
+│   ├── Category Buttons (Restaurants, Coffee, Attractions, Gas, Hotels)
+│   ├── Trending Near You
+│   ├── Recommendations (&quot;Because you visited...&quot;)
+│   ├── Local Guides Picks
+│   ├── Lists (curated: &quot;Best Pizza in NYC&quot;)
+│   └── Events Nearby
+├── Saved
+│   ├── Lists
+│   │   ├── Favorites (starred)
+│   │   ├── Want to Go (flagged)
+│   │   ├── Starred Places
+│   │   ├── Custom Lists (create your own)
+│   │   └── Followed Lists (from other users)
+│   ├── Saved Routes
+│   ├── Labeled Places (Home, Work, custom)
+│   └── Visited (timeline-based)
+├── Contribute
+│   ├── Add a Place
+│   ├── Add a Review
+│   ├── Add Photos
+│   ├── Answer Questions
+│   ├── Edit Place Info (suggest edit)
+│   ├── Report a Problem (road, place)
+│   └── Local Guide Program
+│       ├── Points System
+│       ├── Level (1-10)
+│       ├── Badges
+│       └── Perks (early access, Google One storage)
+├── Your Timeline
+│   ├── Location History (day by day)
+│   ├── Visited Places (auto-detected)
+│   ├── Routes Taken
+│   ├── Photos Linked to Location
+│   └── Export / Delete History
+├── Settings
+│   ├── Navigation Settings (voice, route preferences)
+│   ├── Map Type (default, satellite, terrain)
+│   ├── Location Settings (history, sharing)
+│   ├── Notifications
+│   ├── Distance Units
+│   ├── Offline Maps (download regions)
+│   └── Accessibility
+└── Offline Maps
+    ├── Download Region
+    ├── Manage Downloads
+    └── Auto-Update Settings
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Map Canvas</strong></td>
+<td>Full-screen interactive map</td>
+<td>Pinch-zoom, pan, tap place pins</td>
+</tr>
+<tr>
+<td><strong>Search Bar</strong></td>
+<td>Top of screen (always accessible)</td>
+<td>Search → results → place detail</td>
+</tr>
+<tr>
+<td><strong>Bottom Sheet</strong></td>
+<td>Draggable (mobile)</td>
+<td>Collapsed: explore chips. Half: search results. Full: place detail</td>
+</tr>
+<tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs (mobile)</td>
+<td>Explore, Go (directions), Saved, Contribute, Updates</td>
+</tr>
+<tr>
+<td><strong>Directions Panel</strong></td>
+<td>Top overlay on map</td>
+<td>Origin/destination + mode tabs</td>
+</tr>
+<tr>
+<td><strong>Navigation Mode</strong></td>
+<td>Full-screen takeover</td>
+<td>Turn-by-turn with voice, minimizes other UI</td>
+</tr>
+<tr>
+<td><strong>Layer Selector</strong></td>
+<td>Map icon button</td>
+<td>Traffic, transit, cycling, satellite overlays</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Place</td>
+<td>place_id, name, type (restaurant/store/park/etc), address, coordinates, phone, website, hours[], rating, review_count, price_level, photos[], attributes[]</td>
+<td>has Reviews, Photos, Q&amp;A</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>author, rating (1-5), text, photos[], date, helpful_count, owner_response</td>
+<td>belongs to Place</td>
+</tr>
+<tr>
+<td>Route</td>
+<td>origin, destination, waypoints[], mode (driving/transit/walking/cycling), distance, duration, steps[], traffic_conditions, polyline</td>
+<td>computed entity</td>
+</tr>
+<tr>
+<td>TransitRoute</td>
+<td>segments[] (walk, bus, subway), departure_times[], fares, transfers</td>
+<td>type of Route</td>
+</tr>
+<tr>
+<td>NavigationStep</td>
+<td>instruction, distance, duration, maneuver, road_name</td>
+<td>belongs to Route</td>
+</tr>
+<tr>
+<td>SavedPlace</td>
+<td>place, list, label, starred</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>LocalGuideProfile</td>
+<td>level, points, reviews_count, photos_count, badges[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>OfflineMap</td>
+<td>region, download_date, size_mb, expires</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Timeline</td>
+<td>date, places_visited[], routes[], photos[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>BusinessProfile</td>
+<td>place, owner_verified, posts[], offers[], messaging_enabled</td>
+<td>managed by business owner</td>
+</tr>
+</tbody></table>
+<h3>Place Types (simplified)</h3>
+<pre><code>food_and_drink | shopping | services | entertainment | lodging | outdoor | transit | health | education | government
+</code></pre>
+<h2>User Flows</h2>
+<h3>Find a Coffee Shop</h3>
+<pre><code>Open Maps → &quot;coffee near me&quot; → See Pins on Map + List in Bottom Sheet → Filter: Open Now + 4★+ → Tap &quot;Blue Bottle Coffee&quot; → See Rating, Hours, Photos → [Directions] → 5 min walk → Start Navigation
+</code></pre>
+<h3>Navigate by Car</h3>
+<pre><code>Search &quot;SFO Airport&quot; → [Directions] → Driving Tab → See 3 Routes (35 min, 42 min, 45 min) → Select Fastest → [Start] → Turn-by-Turn Voice Navigation → Arrive → &quot;How was your trip?&quot;
+</code></pre>
+<h3>Transit Directions</h3>
+<pre><code>[Go] → Enter Destination → Transit Tab → See Options (Bus 22 → BART → Bus 48: 55 min) → Tap for Detail → See Walking + Transit Segments → Departure in 12 min → [Start]
+</code></pre>
+<h3>Contribute a Review</h3>
+<pre><code>Visit Restaurant → Place Detail → [Write a Review] → Rate 4★ → Write Text → Add Photos → Submit → Earn Local Guide Points
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/maps                          → Map View
+/maps/search/:query            → Search Results
+/maps/place/:place_id          → Place Detail
+/maps/place/:place_id/reviews  → Place Reviews
+/maps/place/:place_id/photos   → Place Photos
+/maps/dir/:origin/:destination → Directions
+/maps/@:lat,:lng,:zoom         → Map at Coordinates
+/maps/timeline                 → Your Timeline
+/maps/saved                    → Saved Places &amp; Lists
+/maps/contrib                  → Contribute
+/maps/embed                    → Embed API
+/maps/offline                  → Offline Maps
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Places</td>
+<td>Place name, address, category, &quot;near me&quot;</td>
+<td>Open Now, Rating, Price Level, Distance, Type, Features (outdoor seating, delivery)</td>
+<td>Relevance, Distance, Rating</td>
+</tr>
+<tr>
+<td>Directions</td>
+<td>Addresses, places</td>
+<td>Mode (driving/transit/walk/cycle), Avoid (tolls/highways/ferries), Depart/Arrive time</td>
+<td>Fastest, Shortest, Fewest Transfers</td>
+</tr>
+<tr>
+<td>Reviews</td>
+<td>Review text</td>
+<td>Rating, Language, Date, Photos Only</td>
+<td>Most Relevant, Newest, Highest, Lowest</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Map</th>
+<th>Search</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Full-screen, bottom sheet for content</td>
+<td>Full-screen search overlay</td>
+<td>Full-screen turn-by-turn</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Full map, wider bottom sheet</td>
+<td>Side panel</td>
+<td>Split (map + directions)</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Map + left sidebar panel</td>
+<td>Sidebar results</td>
+<td>Sidebar step-by-step</td>
+</tr>
+</tbody></table>
+<h3>Maps-Specific UX</h3>
+<ul>
+<li>Map is always the primary surface — everything overlays on it</li>
+<li>Long-press to drop a pin anywhere</li>
+<li>Street View immersive 360-degree experience</li>
+<li>Live traffic overlay with color-coded roads</li>
+<li>Indoor maps for malls, airports, transit stations</li>
+<li>AR walking navigation (&quot;Live View&quot; — camera + AR arrows)</li>
+<li>Offline maps for areas without connectivity</li>
+<li>Voice search and voice navigation</li>
+<li>Integration with car displays (Android Auto, CarPlay)</li>
+<li>Real-time transit tracking where available</li>
+<li>ETA sharing with contacts</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Anonymous</th>
+<th>Signed In</th>
+<th>Local Guide (Level 5+)</th>
+<th>Business Owner</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>View Map</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Navigate</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Save Places</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Write Reviews</td>
+<td>—</td>
+<td>✅</td>
+<td>✅ (priority display)</td>
+<td>Respond to reviews</td>
+</tr>
+<tr>
+<td>Add Photos</td>
+<td>—</td>
+<td>✅</td>
+<td>✅ (priority display)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Edit Place Info</td>
+<td>—</td>
+<td>✅ (suggest)</td>
+<td>✅ (trusted edits)</td>
+<td>✅ (own listing)</td>
+</tr>
+<tr>
+<td>Timeline</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Offline Maps</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

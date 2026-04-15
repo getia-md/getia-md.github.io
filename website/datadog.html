@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datadog — IA.md | getIA.md</title>
+  <meta name="description" content="Infrastructure monitoring. Metrics, traces, logs unified. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=datadoghq.com&sz=64" alt="Datadog" onerror="this.parentElement.textContent='D'">
+      </div>
+      <h1 class="detail-brand-name">Datadog</h1>
+      <p class="detail-brand-tagline">Infrastructure monitoring. Metrics, traces, logs unified.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/datadog/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://datadoghq.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/datadog/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Datadog — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Datadog is an enterprise-grade observability and security platform that unifies infrastructure monitoring, application performance monitoring (APM), log management, real user monitoring (RUM), synthetic testing, and cloud security into a single dashboard. The mental model is <strong>unified observability</strong> — every metric, trace, log, and event is correlated and queryable from one platform. Datadog differentiates through its breadth (600+ integrations), deep correlation (click from a metric chart to related traces and logs), and Infrastructure Map (visual topology of your entire stack). It serves SRE, DevOps, and security teams at scale.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home (Getting Started / Recent)
+│   ├── Recent Dashboards
+│   ├── Recent Monitors
+│   ├── What&#39;s New
+│   └── Onboarding Checklist
+├── Infrastructure
+│   ├── Host Map (visual grid — hosts colored by metric)
+│   ├── Host List (table: CPU, memory, load, status)
+│   ├── Container Map
+│   ├── Containers (list + metrics)
+│   ├── Processes (live process monitoring)
+│   ├── Serverless
+│   │   ├── Functions List
+│   │   ├── Function Detail (invocations, duration, errors)
+│   │   └── Cold Starts
+│   ├── Network
+│   │   ├── Network Map (flow topology)
+│   │   ├── Network Overview
+│   │   └── DNS Monitoring
+│   ├── Cloud Cost Management
+│   │   ├── Cost Summary
+│   │   ├── Cost by Service / Tag
+│   │   └── Recommendations
+│   └── Resource Catalog
+├── APM (Application Performance Monitoring)
+│   ├── Service Catalog
+│   │   ├── Service List (name, type, owner, SLOs)
+│   │   ├── Service Detail
+│   │   │   ├── Overview (requests, errors, latency)
+│   │   │   ├── Dependencies (service map)
+│   │   │   ├── Endpoints / Resources
+│   │   │   ├── Errors
+│   │   │   ├── Deployments
+│   │   │   └── SLOs
+│   │   └── Service Map (DAG of service dependencies)
+│   ├── Traces
+│   │   ├── Trace Search (filterable trace list)
+│   │   ├── Trace Detail
+│   │   │   ├── Flame Graph (span waterfall)
+│   │   │   ├── Span List
+│   │   │   ├── Span Detail (tags, metadata)
+│   │   │   ├── Related Logs (correlated)
+│   │   │   ├── Related Infrastructure (host, container)
+│   │   │   └── Error Details
+│   │   └── Live Search
+│   ├── Analytics (trace-level aggregations)
+│   ├── Continuous Profiler
+│   │   ├── Profile List (by service)
+│   │   ├── Flame Graph (CPU, memory, I/O)
+│   │   └── Code Hotspots
+│   ├── Database Monitoring
+│   │   ├── Query Metrics (top queries by duration, calls)
+│   │   ├── Query Samples (individual executions)
+│   │   ├── Explain Plans
+│   │   └── Waiting Queries
+│   ├── Data Streams Monitoring
+│   │   ├── Pipeline View (Kafka, RabbitMQ, SQS)
+│   │   ├── End-to-End Latency
+│   │   └── Consumer Lag
+│   └── Universal Service Monitoring (auto-discovered services)
+├── Logs
+│   ├── Log Explorer
+│   │   ├── Search Bar (query syntax)
+│   │   ├── Facets Panel (left sidebar: status, service, source)
+│   │   ├── Timeline (log volume histogram)
+│   │   ├── Log List (table view)
+│   │   ├── Log Detail (expanded view)
+│   │   │   ├── Message, Attributes, Tags
+│   │   │   ├── Related Traces (correlated via trace_id)
+│   │   │   ├── Related Infrastructure
+│   │   │   └── Context (surrounding logs)
+│   │   ├── Patterns (auto-grouped similar logs)
+│   │   ├── Transactions (multi-step log sequences)
+│   │   └── Saved Views
+│   ├── Pipelines (log processing rules)
+│   │   ├── Pipeline List
+│   │   ├── Processors (grok parser, remapper, category, etc.)
+│   │   └── Pipeline Order
+│   ├── Indexes (retention tiers)
+│   ├── Archives (S3, GCS long-term storage)
+│   ├── Metrics (generate metrics from logs)
+│   ├── Forwarding (route logs to other destinations)
+│   └── Configuration
+│       ├── Exclusion Filters
+│       ├── Sensitive Data Scanner
+│       └── Reference Tables (enrichment)
+├── RUM (Real User Monitoring)
+│   ├── Application List
+│   ├── Explorer
+│   │   ├── Views (page loads)
+│   │   ├── Actions (user clicks)
+│   │   ├── Resources (XHR, images, scripts)
+│   │   ├── Errors (frontend errors)
+│   │   ├── Long Tasks
+│   │   └── Frustration Signals (rage clicks, error clicks)
+│   ├── Performance Summary (Web Vitals)
+│   ├── Session Replay
+│   │   ├── Replay List
+│   │   ├── Replay Player (DOM recording)
+│   │   └── Dev Tools Panel (console, network, errors)
+│   └── Analytics (custom RUM queries)
+├── Synthetics (Synthetic Monitoring)
+│   ├── API Tests
+│   │   ├── HTTP, SSL, DNS, TCP, gRPC, WebSocket, multi-step
+│   │   └── Test Results (uptime, response time, assertions)
+│   ├── Browser Tests
+│   │   ├── Recorded Steps (click, type, assert)
+│   │   ├── Screenshots per Step
+│   │   └── CI/CD Integration
+│   ├── Private Locations (test from internal network)
+│   └── Settings (global variables, locations)
+├── Monitors (Alerting)
+│   ├── Manage Monitors (list, search, bulk actions)
+│   ├── Monitor Detail
+│   │   ├── Status (OK, WARN, ALERT, NO DATA)
+│   │   ├── History (status over time)
+│   │   ├── Events (triggers)
+│   │   └── Mute / Downtime
+│   ├── Create Monitor
+│   │   ├── Monitor Type (metric, APM, log, composite, SLO, forecast, anomaly, outlier)
+│   │   ├── Query Builder
+│   │   ├── Conditions (threshold, anomaly detection)
+│   │   ├── Notifications (Slack, PagerDuty, email, webhook)
+│   │   └── Tags / Priority
+│   ├── Triggered Monitors
+│   ├── Downtimes (scheduled mutes)
+│   └── Monitor Summary (health overview)
+├── SLOs (Service Level Objectives)
+│   ├── SLO List
+│   ├── SLO Detail
+│   │   ├── Status (budget remaining)
+│   │   ├── History
+│   │   └── Error Budget
+│   └── Create SLO (metric-based or monitor-based)
+├── Dashboards
+│   ├── Dashboard List (my, shared, preset)
+│   ├── Dashboard Detail
+│   │   ├── Widgets (drag-and-drop grid)
+│   │   │   ├── Timeseries, Query Value, Top List, Table
+│   │   │   ├── Heatmap, Distribution, Change, Scatter
+│   │   │   ├── Hostmap, Service Map, Topology Map
+│   │   │   ├── Log Stream, Event Stream, Alert Graph
+│   │   │   ├── SLO Summary, Check Status
+│   │   │   └── Free Text, Image, Iframe, Group
+│   │   ├── Template Variables (dropdown filters)
+│   │   ├── Time Selector (global)
+│   │   └── TV Mode (full-screen rotation)
+│   ├── Create Dashboard (screenboard or timeboard)
+│   └── Dashboard Templates (prebuilt for integrations)
+├── Notebooks (Collaborative Investigation)
+│   ├── Notebook List
+│   ├── Notebook (cells: text, graph, log stream)
+│   └── Incident Notebooks (linked to incidents)
+├── Events
+│   ├── Event Stream (deployments, alerts, integrations)
+│   └── Event Explorer (filterable)
+├── Incidents
+│   ├── Incident List
+│   ├── Incident Detail
+│   │   ├── Timeline
+│   │   ├── Responders
+│   │   ├── Related Dashboards / Monitors
+│   │   ├── Notifications
+│   │   └── Postmortem
+│   ├── Declare Incident
+│   └── Incident Settings (severities, integrations)
+├── Workflow Automation
+│   ├── Workflow List
+│   ├── Workflow Builder (trigger → steps)
+│   └── Blueprints (templates)
+├── Security
+│   ├── Cloud Security Management
+│   │   ├── Misconfigurations (CIS benchmarks)
+│   │   ├── Identity Risks
+│   │   ├── Vulnerabilities (container images)
+│   │   └── Compliance (frameworks)
+│   ├── Application Security
+│   │   ├── Threats (WAF detections)
+│   │   ├── Vulnerabilities (code-level)
+│   │   └── Protection (rules)
+│   ├── Cloud SIEM
+│   │   ├── Security Signals (detections)
+│   │   ├── Detection Rules
+│   │   ├── Investigator
+│   │   └── Log-based Signals
+│   └── Cloud Workload Security
+├── Integrations
+│   ├── Integration Tiles (600+ — AWS, GCP, Azure, K8s, Docker, etc.)
+│   ├── Agent (host-based collector)
+│   ├── API Keys
+│   └── Marketplace (partner integrations)
+├── Usage &amp; Billing
+│   ├── Usage (hosts, custom metrics, logs ingested, APM hosts, synthetics)
+│   ├── Estimated Usage
+│   ├── Plan
+│   └── Invoices
+├── Settings (Organization)
+│   ├── Organization (name, SSO, SAML)
+│   ├── Teams
+│   ├── Users (members, roles)
+│   ├── API Keys / Application Keys
+│   ├── Access Control (RBAC)
+│   ├── Audit Trail
+│   ├── Security (IP allowlisting, login methods)
+│   └── Agent Metrics
+└── Docs (docs.datadoghq.com)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible, hierarchical</td>
+<td>Infrastructure, APM, Logs, RUM, Synthetics, Monitors, SLOs, Dashboards, Notebooks, Events, Incidents, Security, Settings — each expandable</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Search (⌘K), time selector (global), live/paused toggle, site selector, notifications, user menu</td>
+</tr>
+<tr>
+<td><strong>Time Selector</strong></td>
+<td>Global (top bar)</td>
+<td>Presets (15m, 1h, 4h, 1d, 7d, custom) + time zone, affects all widgets</td>
+</tr>
+<tr>
+<td><strong>Template Variables</strong></td>
+<td>Dashboard-level dropdowns</td>
+<td>Dynamic filtering by service, env, host, region</td>
+</tr>
+<tr>
+<td><strong>Correlation Links</strong></td>
+<td>Inline throughout</td>
+<td>&quot;View Related Traces&quot;, &quot;View Related Logs&quot;, &quot;View Host&quot; — click-through correlation</td>
+</tr>
+<tr>
+<td><strong>Context Panels</strong></td>
+<td>Slide-out from right</td>
+<td>Quick view of host, container, service details without leaving current page</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Organization ▾]
+───────────────
+🖥 Infrastructure
+  Hosts | Containers | Processes | Serverless | Network
+📊 APM
+  Service Catalog | Traces | Profiler | DB Monitoring
+📋 Logs
+  Explorer | Pipelines | Indexes
+👤 RUM
+  Explorer | Session Replay
+🤖 Synthetics
+  API Tests | Browser Tests
+───────────────
+🔔 Monitors
+📊 SLOs
+📈 Dashboards
+📓 Notebooks
+📡 Events
+🚨 Incidents
+───────────────
+🛡 Security
+🔌 Integrations
+⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host</td>
+<td>hostname, os, ips[], tags{}, apps[], cpu, memory, load, status</td>
+<td>has Containers, Processes</td>
+</tr>
+<tr>
+<td>Container</td>
+<td>id, name, image, host, cpu, memory, status, tags{}</td>
+<td>belongs to Host</td>
+</tr>
+<tr>
+<td>Service</td>
+<td>name, type (web/db/cache/custom), env, version, owners[], slos[]</td>
+<td>has Traces, Endpoints, Dependencies</td>
+</tr>
+<tr>
+<td>Trace</td>
+<td>trace_id, service, resource, duration, status, spans[]</td>
+<td>belongs to Service</td>
+</tr>
+<tr>
+<td>Span</td>
+<td>span_id, service, name, type, duration, error, meta{}, metrics{}</td>
+<td>belongs to Trace</td>
+</tr>
+<tr>
+<td>LogEvent</td>
+<td>timestamp, status, service, source, message, attributes{}, tags{}</td>
+<td>belongs to Index</td>
+</tr>
+<tr>
+<td>Metric</td>
+<td>name, type (gauge/rate/count/distribution), tags{}, interval</td>
+<td>belongs to Host/Service</td>
+</tr>
+<tr>
+<td>Monitor</td>
+<td>id, name, type, query, status (OK/WARN/ALERT/NO DATA), groups[], notified[], muted</td>
+<td>global</td>
+</tr>
+<tr>
+<td>SLO</td>
+<td>id, name, type (metric/monitor), target_threshold, timeframe, status, error_budget</td>
+<td>belongs to Service</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>id, title, layout_type (ordered/free), widgets[], template_variables[]</td>
+<td>global</td>
+</tr>
+<tr>
+<td>Widget</td>
+<td>type, query, display{}, position, size</td>
+<td>belongs to Dashboard</td>
+</tr>
+<tr>
+<td>SyntheticTest</td>
+<td>name, type (api/browser), status, locations[], uptime, response_time</td>
+<td>global</td>
+</tr>
+<tr>
+<td>Incident</td>
+<td>id, title, severity, status, timeline[], responders[], related_monitors[]</td>
+<td>global</td>
+</tr>
+<tr>
+<td>SecuritySignal</td>
+<td>id, rule, severity, status, attributes{}, triage</td>
+<td>belongs to Security Rule</td>
+</tr>
+</tbody></table>
+<h3>Monitor States</h3>
+<pre><code>OK → WARN → ALERT → NO DATA
+          ↘ OK (recovery)
+</code></pre>
+<h3>Incident Lifecycle</h3>
+<pre><code>detected → declared → triaged → mitigating → resolved → completed (postmortem)
+SEV-1 (critical) | SEV-2 (major) | SEV-3 (minor) | SEV-4 (low)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Investigate Latency Spike</h3>
+<pre><code>Dashboard → See latency spike on service graph → Click to APM → Service Detail → Top slow endpoints → Click endpoint → Trace Search → View Flame Graph → Identify slow span (DB query) → Click &quot;View Related Logs&quot; → Find error log → Open Database Monitoring → See slow query → Fix
+</code></pre>
+<h3>Correlate Across Signals</h3>
+<pre><code>Monitor Alert (error rate &gt; 5%) → Open Monitor → See related traces → View Trace → Flame graph shows failing span → Click span → View Related Logs → See error message → Click host → Infrastructure page → See CPU spike → Root cause identified
+</code></pre>
+<h3>Log Investigation</h3>
+<pre><code>Logs → Explorer → Search: status:error service:payments → Timeline shows spike → Click spike → Filter by time range → Expand log entry → View attributes → Click trace_id → Jump to APM Trace → Full request context
+</code></pre>
+<h3>Set Up SLO</h3>
+<pre><code>SLOs → Create SLO → Type: Metric-based → Query: requests with 2xx / total requests → Target: 99.9% over 30 days → Alert when error budget &lt; 20% → Notify Slack → Add to dashboard
+</code></pre>
+<h3>Synthetic Test</h3>
+<pre><code>Synthetics → Create API Test → URL: GET https://api.example.com/health → Assertions: status=200, body contains &quot;ok&quot;, response &lt; 500ms → Locations: US, EU, APAC → Frequency: 1 min → Alert on failure → View results
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                          → Home
+/infrastructure/map                        → Host Map
+/infrastructure/list                       → Host List
+/containers                                → Container List
+/process                                   → Processes
+/functions                                 → Serverless
+/network/map                               → Network Map
+/apm/services                              → Service Catalog
+/apm/services/:service                     → Service Detail
+/apm/service-map                           → Service Map
+/apm/traces                                → Trace Search
+/apm/traces/:traceId                       → Trace Detail
+/apm/profile/:service                      → Continuous Profiler
+/apm/database                              → Database Monitoring
+/logs                                      → Log Explorer
+/logs/pipelines                            → Log Pipelines
+/logs/indexes                              → Log Indexes
+/rum/explorer                              → RUM Explorer
+/rum/sessions/replay/:id                   → Session Replay
+/synthetics/tests                          → Synthetic Tests
+/synthetics/tests/:id                      → Test Detail
+/monitors/manage                           → Monitor List
+/monitors/:id                              → Monitor Detail
+/monitors/create                           → Create Monitor
+/slo/manage                                → SLO List
+/slo/:id                                   → SLO Detail
+/dashboard/lists                           → Dashboard List
+/dashboard/:id                             → Dashboard
+/notebooks/list                            → Notebooks
+/notebooks/:id                             → Notebook
+/event/stream                              → Event Stream
+/incidents                                 → Incident List
+/incidents/:id                             → Incident Detail
+/security/overview                         → Security Overview
+/security/csm                              → Cloud Security
+/security/application                      → App Security
+/security/siem                             → Cloud SIEM
+/account/settings                          → Org Settings
+/account/billing                           → Billing
+/account/team                              → Team Members
+/account/api-app-keys                      → API/App Keys
+/integrations                              → Integration Tiles
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global (⌘K)</td>
+<td>Dashboards, monitors, hosts, services, docs</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Logs</td>
+<td>Log message, attributes, tags</td>
+<td>Status, Service, Source, Host, Tags, Custom Facets, Date Range</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>Traces</td>
+<td>Service, resource, tags</td>
+<td>Service, Env, Status, Duration Range, Tags</td>
+<td>Duration, Timestamp</td>
+</tr>
+<tr>
+<td>Hosts</td>
+<td>Hostname, tags</td>
+<td>OS, Availability Zone, Instance Type, Custom Tags</td>
+<td>CPU, Memory, Load</td>
+</tr>
+<tr>
+<td>Monitors</td>
+<td>Monitor name, query, tags</td>
+<td>Status, Type, Tag, Priority</td>
+<td>Name, Status, Created</td>
+</tr>
+<tr>
+<td>Services</td>
+<td>Service name, tags</td>
+<td>Type, Env, SLO Status</td>
+<td>Requests, Error Rate, Latency</td>
+</tr>
+</tbody></table>
+<h3>Query Syntax (Logs/APM)</h3>
+<pre><code>service:web-app status:error @http.status_code:500 @duration:&gt;1s
+env:production host:web-01 source:nginx
+service:payments -status:info @error.kind:TimeoutError
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Dashboards</th>
+<th>Logs</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1440px)</td>
+<td>Expanded, hierarchical</td>
+<td>Full widget grid, drag-and-drop</td>
+<td>Full explorer with facets sidebar</td>
+</tr>
+<tr>
+<td>Desktop (1024-1439px)</td>
+<td>Collapsed (icons)</td>
+<td>Reduced grid</td>
+<td>Facets collapsible</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>Hidden (hamburger)</td>
+<td>Stacked widgets</td>
+<td>Simplified explorer</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger</td>
+<td>Limited (Datadog mobile app preferred)</td>
+<td>Basic log view</td>
+</tr>
+</tbody></table>
+<h3>Datadog-Specific UX</h3>
+<ul>
+<li><strong>Host Map</strong>: visual grid where each rectangle is a host, colored by metric (CPU, memory) — hover for details</li>
+<li><strong>Service Map</strong>: DAG of service dependencies with live metrics on edges</li>
+<li><strong>Flame Graph</strong>: trace visualization showing span timing and nesting</li>
+<li><strong>Correlated data</strong>: click any metric/log/trace to see related signals across all products</li>
+<li><strong>Template Variables</strong>: dashboard-level dropdown filters that dynamically scope all widgets</li>
+<li><strong>TV Mode</strong>: full-screen dashboard rotation for NOC/SRE screens</li>
+<li><strong>Notebooks</strong>: collaborative runbooks mixing text, graphs, and log streams (like Jupyter for observability)</li>
+<li><strong>600+ integrations</strong>: one-click setup with auto-generated dashboards</li>
+<li><strong>Query autocomplete</strong>: tag and facet suggestions while typing</li>
+<li><strong>Dark mode</strong> (essential for NOC screens)</li>
+<li><strong>Live Tail</strong>: real-time log streaming (like <code>tail -f</code>)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboards</th>
+<th>Monitors</th>
+<th>APM</th>
+<th>Logs</th>
+<th>Infrastructure</th>
+<th>Security</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Read-Only</td>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>Query</td>
+<td>View</td>
+<td>View</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD + Config</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Custom (RBAC)</td>
+<td>Granular per resource</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody></table>
+<h3>Enterprise Security</h3>
+<ul>
+<li>SAML/SSO with multiple IdP support</li>
+<li>RBAC with custom roles and granular permissions</li>
+<li>Audit trail for all admin actions</li>
+<li>Log-based access controls (restrict log visibility by team/service)</li>
+<li>Data retention controls per index</li>
+<li>PCI/SOC2/HIPAA compliance modes</li>
+<li>Multi-org management for enterprises</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duolingo — IA.md | getIA.md</title>
+  <meta name="description" content="Language learning. Gamified lessons, streaks, leaderboards. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=duolingo.com&sz=64" alt="Duolingo" onerror="this.parentElement.textContent='D'">
+      </div>
+      <h1 class="detail-brand-name">Duolingo</h1>
+      <p class="detail-brand-tagline">Language learning. Gamified lessons, streaks, leaderboards.</p>
+      <span class="detail-category-badge">Education</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/duolingo/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://duolingo.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/duolingo/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Duolingo — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Duolingo is the world&#39;s most popular language learning app, teaching 40+ languages to 500M+ users through gamification. The mental model is <strong>daily practice as a game</strong> — short lessons (5 minutes), XP points, streaks, hearts (lives), leaderboards, and a progression tree. Duo the Owl mascot drives engagement through encouragement and guilt (&quot;You made Duo sad&quot;). Unlike Coursera&#39;s academic structure, Duolingo optimizes for daily habit formation and bite-sized learning.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Learn
+│   ├── Path (Progressive Skill Tree)
+│   │   ├── Units (grouped by theme)
+│   │   │   ├── Lessons (5-7 per unit)
+│   │   │   │   ├── Lesson Nodes (circles on path)
+│   │   │   │   ├── Locked / Unlocked / Completed / Legendary
+│   │   │   │   └── Cracks (need to practice to prevent decay)
+│   │   │   ├── Unit Header (theme: &quot;Family&quot;, &quot;Restaurant&quot;, &quot;Travel&quot;)
+│   │   │   └── Checkpoint (unit review test)
+│   │   └── Legendary Level (hardest difficulty, premium or gems)
+│   ├── Daily Quest / Goal
+│   ├── Streak Counter (flame icon, prominent)
+│   ├── Hearts (lives remaining, free tier)
+│   ├── XP Progress (daily target)
+│   ├── Streak Freeze Status
+│   └── Friend Activity (&quot;Maria completed a lesson!&quot;)
+├── Lesson View (In-Lesson)
+│   ├── Progress Bar (top, fills as you answer)
+│   ├── Exercise Types
+│   │   ├── Translate (L2 → L1 or L1 → L2)
+│   │   ├── Tap Words (arrange word tiles)
+│   │   ├── Type Answer (free text)
+│   │   ├── Listen &amp; Type (audio → text)
+│   │   ├── Speak (speech recognition)
+│   │   ├── Match Pairs (tap matching pairs)
+│   │   ├── Select Image (which picture matches?)
+│   │   └── Fill in the Blank
+│   ├── Feedback (correct = green, wrong = red + explanation)
+│   ├── Hearts Lost (wrong answer = lose a heart)
+│   ├── Combo Counter (consecutive correct)
+│   ├── Tips / Hints (tap word for translation)
+│   └── Lesson Complete
+│       ├── XP Earned
+│       ├── Accuracy %
+│       ├── Streak Extended!
+│       └── Share / Continue
+├── Streak
+│   ├── Current Streak (days)
+│   ├── Streak Calendar (filled circles)
+│   ├── Streak Freeze (protect streak for 1 day)
+│   ├── Streak Society (milestone badges: 7, 30, 100, 365)
+│   └── Friend Streak Comparison
+├── Leaderboards
+│   ├── Leagues (Bronze → Silver → Gold → Sapphire → Ruby → ... → Diamond)
+│   ├── Weekly League (30 users)
+│   ├── XP Rankings
+│   ├── Promotion / Demotion Zones
+│   └── History
+├── Profile
+│   ├── Stats (total XP, streak, courses, time spent)
+│   ├── Achievements (badges gallery)
+│   ├── Friends
+│   │   ├── Friend List
+│   │   ├── Add Friends (search, contacts, social)
+│   │   ├── Follow / Unfollow
+│   │   └── Friend XP Rankings
+│   ├── Courses (languages being learned)
+│   └── Edit Profile (name, avatar, username)
+├── Practice
+│   ├── Review (weak skills — spaced repetition)
+│   ├── Practice Hub (stories, listening, speaking)
+│   ├── Mistakes Practice (redo errors)
+│   └── Timed Practice (challenge mode)
+├── Stories (Intermediate)
+│   ├── Story List (by difficulty)
+│   ├── Story View
+│   │   ├── Narrative (illustrated, animated)
+│   │   ├── Interactive Questions (inline)
+│   │   ├── Character Voices
+│   │   └── Comprehension Check
+│   └── XP from Stories
+├── Podcasts
+│   ├── Episodes (real stories in target language)
+│   ├── Transcript (L1 + L2)
+│   └── Comprehension Questions
+├── Duolingo Max (Premium AI)
+│   ├── Explain My Answer (AI tutor explains mistakes)
+│   ├── Roleplay (AI conversation practice)
+│   ├── Video Call (AI character chat)
+│   └── Unlimited Hearts
+├── Shop
+│   ├── Gems (virtual currency)
+│   ├── Streak Freezes (200 gems)
+│   ├── Heart Refill (350 gems)
+│   ├── Outfits for Duo (cosmetic)
+│   ├── Timer Boost
+│   └── Legendary Level Unlock
+├── Courses
+│   ├── Switch Language
+│   ├── Available Languages (40+)
+│   ├── Course Progress
+│   └── Reset Progress
+├── Settings
+│   ├── Daily Goal (5/10/15/20 min)
+│   ├── Reminder Time (push notification)
+│   ├── Sound Effects
+│   ├── Speaking Exercises (on/off)
+│   ├── Motivational Messages
+│   ├── Account
+│   └── Privacy
+├── Super Duolingo (Subscription)
+│   ├── Unlimited Hearts
+│   ├── No Ads
+│   ├── Mistake Practice
+│   ├── Legendary Levels (unlimited)
+│   ├── Progress Quizzes
+│   └── Family Plan (up to 6)
+└── Help
+    ├── FAQ
+    ├── Bug Report
+    └── Community Forum
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs</td>
+<td>Learn (path), Practice, Leaderboards, Profile, Shop</td>
+</tr>
+<tr>
+<td><strong>Path View</strong></td>
+<td>Vertical scrolling path (map-like)</td>
+<td>Lesson nodes connected by path, current position highlighted</td>
+</tr>
+<tr>
+<td><strong>Lesson</strong></td>
+<td>Full-screen takeover (no nav)</td>
+<td>Progress bar only — complete or quit</td>
+</tr>
+<tr>
+<td><strong>Streak Counter</strong></td>
+<td>Always visible (top)</td>
+<td>Flame icon + day count, tap for details</td>
+</tr>
+<tr>
+<td><strong>Hearts</strong></td>
+<td>Top-right (free tier)</td>
+<td>Red hearts showing lives remaining</td>
+</tr>
+<tr>
+<td><strong>XP Pop-ups</strong></td>
+<td>Floating after correct answer</td>
+<td>&quot;+10 XP&quot; animation</td>
+</tr>
+</tbody></table>
+<h3>Signature UX: The Path</h3>
+<pre><code>     ⭐ Legendary
+     🟢 Lesson 5 (completed)
+     🟢 Lesson 4 (completed)
+     🟡 Lesson 3 (current — glowing)
+     🔒 Lesson 2 (locked)
+     🔒 Lesson 1 (locked)
+  ──── Checkpoint ────
+     🟢 Lesson 3 ...
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Course</td>
+<td>language_pair (e.g., EN→ES), units[], total_skills</td>
+<td>belongs to User (enrollment)</td>
+</tr>
+<tr>
+<td>Unit</td>
+<td>title, theme, order, lessons[], checkpoint</td>
+<td>belongs to Course</td>
+</tr>
+<tr>
+<td>Lesson</td>
+<td>skills[], exercises[], xp_reward, difficulty, status (locked/available/completed/legendary)</td>
+<td>belongs to Unit</td>
+</tr>
+<tr>
+<td>Exercise</td>
+<td>type (translate/listen/speak/match/fill_blank), prompt, correct_answer, alternatives[], hints[], audio_url</td>
+<td>belongs to Lesson</td>
+</tr>
+<tr>
+<td>Streak</td>
+<td>current_days, longest_ever, freeze_active, freeze_count</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>LeaguePosition</td>
+<td>league (bronze→diamond), rank, xp_this_week, promotion_zone</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Achievement</td>
+<td>name, icon, criteria, earned_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Story</td>
+<td>title, language, difficulty, characters[], scenes[], xp_reward</td>
+<td>belongs to Course</td>
+</tr>
+<tr>
+<td>Gem</td>
+<td>balance, earned_history[], spent_history[]</td>
+<td>virtual currency</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>type (free/super/max/family), features[], expires_at</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Gamification Mechanics</h3>
+<pre><code>XP: Earned per lesson (10-20), bonus for combos and speed
+Streak: +1 per day of practice, breaks reset (unless frozen)
+Hearts: Start with 5 (free), lose 1 per mistake, refill with gems or wait
+Leagues: Weekly competition, top 10 promoted, bottom 5 demoted
+Gems: Earned from lessons, spent on power-ups
+Legendary: Hardest lesson difficulty, earn a gold crown
+</code></pre>
+<h3>Lesson Status</h3>
+<pre><code>locked → available → started → completed → cracked (needs review) → practiced
+                                          → legendary (gold)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Daily Practice (The Core Loop)</h3>
+<pre><code>Open App → See Streak (&quot;Day 47 🔥&quot;) → Next Lesson on Path → Complete 5-10 Exercises → &quot;Lesson Complete! +15 XP&quot; → Streak Extended → Close App → Push Notification Tomorrow
+</code></pre>
+<h3>Review Mistakes</h3>
+<pre><code>Practice → Mistakes → Redo Exercises You Got Wrong → Correct → Strengthened! → XP Earned
+</code></pre>
+<h3>Compete in Leagues</h3>
+<pre><code>Complete Lessons → Earn XP → Check Leaderboard → &quot;3rd Place in Gold League&quot; → Earn More XP → Promotion to Sapphire → Trophy!
+</code></pre>
+<h3>AI Roleplay (Max)</h3>
+<pre><code>Practice → Roleplay → Scenario: &quot;Ordering at a café in Paris&quot; → Type/Speak Response → AI Responds in Character → Conversation → Feedback on Grammar
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home / Learn (Path)
+/learn                         → Learning Path
+/lesson/:id                    → In-Lesson View
+/practice                      → Practice Hub
+/practice/mistakes             → Mistake Review
+/stories                       → Stories
+/stories/:id                   → Story View
+/leaderboard                   → Leagues
+/profile                       → My Profile
+/profile/:username             → User Profile
+/profile/achievements          → Achievement Gallery
+/shop                          → Gem Shop
+/settings                      → Settings
+/settings/courses              → Language Courses
+/settings/daily-goal           → Daily Goal
+/super                         → Super Duolingo
+/max                           → Duolingo Max
+/podcasts                      → Podcasts
+/events                        → Duolingo Events (meetups)
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Friends</td>
+<td>Username, name</td>
+<td>—</td>
+<td>Activity level</td>
+</tr>
+<tr>
+<td>Courses</td>
+<td>Language name</td>
+<td>—</td>
+<td>Popularity</td>
+</tr>
+<tr>
+<td>Stories</td>
+<td>Title</td>
+<td>Difficulty, Language</td>
+<td>Difficulty, newest</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Note: Duolingo is mostly <strong>navigation-driven, not search-driven</strong>. The path determines what you do next. There&#39;s no catalog to browse.</p>
+</blockquote>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Path</th>
+<th>Lesson</th>
+<th>Leaderboard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Vertical path, full width</td>
+<td>Full-screen exercises</td>
+<td>League table, scrollable</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Wider path, larger tiles</td>
+<td>Centered exercises</td>
+<td>Side-by-side stats</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Path + sidebar (streak, friends)</td>
+<td>Centered with keyboard input</td>
+<td>Full table</td>
+</tr>
+</tbody></table>
+<h3>Gamification-Specific UX</h3>
+<ul>
+<li>Streak counter with fire animation (visible everywhere)</li>
+<li>Haptic feedback on correct/wrong answers</li>
+<li>Sound effects (ding for correct, buzz for wrong)</li>
+<li>Duo the Owl animations (happy, sad, encouraging, judging)</li>
+<li>Push notifications: &quot;Don&#39;t lose your streak!&quot; &quot;Duo is waiting for you!&quot;</li>
+<li>XP animations: floating numbers, combo counters</li>
+<li>League promotion/demotion animations</li>
+<li>Celebration screens on milestones (7-day streak, 100-day streak)</li>
+<li>Green = correct, red = wrong, gold = legendary (consistent color language)</li>
+<li>Dark mode support</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free</th>
+<th>Super</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Lessons</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Hearts</td>
+<td>5 (replenish over time)</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Mistakes Practice</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Legendary Levels</td>
+<td>Gems required</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>Progress Quizzes</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>AI Explain My Answer</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>AI Roleplay</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>AI Video Call</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Offline Lessons</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Family Plan</td>
+<td>—</td>
+<td>✅ (6 users)</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

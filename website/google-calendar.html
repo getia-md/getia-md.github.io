@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calendar — IA.md | getIA.md</title>
+  <meta name="description" content="Scheduling with day/week/month views and smart suggestions. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=calendar.google.com&sz=64" alt="Google Calendar" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">Google Calendar</h1>
+      <p class="detail-brand-tagline">Scheduling with day/week/month views and smart suggestions.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/google-calendar/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://calendar.google.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/google-calendar/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Google Calendar — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Google Calendar is the dominant web calendar, deeply integrated with Google Workspace. The mental model is <strong>time as a visual grid</strong> — events are colored blocks on a day/week/month matrix. Key differentiators: Google Meet auto-generation, smart event suggestions (AI), Find a Time (multi-person free/busy overlay), Appointment Schedules (Calendly-like built-in), Tasks integration, and seamless Gmail event detection.</p>
+<h2>Site Map</h2>
+<pre><code>├── Calendar Views
+│   ├── Day View (24h vertical timeline)
+│   ├── Week View (7-column grid, default)
+│   ├── Month View (5-6 row grid, event dots/titles)
+│   ├── Year View (12 mini months)
+│   ├── Schedule View (agenda list)
+│   ├── 4-Day View (customizable)
+│   └── Multi-person View (side-by-side)
+├── Event Detail
+│   ├── Title
+│   ├── Date &amp; Time (start/end, all-day toggle)
+│   ├── Recurrence (custom rules)
+│   ├── Google Meet Link (auto-generated)
+│   ├── Location (Google Maps integration)
+│   ├── Description / Notes
+│   ├── Guests (invite, RSVP status)
+│   ├── Rooms &amp; Resources
+│   ├── Attachments (Google Drive)
+│   ├── Calendar (which calendar)
+│   ├── Color / Label
+│   ├── Notification (popup, email, minutes before)
+│   ├── Visibility (default, public, private)
+│   ├── Status (busy, free, tentative, out of office)
+│   └── Conferencing (Meet, Zoom, Teams)
+├── Left Sidebar
+│   ├── Create Button (+)
+│   ├── Mini Calendar (date picker)
+│   ├── Search for People (see their calendar)
+│   ├── My Calendars (checkboxes, color-coded)
+│   ├── Other Calendars (subscribed, holidays, birthdays)
+│   └── Manage Calendars
+├── Event Creation
+│   ├── Quick Create (click timeslot → popup)
+│   ├── Full Create (More Options → full form)
+│   ├── Event Types: Event, Out of Office, Working Location, Focus Time, Task
+│   └── Appointment Schedule (booking page)
+├── Tasks (integrated panel)
+│   ├── Task Lists
+│   ├── Tasks on Calendar (date-linked)
+│   └── Create / Edit Task
+├── Appointment Schedules
+│   ├── Create Schedule (availability rules)
+│   ├── Booking Page (public link)
+│   └── Manage Bookings
+├── Settings
+│   ├── General (start of week, country, time zone, working hours)
+│   ├── Event Settings (default duration, notification, guest permissions)
+│   ├── View Options (show weekends, declined events, week numbers)
+│   ├── Calendar Settings (per-calendar: name, color, sharing, notifications)
+│   ├── Add Calendar (URL, from directory, holidays)
+│   ├── Import &amp; Export (ICS)
+│   └── Keyboard Shortcuts
+└── Gmail Integration
+    ├── Auto-detect events from emails
+    ├── RSVP from Gmail
+    └── Flight/hotel reservations auto-added
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed header</td>
+<td>Hamburger (sidebar toggle), &quot;Google Calendar&quot; logo, today button, prev/next arrows, date range label, view switcher dropdown, search, settings gear, ? help, Google apps grid, avatar</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Collapsible</td>
+<td>Create (+) button, mini month calendar, people search, calendar checkboxes (My Calendars + Other Calendars)</td>
+</tr>
+<tr>
+<td><strong>View Switcher</strong></td>
+<td>Top-right dropdown</td>
+<td>Day, Week, Month, Year, Schedule, 4 days, Custom range</td>
+</tr>
+<tr>
+<td><strong>Event Popup</strong></td>
+<td>Click event → card popup</td>
+<td>Title, time, Meet link, guests, edit/delete buttons</td>
+</tr>
+<tr>
+<td><strong>Full Editor</strong></td>
+<td>Separate page or modal</td>
+<td>Complete event form with all fields</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Event</td>
+<td>title, start, end, all_day, recurrence, location, description, color, calendar_id, meet_link, status, visibility, attachments[], created_by</td>
+<td>has Guests, Notifications</td>
+</tr>
+<tr>
+<td>Calendar</td>
+<td>name, color, time_zone, owner, shared_with[], description</td>
+<td>has many Events</td>
+</tr>
+<tr>
+<td>Guest</td>
+<td>email, display_name, rsvp (accepted/declined/tentative/needsAction), optional, comment</td>
+<td>belongs to Event</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>method (popup/email), minutes_before</td>
+<td>belongs to Event</td>
+</tr>
+<tr>
+<td>Task</td>
+<td>title, due_date, notes, completed, list_id</td>
+<td>displayed on Calendar</td>
+</tr>
+<tr>
+<td>AppointmentSchedule</td>
+<td>title, duration, availability_rules[], booking_page_url, buffer_time</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Room</td>
+<td>name, capacity, building, floor, equipment[]</td>
+<td>bookable via Event</td>
+</tr>
+<tr>
+<td>WorkingLocation</td>
+<td>type (office/home/other), building, date_range</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Event Types</h3>
+<p><code>event | out_of_office | working_location | focus_time | task | appointment_slot</code></p>
+<h2>User Flows</h2>
+<h3>Quick Create</h3>
+<pre><code>Click empty timeslot → Popup (title + time) → Add Meet → Save → Event on grid
+</code></pre>
+<h3>Schedule Meeting</h3>
+<pre><code>Create Event → Add Guests → &quot;Suggested Times&quot; or &quot;Find a Time&quot; (free/busy overlay) → Pick slot → Add Meet → Save → Invites sent
+</code></pre>
+<h3>Appointment Schedule</h3>
+<pre><code>Create Appointment Schedule → Set availability → Generate booking page URL → Share link → External person books → Appears on calendar
+</code></pre>
+<h3>RSVP from Email</h3>
+<pre><code>Receive invite in Gmail → &quot;Yes / Maybe / No&quot; buttons → Calendar updated → Response sent
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                           → Week view (default)
+/r/day/:date                → Day view
+/r/week/:date               → Week view
+/r/month/:date              → Month view
+/r/year/:year               → Year view
+/r/agenda                   → Schedule / agenda
+/r/customday/:date          → Custom range (4 days)
+/eventedit                  → Create event
+/event/:eventId             → Event detail
+/r/search?q=:query          → Search results
+/r/settings                 → Settings
+/appointment/:slug          → Public booking page
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Event titles, descriptions, guests, locations</td>
+<td>Calendar, Date Range</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>People</td>
+<td>Contacts directory</td>
+<td>Department</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>Rooms</td>
+<td>Room name, equipment</td>
+<td>Capacity, Building, Floor, Availability</td>
+<td>Name, Capacity</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Sidebar + full grid view</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Sidebar collapsed, 3-day view default</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Schedule/agenda view, FAB for create, swipe between days</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View Own</th>
+<th>Create</th>
+<th>View Others</th>
+<th>Share Calendar</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User</td>
+<td>✅</td>
+<td>✅</td>
+<td>If shared</td>
+<td>Own calendars</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Workspace Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>Directory</td>
+<td>All</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Calendar Sharing Levels</h3>
+<ul>
+<li>See free/busy only</li>
+<li>See all event details</li>
+<li>Make changes to events</li>
+<li>Make changes and manage sharing</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

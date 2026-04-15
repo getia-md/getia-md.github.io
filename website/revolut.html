@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolut — IA.md | getIA.md</title>
+  <meta name="description" content="Digital banking. Multi-currency, crypto, budgeting. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=revolut.com&sz=64" alt="Revolut" onerror="this.parentElement.textContent='R'">
+      </div>
+      <h1 class="detail-brand-name">Revolut</h1>
+      <p class="detail-brand-tagline">Digital banking. Multi-currency, crypto, budgeting.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/revolut/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://revolut.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/revolut/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Revolut — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Revolut is a financial super-app that started as an international spending card and evolved into a full banking alternative. The mental model is <strong>one hub for all money</strong> — users hold multiple currencies, spend abroad at interbank rates, send money globally, trade stocks and crypto, and manage budgets. The app is aggressively feature-rich, with a service grid reminiscent of super-apps. Key differentiators: multi-currency accounts, instant cross-border transfers, and a modular &quot;Pockets&quot; savings system.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Total Balance (across all currencies)
+│   ├── Account Cards (swipeable: GBP, EUR, USD, crypto, etc.)
+│   ├── Recent Transactions
+│   ├── Quick Actions (Send, Request, Exchange, Top Up)
+│   ├── Pockets (savings goals)
+│   ├── Rewards / Cashback Summary
+│   └── RevPoints Balance
+├── Accounts
+│   ├── Multi-Currency Accounts
+│   │   ├── GBP Account (sort code + account number)
+│   │   ├── EUR Account (IBAN)
+│   │   ├── USD Account (routing + account number)
+│   │   └── 30+ More Currencies
+│   ├── Account Detail
+│   │   ├── Balance
+│   │   ├── Transaction History
+│   │   ├── Account Details (numbers, IBAN)
+│   │   ├── Direct Debits
+│   │   └── Statements
+│   ├── Joint Accounts
+│   └── Business Account (upgrade)
+├── Cards
+│   ├── Physical Cards (standard, metal, ultra)
+│   ├── Virtual Cards (disposable, recurring)
+│   ├── Card Controls
+│   │   ├── Freeze / Unfreeze
+│   │   ├── Spending Limits
+│   │   ├── Location-Based Security
+│   │   ├── Online Payments Toggle
+│   │   ├── Contactless Toggle
+│   │   ├── ATM Withdrawals Toggle
+│   │   └── Swipe Payments Toggle
+│   ├── PIN Management
+│   └── Order New Card (choose design)
+├── Payments
+│   ├── Send Money
+│   │   ├── To Revolut User (instant, free)
+│   │   ├── To Bank Account (domestic)
+│   │   ├── International Transfer (SWIFT / local rails)
+│   │   └── To Crypto Wallet
+│   ├── Request Money
+│   ├── Scheduled Payments
+│   ├── Standing Orders
+│   ├── Direct Debits
+│   └── Payment Links
+├── Exchange
+│   ├── Currency Exchange (FX)
+│   │   ├── From / To Currency
+│   │   ├── Interbank Rate Display
+│   │   ├── Weekend Markup Warning
+│   │   └── Auto-Exchange (set target rate)
+│   ├── Crypto
+│   │   ├── Buy / Sell Crypto
+│   │   ├── Crypto Portfolio
+│   │   ├── Staking
+│   │   └── Learn about Crypto
+│   └── Commodities (Gold, Silver)
+├── Invest
+│   ├── Stocks
+│   │   ├── Browse Stocks
+│   │   ├── Stock Detail (chart, stats)
+│   │   ├── Buy / Sell (fractional)
+│   │   └── Portfolio
+│   └── Robo-Advisor (Revolut Invest)
+├── Pockets (Savings)
+│   ├── Active Pockets (visual jars)
+│   ├── Create Pocket (name, target, emoji)
+│   ├── Auto-Save Rules (round-ups, recurring)
+│   ├── Group Pockets (shared goals)
+│   └── Savings Vaults (interest-bearing)
+├── Budgets &amp; Analytics
+│   ├── Monthly Budget
+│   ├── Spending by Category (charts)
+│   ├── Merchant Analysis
+│   ├── Subscription Tracker
+│   ├── Income vs Spending
+│   └── Trends (month over month)
+├── Insurance &amp; Extras
+│   ├── Travel Insurance
+│   ├── Phone Insurance
+│   ├── Device Insurance
+│   ├── Medical Insurance
+│   ├── Lounge Access (Ultra plan)
+│   └── RevPoints (rewards program)
+├── Subscriptions
+│   ├── Standard (free)
+│   ├── Plus
+│   ├── Premium
+│   ├── Metal
+│   └── Ultra
+├── Settings
+│   ├── Personal Details
+│   ├── Security (PIN, biometrics, passcode, 2FA)
+│   ├── Notification Preferences
+│   ├── Privacy
+│   ├── Linked Accounts (Open Banking)
+│   ├── Appearance (dark/light, app icon)
+│   └── Help &amp; Support
+└── Help
+    ├── Chat Support (in-app)
+    ├── FAQ
+    ├── Community Forum
+    └── Suggest a Feature
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs</td>
+<td>Home, Cards, Payments Hub, Invest, Profile</td>
+</tr>
+<tr>
+<td><strong>Currency Switcher</strong></td>
+<td>Horizontal scroll cards on Home</td>
+<td>Tap to view account, swipe between GBP/EUR/USD</td>
+</tr>
+<tr>
+<td><strong>Quick Actions</strong></td>
+<td>Row of icons below balance</td>
+<td>Send, Request, Exchange, Top Up, Add Money</td>
+</tr>
+<tr>
+<td><strong>Service Grid</strong></td>
+<td>Scrollable grid (similar to super-apps)</td>
+<td>Crypto, Stocks, Insurance, Pockets, Rewards, etc.</td>
+</tr>
+<tr>
+<td><strong>Search</strong></td>
+<td>Top of Home</td>
+<td>Search transactions, contacts, features</td>
+</tr>
+<tr>
+<td><strong>Pay Button</strong></td>
+<td>Prominent FAB or bottom sheet</td>
+<td>Quick payment initiation</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Account</td>
+<td>currency, balance, account_number, iban, sort_code, type (personal/joint/business)</td>
+<td>has many Transactions, Cards</td>
+</tr>
+<tr>
+<td>Transaction</td>
+<td>amount, currency, merchant, category (auto-tagged), date, status, exchange_rate, cashback</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>Card</td>
+<td>type (physical/virtual/disposable), design (standard/metal/ultra), status, limits, controls{}</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>Transfer</td>
+<td>from_account, to (user/bank/international), amount, currency, fx_rate, fee, status, eta</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Pocket</td>
+<td>name, emoji, target_amount, current_amount, auto_save_rules[], shared_with[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>CryptoHolding</td>
+<td>asset, amount, value, avg_cost, pnl</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>StockPosition</td>
+<td>ticker, shares (fractional), avg_cost, value</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>plan (standard/plus/premium/metal/ultra), features[], price, renewal_date</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>RevPoints</td>
+<td>balance, earned_history[], redeemed_history[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Budget</td>
+<td>category, limit, spent, period (monthly)</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Transaction Status</h3>
+<p><code>pending → completed → settled</code>
+<code>↘ declined / reversed / refunded</code></p>
+<h2>User Flows</h2>
+<h3>Send Money Internationally</h3>
+<pre><code>Payments → Send → International → Enter Recipient (name, IBAN) → Amount → See FX Rate &amp; Fee → Review → Biometric → Sent → Track Status
+</code></pre>
+<h3>Currency Exchange</h3>
+<pre><code>Exchange → GBP to EUR → Enter Amount → See Interbank Rate → Exchange → EUR Balance Updated Instantly
+</code></pre>
+<h3>Create Savings Pocket</h3>
+<pre><code>Pockets → [+] → Name (&quot;Holiday Fund&quot;) → Target (£2000) → Add Auto-Save (round-ups + £50/month) → Create → Watch Progress
+</code></pre>
+<h3>Freeze Stolen Card</h3>
+<pre><code>Cards → Select Card → [Freeze] → Instant → Order Replacement → Virtual Card Generated Immediately
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/accounts                      → All Accounts
+/accounts/:currency            → Account Detail (e.g., /accounts/gbp)
+/transactions                  → All Transactions
+/transactions/:id              → Transaction Detail
+/cards                         → Card List
+/cards/:id                     → Card Detail &amp; Controls
+/payments/send                 → Send Money
+/payments/request              → Request Money
+/payments/scheduled            → Scheduled Payments
+/exchange                      → Currency Exchange
+/crypto                        → Crypto Portfolio
+/crypto/:symbol                → Crypto Detail
+/stocks                        → Stocks Portfolio
+/stocks/:symbol                → Stock Detail
+/pockets                       → Savings Pockets
+/pockets/:id                   → Pocket Detail
+/budgets                       → Budget &amp; Analytics
+/insurance                     → Insurance Products
+/rewards                       → RevPoints
+/subscriptions                 → Plan Management
+/settings                      → Settings
+/help                          → Help &amp; Support
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Transactions</td>
+<td>Merchant, amount, reference</td>
+<td>Category, Date Range, Currency, Account, Type (in/out)</td>
+<td>Date, amount, merchant</td>
+</tr>
+<tr>
+<td>Contacts</td>
+<td>Name, username</td>
+<td>Recently used</td>
+<td>Frequency, name</td>
+</tr>
+<tr>
+<td>Crypto / Stocks</td>
+<td>Asset name, symbol</td>
+<td>Tradeable, category</td>
+<td>Market cap, change, name</td>
+</tr>
+<tr>
+<td>Features</td>
+<td>Feature name (search for &quot;insurance&quot;, &quot;lounge&quot;)</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Key Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Single column, bottom tabs, card swipe</td>
+<td>Full mobile-first experience</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Wider cards, 2-column analytics</td>
+<td>Enhanced charts</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Sidebar nav + dashboard grid</td>
+<td>Full account management, settings</td>
+</tr>
+</tbody></table>
+<h3>Mobile-First Design</h3>
+<ul>
+<li>Biometric authentication on every open</li>
+<li>Multi-currency card swipe (horizontal carousel)</li>
+<li>Pull-to-refresh balances</li>
+<li>Instant push notifications on every transaction</li>
+<li>Haptic feedback on payments</li>
+<li>Disposable virtual cards generated in one tap</li>
+<li>Offline mode (cached balances)</li>
+<li>Dark mode with signature Revolut purple accents</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Standard (Free)</th>
+<th>Plus</th>
+<th>Premium</th>
+<th>Metal</th>
+<th>Ultra</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Multi-Currency</td>
+<td>5 currencies</td>
+<td>5</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>FX Exchange</td>
+<td>£1000/mo free</td>
+<td>£3000/mo</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>Crypto Fee</td>
+<td>1.99%</td>
+<td>1.49%</td>
+<td>0.99%</td>
+<td>0.99%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Stock Trades</td>
+<td>1/mo free</td>
+<td>3/mo</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>Lounge Access</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>1/flight</td>
+<td>3/flight + guest</td>
+</tr>
+<tr>
+<td>Insurance</td>
+<td>—</td>
+<td>—</td>
+<td>Travel</td>
+<td>Travel + device</td>
+<td>Comprehensive</td>
+</tr>
+<tr>
+<td>Cards</td>
+<td>Standard plastic</td>
+<td>Custom</td>
+<td>Premium metal</td>
+<td>Metal</td>
+<td>Ultra metal</td>
+</tr>
+<tr>
+<td>Cashback</td>
+<td>—</td>
+<td>—</td>
+<td>0.1%</td>
+<td>0.1% EUR, 1% non-EUR</td>
+<td>1% + boosted</td>
+</tr>
+<tr>
+<td>Support</td>
+<td>Standard</td>
+<td>Priority</td>
+<td>Priority</td>
+<td>Priority</td>
+<td>Dedicated</td>
+</tr>
+</tbody></table>
+<h3>Security Requirements</h3>
+<ul>
+<li>Biometric or passcode on every session</li>
+<li>Card controls: per-transaction toggle for online, contactless, ATM</li>
+<li>Location-based security (block transactions outside your area)</li>
+<li>Disposable virtual cards for one-time online purchases</li>
+<li>Transaction notifications within seconds</li>
+<li>Device management and session control</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

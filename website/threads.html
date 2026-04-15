@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threads — IA.md | getIA.md</title>
+  <meta name="description" content="Text-based social by Meta. Conversations, reposts. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=threads.net&sz=64" alt="Threads" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Threads</h1>
+      <p class="detail-brand-tagline">Text-based social by Meta. Conversations, reposts.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/threads/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://threads.net" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/threads/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Threads — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Meta&#39;s text-first social platform, launched in 2023 as a competitor to Twitter/X. Threads&#39; mental model is a <strong>public conversation space</strong> — short text posts with optional media, built on top of Instagram&#39;s social graph. Key differentiators: seamless Instagram identity integration (same username, followers import), ActivityPub/fediverse compatibility (planned), a deliberately simpler feature set than Twitter (no hashtags initially, no DMs, no trending), a focus on positive community and anti-toxicity, and a feed-first experience without a separate Explore tab. Threads positions itself as a less adversarial alternative to Twitter/X.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Feed
+│   ├── For You (algorithmic, default)
+│   ├── Following (chronological from followed accounts)
+│   ├── Liked (posts liked by people you follow)
+│   ├── Saved (bookmarked posts)
+│   └── Custom Feeds (user-created topic feeds)
+├── Search / Explore
+│   ├── Search Bar
+│   ├── Search Results: Posts, Users, Tags
+│   ├── Trending Topics (introduced later)
+│   └── Suggested Accounts
+├── Create Post (Compose)
+│   ├── Text (up to 500 characters)
+│   ├── Add Media (images up to 10, video up to 5 min, GIF)
+│   ├── Add Poll
+│   ├── Add Voice Recording
+│   ├── Tag / Mention (@username)
+│   ├── Topic Tag (# categorization)
+│   ├── Thread (multi-post chain)
+│   ├── Audience: Everyone / Profiles You Follow
+│   ├── Reply Controls: Anyone / Profiles You Follow / Mentioned Only
+│   └── Cross-post to Instagram Feed (toggle)
+├── Post Detail / Thread
+│   ├── Original Post (text + media)
+│   ├── Author (avatar, username, verified badge)
+│   ├── Engagement: Likes, Replies, Reposts, Shares, Quotes
+│   ├── Reply Thread (flat or nested, author-highlighted)
+│   ├── Actions
+│   │   ├── Like (❤️)
+│   │   ├── Reply (💬)
+│   │   ├── Repost (♻️) / Quote
+│   │   ├── Share (send via DM on IG, copy link, share to IG Story, share to feed)
+│   │   ├── Save (🔖 bookmark)
+│   │   └── More (⋯): Not Interested, Mute, Block, Report, Embed, Copy Text
+│   └── View on Instagram (author&#39;s profile link)
+├── Activity (Notifications)
+│   ├── All
+│   ├── Follows
+│   ├── Replies
+│   ├── Mentions
+│   ├── Quotes
+│   ├── Reposts
+│   ├── Verified (from verified accounts only)
+│   └── Requests (pending follow requests, if private)
+├── Profile
+│   ├── Avatar (from Instagram, circular)
+│   ├── Username (@, shared with Instagram)
+│   ├── Name, Bio (editable, separate from IG)
+│   ├── Link
+│   ├── Followers / Following Counts
+│   ├── Instagram Link (cross-profile)
+│   ├── Follow / Following Button
+│   ├── Mention / Share
+│   ├── Tabs: Threads (posts), Replies, Reposts
+│   ├── Pinned Post (up to 1)
+│   └── Verified Badge (from Instagram verification or Meta Verified)
+├── Saved Posts (Bookmarks)
+│   ├── All Saved Posts
+│   └── Chronological
+├── Settings
+│   ├── Account
+│   │   ├── Profile (edit bio, link, avatar — linked to IG)
+│   │   ├── Fediverse Sharing (ActivityPub toggle)
+│   │   ├── Privacy
+│   │   │   ├── Private Profile (on/off)
+│   │   │   ├── Mentions (who can mention you)
+│   │   │   ├── Muted (users, words)
+│   │   │   ├── Hidden Words (filter offensive content)
+│   │   │   ├── Blocked Profiles
+│   │   │   └── Restricted Profiles
+│   │   ├── Notifications (likes, follows, replies, mentions, reposts, quotes, verified)
+│   │   ├── Account (linked Instagram account)
+│   │   ├── Close Friends (shared with Instagram)
+│   │   └── Deactivate / Delete Profile
+│   ├── Feed Preferences
+│   │   ├── Muted Words / Phrases
+│   │   └── Content Preferences
+│   ├── Accessibility
+│   └── About (Terms, Privacy Policy, version)
+└── Cross-Platform Integration
+    ├── Instagram Identity (same @, avatar, verification)
+    ├── Share to Instagram Story / Feed
+    ├── Instagram DMs (Threads has no native DMs)
+    └── ActivityPub / Fediverse (follow from Mastodon, etc.)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs, always visible</td>
+<td>Home (🏠), Search (🔍), Create (➕), Activity (❤️), Profile (👤)</td>
+</tr>
+<tr>
+<td><strong>Feed Toggle</strong></td>
+<td>Horizontal tabs on Home</td>
+<td>&quot;For You&quot; / &quot;Following&quot; / &quot;Liked&quot; / &quot;Saved&quot; / Custom Feeds</td>
+</tr>
+<tr>
+<td><strong>Floating Compose</strong></td>
+<td>On web: also accessible from sidebar</td>
+<td>Tapping [+] opens full-screen composer on mobile</td>
+</tr>
+<tr>
+<td><strong>Post Actions</strong></td>
+<td>Below each post, inline</td>
+<td>Like, Reply, Repost/Quote, Share</td>
+</tr>
+<tr>
+<td><strong>Profile Tabs</strong></td>
+<td>Horizontal tabs on profile</td>
+<td>Threads / Replies / Reposts</td>
+</tr>
+<tr>
+<td><strong>Desktop Sidebar</strong></td>
+<td>Left sidebar</td>
+<td>Home, Search, Activity, Profile, Create</td>
+</tr>
+<tr>
+<td><strong>Swipe Gestures</strong></td>
+<td>Swipe between feed tabs</td>
+<td>For You ↔ Following ↔ Liked</td>
+</tr>
+</tbody></table>
+<h3>Mobile Layout</h3>
+<pre><code>┌────────────────────────────────┐
+│  ┌ For You ┐  Following  Liked │  ← feed tabs
+├────────────────────────────────┤
+│                                │
+│  [Avatar] username · 2h        │
+│  Post text content here...     │
+│  [Optional Image/Video]        │
+│                                │
+│  ❤️ 42  💬 12  ♻️ 5  ➤       │  ← actions
+│  ────────────────────────────  │
+│                                │
+│  [Avatar] username · 1h        │
+│  Another post text...          │
+│                                │
+│  ❤️ 128  💬 34  ♻️ 18  ➤     │
+│  ...                           │
+├────────────────────────────────┤
+│ 🏠  🔍  ➕  ❤️  👤            │  ← tab bar
+└────────────────────────────────┘
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Post</td>
+<td>text (500 chars), media[] (images up to 10 / video up to 5 min / GIF), poll, voice_note, created_at, likes_count, replies_count, reposts_count, quotes_count, audience (everyone/followers), reply_control (anyone/followers/mentioned), pinned (bool), topic_tags[]</td>
+<td>belongs to User; has Replies, Reposts, Quotes</td>
+</tr>
+<tr>
+<td>User</td>
+<td>username (@ shared with IG), display_name, avatar, bio, link, followers_count, following_count, is_verified, is_private, instagram_linked (bool), fediverse_enabled (bool)</td>
+<td>has many Posts, Followers, Following</td>
+</tr>
+<tr>
+<td>Reply</td>
+<td>same as Post, but in_reply_to set</td>
+<td>belongs to Post and User</td>
+</tr>
+<tr>
+<td>Repost</td>
+<td>original_post_id, reposted_at</td>
+<td>belongs to User (no commentary)</td>
+</tr>
+<tr>
+<td>Quote</td>
+<td>text + media + original_post_id</td>
+<td>belongs to User (repost with commentary)</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>created_at</td>
+<td>belongs to User and Post</td>
+</tr>
+<tr>
+<td>Bookmark</td>
+<td>post, saved_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Follow</td>
+<td>follower_id, following_id, status (active/pending for private), created_at</td>
+<td>connects Users</td>
+</tr>
+<tr>
+<td>Poll</td>
+<td>question (in post text), options[], votes[], duration</td>
+<td>belongs to Post</td>
+</tr>
+<tr>
+<td>TopicTag</td>
+<td>name, post_count</td>
+<td>many-to-many with Posts</td>
+</tr>
+<tr>
+<td>CustomFeed</td>
+<td>name, topics[], accounts[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>type (like/reply/follow/mention/repost/quote), actor, target, read, created_at</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Post Types</h3>
+<p><code>text | text+image | text+carousel | text+video | text+gif | text+poll | text+voice | quote | repost | thread (multi-post)</code></p>
+<h2>User Flows</h2>
+<h3>Browse Feed</h3>
+<pre><code>Open App → For You Feed → Scroll → Like (tap heart) → Tap Post → Read Replies → Reply → Back to Feed
+</code></pre>
+<h3>Create Post</h3>
+<pre><code>Tap [+] → Write Text → Add Image/Video (optional) → Set Audience → Post → Appears in Followers&#39; Feed
+</code></pre>
+<h3>Create Thread</h3>
+<pre><code>Tap [+] → Write First Post → &quot;Add to Thread&quot; → Write Second → Continue → Post All
+</code></pre>
+<h3>Quote Post</h3>
+<pre><code>See Post → Repost → Quote → Write Your Commentary → Post → Shows Original + Your Take
+</code></pre>
+<h3>Follow from Instagram</h3>
+<pre><code>Sign Up → Import Instagram Following → Threads Profile Created → Following Feed Populated
+</code></pre>
+<h3>Share to Instagram Story</h3>
+<pre><code>Post → Share → &quot;Add to Instagram Story&quot; → Opens IG Story Editor → Post Story with Threads Link
+</code></pre>
+<h3>Cross-Fediverse Follow</h3>
+<pre><code>Enable Fediverse Sharing (Settings) → Mastodon user follows @you@threads.net → Your posts appear in their Mastodon feed
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># Threads Web (threads.net)
+/                              → Home Feed
+/search                        → Search
+/search?q=:query               → Search Results
+/activity                      → Activity / Notifications
+/@:username                    → User Profile
+/@:username/post/:postId       → Post Detail
+/settings                      → Settings
+/settings/account              → Account Settings
+/settings/privacy              → Privacy Settings
+/settings/notifications        → Notification Settings
+/saved                         → Saved / Bookmarks
+/liked                         → Liked Feed Tab
+/intent/post?text=:text        → Compose Intent (pre-fill text)
+/tag/:tagName                  → Topic Tag Page
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Posts, Users, Topic Tags</td>
+<td>Content Type (Posts/People/Tags)</td>
+<td>Relevance (algorithmic)</td>
+</tr>
+<tr>
+<td>Feed</td>
+<td>Posts from network</td>
+<td>Feed Tab (For You/Following/Liked/Saved/Custom)</td>
+<td>Algorithmic / Chronological</td>
+</tr>
+<tr>
+<td>Profile</td>
+<td>User&#39;s posts</td>
+<td>Tab (Threads/Replies/Reposts)</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Activity</td>
+<td>Notifications</td>
+<td>Type (All/Follows/Replies/Mentions/Quotes/Reposts/Verified)</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Saved</td>
+<td>Bookmarked posts</td>
+<td>—</td>
+<td>Date Saved</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Nav</th>
+<th>Feed</th>
+<th>Sidebar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Left sidebar (icons + labels)</td>
+<td>Center column (max 600px)</td>
+<td>— (no right sidebar, clean design)</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Left icon sidebar</td>
+<td>Center column</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tab bar (5 tabs)</td>
+<td>Full width</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Design Philosophy</h3>
+<ul>
+<li>Deliberately simpler than Twitter/X</li>
+<li>No trending page (initially, added later)</li>
+<li>No DMs (use Instagram DMs)</li>
+<li>No desktop-first features (mobile-first design)</li>
+<li>Clean, spacious typography</li>
+<li>Less dense than Twitter — more breathing room</li>
+<li>Instagram-style visual language (rounded elements, gradient accents)</li>
+</ul>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Pull-to-refresh</li>
+<li>Double-tap to like</li>
+<li>Swipe between feed tabs</li>
+<li>Full-screen post composer</li>
+<li>Share sheet integration</li>
+<li>Instagram identity seamless (single sign-on)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Post</th>
+<th>Reply</th>
+<th>Repost</th>
+<th>Save</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>Public profiles (limited, login wall)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>User</td>
+<td>✅</td>
+<td>✅ (500 chars, images, video, poll, voice)</td>
+<td>✅ (per post&#39;s reply controls)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Private User</td>
+<td>✅</td>
+<td>Followers only see</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Verified (Meta Verified)</td>
+<td>✅</td>
+<td>✅ + verified badge, impersonation protection</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Fediverse User</td>
+<td>Public posts via ActivityPub</td>
+<td>Follow + interact from federated platform</td>
+<td>✅ (via ActivityPub)</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin (Meta)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Content moderation</td>
+</tr>
+</tbody></table>
+<h3>Community Guidelines</h3>
+<ul>
+<li>Inherited from Instagram Community Guidelines</li>
+<li>Anti-toxicity focus (limiting political content recommendations)</li>
+<li>Content filters for sensitive topics</li>
+<li>Hidden words (customizable offensive content filter)</li>
+<li>Block/restrict/mute carry over from Instagram</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

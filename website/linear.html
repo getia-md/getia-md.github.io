@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linear — IA.md | getIA.md</title>
+  <meta name="description" content="Streamlined issue tracking. Keyboard-first, real-time sync. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=linear.app&sz=64" alt="Linear" onerror="this.parentElement.textContent='L'">
+      </div>
+      <h1 class="detail-brand-name">Linear</h1>
+      <p class="detail-brand-tagline">Streamlined issue tracking. Keyboard-first, real-time sync.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/linear/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://linear.app" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/linear/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Linear — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Linear is a high-performance issue tracking and project management tool designed for modern software teams. The mental model is <strong>issues flowing through a streamlined pipeline</strong> — from triage to backlog to active development to done. Linear differentiates through extreme keyboard-driven speed, opinionated workflows (cycles instead of arbitrary sprints), and a polished, minimal UI. Every interaction is optimized for sub-100ms response.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home (My Issues)
+│   ├── My Issues (assigned to me)
+│   │   ├── Active (in progress)
+│   │   ├── Upcoming (in current/next cycle)
+│   │   └── Backlog
+│   ├── Activity Feed
+│   └── Favorites
+├── Inbox
+│   ├── Notifications (assigned, mentioned, subscribed)
+│   ├── Unread / Archive
+│   └── Notification Preferences
+├── Team (per team)
+│   ├── Active Issues
+│   ├── Backlog
+│   ├── Board View (Kanban by status)
+│   ├── List View
+│   ├── Cycles
+│   │   ├── Current Cycle
+│   │   │   ├── Cycle Progress (burndown, scope changes)
+│   │   │   └── Issues in cycle
+│   │   ├── Upcoming Cycle
+│   │   ├── Past Cycles
+│   │   └── Cycle Settings (auto-scheduling)
+│   ├── Triage (incoming, unprocessed issues)
+│   └── Team Settings
+│       ├── Members
+│       ├── Labels
+│       ├── Workflows (custom statuses)
+│       └── Templates
+├── Projects
+│   ├── All Projects
+│   ├── Project Detail
+│   │   ├── Overview (health, progress, updates)
+│   │   ├── Issues (filtered to project)
+│   │   ├── Milestones
+│   │   ├── Project Updates (status reports)
+│   │   ├── Documents (project specs, RFCs)
+│   │   └── Settings (lead, members, dates)
+│   └── Create Project
+├── Initiatives (cross-project grouping)
+│   ├── Initiative Overview
+│   ├── Linked Projects
+│   └── Progress Tracking
+├── Views (Custom Filters)
+│   ├── Personal Views
+│   ├── Team Views (shared)
+│   └── Create View (save filter + sort + grouping)
+├── Issue Detail (slide-over panel)
+│   ├── Title + Description (Markdown)
+│   ├── Status (workflow stages)
+│   ├── Priority (Urgent/High/Medium/Low/None)
+│   ├── Assignee
+│   ├── Labels
+│   ├── Cycle
+│   ├── Project + Milestone
+│   ├── Estimate (points)
+│   ├── Due Date
+│   ├── Parent Issue / Sub-issues
+│   ├── Relations (blocking, blocked by, related, duplicate)
+│   ├── Attachments (Figma, GitHub PR, Sentry)
+│   ├── Comments + Activity
+│   └── History (all changes)
+├── Roadmap
+│   ├── Timeline View (projects on timeline)
+│   └── Filter by team, status, lead
+├── Search (⌘K)
+│   ├── Issues, Projects, Views, People
+│   └── Quick Actions (create, navigate)
+├── Settings
+│   ├── Workspace
+│   │   ├── General (name, URL, timezone)
+│   │   ├── Members &amp; Roles
+│   │   ├── Teams
+│   │   ├── Labels (workspace-wide)
+│   │   ├── Templates (issue, project)
+│   │   ├── Integrations (GitHub, Slack, Figma, Sentry, Zendesk...)
+│   │   ├── API (personal tokens, OAuth apps, webhooks)
+│   │   ├── Import (from Jira, Asana, GitHub Issues, Shortcut)
+│   │   └── Billing
+│   └── Account
+│       ├── Profile
+│       ├── Notifications
+│       ├── Display (theme: light/dark/system)
+│       └── Keyboard Shortcuts
+└── Document Hub
+    ├── Team Documents
+    ├── Project Documents
+    └── Create Document (rich text editor)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, compact</td>
+<td>Workspace switcher, Home, Inbox, Teams (expandable), Projects, Views, Roadmap</td>
+</tr>
+<tr>
+<td><strong>Team Sub-nav</strong></td>
+<td>Expand team in sidebar</td>
+<td>Active, Backlog, Board, Cycles, Triage, Settings</td>
+</tr>
+<tr>
+<td><strong>Issue Detail</strong></td>
+<td>Slide-over panel (right, ~50% width)</td>
+<td>Opens from any list without losing context; ⌘↵ to open full page</td>
+</tr>
+<tr>
+<td><strong>Command Palette</strong></td>
+<td>⌘K</td>
+<td>Universal: search, navigate, create, change status/priority/assignee, run actions</td>
+</tr>
+<tr>
+<td><strong>Keyboard-first</strong></td>
+<td>Extensive shortcuts</td>
+<td><code>C</code> create, <code>S</code> status, <code>P</code> priority, <code>A</code> assignee, <code>L</code> label, <code>⌘↵</code> open full</td>
+</tr>
+<tr>
+<td><strong>Context Menu</strong></td>
+<td>Right-click on issue row</td>
+<td>Quick actions: status, priority, assignee, cycle, delete</td>
+</tr>
+<tr>
+<td><strong>Breadcrumb</strong></td>
+<td>Top of content area</td>
+<td>Team &gt; Board/Backlog &gt; Issue (when in full-page view)</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Workspace Logo + Switcher]
+─────────────
+🏠 Home
+📥 Inbox (badge)
+─────────────
+Teams ▾
+  ├── 🟣 Engineering
+  │   ├── Active Issues
+  │   ├── Backlog
+  │   └── Cycles
+  ├── 🔵 Design
+  └── 🟢 Product
+─────────────
+📁 Projects
+📋 Views
+🗺 Roadmap
+─────────────
+⚙ Settings
+</code></pre>
+<h3>Keyboard Shortcuts (core differentiator)</h3>
+<pre><code>C = Create issue          ⌘K = Command palette      I = Go to Inbox
+S = Set status            P = Set priority           A = Set assignee
+L = Set label             D = Set due date           E = Set estimate
+⌘↵ = Open full page       ⌘⇧P = Switch project       ⌘⇧C = Copy issue URL
+J/K = Navigate up/down    X = Select issue           ⌘⇧D = Duplicate
+</code></pre>
+<h2>Content Model</h2>
+<h3>Core Entities</h3>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>name, url_slug, settings, plan</td>
+<td>has many Teams, Projects, Members</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>name, key (e.g., &quot;ENG&quot;), icon, color, workflow_states[]</td>
+<td>has many Issues, Cycles, Labels</td>
+</tr>
+<tr>
+<td>Issue</td>
+<td>identifier (ENG-123), title, description (Markdown), status, priority (0-4), estimate, due_date, sort_order</td>
+<td>belongs to Team, Cycle, Project; assigned to Member; has Sub-issues, Comments, Relations, Labels</td>
+</tr>
+<tr>
+<td>Cycle</td>
+<td>number, name, start_date, end_date, progress</td>
+<td>belongs to Team; has many Issues</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>name, icon, color, description, status (planned/started/paused/completed/cancelled), start_date, target_date, lead</td>
+<td>has many Issues, Milestones, Documents, Updates</td>
+</tr>
+<tr>
+<td>Initiative</td>
+<td>name, description, status</td>
+<td>groups multiple Projects</td>
+</tr>
+<tr>
+<td>Milestone</td>
+<td>name, sort_order</td>
+<td>belongs to Project; groups Issues within project</td>
+</tr>
+<tr>
+<td>Label</td>
+<td>name, color, group</td>
+<td>many-to-many with Issues; scoped to Team or Workspace</td>
+</tr>
+<tr>
+<td>View</td>
+<td>name, filters{}, sort{}, group_by, display (list/board)</td>
+<td>personal or shared</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>body (Markdown), author, created_at, edited_at</td>
+<td>belongs to Issue</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>title, content (rich text), icon</td>
+<td>belongs to Project or Team</td>
+</tr>
+<tr>
+<td>Relation</td>
+<td>type (blocks/blocked_by/related/duplicate), source_issue, target_issue</td>
+<td>connects Issues</td>
+</tr>
+</tbody></table>
+<h3>Issue Priority Scale</h3>
+<pre><code>0 = No priority (gray)
+1 = Urgent (red, !!!)
+2 = High (orange, !!)
+3 = Medium (yellow, !)
+4 = Low (blue)
+</code></pre>
+<h3>Default Workflow States</h3>
+<pre><code>Triage → Backlog → Todo → In Progress → In Review → Done → Cancelled
+         (customizable per team)
+</code></pre>
+<h3>Cycle Model (opinionated sprints)</h3>
+<ul>
+<li>Fixed cadence (e.g., 2 weeks) with auto-scheduling</li>
+<li>Unfinished issues auto-roll to next cycle</li>
+<li>Cycle progress shows scope creep (issues added mid-cycle)</li>
+<li>No manual sprint creation; cycles are continuous</li>
+</ul>
+<h2>User Flows</h2>
+<h3>Daily Work</h3>
+<pre><code>Home → My Issues (active) → Click issue → Update status (S → In Progress) → Add comment → Next issue (J/K)
+</code></pre>
+<h3>Issue Creation (Speed)</h3>
+<pre><code>C → Type title → Tab → Set project → Tab → Set priority → Tab → Set assignee → Enter → Created (&lt;5 seconds)
+— or —
+⌘K → &quot;Create issue&quot; → Inline creation with autocomplete
+</code></pre>
+<h3>Triage Flow</h3>
+<pre><code>Team → Triage → Review incoming issues → Set priority + assignee + cycle → Move to Backlog/Active → Repeat
+</code></pre>
+<h3>Cycle Planning</h3>
+<pre><code>Backlog → Filter by priority → Select issues (X) → Move to current cycle → Board view → Track daily progress
+</code></pre>
+<h3>Project Tracking</h3>
+<pre><code>Projects → Project Detail → View progress (% complete) → Write Project Update → Link to milestone → Review roadmap timeline
+</code></pre>
+<h3>Integration Flow (GitHub)</h3>
+<pre><code>Create branch with issue ID (e.g., eng-123-feature) → Push commits → PR auto-linked → PR merged → Issue auto-moves to &quot;Done&quot;
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                  → Home (my issues)
+/inbox                             → Inbox / notifications
+/:teamKey/active                   → Team active issues
+/:teamKey/backlog                  → Team backlog
+/:teamKey/board                    → Team board view
+/:teamKey/cycles                   → Cycles list
+/:teamKey/cycles/current           → Current cycle
+/:teamKey/triage                   → Triage queue
+/:teamKey/settings                 → Team settings
+/issue/:identifier                 → Issue detail (e.g., /issue/ENG-123)
+/projects                          → All projects
+/project/:slug                     → Project detail
+/project/:slug/issues              → Project issues
+/project/:slug/milestones          → Project milestones
+/project/:slug/documents           → Project documents
+/initiatives                       → Initiatives
+/views                             → Custom views
+/views/:id                         → Saved view
+/roadmap                           → Roadmap timeline
+/settings                          → Workspace settings
+/settings/integrations             → Integrations
+/settings/api                      → API settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Command Palette (⌘K)</td>
+<td>Issues, projects, views, members, actions</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Issue List</td>
+<td>Issue title, description, identifier</td>
+<td>Status, Assignee, Priority, Label, Cycle, Project, Due Date, Creator, Subscriber, Estimate, Created, Updated</td>
+<td>Priority, Created, Updated, Due Date, Manual (drag), Alphabetical</td>
+</tr>
+<tr>
+<td>Backlog</td>
+<td>Title, identifier</td>
+<td>Priority, Label, Estimate, Creator</td>
+<td>Priority, Created, Manual</td>
+</tr>
+<tr>
+<td>Project List</td>
+<td>Project name</td>
+<td>Status, Lead, Team, Target Date</td>
+<td>Name, Created, Target Date</td>
+</tr>
+</tbody></table>
+<h3>Grouping Options</h3>
+<p>Group by: Status, Assignee, Priority, Label, Cycle, Project, No grouping</p>
+<h3>Filter Syntax (in views)</h3>
+<pre><code>status is &quot;In Progress&quot;
+assignee is me
+priority is Urgent, High
+label is &quot;Bug&quot;
+cycle is &quot;Current&quot;
+project is &quot;Platform v2&quot;
+created after 2024-01-01
+has:sub-issues
+no:assignee
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Issue Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Sidebar (200px) + issue list + slide-over detail panel</td>
+<td>Side panel (~50% width)</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Collapsed sidebar, full issue list</td>
+<td>Full-screen overlay</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tab nav (Home, Inbox, Teams, Search)</td>
+<td>Full-screen page</td>
+</tr>
+</tbody></table>
+<h3>Mobile App Features</h3>
+<ul>
+<li>Swipe to change issue status</li>
+<li>Quick-create with voice title</li>
+<li>Push notifications for mentions and assignments</li>
+<li>Offline issue viewing with sync queue</li>
+<li>Compact board view (horizontal scroll)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View Issues</th>
+<th>Create/Edit</th>
+<th>Admin</th>
+<th>Billing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>Invited teams/projects</td>
+<td>Comment only</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>All workspace</td>
+<td>✅ (all teams)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>Workspace settings, members</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Team-Level Access</h3>
+<ul>
+<li><strong>Any workspace member</strong> can view all teams by default (transparency-first)</li>
+<li>Team membership determines who receives triage notifications</li>
+<li>Issue visibility follows team membership settings</li>
+<li>Projects can have restricted member lists</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

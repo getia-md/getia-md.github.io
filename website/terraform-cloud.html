@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terraform Cloud — IA.md | getIA.md</title>
+  <meta name="description" content="Infrastructure as code. Workspaces, runs, state management. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=hashicorp.com&sz=64" alt="Terraform Cloud" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Terraform Cloud</h1>
+      <p class="detail-brand-tagline">Infrastructure as code. Workspaces, runs, state management.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/terraform-cloud/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://app.terraform.io" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/terraform-cloud/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Terraform Cloud — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Terraform Cloud (by HashiCorp) is the managed platform for Terraform, the dominant Infrastructure as Code (IaC) tool. The mental model is <strong>workspaces as infrastructure environments</strong> — each workspace maps to a Terraform configuration (usually a git repo) and an infrastructure state file. Teams collaborate by reviewing Terraform plans before applying changes to real infrastructure. Terraform Cloud differentiates through remote state management, policy-as-code (Sentinel/OPA), cost estimation, drift detection, private module registry, and a plan/apply workflow that mirrors code review (speculative plans on PRs, approval-gated applies).</p>
+<h2>Site Map</h2>
+<pre><code>├── Dashboard (Organization Overview)
+│   ├── Workspace Health Summary
+│   ├── Recent Runs (across workspaces)
+│   ├── Policy Check Failures
+│   ├── Drift Detection Alerts
+│   └── Quick Actions (create workspace, start run)
+├── Workspaces
+│   ├── Workspace List (filterable by project, status, tags)
+│   ├── Workspace Detail
+│   │   ├── Overview
+│   │   │   ├── Current State (resources managed)
+│   │   │   ├── Last Run Status
+│   │   │   ├── Lock Status
+│   │   │   ├── Terraform Version
+│   │   │   └── VCS Connection
+│   │   ├── Runs
+│   │   │   ├── Run List (plan-only, plan &amp; apply, destroy)
+│   │   │   ├── Run Detail
+│   │   │   │   ├── Plan Phase
+│   │   │   │   │   ├── Plan Output (resource changes: add/change/destroy)
+│   │   │   │   │   ├── Resource Diff (attribute-level changes)
+│   │   │   │   │   └── Cost Estimation (before apply)
+│   │   │   │   ├── Policy Check Phase
+│   │   │   │   │   ├── Sentinel / OPA Policy Results
+│   │   │   │   │   ├── Pass / Soft-Fail / Hard-Fail
+│   │   │   │   │   └── Override (with approval)
+│   │   │   │   ├── Apply Phase
+│   │   │   │   │   ├── Apply Output (resource-by-resource progress)
+│   │   │   │   │   ├── State Change Summary
+│   │   │   │   │   └── Apply Status (applied / errored)
+│   │   │   │   ├── Confirmation Step (manual approve for applies)
+│   │   │   │   ├── Run Triggers (cross-workspace dependencies)
+│   │   │   │   └── Run Status (pending → planning → planned → policy_check → apply → applied)
+│   │   │   └── Queue (pending runs)
+│   │   ├── States
+│   │   │   ├── State Versions (history of state files)
+│   │   │   ├── State Detail (resource list with attributes)
+│   │   │   ├── State Download (JSON)
+│   │   │   └── State Rollback
+│   │   ├── Variables
+│   │   │   ├── Terraform Variables (input variables)
+│   │   │   ├── Environment Variables (TF_VAR_, AWS_*, etc.)
+│   │   │   ├── Sensitive Toggle (masked)
+│   │   │   └── Variable Sets (shared across workspaces)
+│   │   ├── Resources
+│   │   │   ├── Resource List (managed infrastructure)
+│   │   │   ├── Resource Detail (attributes, state)
+│   │   │   └── Drift Detection (planned vs actual)
+│   │   ├── Settings
+│   │   │   ├── General (name, execution mode, Terraform version)
+│   │   │   ├── VCS (repository, branch, directory, trigger patterns)
+│   │   │   ├── Team Access (granular permissions per team)
+│   │   │   ├── Run Triggers (upstream workspace dependencies)
+│   │   │   ├── Notifications (Slack, email, webhook, Teams)
+│   │   │   ├── SSH Key (for private modules)
+│   │   │   ├── Auto Apply (skip manual confirmation)
+│   │   │   ├── Remote State Sharing (expose to other workspaces)
+│   │   │   └── Destruction &amp; Deletion
+│   │   └── Locking (prevent concurrent runs)
+│   └── Create Workspace
+│       ├── VCS-driven (GitHub, GitLab, Bitbucket, Azure DevOps)
+│       ├── CLI-driven (`terraform plan/apply` from terminal)
+│       └── API-driven (CI/CD pipeline triggers)
+├── Projects
+│   ├── Project List
+│   ├── Project Detail
+│   │   ├── Workspaces (grouped)
+│   │   ├── Variable Sets (project-scoped)
+│   │   └── Team Access (project-level permissions)
+│   └── Create Project
+├── Registry (Private Module Registry)
+│   ├── Modules
+│   │   ├── Module List
+│   │   ├── Module Detail
+│   │   │   ├── README (documentation)
+│   │   │   ├── Versions (semver)
+│   │   │   ├── Inputs / Outputs
+│   │   │   ├── Dependencies
+│   │   │   ├── Resources (created by module)
+│   │   │   └── Usage Example (HCL snippet)
+│   │   └── Publish Module (from VCS)
+│   ├── Providers
+│   │   ├── Provider List
+│   │   └── Provider Versions
+│   ├── Policy Sets (Sentinel / OPA)
+│   │   ├── Policy Set List
+│   │   ├── Policy Detail (code, enforcement level)
+│   │   └── Publish from VCS
+│   └── Run Tasks (third-party checks)
+│       ├── Task List
+│       └── Task Results (per run)
+├── Policy Sets
+│   ├── Policy Set List
+│   ├── Policy Set Detail
+│   │   ├── Policies (Sentinel or OPA Rego)
+│   │   ├── Enforcement Level (advisory, soft-mandatory, hard-mandatory)
+│   │   ├── Workspaces Attached
+│   │   └── VCS Source
+│   └── Create Policy Set
+├── Variable Sets
+│   ├── Variable Set List (org-wide, project, workspace scoped)
+│   ├── Variable Set Detail (variables, scope)
+│   └── Create Variable Set
+├── Explorer (Resource Explorer)
+│   ├── Cross-Workspace Resource Search
+│   ├── Resource Types
+│   ├── Resource Detail (across workspaces)
+│   └── Drift Summary
+├── Teams
+│   ├── Team List
+│   ├── Team Detail
+│   │   ├── Members
+│   │   ├── Workspace Access (per workspace permissions)
+│   │   ├── Project Access
+│   │   └── Token (team API token)
+│   └── Create Team
+├── Settings (Organization)
+│   ├── General (name, email, plan)
+│   ├── Authentication
+│   │   ├── SSO / SAML
+│   │   └── Two-Factor Enforcement
+│   ├── VCS Providers (connected GitHub/GitLab/etc.)
+│   ├── API Tokens (organization, team, user)
+│   ├── Agents (self-hosted Terraform Cloud agents)
+│   ├── Cost Estimation Settings
+│   ├── Run Tasks (global integrations)
+│   ├── Notifications (global)
+│   ├── Audit Log
+│   └── Plan &amp; Billing
+├── CLI Integration
+│   ├── terraform login (authenticate)
+│   ├── terraform init (configure backend)
+│   ├── terraform plan (remote plan)
+│   ├── terraform apply (remote apply)
+│   └── terraform state (remote state operations)
+└── Docs (developer.hashicorp.com)
+    ├── Terraform Language (HCL)
+    ├── Terraform Cloud
+    ├── Provider Documentation
+    └── Registry
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible</td>
+<td>Workspaces, Projects, Registry, Policy Sets, Variable Sets, Explorer, Teams, Settings</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Organization switcher, global search, + Create (workspace/project), help, user menu</td>
+</tr>
+<tr>
+<td><strong>Workspace Tabs</strong></td>
+<td>Horizontal tabs within workspace</td>
+<td>Overview, Runs, States, Variables, Resources, Settings</td>
+</tr>
+<tr>
+<td><strong>Run Phases</strong></td>
+<td>Step indicator within run detail</td>
+<td>Plan → Cost Estimation → Policy Check → Confirm → Apply</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Below top bar</td>
+<td>Organization &gt; Project &gt; Workspace &gt; Run #42</td>
+</tr>
+<tr>
+<td><strong>State Browser</strong></td>
+<td>Tree view within States</td>
+<td>Resource hierarchy (module → resource type → resource instance)</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Organization ▾]
+───────────────
+📦 Workspaces
+📁 Projects
+📚 Registry
+  Modules | Providers | Policy Sets
+🛡 Policy Sets
+🔧 Variable Sets
+🔍 Explorer
+───────────────
+👥 Teams
+⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Organization</td>
+<td>name, email, plan (free/team/business/plus), sso, cost_estimation</td>
+<td>has Workspaces, Teams, Projects, Registry</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>name, description, teams[]</td>
+<td>has many Workspaces, Variable Sets</td>
+</tr>
+<tr>
+<td>Workspace</td>
+<td>name, project, execution_mode (remote/local/agent), terraform_version, vcs_repo, auto_apply, locked, tags[]</td>
+<td>belongs to Project, has Runs, States, Variables</td>
+</tr>
+<tr>
+<td>Run</td>
+<td>id, status, is_destroy, plan_only, source (vcs/cli/api), commit_sha, commit_message, created_by</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>resource_additions, resource_changes, resource_destructions, output, cost_estimation</td>
+<td>belongs to Run</td>
+</tr>
+<tr>
+<td>Apply</td>
+<td>status, output, resource_count</td>
+<td>belongs to Run</td>
+</tr>
+<tr>
+<td>PolicyCheck</td>
+<td>status, result (passed/soft_failed/hard_failed), sentinel_policies[]</td>
+<td>belongs to Run</td>
+</tr>
+<tr>
+<td>StateVersion</td>
+<td>serial, terraform_version, resources_count, outputs{}, created_at</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>key, value (encrypted if sensitive), category (terraform/env), sensitive, hcl</td>
+<td>belongs to Workspace or VariableSet</td>
+</tr>
+<tr>
+<td>VariableSet</td>
+<td>name, scope (org/project/workspace), variables[]</td>
+<td>belongs to Organization</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>name, provider, source (vcs), versions[], inputs[], outputs[]</td>
+<td>belongs to Registry</td>
+</tr>
+<tr>
+<td>PolicySet</td>
+<td>name, enforcement (advisory/soft/hard), policies[], workspaces[]</td>
+<td>belongs to Organization</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>name, members[], visibility, workspace_access[], project_access[]</td>
+<td>belongs to Organization</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>name, status, version, last_ping</td>
+<td>belongs to Agent Pool</td>
+</tr>
+<tr>
+<td>RunTask</td>
+<td>name, url, enforcement, stages[]</td>
+<td>belongs to Organization</td>
+</tr>
+</tbody></table>
+<h3>Run Status Flow</h3>
+<pre><code>pending → fetching → planning → planned → cost_estimating → cost_estimated → policy_checking → policy_checked → confirmed → applying → applied
+                   → plan_errored
+                                                                              → policy_soft_failed (override possible)
+                                                                              → policy_hard_failed (blocked)
+                                                           → discarded (user cancelled)
+                                                                                                    → apply_errored
+</code></pre>
+<h3>Workspace Execution Modes</h3>
+<ul>
+<li><strong>Remote</strong>: Plan + Apply run on Terraform Cloud infrastructure</li>
+<li><strong>Local</strong>: Only state storage remote; execution on developer machine</li>
+<li><strong>Agent</strong>: Execution on self-hosted agent (for private network access)</li>
+</ul>
+<h2>User Flows</h2>
+<h3>VCS-Driven Workflow (Primary)</h3>
+<pre><code>Push commit to main → Terraform Cloud detects via webhook → Queue run → Plan phase (show resource changes) → Cost estimation → Policy check (Sentinel/OPA) → Wait for confirmation (if not auto-apply) → Apply → Infrastructure updated → State saved → Notification sent
+</code></pre>
+<h3>PR Speculative Plan</h3>
+<pre><code>Open PR in GitHub → Terraform Cloud runs speculative plan → Plan output posted as PR comment → Team reviews infrastructure changes alongside code → Merge PR → Triggered run → Plan → Confirm → Apply
+</code></pre>
+<h3>CLI-Driven Workflow</h3>
+<pre><code>terraform init (configure remote backend) → terraform plan (runs remotely, streams output to terminal) → Review plan output → terraform apply (remote apply with manual confirmation in dashboard or terminal)
+</code></pre>
+<h3>Drift Detection</h3>
+<pre><code>Scheduled drift check → Terraform Cloud runs refresh → Compares actual infra to state → Drift detected → Alert → View diff → Create run to reconcile → Apply → Drift resolved
+</code></pre>
+<h3>Module Publishing</h3>
+<pre><code>Registry → Publish Module → Connect VCS repo → Tag version (semver) → Module published → Other workspaces: module &quot;vpc&quot; { source = &quot;app.terraform.io/org/vpc/aws&quot; version = &quot;~&gt; 1.0&quot; }
+</code></pre>
+<h3>Policy Enforcement</h3>
+<pre><code>Create Sentinel policy (e.g., &quot;no public S3 buckets&quot;) → Attach to workspaces → Run triggers → Plan phase → Policy check phase → Policy fails (hard-mandatory) → Run blocked → Developer fixes config → Re-run → Policy passes → Apply
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/app/:org                                  → Organization dashboard
+/app/:org/workspaces                       → Workspace list
+/app/:org/workspaces/new                   → Create workspace
+/app/:org/workspaces/:workspace            → Workspace overview
+/app/:org/workspaces/:workspace/runs       → Run list
+/app/:org/workspaces/:workspace/runs/:id   → Run detail
+/app/:org/workspaces/:workspace/states     → State versions
+/app/:org/workspaces/:workspace/states/:id → State detail
+/app/:org/workspaces/:workspace/variables  → Variables
+/app/:org/workspaces/:workspace/resources  → Resources
+/app/:org/workspaces/:workspace/settings   → Workspace settings
+/app/:org/projects                         → Project list
+/app/:org/projects/:project                → Project detail
+/app/:org/registry/modules                 → Module registry
+/app/:org/registry/modules/:module         → Module detail
+/app/:org/registry/providers               → Provider registry
+/app/:org/policy-sets                      → Policy sets
+/app/:org/policy-sets/:id                  → Policy set detail
+/app/:org/settings/variable-sets           → Variable sets
+/app/:org/explorer                         → Resource explorer
+/app/:org/settings/teams                   → Teams
+/app/:org/settings/teams/:team             → Team detail
+/app/:org/settings                         → Organization settings
+/app/:org/settings/vcs                     → VCS providers
+/app/:org/settings/authentication          → SSO / SAML
+/app/:org/settings/agents                  → Agent pools
+/app/:org/settings/cost-estimation         → Cost estimation
+/app/:org/settings/run-tasks               → Run tasks
+/app/:org/settings/audit-log               → Audit log
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspaces</td>
+<td>Workspace name, tags</td>
+<td>Project, Status (healthy/errored/drifted), Current Run Status, Tags, Execution Mode</td>
+<td>Name, Last Run, Updated</td>
+</tr>
+<tr>
+<td>Runs</td>
+<td>Run ID, commit message</td>
+<td>Status, Source (VCS/CLI/API), Plan Status</td>
+<td>Created (newest)</td>
+</tr>
+<tr>
+<td>States</td>
+<td>Resource names, types</td>
+<td>State Version</td>
+<td>Serial Number, Created</td>
+</tr>
+<tr>
+<td>Registry</td>
+<td>Module name, provider</td>
+<td>Provider, Verified</td>
+<td>Name, Downloads, Updated</td>
+</tr>
+<tr>
+<td>Explorer</td>
+<td>Resource name, type, workspace</td>
+<td>Resource Type, Provider, Workspace, Drift Status</td>
+<td>Resource Type, Workspace</td>
+</tr>
+<tr>
+<td>Variables</td>
+<td>Variable key</td>
+<td>Category (terraform/env), Sensitive, Source (workspace/variable set)</td>
+<td>Key</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Workspace</th>
+<th>Run Detail</th>
+<th>Plan Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1280px)</td>
+<td>Expanded</td>
+<td>Full tabs + overview</td>
+<td>Phase indicators + full output</td>
+<td>Monospace plan output with diff highlighting</td>
+</tr>
+<tr>
+<td>Tablet (768-1279px)</td>
+<td>Collapsed (icons)</td>
+<td>Stacked tabs</td>
+<td>Simplified phases</td>
+<td>Scrollable plan output</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger</td>
+<td>Stacked</td>
+<td>Phase list</td>
+<td>Plan output (horizontal scroll)</td>
+</tr>
+</tbody></table>
+<h3>Terraform Cloud-Specific UX</h3>
+<ul>
+<li><strong>Plan output</strong> in monospace with <code>+</code> (green, add), <code>~</code> (yellow, change), <code>-</code> (red, destroy) highlighting</li>
+<li><strong>Resource diff</strong>: attribute-level comparison (before → after)</li>
+<li><strong>Cost estimation</strong>: dollar impact of changes shown before apply</li>
+<li><strong>Policy check badges</strong>: pass/fail/override indicators per policy</li>
+<li><strong>State browser</strong>: hierarchical tree of all managed resources</li>
+<li><strong>Run phases</strong>: visual step indicator (plan → cost → policy → confirm → apply)</li>
+<li><strong>Lock indicator</strong>: workspace locked during active run (prevents concurrent modifications)</li>
+<li><strong>VCS integration</strong>: commit SHA, PR link, branch displayed on each run</li>
+<li><strong>Speculative plan comments</strong>: posted directly on GitHub/GitLab PRs</li>
+<li><strong>Sentinel policy editor</strong>: syntax-highlighted policy code</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Read</th>
+<th>Plan</th>
+<th>Apply</th>
+<th>Variables</th>
+<th>State</th>
+<th>Lock</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Read</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>Read (masked sensitive)</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Write</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>View + Download</td>
+<td>Lock/Unlock</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>Lock/Unlock</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Organization Roles</h3>
+<ul>
+<li><strong>Owner</strong>: full organization control, billing, SSO</li>
+<li><strong>Member</strong>: access based on team assignments</li>
+<li><strong>Team-level access</strong>: per-workspace or per-project granular permissions</li>
+</ul>
+<h3>Security Features</h3>
+<ul>
+<li>State file encryption at rest</li>
+<li>Sensitive variables encrypted, never displayed</li>
+<li>SSO / SAML for enterprise authentication</li>
+<li>Audit logging for all operations</li>
+<li>Agent pools for private network access</li>
+<li>Run task enforcement (third-party security checks pre-apply)</li>
+<li>Cost estimation guardrails</li>
+<li>Sentinel/OPA policy-as-code enforcement</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

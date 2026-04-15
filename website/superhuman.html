@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superhuman — IA.md | getIA.md</title>
+  <meta name="description" content="Fastest email. Keyboard-driven, AI triage, split inbox. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=superhuman.com&sz=64" alt="Superhuman" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Superhuman</h1>
+      <p class="detail-brand-tagline">Fastest email. Keyboard-driven, AI triage, split inbox.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/superhuman/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://superhuman.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/superhuman/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Superhuman — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Superhuman is a premium email client built for speed. The mental model is <strong>keyboard-first triage</strong> — every action is a keystroke, the UI responds in under 100ms, and AI handles categorization. Unlike Gmail&#39;s tab-based approach, Superhuman uses a <strong>split inbox</strong> (Important vs Other) with an opinionated workflow: process every email to inbox zero. Key differentiators: Superhuman AI (auto-drafts, summaries), Read Statuses (know when emails are opened), Snippets (text expansion), Scheduled Send, Undo Send, and a desktop-app feel with Cmd+K command palette.</p>
+<h2>Site Map</h2>
+<pre><code>├── Inbox
+│   ├── Important (AI-sorted)
+│   ├── Other (newsletters, notifications)
+│   ├── Starred
+│   └── Done (archived)
+├── Split Inbox Sections
+│   ├── Team Updates
+│   ├── News &amp; Social
+│   ├── Marketing
+│   ├── Finance
+│   └── Custom Splits
+├── Compose
+│   ├── To / CC / BCC (autocomplete)
+│   ├── Subject
+│   ├── Body (markdown-style)
+│   ├── Snippets (;trigger expansion)
+│   ├── AI Write / Shorten / Lengthen
+│   ├── Schedule Send
+│   ├── Attachments
+│   └── Send (⌘+Enter)
+├── Message View
+│   ├── Conversation Thread
+│   ├── Read Status Indicators (eye icon)
+│   ├── Quick Actions (e / archive, r / reply, f / forward)
+│   ├── Remind Me (snooze)
+│   ├── AI Summary
+│   └── Social Sidebar (LinkedIn, Twitter, location, timezone)
+├── Search
+│   ├── Instant Search (⌘+K or /)
+│   ├── Advanced Filters (from:, to:, has:, date:)
+│   └── Recent Searches
+├── Superhuman AI
+│   ├── Auto-Triage (split inbox sorting)
+│   ├── Write (compose from prompt)
+│   ├── Summarize Thread
+│   ├── Jot Down (rough notes → polished email)
+│   └── Instant Reply Suggestions
+├── Reminders
+│   ├── Snoozed Messages
+│   ├── Follow-up Reminders
+│   └── Read Receipt Alerts
+├── Snippets
+│   ├── Personal Snippets
+│   ├── Team Snippets
+│   └── Create / Edit Snippet
+├── Contacts
+│   ├── Social Sidebar (auto-enriched)
+│   └── Contact Detail (company, role, timezone)
+├── Calendaring (built-in)
+│   ├── Availability Sharing
+│   └── Calendar Event Preview
+├── Settings
+│   ├── Account &amp; Signatures
+│   ├── Split Inbox Configuration
+│   ├── Shortcuts Reference
+│   ├── Notification Preferences
+│   ├── AI Preferences
+│   ├── Read Status Privacy
+│   ├── Theme (light/dark/auto)
+│   └── Team Management
+└── Onboarding
+    ├── Concierge Setup (1:1 call)
+    ├── Keyboard Shortcuts Tutorial
+    └── Import &amp; Migration
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>No sidebar</strong></td>
+<td>Full-screen single pane</td>
+<td>Message list fills the viewport — no chrome, maximum focus</td>
+</tr>
+<tr>
+<td><strong>Cmd+K</strong></td>
+<td>Command palette</td>
+<td>Primary navigation: search, navigate, execute any action</td>
+</tr>
+<tr>
+<td><strong>Keyboard shortcuts</strong></td>
+<td>Vim-inspired single keys</td>
+<td>j/k = up/down, e = archive, r = reply, f = forward, h = remind, # = delete</td>
+</tr>
+<tr>
+<td><strong>Split Inbox Tabs</strong></td>
+<td>Top horizontal tabs</td>
+<td>Important / Other / custom splits</td>
+</tr>
+<tr>
+<td><strong>Social Sidebar</strong></td>
+<td>Right panel (auto)</td>
+<td>Shows sender&#39;s info (LinkedIn, photo, timezone) on hover/select</td>
+</tr>
+<tr>
+<td><strong>Compose</strong></td>
+<td>Overlays current view</td>
+<td>Slides in from bottom, maintains inbox context</td>
+</tr>
+</tbody></table>
+<h3>Key Shortcuts</h3>
+<pre><code>j/k = navigate messages     e = archive (done)      r = reply
+f = forward                 ⌘+K = command palette   / = search
+h = remind me               # = trash               s = star
+⌘+⇧+, = snippets           tab = next split        ⌘+Enter = send
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Message</td>
+<td>from, to[], cc[], subject, body, date, read, starred, split_category, read_by[]</td>
+<td>belongs to Thread</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>subject, messages[], last_date, unread_count, split</td>
+<td>in Split Inbox category</td>
+</tr>
+<tr>
+<td>Split</td>
+<td>name, rules[], auto (AI) or manual</td>
+<td>categorizes Threads</td>
+</tr>
+<tr>
+<td>ReadStatus</td>
+<td>recipient, opened_at, device, location</td>
+<td>belongs to sent Message</td>
+</tr>
+<tr>
+<td>Snippet</td>
+<td>trigger (;shortcode), body, variables[], shared</td>
+<td>belongs to User or Team</td>
+</tr>
+<tr>
+<td>Reminder</td>
+<td>thread, remind_at, type (snooze/follow-up)</td>
+<td>belongs to Thread</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>name, email, avatar, company, title, timezone, social_links</td>
+<td>auto-enriched from email</td>
+</tr>
+<tr>
+<td>AIAction</td>
+<td>type (write/summarize/triage), input, output</td>
+<td>triggered on Thread/Message</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Inbox Zero Workflow</h3>
+<pre><code>Open App → Important tab → Read top message → Reply (r) or Archive (e) → Next message (j) → Repeat → Inbox Zero 🎉
+</code></pre>
+<h3>AI Compose</h3>
+<pre><code>Cmd+K → &quot;Write&quot; → Enter prompt (&quot;decline meeting politely&quot;) → AI generates draft → Edit → Send
+</code></pre>
+<h3>Snippet Usage</h3>
+<pre><code>Compose → Type &quot;;intro&quot; → Snippet expands to full introduction paragraph → Customize variables → Send
+</code></pre>
+<h3>Read Status Check</h3>
+<pre><code>Sent folder → Open sent message → See read indicators (who opened, when, how many times)
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                          → Inbox (Important split)
+/inbox/other               → Other split
+/inbox/:splitName          → Custom split
+/starred                   → Starred
+/sent                      → Sent
+/drafts                    → Drafts
+/reminders                 → Snoozed + Follow-ups
+/done                      → Archived
+/thread/:id                → Thread view
+/search?q=:query           → Search results
+/snippets                  → Snippets manager
+/settings                  → Settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global (⌘K)</td>
+<td>from:, to:, subject:, has:attachment, date range, in:split</td>
+<td>Date, Relevance</td>
+</tr>
+<tr>
+<td>Inbox</td>
+<td>Split (Important/Other/custom), Unread, Starred</td>
+<td>Date (newest)</td>
+</tr>
+<tr>
+<td>Snippets</td>
+<td>Personal/Team, keyword</td>
+<td>Name, Usage frequency</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (primary)</td>
+<td>Full-screen single pane, no sidebar, keyboard-driven</td>
+</tr>
+<tr>
+<td>Mobile (iOS)</td>
+<td>Swipe gestures (right=archive, left=remind), bottom compose button</td>
+</tr>
+</tbody></table>
+<p>Superhuman is desktop-first. Mobile is a companion, not the primary experience.</p>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Inbox</th>
+<th>AI Features</th>
+<th>Read Status</th>
+<th>Snippets</th>
+<th>Team Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Individual</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Personal</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Team Member</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Personal + Team</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Team Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Manage Team Snippets</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coinbase — IA.md | getIA.md</title>
+  <meta name="description" content="Crypto exchange. Buy, sell, stake, wallet, NFTs. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=coinbase.com&sz=64" alt="Coinbase" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Coinbase</h1>
+      <p class="detail-brand-tagline">Crypto exchange. Buy, sell, stake, wallet, NFTs.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/coinbase/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://coinbase.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/coinbase/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Coinbase — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Coinbase is the largest regulated crypto exchange in the US, designed for both beginners and advanced traders. The mental model splits into two tiers: <strong>Coinbase (simple)</strong> for casual buyers who want to buy Bitcoin in three taps, and <strong>Coinbase Advanced</strong> (formerly Pro) for serious traders who need order books, charts, and advanced order types. The platform also acts as a crypto wallet, staking provider, and educational hub.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Portfolio
+│   ├── Total Balance (chart)
+│   ├── Asset Breakdown (pie chart)
+│   ├── Watchlist
+│   ├── Top Movers
+│   ├── Trending on Coinbase
+│   ├── Earn Rewards (staking summary)
+│   ├── Learning Rewards (&quot;Earn while you learn&quot;)
+│   └── News &amp; Market Updates
+├── Explore / Prices
+│   ├── All Assets (500+ crypto)
+│   ├── Gainers &amp; Losers
+│   ├── New Listings
+│   ├── Categories (DeFi, NFTs, Layer 2, Meme Coins)
+│   ├── Trending
+│   └── Crypto News
+├── Asset Detail
+│   ├── Price Chart (line/candlestick)
+│   │   ├── Timeframes (1H, 1D, 1W, 1M, 1Y, All)
+│   │   └── Technical Indicators (Advanced)
+│   ├── Buy / Sell / Convert Buttons
+│   ├── Your Balance (if held)
+│   ├── About (project description, whitepaper link)
+│   ├── Stats (market cap, volume, supply, all-time high)
+│   ├── Price Alerts
+│   ├── Related Assets
+│   └── On-Chain Data (Advanced)
+├── Trade (Simple)
+│   ├── Buy → Select Asset → Enter Amount ($) → Payment Method → Preview → Confirm
+│   ├── Sell → Select Asset → Enter Amount → Destination (USD/USDC) → Confirm
+│   └── Convert → From Asset → To Asset → Amount → Preview → Confirm
+├── Advanced Trade
+│   ├── Trading Pair Selector
+│   ├── Order Book (bids/asks)
+│   ├── Depth Chart
+│   ├── Price Chart (TradingView, full indicators)
+│   ├── Trade History (recent fills)
+│   ├── Order Panel
+│   │   ├── Market / Limit / Stop-Limit
+│   │   ├── Size / Amount
+│   │   ├── Post-Only, IOC, FOK
+│   │   └── Place Order
+│   ├── Open Orders
+│   └── Fills
+├── Wallet
+│   ├── All Assets (balances)
+│   ├── Send Crypto (to address)
+│   ├── Receive Crypto (show address / QR)
+│   ├── Coinbase Wallet (self-custody, separate app)
+│   └── Transaction History
+├── Earn / Staking
+│   ├── Staking Assets (ETH, SOL, ATOM, etc.)
+│   ├── Staking Dashboard (rewards earned)
+│   ├── Earn Campaigns (&quot;Learn &amp; Earn&quot; — watch video, earn crypto)
+│   └── DeFi Yield (via Wallet)
+├── NFTs (reduced scope)
+│   ├── Browse
+│   ├── Collections
+│   └── My NFTs
+├── Pay
+│   ├── Send/Receive via Username
+│   ├── Request Payment
+│   └── Payment History
+├── Recurring Buys
+│   ├── Active Recurring Orders
+│   ├── Create (asset, amount, frequency)
+│   └── Pause / Edit
+├── Notifications
+│   ├── Price Alerts
+│   ├── Transaction Confirmations
+│   ├── Staking Rewards
+│   └── Security Alerts
+├── Account &amp; Settings
+│   ├── Profile
+│   ├── Payment Methods (bank, card, PayPal)
+│   ├── Limits &amp; Verification
+│   ├── Security (2FA, passkeys, vault)
+│   ├── Tax Reports (gain/loss reports)
+│   ├── Coinbase One (subscription)
+│   ├── Referrals
+│   └── Preferences (currency display, notifications)
+└── Learn
+    ├── Crypto Basics
+    ├── What is Bitcoin/Ethereum/etc.
+    ├── DeFi Explained
+    ├── Security Best Practices
+    └── Tax Guide
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>4-5 tabs (mobile)</td>
+<td>Home, Explore, Trade (center, prominent), Activity, Account</td>
+</tr>
+<tr>
+<td><strong>Trade Button</strong></td>
+<td>Center tab, visually distinct</td>
+<td>Opens buy/sell/convert modal — the primary CTA</td>
+</tr>
+<tr>
+<td><strong>Advanced Toggle</strong></td>
+<td>Switch in trade view</td>
+<td>Toggle between Simple and Advanced trade interfaces</td>
+</tr>
+<tr>
+<td><strong>Asset Page</strong></td>
+<td>Full-scroll page</td>
+<td>Chart → Trade buttons → Stats → About → Related</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Desktop</td>
+<td>Logo, Explore, Trade, Earn, Wallet, Notifications, Profile</td>
+</tr>
+<tr>
+<td><strong>Search</strong></td>
+<td>Top of Explore or ⌘K (web)</td>
+<td>Search by crypto name or symbol</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CryptoAsset</td>
+<td>symbol, name, price, change_24h, market_cap, volume, circulating_supply, max_supply, all_time_high</td>
+<td>has PriceHistory, OnChainData</td>
+</tr>
+<tr>
+<td>Balance</td>
+<td>asset, amount, value_usd, staked_amount, pending_rewards</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>asset_pair, side (buy/sell), type (market/limit/stop), amount, price, fee, status</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>StakingPosition</td>
+<td>asset, amount_staked, reward_rate_apy, rewards_earned, unbonding_period</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>RecurringBuy</td>
+<td>asset, amount_usd, frequency, next_date, payment_method</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>WalletTransaction</td>
+<td>type (send/receive), asset, amount, from_address, to_address, tx_hash, network_fee, status, confirmations</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>LearnModule</td>
+<td>title, description, video_url, quiz, reward_asset, reward_amount</td>
+<td>platform content</td>
+</tr>
+<tr>
+<td>PriceAlert</td>
+<td>asset, condition (above/below), target_price</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Order Types (Advanced)</h3>
+<p><code>market | limit | stop-limit | post-only | IOC | FOK</code></p>
+<h2>User Flows</h2>
+<h3>Buy Crypto (Simple — 3 taps)</h3>
+<pre><code>Home → [Trade] → Buy → Search &quot;BTC&quot; → Enter $100 → Select Payment (bank) → Preview Fee → Confirm → BTC Added to Portfolio
+</code></pre>
+<h3>Convert Between Crypto</h3>
+<pre><code>Trade → Convert → From ETH → To USDC → Enter Amount → Preview Rate → Confirm → Instant
+</code></pre>
+<h3>Stake &amp; Earn</h3>
+<pre><code>Earn → ETH Staking → Enter Amount → Review APY → Stake → Rewards Accrue Daily → Claim or Auto-Compound
+</code></pre>
+<h3>Learn &amp; Earn</h3>
+<pre><code>Learn → &quot;What is Solana?&quot; → Watch 3-min Video → Take Quiz → Earn $3 in SOL → Asset Added to Portfolio
+</code></pre>
+<h3>Send Crypto to External Wallet</h3>
+<pre><code>Wallet → Send → Select Asset → Enter Address (or scan QR) → Amount → Network → Preview Fee → 2FA → Confirm → Track Confirmations
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home / Portfolio
+/price/:symbol                 → Asset Detail
+/trade                         → Simple Trade
+/advanced-trade/:pair          → Advanced Trade (e.g., BTC-USD)
+/earn                          → Staking &amp; Earn
+/earn/:asset                   → Asset Staking Detail
+/wallet                        → Wallet Balances
+/wallet/send                   → Send Crypto
+/wallet/receive                → Receive Crypto
+/wallet/transactions           → Transaction History
+/nft                           → NFT Marketplace
+/pay                           → Coinbase Pay
+/recurring                     → Recurring Buys
+/learn                         → Learn Hub
+/learn/:slug                   → Learn Module
+/notifications                 → Notifications
+/settings                      → Account &amp; Settings
+/settings/payment-methods      → Payment Methods
+/settings/security             → Security
+/settings/taxes                → Tax Reports
+/prices                        → All Crypto Prices
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Explore</td>
+<td>Crypto name, symbol</td>
+<td>Category (DeFi, L2, Meme), tradeable on Coinbase</td>
+<td>Market cap, price change, volume, name</td>
+</tr>
+<tr>
+<td>Portfolio</td>
+<td>Holdings</td>
+<td>Asset type</td>
+<td>Value, change, name</td>
+</tr>
+<tr>
+<td>Advanced Trade</td>
+<td>Trading pairs</td>
+<td>Base/quote currency, volume</td>
+<td>Volume, name</td>
+</tr>
+<tr>
+<td>Transactions</td>
+<td>TX hash, asset, address</td>
+<td>Type (send/receive/buy/sell), date range</td>
+<td>Date, amount</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Portfolio</th>
+<th>Trade</th>
+<th>Advanced</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Single chart + asset cards</td>
+<td>Bottom-sheet trade modal</td>
+<td>Simplified charts, stacked order book</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Wider charts, 2-column</td>
+<td>Side panel</td>
+<td>Near-desktop layout</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Dashboard grid</td>
+<td>Inline trade panel</td>
+<td>Full TradingView chart + order book + trade panel</td>
+</tr>
+</tbody></table>
+<h3>Platform-Specific UX</h3>
+<ul>
+<li>Two-tier interface: Simple (default) vs Advanced (opt-in)</li>
+<li>Learn &amp; Earn gamification: watch → quiz → earn</li>
+<li>Vault for cold storage with time-delayed withdrawals</li>
+<li>Real-time price updates via WebSocket</li>
+<li>Push notifications for price movements and staking rewards</li>
+<li>QR code scanning for wallet addresses</li>
+<li>Biometric authentication for transactions</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View Prices</th>
+<th>Buy/Sell</th>
+<th>Advanced Trade</th>
+<th>Send/Receive</th>
+<th>Staking</th>
+<th>Margin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unverified</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Basic (Level 1)</td>
+<td>✅</td>
+<td>Limited ($)</td>
+<td>—</td>
+<td>Limited</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Verified (Level 2)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Coinbase One</td>
+<td>✅</td>
+<td>✅ (0 fee)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (boosted)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Institutional</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Security &amp; Compliance</h3>
+<ul>
+<li>KYC/AML verification required for trading</li>
+<li>2FA required for all accounts</li>
+<li>Vault: multi-signature, time-delayed withdrawals</li>
+<li>98% of crypto stored in cold storage (offline)</li>
+<li>FDIC-insured USD balances (up to $250K)</li>
+<li>SOC 2 Type II compliant</li>
+<li>State money transmitter licenses</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

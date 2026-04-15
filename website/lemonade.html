@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemonade — IA.md | getIA.md</title>
+  <meta name="description" content="AI-powered insurance. Instant quotes, claims via chat. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=lemonade.com&sz=64" alt="Lemonade" onerror="this.parentElement.textContent='L'">
+      </div>
+      <h1 class="detail-brand-name">Lemonade</h1>
+      <p class="detail-brand-tagline">AI-powered insurance. Instant quotes, claims via chat.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/lemonade/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://lemonade.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/lemonade/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Lemonade — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Lemonade is a digital-first insurance company that uses AI and behavioral economics to reinvent insurance. The mental model is <strong>insurance as a simple, transparent, delightful experience</strong> — the opposite of traditional insurance complexity. Key differentiators: Maya (AI chatbot) guides the entire experience, quotes in 90 seconds, claims paid in 3 minutes, and the Giveback program donates unclaimed premiums to charities. Products span renters, homeowners, pet, life, and car insurance.</p>
+<h2>Site Map</h2>
+<h3>Customer-Facing</h3>
+<pre><code>├── Home / Landing
+│   ├── Hero (&quot;Forget everything you know about insurance&quot;)
+│   ├── Product Cards (Renters, Homeowners, Pet, Life, Car)
+│   ├── How It Works (3 steps: Get a Quote, Get Covered, Get Paid)
+│   ├── Instant Quote CTA (&quot;Check Our Prices&quot;)
+│   ├── Giveback Program Highlight
+│   ├── App Store / Google Play Badges
+│   ├── Trust Signals (ratings, press logos)
+│   └── Charity Partners
+├── Products
+│   ├── Renters Insurance
+│   │   ├── What&#39;s Covered (personal property, liability)
+│   │   ├── Starting At $5/mo
+│   │   └── Get a Quote
+│   ├── Homeowners Insurance
+│   │   ├── Coverage Details
+│   │   ├── Dwelling + Personal Property + Liability
+│   │   └── Get a Quote
+│   ├── Pet Insurance
+│   │   ├── Dogs &amp; Cats
+│   │   ├── Accident + Illness
+│   │   ├── Preventive Care Add-On
+│   │   └── Get a Quote
+│   ├── Life Insurance (Lemonade Life)
+│   │   ├── Term Life
+│   │   ├── Starting at $9/mo
+│   │   └── Get a Quote
+│   └── Car Insurance (Lemonade Car)
+│       ├── Full Coverage
+│       ├── Telematics Discount
+│       └── Get a Quote
+├── Quote Flow (AI Maya Chatbot)
+│   ├── Chat Interface (conversational)
+│   ├── Select Product
+│   ├── Personal Details (name, address, DOB)
+│   ├── Product-Specific Questions
+│   │   ├── Renters: apartment details, roommates
+│   │   ├── Home: property type, year built, roof
+│   │   ├── Pet: breed, age, health history
+│   │   ├── Life: health questions, beneficiaries
+│   │   └── Car: vehicle, driving history
+│   ├── Coverage Selection
+│   │   ├── Recommended Package (default)
+│   │   ├── Customize Coverage (sliders)
+│   │   ├── Deductible Options
+│   │   └── Add-Ons / Extra Coverage
+│   ├── Select Giveback Charity
+│   ├── Quote Result
+│   │   ├── Monthly / Annual Price
+│   │   ├── Coverage Summary
+│   │   ├── What&#39;s Covered / Not Covered
+│   │   └── Price Breakdown
+│   ├── Purchase
+│   │   ├── Payment Method
+│   │   ├── Start Date
+│   │   └── Accept Terms
+│   └── Welcome
+│       ├── Policy Confirmation
+│       ├── Download App
+│       └── Digital ID Card
+├── My Policies (App)
+│   ├── Active Policies (visual cards)
+│   ├── Policy Detail
+│   │   ├── Coverage Summary
+│   │   ├── Monthly Premium
+│   │   ├── Deductible
+│   │   ├── Policy Documents
+│   │   ├── ID Cards
+│   │   ├── Giveback Charity
+│   │   └── Edit Coverage
+│   │       ├── Adjust Coverage Limits
+│   │       ├── Add/Remove Items (scheduled personal property)
+│   │       ├── Add Roommate
+│   │       └── Change Address
+│   └── Bundle Savings
+├── Claims (AI Jim)
+│   ├── File a Claim (chatbot-driven)
+│   │   ├── Select Policy
+│   │   ├── What Happened? (conversational)
+│   │   ├── Record Video Statement (anti-fraud, empathy)
+│   │   ├── Upload Photos / Documentation
+│   │   ├── AI Assessment
+│   │   ├── Review &amp; Submit
+│   │   └── Instant Approval (if eligible) or Handoff to Adjuster
+│   ├── My Claims
+│   │   ├── Open Claims
+│   │   ├── Claim Detail
+│   │   │   ├── Status (Submitted, Reviewing, Approved, Paid)
+│   │   │   ├── Timeline
+│   │   │   ├── Payout Amount
+│   │   │   ├── Documents
+│   │   │   └── Contact Support
+│   │   └── Closed Claims
+│   └── AI Claims: &quot;3 minutes to get paid&quot;
+├── Giveback
+│   ├── How It Works
+│   ├── My Charity Selection
+│   ├── Giveback History (annual donations)
+│   └── Charities Supported
+├── Payments
+│   ├── Upcoming Payments
+│   ├── Payment History
+│   ├── Payment Method
+│   └── Auto-Pay Settings
+├── Account
+│   ├── Personal Info
+│   ├── Communication Preferences
+│   ├── Referral Program (&quot;Give $25, Get $25&quot;)
+│   ├── Security Settings
+│   └── Help
+├── Help / FAQ
+│   ├── By Product
+│   ├── Claims Process
+│   ├── Coverage Explanations (in plain language)
+│   ├── Chat Support
+│   └── Blog (Lemonade Blog — insurance education)
+└── Footer
+    ├── Products
+    ├── Company (About, Careers, Press)
+    ├── Giveback
+    ├── Blog
+    ├── Terms &amp; Privacy
+    └── Licenses &amp; Disclosures
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header (Web)</strong></td>
+<td>Clean top bar</td>
+<td>Logo, Products dropdown, Claims, Check Our Prices (CTA), Login</td>
+</tr>
+<tr>
+<td><strong>Bottom Tab Bar (App)</strong></td>
+<td>4 tabs</td>
+<td>Home, Policies, Claims, Chat (Maya)</td>
+</tr>
+<tr>
+<td><strong>Maya Chat</strong></td>
+<td>Full-screen conversational UI</td>
+<td>Quote flow runs as a chat conversation with Maya</td>
+</tr>
+<tr>
+<td><strong>Quote Customizer</strong></td>
+<td>Slider-based on results</td>
+<td>Drag sliders to adjust coverage + see price change in real time</td>
+</tr>
+<tr>
+<td><strong>Giveback Picker</strong></td>
+<td>Charity grid in quote flow</td>
+<td>Choose which charity gets unclaimed money</td>
+</tr>
+</tbody></table>
+<h3>Signature UX: Chatbot-First</h3>
+<p>Lemonade replaces traditional forms with a conversational AI experience:</p>
+<ul>
+<li><strong>Maya</strong> (quote bot): &quot;Hi! I&#39;m Maya, and I&#39;ll help you get insured.&quot;</li>
+<li><strong>AI Jim</strong> (claims bot): &quot;Sorry to hear that. Let&#39;s get you taken care of.&quot;</li>
+<li>Users type or select options in a chat interface, not fill out forms</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Customer</td>
+<td>name, dob, email, phone, address, charity_selection</td>
+<td>has Policies, Claims</td>
+</tr>
+<tr>
+<td>Policy</td>
+<td>product_type, status, effective_date, premium, deductible, coverages[], giveback_charity, documents[]</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Coverage</td>
+<td>type (dwelling/personal_property/liability/medical), limit, deductible</td>
+<td>belongs to Policy</td>
+</tr>
+<tr>
+<td>ScheduledItem</td>
+<td>description, value, photos[] (e.g., engagement ring, laptop)</td>
+<td>belongs to Policy</td>
+</tr>
+<tr>
+<td>Claim</td>
+<td>policy, incident_date, description, video_statement_url, photos[], ai_assessment, status, payout</td>
+<td>belongs to Policy</td>
+</tr>
+<tr>
+<td>Quote</td>
+<td>product, customer_info, coverages, premium, valid_until</td>
+<td>becomes Policy on purchase</td>
+</tr>
+<tr>
+<td>Giveback</td>
+<td>year, charity, amount_donated, pool_total</td>
+<td>aggregated annual</td>
+</tr>
+<tr>
+<td>Referral</td>
+<td>referrer, referee, bonus_amount, status</td>
+<td>belongs to Customer</td>
+</tr>
+</tbody></table>
+<h3>Policy Status Flow</h3>
+<pre><code>quoted → purchased → active → renewal_pending → renewed
+                                                 ↘ lapsed / cancelled
+</code></pre>
+<h3>Claim Status Flow (AI-Powered)</h3>
+<pre><code>started (chat) → submitted → ai_reviewing → instant_approved → paid (in minutes!)
+                              ↘ needs_review → adjuster_assigned → reviewed → approved/denied → paid
+</code></pre>
+<h2>User Flows</h2>
+<h3>Get a Quote (90 seconds)</h3>
+<pre><code>Home → [Check Our Prices] → Maya Chat: &quot;Hi! What can I help you insure?&quot; → Select Product → Chat Q&amp;A (5-10 questions) → Coverage Recommendation → Customize (sliders) → Choose Charity → See Price → Purchase → Policy Active
+</code></pre>
+<h3>File a Claim (3 minutes)</h3>
+<pre><code>App → Claims → [File a Claim] → AI Jim Chat → Describe Incident → Record Video Statement (30 sec) → Upload Photos → AI Reviews → Instant Approval → Money Deposited → Done
+</code></pre>
+<h3>Adjust Coverage</h3>
+<pre><code>Policies → Select Policy → Edit Coverage → Adjust Sliders → See Price Change → Confirm → Updated Immediately
+</code></pre>
+<h3>Add Scheduled Item</h3>
+<pre><code>Policies → Renters → [+] Schedule Item → Describe Item → Enter Value → Upload Photo → Added → Extra Coverage Active
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home / Landing
+/renters                       → Renters Insurance
+/homeowners                    → Homeowners Insurance
+/pet                           → Pet Insurance
+/life                          → Life Insurance
+/car                           → Car Insurance
+/get-started                   → Start Quote (Maya chat)
+/get-started/:product          → Product-Specific Quote
+/policies                      → My Policies
+/policies/:id                  → Policy Detail
+/policies/:id/edit             → Edit Coverage
+/claims                        → My Claims
+/claims/new                    → File a Claim
+/claims/:id                    → Claim Detail
+/giveback                      → Giveback Program
+/billing                       → Payments
+/account                       → Account Settings
+/referral                      → Referral Program
+/faq                           → FAQ
+/blog                          → Blog
+/help                          → Help Center
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FAQ / Help</td>
+<td>Articles, coverage questions</td>
+<td>Product type</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Policies</td>
+<td>Policy number, product</td>
+<td>Status, product type</td>
+<td>Renewal date, premium</td>
+</tr>
+<tr>
+<td>Claims</td>
+<td>Claim number, description</td>
+<td>Status, product, date</td>
+<td>Date, amount</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Quote Flow</th>
+<th>Policies</th>
+<th>Claims</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Chat interface, full-screen</td>
+<td>Card stack</td>
+<td>Chat-based claim filing</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Wider chat bubble, side preview</td>
+<td>Grid</td>
+<td>Chat + side panel</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Centered chat + coverage preview</td>
+<td>Dashboard</td>
+<td>Not typical (app-first)</td>
+</tr>
+</tbody></table>
+<h3>Lemonade-Specific UX</h3>
+<ul>
+<li><strong>Chatbot-first</strong>: No traditional forms; everything is conversational</li>
+<li><strong>Video claims</strong>: Record a 30-second video explaining what happened</li>
+<li><strong>Instant claims</strong>: AI Jim can approve and pay in under 3 minutes</li>
+<li><strong>Giveback transparency</strong>: Annual report on donations per charity</li>
+<li><strong>Slider-based customization</strong>: Drag to adjust coverage, see price change live</li>
+<li><strong>Pink brand color</strong>: Warm, approachable, anti-insurance feeling</li>
+<li><strong>Plain language</strong>: No insurance jargon; everything explained simply</li>
+<li><strong>Social proof</strong>: &quot;Join 2M+ Lemonade members&quot;</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Quote</th>
+<th>Policies</th>
+<th>Claims</th>
+<th>Billing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>✅ (start)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own</td>
+<td>File + track</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Policyholder</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own + edit coverage</td>
+<td>File + track + instant payout</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Security &amp; Trust</h3>
+<ul>
+<li>SOC 2 compliant</li>
+<li>Encrypted data at rest and in transit</li>
+<li>Biometric authentication in app</li>
+<li>Anti-fraud: AI cross-references claims with video statements</li>
+<li>Licensed in all 50 US states</li>
+<li>Behavioral economics: Giveback reduces fraud (your fraud hurts your charity)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentry — IA.md | getIA.md</title>
+  <meta name="description" content="Error monitoring. Stack traces, performance, release tracking. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=sentry.io&sz=64" alt="Sentry" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Sentry</h1>
+      <p class="detail-brand-tagline">Error monitoring. Stack traces, performance, release tracking.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/sentry/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://sentry.io" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/sentry/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Sentry — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Sentry is a developer-first application monitoring platform focused on <strong>error tracking and performance monitoring</strong>. The mental model is <strong>issues, not just errors</strong> — Sentry groups individual error events into deduplicated issues, assigns them to owners, and tracks their lifecycle from first occurrence to resolution. Sentry differentiates through deep stack trace analysis, source map support, release tracking (which deploy introduced the bug), session replay (watch what the user did), and tight integration with developer workflows (GitHub issues, Slack, Jira). The platform works across web, mobile, and backend.</p>
+<h2>Site Map</h2>
+<pre><code>├── Dashboard
+│   ├── Issues Overview (error count trends)
+│   ├── Crash-Free Sessions (%)
+│   ├── Transactions (performance)
+│   ├── Release Health
+│   ├── Custom Widgets (add/configure)
+│   └── Date Range Selector
+├── Issues
+│   ├── Issue List (grouped errors)
+│   │   ├── Unresolved / Ignored / For Review
+│   │   ├── Filter by: project, environment, time, assignee, level
+│   │   ├── Sort by: events, users, date, priority
+│   │   └── Saved Searches
+│   ├── Issue Detail
+│   │   ├── Title (error type + message)
+│   │   ├── Sparkline (event count over time)
+│   │   ├── Stack Trace (source-mapped, clickable frames)
+│   │   ├── Breadcrumbs (user actions leading to error)
+│   │   ├── Tags (browser, OS, URL, custom)
+│   │   ├── Context
+│   │   │   ├── User (ID, email, IP)
+│   │   │   ├── Device (browser, OS, screen)
+│   │   │   ├── Request (URL, method, headers)
+│   │   │   └── Custom Context (key-value)
+│   │   ├── Events (individual occurrences, navigable)
+│   │   ├── Replays (linked session replays)
+│   │   ├── Activity (status changes, assignments, comments)
+│   │   ├── Similar Issues
+│   │   ├── Merged Issues
+│   │   ├── Linked Issues (GitHub, Jira, Linear)
+│   │   ├── Suspect Commits (which commit caused this)
+│   │   ├── Suspect Releases (which release introduced this)
+│   │   └── Actions: Resolve / Ignore / Assign / Link / Delete
+│   └── Issue Triage
+│       ├── For Review Queue
+│       ├── Regression Detection (resolved issues recurring)
+│       └── Auto-assignment Rules
+├── Projects
+│   ├── Project List
+│   ├── Project Detail
+│   │   ├── Processing Issues
+│   │   ├── Project Settings
+│   │   │   ├── General
+│   │   │   ├── Alerts
+│   │   │   ├── Teams &amp; Access
+│   │   │   ├── Client Keys (DSN)
+│   │   │   ├── Source Maps
+│   │   │   ├── Release Tracking
+│   │   │   ├── Data Scrubbing (PII filtering)
+│   │   │   ├── Issue Grouping (fingerprinting rules)
+│   │   │   └── Integrations (per-project config)
+│   │   └── SDK Setup Instructions
+│   └── Create Project (platform selection: React, Python, iOS, etc.)
+├── Performance
+│   ├── Overview
+│   │   ├── Apdex Score
+│   │   ├── Throughput (transactions/sec)
+│   │   ├── P50 / P75 / P95 / P99 Duration
+│   │   ├── Failure Rate
+│   │   └── Trend Charts
+│   ├── Transaction List
+│   │   └── Transaction Summary
+│   │       ├── Duration Distribution
+│   │       ├── Span Waterfall (breakdown by operation)
+│   │       ├── Suspect Tags (what correlates with slow)
+│   │       ├── Related Issues (errors in this transaction)
+│   │       └── Web Vitals (if web transaction)
+│   ├── Trends (improving/regressing transactions)
+│   ├── Queries (database query analysis)
+│   │   ├── Slowest Queries
+│   │   ├── Query Detail (time spent, throughput)
+│   │   └── N+1 Detection
+│   ├── Resources (HTTP, images, scripts)
+│   ├── Screens (mobile screen load performance)
+│   ├── Web Vitals (LCP, FID, CLS, TTFB — per page)
+│   └── Caches (cache hit/miss analysis)
+├── Replays (Session Replay)
+│   ├── Replay List (sessions with errors)
+│   ├── Replay Player
+│   │   ├── DOM Recording (visual playback)
+│   │   ├── Console Logs
+│   │   ├── Network Requests
+│   │   ├── Breadcrumbs (user clicks, navigation)
+│   │   ├── Errors (highlighted moments)
+│   │   ├── Rage Clicks / Dead Clicks
+│   │   └── Scrubbing (timeline slider)
+│   └── Filter: has errors, has rage clicks, duration, user
+├── Profiling (Continuous Profiling)
+│   ├── Profile List (by transaction)
+│   ├── Flamechart / Flamegraph
+│   │   ├── Function-level CPU time
+│   │   ├── Call stack visualization
+│   │   └── Regression Detection
+│   └── Aggregate Flamegraph
+├── Crons (Cron Job Monitoring)
+│   ├── Cron Monitor List (healthy/failing/missed)
+│   ├── Monitor Detail
+│   │   ├── Check-in Timeline (expected vs actual)
+│   │   ├── Status (OK, ERROR, MISSED, TIMEOUT)
+│   │   └── Alert Rules
+│   └── Create Monitor
+├── Releases
+│   ├── Release List (version, date, health)
+│   ├── Release Detail
+│   │   ├── Overview (crash-free %, new issues)
+│   │   ├── Commits (linked to repo)
+│   │   ├── Deploys (environments)
+│   │   ├── New Issues (introduced in this release)
+│   │   ├── Resolved Issues
+│   │   ├── All Issues
+│   │   └── Adoption (% of sessions on this release)
+│   └── Release Health Chart
+├── Discover (Custom Queries)
+│   ├── Query Builder
+│   │   ├── Dataset Selector (errors, transactions, replays)
+│   │   ├── Columns / Fields
+│   │   ├── Conditions / Filters
+│   │   ├── Sort
+│   │   └── Visualization (table, chart, world map)
+│   ├── Saved Queries
+│   └── Pre-built Queries
+├── Dashboards
+│   ├── Dashboard List
+│   ├── Dashboard Detail
+│   │   ├── Widgets (drag-and-drop grid)
+│   │   ├── Widget Types (charts, tables, issue list, big number)
+│   │   └── Global Filters (project, environment, date)
+│   └── Create Dashboard
+├── Alerts
+│   ├── Alert Rules
+│   │   ├── Issue Alerts (when new issue, regression, etc.)
+│   │   ├── Metric Alerts (error count &gt; threshold, p95 &gt; Xms)
+│   │   └── Uptime Alerts (URL monitoring)
+│   ├── Create Alert Rule
+│   ├── Alert History
+│   └── Notification Channels (email, Slack, PagerDuty, Teams, webhooks)
+├── Stats
+│   ├── Usage Stats (events accepted, rejected, filtered)
+│   ├── Rate Limiting
+│   └── Data Forwarding
+├── Settings (Organization)
+│   ├── General
+│   ├── Teams
+│   │   ├── Team List
+│   │   └── Team → Project Mapping
+│   ├── Members (invite, roles)
+│   ├── Auth (SSO/SAML, 2FA)
+│   ├── Integrations
+│   │   ├── GitHub / GitLab / Bitbucket (commit tracking)
+│   │   ├── Jira / Linear / Azure DevOps (issue linking)
+│   │   ├── Slack / Teams / Discord (notifications)
+│   │   ├── PagerDuty / Opsgenie (alerting)
+│   │   └── Codecov / Vercel / etc.
+│   ├── Developer Settings (API keys, auth tokens)
+│   ├── Security &amp; Privacy (data scrubbing, IP ranges)
+│   ├── Subscription &amp; Usage (plan, quotas)
+│   ├── Data Export
+│   ├── Relay (self-hosted event forwarding)
+│   └── Early Adopter Features
+└── Docs (docs.sentry.io)
+    ├── Platforms (SDK guides: JavaScript, Python, iOS, Android, Go, etc.)
+    ├── Product Guides
+    └── API Reference
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible</td>
+<td>Issues, Projects, Performance, Replays, Profiling, Crons, Releases, Discover, Dashboards, Alerts, Stats, Settings</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Organization switcher, global search, project/environment selector, help, user menu</td>
+</tr>
+<tr>
+<td><strong>Project/Environment Selector</strong></td>
+<td>Top bar dropdowns (multi-select)</td>
+<td>Filter entire view by project(s) and environment(s) — persistent</td>
+</tr>
+<tr>
+<td><strong>Issue Detail Header</strong></td>
+<td>Sticky</td>
+<td>Issue title, status (unresolved/resolved/ignored), assign, link, actions</td>
+</tr>
+<tr>
+<td><strong>Event Navigator</strong></td>
+<td>Within issue detail</td>
+<td>Navigate between individual events (older/newer), &quot;Latest Event&quot; / &quot;Recommended&quot;</td>
+</tr>
+<tr>
+<td><strong>Date Range Picker</strong></td>
+<td>Top bar</td>
+<td>1h, 24h, 7d, 14d, 30d, 90d, custom</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Organization ▾]
+───────────────
+⊙ Issues
+📦 Projects
+⚡ Performance
+🎬 Replays
+🔥 Profiling
+⏰ Crons
+🏷 Releases
+🔍 Discover
+📊 Dashboards
+🔔 Alerts
+📈 Stats
+⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Organization</td>
+<td>name, slug, plan, teams[]</td>
+<td>has Projects, Members, Integrations</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>name, slug, platform (react/python/ios/etc.), teams[], dsn</td>
+<td>belongs to Organization</td>
+</tr>
+<tr>
+<td>Issue</td>
+<td>id, title, culprit, level (error/warning/info), status, times_seen, first_seen, last_seen, assignee, priority</td>
+<td>belongs to Project, has Events</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>event_id, timestamp, level, message, stack_trace, tags{}, contexts{}, breadcrumbs[], user{}, request{}</td>
+<td>belongs to Issue</td>
+</tr>
+<tr>
+<td>Transaction</td>
+<td>event_id, transaction_name, duration, status, spans[], measurements{}</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Span</td>
+<td>op, description, start, duration, status, data{}</td>
+<td>belongs to Transaction</td>
+</tr>
+<tr>
+<td>Replay</td>
+<td>replay_id, user, duration, error_count, urls[], dom_events[]</td>
+<td>belongs to Project, linked to Issues</td>
+</tr>
+<tr>
+<td>Release</td>
+<td>version, date_created, projects[], commits[], deploy_count, new_issues</td>
+<td>belongs to Organization</td>
+</tr>
+<tr>
+<td>Deploy</td>
+<td>environment, date_started, date_finished, release</td>
+<td>belongs to Release</td>
+</tr>
+<tr>
+<td>AlertRule</td>
+<td>name, type (issue/metric), conditions[], actions[], frequency</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>CronMonitor</td>
+<td>name, slug, schedule, status, last_checkin</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Profile</td>
+<td>profile_id, transaction_name, duration, functions[]</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>SavedSearch</td>
+<td>name, query, is_global</td>
+<td>belongs to Organization/User</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>title, widgets[], filters[]</td>
+<td>belongs to Organization</td>
+</tr>
+</tbody></table>
+<h3>Issue Status Flow</h3>
+<pre><code>unresolved → resolved (manually / via commit / via release)
+unresolved → ignored (for duration / until count / forever)
+resolved → regressed (re-occurred in new events)
+</code></pre>
+<h3>Issue Priority</h3>
+<pre><code>critical → high → medium → low
+(auto-assigned by ML based on impact, frequency, user count)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Triage New Errors</h3>
+<pre><code>Alert (Slack/email: new issue) → Issues → For Review → Issue Detail → Read stack trace → Check breadcrumbs → View suspect commit → Assign to team member → Link to GitHub issue → Resolve when fixed
+</code></pre>
+<h3>Debug Error with Replay</h3>
+<pre><code>Issue Detail → See user affected → Click &quot;View Replay&quot; → Watch session replay → See user actions before error → Identify reproduction steps → Fix in code → Deploy → Mark resolved
+</code></pre>
+<h3>Performance Investigation</h3>
+<pre><code>Performance → Sort by P95 → Click slow transaction → View span waterfall → Identify slow database query (N+1) → View query detail → Optimize → Deploy → Compare P95 trend
+</code></pre>
+<h3>Release Health Monitoring</h3>
+<pre><code>Releases → New release deployed → Monitor crash-free % → Compare to previous release → If regression: see new issues introduced → Rollback or hotfix → Track adoption %
+</code></pre>
+<h3>Set Up Alerting</h3>
+<pre><code>Alerts → Create Alert → Issue Alert: &quot;When new issue is seen more than 10 times in 1 hour&quot; → Action: Send to Slack #engineering → Action: Assign to on-call → Save → Test
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/organizations/:org/                           → Dashboard
+/organizations/:org/issues/                    → Issue list
+/organizations/:org/issues/:issueId/           → Issue detail
+/organizations/:org/issues/:issueId/events/:eventId/ → Event detail
+/organizations/:org/issues/:issueId/replays/   → Related replays
+/organizations/:org/projects/                  → Project list
+/organizations/:org/projects/:project/         → Project detail
+/organizations/:org/performance/               → Performance overview
+/organizations/:org/performance/summary/       → Transaction summary
+/organizations/:org/performance/trends/        → Performance trends
+/organizations/:org/performance/database/      → Query analysis
+/organizations/:org/replays/                   → Replay list
+/organizations/:org/replays/:replayId/         → Replay player
+/organizations/:org/profiling/                 → Profiling
+/organizations/:org/crons/                     → Cron monitors
+/organizations/:org/releases/                  → Release list
+/organizations/:org/releases/:version/         → Release detail
+/organizations/:org/discover/                  → Custom queries
+/organizations/:org/discover/results/          → Query results
+/organizations/:org/dashboards/                → Dashboard list
+/organizations/:org/dashboards/:id/            → Dashboard detail
+/organizations/:org/alerts/rules/              → Alert rules
+/organizations/:org/alerts/rules/new/          → Create alert
+/organizations/:org/stats/                     → Usage stats
+/settings/:org/                                → Org settings
+/settings/:org/teams/                          → Teams
+/settings/:org/members/                        → Members
+/settings/:org/integrations/                   → Integrations
+/settings/:org/projects/:project/              → Project settings
+/settings/:org/developer-settings/             → API keys / tokens
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Issues</td>
+<td>Error message, issue ID, tags</td>
+<td>Project, Environment, Level, Status, Assignee, First/Last Seen, Times Seen, Tags (browser, os, url, custom)</td>
+<td>Date, Events, Users, Priority</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Transaction name</td>
+<td>Project, Environment, Duration, Status Code</td>
+<td>P50, P95, Throughput, Failure Rate, Trend</td>
+</tr>
+<tr>
+<td>Replays</td>
+<td>User email, URL, replay ID</td>
+<td>Has Errors, Has Rage Clicks, Duration, Project</td>
+<td>Date, Duration, Error Count</td>
+</tr>
+<tr>
+<td>Releases</td>
+<td>Version</td>
+<td>Project, Environment, Date, Health (crash-free %)</td>
+<td>Date, Sessions, Crash-Free</td>
+</tr>
+<tr>
+<td>Discover</td>
+<td>Custom fields</td>
+<td>Any tag or field, aggregations (count, avg, p95)</td>
+<td>Any selected column</td>
+</tr>
+</tbody></table>
+<h3>Search Syntax</h3>
+<pre><code>is:unresolved assigned:me browser:Chrome level:error
+!has:user firstSeen:&gt;2024-01-01 times_seen:&gt;100
+transaction:/api/users/* http.status_code:500
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Issue List</th>
+<th>Issue Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1280px)</td>
+<td>Expanded</td>
+<td>Full table with inline metadata</td>
+<td>Stack trace + breadcrumbs + tags side by side</td>
+</tr>
+<tr>
+<td>Tablet (768-1279px)</td>
+<td>Collapsed (icons)</td>
+<td>Simplified table</td>
+<td>Stacked layout</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger</td>
+<td>Card layout</td>
+<td>Stacked, simplified stack trace</td>
+</tr>
+</tbody></table>
+<h3>Sentry-Specific UX</h3>
+<ul>
+<li><strong>Stack traces</strong> with source-mapped code, syntax highlighted, clickable frames</li>
+<li><strong>Breadcrumbs</strong> timeline (console, HTTP, UI clicks, navigation, custom)</li>
+<li><strong>Suspect commits</strong>: links directly to the git commit that likely caused the issue</li>
+<li><strong>Session replay</strong>: DOM recording playback with timeline markers for errors</li>
+<li><strong>Span waterfall</strong>: visual breakdown of transaction timing</li>
+<li><strong>Flamechart</strong>: CPU profiling visualization</li>
+<li><strong>Issue grouping</strong>: smart deduplication with customizable fingerprinting</li>
+<li><strong>Tag facets</strong>: see distribution of tags (browser, OS, URL) for each issue</li>
+<li><strong>Real-time updates</strong>: new events appear without refresh</li>
+<li><strong>Dark mode</strong> with high-contrast error highlighting</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Issues</th>
+<th>Performance</th>
+<th>Releases</th>
+<th>Alerts</th>
+<th>Settings</th>
+<th>Billing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Member</td>
+<td>View + Resolve</td>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Billing</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Team-Based Access</h3>
+<ul>
+<li>Projects are assigned to teams</li>
+<li>Members see issues only from their team&#39;s projects (unless org-wide access)</li>
+<li>Issue ownership rules (auto-assign based on code path or tag)</li>
+<li>Integration-level permissions (who can configure GitHub/Slack)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

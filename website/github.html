@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub — IA.md | getIA.md</title>
+  <meta name="description" content="Code hosting. Pull requests, Actions CI/CD, Copilot. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="GitHub" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">GitHub</h1>
+      <p class="detail-brand-tagline">Code hosting. Pull requests, Actions CI/CD, Copilot.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/github/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/github/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>GitHub — Information Architecture</h1>
+<h2>Overview</h2>
+<p>GitHub is the dominant source code hosting platform, home to 100M+ developers. The mental model is <strong>repositories as collaboration hubs</strong> — each repo contains code, issues, pull requests, and CI/CD workflows. GitHub differentiates through its social coding graph (follow, star, fork), GitHub Actions (integrated CI/CD), Copilot (AI pair programming), and the pull request review flow as the industry-standard code review primitive. The platform also serves as a developer identity (profile = portfolio).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Dashboard
+│   ├── Activity Feed (following, starred repos)
+│   ├── Pinned Repositories
+│   ├── Recent Repositories
+│   ├── Suggested Repositories
+│   ├── Explore Call-to-Action
+│   └── Copilot Chat (sidebar)
+├── Repository
+│   ├── &lt;&gt; Code
+│   │   ├── File Browser (tree view + breadcrumb)
+│   │   ├── File Viewer (syntax highlighted, blame toggle)
+│   │   ├── Branch / Tag Selector (dropdown)
+│   │   ├── Commit History
+│   │   ├── Commit Detail (diff view)
+│   │   ├── Blame View (line-by-line annotations)
+│   │   ├── README (auto-rendered below tree)
+│   │   └── Go to File (fuzzy finder)
+│   ├── ⊙ Issues
+│   │   ├── Issue List (open/closed, label/milestone/assignee filters)
+│   │   ├── Issue Detail
+│   │   │   ├── Title, Body (Markdown, task lists)
+│   │   │   ├── Labels, Assignees, Milestone, Projects
+│   │   │   ├── Comments / Timeline (events, references)
+│   │   │   ├── Linked Pull Requests
+│   │   │   └── Development Section (branch, PR)
+│   │   ├── New Issue (templates, forms)
+│   │   └── Issue Templates Config
+│   ├── ⊕ Pull Requests
+│   │   ├── PR List (open/closed/merged, review status)
+│   │   ├── PR Detail
+│   │   │   ├── Conversation Tab (description, comments, timeline)
+│   │   │   ├── Commits Tab
+│   │   │   ├── Checks Tab (CI status from Actions)
+│   │   │   ├── Files Changed Tab
+│   │   │   │   ├── Diff View (unified / split)
+│   │   │   │   ├── Inline Review Comments
+│   │   │   │   ├── File Tree (left sidebar)
+│   │   │   │   ├── Viewed Checkbox (per file)
+│   │   │   │   └── Suggestion Blocks (apply in PR)
+│   │   │   ├── Review Summary (approve / request changes / comment)
+│   │   │   ├── Merge Controls (merge / squash / rebase)
+│   │   │   ├── Merge Queue Status
+│   │   │   └── Auto-merge Toggle
+│   │   └── Create PR (compare branches)
+│   ├── ▶ Actions
+│   │   ├── Workflow List (from .github/workflows/)
+│   │   ├── Workflow Runs (filterable by branch, status, event)
+│   │   ├── Run Detail
+│   │   │   ├── Job Graph (visual DAG)
+│   │   │   ├── Job Logs (step-by-step, searchable)
+│   │   │   ├── Artifacts
+│   │   │   └── Re-run Controls (all / failed)
+│   │   └── Workflow Editor (YAML in-browser)
+│   ├── ⊞ Projects (v2)
+│   │   ├── Project Board (table / board / roadmap views)
+│   │   ├── Custom Fields
+│   │   ├── Automation Rules
+│   │   └── Insights Charts
+│   ├── 📖 Wiki
+│   ├── 🛡 Security
+│   │   ├── Security Overview
+│   │   ├── Dependabot Alerts
+│   │   ├── Code Scanning (CodeQL)
+│   │   ├── Secret Scanning
+│   │   └── Security Advisories
+│   ├── 📊 Insights
+│   │   ├── Pulse (recent activity summary)
+│   │   ├── Contributors
+│   │   ├── Community Standards
+│   │   ├── Traffic (clones, views)
+│   │   ├── Commits (activity graph)
+│   │   ├── Code Frequency
+│   │   ├── Dependency Graph
+│   │   ├── Network (fork graph)
+│   │   └── Forks
+│   ├── ⚙ Settings
+│   │   ├── General (features, merge button options)
+│   │   ├── Collaborators &amp; Teams
+│   │   ├── Branches (protection rules, rulesets)
+│   │   ├── Tags (protection)
+│   │   ├── Rules → Rulesets
+│   │   ├── Actions (runner config, permissions)
+│   │   ├── Webhooks
+│   │   ├── Environments (deploy targets)
+│   │   ├── Pages
+│   │   ├── Codespaces
+│   │   ├── Security &amp; Analysis
+│   │   └── Danger Zone (archive, transfer, delete)
+│   └── Releases
+│       ├── Release List (tags, assets)
+│       └── Create Release
+├── Codespaces
+│   ├── My Codespaces (list)
+│   ├── Create Codespace (from repo/branch/PR)
+│   └── Codespace Editor (VS Code in browser)
+├── Copilot
+│   ├── Chat (conversational, context-aware)
+│   ├── PR Summary (auto-generated)
+│   └── Code Review Suggestions
+├── Explore
+│   ├── Trending (repos, developers — daily/weekly/monthly)
+│   ├── Topics
+│   ├── Collections
+│   ├── Events
+│   └── GitHub Sponsors (discover)
+├── Marketplace
+│   ├── Actions (reusable workflows)
+│   └── Apps (integrations)
+├── Profile
+│   ├── Overview (bio, pinned repos, contribution graph)
+│   ├── Repositories
+│   ├── Projects
+│   ├── Packages
+│   ├── Stars
+│   ├── Followers / Following
+│   ├── Achievements (badges)
+│   └── Sponsors (if enabled)
+├── Organization
+│   ├── Overview (pinned repos, README)
+│   ├── Repositories
+│   ├── Teams (nested, with repo access)
+│   ├── People (members, outside collaborators)
+│   ├── Projects
+│   ├── Packages
+│   ├── Security (org-level overview)
+│   └── Settings (billing, roles, audit log)
+├── Notifications
+│   ├── Inbox (grouped by repo)
+│   ├── Saved
+│   ├── Done
+│   └── Filters (participating, watching, custom)
+├── Global Search
+│   ├── Code Search (new engine, regex, symbol search)
+│   ├── Repositories
+│   ├── Issues
+│   ├── Pull Requests
+│   ├── Discussions
+│   ├── Users
+│   ├── Commits
+│   └── Topics
+├── Settings (User)
+│   ├── Profile
+│   ├── Account
+│   ├── Appearance (theme: light/dark/auto)
+│   ├── Accessibility
+│   ├── Notifications
+│   ├── Billing &amp; Plans
+│   ├── Emails
+│   ├── SSH &amp; GPG Keys
+│   ├── Security (2FA, sessions, tokens)
+│   ├── Developer Settings (OAuth apps, PATs, GitHub Apps)
+│   ├── Copilot Settings
+│   ├── Codespaces Settings
+│   └── Organizations
+└── GitHub Docs (docs.github.com)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Global Header</strong></td>
+<td>Fixed top bar</td>
+<td>GitHub logo, search (/ to focus), create (+) dropdown, notifications, user avatar</td>
+</tr>
+<tr>
+<td><strong>Repo Tab Bar</strong></td>
+<td>Horizontal tabs with counters</td>
+<td>Code, Issues (12), Pull Requests (3), Actions, Projects, Wiki, Security, Insights, Settings</td>
+</tr>
+<tr>
+<td><strong>File Browser</strong></td>
+<td>Tree view (left sidebar, toggleable)</td>
+<td>Navigate directories, switch branches via dropdown</td>
+</tr>
+<tr>
+<td><strong>PR File Navigator</strong></td>
+<td>Left sidebar file tree</td>
+<td>Check off reviewed files, jump between changes</td>
+</tr>
+<tr>
+<td><strong>Command Palette</strong></td>
+<td>⌘K / Ctrl+K</td>
+<td>Navigate repos, files, commands; context-aware</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Below repo tabs</td>
+<td>owner / repo / tree / branch / path</td>
+</tr>
+<tr>
+<td><strong>Mobile Nav</strong></td>
+<td>Bottom tab bar</td>
+<td>Home, Notifications, Explore, Profile</td>
+</tr>
+</tbody></table>
+<h3>Repo Tabs with Badges</h3>
+<pre><code>&lt;&gt; Code | ⊙ Issues (12) | ⊕ Pull Requests (3) | ▶ Actions | ⊞ Projects | 📖 Wiki | 🛡 Security | 📊 Insights | ⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Repository</td>
+<td>name, owner, visibility (public/private/internal), description, default_branch, topics[], stars, forks, language, license</td>
+<td>has Files, Issues, PRs, Releases, Actions, Projects</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>name, head_commit, protected, rules[]</td>
+<td>belongs to Repository</td>
+</tr>
+<tr>
+<td>Commit</td>
+<td>sha, message, author, committer, date, diff, verified (GPG)</td>
+<td>belongs to Branch</td>
+</tr>
+<tr>
+<td>File</td>
+<td>path, content, size, language, last_commit</td>
+<td>belongs to Repository + Branch</td>
+</tr>
+<tr>
+<td>Issue</td>
+<td>number, title, body (Markdown), state, labels[], assignees[], milestone, project</td>
+<td>belongs to Repository</td>
+</tr>
+<tr>
+<td>PullRequest</td>
+<td>number, title, body, state, source_branch, target_branch, reviewers[], checks[], draft, auto_merge, merge_queue_entry</td>
+<td>belongs to Repository</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>state (approved/changes_requested/commented/pending), body, comments[]</td>
+<td>belongs to PR</td>
+</tr>
+<tr>
+<td>ReviewComment</td>
+<td>body, diff_hunk, path, line, suggestion_block</td>
+<td>belongs to Review</td>
+</tr>
+<tr>
+<td>CheckRun</td>
+<td>name, status, conclusion, started_at, completed_at, output</td>
+<td>belongs to PR (via commit)</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td>name, path (.github/workflows/), triggers[], jobs[]</td>
+<td>belongs to Repository</td>
+</tr>
+<tr>
+<td>WorkflowRun</td>
+<td>workflow, status, conclusion, duration, triggered_by, event, branch</td>
+<td>belongs to Workflow</td>
+</tr>
+<tr>
+<td>Release</td>
+<td>tag, name, body, assets[], prerelease, draft</td>
+<td>belongs to Repository</td>
+</tr>
+<tr>
+<td>Discussion</td>
+<td>title, body, category, answered, comments[]</td>
+<td>belongs to Repository</td>
+</tr>
+<tr>
+<td>Project (v2)</td>
+<td>title, description, fields[], views (table/board/roadmap), items[]</td>
+<td>belongs to User or Org</td>
+</tr>
+<tr>
+<td>Codespace</td>
+<td>name, repo, branch, machine_type, status, idle_timeout</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Package</td>
+<td>name, type (npm/container/maven/etc.), versions[]</td>
+<td>belongs to Repository or Org</td>
+</tr>
+</tbody></table>
+<h3>PR States</h3>
+<pre><code>draft → open → review_requested → changes_requested → approved → merge_queue → merged
+                                                                              → closed
+</code></pre>
+<h3>Issue States</h3>
+<pre><code>open → closed (completed / not_planned / duplicate)
+</code></pre>
+<h3>Actions Run States</h3>
+<pre><code>queued → in_progress → completed (success / failure / cancelled / skipped)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Code Review (Core Flow)</h3>
+<pre><code>Notification (review requested) → PR Detail → Conversation (read description) → Files Changed → Review diff file-by-file → Add inline comments / suggestions → Submit Review (approve / request changes) → Author pushes fixes → Re-review → Approve → Merge (squash) → Branch deleted
+</code></pre>
+<h3>CI/CD with Actions</h3>
+<pre><code>Push to branch → Actions auto-trigger (on: push) → Workflow runs → Jobs execute (matrix) → View logs per step → Check status on PR → Fix failures → Re-run failed jobs → All green → Merge
+</code></pre>
+<h3>Merge Queue Flow</h3>
+<pre><code>PR approved + checks pass → Add to merge queue → Queue runs checks on merge commit → Pass → Auto-merged → Branch deleted
+</code></pre>
+<h3>Issue to PR Workflow</h3>
+<pre><code>Issues tab → Create issue → Assign + label → Create branch from issue → Code changes → Open PR (auto-linked to issue via &quot;Fixes #123&quot;) → Review → Merge → Issue auto-closed
+</code></pre>
+<h3>Codespaces Development</h3>
+<pre><code>Repo → Code → Open in Codespace → VS Code loads in browser → Edit code → Terminal → Commit → Push → Open PR (from Codespace)
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                  → Dashboard
+/:owner/:repo                     → Repository (Code tab)
+/:owner/:repo/tree/:branch/:path  → File browser at path
+/:owner/:repo/blob/:branch/:path  → View file
+/:owner/:repo/commits/:branch     → Commit history
+/:owner/:repo/commit/:sha         → Commit detail
+/:owner/:repo/issues              → Issues
+/:owner/:repo/issues/:number      → Issue detail
+/:owner/:repo/issues/new          → New issue (template chooser)
+/:owner/:repo/pulls               → Pull requests
+/:owner/:repo/pull/:number        → PR detail (Conversation tab)
+/:owner/:repo/pull/:number/files  → PR diff (Files changed)
+/:owner/:repo/pull/:number/commits → PR commits
+/:owner/:repo/pull/:number/checks → PR checks
+/:owner/:repo/compare/:base...:head → Compare / create PR
+/:owner/:repo/actions             → Actions
+/:owner/:repo/actions/workflows/:file → Workflow runs
+/:owner/:repo/actions/runs/:id    → Workflow run detail
+/:owner/:repo/actions/runs/:id/job/:jobId → Job logs
+/:owner/:repo/releases            → Releases
+/:owner/:repo/releases/tag/:tag   → Release detail
+/:owner/:repo/security            → Security overview
+/:owner/:repo/settings            → Settings
+/:owner/:repo/projects            → Repo projects
+/:owner/:repo/discussions         → Discussions
+/:owner/:repo/wiki                → Wiki
+/:owner/:repo/packages            → Packages
+/codespaces                        → My Codespaces
+/orgs/:org                         → Organization
+/orgs/:org/teams                   → Teams
+/orgs/:org/people                  → Members
+/:username                         → User profile
+/:username?tab=repositories        → User&#39;s repos
+/:username?tab=stars               → User&#39;s stars
+/explore                           → Explore
+/trending                          → Trending
+/marketplace                       → Marketplace
+/notifications                     → Notifications
+/search?q=:query&amp;type=:type        → Search
+/settings                          → User settings
+/settings/tokens                   → Personal access tokens
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Code, repos, issues, PRs, discussions, users, commits, topics</td>
+<td>Language, type, org/user scope</td>
+<td>Best Match, Stars, Forks, Updated, Recently Indexed</td>
+</tr>
+<tr>
+<td>Code Search</td>
+<td>File content, paths, symbols</td>
+<td>Language, path, repo, org, regex, symbol type</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Issues</td>
+<td>Title, body, comments</td>
+<td>State, label, assignee, author, milestone, project, type (issue/PR)</td>
+<td>Created, Updated, Comments, Reactions</td>
+</tr>
+<tr>
+<td>PRs</td>
+<td>Title, body</td>
+<td>State, reviewer, author, label, branch, draft, merge status</td>
+<td>Created, Updated</td>
+</tr>
+<tr>
+<td>Actions</td>
+<td>Workflow name, run ID</td>
+<td>Status, branch, event, actor</td>
+<td>Date</td>
+</tr>
+</tbody></table>
+<h3>Search Qualifiers (GitHub-specific)</h3>
+<pre><code>is:open is:issue label:bug assignee:@me sort:updated-desc
+repo:owner/name language:python stars:&gt;100
+is:pr review:approved draft:false
+path:src/**.ts content:&quot;function&quot;
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1280px)</td>
+<td>Full tab bar, side-by-side diff, file tree sidebar, contribution graph</td>
+</tr>
+<tr>
+<td>Tablet (768-1279px)</td>
+<td>Scrollable tabs, unified diff, no file tree sidebar</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Native app (iOS/Android) preferred; web: stacked diff, minimal code browser, hamburger nav, bottom tab bar</td>
+</tr>
+</tbody></table>
+<h3>GitHub-Specific UX</h3>
+<ul>
+<li>Monospace font throughout code views</li>
+<li>Syntax highlighting for 300+ languages</li>
+<li>Line numbers (linkable via #L42, range via #L10-L20)</li>
+<li>Markdown rendering everywhere (issues, PRs, wiki, README, discussions)</li>
+<li>Contribution graph (green squares) on profile</li>
+<li>Dark/Light/Auto theme with dimmed dark option</li>
+<li>Keyboard shortcuts (press <code>?</code> for full list)</li>
+<li>Command palette (⌘K) for power navigation</li>
+<li>Hover cards on usernames and issues/PRs</li>
+<li>Copy-to-clipboard on SHA, file content, code blocks</li>
+<li>GitHub Mobile (iOS/Android) for notifications and reviews</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Issues</th>
+<th>PR</th>
+<th>Push</th>
+<th>Merge</th>
+<th>Settings</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Public</td>
+<td>✅ (public repos)</td>
+<td>Create</td>
+<td>Create (fork first)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Read</td>
+<td>✅</td>
+<td>Create</td>
+<td>Create (fork)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Triage</td>
+<td>✅</td>
+<td>CRUD + manage</td>
+<td>CRUD</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Write</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD + Review</td>
+<td>✅</td>
+<td>✅ (if rules allow)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Maintain</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD + Merge</td>
+<td>✅</td>
+<td>✅</td>
+<td>Limited</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD + Merge</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Branch Protection &amp; Rulesets</h3>
+<ul>
+<li>Required reviews (1+, dismiss stale, CODEOWNERS)</li>
+<li>Required status checks (CI must pass)</li>
+<li>Merge queue enforcement</li>
+<li>Signed commits required</li>
+<li>Force push / deletion restrictions</li>
+<li>Rulesets: org-level rules that apply across repos</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grab — IA.md | getIA.md</title>
+  <meta name="description" content="Super app. Rides, food, payments, deliveries. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=grab.com&sz=64" alt="Grab" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">Grab</h1>
+      <p class="detail-brand-tagline">Super app. Rides, food, payments, deliveries.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/grab/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://grab.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/grab/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Grab — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Grab is Southeast Asia&#39;s leading super-app, serving 8 countries across the region (Singapore, Malaysia, Indonesia, Philippines, Thailand, Vietnam, Cambodia, Myanmar). The mental model is <strong>one app for daily life</strong> — starting as a ride-hailing service and expanding into food delivery (GrabFood), payments (GrabPay), groceries (GrabMart), parcel delivery (GrabExpress), and financial services (loans, insurance, investments). The home screen functions as an operating system for urban life in SEA, with a service grid and unified wallet.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Search Bar (universal: places, food, items)
+│   ├── Service Grid (primary entry points)
+│   │   ├── 🚗 Transport (ride-hailing)
+│   │   ├── 🍔 Food (GrabFood)
+│   │   ├── 🛒 Mart (GrabMart — groceries, convenience)
+│   │   ├── 📦 Express (parcel delivery)
+│   │   ├── 💸 Pay (GrabPay)
+│   │   ├── 💳 Finance (GrabFinance)
+│   │   ├── 🏨 Hotels (travel)
+│   │   ├── 🎟️ Rewards (GrabRewards)
+│   │   └── ••• More
+│   ├── Promotions / Deals Carousel
+│   ├── For You (personalized suggestions)
+│   ├── Recent Orders / Rides
+│   └── GrabUnlimited Banner (subscription)
+├── Transport (GrabCar / GrabBike)
+│   ├── Map View (pickup location, GPS)
+│   ├── &quot;Where to?&quot; Search
+│   ├── Saved Places (Home, Work)
+│   ├── Recent Destinations
+│   ├── Vehicle Options
+│   │   ├── GrabCar (standard 4-seater)
+│   │   ├── GrabCar Premium
+│   │   ├── GrabCar 6-Seater
+│   │   ├── GrabBike (motorbike, SEA-specific)
+│   │   ├── GrabShare (shared rides)
+│   │   ├── GrabTaxi (metered taxi)
+│   │   └── GrabRent (hourly rental)
+│   ├── Price Estimate + ETA per Option
+│   ├── Payment Method (GrabPay, card, cash)
+│   ├── Promo Code
+│   ├── [Book] → Match → Track → Ride → Rate
+│   └── Safety Features (Share Ride, SOS)
+├── Food (GrabFood)
+│   ├── Restaurant Discovery
+│   │   ├── Near Me
+│   │   ├── Cuisine Filters (Asian, Western, Halal, Vegetarian)
+│   │   ├── Featured Collections
+│   │   ├── Trending
+│   │   ├── Budget Meals
+│   │   ├── Self-Pickup (cheaper)
+│   │   └── Scheduled Orders
+│   ├── Restaurant Page
+│   │   ├── Menu (categories, items, photos, prices)
+│   │   ├── Customizations (spice level, add-ons)
+│   │   ├── Rating &amp; Reviews
+│   │   ├── Delivery Fee + Time
+│   │   └── Minimum Order
+│   ├── Cart
+│   │   ├── Items
+│   │   ├── Notes for Restaurant
+│   │   ├── Delivery Address
+│   │   ├── Payment
+│   │   ├── Promo / Voucher
+│   │   └── [Place Order]
+│   ├── Order Tracking
+│   │   ├── Status (confirmed → preparing → driver assigned → on the way → delivered)
+│   │   ├── Driver on Map (live)
+│   │   ├── Contact Driver
+│   │   └── ETA
+│   └── Order History
+├── Mart (GrabMart)
+│   ├── Store Selection (convenience stores, supermarkets, pharmacies)
+│   ├── Store Page (browse by category, search items)
+│   ├── Cart &amp; Checkout
+│   ├── Order Tracking (same as food)
+│   └── Scheduled Delivery
+├── Express (GrabExpress)
+│   ├── Instant Delivery (same-day)
+│   ├── Pickup &amp; Destination
+│   ├── Package Size &amp; Weight
+│   ├── Price Estimate
+│   ├── Book &amp; Track
+│   └── Parcel History
+├── GrabPay (Wallet)
+│   ├── Balance
+│   ├── Top Up (bank, card, convenience store, PayNow)
+│   ├── Send Money (P2P)
+│   ├── QR Pay (scan to pay at merchants)
+│   ├── Bill Payments (utilities, phone, internet)
+│   ├── Transaction History
+│   ├── Linked Payment Methods
+│   ├── GrabPay Card (virtual Mastercard)
+│   └── PayLater (buy now, pay later)
+├── GrabFinance
+│   ├── GrabInvest (micro-investing)
+│   ├── GrabInsure (insurance products)
+│   ├── GrabLoan (personal/business loans)
+│   ├── AutoInvest (round-up investing)
+│   └── Credit Score
+├── Rewards (GrabRewards)
+│   ├── Points Balance
+│   ├── Earn (per ride, per order, challenges)
+│   ├── Redeem (vouchers, partner rewards)
+│   ├── Membership Tier (Member → Silver → Gold → Platinum)
+│   ├── Tier Benefits
+│   ├── GrabUnlimited (subscription: free delivery, discounts)
+│   └── Challenges (complete X rides, earn bonus)
+├── Activity
+│   ├── All Orders / Rides (combined timeline)
+│   ├── Order/Ride Detail
+│   ├── Receipts
+│   ├── Report Issue
+│   └── Reorder / Rebook
+├── Profile / Account
+│   ├── Name, Photo, Phone
+│   ├── GrabPay Wallet
+│   ├── Saved Places
+│   ├── Saved Addresses (delivery)
+│   ├── Favorites (restaurants, stores)
+│   ├── GrabRewards Tier
+│   ├── Referrals
+│   ├── Emergency Contacts
+│   ├── Notification Settings
+│   ├── Language / Region
+│   └── Help &amp; Support
+└── Help
+    ├── Recent Trip/Order Issues
+    ├── FAQ
+    ├── Safety
+    └── Live Chat Support
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>4-5 tabs</td>
+<td>Home, Food, Pay, Activity, Account</td>
+</tr>
+<tr>
+<td><strong>Service Grid</strong></td>
+<td>Icon grid (8-12 icons)</td>
+<td>Tap to enter each service&#39;s full-screen experience</td>
+</tr>
+<tr>
+<td><strong>Transport</strong></td>
+<td>Map-dominant, bottom sheet</td>
+<td>Same as Uber pattern: &quot;Where to?&quot; → options → book</td>
+</tr>
+<tr>
+<td><strong>Food</strong></td>
+<td>Restaurant feed</td>
+<td>Vertical scroll, category filters, cart overlay</td>
+</tr>
+<tr>
+<td><strong>Wallet</strong></td>
+<td>Balance-first</td>
+<td>QR scanner prominent, quick actions</td>
+</tr>
+<tr>
+<td><strong>Universal Search</strong></td>
+<td>Top of home</td>
+<td>Search across all services (places, restaurants, products)</td>
+</tr>
+</tbody></table>
+<h3>Service Grid (Home Screen)</h3>
+<pre><code>┌──────────┬──────────┬──────────┬──────────┐
+│ 🚗 Car   │ 🍔 Food  │ 🛒 Mart  │ 📦 Express│
+├──────────┼──────────┼──────────┼──────────┤
+│ 💸 Pay   │ 💳 Finance│ 🏨 Hotels│ ⭐ Rewards│
+└──────────┴──────────┴──────────┴──────────┘
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User</td>
+<td>phone, name, email, avatar, region, language, grab_pay_wallet, rewards_tier</td>
+<td>has Wallet, Orders, Rides, Addresses</td>
+</tr>
+<tr>
+<td>Wallet</td>
+<td>balance, currency, payment_methods[], grab_pay_card</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Transaction</td>
+<td>type (ride/food/mart/express/p2p/topup/bill), amount, status, merchant, timestamp</td>
+<td>belongs to Wallet</td>
+</tr>
+<tr>
+<td>Ride</td>
+<td>pickup, destination, vehicle_type, driver, fare, status, route, rating</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>name, photo, vehicle, rating, plate, status</td>
+<td>has Rides</td>
+</tr>
+<tr>
+<td>FoodOrder</td>
+<td>restaurant, items[], delivery_address, delivery_fee, total, status, driver</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Restaurant</td>
+<td>name, cuisine[], rating, delivery_time, minimum_order, photos[], operating_hours</td>
+<td>has Menu</td>
+</tr>
+<tr>
+<td>MartStore</td>
+<td>name, type (convenience/supermarket/pharmacy), delivery_time</td>
+<td>has Products</td>
+</tr>
+<tr>
+<td>RewardsTier</td>
+<td>tier (member/silver/gold/platinum), points, next_tier_threshold, benefits[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>GrabUnlimited</td>
+<td>status, price, benefits[free_delivery, discounts], renewal</td>
+<td>subscription</td>
+</tr>
+</tbody></table>
+<h3>Cross-Service Identity</h3>
+<ul>
+<li>Single login for all services</li>
+<li>GrabPay wallet as default payment everywhere</li>
+<li>Shared addresses across transport, food, mart, express</li>
+<li>Unified rewards points from all services</li>
+<li>Combined activity timeline</li>
+</ul>
+<h3>Order Status Flow (Food/Mart)</h3>
+<pre><code>placed → confirmed → preparing → driver_assigned → picked_up → on_the_way → delivered
+                                                                              ↘ rated
+</code></pre>
+<h2>User Flows</h2>
+<h3>Order Food</h3>
+<pre><code>Home → [Food] → Browse Restaurants → &quot;Hawker Chan&quot; → Select Items → Customize → Add to Cart → Checkout (GrabPay) → Apply Voucher → [Order] → Track Driver on Map → Delivered → Rate
+</code></pre>
+<h3>Book a GrabBike</h3>
+<pre><code>Home → [Transport] → &quot;Where to?&quot; → Office → GrabBike S$5, 12 min → [Book] → Driver Matched → Track → Arrive → GrabPay Auto-Charged → Rate → Earn Points
+</code></pre>
+<h3>Pay at Store</h3>
+<pre><code>Home → [Pay] → [Scan] → Scan Merchant QR → Enter S$15 → Confirm (PIN/biometric) → Payment Complete → Earn Rewards Points → Receipt
+</code></pre>
+<h3>Earn and Use Rewards</h3>
+<pre><code>Complete Rides + Orders → Earn Points → Check Rewards → Redeem for GrabFood Voucher (500 pts = S$5 off) → Use on Next Order → Tier Up to Gold → Unlock Free Delivery
+</code></pre>
+<h2>URL / Route Structure</h2>
+<blockquote>
+<p>Grab is primarily a native mobile app. Deep links structure:</p>
+</blockquote>
+<pre><code>/                              → Home
+/transport                     → Transport (ride-hailing)
+/transport/:rideId             → Ride Tracking
+/food                          → GrabFood
+/food/restaurant/:id           → Restaurant Menu
+/food/orders/:id               → Order Tracking
+/mart                          → GrabMart
+/mart/store/:id                → Store
+/express                       → GrabExpress
+/pay                           → GrabPay Wallet
+/pay/scan                      → QR Scanner
+/pay/send                      → Send Money
+/pay/bills                     → Bill Payments
+/pay/history                   → Transactions
+/finance                       → GrabFinance
+/rewards                       → GrabRewards
+/activity                      → All Orders &amp; Rides
+/account                       → Account
+/settings                      → Settings
+/help                          → Help
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Universal</td>
+<td>Places, restaurants, products, services</td>
+<td>Service type</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Food</td>
+<td>Restaurant name, dish, cuisine</td>
+<td>Cuisine, Price, Rating, Delivery Time, Promos, Halal</td>
+<td>Recommended, Rating, Distance, Price, Delivery Time</td>
+</tr>
+<tr>
+<td>Mart</td>
+<td>Store name, product</td>
+<td>Store type, Delivery Time</td>
+<td>Recommended, Distance</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>Address, place name</td>
+<td>—</td>
+<td>Relevance, recent</td>
+</tr>
+<tr>
+<td>Transactions</td>
+<td>Amount, merchant</td>
+<td>Type, Date Range</td>
+<td>Date, amount</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Single column, service grid, bottom tabs</td>
+<td>Tab bar + service grid</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Wider grid, 2-column food</td>
+<td>Bottom tabs or sidebar</td>
+</tr>
+<tr>
+<td>Desktop (merchant dashboard)</td>
+<td>Full dashboard</td>
+<td>Sidebar</td>
+</tr>
+</tbody></table>
+<h3>Super-App-Specific UX</h3>
+<ul>
+<li>Service grid on home = operating system metaphor</li>
+<li>GrabPay wallet is the financial backbone (accepted everywhere)</li>
+<li>GrabBike: motorbike-hailing unique to SEA (faster, cheaper in traffic)</li>
+<li>Halal filter: critical for Muslim-majority markets (Malaysia, Indonesia)</li>
+<li>Cash option: many SEA users are unbanked</li>
+<li>Multiple languages per country (e.g., English + Malay + Chinese in Malaysia)</li>
+<li>QR code payment deeply integrated (offline merchants)</li>
+<li>GrabUnlimited subscription drives loyalty across all services</li>
+<li>Real-time driver tracking across transport, food, and mart</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Unverified</th>
+<th>Verified</th>
+<th>GrabUnlimited</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Transport</td>
+<td>—</td>
+<td>✅</td>
+<td>✅ + discounts</td>
+</tr>
+<tr>
+<td>Food</td>
+<td>—</td>
+<td>✅</td>
+<td>✅ + free delivery</td>
+</tr>
+<tr>
+<td>GrabPay</td>
+<td>—</td>
+<td>✅ (limits)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>—</td>
+<td>KYC required</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Rewards</td>
+<td>—</td>
+<td>✅</td>
+<td>✅ + bonus points</td>
+</tr>
+<tr>
+<td>Cash Payment</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Regional Compliance</h3>
+<ul>
+<li>KYC for wallet features (varies by country)</li>
+<li>Cash payment option (critical in SEA)</li>
+<li>Local payment methods (GCash in PH, OVO in ID)</li>
+<li>Driver background checks per country regulations</li>
+<li>Halal certification for food</li>
+<li>Multi-currency support</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

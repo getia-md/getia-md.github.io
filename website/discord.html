@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord — IA.md | getIA.md</title>
+  <meta name="description" content="Community platform with voice, video, and text channels. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=discord.com&sz=64" alt="Discord" onerror="this.parentElement.textContent='D'">
+      </div>
+      <h1 class="detail-brand-name">Discord</h1>
+      <p class="detail-brand-tagline">Community platform with voice, video, and text channels.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/discord/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://discord.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/discord/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Discord — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Discord is a community-centric communication platform originally built for gamers, now used broadly for communities, DAOs, study groups, and creator spaces. The mental model is <strong>servers (communities) with categorized channels</strong> — each server is an independent community space containing text channels, voice channels, forum channels, and stage channels organized into categories. Discord differentiates through always-on voice channels (join/leave instead of call/hang-up), rich role-based permissions, bots/app ecosystem, and a social layer with user profiles, friends, and status.</p>
+<h2>Site Map</h2>
+<pre><code>├── Server List (left rail)
+│   ├── Home (DMs + Friends)
+│   ├── Server A (community)
+│   ├── Server B
+│   ├── + Create / Join Server
+│   └── Discover Public Servers
+├── Home (DM Hub)
+│   ├── Friends
+│   │   ├── Online
+│   │   ├── All Friends
+│   │   ├── Pending (incoming/outgoing)
+│   │   ├── Blocked
+│   │   └── Add Friend (username)
+│   ├── Direct Messages
+│   │   ├── 1:1 DMs
+│   │   └── Group DMs (up to 10)
+│   ├── Nitro (subscription)
+│   ├── Shop (avatar decorations, profile effects)
+│   └── Active Now (friends&#39; activity)
+├── Server View
+│   ├── Server Header
+│   │   ├── Server Name + Dropdown Menu
+│   │   │   ├── Server Settings
+│   │   │   ├── Create Channel / Category
+│   │   │   ├── Create Event
+│   │   │   ├── Notification Settings
+│   │   │   ├── Privacy Settings
+│   │   │   ├── Invite People
+│   │   │   └── Leave Server
+│   │   └── Server Banner (Nitro-boosted)
+│   ├── Channel Sidebar
+│   │   ├── Category 1 (collapsible group)
+│   │   │   ├── #text-channel
+│   │   │   ├── #text-channel-2
+│   │   │   ├── 🔊 voice-channel (shows connected users)
+│   │   │   └── 📋 forum-channel
+│   │   ├── Category 2
+│   │   │   ├── #announcements (read-only)
+│   │   │   ├── 🔊 music-lounge
+│   │   │   └── 🎙 stage-channel
+│   │   └── (uncategorized channels)
+│   ├── Text Channel View
+│   │   ├── Channel Header (name, topic, pins, threads, search, members)
+│   │   ├── Message Stream
+│   │   │   ├── Text Messages (Markdown-formatted)
+│   │   │   ├── Embeds (rich link previews, bot embeds)
+│   │   │   ├── Attachments (images, videos, files — up to 8MB/25MB/500MB by plan)
+│   │   │   ├── Reactions (emoji + custom server emoji)
+│   │   │   ├── Stickers
+│   │   │   ├── Replies (quote-style)
+│   │   │   ├── Thread Indicators
+│   │   │   ├── Bot Messages (embeds, buttons, select menus, modals)
+│   │   │   └── System Messages (join, boost, pin)
+│   │   ├── Message Composer
+│   │   │   ├── Rich text (Markdown: **bold**, *italic*, ~~strike~~, `code`, &gt; quote)
+│   │   │   ├── @mentions (user, role, @everyone, @here)
+│   │   │   ├── #channel links
+│   │   │   ├── Emoji picker (Unicode + custom + animated Nitro)
+│   │   │   ├── Sticker picker
+│   │   │   ├── GIF picker (Tenor)
+│   │   │   ├── File upload (drag &amp; drop or button)
+│   │   │   ├── Apps (slash commands from bots)
+│   │   │   └── Voice message (record &amp; send)
+│   │   └── Pinned Messages (right panel)
+│   ├── Voice Channel
+│   │   ├── Join Voice (click to join, always-on)
+│   │   ├── Connected Users (avatars, speaking indicator)
+│   │   ├── Screenshare (individual streams)
+│   │   ├── Video (camera toggle)
+│   │   ├── Voice Controls (mute, deafen, disconnect)
+│   │   └── Text Chat (in-voice text channel)
+│   ├── Forum Channel
+│   │   ├── Post List (title, tags, reply count)
+│   │   ├── Create Post (title + body + tags)
+│   │   ├── Post Detail (threaded discussion)
+│   │   ├── Tags (filterable)
+│   │   └── Sort (latest activity, date created)
+│   ├── Stage Channel
+│   │   ├── Speakers (on stage)
+│   │   ├── Audience
+│   │   ├── Raise Hand (request to speak)
+│   │   └── Stage Event Schedule
+│   ├── Threads
+│   │   ├── Active Threads list
+│   │   ├── Thread Detail
+│   │   │   ├── Thread name
+│   │   │   ├── Messages
+│   │   │   └── Auto-archive (1h/24h/3d/7d)
+│   │   └── Create Thread (from message or standalone)
+│   ├── Events
+│   │   ├── Scheduled Events
+│   │   ├── Event Detail (location: voice/stage/external)
+│   │   ├── Interested / Attending
+│   │   └── Create Event
+│   ├── Members List (right panel)
+│   │   ├── By Role (color-coded)
+│   │   ├── Online / Offline
+│   │   └── Member Profile (click → popup)
+│   └── Server Settings (admin)
+│       ├── Overview (name, icon, banner)
+│       ├── Roles (permissions matrix per role)
+│       ├── Emoji (custom server emoji)
+│       ├── Stickers (custom stickers)
+│       ├── Soundboard (custom sounds)
+│       ├── Moderation (AutoMod, verification level)
+│       ├── Audit Log (all admin actions)
+│       ├── Integrations (bots, webhooks)
+│       ├── Community (enable community features)
+│       ├── Onboarding (welcome screens, default channels)
+│       ├── Server Insights (analytics)
+│       └── Bans, Invites, Vanity URL
+├── User Settings
+│   ├── My Account (username, email, password, 2FA)
+│   ├── Profiles (display name, avatar, banner, bio, connections)
+│   ├── Privacy &amp; Safety
+│   ├── Authorized Apps
+│   ├── Devices
+│   ├── Connections (Spotify, Steam, GitHub, Xbox, PlayStation...)
+│   ├── Friend Requests Settings
+│   ├── Notifications
+│   ├── Appearance (dark/light, compact/cozy, font scaling)
+│   ├── Accessibility
+│   ├── Voice &amp; Video (input/output, noise suppression)
+│   ├── Text &amp; Images (emoji, stickers, link previews)
+│   ├── Keybinds (push-to-talk, mute, etc.)
+│   ├── Language
+│   ├── Streamer Mode (hide sensitive info)
+│   └── Activity Privacy
+├── Discover
+│   ├── Public Servers (by category: Gaming, Education, Music, Science...)
+│   ├── Featured Servers
+│   └── Server search
+└── Nitro (Subscription)
+    ├── Animated avatars &amp; banners
+    ├── Custom emoji everywhere
+    ├── Higher upload limits
+    ├── Server boosts
+    ├── HD video streaming
+    └── Custom profiles
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Server Rail</strong></td>
+<td>Left icon column (72px)</td>
+<td>Server icons stacked; Home (DMs) at top; unread/mention badges; drag to reorder; folders for grouping servers</td>
+</tr>
+<tr>
+<td><strong>Channel Sidebar</strong></td>
+<td>Second column (240px)</td>
+<td>Categories → channels; voice channels show connected users; muted channels dimmed</td>
+</tr>
+<tr>
+<td><strong>Chat/Voice View</strong></td>
+<td>Main content area</td>
+<td>Text channel messages or voice channel UI</td>
+</tr>
+<tr>
+<td><strong>Members Panel</strong></td>
+<td>Right sidebar (240px, toggle)</td>
+<td>Role-sorted member list with presence</td>
+</tr>
+<tr>
+<td><strong>Thread Panel</strong></td>
+<td>Right sidebar (replaces members)</td>
+<td>Thread messages</td>
+</tr>
+<tr>
+<td><strong>Quick Switcher</strong></td>
+<td>⌘K</td>
+<td>Jump to channel, DM, or server</td>
+</tr>
+<tr>
+<td><strong>User Area</strong></td>
+<td>Bottom of channel sidebar</td>
+<td>Username, status, mic/headphone/settings buttons</td>
+</tr>
+<tr>
+<td><strong>Context Menu</strong></td>
+<td>Right-click</td>
+<td>Message actions, channel actions, user actions</td>
+</tr>
+</tbody></table>
+<h3>Server Rail Organization</h3>
+<pre><code>[Home DM Button]
+[Separator]
+Server Folder: &quot;Gaming&quot; ▾
+  ├── 🎮 Server A
+  └── 🎮 Server B
+Server Folder: &quot;Work&quot; ▾
+  ├── 💼 Server C
+  └── 💼 Server D
+Standalone Server E
+Standalone Server F
+[Separator]
+[+ Add Server]
+[🔍 Discover]
+</code></pre>
+<h3>Voice/User Controls (Bottom Bar)</h3>
+<pre><code>┌─────────────────────────────────┐
+│ 🔊 Connected: voice-channel    │
+│    (Server Name)    🔇 📱 ☎ ⚙   │
+├─────────────────────────────────┤
+│ 👤 Username#1234   🎤 🎧 ⚙      │
+└─────────────────────────────────┘
+Mic Mute | Deafen | User Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Server (Guild)</td>
+<td>name, icon, banner, boost_level, member_count, verification_level, features[]</td>
+<td>has many Channels, Roles, Members, Emoji, Events</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>name, position</td>
+<td>groups Channels within Server</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>name, type, topic, position, slowmode, nsfw, permissions_overwrites[]</td>
+<td>belongs to Category and Server</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>content (Markdown), author, timestamp, edited, embeds[], attachments[], reactions[], referenced_message (reply)</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>name, parent_channel, auto_archive_duration, message_count, locked</td>
+<td>child of Channel; has Messages</td>
+</tr>
+<tr>
+<td>Forum Post</td>
+<td>title, tags[], applied_tags[]</td>
+<td>special Thread in Forum Channel</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>name, color, permissions (bitfield), hoist (show separately), mentionable, icon</td>
+<td>many-to-many with Members</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>user_ref, nickname, roles[], joined_at, boosting_since</td>
+<td>belongs to Server</td>
+</tr>
+<tr>
+<td>Emoji</td>
+<td>name, animated, managed (bot-owned)</td>
+<td>belongs to Server</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>name, description, start_time, end_time, entity_type (stage/voice/external), location</td>
+<td>belongs to Server</td>
+</tr>
+<tr>
+<td>Webhook</td>
+<td>name, avatar, channel, url</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Bot/Application</td>
+<td>name, commands[], interactions</td>
+<td>installed in Server</td>
+</tr>
+</tbody></table>
+<h3>Channel Types</h3>
+<pre><code>GUILD_TEXT (0)          → Standard text channel
+DM (1)                  → Direct message
+GUILD_VOICE (2)         → Voice channel (always-on)
+GROUP_DM (3)            → Group DM (up to 10)
+GUILD_CATEGORY (4)      → Channel category
+GUILD_ANNOUNCEMENT (5)  → Announcement channel (follow in other servers)
+GUILD_STAGE_VOICE (13)  → Stage channel (speaker/audience model)
+GUILD_FORUM (15)        → Forum channel (structured posts)
+GUILD_MEDIA (16)        → Media channel (gallery-focused)
+</code></pre>
+<h3>Permission System (Unique Complexity)</h3>
+<pre><code>Server-level defaults → Role permissions → Category overwrites → Channel overwrites → Per-user overwrites
+(Each layer can ALLOW, DENY, or INHERIT each permission)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Join Voice Channel</h3>
+<pre><code>Click voice channel → Instantly connected → Others see you joined → Talk freely → Click &quot;Disconnect&quot; when done
+(No ringing, no calling — just join/leave)
+</code></pre>
+<h3>Start a Thread</h3>
+<pre><code>Hover message → &quot;Create Thread&quot; → Name the thread → Discuss in side panel → Thread auto-archives after inactivity
+</code></pre>
+<h3>Forum Post</h3>
+<pre><code>Forum channel → &quot;New Post&quot; → Title + Body + Select Tags → Post → Community replies in thread → Tags for filtering
+</code></pre>
+<h3>Stage Event</h3>
+<pre><code>Schedule Event → Set date, description → Start Stage → Invite speakers → Audience raises hand → Moderate speakers → End stage
+</code></pre>
+<h3>Server Onboarding</h3>
+<pre><code>New member joins → Onboarding wizard (select interests) → Auto-assigned roles → Default channels shown → Welcome message → Community guidelines acknowledged
+</code></pre>
+<h3>Bot Interaction</h3>
+<pre><code>Type /command → Autocomplete shows bot commands → Select → Fill parameters → Submit → Bot responds with embed/buttons → Click buttons for actions
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                          → Home (Friends + DMs)
+/channels/@me                              → DM list
+/channels/@me/:dmId                        → DM conversation
+/channels/:serverId/:channelId             → Server channel
+/channels/:serverId/:channelId/threads/:id → Thread
+/channels/:serverId/:channelId?message_id=:id → Jump to specific message
+/guild-discovery                           → Discover servers
+/store                                     → Nitro / Shop
+/settings                                  → User Settings
+/invite/:code                              → Server invite link
+/events/:serverId/:eventId                 → Scheduled event
+</code></pre>
+<h3>Invite Links</h3>
+<pre><code>https://discord.gg/:code              → Server invite (short)
+https://discord.com/invite/:code      → Server invite (full)
+https://discord.gg/:vanityUrl         → Vanity invite (boosted servers)
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Server Search</td>
+<td>Messages in current server</td>
+<td>from: (user), in: (channel), has: (link/embed/file/image/video/sound/sticker), before:/after:/on: (date), mentions: (user), pinned: true</td>
+<td>Relevance, Newest, Oldest</td>
+</tr>
+<tr>
+<td>Global</td>
+<td>Messages across all servers + DMs</td>
+<td>Same operators</td>
+<td>Relevance, Date</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>Current channel only</td>
+<td>⌘F local filter</td>
+<td>Position</td>
+</tr>
+<tr>
+<td>Forum</td>
+<td>Post titles and tags</td>
+<td>Tag filter, Sort: latest/date created</td>
+<td>Activity, Date</td>
+</tr>
+<tr>
+<td>Members</td>
+<td>Username, display name, role</td>
+<td>Role filter</td>
+<td>Name, Join Date</td>
+</tr>
+</tbody></table>
+<h3>Search Operators</h3>
+<pre><code>from:username               → Messages from specific user
+in:channel-name             → Messages in specific channel
+has:link                    → Messages containing links
+has:image                   → Messages with images
+before:2024-01-01           → Messages before date
+mentions:username            → Messages mentioning user
+pinned:true                 → Pinned messages
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Voice</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Server rail + channel sidebar + chat + members panel</td>
+<td>Full voice UI with screen share</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Server rail + chat (sidebar as overlay)</td>
+<td>Voice with video/screenshare</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tabs: Servers, DMs, Notifications, Profile</td>
+<td>Voice overlay, minimal controls</td>
+</tr>
+</tbody></table>
+<h3>Mobile App</h3>
+<ul>
+<li>Swipe right for server/channel list</li>
+<li>Swipe left for member list</li>
+<li>Long-press message for actions</li>
+<li>Voice channel: floating overlay while browsing</li>
+<li>Video/screenshare in voice</li>
+<li>Push-to-talk option</li>
+<li>Widget: voice channel status, unread count</li>
+</ul>
+<h2>Access Control</h2>
+<p>Discord&#39;s permission system is one of the most granular among consumer apps:</p>
+<table>
+<thead>
+<tr>
+<th>Role Level</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@everyone (default)</td>
+<td>Base permissions for all server members</td>
+</tr>
+<tr>
+<td>Custom Roles</td>
+<td>Stackable permissions (additive); channel overwrites (allow/deny)</td>
+</tr>
+<tr>
+<td>Moderator</td>
+<td>Kick, ban, manage messages, timeout, manage threads</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>All permissions except owner-only actions</td>
+</tr>
+<tr>
+<td>Server Owner</td>
+<td>Full control including delete server, transfer ownership</td>
+</tr>
+</tbody></table>
+<h3>Key Permissions (50+ granular)</h3>
+<pre><code>General: View Channels, Manage Channels, Manage Roles, Manage Server, Create Invite
+Membership: Kick Members, Ban Members, Timeout Members
+Text: Send Messages, Embed Links, Attach Files, Mention Everyone, Manage Messages, Use External Emoji
+Voice: Connect, Speak, Video, Mute Members, Deafen Members, Move Members, Use Voice Activity, Priority Speaker
+Stage: Request to Speak
+Events: Create Events, Manage Events
+</code></pre>
+<h3>Channel Permission Overwrites</h3>
+<p>Each channel can override role permissions with per-role or per-user overrides:</p>
+<ul>
+<li><strong>Allow</strong>: Grants permission regardless of role settings</li>
+<li><strong>Deny</strong>: Revokes permission regardless of role settings</li>
+<li><strong>Inherit</strong>: Falls back to role and server settings</li>
+</ul>
+<h3>Moderation Tools</h3>
+<ul>
+<li><strong>AutoMod</strong>: Regex/keyword filters, mention spam, flagged messages for review</li>
+<li><strong>Verification Levels</strong>: None, Low (email), Medium (5 min registered), High (10 min member), Highest (phone verified)</li>
+<li><strong>Timeout</strong>: Temporarily restrict member from sending messages/reacting/joining voice</li>
+<li><strong>Slow Mode</strong>: Rate-limit messages per user per channel (5s to 6h)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

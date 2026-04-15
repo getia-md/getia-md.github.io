@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Assistant — IA.md | getIA.md</title>
+  <meta name="description" content="Smart home. Device control, automations, dashboards. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=home-assistant.io&sz=64" alt="Home Assistant" onerror="this.parentElement.textContent='H'">
+      </div>
+      <h1 class="detail-brand-name">Home Assistant</h1>
+      <p class="detail-brand-tagline">Smart home. Device control, automations, dashboards.</p>
+      <span class="detail-category-badge">IoT</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/home-assistant/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://home-assistant.io" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/home-assistant/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Home Assistant — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Home Assistant is the leading open-source smart home platform, running locally on a Raspberry Pi, mini PC, or NAS to control all IoT devices from a single dashboard. The mental model is <strong>your home, your rules</strong> — unlike cloud-dependent systems (Google Home, Amazon Alexa), Home Assistant runs locally with full privacy, supports 2,000+ integrations, and allows deep customization through YAML configuration, automations, and a visual dashboard editor. Key differentiator: no vendor lock-in, works with everything (Zigbee, Z-Wave, WiFi, Matter, Bluetooth), and all data stays on your hardware.</p>
+<h2>Site Map</h2>
+<pre><code>├── Overview (Default Dashboard)
+│   ├── Home Status
+│   │   ├── People (home/away, presence detection)
+│   │   ├── Active Alerts (sensors triggered)
+│   │   ├── Weather (current conditions, forecast)
+│   │   └── Energy Usage (today)
+│   ├── Room Cards (organized by area)
+│   │   ├── Living Room
+│   │   │   ├── Lights (on/off, brightness, color)
+│   │   │   ├── Thermostat (temperature, mode)
+│   │   │   ├── Media Player (now playing, volume)
+│   │   │   ├── Blinds (position)
+│   │   │   └── Motion Sensor (status)
+│   │   ├── Kitchen
+│   │   ├── Bedroom
+│   │   ├── Office
+│   │   └── Outdoor
+│   ├── Scene Buttons (Good Morning, Movie Night, Away, Sleep)
+│   ├── Camera Feeds (live thumbnails)
+│   └── Custom Cards (community-developed visualizations)
+├── Dashboards (Customizable)
+│   ├── Default Dashboard (auto-generated from devices)
+│   ├── Custom Dashboards (user-built)
+│   │   ├── Dashboard Editor (visual drag-and-drop)
+│   │   │   ├── Add Card (entity, area, button, gauge, graph, map, etc.)
+│   │   │   ├── Card Types (70+ built-in, community customs)
+│   │   │   │   ├── Entities Card (list of entities)
+│   │   │   │   ├── Glance Card (grid of icons)
+│   │   │   │   ├── Gauge Card (circular progress)
+│   │   │   │   ├── History Graph Card (time series)
+│   │   │   │   ├── Thermostat Card (circular dial)
+│   │   │   │   ├── Media Control Card
+│   │   │   │   ├── Map Card
+│   │   │   │   ├── Camera Card (live feed)
+│   │   │   │   ├── Button Card (tap to trigger)
+│   │   │   │   ├── Mushroom Cards (community, popular)
+│   │   │   │   └── ... (endless customization)
+│   │   │   ├── Layout (masonry, horizontal, vertical, sidebar)
+│   │   │   └── Theme (colors, fonts, backgrounds)
+│   │   └── YAML Mode (raw YAML editing for power users)
+│   ├── Wall Panel Dashboard (tablet/kiosk)
+│   └── Mobile Dashboard (auto-adapted)
+├── Devices &amp; Services
+│   ├── Integrations
+│   │   ├── Configured Integrations (active)
+│   │   │   ├── Zigbee (via ZHA or Zigbee2MQTT)
+│   │   │   ├── Z-Wave
+│   │   │   ├── Matter
+│   │   │   ├── MQTT
+│   │   │   ├── Hue
+│   │   │   ├── Sonos
+│   │   │   ├── Google Cast
+│   │   │   ├── Weather
+│   │   │   ├── ... (2,000+ available)
+│   │   │   └── Each: config, devices discovered, entities
+│   │   ├── Add Integration (search 2,000+)
+│   │   └── Integration Detail
+│   │       ├── Devices Discovered
+│   │       ├── Entities Provided
+│   │       ├── Options / Config
+│   │       └── Logs
+│   ├── Devices
+│   │   ├── All Devices (table: name, manufacturer, area, integration)
+│   │   ├── Device Detail
+│   │   │   ├── Entities (all sensors, controls on this device)
+│   │   │   ├── Area Assignment
+│   │   │   ├── Diagnostics
+│   │   │   ├── Firmware Version
+│   │   │   ├── Automations Using This Device
+│   │   │   └── Configuration
+│   │   └── Add Device
+│   ├── Entities
+│   │   ├── All Entities (table: entity_id, state, area, integration)
+│   │   ├── Entity Detail (state, attributes, history)
+│   │   └── Entity Registry (rename, hide, change device class)
+│   └── Areas
+│       ├── Area List (Living Room, Kitchen, Bedroom, etc.)
+│       ├── Create / Edit Area (name, icon, picture)
+│       └── Area Detail (devices + entities in this area)
+├── Automations
+│   ├── Automation List
+│   ├── Create Automation
+│   │   ├── Visual Editor
+│   │   │   ├── Triggers
+│   │   │   │   ├── State Change (device turns on/off)
+│   │   │   │   ├── Time (at 7:00 AM, sunrise, sunset)
+│   │   │   │   ├── Device Trigger (motion detected, door opened)
+│   │   │   │   ├── Zone (person enters/leaves zone)
+│   │   │   │   ├── Sun (sunrise/sunset with offset)
+│   │   │   │   ├── Webhook
+│   │   │   │   ├── MQTT
+│   │   │   │   └── Template (custom condition)
+│   │   │   ├── Conditions (optional)
+│   │   │   │   ├── State Condition
+│   │   │   │   ├── Time Condition (only between 6 PM - 11 PM)
+│   │   │   │   ├── Zone Condition
+│   │   │   │   ├── Sun Condition
+│   │   │   │   └── Template Condition
+│   │   │   ├── Actions
+│   │   │   │   ├── Call Service (turn_on, turn_off, set_temperature)
+│   │   │   │   ├── Delay / Wait
+│   │   │   │   ├── Choose (if/else)
+│   │   │   │   ├── Repeat (loop)
+│   │   │   │   ├── Notify (push, TTS, email)
+│   │   │   │   ├── Scene (activate scene)
+│   │   │   │   └── Script (run script)
+│   │   │   └── Mode (single, restart, queued, parallel)
+│   │   └── YAML Editor
+│   ├── Automation Detail (edit, test, trace, logs)
+│   ├── Automation Trace (step-by-step execution log)
+│   ├── Scripts (reusable action sequences)
+│   │   ├── Script List
+│   │   ├── Create Script
+│   │   └── Script Detail
+│   └── Scenes
+│       ├── Scene List
+│       ├── Create Scene (set target states for devices)
+│       └── Scene Detail
+├── Energy
+│   ├── Energy Dashboard
+│   │   ├── Grid Consumption (kWh, today/week/month/year)
+│   │   ├── Solar Production (if applicable)
+│   │   ├── Battery (if applicable)
+│   │   ├── Gas Usage
+│   │   ├── Water Usage
+│   │   ├── Cost Calculation (based on utility rate)
+│   │   ├── Per-Device Breakdown
+│   │   └── Self-Sufficiency %
+│   └── Energy Configuration
+│       ├── Grid (consumption sensors, cost entity)
+│       ├── Solar Panels (production sensor)
+│       ├── Battery (charge/discharge sensors)
+│       └── Individual Devices (map power sensors)
+├── Map
+│   ├── Person Locations (family members, live)
+│   ├── Zones (Home, Work, School, custom)
+│   ├── Device Trackers
+│   └── History (where everyone&#39;s been)
+├── Logbook
+│   ├── Event Timeline (all state changes)
+│   ├── Filter by Entity / Area / Person
+│   └── Date Range
+├── History
+│   ├── History Graphs (per entity, time series)
+│   ├── Date Range Selector
+│   └── Compare Entities
+├── Add-Ons (Supervisor)
+│   ├── Installed Add-Ons
+│   │   ├── Zigbee2MQTT
+│   │   ├── MQTT Broker (Mosquitto)
+│   │   ├── Node-RED (visual automation)
+│   │   ├── File Editor
+│   │   ├── Samba Share
+│   │   ├── Let&#39;s Encrypt (SSL)
+│   │   ├── VS Code Server
+│   │   └── ... (200+ add-ons)
+│   ├── Add-On Store
+│   │   ├── Official Add-Ons
+│   │   ├── Community Add-Ons
+│   │   └── Custom Repositories
+│   └── Add-On Detail (start, stop, logs, config)
+├── HACS (Home Assistant Community Store)
+│   ├── Custom Integrations (community-built)
+│   ├── Custom Dashboard Cards (Lovelace)
+│   ├── Themes
+│   └── Install / Update / Remove
+├── Settings
+│   ├── System
+│   │   ├── General (name, location, timezone, units)
+│   │   ├── Network
+│   │   ├── Storage
+│   │   ├── Backups (create, restore, download)
+│   │   ├── Logs (system log, real-time)
+│   │   ├── Repairs (detected issues)
+│   │   └── Updates (core, OS, add-ons)
+│   ├── People &amp; Zones
+│   │   ├── People (household members)
+│   │   ├── Zones (geofences)
+│   │   └── Presence Detection
+│   ├── Companions
+│   │   ├── Mobile App (connected phones)
+│   │   └── Home Assistant Cloud (Nabu Casa: remote access, Google/Alexa integration)
+│   ├── Automations &amp; Scenes
+│   ├── Devices &amp; Services
+│   ├── Areas &amp; Zones
+│   ├── Dashboards (manage custom dashboards)
+│   └── About (version, system info)
+├── Developer Tools
+│   ├── States (view/set entity states manually)
+│   ├── Services (call services directly)
+│   ├── Templates (test Jinja2 templates)
+│   ├── Events (fire/listen to events)
+│   └── Statistics (fix broken statistics)
+└── Companion App (Mobile)
+    ├── Same Dashboard (WebView)
+    ├── Sensors (phone sensors sent to HA)
+    │   ├── Battery Level
+    │   ├── Location
+    │   ├── Steps
+    │   ├── WiFi SSID
+    │   └── Activity
+    ├── Notifications (actionable push)
+    ├── Widgets (device toggles, scenes)
+    └── Apple Watch / Wear OS Complications
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible</td>
+<td>Overview, Dashboards, Energy, Map, Logbook, History, Dev Tools, Settings</td>
+</tr>
+<tr>
+<td><strong>Room/Area Tabs</strong></td>
+<td>Horizontal scroll on dashboard</td>
+<td>All, Living Room, Kitchen, Bedroom, etc.</td>
+</tr>
+<tr>
+<td><strong>Device Tiles</strong></td>
+<td>Tappable cards in dashboard grid</td>
+<td>Tap = toggle, long-press = detail/slider</td>
+</tr>
+<tr>
+<td><strong>Scene Buttons</strong></td>
+<td>Row or grid on dashboard</td>
+<td>Tap = instant activate</td>
+</tr>
+<tr>
+<td><strong>YAML/Visual Toggle</strong></td>
+<td>In automation and dashboard editors</td>
+<td>Switch between visual editor and raw YAML</td>
+</tr>
+<tr>
+<td><strong>Mobile App</strong></td>
+<td>WebView wrapper + native features</td>
+<td>Same dashboard + phone sensors + notifications</td>
+</tr>
+</tbody></table>
+<h3>Tile Interaction</h3>
+<pre><code>Tap → Toggle on/off
+Long-press → Open detail dialog (brightness slider, color picker, temperature dial)
+Hold tile edge → Drag to reorder (in edit mode)
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Entity</td>
+<td>entity_id (e.g., light.living_room), state, attributes{}, area, device, integration, platform</td>
+<td>core data model — everything is an entity</td>
+</tr>
+<tr>
+<td>Device</td>
+<td>name, manufacturer, model, firmware, via_device, area, identifiers</td>
+<td>groups multiple Entities</td>
+</tr>
+<tr>
+<td>Area</td>
+<td>name, icon, picture</td>
+<td>groups Devices</td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>domain, config_entries[], devices[], entities[]</td>
+<td>connects external services</td>
+</tr>
+<tr>
+<td>Automation</td>
+<td>alias, trigger[], condition[], action[], mode, last_triggered</td>
+<td>uses Entities</td>
+</tr>
+<tr>
+<td>Script</td>
+<td>alias, sequence[], mode</td>
+<td>uses Entities</td>
+</tr>
+<tr>
+<td>Scene</td>
+<td>name, entities{entity_id: target_state}</td>
+<td>snapshots of Entity states</td>
+</tr>
+<tr>
+<td>Person</td>
+<td>name, device_trackers[], picture, presence</td>
+<td>has presence state</td>
+</tr>
+<tr>
+<td>Zone</td>
+<td>name, latitude, longitude, radius, icon</td>
+<td>geofence</td>
+</tr>
+<tr>
+<td>AddOn</td>
+<td>name, version, state (started/stopped), config, logs</td>
+<td>Supervisor managed</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>title, views[], theme</td>
+<td>user-customized</td>
+</tr>
+<tr>
+<td>Card</td>
+<td>type, config{}, entities[]</td>
+<td>belongs to Dashboard View</td>
+</tr>
+</tbody></table>
+<h3>Entity ID Convention</h3>
+<pre><code>{domain}.{object_id}
+light.living_room_ceiling
+sensor.outdoor_temperature
+switch.coffee_maker
+binary_sensor.front_door
+climate.thermostat
+lock.front_door
+camera.backyard
+person.john
+automation.motion_lights
+</code></pre>
+<h3>Entity State Machine</h3>
+<pre><code>on ↔ off (lights, switches)
+locked ↔ unlocked (locks)
+home ↔ away ↔ not_home (presence)
+heat ↔ cool ↔ auto ↔ off (climate)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Control a Light (Quick)</h3>
+<pre><code>Dashboard → Living Room Tab → Tap &quot;Ceiling Light&quot; Tile → Light Toggles On → Long-Press → Brightness Slider + Color Picker → Adjust → Close
+</code></pre>
+<h3>Create Automation (Visual)</h3>
+<pre><code>Settings → Automations → [Create] → Trigger: &quot;Motion Sensor detects motion&quot; → Condition: &quot;After sunset&quot; → Action: &quot;Turn on hallway light, brightness 50%&quot; → Name: &quot;Hallway Motion Light&quot; → Save
+</code></pre>
+<h3>Add a New Device</h3>
+<pre><code>Settings → Devices &amp; Services → [Add Integration] → Search &quot;Zigbee&quot; → Configure ZHA → Scan for Devices → &quot;IKEA Bulb&quot; Discovered → Assign to Living Room → Appears on Dashboard
+</code></pre>
+<h3>Build Custom Dashboard</h3>
+<pre><code>Dashboard → Edit Mode → [Add Card] → Select &quot;Thermostat Card&quot; → Choose Entity: climate.living_room → Configure Style → Place on Dashboard → Save → Use Daily
+</code></pre>
+<h3>Set Up Energy Monitoring</h3>
+<pre><code>Settings → Energy → Grid Consumption: Select Power Sensor → Cost: Enter Utility Rate → Solar: Select Production Sensor → Save → Energy Dashboard Shows Real-Time Usage + Cost
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Default Dashboard (Overview)
+/dashboard-custom              → Custom Dashboard
+/energy                        → Energy Dashboard
+/map                           → Map (person locations)
+/logbook                       → Event Timeline
+/history                       → History Graphs
+/config                        → Settings
+/config/integrations           → Integrations
+/config/devices                → Devices
+/config/entities               → Entities
+/config/areas                  → Areas
+/config/automation             → Automations
+/config/automation/edit/:id    → Automation Editor
+/config/script                 → Scripts
+/config/scene                  → Scenes
+/config/person                 → People
+/config/zone                   → Zones
+/config/core                   → System Settings
+/config/backup                 → Backups
+/config/updates                → Updates
+/config/repairs                → Repairs
+/developer-tools               → Developer Tools
+/developer-tools/state         → States
+/developer-tools/service       → Services
+/developer-tools/template      → Template Editor
+/developer-tools/event         → Events
+/hassio                        → Supervisor (Add-Ons)
+/hassio/store                  → Add-On Store
+/hassio/addon/:slug            → Add-On Detail
+/hacs                          → HACS (Community Store)
+/profile                       → User Profile
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Integrations</td>
+<td>Integration name</td>
+<td>—</td>
+<td>Alphabetical, installed first</td>
+</tr>
+<tr>
+<td>Devices</td>
+<td>Device name, manufacturer</td>
+<td>Area, Integration, Type</td>
+<td>Name, Area</td>
+</tr>
+<tr>
+<td>Entities</td>
+<td>Entity ID, name</td>
+<td>Domain (light/sensor/switch), Area, Integration, Status</td>
+<td>Name, Domain</td>
+</tr>
+<tr>
+<td>Automations</td>
+<td>Name, entity used</td>
+<td>Enabled/Disabled</td>
+<td>Name, Last Triggered</td>
+</tr>
+<tr>
+<td>Logbook</td>
+<td>Entity name, event</td>
+<td>Entity, Area, Date Range</td>
+<td>Time (newest)</td>
+</tr>
+<tr>
+<td>HACS</td>
+<td>Component name</td>
+<td>Type (integration/card/theme), Category</td>
+<td>Stars, Downloads</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Dashboard</th>
+<th>Settings</th>
+<th>Automation Editor</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop / Tablet (wall panel)</td>
+<td>Multi-column card grid, sidebar</td>
+<td>Full sidebar + content</td>
+<td>Visual editor, side-by-side</td>
+</tr>
+<tr>
+<td>Mobile (primary for control)</td>
+<td>Single column, bottom nav (companion app)</td>
+<td>Simplified, back-button nav</td>
+<td>Stacked, scrollable</td>
+</tr>
+<tr>
+<td>Watch / Wearable</td>
+<td>Complications (favorites toggle)</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Wall Panel (kiosk)</td>
+<td>Custom dashboard, full-screen</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody></table>
+<h3>Home Assistant-Specific UX</h3>
+<ul>
+<li><strong>Local-first</strong>: Everything runs on your hardware, no cloud required</li>
+<li><strong>Privacy</strong>: No data leaves your home unless you choose</li>
+<li><strong>Entity-centric</strong>: Everything is an entity with a state — universal data model</li>
+<li><strong>YAML + Visual</strong>: Power users write YAML; beginners use visual editors</li>
+<li><strong>Automation traces</strong>: Step-by-step debugging of automation execution</li>
+<li><strong>2,000+ integrations</strong>: If it&#39;s smart, Home Assistant probably supports it</li>
+<li><strong>Community-driven</strong>: HACS provides thousands of community add-ons and cards</li>
+<li><strong>Dashboard customization</strong>: Build pixel-perfect dashboards with custom cards</li>
+<li><strong>Local control</strong>: Works even if internet goes down (Zigbee, Z-Wave, Matter)</li>
+<li><strong>Voice assistants</strong>: Assist (built-in), or integrate with Google/Alexa via cloud</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>Control</th>
+<th>Automations</th>
+<th>Settings</th>
+<th>Developer Tools</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner (Admin)</td>
+<td>✅</td>
+<td>All</td>
+<td>CRUD</td>
+<td>Full</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>All</td>
+<td>CRUD</td>
+<td>Most</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>User</td>
+<td>✅</td>
+<td>Assigned</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Guest (via link)</td>
+<td>View only</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Security</h3>
+<ul>
+<li>Local authentication (username/password)</li>
+<li>Multi-factor authentication (TOTP)</li>
+<li>Nabu Casa cloud for secure remote access (no port forwarding)</li>
+<li>HTTPS via Let&#39;s Encrypt or custom certificate</li>
+<li>IP banning after failed login attempts</li>
+<li>Trusted networks (auto-login on home WiFi)</li>
+<li>Per-user dashboard assignments</li>
+<li>Full audit log of all state changes and who triggered them</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

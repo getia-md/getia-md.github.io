@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBay — IA.md | getIA.md</title>
+  <meta name="description" content="Auction & fixed-price marketplace. Bidding, seller ratings. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=ebay.com&sz=64" alt="eBay" onerror="this.parentElement.textContent='e'">
+      </div>
+      <h1 class="detail-brand-name">eBay</h1>
+      <p class="detail-brand-tagline">Auction & fixed-price marketplace. Bidding, seller ratings.</p>
+      <span class="detail-category-badge">Marketplace</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/ebay/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://ebay.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/ebay/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>eBay — Information Architecture</h1>
+<h2>Overview</h2>
+<p>eBay is the world&#39;s largest online auction and marketplace, supporting both auction-style and fixed-price (&quot;Buy It Now&quot;) listings. The mental model is <strong>competitive buying</strong> — bidders compete for items within time windows, creating urgency and potentially below-market pricing, while Buy It Now offers instant purchase for those who prefer certainty. eBay differentiates through its auction mechanics (proxy bidding, sniping culture, reserve prices), massive category breadth (from electronics to collectibles to cars), Authenticity Guarantee for luxury items, seller feedback system (the original trust mechanism of e-commerce), and eBay Motors for vehicle sales. It serves both consumer-to-consumer and business-to-consumer transactions.</p>
+<h2>Site Map</h2>
+<h3>Buyer Side</h3>
+<pre><code>├── Home
+│   ├── Search Bar (dominant)
+│   ├── Saved / Personalized (recently viewed, watched, recommended)
+│   ├── Trending Now
+│   ├── Daily Deals
+│   ├── Category Cards (Electronics, Fashion, Collectibles, etc.)
+│   ├── eBay Refurbished
+│   ├── Popular Destinations (eBay Motors, Sneakers, Trading Cards)
+│   └── Seasonal Promotions
+├── Categories
+│   ├── All Categories (massive tree, 30+ top-level)
+│   │   ├── Electronics
+│   │   ├── Collectibles &amp; Art
+│   │   ├── Fashion
+│   │   ├── Home &amp; Garden
+│   │   ├── Sporting Goods
+│   │   ├── Toys &amp; Hobbies
+│   │   ├── Motors (vehicles + parts)
+│   │   ├── Business &amp; Industrial
+│   │   └── ... (30+ categories, each with deep subcategories)
+│   └── Category Page (subcategories, featured items)
+├── Search Results
+│   ├── Listing Cards
+│   │   ├── Image
+│   │   ├── Title (detailed, keyword-rich)
+│   │   ├── Price (current bid or BIN price)
+│   │   ├── Shipping Cost (or Free Shipping badge)
+│   │   ├── Bids Count + Time Left (auction)
+│   │   ├── Buy It Now Price (if hybrid)
+│   │   ├── Condition (New, Open Box, Refurbished, Used)
+│   │   ├── Seller Info (username, rating %, feedback score)
+│   │   ├── Top Rated Plus Badge
+│   │   ├── Authenticity Guarantee Badge
+│   │   └── Watch Button (heart/eye)
+│   ├── Left Sidebar Filters
+│   │   ├── Category (auto-refined)
+│   │   ├── Condition (New, Open Box, Certified Refurbished, Used, For Parts)
+│   │   ├── Price (range)
+│   │   ├── Buying Format (All, Auction, Buy It Now, Accepts Offers)
+│   │   ├── Item Location (US, worldwide)
+│   │   ├── Delivery Options (Free Shipping, local pickup)
+│   │   ├── Seller (Top Rated, eBay Refurbished)
+│   │   ├── Show Only (Free Returns, Sold Items, Completed Items, Authenticity Guarantee)
+│   │   └── Category-Specific (brand, model, size, color, etc.)
+│   ├── Sort (Best Match, Price + Shipping (low/high), Ending Soonest, Newly Listed)
+│   ├── View Toggle (gallery / list / compact)
+│   └── Save This Search (with email alerts)
+├── Listing Detail
+│   ├── Images (zoom, up to 24 photos)
+│   ├── Title
+│   ├── Condition (with condition description)
+│   ├── Pricing
+│   │   ├── Auction: Current Bid + # Bids + Time Left (countdown)
+│   │   ├── Buy It Now Price
+│   │   ├── Best Offer (Make Offer button)
+│   │   └── Price Trend (price history for similar items)
+│   ├── Bid Panel / Buy Box
+│   │   ├── Place Bid (enter max bid → proxy bidding)
+│   │   ├── Buy It Now
+│   │   ├── Make Offer (negotiate)
+│   │   ├── Add to Cart
+│   │   ├── Add to Watchlist
+│   │   └── &quot;You are the highest bidder&quot; / &quot;You&#39;ve been outbid&quot;
+│   ├── Bid History (list of bids, bidder IDs anonymized)
+│   ├── Seller Info
+│   │   ├── Username, Rating (99.8% positive), Feedback Score
+│   │   ├── Member Since
+│   │   ├── Top Rated Seller Badge
+│   │   ├── Visit Store
+│   │   ├── Contact Seller
+│   │   └── Save This Seller
+│   ├── Item Specifics (brand, model, color, size — structured attributes)
+│   ├── Item Description (HTML, seller-authored)
+│   ├── Shipping Details (cost, service, estimated delivery, returns)
+│   ├── Return Policy (30 days, seller-paid / buyer-paid)
+│   ├── Payment Methods (eBay Managed Payments)
+│   ├── Buyer Protection (&quot;eBay Money Back Guarantee&quot;)
+│   ├── Authenticity Guarantee (for eligible categories)
+│   ├── Similar Items / Sponsored
+│   └── Report Item
+├── My eBay
+│   ├── Summary (action items)
+│   ├── Watchlist (with countdown timers)
+│   ├── Recently Viewed
+│   ├── Bids/Offers
+│   │   ├── Bidding (active bids + status)
+│   │   ├── Best Offers (made / received)
+│   │   ├── Didn&#39;t Win
+│   │   └── Won
+│   ├── Purchase History
+│   ├── Saved Searches (with alerts)
+│   ├── Saved Sellers
+│   ├── Messages
+│   └── Account (settings, addresses, payments)
+├── Cart / Checkout
+│   ├── Cart (Buy It Now + won auction items)
+│   ├── Shipping Address
+│   ├── Payment (managed payments: card, PayPal, Apple Pay, Google Pay)
+│   ├── eBay Bucks / Gift Cards
+│   └── Order Confirmation
+├── Deals
+│   ├── Daily Deals
+│   ├── Featured Deals
+│   ├── Category Deals
+│   └── Coupon Offers
+├── eBay Refurbished
+│   ├── Certified, Excellent, Very Good, Good conditions
+│   └── Allstate warranty included
+├── eBay Motors
+│   ├── Vehicle Search (make, model, year)
+│   ├── Vehicle Listing (VIN, history report, inspection)
+│   ├── Parts &amp; Accessories
+│   └── Vehicle Purchase Protection
+├── Help &amp; Contact
+│   ├── Help Center
+│   ├── Resolution Center (open case, dispute)
+│   ├── Money Back Guarantee
+│   ├── Report Item
+│   └── Contact eBay Support
+└── Footer
+    ├── eBay Community, Announcements, Policies
+    ├── Affiliates, Developers (API)
+    └── Country Sites
+</code></pre>
+<h3>Seller Hub</h3>
+<pre><code>├── Overview (sales today, sold/shipped/to-do, performance)
+├── Orders
+│   ├── Awaiting Shipment
+│   ├── Paid &amp; Shipped
+│   ├── Cancellations
+│   ├── Returns
+│   └── Order Detail (buyer info, shipping label, invoice)
+├── Listings
+│   ├── Active
+│   ├── Unsold / Ended
+│   ├── Drafts
+│   ├── Scheduled
+│   └── Business Policies (shipping, return, payment presets)
+├── Sell Item (Create Listing)
+│   ├── Category Selection (guided or search)
+│   ├── Item Specifics (product ID / catalog match)
+│   ├── Photos (up to 24)
+│   ├── Title &amp; Description
+│   ├── Pricing &amp; Format
+│   │   ├── Auction (starting price, reserve, duration: 1/3/5/7/10 days)
+│   │   ├── Buy It Now (fixed price)
+│   │   ├── Auction + BIN
+│   │   └── Best Offer (auto-accept/decline rules)
+│   ├── Shipping (free/calculated/flat rate, service, handling time)
+│   ├── Returns Policy
+│   ├── Item Location
+│   └── List / Schedule
+├── Marketing
+│   ├── Promoted Listings (Standard — cost per sale, Advanced — CPC)
+│   ├── Sales Events (markdown, coupons)
+│   ├── Volume Pricing
+│   └── Listing Promotions
+├── Performance
+│   ├── Seller Level (Top Rated, Above Standard, Below Standard)
+│   ├── Service Metrics (defect rate, late shipment, cases)
+│   ├── Seller Dashboard (conversion, impressions)
+│   └── Traffic Reports
+├── Payments
+│   ├── Earnings &amp; Payouts
+│   ├── Fees (listing, final value, promoted listing)
+│   ├── Financial Statements
+│   ├── Payout Schedule
+│   └── 1099-K (tax)
+├── Growth
+│   ├── Listing Quality Report
+│   ├── Terapeak (market research: pricing, demand, competition)
+│   ├── Sourcing Recommendations
+│   └── International Selling
+└── Research (Terapeak)
+    ├── Product Research (avg price, sell-through rate)
+    ├── Sourcing Research
+    └── Competitive Analysis
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Sticky top bar (two tiers)</td>
+<td>Row 1: eBay logo, shop by category, search bar, advanced search, sell, My eBay, cart. Row 2: category links</td>
+</tr>
+<tr>
+<td><strong>Category Menu</strong></td>
+<td>Flyout mega menu</td>
+<td>Multi-level category tree</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>On search/browse pages</td>
+<td>Faceted filtering</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Below header</td>
+<td>eBay &gt; Category &gt; Subcategory</td>
+</tr>
+<tr>
+<td><strong>Bid Panel</strong></td>
+<td>Sticky sidebar (desktop) / bottom bar (mobile)</td>
+<td>Current bid, time left, Place Bid button</td>
+</tr>
+<tr>
+<td><strong>Watchlist Quick Access</strong></td>
+<td>Header icon with count</td>
+<td>Dropdown of watched items with countdowns</td>
+</tr>
+<tr>
+<td><strong>Seller Hub Nav</strong></td>
+<td>Left sidebar or top tabs</td>
+<td>Overview, Orders, Listings, Marketing, Performance, Payments</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Listing</td>
+<td>id, title, category, condition, images[], description_html, start_price, buy_it_now_price, reserve_price, format (auction/BIN/both/offer), duration, start_time, end_time, quantity, item_specifics{}, location, seller</td>
+<td>has Bids</td>
+</tr>
+<tr>
+<td>Bid</td>
+<td>amount, max_bid (proxy), bidder (anonymized), timestamp</td>
+<td>belongs to Listing</td>
+</tr>
+<tr>
+<td>Seller</td>
+<td>user_id, feedback_score, positive_feedback_pct, member_since, top_rated, store_name</td>
+<td>has Listings</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>listing, buyer, seller, final_price, shipping, total, status</td>
+<td>from Listing</td>
+</tr>
+<tr>
+<td>Feedback</td>
+<td>type (positive/neutral/negative), comment, response</td>
+<td>between Buyer and Seller</td>
+</tr>
+<tr>
+<td>SavedSearch</td>
+<td>query, filters, email_alert</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>WatchItem</td>
+<td>listing, added_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Dispute</td>
+<td>order, type (item not received / not as described), status</td>
+<td>between Buyer and Seller</td>
+</tr>
+<tr>
+<td>PromotedListing</td>
+<td>listing, ad_rate_pct, impressions, clicks, sales</td>
+<td>belongs to Seller</td>
+</tr>
+</tbody></table>
+<h3>Auction Logic</h3>
+<ul>
+<li><strong>Proxy bidding</strong>: user sets max → system bids minimum increment until max reached</li>
+<li><strong>Bid increments</strong>: based on current price tier ($0.50 under $25, $1.00 under $100, etc.)</li>
+<li><strong>Reserve price</strong>: hidden minimum; &quot;Reserve not met&quot; shown until reached</li>
+<li><strong>Sniping</strong>: last-second bidding (no anti-sniping extension on eBay)</li>
+<li><strong>BIN + Auction</strong>: Buy It Now disappears after first bid placed</li>
+</ul>
+<h3>Listing Status</h3>
+<pre><code>draft → scheduled → active → ending_soon (last 12h) → ended → sold / unsold
+                                                              → relisted
+</code></pre>
+<h3>Order Status</h3>
+<pre><code>won → awaiting_payment → paid → shipped → delivered → completed → feedback_left
+                                                    → case_opened → resolved
+</code></pre>
+<h2>User Flows</h2>
+<h3>Browse and Bid</h3>
+<pre><code>Search &quot;vintage Rolex&quot; → Filter: Auction only, Pre-Owned → Sort: Ending Soonest → View listing → Check bid history → Place bid ($500 max) → Proxy bidding activates → Outbid notification → Re-bid → Win → Pay → Receive → Leave feedback
+</code></pre>
+<h3>Buy It Now</h3>
+<pre><code>Search → Filter: Buy It Now → View listing → Add to Cart (or Buy It Now) → Checkout → Pay → Track shipment → Delivered → Leave feedback
+</code></pre>
+<h3>Seller: List Auction</h3>
+<pre><code>Sell → Search for product (catalog match) → Add photos → Title + description → Format: Auction → Starting price: $0.99 → Duration: 7 days → Shipping: free → Returns: 30 days → List → Monitor bids → Auction ends → Ship to winner
+</code></pre>
+<h3>Make an Offer</h3>
+<pre><code>Listing with Best Offer → Make Offer ($X) → Seller: Accept / Decline / Counter → Buyer: Accept counter → Pay → Ship → Complete
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/b/:category/:nodeId           → Category Browse
+/b/:category/:subcategory      → Subcategory
+/sch/i.html?_nkw=:query        → Search Results
+/itm/:slug/:itemId             → Listing Detail
+/itm/:itemId                   → Listing Detail (short URL)
+/myebay/summary                → My eBay Summary
+/myebay/watchlist               → Watchlist
+/myebay/purchasing              → Bids / Offers
+/myebay/purchase                → Purchase History
+/myebay/selling                 → Active Selling
+/myebay/messages                → Messages
+/sc/cart                        → Cart
+/pay/checkout                   → Checkout
+/usr/:username                  → Seller Profile
+/str/:storeName                 → Seller Store
+/sl/sell                        → Create Listing
+/sh                             → Seller Hub
+/sh/orders                      → Seller Orders
+/sh/lst/active                  → Active Listings
+/sh/performance                 → Performance
+/sh/payments                    → Payments
+/sh/marketing                   → Marketing
+/deals                          → Daily Deals
+/e/_electronics/refurbished     → eBay Refurbished
+/motors                         → eBay Motors
+/help                           → Help Center
+/resolution                     → Resolution Center
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Buyer Search</td>
+<td>Title, description (optional), item specifics</td>
+<td>Category, Condition, Price Range, Buying Format, Item Location, Delivery, Seller, Show Only (free returns, sold items, completed, Authenticity Guarantee), category-specific attributes</td>
+<td>Best Match, Price + Shipping (low/high), Ending Soonest, Newly Listed</td>
+</tr>
+<tr>
+<td>Seller Listings</td>
+<td>Title, SKU, item ID</td>
+<td>Status, Format, Category, Price</td>
+<td>End Date, Price, Watchers, Views</td>
+</tr>
+</tbody></table>
+<h3>Search Features</h3>
+<ul>
+<li>Save search with email/push alerts when new matching items listed</li>
+<li>&quot;Completed items&quot; filter: see what items actually sold for (price research)</li>
+<li>Advanced Search: detailed multi-field search form</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Search Results</th>
+<th>Listing Detail</th>
+<th>Bid Panel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>Grid/list + filters sidebar</td>
+<td>Full layout, bid sidebar</td>
+<td>Sticky right sidebar</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>2-3 columns</td>
+<td>Stacked</td>
+<td>Inline</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>eBay app preferred; web: 1-2 columns</td>
+<td>Stacked, sticky bid bar at bottom</td>
+<td>Bottom bar</td>
+</tr>
+</tbody></table>
+<h3>eBay-Specific UX</h3>
+<ul>
+<li><strong>Countdown timer</strong>: real-time display (days/hours/minutes/seconds) creating urgency</li>
+<li><strong>Bid history</strong>: transparent record of all bids (bidder IDs anonymized)</li>
+<li><strong>Proxy bidding UX</strong>: &quot;Your max bid&quot; separate from &quot;Current bid&quot; — system bids on your behalf</li>
+<li><strong>Watchlist with timers</strong>: see all watched auctions and their remaining time</li>
+<li><strong>Feedback system</strong>: the original e-commerce trust system (positive %, score)</li>
+<li><strong>Best Match algorithm</strong>: relevance-based default sort considering listing quality, seller performance, price</li>
+<li><strong>Completed/Sold items</strong>: research feature showing actual sale prices</li>
+<li><strong>Terapeak</strong>: built-in market research for sellers</li>
+<li><strong>Authenticity Guarantee</strong>: third-party authentication for luxury items (watches, sneakers, handbags)</li>
+<li><strong>eBay Refurbished</strong>: tiered condition grades with warranty</li>
+<li><strong>Dense information display</strong>: data-heavy listing pages (not minimalist)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Bid</th>
+<th>Buy</th>
+<th>Sell</th>
+<th>Feedback</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered (unverified)</td>
+<td>✅</td>
+<td>✅ (limits)</td>
+<td>✅ (limits)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Verified Buyer</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Verified Seller</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Top Rated Seller</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (fee discounts, visibility boost)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>eBay Store Subscriber</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (more listings, lower fees)</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Seller Levels</h3>
+<ul>
+<li><strong>Below Standard</strong>: restrictions, higher fees</li>
+<li><strong>Above Standard</strong>: standard marketplace access</li>
+<li><strong>Top Rated</strong>: fee discounts, priority customer service, Top Rated Plus badge</li>
+<li><strong>Top Rated Plus</strong>: per-listing badge (30-day returns, 1-day handling)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

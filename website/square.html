@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square — IA.md | getIA.md</title>
+  <meta name="description" content="POS & payments. In-person, online, invoices, banking. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=squareup.com&sz=64" alt="Square" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Square</h1>
+      <p class="detail-brand-tagline">POS & payments. In-person, online, invoices, banking.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/square/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://squareup.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/square/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Square — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Square (now part of Block, Inc.) started as a mobile card reader and evolved into a full business operating system. The mental model is <strong>your store&#39;s command center</strong> — combining point-of-sale (POS), payment processing, inventory management, team management, and business banking into one ecosystem. Unlike Stripe&#39;s developer-first API approach, Square leads with <strong>ready-to-use products</strong> that a coffee shop owner can set up in minutes, with APIs available for customization. The product spans hardware (Square Reader, Stand, Terminal, Register) and software (Square POS, Online, Invoices, Appointments).</p>
+<h2>Site Map</h2>
+<h3>Square POS (In-Store)</h3>
+<pre><code>├── Home (POS Dashboard)
+│   ├── Today&#39;s Sales Summary
+│   ├── Quick Actions (Take Payment, Send Invoice, View Reports)
+│   ├── Recent Transactions
+│   ├── Open Checks / Tabs
+│   └── Alerts (low inventory, pending payouts)
+├── Checkout (POS Screen)
+│   ├── Item Grid / Catalog
+│   │   ├── Categories (Drinks, Food, Retail, Custom)
+│   │   ├── Item Tiles (photo, name, price)
+│   │   ├── Modifiers (size, add-ons, options)
+│   │   └── Search Items
+│   ├── Cart / Current Sale
+│   │   ├── Line Items
+│   │   ├── Quantity Adjust
+│   │   ├── Discounts (% or $)
+│   │   ├── Tax Calculation (auto)
+│   │   ├── Tips (percentage presets)
+│   │   └── Total
+│   ├── Payment Methods
+│   │   ├── Tap / Insert / Swipe (hardware reader)
+│   │   ├── Apple Pay / Google Pay
+│   │   ├── Cash
+│   │   ├── Gift Card
+│   │   ├── Split Payment
+│   │   ├── Afterpay (BNPL)
+│   │   └── Manual Card Entry
+│   └── Receipt
+│       ├── Email Receipt
+│       ├── Text Receipt
+│       ├── Print Receipt
+│       └── No Receipt
+├── Items / Catalog
+│   ├── Item Library
+│   ├── Create / Edit Item
+│   │   ├── Name, Description, Photo
+│   │   ├── Price (fixed or variable)
+│   │   ├── SKU / Barcode
+│   │   ├── Variations (size, color)
+│   │   ├── Modifiers (add-ons)
+│   │   ├── Tax Assignment
+│   │   └── Inventory Tracking
+│   ├── Categories
+│   ├── Modifiers
+│   ├── Discounts
+│   └── Import / Export (CSV)
+├── Orders
+│   ├── Open Orders
+│   ├── Completed Orders
+│   ├── Order Detail
+│   │   ├── Items, Amounts, Payment
+│   │   ├── Refund (full/partial)
+│   │   └── Receipt Resend
+│   ├── Online Orders (from Square Online)
+│   └── Kitchen Display (for restaurants)
+├── Customers
+│   ├── Customer Directory
+│   ├── Customer Profile
+│   │   ├── Contact Info
+│   │   ├── Purchase History
+│   │   ├── Loyalty Points
+│   │   ├── Notes
+│   │   └── Groups / Segments
+│   ├── Add Customer
+│   └── Import Customers
+├── Invoices
+│   ├── Create Invoice
+│   │   ├── Customer Info
+│   │   ├── Line Items
+│   │   ├── Payment Schedule (deposits, milestones)
+│   │   ├── Attachments
+│   │   └── Send (email or payment link)
+│   ├── Outstanding Invoices
+│   ├── Paid Invoices
+│   └── Invoice Templates
+├── Reports / Analytics
+│   ├── Sales Summary (daily/weekly/monthly)
+│   ├── Gross Sales, Net Sales, Refunds, Tips
+│   ├── Sales by Category / Item
+│   ├── Sales by Employee
+│   ├── Sales by Time (hourly heatmap)
+│   ├── Discounts Report
+│   ├── Tax Report
+│   ├── Inventory Report (low stock alerts)
+│   └── Export (CSV, accounting integration)
+├── Team
+│   ├── Employee List
+│   ├── Add Employee
+│   ├── Roles &amp; Permissions (owner, manager, cashier)
+│   ├── Time Clock (clock in/out)
+│   ├── Timecards
+│   ├── Labor Cost Report
+│   └── Tips Distribution
+├── Square Banking
+│   ├── Square Checking
+│   ├── Square Savings (auto-save from sales)
+│   ├── Square Loans (pre-qualified offers)
+│   ├── Instant Transfers (to bank, fee applies)
+│   └── Payroll (Square Payroll add-on)
+├── Square Online (E-Commerce)
+│   ├── Online Store Builder
+│   ├── Website Editor (drag and drop)
+│   ├── Online Menu (restaurants)
+│   ├── Pickup / Delivery Settings
+│   ├── Shipping
+│   └── SEO Settings
+├── Hardware
+│   ├── Square Reader (contactless + chip)
+│   ├── Square Stand (iPad mount)
+│   ├── Square Terminal (standalone)
+│   ├── Square Register (all-in-one)
+│   └── Accessories (receipt printer, cash drawer)
+├── Integrations
+│   ├── Accounting (QuickBooks, Xero)
+│   ├── E-Commerce (WooCommerce, BigCommerce)
+│   ├── Delivery (DoorDash, Postmates)
+│   └── Custom (APIs &amp; SDKs)
+├── Settings
+│   ├── Business Info
+│   ├── Locations (multi-location)
+│   ├── Payment Settings
+│   ├── Receipt Customization
+│   ├── Tax Rates
+│   ├── Tip Settings
+│   ├── Devices (paired hardware)
+│   ├── Bank Account (for payouts)
+│   └── Account &amp; Security
+└── Help
+    ├── Seller Community
+    ├── Support Center
+    └── Contact Support
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>POS Bottom Bar</strong></td>
+<td>Fixed bottom</td>
+<td>Checkout, Orders, Items, More</td>
+</tr>
+<tr>
+<td><strong>Dashboard Sidebar</strong></td>
+<td>Left nav (web/tablet)</td>
+<td>Home, Transactions, Items, Customers, Reports, Team, Banking, Online, Settings</td>
+</tr>
+<tr>
+<td><strong>Checkout Grid</strong></td>
+<td>Full-screen item grid</td>
+<td>Tap item → add to cart → payment</td>
+</tr>
+<tr>
+<td><strong>Customer-Facing Display</strong></td>
+<td>Second screen (optional)</td>
+<td>Shows cart, total, tip selection to customer</td>
+</tr>
+<tr>
+<td><strong>Quick Pay</strong></td>
+<td>Charge button on home</td>
+<td>Skip item catalog, enter custom amount</td>
+</tr>
+</tbody></table>
+<h3>POS Checkout Flow</h3>
+<pre><code>[ Item Grid (left 60%) ] [ Cart / Order (right 40%) ]
+                              ↓ Charge
+                     [ Payment Screen ]
+                              ↓
+                       [ Receipt ]
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Item</td>
+<td>name, description, price, sku, barcode, variations[], modifiers[], category, tax_ids[], image, track_inventory</td>
+<td>belongs to Catalog</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>items[], subtotal, tax, tip, discount, total, payment_method, status, customer, location</td>
+<td>belongs to Location</td>
+</tr>
+<tr>
+<td>Payment</td>
+<td>amount, method (card/cash/wallet/gift_card), card_brand, last4, status, fee_amount</td>
+<td>belongs to Order</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>name, email, phone, notes, visit_count, total_spend, loyalty_points, groups[]</td>
+<td>has many Orders</td>
+</tr>
+<tr>
+<td>Invoice</td>
+<td>customer, line_items[], due_date, status (draft/sent/paid/overdue), payment_schedule[]</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Employee</td>
+<td>name, email, role, pin, hours_worked, tips_earned</td>
+<td>belongs to Location</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>name, address, phone, hours, timezone, devices[]</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>Discount</td>
+<td>name, type (percentage/fixed), amount, applies_to</td>
+<td>belongs to Catalog</td>
+</tr>
+<tr>
+<td>TaxRate</td>
+<td>name, percentage, applies_to (all/category), jurisdiction</td>
+<td>belongs to Location</td>
+</tr>
+<tr>
+<td>Payout</td>
+<td>amount, status, arrival_date, transactions[]</td>
+<td>belongs to Account</td>
+</tr>
+</tbody></table>
+<h3>Order Status</h3>
+<p><code>open → completed → refunded (full/partial)</code>
+<code>open → voided</code></p>
+<h3>Payment Processing</h3>
+<p><code>authorized → captured → settled → paid_out</code></p>
+<h2>User Flows</h2>
+<h3>Ring Up a Sale (POS)</h3>
+<pre><code>Open POS → Tap Items → Adjust Quantity/Modifiers → Apply Discount (optional) → [Charge] → Customer Taps/Inserts Card → Approved → Tip Screen (customer-facing) → Receipt → Done
+</code></pre>
+<h3>Send Invoice</h3>
+<pre><code>Invoices → [+] → Add Customer → Add Line Items → Set Due Date → Add Payment Schedule → Preview → Send → Customer Receives Link → Pays Online → Notification
+</code></pre>
+<h3>View Daily Reports</h3>
+<pre><code>Reports → Sales Summary → Today → Gross Sales, Net, Fees, Tips → Drill Down by Category → Compare to Yesterday/Last Week
+</code></pre>
+<h3>Set Up Online Ordering</h3>
+<pre><code>Online → Enable Pickup/Delivery → Sync Catalog → Set Hours → Customize Menu → Publish → Share Link / QR Code → Receive Orders on POS
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Dashboard
+/checkout                      → POS Checkout
+/orders                        → Order History
+/orders/:id                    → Order Detail
+/items                         → Item Catalog
+/items/new                     → Create Item
+/items/:id                     → Item Detail
+/customers                     → Customer Directory
+/customers/:id                 → Customer Profile
+/invoices                      → Invoice List
+/invoices/new                  → Create Invoice
+/invoices/:id                  → Invoice Detail
+/reports                       → Reports Dashboard
+/reports/sales                 → Sales Report
+/reports/items                 → Item Sales
+/reports/team                  → Team Report
+/team                          → Employee Management
+/team/:id                      → Employee Detail
+/team/timecards                → Timecards
+/banking                       → Square Banking
+/banking/checking              → Checking Account
+/banking/loans                 → Square Loans
+/online                        → Square Online
+/online/editor                 → Website Editor
+/hardware                      → Hardware Shop
+/settings                      → Settings
+/settings/locations            → Locations
+/settings/payments             → Payment Settings
+/settings/taxes                → Tax Rates
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Items</td>
+<td>Name, SKU, barcode</td>
+<td>Category, In Stock / Out of Stock, Price Range</td>
+<td>Name, Price, Created</td>
+</tr>
+<tr>
+<td>Orders</td>
+<td>Order #, customer, amount</td>
+<td>Status, Date Range, Payment Method, Location</td>
+<td>Date, Amount</td>
+</tr>
+<tr>
+<td>Customers</td>
+<td>Name, email, phone</td>
+<td>Visit Count, Total Spend, Last Visit, Group</td>
+<td>Name, Spend, Recent</td>
+</tr>
+<tr>
+<td>Invoices</td>
+<td>Customer, invoice #</td>
+<td>Status (draft/sent/paid/overdue), Date Range</td>
+<td>Due Date, Amount, Status</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>—</td>
+<td>Date Range, Location, Employee, Category</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>POS</th>
+<th>Dashboard</th>
+<th>Reports</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>iPad (primary POS)</td>
+<td>Full item grid + cart split</td>
+<td>Sidebar + content</td>
+<td>Charts + tables</td>
+</tr>
+<tr>
+<td>iPhone</td>
+<td>Simplified checkout</td>
+<td>Bottom tab bar</td>
+<td>Card-based summaries</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Not typical (management)</td>
+<td>Full sidebar + dashboard</td>
+<td>Full analytics</td>
+</tr>
+<tr>
+<td>Square Register</td>
+<td>Dual-screen (seller + buyer)</td>
+<td>N/A (POS only)</td>
+<td>N/A</td>
+</tr>
+</tbody></table>
+<h3>POS-Specific UX</h3>
+<ul>
+<li>Works offline (queues transactions, syncs when reconnected)</li>
+<li>Tap-to-pay on iPhone (no hardware needed)</li>
+<li>Kitchen display system integration (for restaurants)</li>
+<li>Customer-facing display for transparency</li>
+<li>Barcode scanner support</li>
+<li>Receipt customization (logo, message)</li>
+<li>End-of-day cash drawer reconciliation</li>
+<li>Multi-location inventory sync</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>POS / Checkout</th>
+<th>Reports</th>
+<th>Customers</th>
+<th>Items</th>
+<th>Settings</th>
+<th>Banking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>✅</td>
+<td>Full</td>
+<td>Full</td>
+<td>Full</td>
+<td>Full</td>
+<td>Full</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>✅</td>
+<td>Full</td>
+<td>Full</td>
+<td>CRUD</td>
+<td>Limited</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Cashier</td>
+<td>✅</td>
+<td>—</td>
+<td>View</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Custom</td>
+<td>Configurable</td>
+<td>Configurable</td>
+<td>Configurable</td>
+<td>Configurable</td>
+<td>Configurable</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Security</h3>
+<ul>
+<li>Employee PIN for POS access</li>
+<li>Role-based feature visibility</li>
+<li>Passcode-protected settings</li>
+<li>PCI DSS Level 1 compliant</li>
+<li>End-to-end encryption for card data</li>
+<li>Chargeback protection program</li>
+<li>Instant fraud alerts</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

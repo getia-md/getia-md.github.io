@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obsidian — IA.md | getIA.md</title>
+  <meta name="description" content="Knowledge base with local-first markdown and graph view. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=obsidian.md&sz=64" alt="Obsidian" onerror="this.parentElement.textContent='O'">
+      </div>
+      <h1 class="detail-brand-name">Obsidian</h1>
+      <p class="detail-brand-tagline">Knowledge base with local-first markdown and graph view.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/obsidian/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://obsidian.md" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/obsidian/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Obsidian — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Obsidian is a local-first, Markdown-based knowledge management tool built around <strong>bidirectional linking and a graph of interconnected notes</strong>. Unlike cloud-first tools, Obsidian stores everything as plain <code>.md</code> files in a local folder (the &quot;vault&quot;), giving users full ownership of their data. The mental model is a <strong>personal knowledge graph</strong> — atomic notes linked together, visualized as a network, extended by a rich plugin ecosystem. Power users treat it as an IDE for thought.</p>
+<h2>Site Map</h2>
+<pre><code>├── Vault (local folder on disk)
+│   ├── Files &amp; Folders (user-organized)
+│   │   ├── Folder A
+│   │   │   ├── note-1.md
+│   │   │   └── note-2.md
+│   │   ├── Folder B
+│   │   └── Attachments (images, PDFs)
+│   └── .obsidian/ (config, plugins, themes)
+├── Editor / Note View
+│   ├── Note Title (= filename)
+│   ├── YAML Frontmatter (metadata)
+│   │   ├── tags, aliases, cssclass, publish
+│   │   └── Custom properties (Obsidian Properties UI)
+│   ├── Markdown Content
+│   │   ├── Headings, paragraphs, lists
+│   │   ├── Internal Links ([[page]])
+│   │   ├── Embeds (![[page]] or ![[image.png]])
+│   │   ├── Callouts (&gt; [!note], &gt; [!warning])
+│   │   ├── Code blocks (syntax-highlighted)
+│   │   ├── Math (LaTeX / MathJax)
+│   │   ├── Mermaid diagrams
+│   │   ├── Tables (Markdown)
+│   │   └── Footnotes
+│   ├── Live Preview (WYSIWYG-ish Markdown)
+│   ├── Reading View (rendered, no edit)
+│   ├── Source Mode (raw Markdown)
+│   ├── Backlinks Panel (pages linking here)
+│   ├── Outgoing Links Panel
+│   └── Tags Panel
+├── Graph View
+│   ├── Global Graph (all notes as nodes, links as edges)
+│   │   ├── Filter by tags, folders, link depth
+│   │   ├── Color groups
+│   │   └── Force-directed layout
+│   └── Local Graph (connections from current note)
+├── File Explorer (left sidebar)
+│   ├── Folder tree (mirrors file system)
+│   ├── Create new note / folder
+│   └── Sort (name, modified, created)
+├── Search
+│   ├── Full-text search across vault
+│   ├── Search operators (path:, tag:, file:, line:)
+│   ├── Regex search
+│   └── Embedded search queries (search: blocks)
+├── Quick Switcher (⌘O)
+│   └── Fuzzy search by note title
+├── Command Palette (⌘P)
+│   └── All commands from core + plugins
+├── Bookmarks (pinned notes, searches, graphs)
+├── Canvas (visual whiteboard)
+│   ├── Note cards (linked to vault notes)
+│   ├── Text cards (standalone)
+│   ├── Media cards (images, PDFs)
+│   ├── URL cards (web embeds)
+│   └── Connectors (arrows between cards)
+├── Daily Notes
+│   ├── Auto-create today&#39;s note
+│   ├── Navigate by date (previous / next)
+│   └── Template for daily note
+├── Templates
+│   ├── Template folder (user-defined)
+│   └── Insert template into current note
+├── Tags
+│   ├── Tag Pane (all tags, nested: #project/active)
+│   └── Click tag → search results
+├── Community Plugins
+│   ├── Browse (800+ plugins)
+│   ├── Installed plugins
+│   ├── Plugin settings
+│   └── Notable plugins: Dataview, Templater, Calendar, Kanban, Excalidraw
+├── Themes
+│   ├── Browse community themes
+│   ├── CSS snippets (custom overrides)
+│   └── Appearance settings
+├── Obsidian Sync (optional paid)
+│   ├── End-to-end encrypted sync
+│   ├── Version history (per note)
+│   └── Selective sync
+├── Obsidian Publish (optional paid)
+│   ├── Select notes to publish
+│   ├── Custom domain
+│   ├── Public graph view
+│   └── Navigation, search, theme
+└── Settings
+    ├── Editor (vim mode, line numbers, fold, spellcheck)
+    ├── Files &amp; Links (default location, link format, deleted files)
+    ├── Appearance (theme, font, font size, translucent window)
+    ├── Hotkeys (fully customizable keybindings)
+    ├── Core Plugins (toggle built-in features)
+    ├── Community Plugins
+    ├── About (vault stats, version)
+    └── Account (Sync/Publish license)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Collapsible panels: File Explorer, Search, Bookmarks, Tags</td>
+<td>Icons at top toggle between panels</td>
+</tr>
+<tr>
+<td><strong>Right Sidebar</strong></td>
+<td>Collapsible panels: Backlinks, Outgoing Links, Tags, Graph</td>
+<td>Contextual to active note</td>
+</tr>
+<tr>
+<td><strong>Tab Bar</strong></td>
+<td>Browser-style tabs</td>
+<td>Multiple notes open simultaneously; split view (vertical/horizontal)</td>
+</tr>
+<tr>
+<td><strong>Quick Switcher</strong></td>
+<td>⌘O → fuzzy filename search</td>
+<td>Navigate to any note instantly</td>
+</tr>
+<tr>
+<td><strong>Command Palette</strong></td>
+<td>⌘P → all available commands</td>
+<td>Run any action: plugin commands, navigation, formatting</td>
+</tr>
+<tr>
+<td><strong>Internal Links</strong></td>
+<td><code>[[Note Name]]</code> or <code>[[Note Name|Display Text]]</code></td>
+<td>Click to navigate; ⌘+click to open in new tab; hover to preview</td>
+</tr>
+<tr>
+<td><strong>Breadcrumb</strong></td>
+<td>Plugin-based (optional)</td>
+<td>Folder path or link trail</td>
+</tr>
+<tr>
+<td><strong>Graph View</strong></td>
+<td>Interactive force-directed graph</td>
+<td>Click node to open note; zoom/filter; color by tag/folder</td>
+</tr>
+</tbody></table>
+<h3>Pane Layout (Unique to Obsidian)</h3>
+<pre><code>┌──────────────────────────────────────────────────────┐
+│ Tab Group A          │ Tab Group B                    │
+│ ┌──────────────────┐ │ ┌──────────────────────────┐  │
+│ │ Note: Zettelkasten│ │ │ Note: Literature Notes    │  │
+│ │ (editing)         │ │ │ (reading view)            │  │
+│ └──────────────────┘ │ └──────────────────────────┘  │
+│                      │ ┌──────────────────────────┐  │
+│                      │ │ Local Graph View          │  │
+│                      │ └──────────────────────────┘  │
+└──────────────────────────────────────────────────────┘
+</code></pre>
+<ul>
+<li>Arbitrary split panes (horizontal + vertical)</li>
+<li>Pin tabs to prevent accidental close</li>
+<li>Linked panes: graph/backlinks update with active note</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Vault</td>
+<td>path (local folder), name, config (.obsidian/)</td>
+<td>contains all Notes, Folders, Attachments</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>filename (.md), frontmatter (YAML), body (Markdown), created, modified</td>
+<td>belongs to Folder; links to other Notes</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name, path</td>
+<td>contains Notes, sub-Folders (mirrors filesystem)</td>
+</tr>
+<tr>
+<td>Internal Link</td>
+<td>target (note name or path), display text, heading anchor</td>
+<td>connects Notes (bidirectional)</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name (supports nesting: #parent/child), inline or frontmatter</td>
+<td>many-to-many with Notes</td>
+</tr>
+<tr>
+<td>Alias</td>
+<td>alternative name for a note (frontmatter)</td>
+<td>belongs to Note; searchable in link autocomplete</td>
+</tr>
+<tr>
+<td>Attachment</td>
+<td>file (image, PDF, audio, video), path</td>
+<td>referenced by Notes via <code>![[file]]</code></td>
+</tr>
+<tr>
+<td>Canvas</td>
+<td>cards[], connectors[], layout</td>
+<td>contains Note Cards, Text Cards, Media Cards</td>
+</tr>
+<tr>
+<td>Property</td>
+<td>key, value, type (text/number/date/checkbox/list/tags)</td>
+<td>belongs to Note (frontmatter)</td>
+</tr>
+<tr>
+<td>Embed</td>
+<td>type (note/heading/block), source note</td>
+<td>transclusion of content from another note</td>
+</tr>
+</tbody></table>
+<h3>Markdown Extensions (Obsidian-specific)</h3>
+<pre><code>[[Internal Link]]              → Link to note
+[[Note#Heading]]               → Link to specific heading
+[[Note^block-id]]              → Link to specific block
+![[Note]]                      → Embed (transclude) entire note
+![[image.png]]                 → Embed image
+![[Note#Heading]]              → Embed specific section
+&gt; [!info] Title                → Callout block (info, warning, tip, etc.)
+%%hidden comment%%             → Comment (not rendered)
+</code></pre>
+<h3>Dataview (Popular Plugin) Query Language</h3>
+<pre><code>```dataview
+TABLE file.mtime AS &quot;Modified&quot;, tags
+FROM #project AND &quot;Work&quot;
+WHERE status = &quot;active&quot;
+SORT file.mtime DESC
+</code></pre>
+<pre><code>
+## User Flows
+
+### Quick Capture
+</code></pre>
+<p>⌘N → New note → Start writing in Markdown → Link to related notes with [[ → File later by moving to folder</p>
+<pre><code>
+### Daily Note Workflow
+</code></pre>
+<p>Click &quot;Daily Note&quot; (or hotkey) → Today&#39;s note auto-created from template → Journal, log tasks, link to project notes → Navigate to previous/next day</p>
+<pre><code>
+### Build Knowledge Graph
+</code></pre>
+<p>Write atomic note → Add [[links]] to related concepts → View Local Graph → Discover unexpected connections → Create new linking note (MOC: Map of Content)</p>
+<pre><code>
+### Research with Zettelkasten
+</code></pre>
+<p>Read source → Create Literature Note → Extract ideas as Permanent Notes (atomic) → Link to existing knowledge → Tag with topics → MOC emerges from density of links</p>
+<pre><code>
+### Canvas Brainstorm
+</code></pre>
+<p>Open Canvas → Add note cards (existing or new) → Add text cards for annotations → Draw connectors → Spatial arrangement of ideas → Double-click card to edit full note</p>
+<pre><code>
+### Plugin Workflow (Templater + Dataview)
+</code></pre>
+<p>⌘P → &quot;Insert Templater template&quot; → Select &quot;Meeting Note&quot; → Template auto-fills date, attendees field → Write notes → Dataview query on Project page auto-lists all meeting notes</p>
+<pre><code>
+## URL / Route Structure
+
+Obsidian uses a custom protocol and local file paths rather than HTTP URLs:
+</code></pre>
+<p>obsidian://open?vault=MyVault&amp;file=Note%20Name     → Open note in vault
+obsidian://new?vault=MyVault&amp;name=New%20Note       → Create new note
+obsidian://search?vault=MyVault&amp;query=tag:project   → Open search with query
+obsidian://open?vault=MyVault&amp;file=Canvas%20Name    → Open canvas</p>
+<pre><code>
+### Publish URLs (Obsidian Publish)
+</code></pre>
+<p><a href="https://publish.obsidian.md/:site/">https://publish.obsidian.md/:site/</a>                  → Published site root
+<a href="https://publish.obsidian.md/:site/:notePath">https://publish.obsidian.md/:site/:notePath</a>          → Published note
+https://:customDomain/:notePath                      → Custom domain</p>
+<pre><code>
+### Local File Paths
+</code></pre>
+<p>~/MyVault/                          → Vault root
+~/MyVault/Folder/Note.md            → Note file
+~/MyVault/.obsidian/                → Config, plugins, themes
+~/MyVault/.obsidian/plugins/        → Installed community plugins
+~/MyVault/.obsidian/themes/         → Installed themes</p>
+<pre><code>
+## Search &amp; Filter
+
+| Context | Search Scope | Filters / Operators | Sort |
+|---------|-------------|---------------------|------|
+| Global Search | All note content, titles, tags | `path:`, `file:`, `tag:`, `line:`, `section:`, `content:`, regex | Modified, Created, Alphabetical |
+| Quick Switcher (⌘O) | Note titles + aliases | Fuzzy match | Recency, Relevance |
+| Graph View | All linked notes | Filter by tag, folder, orphans, attachments; link depth slider | — (spatial) |
+| Tag Pane | All tags (nested hierarchy) | — | Alphabetical, Frequency |
+| Backlinks | Notes linking to current note | Linked mentions vs. unlinked mentions | — |
+
+### Search Operators
+</code></pre>
+<p>path:Projects              → Notes in Projects folder
+file:meeting               → Notes with &quot;meeting&quot; in filename
+tag:#status/active          → Notes with specific tag
+line:(TODO)                → Lines containing &quot;TODO&quot;
+section:(## Summary)        → Content under &quot;Summary&quot; heading
+/regex\d+pattern/           → Regular expression search
+&quot;exact phrase&quot;              → Exact match
+(foo OR bar) -baz           → Boolean operators</p>
+<pre><code>
+## Responsive Behavior
+
+Obsidian is a desktop-first app (Electron) with mobile apps:
+
+| Platform | Layout | Features |
+|----------|--------|----------|
+| Desktop (macOS/Windows/Linux) | Multi-pane workspace, full sidebar, all plugins | Full editing, graph view, canvas, command palette, vim mode |
+| Tablet (iPad) | Single pane + sidebar overlay | Full editing, most plugins, split view on iPad |
+| Mobile (iOS/Android) | Single pane, bottom toolbar | Editing, quick switcher, mobile toolbar (bold, link, checkbox), pull-down command palette |
+
+### Mobile-Specific Features
+- Bottom toolbar: undo, redo, bold, italic, link, checkbox, heading, indent
+- Pull-down gesture for command palette
+- Share sheet → capture web links/text to vault
+- Obsidian Sync for cross-device access
+- Offline-first (all data local)
+- Swipe to navigate back
+
+## Access Control
+
+Obsidian is fundamentally a **single-user, local-first** tool. Access control is minimal compared to cloud apps:
+
+| Context | Model |
+|---------|-------|
+| Local Vault | File system permissions (your OS) |
+| Obsidian Sync | End-to-end encrypted; only your devices |
+| Obsidian Publish | Per-note publish toggle; public read-only |
+| Shared Vaults (Sync) | Share vault with specific Obsidian accounts; all members have full edit access |
+| Community Plugins | Manually reviewed; sandboxed but has file access |
+
+### Publish Access
+- **Public**: Anyone with URL can view published notes
+- **Password-protected**: Site-level password
+- **Selective publishing**: Choose which notes are public; unpublished notes&#39; links show as stubs
+- **No edit access**: Publish is read-only; editing requires the desktop/mobile app
+</code></pre>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

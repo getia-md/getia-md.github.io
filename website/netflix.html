@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix — IA.md | getIA.md</title>
+  <meta name="description" content="Streaming. Profiles, continue watching, personalized rows. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=netflix.com&sz=64" alt="Netflix" onerror="this.parentElement.textContent='N'">
+      </div>
+      <h1 class="detail-brand-name">Netflix</h1>
+      <p class="detail-brand-tagline">Streaming. Profiles, continue watching, personalized rows.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/netflix/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://netflix.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/netflix/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Netflix — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A premium subscription-based streaming service and the defining example of on-demand video. Netflix&#39;s mental model is a <strong>personalized content library</strong> — every user sees a different homepage, powered by sophisticated recommendation algorithms. Key differentiators: profile-based personalization, Netflix Originals branding, autoplay previews, a &quot;Top 10&quot; social-proof row, interactive content, and a clean ad-free experience (with a newer ad-supported tier). There is no user-generated content; all titles are licensed or produced by Netflix.</p>
+<h2>Site Map</h2>
+<pre><code>├── Profile Selector (entry gate)
+│   ├── Profile 1–5 (avatars, names)
+│   ├── Kids Profile (restricted)
+│   └── Manage Profiles
+├── Home
+│   ├── Hero Billboard (featured title with trailer autoplay)
+│   ├── Continue Watching
+│   ├── Top 10 in Your Country
+│   ├── Trending Now
+│   ├── New Releases
+│   ├── Netflix Originals
+│   ├── Personalized Rows (&quot;Because You Watched X&quot;, &quot;Your Next Watch&quot;)
+│   ├── Genre Rows (Thriller, Comedy, Anime, Documentaries...)
+│   ├── Popular on Netflix
+│   ├── My List
+│   └── Award-Winning Content
+├── TV Shows
+│   ├── Genre Filter
+│   ├── Content Rows (same pattern as Home)
+│   └── Title Cards
+├── Movies
+│   ├── Genre Filter
+│   └── Content Rows
+├── New &amp; Popular
+│   ├── Coming Soon (notify me)
+│   ├── Everyone&#39;s Watching
+│   ├── Top 10 TV Shows
+│   └── Top 10 Movies
+├── My List
+│   ├── Saved Titles
+│   └── Remove / Reorder
+├── Browse by Language
+├── Search
+│   ├── Trending Searches
+│   ├── Results: Titles, People, Genres
+│   └── Auto-suggestions
+├── Title Detail (Modal or Page)
+│   ├── Hero (background art / trailer autoplay)
+│   ├── Match Score (% match to your taste)
+│   ├── Year, Maturity Rating, Duration/Seasons, Audio (Dolby Atmos)
+│   ├── Synopsis
+│   ├── Cast &amp; Crew (clickable → filmography)
+│   ├── Episodes (Series)
+│   │   ├── Season Selector (dropdown)
+│   │   └── Episode List (thumbnail, title, duration, synopsis, progress bar)
+│   ├── More Like This (similar titles)
+│   ├── Trailers &amp; More
+│   ├── Details (genres, maturity details, audio/subtitle languages)
+│   ├── Play / Resume Button
+│   ├── Add to My List
+│   ├── Rate (thumbs up / thumbs down / love)
+│   └── Share
+├── Player
+│   ├── Playback Controls (play/pause, seek, volume)
+│   ├── Skip Intro / Recap
+│   ├── Next Episode Countdown (auto-play)
+│   ├── Subtitles &amp; Audio Selection (multi-language)
+│   ├── Playback Speed (0.5x–1.5x)
+│   ├── Episode Selector (in-player)
+│   ├── Picture-in-Picture
+│   ├── Lock Screen (mobile, prevent accidental touches)
+│   └── &quot;Are You Still Watching?&quot; prompt (inactivity)
+├── Downloads (Mobile)
+│   ├── Downloaded Titles
+│   ├── Smart Downloads (auto-download next episode)
+│   └── Storage Management
+├── Kids Section (separate UI)
+│   ├── Age-appropriate content only
+│   ├── Simplified navigation
+│   ├── Character-based browsing
+│   └── No maturity-gated content
+├── Games (Netflix Games)
+│   ├── Game Library
+│   ├── Game Detail (description, screenshots)
+│   └── Install / Play
+├── Notifications
+│   ├── New arrivals matching your taste
+│   ├── Season/show premieres
+│   └── Leaving soon
+├── Account
+│   ├── Membership &amp; Billing
+│   │   ├── Plan Details (Basic/Standard/Premium)
+│   │   ├── Change Plan
+│   │   ├── Payment Method
+│   │   ├── Billing History
+│   │   └── Cancel Membership
+│   ├── Security &amp; Privacy
+│   │   ├── Password
+│   │   ├── Sign-out of All Devices
+│   │   └── Manage Access &amp; Devices
+│   ├── Profiles &amp; Parental Controls
+│   │   ├── Profile Settings (name, avatar, language, maturity)
+│   │   ├── Viewing Restrictions
+│   │   ├── Profile Lock (PIN)
+│   │   └── Profile Transfer
+│   ├── Playback Settings
+│   │   ├── Autoplay Previews (on/off)
+│   │   ├── Autoplay Next Episode
+│   │   └── Data Usage per Screen (auto/low/medium/high)
+│   ├── Subtitle Appearance (font, size, color)
+│   ├── Communication Preferences
+│   ├── Download Devices
+│   └── Viewing Activity (per profile, hide/clear)
+└── Help Center
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed, semi-transparent (fade to solid on scroll)</td>
+<td>Logo, Browse (TV Shows/Movies/New &amp; Popular/My List/Browse by Language), search icon, kids toggle, notifications bell, profile avatar dropdown</td>
+</tr>
+<tr>
+<td><strong>Content Rows</strong></td>
+<td>Horizontal carousels (peek next items)</td>
+<td>Mouse hover → card expands with preview trailer, metadata, and action buttons</td>
+</tr>
+<tr>
+<td><strong>Hero Billboard</strong></td>
+<td>Full-width, auto-rotating</td>
+<td>Cycles featured content with trailer autoplay; Play + More Info buttons</td>
+</tr>
+<tr>
+<td><strong>Title Modal</strong></td>
+<td>Overlay on current page</td>
+<td>Opens without full navigation; click outside or X to close</td>
+</tr>
+<tr>
+<td><strong>Player Controls</strong></td>
+<td>Auto-hide overlay</td>
+<td>Appear on mouse move / screen tap, hide after 3s inactivity</td>
+</tr>
+<tr>
+<td><strong>Mobile Nav</strong></td>
+<td>Bottom tab bar</td>
+<td>Home, Games, New &amp; Hot, My Netflix (profile)</td>
+</tr>
+<tr>
+<td><strong>Kids Toggle</strong></td>
+<td>Top bar link</td>
+<td>Switches between standard and kids-only UI</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Title</td>
+<td>name, type (movie/series), synopsis, year, maturity_rating, duration, seasons_count, poster, backdrop, trailer_url, match_score, genres[], audio_languages[], subtitle_languages[], netflix_original (bool)</td>
+<td>has Genres, Cast, Episodes, Tags</td>
+</tr>
+<tr>
+<td>Episode</td>
+<td>number, season, title, synopsis, duration, thumbnail, credits_start_time</td>
+<td>belongs to Title (series)</td>
+</tr>
+<tr>
+<td>Genre</td>
+<td>name, slug</td>
+<td>many-to-many with Titles</td>
+</tr>
+<tr>
+<td>Person</td>
+<td>name, photo, role (actor/director/writer/creator)</td>
+<td>many-to-many with Titles</td>
+</tr>
+<tr>
+<td>Profile</td>
+<td>name, avatar, maturity_level, language, autoplay_previews, viewing_restrictions</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>WatchProgress</td>
+<td>title, episode, position_seconds, completed, last_watched_at</td>
+<td>belongs to Profile</td>
+</tr>
+<tr>
+<td>MyListItem</td>
+<td>title, added_at</td>
+<td>belongs to Profile</td>
+</tr>
+<tr>
+<td>Rating</td>
+<td>title, value (thumbs_up / thumbs_down / love)</td>
+<td>belongs to Profile</td>
+</tr>
+<tr>
+<td>Download</td>
+<td>title, episode, quality, download_at, expires_at, device</td>
+<td>belongs to Profile</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>title, type (new_arrival / premiere / leaving_soon), sent_at</td>
+<td>belongs to Profile</td>
+</tr>
+<tr>
+<td>Game</td>
+<td>name, description, screenshots[], size, genre</td>
+<td>standalone Netflix Games entity</td>
+</tr>
+</tbody></table>
+<h3>Content Hierarchy</h3>
+<pre><code>Title (Movie) → single playable item
+Title (Series) → Season 1, 2, 3... → Episode 1, 2, 3...
+Title (Miniseries / Limited Series) → Episode 1, 2, 3...
+</code></pre>
+<h3>Maturity Ratings</h3>
+<p><code>TV-Y | TV-Y7 | TV-G | TV-PG | TV-14 | TV-MA | G | PG | PG-13 | R | NC-17</code></p>
+<h2>User Flows</h2>
+<h3>Browse and Watch</h3>
+<pre><code>Profile Select → Home → Scroll Rows → Hover Card (preview plays) → Click → Title Modal → Play → Auto-play Next Episode
+</code></pre>
+<h3>Search and Watch</h3>
+<pre><code>Search Icon → Type Query → Results (instant) → Click Title → Modal → Play
+</code></pre>
+<h3>Continue Watching</h3>
+<pre><code>Home → &quot;Continue Watching&quot; Row → Click → Resume at Last Position → Finish → Auto-play Next
+</code></pre>
+<h3>Add to My List</h3>
+<pre><code>Hover Title Card → [+] My List → Title saved → My List page → Play later
+</code></pre>
+<h3>Download for Offline</h3>
+<pre><code>Title Detail → Download Icon → Select Quality → Downloaded → Library → Watch offline → Smart Downloads replaces with next episode
+</code></pre>
+<h3>Rate and Improve Recommendations</h3>
+<pre><code>Watch Title → Thumbs Up/Down/Love → Recommendation engine adjusts → Home refreshes with better matches
+</code></pre>
+<h3>Profile Management</h3>
+<pre><code>Profile Selector → Manage Profiles → Edit (name, avatar, maturity, language, autoplay) → Done → Profile Selector
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home (or Profile Selector)
+/browse                        → Browse (authenticated home)
+/browse/genre/:genreId         → Genre Page
+/search?q=:query               → Search Results
+/title/:id                     → Title Detail Page
+/watch/:id                     → Player (movie)
+/watch/:id?s=:season&amp;e=:ep     → Player (series episode)
+/latest                        → New &amp; Popular
+/my-list                       → My List
+/browse/my-list                → My List (alt)
+/kids                          → Kids Section
+/download                      → Downloads
+/games                         → Netflix Games
+/profiles                      → Profile Selector
+/profiles/manage               → Manage Profiles
+/YourAccount                   → Account Settings
+/YourAccount/membership        → Plan &amp; Billing
+/YourAccount/security          → Security &amp; Privacy
+/YourAccount/profiles          → Profile Settings
+/YourAccount/viewing-activity  → Viewing History
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global Search</td>
+<td>Title names, actor/director names, genre keywords</td>
+<td>—</td>
+<td>Relevance (single sort, algorithm-driven)</td>
+</tr>
+<tr>
+<td>Browse (TV Shows / Movies)</td>
+<td>All titles of type</td>
+<td>Genre dropdown</td>
+<td>Suggestions For You (algorithmic)</td>
+</tr>
+<tr>
+<td>My List</td>
+<td>Saved titles</td>
+<td>—</td>
+<td>Manual reorder, Recently Added</td>
+</tr>
+<tr>
+<td>New &amp; Popular</td>
+<td>Upcoming + trending</td>
+<td>Category (Coming Soon / Everyone&#39;s Watching / Top 10)</td>
+<td>Netflix-curated</td>
+</tr>
+<tr>
+<td>Kids</td>
+<td>Age-appropriate titles</td>
+<td>Character, Category</td>
+<td>Algorithmic</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Player</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TV / Large Desktop (≥1440px)</td>
+<td>Full-width hero + 6-item carousels</td>
+<td>Full-screen default (10-foot UI)</td>
+<td>D-pad navigation, voice search</td>
+</tr>
+<tr>
+<td>Desktop (1024–1439px)</td>
+<td>Hero + 4-5 item carousels, title modals</td>
+<td>Inline (theater), full-screen</td>
+<td>Top bar, mouse hover interactions</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Smaller hero + carousels, reduced hover</td>
+<td>Full-screen</td>
+<td>Top bar, touch-friendly cards</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Vertical scroll, preview thumbnails (no hover)</td>
+<td>Full-screen landscape, portrait mini</td>
+<td>Bottom tab bar, pull-to-refresh</td>
+</tr>
+</tbody></table>
+<h3>TV Adaptations (10-foot UI)</h3>
+<ul>
+<li>D-pad / remote navigation (focus-based)</li>
+<li>Large text and thumbnails for distance viewing</li>
+<li>Voice search via remote</li>
+<li>Profile auto-login option</li>
+<li>Skip Intro via single button press</li>
+</ul>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Smart Downloads (auto-download next episode on Wi-Fi)</li>
+<li>Data saver mode</li>
+<li>Screen lock during playback</li>
+<li>Cast to TV (Chromecast, AirPlay)</li>
+<li>Download quality selection (Standard / High)</li>
+<li>Fast Laughs (TikTok-style short clips from Netflix comedy)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Watch</th>
+<th>Download</th>
+<th>Profiles</th>
+<th>Simultaneous Streams</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>Landing page only</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Ads-Supported Tier</td>
+<td>✅</td>
+<td>✅ (with ads, limited catalog)</td>
+<td>Limited</td>
+<td>1-2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>✅</td>
+<td>✅ (no ads, Full HD)</td>
+<td>✅ (2 devices)</td>
+<td>Up to 5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Premium</td>
+<td>✅</td>
+<td>✅ (no ads, 4K HDR + Dolby Atmos)</td>
+<td>✅ (6 devices)</td>
+<td>Up to 5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Kids Profile</td>
+<td>Filtered content only</td>
+<td>Kids-rated only</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Extra Member (paid sharing)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (1 device)</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h3>Anti-Sharing Measures</h3>
+<ul>
+<li>Household verification (primary location)</li>
+<li>Extra Member slot for out-of-household users</li>
+<li>Device management with sign-out controls</li>
+<li>Travel temporary access (away from home)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

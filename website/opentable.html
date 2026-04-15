@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenTable — IA.md | getIA.md</title>
+  <meta name="description" content="Restaurant reservations. Table booking, reviews, rewards. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=opentable.com&sz=64" alt="OpenTable" onerror="this.parentElement.textContent='O'">
+      </div>
+      <h1 class="detail-brand-name">OpenTable</h1>
+      <p class="detail-brand-tagline">Restaurant reservations. Table booking, reviews, rewards.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/opentable/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://opentable.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/opentable/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>OpenTable — Information Architecture</h1>
+<h2>Overview</h2>
+<p>OpenTable is the largest restaurant reservation platform, seating 1B+ diners since launch. The mental model is <strong>search → see availability → book instantly</strong> — users search by location, cuisine, date/time, and party size, then book a table in seconds. Unlike Yelp (reviews-first, no booking) or Google Maps (general search), OpenTable&#39;s core value is <strong>real-time availability</strong> directly connected to restaurant seating systems. The platform also provides restaurant management tools (table management, guest CRM, analytics).</p>
+<h2>Site Map</h2>
+<h3>Diner-Facing</h3>
+<pre><code>├── Home
+│   ├── Search Bar (Date, Time, Party Size, Location/Restaurant)
+│   ├── Dining Near You
+│   ├── Available Now
+│   ├── Collections (&quot;Best Outdoor Dining&quot;, &quot;Date Night&quot;, &quot;New &amp; Hot&quot;)
+│   ├── Trending Restaurants
+│   ├── Cuisine Quick Filters
+│   ├── Experiences &amp; Events
+│   └── Gift Cards
+├── Search Results
+│   ├── Restaurant Cards
+│   │   ├── Photo
+│   │   ├── Name, Cuisine, Neighborhood, Price ($$$$)
+│   │   ├── Rating (food, service, ambiance — out of 5)
+│   │   ├── Review Count (&quot;1,847 reviews&quot;)
+│   │   ├── Available Time Slots (inline buttons: 6:00, 6:30, 7:00, 7:15)
+│   │   └── Booked X times today (social proof)
+│   ├── Map View
+│   ├── Filters
+│   │   ├── Cuisine (Italian, Japanese, Mexican, Steakhouse, etc.)
+│   │   ├── Price ($, $$, $$$, $$$$)
+│   │   ├── Rating
+│   │   ├── Distance
+│   │   ├── Neighborhood
+│   │   ├── Features (outdoor, private dining, good for groups)
+│   │   ├── Dining Options (counter, bar, high-top, standard)
+│   │   ├── Experiences (tasting menu, prix fixe, chef&#39;s table)
+│   │   └── Offers (complimentary item, discount)
+│   └── Sort (Best Match, Rating, Distance, A-Z)
+├── Restaurant Page
+│   ├── Photo Gallery
+│   ├── Restaurant Info (cuisine, price, neighborhood, hours)
+│   ├── Available Times (prominent grid — select date/time/party)
+│   ├── Overview
+│   │   ├── Description
+│   │   ├── Top Tags (Great for Dates, Lively, Special Occasion)
+│   │   ├── Dining Style (casual, fine dining, fast casual)
+│   │   ├── Dress Code
+│   │   ├── Parking
+│   │   ├── Public Transit
+│   │   └── Additional Info
+│   ├── Menu
+│   │   ├── Sections (Appetizers, Mains, Desserts, Drinks)
+│   │   ├── Items (name, description, price)
+│   │   └── Dietary Filters
+│   ├── Reviews
+│   │   ├── Overall Rating
+│   │   ├── Category Ratings (food, service, ambiance)
+│   │   ├── Noise Level
+│   │   ├── Would Recommend (%)
+│   │   ├── Review Filters (date, rating, occasion)
+│   │   └── Individual Reviews (verified diner badge)
+│   ├── Photos (official + diner-submitted)
+│   ├── Map &amp; Location
+│   └── Similar Restaurants
+├── Reservation Flow
+│   ├── Selected: Date + Time + Party Size
+│   ├── Seating Preference (indoor, outdoor, bar, counter)
+│   ├── Special Occasion (birthday, anniversary, business, date)
+│   ├── Special Requests (dietary, allergies, high chair)
+│   ├── Contact Info (name, email, phone)
+│   ├── OpenTable Dining Points Notice
+│   └── [Complete Reservation]
+├── Confirmation
+│   ├── Reservation Details (restaurant, date, time, party)
+│   ├── Confirmation Number
+│   ├── Add to Calendar
+│   ├── Invite Guests
+│   ├── Restaurant Address + Map
+│   ├── Modify / Cancel
+│   └── Menu Preview
+├── My Dining
+│   ├── Upcoming Reservations
+│   ├── Past Reservations
+│   │   ├── Leave Review
+│   │   └── Book Again
+│   ├── Dining Points (earned from reservations)
+│   │   ├── Points Balance
+│   │   ├── Redeem for Dining Credit
+│   │   └── Points History
+│   ├── Saved Restaurants (favorites)
+│   └── Reviews Written
+├── Account
+│   ├── Profile
+│   ├── Dining Preferences (cuisine, seating, dietary)
+│   ├── Payment Methods
+│   ├── Notifications
+│   └── Settings
+├── Gift Cards
+│   ├── Purchase (digital + physical)
+│   ├── Redeem
+│   └── Check Balance
+└── Help
+    ├── FAQ
+    ├── Contact Support
+    └── Cancellation Policy
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Fixed top bar</td>
+<td>Logo, Search (location + date/time/party), My Dining, Sign In</td>
+</tr>
+<tr>
+<td><strong>Time Slot Pills</strong></td>
+<td>Inline on search results and restaurant page</td>
+<td>Available times as tappable buttons (e.g., 6:00, 6:30, 7:00)</td>
+</tr>
+<tr>
+<td><strong>Restaurant Tabs</strong></td>
+<td>Horizontal tabs on restaurant page</td>
+<td>Overview, Menu, Reviews, Photos</td>
+</tr>
+<tr>
+<td><strong>Collection Carousel</strong></td>
+<td>Horizontal scroll on home</td>
+<td>Curated lists: &quot;Best Brunch&quot;, &quot;Outdoor Dining&quot;</td>
+</tr>
+<tr>
+<td><strong>Mobile Bottom Tabs</strong></td>
+<td>Tab bar</td>
+<td>Home, Search, My Dining, Account</td>
+</tr>
+</tbody></table>
+<h3>Signature UX: Inline Time Slots</h3>
+<p>The key differentiator: available time slots appear directly on search result cards.</p>
+<pre><code>[ 🍝 Sotto 13 — Italian, $$$, 4.7★ ]
+[  5:30  ] [  6:00  ] [  6:30  ] [  7:15  ]
+[ &quot;Booked 47 times today&quot; ]
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Restaurant</td>
+<td>name, cuisine[], neighborhood, city, price_range (1-4), rating{food, service, ambiance, overall}, photos[], description, hours, dress_code, parking, noise_level, features[], dining_style</td>
+<td>has Menu, Reviews, TimeSlots</td>
+</tr>
+<tr>
+<td>TimeSlot</td>
+<td>restaurant, date, time, party_size, seating_type, available</td>
+<td>real-time availability</td>
+</tr>
+<tr>
+<td>Reservation</td>
+<td>restaurant, date, time, party_size, seating, occasion, special_requests, status, confirmation_code</td>
+<td>belongs to User and Restaurant</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>overall_rating (1-5), food_rating, service_rating, ambiance_rating, text, occasion, dine_date, recommended, noise_level, photos[]</td>
+<td>verified diner</td>
+</tr>
+<tr>
+<td>Menu</td>
+<td>restaurant, sections[]</td>
+<td>has MenuItems</td>
+</tr>
+<tr>
+<td>MenuItem</td>
+<td>name, description, price, dietary_tags[], photo</td>
+<td>belongs to Menu</td>
+</tr>
+<tr>
+<td>DiningPoints</td>
+<td>user, balance, earned[], redeemed[]</td>
+<td>loyalty currency</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, description, restaurants[], curated_by</td>
+<td>editorial content</td>
+</tr>
+<tr>
+<td>GiftCard</td>
+<td>code, balance, purchaser, recipient</td>
+<td>redeemable</td>
+</tr>
+</tbody></table>
+<h3>Reservation Status</h3>
+<pre><code>confirmed → modified → seated → completed → reviewed
+              ↘ cancelled
+              ↘ no_show
+</code></pre>
+<h2>User Flows</h2>
+<h3>Find and Book</h3>
+<pre><code>Home → Search (Tonight, 7:00 PM, 2 people, Near Me) → Results → See Available Slots → Tap &quot;7:15 PM&quot; on &quot;Sotto 13&quot; → Seating: Outdoor → Special: Anniversary → [Complete Reservation] → Confirmation → Add to Calendar
+</code></pre>
+<h3>Earn and Redeem Points</h3>
+<pre><code>Complete Reservations → Earn 100 Points per Booking → Accumulate 2,000 → Redeem for $20 Dining Credit → Apply at Checkout
+</code></pre>
+<h3>Post-Dining Review</h3>
+<pre><code>Past Reservations → &quot;How was Sotto 13?&quot; → Rate Food/Service/Ambiance → Noise Level → Write Review → &quot;Would you recommend?&quot; → Submit → Earn Points
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                      → Home
+/s?datetime=:dt&amp;covers=:n&amp;metroId=:m  → Search Results
+/restaurant/:slug                      → Restaurant Page
+/restaurant/:slug/menu                 → Menu
+/restaurant/:slug/reviews              → Reviews
+/restaurant/:slug/photos               → Photos
+/booking/details                       → Reservation Form
+/booking/confirmation/:id              → Confirmation
+/my/reservations                       → My Reservations
+/my/reservations/:id                   → Reservation Detail
+/my/favorites                          → Saved Restaurants
+/my/points                             → Dining Points
+/my/reviews                            → My Reviews
+/collections/:slug                     → Collection
+/gift-cards                            → Gift Cards
+/account                               → Account
+/help                                  → Help
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Restaurants</td>
+<td>Name, cuisine, location, neighborhood</td>
+<td>Cuisine, Price, Rating, Distance, Features, Dining Options, Offers, Experiences, Seating</td>
+<td>Best Match, Rating, Distance, Price, A-Z</td>
+</tr>
+<tr>
+<td>Menu</td>
+<td>Item name</td>
+<td>Dietary tags, section</td>
+<td>Menu order, price</td>
+</tr>
+<tr>
+<td>Reviews</td>
+<td>Review text</td>
+<td>Rating, Occasion, Date</td>
+<td>Newest, Highest, Lowest</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Search</th>
+<th>Results</th>
+<th>Restaurant</th>
+<th>Booking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Inline search bar</td>
+<td>List + map split</td>
+<td>Gallery + info + sidebar availability</td>
+<td>Inline form</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Compact search</td>
+<td>List or map</td>
+<td>Stacked, sticky availability</td>
+<td>Single column</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Search modal</td>
+<td>Cards with time slots, map toggle</td>
+<td>Swipe gallery, sticky &quot;Find a Table&quot;</td>
+<td>Step-by-step</td>
+</tr>
+</tbody></table>
+<h3>OpenTable-Specific UX</h3>
+<ul>
+<li>Real-time availability as inline buttons (not behind a click)</li>
+<li>&quot;Booked X times today&quot; social proof</li>
+<li>Verified diner reviews only (must have actually reserved + dined)</li>
+<li>Points system drives repeat behavior</li>
+<li>Occasion tags help restaurants personalize (birthday → special attention)</li>
+<li>Noise level reported by diners (helpful for business meals)</li>
+<li>Push notifications: reservation reminders, review prompts</li>
+<li>Apple/Google Wallet integration for confirmations</li>
+<li>One-tap rebooking from past reservations</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Diner</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Book</th>
+<th>Manage</th>
+<th>Review</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>✅ (enter info)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅ (saved info)</td>
+<td>✅</td>
+<td>✅ (verified)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>VIP (frequent diner)</td>
+<td>✅</td>
+<td>✅ + priority</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + bonus</td>
+</tr>
+</tbody></table>
+<h3>Restaurant Dashboard</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>Reservations</th>
+<th>Floor Plan</th>
+<th>Guests</th>
+<th>Menu</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>✅</td>
+<td>Full</td>
+<td>Edit</td>
+<td>Full</td>
+<td>Full</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>✅</td>
+<td>Full</td>
+<td>Edit</td>
+<td>Full</td>
+<td>Edit</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>✅</td>
+<td>View/Seat</td>
+<td>View</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

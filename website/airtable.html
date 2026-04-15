@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airtable — IA.md | getIA.md</title>
+  <meta name="description" content="Spreadsheet-database hybrid. Multi-view, automations. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=airtable.com&sz=64" alt="Airtable" onerror="this.parentElement.textContent='A'">
+      </div>
+      <h1 class="detail-brand-name">Airtable</h1>
+      <p class="detail-brand-tagline">Spreadsheet-database hybrid. Multi-view, automations.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/airtable/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://airtable.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/airtable/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Airtable — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Airtable bridges spreadsheets and databases with a colorful, friendly UI. The mental model is <strong>structured data with multiple views</strong> — the same records appear as a grid, kanban, gallery, calendar, timeline, or form. Key differentiators: rich field types (attachment, linked records, lookup, rollup, formula), Interface Designer (custom app-like views), Automations (trigger → action workflows), and Sync (cross-base data sync).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Recent Bases
+│   ├── Shared with Me
+│   ├── Starred
+│   ├── Templates
+│   ├── Workspaces
+│   └── + Create Base
+├── Base
+│   ├── Table Tabs (Table 1, Table 2, + Add Table)
+│   ├── Views (per table)
+│   │   ├── Grid View (default spreadsheet)
+│   │   ├── Kanban View
+│   │   ├── Gallery View
+│   │   ├── Calendar View
+│   │   ├── Timeline / Gantt View
+│   │   ├── Form View (public data entry)
+│   │   ├── List View
+│   │   └── + Create View
+│   ├── View Toolbar
+│   │   ├── Hide Fields
+│   │   ├── Filter
+│   │   ├── Group
+│   │   ├── Sort
+│   │   ├── Color
+│   │   ├── Row Height
+│   │   ├── Share View
+│   │   └── Search
+│   ├── Record Detail (expand row)
+│   │   ├── All Fields
+│   │   ├── Linked Records (clickable)
+│   │   ├── Comments
+│   │   └── Activity Log
+│   └── Field Configuration
+│       ├── Field Type Selector
+│       ├── Field Options
+│       └── Lookup / Rollup Configuration
+├── Interfaces (Interface Designer)
+│   ├── Interface List
+│   ├── Interface Builder
+│   │   ├── Layout Elements (grid, list, detail, chart, button, form, timeline, number, text)
+│   │   ├── Data Source Picker (table + view)
+│   │   ├── Filter / Sort per element
+│   │   └── User Role Filtering
+│   └── Published Interfaces
+├── Automations
+│   ├── Automation List
+│   ├── Automation Builder
+│   │   ├── Trigger (record created/updated, form submitted, scheduled, webhook)
+│   │   ├── Conditions (filter logic)
+│   │   └── Actions (send email, update record, create record, Slack, webhook, script)
+│   └── Run History
+├── Sync
+│   ├── Synced Tables (read-only mirrors from other bases/sources)
+│   └── External Syncs (Google Calendar, Salesforce, Jira)
+├── Extensions
+│   ├── Chart
+│   ├── Scripting
+│   ├── Page Designer
+│   ├── Map
+│   ├── Pivot Table
+│   └── 3rd Party Extensions
+├── Data (Admin)
+│   ├── Tables &amp; Fields Schema
+│   ├── Field Dependencies
+│   └── Data Capacity
+├── Settings
+│   ├── Base Collaborators
+│   ├── API Documentation (auto-generated)
+│   ├── Webhooks
+│   ├── Snapshots / Backup
+│   └── Trash (deleted records/tables)
+└── Workspace Settings
+    ├── Members &amp; Billing
+    ├── SSO / Security
+    └── Admin Panel
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Base name, undo/redo, collaborator avatars, share, help, extensions, automations</td>
+</tr>
+<tr>
+<td><strong>Table Tabs</strong></td>
+<td>Horizontal tabs below top bar</td>
+<td>Switch tables, + add table</td>
+</tr>
+<tr>
+<td><strong>View Sidebar</strong></td>
+<td>Left of grid (collapsible)</td>
+<td>View list for current table, grouped by type</td>
+</tr>
+<tr>
+<td><strong>Toolbar</strong></td>
+<td>Below table tabs</td>
+<td>Hide, Filter, Group, Sort, Color, Row Height, Search, + New View</td>
+</tr>
+<tr>
+<td><strong>Record Modal</strong></td>
+<td>Click expand icon on row</td>
+<td>Full-screen modal with all fields, comments</td>
+</tr>
+<tr>
+<td><strong>Interface Designer</strong></td>
+<td>Separate mode (top-left toggle)</td>
+<td>Drag-and-drop layout builder</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>name, members[], plan</td>
+<td>has many Bases</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>name, icon, color, tables[]</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>Table</td>
+<td>name, fields[], primary_field</td>
+<td>has many Records, Views</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>name, type, options{}</td>
+<td>belongs to Table</td>
+</tr>
+<tr>
+<td>Record</td>
+<td>field_values{}, created_time, last_modified</td>
+<td>belongs to Table</td>
+</tr>
+<tr>
+<td>View</td>
+<td>name, type, filters[], sorts[], groups[], hidden_fields[], color_config</td>
+<td>belongs to Table</td>
+</tr>
+<tr>
+<td>Automation</td>
+<td>trigger{}, conditions[], actions[], enabled</td>
+<td>belongs to Base</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>name, layout, elements[], published, role_access</td>
+<td>belongs to Base</td>
+</tr>
+<tr>
+<td>Sync</td>
+<td>source, destination_table, fields_mapped[], frequency</td>
+<td>belongs to Base</td>
+</tr>
+</tbody></table>
+<h3>Field Types</h3>
+<pre><code>Single Line Text | Long Text | Attachment | Checkbox | Single Select | Multi Select |
+Number | Currency | Percent | Date | Date &amp; Time | Duration | Phone | Email | URL |
+Link to Another Record | Lookup | Rollup | Count | Formula | Autonumber | Barcode |
+Rating | Rich Text | Button | Created Time | Last Modified Time | Created By | Last Modified By |
+AI (summarize, categorize, translate)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Build a Tracker</h3>
+<pre><code>Create Base → Add Table → Define Fields (name, type) → Add Records → Create Kanban View (by status) → Share with team
+</code></pre>
+<h3>Form Data Collection</h3>
+<pre><code>Create Form View → Select fields → Customize branding → Share form link → Responses appear as records → Automation sends notification
+</code></pre>
+<h3>Interface for Stakeholders</h3>
+<pre><code>Interface Designer → Add Grid element → Connect to table → Add filters (show only relevant) → Add Chart → Publish → Share link with stakeholders (they see interface, not raw data)
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/workspace/:id                 → Workspace
+/:baseId                       → Base (default table + view)
+/:baseId/:tableId              → Table
+/:baseId/:tableId/:viewId      → Specific view
+/:baseId/:tableId/:viewId/:recordId → Record modal
+/:baseId/automations           → Automations
+/:baseId/interfaces            → Interfaces
+/:baseId/interfaces/:id        → Interface view
+/:baseId/api                   → Auto-generated API docs
+/form/:formId                  → Public form
+/templates                     → Template gallery
+/settings                      → Settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Within View</td>
+<td>By any field (type-specific operators)</td>
+<td>Any field, multi-sort</td>
+</tr>
+<tr>
+<td>Global</td>
+<td>All tables, all records</td>
+<td>Table</td>
+</tr>
+<tr>
+<td>Templates</td>
+<td>Category, Use Case</td>
+<td>Popular, Recent</td>
+</tr>
+</tbody></table>
+<h3>Filter Operators</h3>
+<pre><code>Text: is, is not, contains, does not contain, is empty
+Number: =, ≠, &lt;, &gt;, ≤, ≥, is empty
+Select: is, is not, is any of, has any of, is none of
+Date: is, before, after, is within (past/next N days/weeks/months)
+Linked Record: has, does not have, contains, is empty
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Full spreadsheet with sidebar</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Horizontal scroll, collapsed sidebar</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Card list per record, gallery/kanban usable, grid limited</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View</th>
+<th>Add/Edit</th>
+<th>Delete</th>
+<th>Schema</th>
+<th>Automations</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Read Only</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Commenter</td>
+<td>✅</td>
+<td>Comments</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Creator</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own</td>
+<td>Add fields/views</td>
+<td>Create</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

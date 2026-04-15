@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter / X — IA.md | getIA.md</title>
+  <meta name="description" content="Microblogging. Timeline, threads, Spaces, Communities. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=x.com&sz=64" alt="Twitter / X" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Twitter / X</h1>
+      <p class="detail-brand-tagline">Microblogging. Timeline, threads, Spaces, Communities.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/twitter/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://x.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/twitter/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Twitter/X — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A real-time microblogging and public conversation platform (rebranded from Twitter to X in 2023). The mental model is a <strong>public town square</strong> — short posts (originally 140 characters, now up to 25,000 for Premium) flow in a timeline, with replies creating threaded conversations. Unlike Facebook&#39;s friend-graph, Twitter/X is interest-graph and follow-based: you follow anyone, and content spreads through retweets/reposts. Key differentiators: real-time news and discourse, quote tweets, threads (multi-post storytelling), Spaces (live audio), X Premium (verification + features), Communities, long-form articles (X Articles), and the &quot;For You&quot; algorithmic timeline vs &quot;Following&quot; chronological timeline.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Timeline
+│   ├── For You (algorithmic, default)
+│   ├── Following (chronological from followed accounts)
+│   ├── Custom Lists (user-curated feeds)
+│   └── Post Composer (inline, top of feed)
+│       ├── Text (up to 280 chars free / 25,000 Premium)
+│       ├── Media (images up to 4, GIF, video)
+│       ├── Poll
+│       ├── Schedule
+│       ├── Location
+│       ├── Audience (Everyone / Circle / X Premium subscribers)
+│       └── Reply Settings (Everyone / Following / Verified / Mentioned)
+├── Explore
+│   ├── Trending (per country/region)
+│   │   ├── Trending Topics (#hashtags, keywords)
+│   │   ├── Trending in [Location]
+│   │   └── Trend Category (Politics, Entertainment, Sports, etc.)
+│   ├── Tabs: For You, Trending, News, Sports, Entertainment
+│   ├── Search Bar (top)
+│   └── Live Events
+├── Search
+│   ├── Top (mixed results, algorithmic)
+│   ├── Latest (chronological)
+│   ├── People
+│   ├── Media (images/videos)
+│   ├── Lists
+│   └── Advanced Search (from, to, mentions, dates, engagement minimums, filters)
+├── Notifications
+│   ├── All
+│   ├── Verified (only from verified accounts)
+│   ├── Mentions
+│   ├── Types: Likes, Reposts, Replies, Follows, Quote Tweets, Polls, Spaces
+│   └── Quality Filter (hide low-quality notifications)
+├── Messages (DMs)
+│   ├── Conversations List
+│   ├── Message Requests (from non-followers)
+│   ├── Conversation Thread
+│   │   ├── Text, Images, GIFs, Videos, Voice Messages
+│   │   ├── Reactions (emoji on messages)
+│   │   └── Encrypted DMs (X Premium)
+│   ├── Group Conversations
+│   └── New Message
+├── Post Detail / Thread
+│   ├── Original Post (full text, media, engagement stats)
+│   ├── Thread Context (show above posts if this is a reply)
+│   ├── Engagement Stats (reposts, quotes, likes, bookmarks, views)
+│   ├── Reply Thread (chronological or &quot;Most relevant&quot;)
+│   │   ├── Sort: Most Recent / Most Liked
+│   │   └── &quot;Show more replies&quot; / &quot;Show probably bad replies&quot;
+│   ├── Actions: Reply, Repost, Quote, Like, Bookmark, Share, Analytics
+│   └── Translate Post (if in different language)
+├── Profile
+│   ├── Banner, Avatar, Name, @Handle, Bio, Link, Location, Join Date
+│   ├── Verification Badge (blue = X Premium, gold = organization, gray = government)
+│   ├── Stats: Following, Followers, Verified Followers count
+│   ├── Follow / Following Button, Message, Notifications Bell, ⋯ More
+│   ├── Tabs: Posts, Replies, Highlights, Articles, Media, Likes
+│   ├── Pinned Post
+│   └── Creator Subscriptions (subscribe to this creator for exclusive content)
+├── Lists
+│   ├── Your Lists (created)
+│   ├── Lists You&#39;re On
+│   ├── Pinned Lists (appear as tabs on Home)
+│   ├── Discover Lists (suggested)
+│   ├── List Detail
+│   │   ├── Members
+│   │   ├── Timeline (posts from list members only)
+│   │   └── Follow List
+│   └── Create List (name, description, public/private, add members)
+├── Bookmarks
+│   ├── All Bookmarked Posts
+│   ├── Bookmark Folders (X Premium)
+│   └── Sort: Date Saved
+├── Communities
+│   ├── Discover Communities
+│   ├── Your Communities
+│   ├── Community Page
+│   │   ├── Community Timeline
+│   │   ├── Members
+│   │   ├── Rules
+│   │   ├── Moderators
+│   │   └── Join / Leave
+│   └── Post to Community
+├── Spaces (Live Audio)
+│   ├── Live Spaces (happening now)
+│   ├── Upcoming Spaces (scheduled)
+│   ├── Create Space
+│   │   ├── Title, Scheduled Time
+│   │   ├── Hosts, Speakers, Listeners
+│   │   ├── Request to Speak
+│   │   ├── Reactions (emojis)
+│   │   ├── Captions (auto-generated)
+│   │   └── Recording (optional)
+│   └── Space Recordings (replay)
+├── X Premium (Subscription)
+│   ├── Basic / Premium / Premium+ Tiers
+│   ├── Blue Checkmark
+│   ├── Longer Posts (25,000 chars)
+│   ├── Edit Post (within time window)
+│   ├── Undo Post
+│   ├── Bookmark Folders
+│   ├── Reader Mode (thread unrolling)
+│   ├── Ad-free or reduced ads
+│   ├── Revenue Sharing (for eligible creators)
+│   ├── Grok AI Access
+│   └── Priority Ranking in replies
+├── Monetization (Creators)
+│   ├── Creator Subscriptions (followers pay monthly for exclusive content)
+│   ├── Tips (one-time payments)
+│   ├── Ads Revenue Sharing
+│   ├── Super Follows (legacy)
+│   └── Ticketed Spaces
+├── Grok (AI Assistant)
+│   ├── Chat with Grok (conversational AI)
+│   ├── Trending Analysis
+│   └── Image Generation
+├── Settings
+│   ├── Account (username, email, phone, deactivation)
+│   ├── Security &amp; Account Access (password, 2FA, apps, sessions)
+│   ├── Monetization
+│   ├── X Premium
+│   ├── Privacy &amp; Safety
+│   │   ├── Audience &amp; Tagging (protect your posts)
+│   │   ├── Content You See (topics, muted words)
+│   │   ├── Mute &amp; Block
+│   │   ├── DMs (who can message you)
+│   │   ├── Discoverability (email/phone lookup)
+│   │   └── Ads Preferences
+│   ├── Notifications (per type: push, email, SMS)
+│   ├── Accessibility, Display &amp; Languages
+│   │   ├── Font Size
+│   │   ├── Color Theme (dim, lights out, default)
+│   │   ├── Background Color
+│   │   └── Reduce Motion
+│   ├── Additional Resources (about, TOS, privacy policy)
+│   └── Help Center
+└── Analytics (creators)
+    ├── Post Analytics (impressions, engagements, link clicks, profile visits)
+    ├── Audience Insights (demographics, interests)
+    ├── Video Analytics (views, completion rate)
+    └── Revenue Dashboard
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Desktop: fixed, icon + label</td>
+<td>Home, Explore, Notifications (badge), Messages (badge), Grok, Lists, Bookmarks, Communities, Premium, Profile, More (dropdown)</td>
+</tr>
+<tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>Mobile: 5 tabs</td>
+<td>Home, Search, Grok, Notifications, Messages</td>
+</tr>
+<tr>
+<td><strong>Feed Toggle</strong></td>
+<td>Horizontal tabs on Home</td>
+<td>&quot;For You&quot; / &quot;Following&quot; / [Pinned Lists]</td>
+</tr>
+<tr>
+<td><strong>Floating Compose</strong></td>
+<td>FAB (mobile) or sidebar button (desktop)</td>
+<td>&quot;Post&quot; button, always accessible</td>
+</tr>
+<tr>
+<td><strong>Post Actions</strong></td>
+<td>Inline below each post</td>
+<td>Reply, Repost (repost/quote), Like, Bookmark, Share (copy link, DM, other apps), View Analytics</td>
+</tr>
+<tr>
+<td><strong>Right Sidebar</strong></td>
+<td>Desktop only</td>
+<td>Search bar, Trends, Who to Follow, footer links</td>
+</tr>
+<tr>
+<td><strong>Profile Tabs</strong></td>
+<td>Horizontal tabs on profile</td>
+<td>Posts / Replies / Highlights / Articles / Media / Likes</td>
+</tr>
+</tbody></table>
+<h3>Desktop Layout</h3>
+<pre><code>[Left Sidebar (275px)]  |  [Timeline (600px)]  |  [Right Sidebar (350px)]
+─────────────────────────────────────────────────────────────────
+🏠 Home                 |  [For You | Following]| 🔍 Search
+🔍 Explore              |  ─────────────────    | ─────────────
+🔔 Notifications (●)    |  [Post Composer]      | Trends for you
+✉️ Messages (●)          |  ─────────────────    |  1. #Topic
+🤖 Grok                 |  [Post]               |  2. Trending
+📋 Lists                |  [Post]               |  3. Sports ·
+🔖 Bookmarks            |  [Post]               | ─────────────
+👥 Communities           |  [Post]               | Who to follow
+✨ Premium               |  ...                  |  @user1 [Follow]
+👤 Profile               |                       |  @user2 [Follow]
+─────────────            |                       | ─────────────
+[Post] (button)          |                       | Terms · Privacy
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Post (Tweet)</td>
+<td>text (280/25K chars), media[] (images/video/GIF), poll, created_at, views_count, likes_count, repost_count, quote_count, reply_count, bookmark_count, visibility (everyone/circle/subscribers), reply_settings, conversation_id, language, source (app/web/api), edited (bool), edit_history[]</td>
+<td>belongs to User; has Replies, Quotes, Media</td>
+</tr>
+<tr>
+<td>User</td>
+<td>username (@handle), display_name, avatar, banner, bio, location, website, join_date, followers_count, following_count, verified_type (none/blue/gold/gray), is_private (protected), pinned_post</td>
+<td>has many Posts, Lists, Communities</td>
+</tr>
+<tr>
+<td>Reply</td>
+<td>same as Post, but in_reply_to_post_id set</td>
+<td>belongs to Post (thread) and User</td>
+</tr>
+<tr>
+<td>Repost</td>
+<td>original_post_id, reposted_at</td>
+<td>belongs to User (amplification, no commentary)</td>
+</tr>
+<tr>
+<td>Quote</td>
+<td>text + quoted_post_id</td>
+<td>belongs to User (repost with commentary)</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>created_at</td>
+<td>belongs to User and Post</td>
+</tr>
+<tr>
+<td>Bookmark</td>
+<td>created_at, folder (Premium)</td>
+<td>belongs to User and Post</td>
+</tr>
+<tr>
+<td>Follow</td>
+<td>follower_id, following_id, created_at, notifications (bool)</td>
+<td>connects Users</td>
+</tr>
+<tr>
+<td>List</td>
+<td>name, description, public/private, member_count, follower_count</td>
+<td>belongs to User, has many Members (Users)</td>
+</tr>
+<tr>
+<td>Community</td>
+<td>name, description, rules[], members_count, created_at</td>
+<td>has many Members, Moderators, Posts</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>title, host, speakers[], listeners_count, scheduled_at, recording_url</td>
+<td>belongs to User (host)</td>
+</tr>
+<tr>
+<td>DM</td>
+<td>text, media[], reactions[], read, created_at</td>
+<td>belongs to Conversation</td>
+</tr>
+<tr>
+<td>Conversation (DM)</td>
+<td>participants[], last_message, unread_count</td>
+<td>has many DMs</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>name, post_count, trending_position</td>
+<td>many-to-many with Posts</td>
+</tr>
+<tr>
+<td>Poll</td>
+<td>options[], duration, votes_count, ended_at</td>
+<td>belongs to Post</td>
+</tr>
+<tr>
+<td>Trend</td>
+<td>name, tweet_count, category, location</td>
+<td>global and per-region</td>
+</tr>
+</tbody></table>
+<h3>Post Types</h3>
+<p><code>text | image (1-4) | video | GIF | poll | thread | quote | article (Premium) | voice</code></p>
+<h3>Verification Types</h3>
+<pre><code>Blue Checkmark: X Premium subscriber (paid)
+Gold Checkmark: Organization (business/brand)
+Gray Checkmark: Government / multilateral organization
+</code></pre>
+<h2>User Flows</h2>
+<h3>Content Consumption</h3>
+<pre><code>Open App → For You Timeline → Scroll → Like (tap heart) → Tap Post → Full Thread → Reply → Back to Feed
+</code></pre>
+<h3>Post Creation</h3>
+<pre><code>[+ Post] → Compose Text → Add Media/Poll/GIF → Set Reply Settings → Post → Appears in Followers&#39; Timelines
+</code></pre>
+<h3>Thread Creation</h3>
+<pre><code>[+ Post] → Write First Post → [+] Add Another → Write Second → Continue → Post All → Thread Published
+</code></pre>
+<h3>Discover via Trending</h3>
+<pre><code>Explore → Trending Tab → Tap Trend → Latest Posts About Topic → Engage → Follow Interesting Accounts
+</code></pre>
+<h3>Quote Tweet (Repost with Commentary)</h3>
+<pre><code>See Post → Repost → Quote → Add Your Take → Post → Original + Your Commentary Visible
+</code></pre>
+<h3>Spaces (Live Audio)</h3>
+<pre><code>Explore → Spaces → Join → Listen → Request to Speak → Approved → Speak → React → Leave
+</code></pre>
+<h3>Search Power User</h3>
+<pre><code>Explore → Search → Type query → &quot;Advanced Search&quot; → Filter (from:@user since:2024-01-01 min_faves:100) → Results
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home Timeline
+/home                          → Home (explicit)
+/explore                       → Explore / Trending
+/explore/tabs/:category        → Explore Category (news, sports, etc.)
+/search?q=:query               → Search Results
+/search?q=:query&amp;f=live        → Search Latest
+/search?q=:query&amp;f=user        → Search People
+/search?q=:query&amp;f=media       → Search Media
+/notifications                 → Notifications
+/notifications/mentions         → Mentions Only
+/messages                      → DMs List
+/messages/:conversationId      → DM Thread
+/:username                     → User Profile (Posts tab)
+/:username/with_replies        → User Replies
+/:username/highlights          → User Highlights
+/:username/articles            → User Articles (Premium)
+/:username/media               → User Media
+/:username/likes               → User Likes
+/:username/followers           → Followers List
+/:username/following           → Following List
+/:username/status/:postId      → Post Detail / Thread
+/:username/lists               → User&#39;s Lists
+/i/lists/:listId               → List Timeline
+/i/lists/:listId/members       → List Members
+/i/communities/:id             → Community Page
+/i/spaces/:spaceId             → Space (Live Audio)
+/i/bookmarks                   → Bookmarks
+/i/grok                        → Grok AI
+/compose/post                  → Compose (mobile deep link)
+/settings                      → Settings
+/settings/account              → Account Settings
+/settings/privacy_and_safety   → Privacy &amp; Safety
+/settings/notifications        → Notification Preferences
+/settings/accessibility_display → Display Settings
+/analytics                     → Analytics Dashboard
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Posts, Users, Media, Lists</td>
+<td>Tab (Top/Latest/People/Media/Lists)</td>
+<td>Top (algorithmic), Latest (chronological)</td>
+</tr>
+<tr>
+<td>Advanced Search</td>
+<td>Posts</td>
+<td>From (user), To (user), Mentioning, Date Range (since/until), Min Replies/Likes/Reposts, Language, Exact Phrase, Exclude Words, Has (links/media)</td>
+<td>Relevance, Latest</td>
+</tr>
+<tr>
+<td>Explore</td>
+<td>Trending topics</td>
+<td>Category (For You/Trending/News/Sports/Entertainment), Location</td>
+<td>Trending (algorithmic)</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>Activity about you</td>
+<td>Type (All/Verified/Mentions)</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Messages</td>
+<td>DM content, people</td>
+<td>—</td>
+<td>Recent</td>
+</tr>
+</tbody></table>
+<h3>Search Operators (Power Users)</h3>
+<pre><code>from:@username     → Posts by specific user
+to:@username       → Replies to specific user
+@username          → Mentioning specific user
+since:2024-01-01   → After date
+until:2024-12-31   → Before date
+min_faves:100      → Minimum likes
+min_retweets:50    → Minimum reposts
+has:links          → Contains URLs
+has:media          → Contains images/video
+has:videos         → Contains video
+&quot;exact phrase&quot;     → Exact match
+-word              → Exclude word
+filter:follows     → Only from people you follow
+lang:en            → Language filter
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Nav</th>
+<th>Feed</th>
+<th>Sidebar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Left sidebar (full labels)</td>
+<td>Center timeline (max 600px)</td>
+<td>Right sidebar (trends, suggestions)</td>
+</tr>
+<tr>
+<td>Laptop (1024–1279px)</td>
+<td>Left sidebar (icons + labels, compact)</td>
+<td>Center timeline</td>
+<td>Right sidebar (reduced)</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Left icon sidebar (no labels)</td>
+<td>Center timeline</td>
+<td>Hidden</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tab bar (5 tabs)</td>
+<td>Full width timeline</td>
+<td>Hidden, trends in Explore</td>
+</tr>
+</tbody></table>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Pull-to-refresh timeline</li>
+<li>Swipe between For You / Following tabs</li>
+<li>FAB (Floating Action Button) for compose</li>
+<li>Post composer: full-screen modal</li>
+<li>Image viewer: pinch-to-zoom, swipe gallery</li>
+<li>Video: inline autoplay (muted), tap for audio</li>
+<li>Haptic feedback on like</li>
+<li>Notification badges on tab bar</li>
+<li>Share sheet integration (share post to other apps)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Post</th>
+<th>Reply</th>
+<th>Repost</th>
+<th>DM</th>
+<th>Spaces</th>
+<th>Analytics</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>Limited (public posts, rate-limited)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Listen only</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Free User</td>
+<td>✅</td>
+<td>✅ (280 chars, images, GIF, video up to 2:20)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Host + Join</td>
+<td>Basic</td>
+</tr>
+<tr>
+<td>X Premium Basic</td>
+<td>✅</td>
+<td>✅ (longer posts, edit, bookmark folders)</td>
+<td>✅ + priority</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>X Premium</td>
+<td>✅</td>
+<td>✅ + blue check, 25K chars, articles, reduced ads</td>
+<td>✅ + higher priority</td>
+<td>✅</td>
+<td>Encrypted</td>
+<td>✅</td>
+<td>✅ + revenue sharing</td>
+</tr>
+<tr>
+<td>X Premium+</td>
+<td>✅ (no ads)</td>
+<td>✅ + all Premium features + Grok</td>
+<td>✅ + highest priority</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + full analytics</td>
+</tr>
+<tr>
+<td>Organization (Gold)</td>
+<td>✅</td>
+<td>✅ + organization badge, affiliate accounts</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + brand analytics</td>
+</tr>
+<tr>
+<td>Moderator / Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Platform moderation tools</td>
+</tr>
+</tbody></table>
+<h3>Privacy Controls (User-configurable)</h3>
+<ul>
+<li>Protected account (tweets visible only to approved followers)</li>
+<li>Who can reply: Everyone / Following / Verified / Mentioned</li>
+<li>Who can DM: Everyone / Verified / No one</li>
+<li>Muted words/accounts (hide without blocking)</li>
+<li>Blocked accounts (complete separation)</li>
+<li>Content filtering (sensitive content toggle)</li>
+<li>Discoverability (find by email/phone: on/off)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

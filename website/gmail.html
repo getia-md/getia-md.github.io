@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail — IA.md | getIA.md</title>
+  <meta name="description" content="Google email. Inbox categories, search operators, labels. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=gmail.com&sz=64" alt="Gmail" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">Gmail</h1>
+      <p class="detail-brand-tagline">Google email. Inbox categories, search operators, labels.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/gmail/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://gmail.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/gmail/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Gmail — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Gmail is Google&#39;s web-based email client serving over 1.8 billion users. The mental model is <strong>label-based organization with powerful search</strong> — unlike traditional folder systems, Gmail uses labels (tags) that allow a single email to exist in multiple categories. Messages are automatically grouped into conversation threads. Gmail differentiates through Google-grade search, smart inbox categories (Primary, Social, Promotions, Updates), AI-powered features (Smart Reply, Smart Compose, email summaries), and deep integration with Google Workspace (Calendar, Meet, Drive, Docs, Chat, Tasks).</p>
+<h2>Site Map</h2>
+<pre><code>├── Inbox
+│   ├── Tabbed Categories (optional)
+│   │   ├── Primary (person-to-person)
+│   │   ├── Social (social network notifications)
+│   │   ├── Promotions (marketing emails)
+│   │   ├── Updates (receipts, bills, automated)
+│   │   └── Forums (mailing lists, group emails)
+│   ├── Focused View (AI-prioritized)
+│   └── Unread First / Starred First / Priority Inbox (customizable sections)
+├── Compose
+│   ├── Floating Compose Window (bottom-right, multiple)
+│   │   ├── To / CC / BCC (autocomplete from Contacts)
+│   │   ├── Subject Line
+│   │   ├── Rich Text Body (formatting toolbar)
+│   │   ├── Smart Compose (AI inline suggestions)
+│   │   ├── Attachments (local files)
+│   │   ├── Google Drive Insert (link or attach)
+│   │   ├── Emoji
+│   │   ├── Confidential Mode (expiry, passcode)
+│   │   ├── Schedule Send
+│   │   ├── Signature (per account)
+│   │   └── Send / Undo Send (configurable delay)
+│   ├── Reply / Reply All / Forward (inline in thread)
+│   └── Full-Screen Compose (expand)
+├── Conversation Thread View
+│   ├── Thread Header (subject, labels)
+│   ├── Collapsed Messages (sender + snippet)
+│   ├── Expanded Message
+│   │   ├── Sender (name, email, profile pic)
+│   │   ├── To / CC (expandable)
+│   │   ├── Timestamp
+│   │   ├── Body (HTML rendered)
+│   │   ├── Attachments (inline preview + download)
+│   │   ├── Smart Reply (3 quick-reply chips)
+│   │   ├── AI Summary (Gemini)
+│   │   └── Reply / Reply All / Forward buttons
+│   └── Actions (Archive, Delete, Snooze, Move to, Label, More)
+├── System Labels / Folders
+│   ├── Inbox
+│   ├── Starred ⭐
+│   ├── Snoozed 💤
+│   ├── Important (Priority markers)
+│   ├── Sent
+│   ├── Scheduled
+│   ├── Drafts
+│   ├── All Mail
+│   ├── Spam
+│   ├── Trash (auto-delete after 30 days)
+│   └── Categories (Social, Updates, Promotions, Forums)
+├── User-Created Labels
+│   ├── Label A (color-coded)
+│   │   └── Sub-label A1 (nested)
+│   ├── Label B
+│   └── Create New Label
+├── Google Chat (integrated panel)
+│   ├── Chat (1:1 + group)
+│   ├── Spaces (channels-like)
+│   └── Meet (video call shortcuts)
+├── Google Meet (integrated)
+│   ├── New Meeting
+│   ├── Join Meeting
+│   └── Scheduled Meetings
+├── Search
+│   ├── Search Bar (top, always visible)
+│   ├── Search Chips (quick filters below search)
+│   │   ├── From, To, Is:unread, Has:attachment
+│   │   ├── Date range
+│   │   └── Exclude calendar/promotions
+│   ├── Advanced Search (expand with ▾)
+│   └── Search Operators
+├── Google Tasks (integrated)
+│   ├── My Tasks
+│   ├── Add from Email (turn email into task)
+│   └── Task Lists
+├── Google Calendar (side panel)
+│   ├── Mini calendar
+│   ├── Today&#39;s agenda
+│   └── Create Event
+├── Google Keep (side panel)
+│   ├── Quick notes
+│   └── Pin to email
+├── Contacts (Google Contacts)
+│   ├── Integrated address book
+│   └── Contact groups
+├── Settings
+│   ├── General
+│   │   ├── Language, Page Size, Undo Send Delay
+│   │   ├── Default Reply Behavior
+│   │   ├── Conversation View (on/off)
+│   │   ├── Nudges (reply/follow-up reminders)
+│   │   ├── Smart Features (Compose, Reply, categorization)
+│   │   └── Desktop Notifications
+│   ├── Labels (show/hide/manage)
+│   ├── Inbox (type: Default/Important First/Unread First/Starred First/Priority Inbox, categories)
+│   ├── Accounts and Import (send mail as, POP/IMAP, delegates)
+│   ├── Filters and Blocked Addresses (rules)
+│   ├── Forwarding and POP/IMAP
+│   ├── Add-ons
+│   ├── Chat and Meet (enable/disable)
+│   ├── Advanced (templates, auto-advance, custom keyboard shortcuts)
+│   ├── Offline
+│   └── Themes
+└── Gemini AI Panel (right side)
+    ├── Summarize emails
+    ├── Draft reply with AI
+    ├── Ask questions about email
+    └── Contextual suggestions
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible to icons</td>
+<td>Compose button, Inbox, Starred, Snoozed, Sent, Drafts, labels tree, Chat, Spaces, Meet</td>
+</tr>
+<tr>
+<td><strong>Message List</strong></td>
+<td>Center column</td>
+<td>Checkbox, Star, Sender, Subject+Snippet, Labels, Attachment icon, Date</td>
+</tr>
+<tr>
+<td><strong>Reading Pane</strong></td>
+<td>Right column (optional) or click-to-open</td>
+<td>Conversation thread; inline reply</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed header</td>
+<td>Search bar (prominent), Support, Settings gear, Grid menu (Google apps), Profile</td>
+</tr>
+<tr>
+<td><strong>Action Bar</strong></td>
+<td>Above message list (contextual)</td>
+<td>Archive, Report spam, Delete, Mark read/unread, Snooze, Move to, Label as</td>
+</tr>
+<tr>
+<td><strong>Compose Window</strong></td>
+<td>Floating bottom-right (multiple)</td>
+<td>Pop-out windows; can minimize, maximize, open multiple drafts</td>
+</tr>
+<tr>
+<td><strong>Side Panel</strong></td>
+<td>Right edge (collapsible)</td>
+<td>Calendar, Keep, Tasks, Contacts, Add-ons, Gemini</td>
+</tr>
+<tr>
+<td><strong>Chat Panel</strong></td>
+<td>Left sidebar (below labels)</td>
+<td>Google Chat and Spaces integrated into Gmail</td>
+</tr>
+</tbody></table>
+<h3>Layout Modes</h3>
+<pre><code>Default:          [Sidebar 68px] | [Message List 350px] | [Reading Pane (flex)]
+No Reading Pane:  [Sidebar 68px] | [Message List (full, click to open thread)]
+Below Reading:    [Sidebar 68px] | [Message List (top)] / [Reading Pane (bottom)]
+</code></pre>
+<h3>Sidebar Structure</h3>
+<pre><code>[✏️ Compose]
+─────────────
+📥 Inbox (1,234)
+⭐ Starred
+💤 Snoozed
+📨 Sent
+📝 Drafts (3)
+─────────────
+📁 Categories ▾
+  Social
+  Updates
+  Forums
+  Promotions
+─────────────
+🏷 Labels ▾
+  Work (blue)
+    Client A
+    Client B
+  Personal (green)
+  Travel (yellow)
+  [+ Create new label]
+─────────────
+📧 All Mail
+⚠ Spam (12)
+🗑 Trash
+─────────────
+💾 Storage: 8.2 GB / 15 GB
+─────────────
+💬 Chat ▾
+  Recent conversations
+🏢 Spaces ▾
+  Team workspace
+📹 Meet
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Message</td>
+<td>from, to[], cc[], bcc[], subject, body_html, body_text, date, snippet, size_estimate, internal_date</td>
+<td>belongs to Thread; has Attachments, Labels</td>
+</tr>
+<tr>
+<td>Thread</td>
+<td>id, messages[], history_id, snippet</td>
+<td>contains Messages; has Labels</td>
+</tr>
+<tr>
+<td>Label</td>
+<td>id, name, type (system/user), visibility (labelShow/labelHide), color, unread_count, total_count</td>
+<td>many-to-many with Threads</td>
+</tr>
+<tr>
+<td>Attachment</td>
+<td>filename, mime_type, size, attachment_id, thumbnail</td>
+<td>belongs to Message</td>
+</tr>
+<tr>
+<td>Draft</td>
+<td>message (partial), last_saved</td>
+<td>special Message state</td>
+</tr>
+<tr>
+<td>Filter</td>
+<td>criteria (from, to, subject, has_words, size, has_attachment), actions (label, archive, delete, star, forward, categorize, mark_important)</td>
+<td>applies to incoming Messages</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>name, content_html, is_default</td>
+<td>per send-as address</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>name, email[], phone[], organization, photo</td>
+<td>linked to Messages via address</td>
+</tr>
+<tr>
+<td>Delegate</td>
+<td>email, status (pending/active), permission (read/send)</td>
+<td>access to another user&#39;s mailbox</td>
+</tr>
+</tbody></table>
+<h3>Message States</h3>
+<pre><code>unread → read → replied (↩) → forwarded (→)
+inbox → archived (remove inbox label) → trashed → permanently deleted (30 days)
+snoozed (returns to inbox at specified time/place)
+important (AI-predicted or manual ⚡)
+starred (⭐ with optional star colors/types)
+</code></pre>
+<h3>Label System (vs. Folders)</h3>
+<ul>
+<li>A message can have <strong>multiple labels</strong> simultaneously (unlike folders)</li>
+<li>System labels: INBOX, SENT, DRAFT, SPAM, TRASH, STARRED, IMPORTANT</li>
+<li>Categories: CATEGORY_SOCIAL, CATEGORY_UPDATES, CATEGORY_PROMOTIONS, CATEGORY_FORUMS</li>
+<li>User labels: unlimited, nested, color-coded</li>
+<li><strong>Archive = remove INBOX label</strong> (message still in All Mail)</li>
+</ul>
+<h2>User Flows</h2>
+<h3>Read &amp; Triage (Inbox Zero)</h3>
+<pre><code>Open Gmail → Inbox → Scan list → Open thread → Read → Reply (Smart Reply / full) → Archive (e or swipe) → Next thread → Repeat
+</code></pre>
+<h3>Compose &amp; Send</h3>
+<pre><code>[Compose] button → Floating window → Type To (autocomplete) → Subject → Body (Smart Compose AI suggestions) → Attach (local / Drive) → Send → Undo Send (5/10/20/30 sec window)
+</code></pre>
+<h3>Label &amp; Organize</h3>
+<pre><code>Select messages (checkbox) → Label As → Choose label → Apply → Messages tagged → View label in sidebar
+</code></pre>
+<h3>Snooze</h3>
+<pre><code>Open email → Snooze (🕐) → Pick time (Tomorrow, Next Week, Pick date/time) → Email disappears → Reappears at chosen time in inbox
+</code></pre>
+<h3>Filter Creation</h3>
+<pre><code>Open email → More (⋮) → &quot;Filter messages like this&quot; → Customize criteria → Choose actions (skip inbox, label, star, forward) → Create Filter → Optionally apply to existing matches
+</code></pre>
+<h3>Bulk Actions</h3>
+<pre><code>Select All on page → &quot;Select all X conversations matching this search&quot; → Archive All / Delete / Label → Process entire category at once
+</code></pre>
+<h3>Search Power User</h3>
+<pre><code>Search bar → &quot;from:boss@company.com has:attachment after:2024/01/01 subject:quarterly&quot; → Results → Click to open → ← Back to results
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Inbox (redirect)
+/mail/u/0/#inbox               → Inbox
+/mail/u/0/#inbox/:category     → Category tab (social, promotions, updates, forums)
+/mail/u/0/#starred             → Starred
+/mail/u/0/#snoozed             → Snoozed
+/mail/u/0/#sent                → Sent
+/mail/u/0/#drafts              → Drafts
+/mail/u/0/#scheduled           → Scheduled
+/mail/u/0/#all                 → All Mail
+/mail/u/0/#spam                → Spam
+/mail/u/0/#trash               → Trash
+/mail/u/0/#label/:labelName    → User label
+/mail/u/0/#label/:parent/:child → Nested label
+/mail/u/0/:threadId            → Thread view
+/mail/u/0/#search/:query       → Search results
+/mail/u/0/?compose=new         → New compose
+/mail/u/0/?compose=:draftId    → Open draft
+/mail/u/0/#settings/general    → Settings (hash-based tabs)
+/mail/u/0/#settings/filters    → Filters
+/mail/u/0/#settings/labels     → Label management
+</code></pre>
+<p>Note: <code>/u/0/</code> = first account; <code>/u/1/</code> = second account (multi-account support).</p>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global (top bar)</td>
+<td>Subject, body, sender, recipient, attachment names, labels</td>
+<td>From, To, Subject, Has Words, Doesn&#39;t Have, Size, Date Within, Has Attachment, Is (read/unread/starred/snoozed/important)</td>
+<td>Date (newest), Relevance</td>
+</tr>
+<tr>
+<td>Search Chips (below bar)</td>
+<td>Quick filter refinement</td>
+<td>From (dropdown), To, Is:unread, Has:attachment, Date range</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Contacts</td>
+<td>Name, email</td>
+<td>Groups</td>
+<td>Name, Recent</td>
+</tr>
+</tbody></table>
+<h3>Search Operators (Gmail-specific)</h3>
+<pre><code>from:alice@example.com          to:bob@example.com
+subject:&quot;project update&quot;        &quot;exact phrase in body&quot;
+has:attachment                  has:drive (Google Drive links)
+filename:pdf                    filename:report.xlsx
+larger:5M                       smaller:1M
+after:2024/01/01                before:2024/06/01
+in:inbox                        in:sent                in:trash
+is:unread                       is:starred             is:important
+is:snoozed                      label:work             -label:spam
+category:primary                category:social
+newer_than:2d                   older_than:1y
+has:userlabels                  has:nouserlabels
+deliveredto:alias@gmail.com     list:info@listname.com
+AROUND 5 (word1 AROUND 5 word2) → proximity search
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Compose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Sidebar + message list + reading pane (3-column)</td>
+<td>Floating modal (bottom-right)</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Sidebar collapses to icons, list + reading pane</td>
+<td>Full-screen overlay</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom nav (Mail, Chat, Spaces, Meet), single-column list</td>
+<td>Full-screen compose</td>
+</tr>
+</tbody></table>
+<h3>Mobile App (Gmail for iOS/Android)</h3>
+<ul>
+<li>Swipe right to archive, swipe left to delete (configurable)</li>
+<li>Pull-to-refresh</li>
+<li>Floating Compose FAB button</li>
+<li>Bottom sheet for message actions</li>
+<li>Unified inbox (multiple accounts)</li>
+<li>Smart Reply chips at bottom of thread</li>
+<li>Widget: unread count, message preview</li>
+<li>Notification actions: Archive, Reply</li>
+</ul>
+<h3>Tablet App</h3>
+<ul>
+<li>Split view (list + reading pane)</li>
+<li>Multi-select with checkboxes</li>
+<li>Drag-and-drop to labels</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Send</th>
+<th>Manage Filters</th>
+<th>Delegate</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User</td>
+<td>Own mail</td>
+<td>✅</td>
+<td>✅</td>
+<td>Grant delegation</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Delegate</td>
+<td>Delegated mailbox</td>
+<td>Send &quot;on behalf of&quot;</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Google Workspace Admin</td>
+<td>Audit logs, compliance</td>
+<td>✅</td>
+<td>Organization-wide rules</td>
+<td>Grant</td>
+<td>User management, DLP, retention</td>
+</tr>
+</tbody></table>
+<h3>Privacy &amp; Security Features</h3>
+<ul>
+<li><strong>Confidential Mode</strong>: Set expiry date; require SMS passcode; disable forwarding/copy/print/download</li>
+<li><strong>Undo Send</strong>: Configurable 5/10/20/30 second delay</li>
+<li><strong>2FA / Advanced Protection Program</strong> (security keys)</li>
+<li><strong>External sender warning</strong> (banner on first-time senders)</li>
+<li><strong>Phishing/malware detection</strong> (Google Safe Browsing)</li>
+<li><strong>S/MIME encryption</strong> (Workspace Enterprise)</li>
+<li><strong>Client-side encryption</strong> (CSE, Workspace Enterprise Plus)</li>
+<li><strong>Information Rights Management</strong> via Google Vault</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

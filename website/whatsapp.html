@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp — IA.md | getIA.md</title>
+  <meta name="description" content="End-to-end encrypted messaging. Groups, calls, Status. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=whatsapp.com&sz=64" alt="WhatsApp" onerror="this.parentElement.textContent='W'">
+      </div>
+      <h1 class="detail-brand-name">WhatsApp</h1>
+      <p class="detail-brand-tagline">End-to-end encrypted messaging. Groups, calls, Status.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/whatsapp/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://whatsapp.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/whatsapp/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>WhatsApp — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The world&#39;s most popular messaging app (2B+ users), owned by Meta. WhatsApp&#39;s mental model is a <strong>phone-number-based conversation list</strong> — it mirrors your phone contacts and organizes all communication into a simple chat list. Key differentiators: end-to-end encryption by default (Signal Protocol), phone-number identity (no username required), WhatsApp Status (Stories), voice/video calls (including group calls up to 32), WhatsApp Business (for merchants), WhatsApp Channels (broadcast feeds), Communities (group of groups), and multi-device support. WhatsApp prioritizes simplicity, reliability, and privacy over feature density.</p>
+<h2>Site Map</h2>
+<pre><code>├── Chats (Main Screen)
+│   ├── Chat List (sorted by most recent)
+│   │   ├── Individual Chats
+│   │   ├── Group Chats
+│   │   ├── Pinned Chats (up to 3)
+│   │   ├── Archived Chats
+│   │   ├── Unread Badge (count)
+│   │   └── Chat Preview (name, last message, time, read receipts ✓✓)
+│   ├── Filter Chips: All, Unread, Favorites, Groups
+│   ├── Search (messages, contacts, media)
+│   └── New Chat / New Group / New Community
+├── Chat View (Conversation)
+│   ├── Header
+│   │   ├── Contact/Group Name, Avatar
+│   │   ├── Online/Last Seen/Typing Indicator
+│   │   ├── Voice Call Button
+│   │   ├── Video Call Button
+│   │   └── More (⋮) Menu
+│   ├── Message Stream
+│   │   ├── Text Messages
+│   │   ├── Media (photos, videos, GIFs, stickers)
+│   │   ├── Voice Messages (waveform, play inline)
+│   │   ├── Documents (PDF, DOC, etc.)
+│   │   ├── Location (live or static map)
+│   │   ├── Contacts (share contact card)
+│   │   ├── Polls
+│   │   ├── Forwarded Label (&quot;Forwarded&quot; / &quot;Forwarded many times&quot;)
+│   │   ├── Reactions (emoji, long-press message)
+│   │   ├── Reply (swipe right to quote)
+│   │   ├── Starred Messages (★)
+│   │   ├── Disappearing Messages Indicator (🕐)
+│   │   ├── Read Receipts (✓ sent, ✓✓ delivered, blue ✓✓ read)
+│   │   ├── Edited Indicator (&quot;Edited&quot;)
+│   │   ├── System Messages (created group, added member, encryption notice)
+│   │   └── Date Separators
+│   ├── Message Input
+│   │   ├── Text Composer
+│   │   ├── Emoji / Sticker / GIF Picker
+│   │   ├── Attach (📎): Document, Camera, Gallery, Contact, Location, Poll
+│   │   ├── Voice Message (hold mic button)
+│   │   └── Payment (in supported countries)
+│   └── Message Actions (long-press)
+│       ├── Reply, Forward, Star, React, Copy, Edit, Delete
+│       ├── Delete for Everyone (within time limit)
+│       ├── Pin Message (in group)
+│       └── Info (delivery/read timestamps per recipient)
+├── Status (WhatsApp Stories)
+│   ├── My Status (create: text, photo, video, voice note)
+│   ├── Recent Updates (from contacts)
+│   ├── Muted Updates
+│   ├── Status Viewer (full-screen, tap to advance)
+│   ├── Status Privacy (My Contacts / Except / Only Share With)
+│   └── Status Reactions (emoji reply)
+├── Channels (Broadcast Feeds)
+│   ├── Updates Tab (Channel posts from followed channels)
+│   ├── Discover Channels
+│   │   ├── Most Active, New, Popular
+│   │   ├── Categories (News, Entertainment, Sports, etc.)
+│   │   └── Search Channels
+│   ├── Channel View
+│   │   ├── Channel Name, Avatar, Description, Follower Count
+│   │   ├── Follow / Unfollow
+│   │   ├── Post Feed (text, images, polls, links)
+│   │   ├── React to Posts (emoji)
+│   │   └── Share Channel
+│   └── Create Channel (for eligible users)
+├── Communities
+│   ├── Community Home
+│   │   ├── Announcement Group (admin-only broadcasts)
+│   │   ├── Sub-groups (related group chats under one umbrella)
+│   │   ├── Members
+│   │   └── Community Info (name, description, admin)
+│   ├── Create Community
+│   │   ├── Name, Description, Icon
+│   │   ├── Add Existing Groups
+│   │   └── Create New Groups within Community
+│   └── Community Settings (admin)
+├── Calls
+│   ├── Call History (recent calls)
+│   │   ├── Voice Calls
+│   │   ├── Video Calls
+│   │   ├── Missed Calls (red)
+│   │   └── Call Info (time, duration, type)
+│   ├── New Call
+│   │   ├── Select Contact
+│   │   ├── Voice or Video
+│   │   └── Group Call (select multiple)
+│   ├── Call Link (shareable join link)
+│   └── In-Call UI
+│       ├── Audio/Video Controls
+│       ├── Screen Share
+│       ├── Mute / Speaker / Flip Camera
+│       ├── Add Participant
+│       └── End Call
+├── New Chat
+│   ├── Contact List (phone contacts with WhatsApp)
+│   ├── New Group
+│   │   ├── Select Members
+│   │   ├── Group Name, Icon
+│   │   └── Create
+│   ├── New Community
+│   ├── Invite via Link
+│   └── QR Code (scan to add contact)
+├── Group Chat Features
+│   ├── Group Info
+│   │   ├── Name, Icon, Description
+│   │   ├── Members List (admin/member roles)
+│   │   ├── Shared Media / Links / Docs
+│   │   ├── Starred Messages
+│   │   ├── Search in Chat
+│   │   ├── Mute Notifications
+│   │   ├── Disappearing Messages (24h / 7d / 90d)
+│   │   ├── Group Invite Link
+│   │   └── Exit Group / Report
+│   ├── Admin Controls
+│   │   ├── Group Settings (who can send messages, edit info)
+│   │   ├── Approve New Members
+│   │   ├── Remove Members
+│   │   ├── Make Admin
+│   │   └── Restrict Group (only admins can send)
+│   └── Polls (create in group)
+├── Settings
+│   ├── Account
+│   │   ├── Privacy
+│   │   │   ├── Last Seen (Everyone / Contacts / Nobody)
+│   │   │   ├── Profile Photo (visibility)
+│   │   │   ├── About (visibility)
+│   │   │   ├── Status (visibility)
+│   │   │   ├── Groups (who can add you)
+│   │   │   ├── Live Location
+│   │   │   ├── Calls (silence unknown callers)
+│   │   │   ├── Blocked Contacts
+│   │   │   ├── Read Receipts (on/off)
+│   │   │   └── App Lock (biometric)
+│   │   ├── Security (encryption, security notifications)
+│   │   ├── Two-Step Verification (PIN)
+│   │   ├── Change Number
+│   │   ├── Request Account Info
+│   │   └── Delete My Account
+│   ├── Chats
+│   │   ├── Theme (light/dark/system)
+│   │   ├── Wallpaper
+│   │   ├── Chat Font Size
+│   │   ├── Chat Backup (Google Drive / iCloud)
+│   │   ├── Chat History (export, transfer)
+│   │   ├── Archived Chats
+│   │   └── Default Disappearing Messages
+│   ├── Notifications
+│   │   ├── Message Notifications (sound, vibrate, popup, light)
+│   │   ├── Group Notifications
+│   │   ├── Call Notifications
+│   │   └── Notification Tone
+│   ├── Storage and Data
+│   │   ├── Manage Storage (by chat, by file size)
+│   │   ├── Media Auto-Download (Wi-Fi / Mobile / Roaming)
+│   │   ├── Network Usage
+│   │   └── Proxy Settings
+│   ├── Linked Devices (multi-device: Web, Desktop, Portal)
+│   ├── App Language
+│   └── Help (FAQ, contact, app info)
+├── WhatsApp Web / Desktop
+│   ├── QR Code Linking (scan from phone)
+│   ├── Same chat list + conversation view
+│   ├── Multi-device (works without phone online)
+│   └── File sharing from computer
+└── WhatsApp Business (separate app)
+    ├── Business Profile (address, hours, website, catalog)
+    ├── Catalog (products/services with photos, prices)
+    ├── Quick Replies (saved message templates)
+    ├── Labels (organize chats: New Customer, Pending Payment, etc.)
+    ├── Away Messages (auto-reply)
+    ├── Greeting Messages (first-time contacts)
+    ├── Short Link (wa.me link for website)
+    └── WhatsApp Business API (for larger businesses)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Tab Bar</strong></td>
+<td>Android: swipe tabs; iOS: bottom tabs</td>
+<td>Chats, Updates (Status + Channels), Communities, Calls</td>
+</tr>
+<tr>
+<td><strong>Chat List</strong></td>
+<td>Scrollable list, pull-to-search</td>
+<td>Last message preview, time, read receipts, badges</td>
+</tr>
+<tr>
+<td><strong>FAB</strong></td>
+<td>Floating Action Button (bottom-right on Android)</td>
+<td>New chat (chat list), New Status (updates), New call (calls)</td>
+</tr>
+<tr>
+<td><strong>Chat Header</strong></td>
+<td>Fixed top in conversation</td>
+<td>Contact name/avatar, call buttons, more menu</td>
+</tr>
+<tr>
+<td><strong>Input Bar</strong></td>
+<td>Fixed bottom in conversation</td>
+<td>Text input, emoji, attach, voice message (mic), send</td>
+</tr>
+<tr>
+<td><strong>Message Actions</strong></td>
+<td>Long-press any message</td>
+<td>Reply, Forward, Star, React, Copy, Delete, Info</td>
+</tr>
+<tr>
+<td><strong>Tab/Swipe</strong></td>
+<td>Swipe between main sections</td>
+<td>Chats ↔ Updates ↔ Communities ↔ Calls</td>
+</tr>
+</tbody></table>
+<h3>Android Layout (Main)</h3>
+<pre><code>┌──────────────────────────────┐
+│  WhatsApp  [📷] [🔍] [⋮]   │  ← top bar
+│  Chats | Updates | Commun.. | Calls │  ← tabs
+├──────────────────────────────┤
+│  All | Unread | Favorites | Groups  │  ← filter chips
+│  ────────────────────────────│
+│  📌 Mom                  9:41│
+│     Photo 📷        ✓✓(blue)│
+│  ────────────────────────────│
+│  Work Group             9:30│
+│     Alice: Meeting at... ✓✓ │
+│  ────────────────────────────│
+│  Bob                   Yest.│
+│     You: See you!        ✓✓ │
+│  ...                        │
+│                         [✉️]│  ← FAB: new chat
+└──────────────────────────────┘
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Conversation</td>
+<td>type (individual/group/community_announcement), name, avatar, last_message, unread_count, pinned (bool), muted (bool), archived (bool), disappearing_messages (off/24h/7d/90d), encrypted (always true)</td>
+<td>has many Messages, Members</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>body, type (text/image/video/audio/document/location/contact/poll/sticker/gif/voice_note), sender, timestamp, status (sent/delivered/read), edited (bool), forwarded (bool), forward_count, reply_to, starred (bool), reactions[]</td>
+<td>belongs to Conversation and User</td>
+</tr>
+<tr>
+<td>User</td>
+<td>phone_number, name (from contacts), about (bio), avatar, last_seen, online (bool)</td>
+<td>has many Conversations</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>name, avatar, description, created_by, created_at, members[], admins[], invite_link, settings (who_can_send, who_can_edit_info, approve_new_members)</td>
+<td>type of Conversation</td>
+</tr>
+<tr>
+<td>Community</td>
+<td>name, icon, description, announcement_group, sub_groups[]</td>
+<td>has many Groups</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>media (photo/video/text), caption, created_at, expires_at (24h), viewers[], privacy (contacts/except/only)</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>name, avatar, description, follower_count, admin, posts[], category</td>
+<td>has many ChannelPosts</td>
+</tr>
+<tr>
+<td>ChannelPost</td>
+<td>body, media, poll, created_at, reactions_count</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Call</td>
+<td>type (voice/video), participants[], duration, started_at, missed (bool)</td>
+<td>connects Users</td>
+</tr>
+<tr>
+<td>Attachment</td>
+<td>type (image/video/document/audio/contact/location), url, filename, size, mime_type, thumbnail</td>
+<td>belongs to Message</td>
+</tr>
+<tr>
+<td>Poll</td>
+<td>question, options[], allows_multiple (bool), votes[]</td>
+<td>belongs to Message (in group)</td>
+</tr>
+<tr>
+<td>Reaction</td>
+<td>emoji, user</td>
+<td>belongs to Message</td>
+</tr>
+<tr>
+<td>Label (Business)</td>
+<td>name, color</td>
+<td>belongs to Conversation (WhatsApp Business only)</td>
+</tr>
+<tr>
+<td>CatalogItem (Business)</td>
+<td>name, price, description, images[], link</td>
+<td>belongs to Business Account</td>
+</tr>
+</tbody></table>
+<h3>Message Types</h3>
+<p><code>text | image | video | voice_note | audio | document | location | live_location | contact | poll | sticker | gif | payment</code></p>
+<h3>Read Receipt States</h3>
+<pre><code>✓     → Sent (reached WhatsApp server)
+✓✓    → Delivered (reached recipient&#39;s device)
+✓✓    → Read (blue ticks, if receipts enabled)
+🕐    → Pending (no connection)
+</code></pre>
+<h3>Encryption</h3>
+<ul>
+<li>All messages end-to-end encrypted (Signal Protocol)</li>
+<li>Group messages: sender keys protocol</li>
+<li>Media: encrypted in transit and at rest</li>
+<li>Backups: optional end-to-end encrypted backup (Google Drive / iCloud)</li>
+</ul>
+<h2>User Flows</h2>
+<h3>Send Message</h3>
+<pre><code>Chats → Select Contact → Type Message → Send (↑) → ✓ Sent → ✓✓ Delivered → ✓✓ Read (blue)
+</code></pre>
+<h3>Voice Call</h3>
+<pre><code>Chat → Voice Call Button (📞) → Ringing → Connected → Speaking → End Call
+</code></pre>
+<h3>Create Group</h3>
+<pre><code>Chats → New Group → Select Members → Next → Group Name + Icon → Create → Send First Message
+</code></pre>
+<h3>Share Media</h3>
+<pre><code>Chat → Attach (📎) → Gallery → Select Photos → Add Caption → Send → Recipient Views/Downloads
+</code></pre>
+<h3>Voice Message</h3>
+<pre><code>Chat → Hold Mic Button → Record → Release to Send (or swipe up to lock, swipe left to cancel)
+</code></pre>
+<h3>Status Updates</h3>
+<pre><code>Updates Tab → My Status → Camera/Text → Capture → Add Caption → Post → Contacts See in Updates → 24h expiry
+</code></pre>
+<h3>Follow Channel</h3>
+<pre><code>Updates → Channels → Discover → Browse → Follow → Channel Posts Appear in Updates
+</code></pre>
+<h3>WhatsApp Web Setup</h3>
+<pre><code>Phone → Settings → Linked Devices → Link Device → Scan QR Code on computer → Web/Desktop Connected
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># WhatsApp Web (web.whatsapp.com)
+/                              → QR Code Login / Chat List
+
+# WhatsApp Deep Links
+wa.me/:phoneNumber              → Open Chat with Phone Number
+wa.me/:phoneNumber?text=:msg    → Pre-filled Message
+chat.whatsapp.com/invite/:code  → Group Invite Link
+whatsapp.com/channel/:channelId → Channel Page
+
+# WhatsApp Business
+wa.me/c/:businessId             → Business Catalog Link
+api.whatsapp.com                → Business API Endpoint
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chat List</td>
+<td>Contact names, group names, message content</td>
+<td>Filter chips: All, Unread, Favorites, Groups</td>
+<td>Recent (default, only option)</td>
+</tr>
+<tr>
+<td>In-Chat Search</td>
+<td>Messages in current conversation</td>
+<td>From (specific person in group), Date, Media type</td>
+<td>Chronological (jump to match)</td>
+</tr>
+<tr>
+<td>Contacts</td>
+<td>Phone contacts with WhatsApp</td>
+<td>—</td>
+<td>Alphabetical</td>
+</tr>
+<tr>
+<td>Channels</td>
+<td>Channel names, descriptions</td>
+<td>Category</td>
+<td>Followers, Activity</td>
+</tr>
+<tr>
+<td>Media</td>
+<td>Photos, videos, documents in chat</td>
+<td>File type, Date</td>
+<td>Chronological</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Single screen, stack navigation</td>
+<td>Chat List → Chat → Info (push navigation)</td>
+</tr>
+<tr>
+<td>WhatsApp Web / Desktop (≥1024px)</td>
+<td>Two-panel: Chat List (left 420px) + Chat View (right fluid)</td>
+<td>Master-detail, always visible</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Two-panel (like desktop)</td>
+<td>Chat list + active chat side by side</td>
+</tr>
+</tbody></table>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Swipe right on message to reply (iOS)</li>
+<li>Long-press for message actions</li>
+<li>Voice message: hold to record, release to send, swipe up to lock (hands-free), swipe left to cancel</li>
+<li>Double-tap to react (emoji)</li>
+<li>Quick media: camera button in chat for instant photo</li>
+<li>Notification inline reply (reply without opening app)</li>
+<li>WhatsApp widget (Android) for quick access</li>
+<li>Biometric lock (Face ID / Touch ID / Fingerprint)</li>
+<li>Data saver mode (reduce auto-download)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Send</th>
+<th>Call</th>
+<th>Group Admin</th>
+<th>Business</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Standard User</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (voice + video)</td>
+<td>If assigned</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Group Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (add/remove members, settings, approve)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Community Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + manage sub-groups, announcement group</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Business Account</td>
+<td>✅</td>
+<td>✅ + quick replies, away messages, labels</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (catalog, profile, short link)</td>
+</tr>
+<tr>
+<td>Business API</td>
+<td>✅</td>
+<td>✅ + templates, bots, CRM integration</td>
+<td>—</td>
+<td>—</td>
+<td>✅ (enterprise features)</td>
+</tr>
+<tr>
+<td>Channel Admin</td>
+<td>✅</td>
+<td>✅ (broadcast to followers)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Privacy Defaults</h3>
+<ul>
+<li>End-to-end encryption: always on, cannot be disabled</li>
+<li>Read receipts: on by default, user can turn off (groups always on)</li>
+<li>Last seen: contacts by default</li>
+<li>Profile photo: contacts by default</li>
+<li>About: contacts by default</li>
+<li>Groups: everyone can add you (configurable)</li>
+<li>Status: my contacts (configurable)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

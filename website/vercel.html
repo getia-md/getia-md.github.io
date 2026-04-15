@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vercel — IA.md | getIA.md</title>
+  <meta name="description" content="Frontend cloud. Deploy, preview, ship web apps. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=64" alt="Vercel" onerror="this.parentElement.textContent='V'">
+      </div>
+      <h1 class="detail-brand-name">Vercel</h1>
+      <p class="detail-brand-tagline">Frontend cloud. Deploy, preview, ship web apps.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/vercel/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://vercel.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/vercel/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Vercel — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Vercel is the frontend cloud platform built around Next.js and the modern web stack. The mental model is <strong>git push to deploy</strong> — every push creates a deployment, every PR gets a preview URL, and production is always a merge away. Vercel differentiates through instant preview deployments, edge functions, serverless compute, analytics, and a developer experience that makes deployment invisible. The dashboard is a visual companion to the CLI and git workflow.</p>
+<h2>Site Map</h2>
+<pre><code>├── Dashboard (Overview)
+│   ├── Recent Projects (cards with status)
+│   ├── Activity Feed (deployments, team activity)
+│   ├── Usage Summary
+│   └── Quick Actions (import, create)
+├── Projects
+│   ├── Project List (grid/list, search, filter)
+│   └── Project Detail
+│       ├── Overview
+│       │   ├── Production Deployment (live URL)
+│       │   ├── Domains
+│       │   ├── Git Integration Status
+│       │   └── Framework Detection
+│       ├── Deployments
+│       │   ├── Deployment List (production, preview, all)
+│       │   ├── Deployment Detail
+│       │   │   ├── Status (building → ready → error)
+│       │   │   ├── Build Logs (streaming)
+│       │   │   ├── Source (commit, branch, PR)
+│       │   │   ├── Preview URL (unique per deployment)
+│       │   │   ├── Functions Tab (serverless + edge)
+│       │   │   ├── Deployment Summary (build time, output)
+│       │   │   ├── Promote to Production
+│       │   │   ├── Instant Rollback
+│       │   │   └── Deployment Comments (visual feedback)
+│       │   └── Filters (branch, status, author)
+│       ├── Analytics
+│       │   ├── Web Vitals (LCP, FID, CLS, TTFB, INP)
+│       │   ├── Audiences (by page, device, country)
+│       │   ├── Real Experience Score
+│       │   └── Custom Events
+│       ├── Speed Insights
+│       │   ├── Performance Score (per route)
+│       │   ├── Route-level Metrics
+│       │   └── Recommendations
+│       ├── Logs
+│       │   ├── Runtime Logs (serverless functions)
+│       │   ├── Build Logs
+│       │   ├── Edge Function Logs
+│       │   ├── Filter by Function / Level / Status
+│       │   └── Live Tail
+│       ├── Storage
+│       │   ├── KV (Redis-compatible)
+│       │   ├── Postgres (serverless SQL)
+│       │   ├── Blob (file storage)
+│       │   └── Edge Config (low-latency key-value)
+│       ├── Domains
+│       │   ├── Domain List
+│       │   ├── Add Domain
+│       │   ├── DNS Configuration
+│       │   └── SSL Certificates (auto-provisioned)
+│       ├── Environment Variables
+│       │   ├── Variable List (production / preview / development)
+│       │   ├── Add Variable
+│       │   ├── Bulk Edit
+│       │   └── Pull to .env.local (CLI)
+│       ├── Integrations (project-level)
+│       │   └── Connected Services
+│       └── Settings
+│           ├── General (name, framework, root directory)
+│           ├── Build &amp; Development
+│           │   ├── Build Command
+│           │   ├── Output Directory
+│           │   ├── Install Command
+│           │   └── Node.js Version
+│           ├── Git
+│           │   ├── Connected Repository
+│           │   ├── Ignored Build Step
+│           │   └── Deploy Hooks
+│           ├── Serverless Functions
+│           │   ├── Region Selection
+│           │   ├── Memory / Duration Limits
+│           │   └── Bundling
+│           ├── Edge Functions
+│           ├── Cron Jobs
+│           ├── Security
+│           │   ├── Deployment Protection (password, Vercel Auth)
+│           │   ├── Trusted IPs
+│           │   └── Attack Challenge Mode
+│           ├── Advanced
+│           │   ├── Build Cache
+│           │   ├── Skew Protection
+│           │   └── Function-Level Security
+│           └── Danger Zone (delete project)
+├── Deployments (Global)
+│   └── All Deployments (across projects, filterable)
+├── Domains (Global)
+│   ├── All Domains
+│   ├── Add Domain
+│   └── Transfer Domain
+├── Storage
+│   ├── KV Databases
+│   ├── Postgres Databases
+│   ├── Blob Stores
+│   └── Edge Config Stores
+├── Integrations
+│   ├── Marketplace (browse integrations)
+│   ├── Installed
+│   └── Integration Console (for developers building integrations)
+├── Monitoring
+│   ├── Checks (deployment checks from integrations)
+│   └── Observability (Logs + Metrics unified view)
+├── Activity
+│   └── Team Activity Log
+├── Usage &amp; Billing
+│   ├── Usage Overview (bandwidth, builds, functions, analytics)
+│   ├── Usage by Project
+│   ├── Plan (Hobby / Pro / Enterprise)
+│   ├── Invoices
+│   ├── Spend Management
+│   └── Notifications (usage thresholds)
+├── Team Settings
+│   ├── General (team name, URL, avatar)
+│   ├── Members
+│   │   ├── Member List (role, status)
+│   │   ├── Invite Members
+│   │   └── Role Management
+│   ├── Billing
+│   ├── Security
+│   │   ├── SSO / SAML
+│   │   ├── 2FA Policy
+│   │   ├── Audit Log
+│   │   └── IP Allowlisting
+│   ├── Tokens (team-scoped)
+│   ├── Git Providers (GitHub, GitLab, Bitbucket)
+│   ├── Integrations (team-level)
+│   └── Advanced (data deletion)
+├── User Settings
+│   ├── General (name, email, username)
+│   ├── Login Connections (GitHub, GitLab, Bitbucket, email)
+│   ├── Tokens
+│   ├── Notifications (email, in-app)
+│   └── Teams
+├── CLI (`vercel` command)
+│   ├── vercel (deploy)
+│   ├── vercel dev (local development)
+│   ├── vercel env pull (download env vars)
+│   ├── vercel link (connect to project)
+│   ├── vercel logs (tail logs)
+│   └── vercel domains (manage)
+└── Docs (vercel.com/docs)
+    ├── Getting Started
+    ├── Frameworks (Next.js, Remix, Astro, etc.)
+    ├── Platform
+    ├── Storage
+    ├── Functions
+    └── CLI Reference
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Nav</strong></td>
+<td>Fixed top bar</td>
+<td>Vercel logo (home), team switcher, search, feedback, notifications, user avatar</td>
+</tr>
+<tr>
+<td><strong>Project Nav</strong></td>
+<td>Horizontal tabs</td>
+<td>Overview, Deployments, Analytics, Speed Insights, Logs, Storage, Domains, Env Vars, Integrations, Settings</td>
+</tr>
+<tr>
+<td><strong>Team Sidebar</strong></td>
+<td>Left sidebar on team pages</td>
+<td>Projects, Deployments, Domains, Storage, Integrations, Activity, Usage, Settings</td>
+</tr>
+<tr>
+<td><strong>Deployment Toolbar</strong></td>
+<td>Within deployment detail</td>
+<td>Status badge, URL, branch, commit, promote/rollback actions</td>
+</tr>
+<tr>
+<td><strong>Command Palette</strong></td>
+<td>⌘K / Ctrl+K</td>
+<td>Search projects, navigate, switch teams, run actions</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Below top bar</td>
+<td>Team &gt; Project &gt; Deployments &gt; Deploy ID</td>
+</tr>
+</tbody></table>
+<h3>Team-Level Navigation</h3>
+<pre><code>[Team Switcher ▾]
+───────────────
+📊 Overview
+📦 Projects
+🚀 Deployments
+🌐 Domains
+💾 Storage
+🔌 Integrations
+📋 Activity
+💳 Usage
+⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Team</td>
+<td>name, slug, plan (hobby/pro/enterprise), members[]</td>
+<td>has many Projects, Domains, Stores</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>name, framework (Next.js/etc.), git_repo, production_url, domains[], settings</td>
+<td>belongs to Team</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>id, url, status (building/ready/error/cancelled), type (production/preview), source (git/CLI/API), branch, commit, build_logs, created_at, meta</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Domain</td>
+<td>name, dns_config, ssl_status, redirect_from</td>
+<td>belongs to Project or Team</td>
+</tr>
+<tr>
+<td>EnvVar</td>
+<td>key, value (encrypted), target (production/preview/development), git_branch</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>name, path, type (serverless/edge), region, runtime, memory, max_duration</td>
+<td>belongs to Deployment</td>
+</tr>
+<tr>
+<td>CronJob</td>
+<td>path, schedule, last_run, next_run</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Store</td>
+<td>type (kv/postgres/blob/edge-config), name, region, connection_string</td>
+<td>belongs to Team, linked to Projects</td>
+</tr>
+<tr>
+<td>WebVital</td>
+<td>metric (LCP/FID/CLS/TTFB/INP), value, page, device, country</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>name, provider, scopes, status</td>
+<td>belongs to Team/Project</td>
+</tr>
+<tr>
+<td>DeployHook</td>
+<td>name, url, branch</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Check</td>
+<td>name, status, integration, deployment</td>
+<td>belongs to Deployment</td>
+</tr>
+</tbody></table>
+<h3>Deployment Status</h3>
+<pre><code>queued → building → ready (live) → superseded (by newer deployment)
+                  → error (build failed)
+                  → cancelled
+ready → promoted (to production)
+ready → rolled back (instant rollback to previous)
+</code></pre>
+<h3>Environment Hierarchy</h3>
+<pre><code>Development (vercel dev) → Preview (PR deployments) → Production (main branch)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Git Push Deploy</h3>
+<pre><code>Push to branch → Vercel detects via GitHub webhook → Build triggered → Build logs stream → Preview URL generated → PR comment with preview link → Team reviews → Merge to main → Production deployment → Instant live
+</code></pre>
+<h3>Preview Deployment Review</h3>
+<pre><code>Open PR → Vercel auto-deploys → Comment on PR with preview URL → Click preview → Visual review → Leave deployment comments (click on page elements) → Approve → Merge → Production deploy
+</code></pre>
+<h3>Rollback Production</h3>
+<pre><code>Deployments tab → Find previous working deployment → [Promote to Production] → Instant switch (no rebuild) → Production URL now serves old deployment → Investigate issue → Fix and redeploy
+</code></pre>
+<h3>Add Custom Domain</h3>
+<pre><code>Domains tab → Add Domain → Enter domain name → Configure DNS (CNAME/A record) → SSL auto-provisioned → Domain active → Assign to project branch
+</code></pre>
+<h3>Debug Serverless Function</h3>
+<pre><code>Logs tab → Filter by function name → Filter by error level → Expand log entry → View request/response → Check function source in deployment → Fix locally → Push → Verify on preview
+</code></pre>
+<h3>Connect Storage</h3>
+<pre><code>Storage tab → Create Store (e.g., KV) → Select region → Connect to project → Env vars auto-added → Use `@vercel/kv` in code → Deploy → Data persists across deployments
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                      → Dashboard (team overview)
+/new                                   → Import project
+/:team                                 → Team overview
+/:team/:project                        → Project overview
+/:team/:project/deployments            → Deployment list
+/:team/:project/:deploymentId          → Deployment detail
+/:team/:project/:deploymentId/logs     → Build logs
+/:team/:project/:deploymentId/functions → Functions
+/:team/:project/analytics              → Web Analytics
+/:team/:project/speed-insights         → Speed Insights
+/:team/:project/logs                   → Runtime logs
+/:team/:project/stores                 → Storage
+/:team/:project/stores/:storeId        → Store detail
+/:team/:project/domains                → Domains
+/:team/:project/settings               → Project settings
+/:team/:project/settings/environment-variables → Env vars
+/:team/:project/settings/git           → Git settings
+/:team/:project/settings/functions     → Function settings
+/:team/:project/integrations           → Integrations
+/:team/~/domains                       → Team domains
+/:team/~/stores                        → Team storage
+/:team/~/integrations                  → Team integrations
+/:team/~/usage                         → Usage
+/:team/~/settings                      → Team settings
+/:team/~/settings/members              → Team members
+/:team/~/settings/billing              → Billing
+/:team/~/settings/security             → Security &amp; audit
+/:team/~/activity                      → Activity log
+/account                               → User settings
+/account/tokens                        → User tokens
+/docs                                  → Documentation
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Command Palette (⌘K)</td>
+<td>Projects, pages, actions, teams, docs</td>
+<td>—</td>
+<td>Relevance, Recent</td>
+</tr>
+<tr>
+<td>Deployments</td>
+<td>Commit message, URL, branch</td>
+<td>Status (ready/error/building), Branch, Environment (production/preview), Author</td>
+<td>Date (newest), State</td>
+</tr>
+<tr>
+<td>Logs</td>
+<td>Log message, function name</td>
+<td>Level (info/warn/error), Function, Status Code, Time Range</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>Domains</td>
+<td>Domain name</td>
+<td>Status, Project</td>
+<td>Name, Created</td>
+</tr>
+<tr>
+<td>Projects</td>
+<td>Project name</td>
+<td>Framework, Status</td>
+<td>Name, Updated, Created</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Navigation</th>
+<th>Content</th>
+<th>Logs</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1280px)</td>
+<td>Top nav + project tabs</td>
+<td>Full width, deployment cards</td>
+<td>Full-height log viewer</td>
+</tr>
+<tr>
+<td>Tablet (768-1279px)</td>
+<td>Scrollable tabs</td>
+<td>Full width</td>
+<td>Stacked</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger menu</td>
+<td>Stacked cards</td>
+<td>Simplified log viewer</td>
+</tr>
+</tbody></table>
+<h3>Vercel-Specific UX</h3>
+<ul>
+<li>Minimal, monochromatic design (black/white with accent colors for status)</li>
+<li>Every deployment gets a unique, permanent URL (project-hash.vercel.app)</li>
+<li>PR comments with preview URLs auto-posted</li>
+<li>Deployment comments: click anywhere on preview to leave visual feedback</li>
+<li>Instant rollback: promote any previous deployment without rebuilding</li>
+<li>Real-time build log streaming</li>
+<li>Edge function logs with geographic region indicator</li>
+<li>Framework-aware UI (detects Next.js, Remix, Astro, etc.)</li>
+<li><code>vercel</code> CLI mirrors dashboard actions (deploy, env, logs, domains)</li>
+<li>Dark mode default</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View</th>
+<th>Deploy</th>
+<th>Logs</th>
+<th>Domains</th>
+<th>Env Vars</th>
+<th>Storage</th>
+<th>Billing</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>✅</td>
+<td>All</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD (all)</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>Manage</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>✅</td>
+<td>All</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD (preview/dev)</td>
+<td>CRUD</td>
+<td>View</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>✅</td>
+<td>Preview only</td>
+<td>✅</td>
+<td>View</td>
+<td>Read (masked)</td>
+<td>Read</td>
+<td>—</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Viewer</td>
+<td>✅</td>
+<td>—</td>
+<td>View</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>View</td>
+</tr>
+</tbody></table>
+<h3>Security Features</h3>
+<ul>
+<li>Deployment Protection (password, Vercel Authentication, Trusted IPs)</li>
+<li>Skew Protection (ensures consistent client/server versions during rollout)</li>
+<li>Attack Challenge Mode (bot protection)</li>
+<li>SSO/SAML (Enterprise)</li>
+<li>Audit log (all team actions)</li>
+<li>Env var encryption at rest</li>
+<li>Git provider OAuth (GitHub, GitLab, Bitbucket)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

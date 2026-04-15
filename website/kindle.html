@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kindle — IA.md | getIA.md</title>
+  <meta name="description" content="E-reading. Library, highlights, synced progress. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=amazon.com&sz=64" alt="Kindle" onerror="this.parentElement.textContent='K'">
+      </div>
+      <h1 class="detail-brand-name">Kindle</h1>
+      <p class="detail-brand-tagline">E-reading. Library, highlights, synced progress.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/kindle/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://read.amazon.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/kindle/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Kindle — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Amazon&#39;s digital reading ecosystem spanning dedicated e-ink hardware (Kindle devices), mobile/desktop apps, and the world&#39;s largest ebook store. Kindle&#39;s mental model is a <strong>personal library synced everywhere</strong> — buy once, read on any device, with progress, highlights, and notes seamlessly synchronized via Whispersync. Key differentiators: e-ink optimized UI, Kindle Unlimited (subscription all-you-can-read), Whispersync (cross-device progress + audio/text sync with Audible), X-Ray (entity indexing within a book), Word Wise (inline vocabulary help), Send to Kindle, and the massive Amazon Kindle Store catalog.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Continue Reading (current book with progress %)
+│   ├── Recommended for You
+│   ├── New Releases
+│   ├── Bestsellers
+│   ├── Kindle Unlimited Picks
+│   ├── Prime Reading (for Prime members)
+│   ├── Reading Goals / Insights
+│   ├── Kindle Deals (daily deals)
+│   └── Kindle Vella (serialized stories)
+├── Kindle Store (integrated with Amazon)
+│   ├── Featured / Banners
+│   ├── Categories / Genres
+│   │   ├── Fiction (Mystery, Romance, Sci-Fi, Fantasy, Literary, Horror...)
+│   │   ├── Non-Fiction (Business, Self-Help, Science, History, Biography...)
+│   │   └── Subcategories
+│   ├── Bestsellers (Kindle-specific rankings)
+│   ├── New Releases
+│   ├── Kindle Daily Deals
+│   ├── Free Kindle Books
+│   ├── Kindle Unlimited Catalog
+│   ├── Prime Reading Catalog
+│   ├── Pre-Orders
+│   ├── Kindle Singles (short reads)
+│   ├── Kindle Vella (serial stories with tokens)
+│   └── Charts (by genre, overall)
+├── Book Detail (Amazon product page + Kindle-specific)
+│   ├── Cover, Title, Author, Rating (stars)
+│   ├── Price / Buy Now / Read for Free (KU/Prime)
+│   ├── Send Sample (free first ~10%)
+│   ├── Format Selector (Kindle, Hardcover, Paperback, Audiobook)
+│   ├── Synopsis / Description
+│   ├── Book Info (pages, file size, publisher, ISBN, language, text-to-speech, X-Ray enabled, Word Wise enabled)
+│   ├── Kindle MatchBook (buy print → cheap ebook upgrade)
+│   ├── Whispersync for Voice (pair with Audible narration)
+│   ├── Ratings &amp; Reviews
+│   │   ├── Average Rating, Rating Distribution
+│   │   ├── Customer Reviews (filterable by star, verified purchase)
+│   │   └── Top Reviews
+│   ├── Popular Highlights (most highlighted passages by readers)
+│   ├── Customers Also Bought
+│   ├── Series Info (if applicable, with reading order)
+│   ├── Author Page (bio, all books, follow)
+│   └── Share / Gift
+├── Reader (Kindle App / Device)
+│   ├── Reading View
+│   │   ├── Page Content
+│   │   ├── Page Turn (tap edges / swipe)
+│   │   ├── Progress: Page X of Y, Location, % Complete, &quot;X min left in chapter&quot;
+│   │   └── Clock (top of screen)
+│   ├── Reader Controls (tap center or swipe from top)
+│   │   ├── Table of Contents (go to chapter)
+│   │   ├── Bookmarks (tap top-right corner)
+│   │   ├── Notes &amp; Highlights (list, filter, export)
+│   │   ├── Search in Book (full text)
+│   │   ├── X-Ray
+│   │   │   ├── People (character list with descriptions, appearances)
+│   │   │   ├── Terms (key concepts, places, things)
+│   │   │   ├── Images (all images in book)
+│   │   │   └── Notable Clips / Passages
+│   │   ├── Display Settings
+│   │   │   ├── Font Family (Bookerly, OpenDyslexic, etc.)
+│   │   │   ├── Font Size (adjustable slider)
+│   │   │   ├── Bold Slider
+│   │   │   ├── Line Spacing
+│   │   │   ├── Margins
+│   │   │   ├── Orientation (portrait / landscape)
+│   │   │   ├── Theme (White, Sepia, Green, Dark / Black)
+│   │   │   └── Page Layout (continuous scroll / page turn)
+│   │   ├── Word Wise (inline definitions for hard words)
+│   │   ├── Go to Page / Location / Bookmark
+│   │   └── About This Book (synopsis, X-Ray, reading time)
+│   ├── Text Interaction (long-press word)
+│   │   ├── Dictionary Lookup (built-in)
+│   │   ├── Wikipedia Preview
+│   │   ├── Translate
+│   │   ├── Highlight (Yellow, Blue, Pink, Orange)
+│   │   ├── Add Note to Highlight
+│   │   ├── Copy
+│   │   ├── Search in Book
+│   │   └── Share Quote (social, email)
+│   └── Whispersync for Voice
+│       ├── Switch to Audible Narration
+│       ├── Immersion Reading (text + audio synced, words highlighted)
+│       └── Auto-sync position between reading and listening
+├── Library
+│   ├── All Books (covers grid or list)
+│   ├── Currently Reading
+│   ├── Collections (user-created shelves)
+│   ├── Kindle Unlimited Borrowed Books
+│   ├── Samples
+│   ├── Audiobooks (Audible-linked)
+│   ├── Documents (Send to Kindle)
+│   ├── Downloaded / On Device
+│   ├── Filter: Books / Docs / Samples / Kindle Unlimited
+│   ├── Sort: Recent / Title / Author / Collection
+│   └── View: Grid (covers) / List
+├── Notes &amp; Highlights
+│   ├── All Highlights (across all books)
+│   ├── Per-Book View
+│   ├── Export Notes (email, notebook)
+│   ├── Popular Highlights (community)
+│   ├── Flashcards (from highlights, for study)
+│   └── Kindle Notebook (read.amazon.com/notebook)
+├── Author Page
+│   ├── Bio, Photo
+│   ├── Bibliography (all Kindle books)
+│   ├── Follow Author (new release notifications)
+│   └── Author Blog (if linked)
+├── Series Page
+│   ├── Series Title, Total Books
+│   ├── Books in Reading Order
+│   └── Reading Progress per Book
+├── Reading Insights / Stats
+│   ├── Books Finished
+│   ├── Days Streaked
+│   ├── Total Reading Time
+│   ├── Pages Read
+│   ├── Reading Goal (annual)
+│   ├── Badges / Awards
+│   └── Monthly / Yearly Summary
+├── Kindle Unlimited
+│   ├── Unlimited Catalog Browse
+│   ├── Borrowed Books (max 20 at a time)
+│   ├── Return Book (to borrow new one)
+│   └── Subscription Management
+├── Send to Kindle
+│   ├── Email-to-Kindle (unique @kindle.com address)
+│   ├── Browser Extension
+│   ├── Desktop App
+│   └── Supported Formats (EPUB, PDF, DOC, MOBI)
+├── Manage Devices &amp; Content (Amazon web)
+│   ├── Your Content (all purchased/borrowed)
+│   ├── Your Devices (registered Kindles, apps)
+│   ├── Deliver to Device
+│   ├── Return Kindle Unlimited Books
+│   ├── Preferences (personal documents, annotations backup)
+│   └── Deregister Device
+├── Settings
+│   ├── Account (Amazon account)
+│   ├── Kindle Unlimited Subscription
+│   ├── Reader Defaults (font, theme, margins)
+│   ├── Download Settings (Wi-Fi only)
+│   ├── Notifications (new releases, deals, reading reminders)
+│   ├── Vocabulary Builder (words looked up, quiz)
+│   ├── Parental Controls / FreeTime (kids)
+│   └── Privacy (annotation backup, usage data)
+└── Kindle Kids / Amazon Kids+
+    ├── Age-appropriate catalog
+    ├── Reading goals (achievement system)
+    ├── Parent dashboard
+    └── Vocabulary Builder
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>Mobile app: 4-5 tabs</td>
+<td>Home, Library, Store, More</td>
+</tr>
+<tr>
+<td><strong>Top Bar (App)</strong></td>
+<td>Contextual</td>
+<td>Home: Search + Settings; Library: Sort + View toggle; Reader: hidden</td>
+</tr>
+<tr>
+<td><strong>Reader Controls</strong></td>
+<td>Tap center to toggle</td>
+<td>Top/bottom toolbar overlay, auto-hide after 3s</td>
+</tr>
+<tr>
+<td><strong>E-Ink Navigation</strong></td>
+<td>Minimal, touch-based</td>
+<td>Tap left/right edge for page turn, top for menu, bottom for progress</td>
+</tr>
+<tr>
+<td><strong>Library Grid/List</strong></td>
+<td>Toggle view + sort</td>
+<td>Switch between cover grid and list view with sort options</td>
+</tr>
+<tr>
+<td><strong>Store</strong></td>
+<td>Integrated Amazon browsing</td>
+<td>Category tabs, search, deals, bestsellers</td>
+</tr>
+<tr>
+<td><strong>Page Turn</strong></td>
+<td>Tap edge or swipe</td>
+<td>Right/left to turn pages; configurable direction</td>
+</tr>
+</tbody></table>
+<h3>E-Ink Home Screen (Kindle Device)</h3>
+<pre><code>[Library]     [Home]     [Store]
+─────────────────────────────────
+Continue Reading
+  📖 Book Title — 63% ●●●●●●○○○○
+
+Recommended for You
+  [cover] [cover] [cover] [cover]
+
+Reading Insights
+  🔥 5-day streak  📚 12 books this year
+
+Your Library
+  [cover] [cover] [cover] [cover]
+</code></pre>
+<h3>Reader Controls (overlay)</h3>
+<pre><code>[← Back]  [Go To]  [X-Ray]  [Aa]  [⋮ More]
+─────────────────────────────────────────────
+
+            [Page Content]
+
+─────────────────────────────────────────────
+Location 1234 · 63% · 47 min left in chapter
+────────────●───────────────
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Book</td>
+<td>title, subtitle, asin, cover_image, description, page_count, file_size, publisher, publish_date, language, price, format (ebook/audiobook), kindle_unlimited (bool), prime_reading (bool), x_ray_enabled (bool), word_wise_enabled (bool), text_to_speech (bool)</td>
+<td>belongs to Author(s), Genre(s), Series</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>name, bio, photo, amazon_author_page, follow_count</td>
+<td>has many Books</td>
+</tr>
+<tr>
+<td>Series</td>
+<td>name, description, total_books</td>
+<td>has many Books (ordered)</td>
+</tr>
+<tr>
+<td>Genre</td>
+<td>name, slug, parent_genre</td>
+<td>has many Books, Subgenres</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), title, body, helpful_count, verified_purchase (bool), created_at</td>
+<td>belongs to Book and User</td>
+</tr>
+<tr>
+<td>Highlight</td>
+<td>text, color (yellow/blue/pink/orange), location_start, location_end, note, created_at, public (bool)</td>
+<td>belongs to Book and User</td>
+</tr>
+<tr>
+<td>Bookmark</td>
+<td>location, page, created_at</td>
+<td>belongs to Book and User</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>text, location, created_at</td>
+<td>belongs to Highlight or standalone in Book</td>
+</tr>
+<tr>
+<td>ReadingProgress</td>
+<td>book, location, percentage, last_read_at, device, status (reading/finished)</td>
+<td>belongs to User, synced via Whispersync</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, books[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Sample</td>
+<td>book, content (first ~10%), downloaded_at</td>
+<td>belongs to Book and User</td>
+</tr>
+<tr>
+<td>Purchase</td>
+<td>book, price, purchased_at, order_id</td>
+<td>belongs to User (Amazon account)</td>
+</tr>
+<tr>
+<td>KindleUnlimitedBorrow</td>
+<td>book, borrowed_at, returned_at</td>
+<td>belongs to User (max 20 concurrent)</td>
+</tr>
+<tr>
+<td>Device</td>
+<td>name, type (kindle_paperwhite/kindle_oasis/kindle_scribe/app_ios/app_android/app_desktop), registered_at, last_synced</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>VocabWord</td>
+<td>word, stem, usage (sentence from book), book, looked_up_at, mastery_level</td>
+<td>belongs to User (Vocabulary Builder)</td>
+</tr>
+<tr>
+<td>PopularHighlight</td>
+<td>text, book, highlight_count</td>
+<td>aggregated across all users</td>
+</tr>
+<tr>
+<td>XRayEntity</td>
+<td>name, type (person/term/place), description, occurrences[] (location list)</td>
+<td>belongs to Book</td>
+</tr>
+</tbody></table>
+<h3>Content Formats</h3>
+<p><code>EPUB | MOBI (legacy) | AZW3 (Kindle format) | PDF | KFX (newest format) | Audiobook (Audible)</code></p>
+<h3>Reading Status</h3>
+<p><code>sample_downloaded → purchased → downloading → reading → finished | abandoned</code></p>
+<h2>User Flows</h2>
+<h3>Browse and Purchase</h3>
+<pre><code>Home → Recommended → Tap Book → Read Synopsis + Reviews → Buy with 1-Click → Download → Open → Read
+</code></pre>
+<h3>Send Sample First</h3>
+<pre><code>Store → Book Detail → Send Sample → Library → Read Sample (10%) → &quot;Keep Reading&quot; → Purchase → Full Book
+</code></pre>
+<h3>Continue Reading (Cross-Device)</h3>
+<pre><code>Home → &quot;Continue Reading&quot; → Tap Book → Resume at Last Position → Whispersync confirms → Read → Close → Open on Phone → Same Position
+</code></pre>
+<h3>Highlight and Annotate</h3>
+<pre><code>Reader → Long-press Word → Drag Selection → Highlight (Yellow) → Add Note → Saved to Notebook → Export Notes
+</code></pre>
+<h3>X-Ray Character Tracking</h3>
+<pre><code>Reader → X-Ray → People Tab → See All Characters → Tap Character → Description + Every Appearance in Book → Tap to Jump
+</code></pre>
+<h3>Vocabulary Builder</h3>
+<pre><code>Reader → Long-press Unknown Word → Dictionary Definition → Word Saved to Vocabulary Builder → Quiz Later → Mark Mastered
+</code></pre>
+<h3>Kindle Unlimited Browsing</h3>
+<pre><code>Store → Kindle Unlimited → Browse Catalog → Read for Free → Download → Finish → Return → Borrow Next
+</code></pre>
+<h3>Whispersync with Audible</h3>
+<pre><code>Reading Ebook → Switch to Audible (headphones icon) → Audiobook Continues from Same Spot → Listen → Switch Back → Text Resumes
+</code></pre>
+<h3>Send Document to Kindle</h3>
+<pre><code>Email PDF/EPUB to @kindle.com → Appears in Library → Download → Read on Kindle Device/App
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># Amazon / Kindle Store (amazon.com)
+/kindle-dbs/hz/bookshelf                → Kindle Cloud Reader (web)
+/dp/:asin                               → Book Detail (Amazon product page)
+/gp/product/:asin                       → Book Detail (alt)
+/kindle-store                            → Kindle Store Home
+/s?k=:query&amp;i=digital-text              → Search Kindle Books
+/kindle-dbs/hz/subscribe/ku             → Kindle Unlimited Landing
+/kindle-dbs/entity/author/:id           → Author Page
+/best-sellers-books-Amazon/zgbs/digital-text → Kindle Bestsellers
+/gp/new-releases/digital-text            → New Releases
+
+# Kindle Notebook (read.amazon.com)
+/notebook                               → All Notes &amp; Highlights
+/notebook?asin=:asin                    → Notes for Specific Book
+
+# Manage Content (amazon.com)
+/hz/mycd/digital-console/contentlist    → Your Content
+/hz/mycd/digital-console/devicelist     → Your Devices
+/hz/mycd/digital-console/alldevices     → All Devices
+
+# Kindle App (deep links)
+kindle://book?asin=:asin               → Open Book in Kindle App
+kindle://home                           → Kindle Home
+kindle://library                        → Kindle Library
+kindle://store                          → Kindle Store
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kindle Store</td>
+<td>Title, Author, ISBN, Description</td>
+<td>Genre, Price Range (free/under $5/etc.), Rating, Format (Kindle/Audible), Language, Kindle Unlimited, Prime Reading</td>
+<td>Relevance, Bestselling, Price (low/high), Publication Date, Rating</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>Title, Author</td>
+<td>Collection, Status (reading/finished), Format, Downloaded, Source (purchased/KU/Prime/sample/document)</td>
+<td>Recent, Title, Author, Date Added</td>
+</tr>
+<tr>
+<td>In-Book Search</td>
+<td>Full text of current book</td>
+<td>—</td>
+<td>Position (location order)</td>
+</tr>
+<tr>
+<td>Notes &amp; Highlights</td>
+<td>Highlight text, Note text</td>
+<td>Book, Highlight Color, Date</td>
+<td>Date, Book, Position</td>
+</tr>
+<tr>
+<td>Vocabulary Builder</td>
+<td>Word, Usage</td>
+<td>Book, Mastery Level</td>
+<td>Recently Looked Up, Alphabetical</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Nav</th>
+<th>Library</th>
+<th>Reader</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop App (≥1024px)</td>
+<td>Left sidebar (Library, Store, Reading Now)</td>
+<td>Grid (5-6 columns of covers)</td>
+<td>Center column, paginated</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Bottom tab bar</td>
+<td>Grid (3-4 columns)</td>
+<td>Full width, paginated</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tab bar</td>
+<td>Grid (2-3 columns) or list</td>
+<td>Full screen, tap/swipe to turn</td>
+</tr>
+<tr>
+<td>E-Ink Device (Kindle)</td>
+<td>Minimal touch nav</td>
+<td>List or grid (covers, grayscale)</td>
+<td>Full screen, e-ink optimized, no animation</td>
+</tr>
+</tbody></table>
+<h3>E-Ink Specific Adaptations</h3>
+<ul>
+<li>No animations (e-ink refresh latency)</li>
+<li>High contrast text rendering</li>
+<li>Dark mode (inverted, available on newer Kindles)</li>
+<li>Warm light adjustment (Kindle Paperwhite Signature)</li>
+<li>Physical page turn buttons (Kindle Oasis)</li>
+<li>Pen input for notes (Kindle Scribe)</li>
+<li>Battery life measured in weeks (not hours)</li>
+</ul>
+<h3>Offline-First Design</h3>
+<ul>
+<li>Books fully downloaded for offline reading</li>
+<li>Reading progress queued for sync when online</li>
+<li>Highlights/notes saved locally, synced on connection</li>
+<li>Library browsable offline (covers cached)</li>
+<li>Whispersync reconciles position across devices</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse Store</th>
+<th>Read</th>
+<th>Highlight/Note</th>
+<th>Review</th>
+<th>Purchase</th>
+<th>KU</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>✅</td>
+<td>Samples only (web)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Amazon Account (Free)</td>
+<td>✅</td>
+<td>Purchased + free books + samples</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (1-Click)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Prime Member</td>
+<td>✅</td>
+<td>+ Prime Reading catalog (rotating selection)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Kindle Unlimited ($11.99/mo)</td>
+<td>✅</td>
+<td>+ KU catalog (~4M titles, borrow up to 20)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Family Library</td>
+<td>✅</td>
+<td>Shared purchased books (2 adults, up to 4 children)</td>
+<td>✅</td>
+<td>✅</td>
+<td>Shared payment</td>
+<td>Shared</td>
+</tr>
+<tr>
+<td>Author (KDP)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>— (own books)</td>
+<td>✅</td>
+<td>+ Royalty dashboard, sales reports</td>
+</tr>
+<tr>
+<td>Amazon Kids+</td>
+<td>Filtered catalog</td>
+<td>Age-appropriate only</td>
+<td>Limited</td>
+<td>—</td>
+<td>Parent approval</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Content Protection</h3>
+<ul>
+<li>DRM on purchased content (Kindle format, device-locked)</li>
+<li>Device limits: up to 6 registered devices per account</li>
+<li>Family Library: share purchases between 2 adults</li>
+<li>Lending: share a book with one person for 14 days</li>
+<li>Highlight/note export: personal use (Kindle Notebook, Readwise integration)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

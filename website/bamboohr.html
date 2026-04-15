@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BambooHR — IA.md | getIA.md</title>
+  <meta name="description" content="HR platform. Employee directory, time-off, onboarding. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=bamboohr.com&sz=64" alt="BambooHR" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">BambooHR</h1>
+      <p class="detail-brand-tagline">HR platform. Employee directory, time-off, onboarding.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/bamboohr/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://bamboohr.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/bamboohr/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>BambooHR — Information Architecture</h1>
+<h2>Overview</h2>
+<p>BambooHR is an HR platform designed for small and medium businesses (SMBs) that want a clean, human-centered alternative to enterprise HR systems. The mental model is <strong>people, not paperwork</strong> — a friendly employee database at the core, with hiring, onboarding, time tracking, performance management, and reporting built around it. The signature design: a warm, approachable interface (green brand color, friendly illustrations) that HR admins, managers, and employees all enjoy using. BambooHR is known for its employee self-service and eNPS (Employee Net Promoter Score).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Dashboard
+│   ├── Who&#39;s Out Today (calendar strip)
+│   ├── Upcoming Birthdays &amp; Anniversaries
+│   ├── Pending Approvals (time-off, hiring)
+│   ├── New Hires (this month)
+│   ├── Company Announcements
+│   ├── Open Positions
+│   ├── eNPS Summary
+│   └── Quick Links (Add Employee, Request Time Off)
+├── People
+│   ├── Employee Directory
+│   │   ├── Photo Grid or List View
+│   │   ├── Search &amp; Filter
+│   │   └── Export
+│   ├── Org Chart (visual hierarchy)
+│   ├── Employee Profile
+│   │   ├── Personal Tab
+│   │   │   ├── Photo, Name, Pronouns
+│   │   │   ├── Contact Info
+│   │   │   ├── Emergency Contacts
+│   │   │   └── Personal Details
+│   │   ├── Job Tab
+│   │   │   ├── Title, Department, Division
+│   │   │   ├── Manager
+│   │   │   ├── Location
+│   │   │   ├── Employment Status (FT/PT/Contractor)
+│   │   │   ├── Start Date
+│   │   │   └── Job History (promotions, transfers)
+│   │   ├── Compensation Tab
+│   │   │   ├── Current Salary
+│   │   │   ├── Compensation History
+│   │   │   ├── Bonus
+│   │   │   └── Equity
+│   │   ├── Time Off Tab
+│   │   │   ├── Balances (PTO, Sick, Personal)
+│   │   │   ├── Requests
+│   │   │   └── History
+│   │   ├── Documents Tab
+│   │   │   ├── Uploaded Documents
+│   │   │   ├── E-Signatures
+│   │   │   └── Tax Forms (W-4, I-9)
+│   │   ├── Benefits Tab
+│   │   │   ├── Enrolled Plans
+│   │   │   ├── Dependents
+│   │   │   └── Open Enrollment
+│   │   ├── Training Tab
+│   │   │   ├── Completed Training
+│   │   │   └── Required Training
+│   │   ├── Assets Tab
+│   │   │   ├── Assigned Equipment (laptop, phone)
+│   │   │   └── Return on Offboarding
+│   │   └── Notes Tab (HR private notes)
+│   └── Add Employee
+├── Hiring (ATS)
+│   ├── Job Openings
+│   │   ├── Active Jobs
+│   │   ├── Create Job Posting
+│   │   │   ├── Title, Department, Location
+│   │   │   ├── Description (rich text)
+│   │   │   ├── Hiring Lead, Team
+│   │   │   └── Publish (career page, job boards)
+│   │   └── Job Board Integrations (Indeed, LinkedIn, etc.)
+│   ├── Applicant Tracking
+│   │   ├── Candidates (by job)
+│   │   ├── Pipeline View (Kanban)
+│   │   │   ├── New → Phone Screen → Interview → Offer → Hired
+│   │   │   └── Rejected (at any stage)
+│   │   ├── Candidate Profile
+│   │   │   ├── Resume
+│   │   │   ├── Application Answers
+│   │   │   ├── Interview Notes
+│   │   │   ├── Scorecards
+│   │   │   └── Communication Log (emails)
+│   │   └── Schedule Interview
+│   ├── Offer Letter Templates
+│   ├── Career Page (branded, embeddable)
+│   └── Hiring Reports
+├── Onboarding
+│   ├── Onboarding Templates (checklists)
+│   ├── Pre-Boarding (before Day 1)
+│   │   ├── Welcome Email
+│   │   ├── New Hire Packet (e-signature)
+│   │   ├── Tax Forms
+│   │   ├── Direct Deposit
+│   │   └── Equipment Request
+│   ├── Day 1 Checklist
+│   ├── Onboarding Tasks (assignable to HR, manager, IT)
+│   └── Progress Tracking
+├── Time Off
+│   ├── Request Time Off
+│   │   ├── Type (PTO, Sick, Personal, Volunteer, etc.)
+│   │   ├── Dates
+│   │   ├── Notes
+│   │   └── Submit
+│   ├── My Requests
+│   ├── Team Calendar (who&#39;s out when)
+│   ├── Approvals (manager)
+│   ├── Balances
+│   └── Policies
+│       ├── Accrual Rules
+│       ├── Carryover Limits
+│       └── Blackout Dates
+├── Time Tracking
+│   ├── Clock In / Clock Out
+│   ├── Timesheet (weekly)
+│   ├── Approve Timesheets (manager)
+│   ├── Overtime Tracking
+│   └── Projects / Tasks (time allocation)
+├── Performance
+│   ├── Performance Reviews
+│   │   ├── Review Cycles (annual, quarterly)
+│   │   ├── Self-Assessment
+│   │   ├── Manager Assessment
+│   │   ├── Peer Feedback (360)
+│   │   ├── Competency Ratings
+│   │   └── Review Summary
+│   ├── Goals
+│   │   ├── Set Goals (employee + manager)
+│   │   ├── Track Progress
+│   │   ├── Align with Company Goals
+│   │   └── Goal History
+│   └── Employee Satisfaction
+│       ├── eNPS Survey (automated)
+│       ├── Custom Surveys
+│       ├── Results Dashboard
+│       └── Trends Over Time
+├── Benefits Administration
+│   ├── Plan Setup (medical, dental, vision, life, 401k)
+│   ├── Open Enrollment
+│   ├── Employee Elections
+│   ├── Carrier Connections
+│   └── Benefits Reports
+├── Reports &amp; Analytics
+│   ├── Standard Reports
+│   │   ├── Headcount
+│   │   ├── Turnover
+│   │   ├── Time Off Usage
+│   │   ├── Compensation
+│   │   ├── EEO / Compliance
+│   │   └── New Hires &amp; Terminations
+│   ├── Custom Reports (drag-and-drop builder)
+│   ├── Scheduled Reports (email delivery)
+│   └── Benchmarking
+├── Settings
+│   ├── Company Info
+│   ├── Departments &amp; Locations
+│   ├── Access Levels (roles)
+│   ├── Custom Fields
+│   ├── Time Off Policies
+│   ├── Benefit Plans
+│   ├── Email Templates
+│   ├── Integrations (payroll, Slack, etc.)
+│   └── Branding (logo, colors for career page)
+└── Employee Self-Service
+    ├── My Profile (edit personal info)
+    ├── My Time Off (request + balances)
+    ├── My Timesheet
+    ├── My Pay Stubs
+    ├── My Benefits
+    ├── My Goals
+    ├── My Training
+    ├── Company Directory
+    └── Company Docs (handbook, policies)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Nav</strong></td>
+<td>Fixed header</td>
+<td>Home, People, Hiring, Time Off, Performance, Reports</td>
+</tr>
+<tr>
+<td><strong>Employee Profile Tabs</strong></td>
+<td>Horizontal tabs</td>
+<td>Personal / Job / Compensation / Time Off / Documents / Benefits / Training</td>
+</tr>
+<tr>
+<td><strong>Role-Based Nav</strong></td>
+<td>Different views per role</td>
+<td>HR: full nav. Manager: team + approvals. Employee: self-service</td>
+</tr>
+<tr>
+<td><strong>Quick Actions</strong></td>
+<td>Header icons</td>
+<td>Add Employee, Clock In, Request Time Off</td>
+</tr>
+<tr>
+<td><strong>Org Chart</strong></td>
+<td>Interactive tree</td>
+<td>Click to expand/collapse, click profile to open</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Employee</td>
+<td>name, email, phone, title, department, manager, location, start_date, status (active/inactive/onleave), photo, pronouns</td>
+<td>has many TimeOffRequests, Reviews, Documents, Benefits</td>
+</tr>
+<tr>
+<td>Department</td>
+<td>name, head, parent</td>
+<td>has many Employees</td>
+</tr>
+<tr>
+<td>TimeOffRequest</td>
+<td>type, start_date, end_date, hours, status, approver, notes</td>
+<td>belongs to Employee</td>
+</tr>
+<tr>
+<td>TimeOffPolicy</td>
+<td>type, accrual_rate, carryover_limit, blackout_dates</td>
+<td>belongs to Company</td>
+</tr>
+<tr>
+<td>PerformanceReview</td>
+<td>cycle, reviewer, reviewee, self_assessment, manager_assessment, rating, goals[], competencies[]</td>
+<td>belongs to Employee</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>title, description, status (on_track/at_risk/completed), due_date, aligned_to</td>
+<td>belongs to Employee</td>
+</tr>
+<tr>
+<td>JobOpening</td>
+<td>title, department, location, status (open/closed), applicants_count, pipeline</td>
+<td>has Candidates</td>
+</tr>
+<tr>
+<td>Candidate</td>
+<td>name, email, resume, stage, scorecard, interview_notes</td>
+<td>belongs to JobOpening</td>
+</tr>
+<tr>
+<td>OnboardingChecklist</td>
+<td>template, employee, tasks[], progress</td>
+<td>belongs to Employee</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>name, type, file, uploaded_by, signed, expires</td>
+<td>belongs to Employee</td>
+</tr>
+<tr>
+<td>eNPSSurvey</td>
+<td>score (-100 to +100), response_rate, period</td>
+<td>belongs to Company</td>
+</tr>
+<tr>
+<td>BenefitPlan</td>
+<td>type (medical/dental/vision/life/401k), provider, tiers[]</td>
+<td>has many Enrollments</td>
+</tr>
+</tbody></table>
+<h3>Time Off Status</h3>
+<pre><code>requested → approved / denied
+approved → taken → completed
+</code></pre>
+<h2>User Flows</h2>
+<h3>HR: Hire to Onboard</h3>
+<pre><code>Hiring → Create Job → Publish → Receive Applications → Screen (Kanban) → Interview → Scorecard → Offer → Accept → Convert to Employee → Onboarding Checklist Auto-Created → Pre-Boarding Packet Sent → Day 1
+</code></pre>
+<h3>Employee: Request PTO</h3>
+<pre><code>Time Off → Request → Select PTO → Pick Dates → &quot;3 days, 21 hours remaining after&quot; → Submit → Manager Gets Notification → Approve → Calendar Updated
+</code></pre>
+<h3>Manager: Performance Review</h3>
+<pre><code>Performance → Current Cycle → Select Employee → Review Self-Assessment → Write Manager Assessment → Rate Competencies → Discuss Goals → Sign Off → Review Complete
+</code></pre>
+<h3>HR: Run eNPS Survey</h3>
+<pre><code>Performance → Satisfaction → eNPS → Send Survey → Employees Complete (anonymous) → Results Dashboard → eNPS Score: 42 → Trends vs Last Quarter
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Dashboard
+/employees                     → Employee Directory
+/employees/org-chart           → Org Chart
+/employees/:id                 → Employee Profile
+/employees/:id/job             → Job Tab
+/employees/:id/compensation    → Compensation Tab
+/employees/:id/time-off        → Time Off Tab
+/employees/:id/documents       → Documents Tab
+/employees/new                 → Add Employee
+/hiring                        → Job Openings
+/hiring/:id                    → Job Detail + Pipeline
+/hiring/:id/candidates/:cid    → Candidate Profile
+/hiring/new                    → Create Job Posting
+/onboarding/:id                → Onboarding Checklist
+/time-off                      → Time Off Overview
+/time-off/request              → Request Form
+/time-off/calendar             → Team Calendar
+/time-off/approvals            → Pending Approvals
+/time-tracking                 → Timesheets
+/performance                   → Performance Reviews
+/performance/goals             → Goals
+/performance/satisfaction      → eNPS &amp; Surveys
+/benefits                      → Benefits Admin
+/benefits/enrollment           → Open Enrollment
+/reports                       → Reports
+/reports/:type                 → Specific Report
+/settings                      → Settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>People</td>
+<td>Name, email, title, department</td>
+<td>Department, Location, Status, Employment Type, Manager</td>
+<td>Name, Start Date, Department</td>
+</tr>
+<tr>
+<td>Candidates</td>
+<td>Name, email</td>
+<td>Job, Stage, Rating, Source</td>
+<td>Applied Date, Rating, Stage</td>
+</tr>
+<tr>
+<td>Time Off</td>
+<td>Employee name</td>
+<td>Type, Status, Date Range, Department</td>
+<td>Date, Employee</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>—</td>
+<td>Date Range, Department, Location</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Dashboard</th>
+<th>Directory</th>
+<th>Profile</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop</td>
+<td>Full dashboard grid</td>
+<td>Photo grid or table</td>
+<td>Tabs with full detail</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Simplified dashboard</td>
+<td>List view</td>
+<td>Stacked tabs</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Card-based, scrollable</td>
+<td>List with search</td>
+<td>Accordion sections</td>
+</tr>
+</tbody></table>
+<h3>BambooHR-Specific UX</h3>
+<ul>
+<li>Friendly, warm design (green, illustrations of people)</li>
+<li>Employee self-service reduces HR ticket volume</li>
+<li>Org chart is interactive and always up to date</li>
+<li>&quot;Who&#39;s Out&quot; widget on dashboard (instant team visibility)</li>
+<li>Birthday/anniversary celebrations (automated)</li>
+<li>eNPS: anonymous, automated pulse surveys</li>
+<li>E-signature built in for onboarding docs</li>
+<li>Custom fields on employee profile (extensible)</li>
+<li>Integrations with payroll (ADP, Gusto, Paychex)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>Directory</th>
+<th>Employee Records</th>
+<th>Hiring</th>
+<th>Time Off</th>
+<th>Performance</th>
+<th>Reports</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Admin/HR</td>
+<td>✅ Full</td>
+<td>All</td>
+<td>All CRUD</td>
+<td>Full</td>
+<td>Configure</td>
+<td>All</td>
+<td>All</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Team view</td>
+<td>All (read)</td>
+<td>Team (limited)</td>
+<td>Hiring team</td>
+<td>Approve team</td>
+<td>Team reviews</td>
+<td>Team</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Employee</td>
+<td>Self view</td>
+<td>All (read)</td>
+<td>Own profile</td>
+<td>—</td>
+<td>Request own</td>
+<td>Own goals/reviews</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Security</h3>
+<ul>
+<li>Role-based access with field-level permissions</li>
+<li>SSO (SAML, OAuth)</li>
+<li>Two-factor authentication</li>
+<li>Audit trail for sensitive changes</li>
+<li>IP restrictions (optional)</li>
+<li>Data encryption at rest and in transit</li>
+<li>SOC 2 Type II compliant</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma — IA.md | getIA.md</title>
+  <meta name="description" content="Collaborative design. Multiplayer canvas, components, prototyping. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=figma.com&sz=64" alt="Figma" onerror="this.parentElement.textContent='F'">
+      </div>
+      <h1 class="detail-brand-name">Figma</h1>
+      <p class="detail-brand-tagline">Collaborative design. Multiplayer canvas, components, prototyping.</p>
+      <span class="detail-category-badge">Design</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/figma/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://figma.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/figma/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Figma — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Figma is the industry-standard collaborative design tool. The mental model is a <strong>multiplayer infinite canvas</strong> — multiple designers edit simultaneously with live cursors. Key differentiators: browser-based (no install), real-time collaboration, Components with variants and properties, Auto Layout, Dev Mode (developer handoff), FigJam (whiteboard), and a thriving plugin/community ecosystem.</p>
+<h2>Site Map</h2>
+<h3>File Browser</h3>
+<pre><code>├── Home
+│   ├── Recent Files
+│   ├── Drafts
+│   └── Deleted (trash)
+├── Team
+│   ├── Projects
+│   │   ├── Project A → Files
+│   │   ├── Project B → Files
+│   │   └── + New Project
+│   ├── Team Library (shared components/styles)
+│   └── Team Settings
+├── Community
+│   ├── Explore (plugins, widgets, files)
+│   ├── Templates
+│   └── My Published Resources
+├── Notifications
+└── Account Settings
+</code></pre>
+<h3>Editor (Canvas)</h3>
+<pre><code>├── Toolbar (Top)
+│   ├── Figma Menu (hamburger)
+│   ├── Move (V) / Scale (K)
+│   ├── Frame (F) / Slice
+│   ├── Shapes (R, O, L, Polygon, Star, Arrow)
+│   ├── Pen (P) / Pencil (⇧P)
+│   ├── Text (T)
+│   ├── Resources (Components, Plugins, Widgets)
+│   ├── Hand (H) / Comment (C)
+│   ├── Actions (Play prototype, Share, Dev Mode toggle, Zoom)
+│   └── Multiplayer Avatars
+├── Left Panel
+│   ├── Layers (hierarchical tree)
+│   ├── Assets (local + team library components)
+│   └── Pages (Page 1, Page 2, + Add)
+├── Canvas (Center)
+│   ├── Frames / Artboards
+│   ├── Rulers + Guides
+│   ├── Layout Grids
+│   ├── Smart Guides (alignment)
+│   ├── Auto Layout visualization
+│   └── Comments (pinned on canvas)
+├── Right Panel
+│   ├── Design Tab
+│   │   ├── Alignment + Distribution
+│   │   ├── Frame: Auto Layout (direction, spacing, padding, sizing)
+│   │   ├── Position: X, Y, W, H, rotation, constraints
+│   │   ├── Fill (solid, gradient, image)
+│   │   ├── Stroke
+│   │   ├── Effects (drop shadow, inner shadow, blur, background blur)
+│   │   ├── Typography (font, size, weight, line height, letter spacing)
+│   │   ├── Corner Radius (individual corners)
+│   │   ├── Opacity + Blend Mode
+│   │   └── Export
+│   ├── Prototype Tab
+│   │   ├── Interactions (trigger → action → destination → animation)
+│   │   ├── Flows (starting points)
+│   │   ├── Overflow Scrolling
+│   │   ├── Device Preview (iPhone, Android, Desktop)
+│   │   └── Smart Animate
+│   ├── Dev Mode Tab
+│   │   ├── Inspect (CSS, iOS, Android code)
+│   │   ├── Measurements (click to see spacing)
+│   │   ├── Assets (exportable)
+│   │   ├── Variables / Design Tokens
+│   │   ├── Annotations
+│   │   └── VS Code integration (link to code)
+│   └── Component Properties (when component selected)
+│       ├── Properties (boolean, text, instance swap, variant)
+│       ├── Variants grid
+│       └── Documentation
+└── Bottom Bar
+    ├── Zoom level
+    ├── Page selector
+    └── Mini map
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>File Browser</strong></td>
+<td>Grid of file thumbnails</td>
+<td>Recent, projects, teams</td>
+</tr>
+<tr>
+<td><strong>Editor Toolbar</strong></td>
+<td>Fixed top</td>
+<td>Tools, share, present, dev mode toggle</td>
+</tr>
+<tr>
+<td><strong>Left Panel</strong></td>
+<td>Layers / Assets / Pages tabs</td>
+<td>Toggle with keyboard shortcuts</td>
+</tr>
+<tr>
+<td><strong>Right Panel</strong></td>
+<td>Design / Prototype / Dev Mode tabs</td>
+<td>Context-sensitive to selection</td>
+</tr>
+<tr>
+<td><strong>⌘/ or ⌘P</strong></td>
+<td>Quick Actions palette</td>
+<td>Search actions, components, plugins</td>
+</tr>
+<tr>
+<td><strong>Canvas</strong></td>
+<td>Space+drag to pan, scroll to zoom</td>
+<td>Infinite 2D canvas</td>
+</tr>
+<tr>
+<td><strong>Right-click</strong></td>
+<td>Context menu</td>
+<td>Selection-specific actions</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>File</td>
+<td>name, thumbnail, pages[], last_modified, version_history[]</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>name, order, frames[]</td>
+<td>belongs to File</td>
+</tr>
+<tr>
+<td>Frame</td>
+<td>name, position, size, auto_layout{}, constraints{}, fills[], strokes[], effects[]</td>
+<td>contains Layers</td>
+</tr>
+<tr>
+<td>Component</td>
+<td>name, description, properties[], variants[]</td>
+<td>master definition, instances reference</td>
+</tr>
+<tr>
+<td>Instance</td>
+<td>component_ref, overrides{}</td>
+<td>instance of Component</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>name, type (color/text/effect/grid)</td>
+<td>reusable, applied to elements</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>name, type (color/number/string/boolean), modes[]</td>
+<td>design tokens, collections</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>body, author, position{x,y}, resolved</td>
+<td>pinned on canvas</td>
+</tr>
+<tr>
+<td>Plugin</td>
+<td>name, id, commands[]</td>
+<td>extends functionality</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>name, status (open/merged/archived), file_ref</td>
+<td>parallel editing</td>
+</tr>
+</tbody></table>
+<h3>Auto Layout</h3>
+<pre><code>direction: horizontal | vertical | wrap
+gap: number (spacing)
+padding: top, right, bottom, left (independent)
+alignment: top-left → bottom-right (9 positions)
+sizing: fixed | hug | fill
+min/max width/height
+</code></pre>
+<h2>User Flows</h2>
+<h3>Design a Screen</h3>
+<pre><code>New File → Frame Tool (F) → Select device size → Add shapes/text → Style properties → Add Auto Layout → Create Component → Prototype links → Present
+</code></pre>
+<h3>Component System</h3>
+<pre><code>Design element → Right-click → Create Component → Add Variants (property panel) → Publish to Team Library → Teammates drag from Assets panel → Instance with overrides
+</code></pre>
+<h3>Dev Handoff</h3>
+<pre><code>Toggle Dev Mode → Developer clicks element → Inspect panel shows CSS/iOS/Android → Redlines auto-appear → Export assets → Copy code snippets
+</code></pre>
+<h3>Branching</h3>
+<pre><code>Create Branch → Make changes independently → Request Review → Compare changes → Merge to main file
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/files/recent              → Recent files
+/files/drafts              → Drafts
+/files/team/:teamId        → Team files
+/files/project/:projectId  → Project files
+/design/:fileId            → Editor (design mode)
+/design/:fileId?node-id=:nodeId → Deep link to frame
+/dev/:fileId               → Editor (dev mode)
+/proto/:fileId             → Prototype viewer
+/proto/:fileId?node-id=:id&amp;starting-point-node-id=:id → Specific flow
+/community                 → Community hub
+/community/file/:id        → Community file
+/community/plugin/:id      → Plugin detail
+/settings                  → Account settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>File Browser</td>
+<td>File names</td>
+<td>Team, Project, Owner</td>
+<td>Last Modified, Name</td>
+</tr>
+<tr>
+<td>Assets Panel</td>
+<td>Component names</td>
+<td>Library (local/team)</td>
+<td>Name, Recently Used</td>
+</tr>
+<tr>
+<td>Layers</td>
+<td>Layer names</td>
+<td>Type, Visibility</td>
+<td>Tree order</td>
+</tr>
+<tr>
+<td>Quick Actions (⌘/)</td>
+<td>Actions, components, plugins</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Community</td>
+<td>Files, plugins, widgets</td>
+<td>Category, Free/Paid</td>
+<td>Popular, Recent</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<p>Figma is desktop-first:</p>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Left panel + canvas + right panel (3-column)</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>View/comment only (mobile app)</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>View/comment, prototype testing on real device</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View</th>
+<th>Edit</th>
+<th>Comment</th>
+<th>Library Publish</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Viewer</td>
+<td>✅</td>
+<td>—</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Team settings</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full control</td>
+</tr>
+</tbody></table>
+<h3>Dev Mode Access</h3>
+<ul>
+<li>Requires seat (separate from design seats)</li>
+<li>Can inspect, measure, export — cannot edit design</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

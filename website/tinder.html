@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinder — IA.md | getIA.md</title>
+  <meta name="description" content="Dating app. Swipe, match, chat, passport. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=tinder.com&sz=64" alt="Tinder" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Tinder</h1>
+      <p class="detail-brand-tagline">Dating app. Swipe, match, chat, passport.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/tinder/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://tinder.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/tinder/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Tinder — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Tinder is the world&#39;s most popular dating app, pioneering the <strong>swipe-to-match</strong> interaction that has defined mobile dating. The mental model is <strong>discover → swipe → match → chat → meet</strong> — users see one profile at a time in a card stack, swipe right to like or left to pass, and mutual likes create a match that unlocks conversation. Tinder&#39;s IA is uniquely minimal: there&#39;s no search, no browsing, no profiles to explore — just the card stack, the match list, and chat. The algorithm decides what you see; you just swipe.</p>
+<h2>Site Map</h2>
+<pre><code>├── Discover (Card Stack)
+│   ├── Profile Card
+│   │   ├── Photos (swipe through, up to 9)
+│   │   ├── Name, Age
+│   │   ├── Distance
+│   │   ├── Verified Badge (photo verified)
+│   │   ├── Bio (short text)
+│   │   ├── Job + Company
+│   │   ├── School
+│   │   ├── Passions / Interest Tags (foodie, hiking, travel, etc.)
+│   │   ├── Anthem (Spotify song)
+│   │   ├── Instagram Photos (linked)
+│   │   ├── Relationship Intent (looking for: LTR, casual, friends, unsure)
+│   │   └── Basics (height, zodiac, exercise, education, drinking, smoking, pets)
+│   ├── Action Buttons
+│   │   ├── ✕ Pass (swipe left)
+│   │   ├── ⭐ Super Like (swipe up, limited)
+│   │   ├── ❤️ Like (swipe right)
+│   │   ├── ⚡ Boost (increase visibility)
+│   │   └── ↩️ Rewind (undo last swipe, premium)
+│   ├── Tap Card → Expanded Profile (full photos, bio, details)
+│   └── Filter Quick Access
+├── Match List / Messages
+│   ├── New Matches (top row, scrollable)
+│   │   ├── Match Thumbnails (unread, no message yet)
+│   │   └── Tap → Open Chat
+│   ├── Conversations (below, sorted by recent)
+│   │   ├── Active Chats
+│   │   ├── Unread Indicator
+│   │   └── Last Message Preview
+│   └── Feed (matches&#39; activity, deprecated in some markets)
+├── Chat
+│   ├── Message Bubbles (text)
+│   ├── GIFs (Giphy integration)
+│   ├── Reactions
+│   ├── Photo Sharing
+│   ├── Spotify Song Share
+│   ├── Video Chat (in-app)
+│   ├── &quot;Are We a Match?&quot; (Tinder interactive games)
+│   ├── Unmatch (removes chat history completely)
+│   ├── Block / Report
+│   └── Safety Tips
+├── Likes (Who Likes You)
+│   ├── Received Likes
+│   │   ├── Free: Blurred grid (can see count, not profiles)
+│   │   ├── Gold/Platinum: Full profiles, swipe from here
+│   │   └── Tap → Like Back = Instant Match
+│   ├── Sent Likes (Platinum only)
+│   └── Top Picks (curated daily selection)
+├── Explore
+│   ├── Top Picks (algorithm&#39;s best daily suggestions)
+│   ├── Vibes (interactive question stickers)
+│   ├── Hot Takes (speed-matching during limited hours)
+│   ├── Swipe Night (choose-your-own-adventure events)
+│   ├── Festival Mode (find people at same event)
+│   └── Passport (change location, premium)
+├── Profile (Own)
+│   ├── Photos (9 slots, drag to reorder)
+│   ├── Smart Photos (auto-optimize order based on performance)
+│   ├── Bio
+│   ├── Passions (select from list: cooking, gaming, yoga, etc.)
+│   ├── Relationship Intent (what you&#39;re looking for)
+│   ├── Basics (height, exercise, education, etc.)
+│   ├── Lifestyle (zodiac, pets, smoking, drinking)
+│   ├── Job Title + Company
+│   ├── School
+│   ├── Living In (city)
+│   ├── Anthem (Spotify integration)
+│   ├── Connected Instagram
+│   ├── Photo Verification (selfie verify)
+│   ├── Profile Preview (see how others see you)
+│   └── Edit Info
+├── Settings / Preferences
+│   ├── Discovery Settings
+│   │   ├── Location (current or Passport)
+│   │   ├── Distance (1-100 miles slider)
+│   │   ├── Age Range (18-100 slider)
+│   │   ├── Gender Preference
+│   │   ├── Global Mode (show me people around the world)
+│   │   └── Show Me on Tinder (toggle discoverable)
+│   ├── Subscription
+│   │   ├── Free / Plus / Gold / Platinum (comparison)
+│   │   ├── Current Plan
+│   │   └── Manage
+│   ├── Notifications (matches, messages, likes, promotions)
+│   ├── Privacy
+│   │   ├── Block Contacts (hide from phone contacts)
+│   │   ├── Hide Age
+│   │   ├── Hide Distance
+│   │   └── Incognito Mode (only visible to people you like, premium)
+│   ├── Account (phone, email)
+│   ├── Safety
+│   │   ├── Photo Verification
+│   │   ├── Block &amp; Report
+│   │   ├── Safety Tips
+│   │   └── Noonlight Integration (emergency services)
+│   ├── Snooze (pause profile temporarily)
+│   └── Delete Account
+└── Safety Center
+    ├── Photo Verification
+    ├── Block &amp; Report
+    ├── Safety Tips (&quot;Meeting Someone New&quot;)
+    ├── Community Guidelines
+    ├── Share Date Details (with friends)
+    └── Resources
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>4 tabs</td>
+<td>Discover (flame), Explore (diamond), Matches (chat), Profile</td>
+</tr>
+<tr>
+<td><strong>Card Stack</strong></td>
+<td>Full-screen, one card at a time</td>
+<td>Swipe gestures: right=like, left=pass, up=super like</td>
+</tr>
+<tr>
+<td><strong>Match List</strong></td>
+<td>Split: top (new matches) + bottom (chats)</td>
+<td>New matches = horizontal scrollable row</td>
+</tr>
+<tr>
+<td><strong>Chat</strong></td>
+<td>Full-screen conversation</td>
+<td>iMessage-style, with special features (GIFs, games)</td>
+</tr>
+<tr>
+<td><strong>Settings</strong></td>
+<td>Gear icon from Profile</td>
+<td>Sliders for age, distance, preferences</td>
+</tr>
+</tbody></table>
+<h3>Gesture Model</h3>
+<table>
+<thead>
+<tr>
+<th>Gesture</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Swipe Right</td>
+<td>Like</td>
+</tr>
+<tr>
+<td>Swipe Left</td>
+<td>Pass</td>
+</tr>
+<tr>
+<td>Swipe Up</td>
+<td>Super Like</td>
+</tr>
+<tr>
+<td>Tap Photo</td>
+<td>Next photo</td>
+</tr>
+<tr>
+<td>Tap Card Body</td>
+<td>Expand full profile</td>
+</tr>
+<tr>
+<td>Long Press Photo</td>
+<td>Pause on photo</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User</td>
+<td>name, age, gender, photos[9], bio, passions[], job, company, school, city, verified, anthem_song, relationship_intent, basics{height, exercise, education, zodiac, drinking, smoking, pets}</td>
+<td>has Likes, Matches, Messages</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>from_user, to_user, type (like/super_like), message (Platinum), timestamp</td>
+<td>between Users</td>
+</tr>
+<tr>
+<td>Match</td>
+<td>user_a, user_b, matched_at, status (active/unmatched), last_message_at</td>
+<td>connects two Users</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>match, sender, content, type (text/gif/image/song/game), sent_at, read</td>
+<td>belongs to Match</td>
+</tr>
+<tr>
+<td>Preference</td>
+<td>age_range, max_distance, gender[], global_mode, discoverable</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>plan (free/plus/gold/platinum), features[], renews_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>reporter, reported, reason (spam/inappropriate/underage/other), details</td>
+<td>between Users</td>
+</tr>
+<tr>
+<td>TopPick</td>
+<td>user, date, premium_only</td>
+<td>daily curated</td>
+</tr>
+<tr>
+<td>Boost</td>
+<td>user, activated_at, duration, type (boost/super_boost)</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Match Flow</h3>
+<pre><code>A swipes right on B → if B already swiped right on A → MATCH! → Chat unlocked → Confetti animation
+A swipes right on B → B hasn&#39;t seen A yet → A appears in B&#39;s &quot;Likes&quot; → B swipes right → MATCH!
+A swipes right on B → B swipes left → No match (A never knows)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Core Swipe Loop</h3>
+<pre><code>Open App → Discover → See Profile Card → Swipe Photos → Read Bio → Swipe Right (Like) → Next Card → ... → MATCH! → &quot;It&#39;s a Match!&quot; Screen → [Send a Message] or [Keep Swiping]
+</code></pre>
+<h3>Super Like</h3>
+<pre><code>Discover → See Great Profile → Swipe Up → ⭐ Super Like Sent → They See You With Star Badge → Higher Chance of Match → If Match: Special Animation
+</code></pre>
+<h3>Start Conversation</h3>
+<pre><code>Matches Tab → New Match Row → Tap Match → Chat Opens → Send Message → Wait → They Reply → Conversation → Suggest Meeting
+</code></pre>
+<h3>Verify Profile</h3>
+<pre><code>Profile → Photo Verification → Take Selfie Mimicking Pose → AI Compares to Profile Photos → Verified ✓ → Blue Checkmark Badge
+</code></pre>
+<h2>URL / Route Structure</h2>
+<blockquote>
+<p>Tinder is almost exclusively a native mobile app. Web routes are limited.</p>
+</blockquote>
+<pre><code>/                              → Landing / Download App
+/app/discover                  → Card Stack
+/app/likes                     → Who Likes You
+/app/matches                   → Matches &amp; Chats
+/app/chat/:matchId             → Chat Thread
+/app/profile                   → My Profile
+/app/profile/edit              → Edit Profile
+/app/profile/photos            → Manage Photos
+/app/explore                   → Explore (Top Picks, events)
+/app/settings                  → Settings
+/app/settings/preferences      → Discovery Preferences
+/app/settings/subscription     → Subscription
+/app/safety                    → Safety Center
+/app/passport                  → Change Location (premium)
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Behavior</th>
+<th>Filters</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Discover</td>
+<td>Algorithm-driven, no search</td>
+<td>Age Range, Distance, Gender, Global Mode</td>
+</tr>
+<tr>
+<td>Matches</td>
+<td>Scroll through matches</td>
+<td>— (sorted by recency)</td>
+</tr>
+<tr>
+<td>Likes</td>
+<td>View who liked you</td>
+<td>— (sorted by newest)</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Tinder is <strong>filter-driven, not search-driven</strong>. You set preferences; the algorithm shows you profiles. No text search for people.</p>
+</blockquote>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Discover</th>
+<th>Chat</th>
+<th>Profile</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Full-screen card stack, swipe gestures</td>
+<td>Full-screen conversation</td>
+<td>Scrollable sections</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Larger cards</td>
+<td>Split (match list + chat)</td>
+<td>Two-column</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Click buttons instead of swipe</td>
+<td>Three-column (matches + chat + profile)</td>
+<td>Multi-column</td>
+</tr>
+</tbody></table>
+<h3>Tinder-Specific UX</h3>
+<ul>
+<li><strong>One profile at a time</strong>: Forces focused attention (no grid browsing)</li>
+<li><strong>Swipe as primary interaction</strong>: Gesture replaces buttons</li>
+<li><strong>Mutual anonymity until match</strong>: A never knows if B passed</li>
+<li><strong>Match celebration</strong>: Confetti + &quot;It&#39;s a Match!&quot; screen</li>
+<li><strong>Photo-first design</strong>: Photos dominate; text is secondary</li>
+<li><strong>Haptic feedback</strong>: On swipe actions and match</li>
+<li><strong>Smart Photos</strong>: AI reorders your photos to show best-performing first</li>
+<li><strong>Limited resources drive engagement</strong>: Limited daily likes (free), limited Super Likes = each one matters</li>
+<li><strong>Gold/Platinum blur</strong>: Seeing &quot;someone liked you&quot; but blurred creates FOMO → conversion</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free</th>
+<th>Plus</th>
+<th>Gold</th>
+<th>Platinum</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Swipe / Like</td>
+<td>Limited (daily cap)</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>See Who Liked You</td>
+<td>Blurred count</td>
+<td>Blurred</td>
+<td>✅ Clear</td>
+<td>✅ Clear</td>
+</tr>
+<tr>
+<td>Super Likes</td>
+<td>1/week</td>
+<td>5/week</td>
+<td>5/week</td>
+<td>5/week</td>
+</tr>
+<tr>
+<td>Boost</td>
+<td>—</td>
+<td>1/month</td>
+<td>1/month</td>
+<td>1/month</td>
+</tr>
+<tr>
+<td>Rewind (undo)</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Passport</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Incognito</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Message Before Match</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Priority Likes</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3>Safety &amp; Moderation</h3>
+<ul>
+<li>Photo verification (AI + selfie check)</li>
+<li>Block &amp; Report (all users)</li>
+<li>Unmatch deletes chat history completely</li>
+<li>Noonlight emergency button</li>
+<li>AI content moderation (detect explicit/spam messages)</li>
+<li>Manual review of reported users</li>
+<li>Ban for repeated violations</li>
+<li>Privacy: approximate distance only, never exact location</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify — IA.md | getIA.md</title>
+  <meta name="description" content="E-commerce platform. Online store, POS, payments. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=shopify.com&sz=64" alt="Shopify" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Shopify</h1>
+      <p class="detail-brand-tagline">E-commerce platform. Online store, POS, payments.</p>
+      <span class="detail-category-badge">E-Commerce</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/shopify/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://shopify.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/shopify/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Shopify — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Shopify is the leading e-commerce platform that enables merchants of all sizes to create online stores, manage inventory, process payments, and sell across multiple channels (web, mobile, social, in-person). The mental model is <strong>your business in a box</strong> — merchants manage everything from a single admin panel while customers shop on customizable storefronts. Shopify differentiates through its theme ecosystem (Liquid templates + Online Store 2.0), app marketplace (6000+ apps), Shopify Payments (built-in payment processing), multi-channel selling (Instagram, TikTok, Amazon, POS), and headless commerce via Hydrogen/Oxygen (React-based storefront framework).</p>
+<h2>Site Map</h2>
+<h3>Storefront (Customer-Facing)</h3>
+<pre><code>├── Home
+│   ├── Announcement Bar (promotions, free shipping threshold)
+│   ├── Hero Banner / Slideshow
+│   ├── Featured Collections
+│   ├── Featured Products
+│   ├── Newsletter Signup
+│   ├── Blog Posts (latest)
+│   └── Testimonials / Social Proof
+├── Collections (Categories)
+│   ├── Collection Page (products grid + filters)
+│   │   ├── Sidebar Filters (price, size, color, type, vendor, tag)
+│   │   ├── Sort (best selling, price, alphabetical, date)
+│   │   └── Product Cards (image, title, price, compare-at price, badges)
+│   └── Collection List Page (browse all collections)
+├── Product Detail
+│   ├── Product Images / Gallery (zoom, video)
+│   ├── Title, Price, Compare-at Price
+│   ├── Variant Selector (size, color, material — swatches)
+│   ├── Quantity Selector
+│   ├── Add to Cart / Buy Now
+│   ├── Description (rich text, tabs, accordion)
+│   ├── Metafield Data (specs, ingredients, sizing chart)
+│   ├── Reviews &amp; Ratings (via app: Judge.me, Loox, etc.)
+│   ├── Related Products / You May Also Like
+│   ├── Recently Viewed
+│   └── Dynamic Checkout (Shop Pay, Apple Pay, Google Pay)
+├── Search
+│   ├── Predictive Search (autocomplete: products, collections, pages, articles)
+│   ├── Search Results (filterable)
+│   └── No Results (suggestions)
+├── Cart
+│   ├── Cart Drawer (slide-out, AJAX-based)
+│   ├── Cart Page
+│   │   ├── Line Items (image, title, variant, quantity, price)
+│   │   ├── Discount Code Input
+│   │   ├── Cart Note
+│   │   ├── Subtotal
+│   │   └── Checkout Button
+│   └── Cart Upsell (cross-sell recommendations)
+├── Checkout (Shopify-hosted)
+│   ├── Contact Information (email/phone)
+│   ├── Shipping Address
+│   ├── Shipping Method (calculated rates)
+│   ├── Payment
+│   │   ├── Credit Card (Shopify Payments)
+│   │   ├── Shop Pay (accelerated checkout)
+│   │   ├── Apple Pay / Google Pay
+│   │   ├── PayPal
+│   │   └── Alternative Methods (Klarna, Afterpay, crypto)
+│   ├── Order Review
+│   ├── Tips (optional)
+│   ├── Order Confirmation / Thank You Page
+│   └── Order Status Page (trackable via URL)
+├── Account
+│   ├── Login / Register
+│   ├── Order History
+│   ├── Order Detail (tracking, receipt)
+│   ├── Addresses (saved)
+│   ├── Wishlist (via app)
+│   └── Account Settings
+├── Blog
+│   ├── Blog List
+│   ├── Article Detail (author, date, tags, comments)
+│   └── Blog Tags
+├── Pages (static content)
+│   ├── About Us
+│   ├── Contact (form)
+│   ├── FAQ
+│   ├── Shipping &amp; Returns Policy
+│   ├── Privacy Policy
+│   └── Terms of Service
+└── Footer
+    ├── Navigation Links
+    ├── Newsletter Signup
+    ├── Social Media Links
+    ├── Payment Icons
+    └── Copyright / Powered by Shopify
+</code></pre>
+<h3>Admin (Merchant Dashboard)</h3>
+<pre><code>├── Home
+│   ├── Today&#39;s Activity (orders, sessions, sales)
+│   ├── To-Do List (unfulfilled orders, abandoned checkouts)
+│   ├── Sales Channel Performance
+│   └── Tips &amp; Suggestions
+├── Orders
+│   ├── Order List (filterable by status, date, fulfillment, financial)
+│   ├── Order Detail
+│   │   ├── Items, Discounts, Shipping, Taxes, Total
+│   │   ├── Customer Info
+│   │   ├── Fulfillment (create shipment, tracking number, partial fulfillment)
+│   │   ├── Payment Status (paid, pending, refunded)
+│   │   ├── Timeline (activity log)
+│   │   ├── Tags, Notes
+│   │   ├── Refund (full/partial)
+│   │   ├── Edit Order (add/remove items, change shipping)
+│   │   └── Print (packing slip, invoice)
+│   ├── Drafts (manual orders)
+│   ├── Abandoned Checkouts (recovery emails)
+│   └── Returns (if enabled)
+├── Products
+│   ├── All Products (filterable, bulk edit)
+│   ├── Product Detail / Editor
+│   │   ├── Title, Description (rich text editor)
+│   │   ├── Media (images, video, 3D model)
+│   │   ├── Pricing (price, compare-at, cost per item)
+│   │   ├── Variants (option combinations: size × color)
+│   │   ├── Inventory (tracked, SKU, barcode, locations)
+│   │   ├── Shipping (weight, dimensions, HS code)
+│   │   ├── SEO (title, description, URL handle)
+│   │   ├── Metafields (custom structured data)
+│   │   ├── Status (active, draft, archived)
+│   │   └── Organization (type, vendor, collections, tags)
+│   ├── Collections
+│   │   ├── Manual Collections (hand-picked)
+│   │   └── Automated Collections (rules-based: tag, price, vendor)
+│   ├── Inventory
+│   │   ├── Inventory Levels (by location)
+│   │   ├── Transfers (between locations)
+│   │   └── Purchase Orders
+│   ├── Gift Cards
+│   └── Price Lists (B2B)
+├── Customers
+│   ├── Customer List (segmented, filterable)
+│   ├── Customer Detail
+│   │   ├── Contact Info
+│   │   ├── Order History
+│   │   ├── Lifetime Value
+│   │   ├── Tags, Notes
+│   │   ├── Tax Exemptions
+│   │   └── Metafields
+│   ├── Segments (dynamic customer groups)
+│   └── Companies (B2B accounts)
+├── Content
+│   ├── Metaobjects (custom structured content)
+│   ├── Files (media library)
+│   └── Metatemplates
+├── Analytics
+│   ├── Dashboard (sales, sessions, conversion, AOV)
+│   ├── Reports
+│   │   ├── Sales Reports
+│   │   ├── Product Reports (top sellers, sell-through)
+│   │   ├── Customer Reports (retention, LTV, cohorts)
+│   │   ├── Financial Reports (taxes, payments, refunds)
+│   │   ├── Acquisition Reports (sessions by source)
+│   │   ├── Behavior Reports (top pages, searches)
+│   │   └── Marketing Reports (campaign performance)
+│   └── Live View (real-time visitors, globe view)
+├── Marketing
+│   ├── Campaigns (email, social, ads)
+│   ├── Automations (abandoned cart, welcome series, win-back)
+│   ├── Shopify Email (built-in email marketing)
+│   └── Marketing Apps (integration hub)
+├── Discounts
+│   ├── Discount List
+│   ├── Create Discount
+│   │   ├── Code Discount (% off, $ off, free shipping, buy X get Y)
+│   │   ├── Automatic Discount (auto-applied)
+│   │   ├── Conditions (min purchase, min quantity, customer eligibility)
+│   │   └── Usage Limits
+│   └── Active / Expired / Scheduled
+├── Sales Channels
+│   ├── Online Store
+│   │   ├── Themes
+│   │   │   ├── Theme Library (active + drafts)
+│   │   │   ├── Theme Editor (drag-and-drop sections + blocks)
+│   │   │   ├── Theme Code (Liquid + JSON templates)
+│   │   │   └── Theme Settings (colors, fonts, logo)
+│   │   ├── Pages (CRUD)
+│   │   ├── Blog Posts (CRUD)
+│   │   ├── Navigation (menus: header, footer, sidebar)
+│   │   ├── Preferences (title, meta, favicon, password page)
+│   │   └── Domains
+│   ├── Shop App (Shopify&#39;s consumer app)
+│   ├── Point of Sale (in-person)
+│   │   ├── POS Locations
+│   │   ├── Staff
+│   │   └── Hardware
+│   ├── Facebook &amp; Instagram
+│   ├── Google &amp; YouTube
+│   ├── TikTok
+│   ├── Amazon
+│   ├── Buy Button (embed anywhere)
+│   └── Wholesale (B2B)
+├── Apps
+│   ├── Installed Apps
+│   ├── Shopify App Store (browse/install)
+│   └── App Settings (per-app configuration)
+├── Settings
+│   ├── Store Details (name, address, currency, timezone)
+│   ├── Plan (Basic, Shopify, Advanced, Plus)
+│   ├── Users &amp; Permissions (staff accounts, collaborators)
+│   ├── Payments (Shopify Payments, PayPal, manual methods)
+│   ├── Checkout (customization, Checkout Extensibility)
+│   ├── Shipping &amp; Delivery (zones, rates, profiles, local delivery)
+│   ├── Taxes &amp; Duties (regions, tax overrides)
+│   ├── Markets (international markets, currencies, languages)
+│   ├── Locations (warehouses, retail stores)
+│   ├── Gift Cards
+│   ├── Notifications (order confirmations, shipping updates — editable templates)
+│   ├── Metafields (definitions for products, customers, orders)
+│   ├── Custom Data (metaobject definitions)
+│   ├── Languages (translations)
+│   ├── Policies (auto-generated or custom)
+│   ├── Domains (primary, custom, subdomains)
+│   ├── Brand (logo, colors, slogan, social links)
+│   ├── Customer Privacy
+│   ├── Customer Accounts (new accounts, classic accounts)
+│   └── Files (media management)
+└── Shopify Magic (AI)
+    ├── Product Description Generator
+    ├── Email Subject Lines
+    ├── Shopify Inbox Replies
+    └── Report Summaries
+</code></pre>
+<h2>Navigation Model</h2>
+<h3>Storefront</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Sticky top bar</td>
+<td>Logo, mega menu (collections), search, account, cart (badge)</td>
+</tr>
+<tr>
+<td><strong>Mega Menu</strong></td>
+<td>Multi-column dropdown</td>
+<td>Collections with images, featured products</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Below header</td>
+<td>Home &gt; Collections &gt; Category &gt; Product</td>
+</tr>
+<tr>
+<td><strong>Collection Filters</strong></td>
+<td>Sidebar or horizontal</td>
+<td>Faceted: price, size, color, vendor, tag</td>
+</tr>
+<tr>
+<td><strong>Cart Drawer</strong></td>
+<td>Slide-out from right</td>
+<td>AJAX cart, upsells, checkout button</td>
+</tr>
+<tr>
+<td><strong>Footer</strong></td>
+<td>Full-width</td>
+<td>Navigation, newsletter, social, policies</td>
+</tr>
+</tbody></table>
+<h3>Admin</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible</td>
+<td>Home, Orders, Products, Customers, Content, Analytics, Marketing, Discounts, Sales Channels, Apps, Settings</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Search (⌘K), plan indicator, notifications, store name</td>
+</tr>
+<tr>
+<td><strong>Contextual Actions</strong></td>
+<td>Top-right of pages</td>
+<td>Save, Duplicate, Delete, More actions</td>
+</tr>
+<tr>
+<td><strong>Bulk Actions</strong></td>
+<td>Selection mode in lists</td>
+<td>Select items → bulk edit, delete, add tags</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product</td>
+<td>title, description, vendor, type, tags[], status (active/draft/archived), handle</td>
+<td>has Variants, Images, Metafields, belongs to Collections</td>
+</tr>
+<tr>
+<td>Variant</td>
+<td>sku, price, compare_at_price, cost, inventory_quantity, weight, barcode, options (size/color)</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>title, description, image, type (manual/automated), rules[], sort_order</td>
+<td>has many Products</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>name (#1001), financial_status, fulfillment_status, total, line_items[], customer, shipping_address, discount_codes[]</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>email, first_name, last_name, orders_count, total_spent, tags[], addresses[], segments[]</td>
+<td>has many Orders</td>
+</tr>
+<tr>
+<td>DiscountCode</td>
+<td>code, type (percentage/fixed/shipping/bxgy), value, usage_count, starts_at, ends_at</td>
+<td>applied to Orders</td>
+</tr>
+<tr>
+<td>DraftOrder</td>
+<td>line_items[], customer, status (open/invoice_sent/completed)</td>
+<td>may become Order</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>title, body_html, handle</td>
+<td>standalone content</td>
+</tr>
+<tr>
+<td>Blog</td>
+<td>title, articles[]</td>
+<td>has many Articles</td>
+</tr>
+<tr>
+<td>Article</td>
+<td>title, body, author, tags[], image</td>
+<td>belongs to Blog</td>
+</tr>
+<tr>
+<td>Theme</td>
+<td>name, role (main/unpublished), files[]</td>
+<td>belongs to Store</td>
+</tr>
+<tr>
+<td>Metafield</td>
+<td>namespace, key, value, type (single_line_text/number/json/url/etc.)</td>
+<td>belongs to any resource</td>
+</tr>
+<tr>
+<td>Fulfillment</td>
+<td>order, tracking_number, tracking_url, line_items[], status</td>
+<td>belongs to Order</td>
+</tr>
+</tbody></table>
+<h3>Order Status Flow</h3>
+<pre><code>unfulfilled → partially_fulfilled → fulfilled → delivered
+payment: pending → authorized → paid → partially_refunded → refunded
+</code></pre>
+<h2>User Flows</h2>
+<h3>Customer: Browse to Purchase</h3>
+<pre><code>Home → Browse Collection → Filter (size, color) → Product Detail → Select Variant → Add to Cart → Cart Drawer → Checkout → Shop Pay (1-click) → Order Confirmation → Email Confirmation → Track Order
+</code></pre>
+<h3>Merchant: Process Order</h3>
+<pre><code>Orders (new order notification) → Order Detail → Review items → Create fulfillment → Add tracking number → Mark as fulfilled → Customer gets shipping email → Delivered
+</code></pre>
+<h3>Merchant: Add Product</h3>
+<pre><code>Products → Add Product → Title, description → Upload images → Set price, compare-at → Create variants (S/M/L × Red/Blue) → Set inventory per location → SEO → Organize (collections, tags) → Active → Publish
+</code></pre>
+<h3>Merchant: Customize Storefront</h3>
+<pre><code>Online Store → Themes → Customize → Section-based editor → Drag sections (hero, featured collection, image with text) → Configure blocks within sections → Change colors/fonts → Preview on mobile → Publish
+</code></pre>
+<h2>URL / Route Structure</h2>
+<h3>Storefront</h3>
+<pre><code>/                              → Home
+/collections                   → All Collections
+/collections/:handle           → Collection Page
+/products/:handle              → Product Detail
+/search?q=:query               → Search Results
+/cart                          → Cart Page
+/checkout                      → Checkout (Shopify-hosted)
+/checkouts/:token              → Active Checkout Session
+/orders/:token                 → Order Status Page (post-purchase)
+/account                       → Account Dashboard
+/account/login                 → Login
+/account/register              → Register
+/account/orders/:id            → Order Detail
+/account/addresses             → Saved Addresses
+/blogs/:blog                   → Blog
+/blogs/:blog/:article          → Blog Article
+/pages/:handle                 → Static Page
+/policies/:handle              → Policy Page
+</code></pre>
+<h3>Admin</h3>
+<pre><code>/admin                         → Home
+/admin/orders                  → Orders
+/admin/orders/:id              → Order Detail
+/admin/draft_orders            → Drafts
+/admin/products                → Products
+/admin/products/:id            → Product Editor
+/admin/products/:id/variants/:id → Variant Detail
+/admin/collections             → Collections
+/admin/collections/:id         → Collection Editor
+/admin/customers               → Customers
+/admin/customers/:id           → Customer Detail
+/admin/customers/segments      → Segments
+/admin/analytics               → Analytics Dashboard
+/admin/analytics/reports       → Reports
+/admin/marketing               → Marketing
+/admin/discounts               → Discounts
+/admin/discounts/:id           → Discount Detail
+/admin/themes                  → Themes
+/admin/themes/:id/editor       → Theme Editor
+/admin/pages                   → Pages
+/admin/blog_posts              → Blog Posts
+/admin/navigation              → Navigation Menus
+/admin/apps                    → Apps
+/admin/settings                → Settings
+/admin/settings/payments       → Payments
+/admin/settings/shipping       → Shipping
+/admin/settings/checkout       → Checkout
+/admin/settings/taxes          → Taxes
+/admin/settings/markets        → Markets
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Storefront</td>
+<td>Products (title, description, SKU, tags), collections, pages, articles</td>
+<td>Collection, Price Range, Availability, Vendor, Color, Size (faceted, theme-dependent)</td>
+<td>Relevance, Price, Best Selling, Newest, A-Z</td>
+</tr>
+<tr>
+<td>Admin Products</td>
+<td>Title, SKU, barcode, vendor</td>
+<td>Status, Collection, Type, Vendor, Tagged, Inventory</td>
+<td>Title, Created, Updated, Inventory</td>
+</tr>
+<tr>
+<td>Admin Orders</td>
+<td>Order #, customer name/email</td>
+<td>Status, Financial, Fulfillment, Date, Channel, Discount, Risk</td>
+<td>Date, Total, Customer</td>
+</tr>
+<tr>
+<td>Admin Customers</td>
+<td>Name, email, phone</td>
+<td>Orders Count, Amount Spent, Location, Tags, Accepts Marketing</td>
+<td>Date, Orders, Spent</td>
+</tr>
+</tbody></table>
+<h3>Predictive Search (Storefront)</h3>
+<p>Typing in search bar → instant suggestions: product cards (with image + price), collections, pages</p>
+<h2>Responsive Behavior</h2>
+<h3>Storefront</h3>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Header</th>
+<th>Product Grid</th>
+<th>Product Detail</th>
+<th>Cart</th>
+<th>Checkout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>Full nav + mega menu</td>
+<td>3-4 columns</td>
+<td>Image gallery + details side by side</td>
+<td>Drawer or page</td>
+<td>Multi-step inline</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>Collapsed menu</td>
+<td>2-3 columns</td>
+<td>Stacked</td>
+<td>Drawer</td>
+<td>Multi-step</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger + search + cart</td>
+<td>1-2 columns, swipeable</td>
+<td>Stacked, sticky Add to Cart</td>
+<td>Full page</td>
+<td>Single step per page</td>
+</tr>
+</tbody></table>
+<h3>Admin</h3>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>Expanded</td>
+<td>Full width</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Collapsed</td>
+<td>Full width</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Hidden (Shopify mobile app)</td>
+<td>Full width</td>
+</tr>
+</tbody></table>
+<h3>Shopify-Specific UX</h3>
+<ul>
+<li><strong>Online Store 2.0</strong>: section-based theme editor (any page can have sections + blocks)</li>
+<li><strong>Liquid templates</strong>: Shopify&#39;s template language for themes</li>
+<li><strong>Shop Pay</strong>: accelerated 1-click checkout (saves customer info across Shopify stores)</li>
+<li><strong>Shopify POS</strong>: in-person selling synced with online inventory</li>
+<li><strong>Multi-channel sync</strong>: inventory, orders, and products synced across all sales channels</li>
+<li><strong>Shopify Magic (AI)</strong>: auto-generate product descriptions, email subjects, chat replies</li>
+<li><strong>Cart drawer</strong>: AJAX-powered slide-out cart (no page reload)</li>
+<li><strong>Metafields</strong>: custom structured data on any resource (products, customers, orders)</li>
+<li><strong>Shopify Functions</strong>: server-side customization (discount logic, shipping, payment)</li>
+<li><strong>Checkout Extensibility</strong>: customize checkout UI via app blocks (Shopify Plus)</li>
+<li><strong>Live View</strong>: real-time globe visualization of visitors</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Storefront</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Cart</th>
+<th>Checkout</th>
+<th>Account</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (guest checkout)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (saved info, Shop Pay)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>B2B Customer</td>
+<td>✅ (with price lists)</td>
+<td>✅</td>
+<td>✅ (terms, PO)</td>
+<td>✅ (company-level)</td>
+</tr>
+</tbody></table>
+<h3>Admin</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>Orders</th>
+<th>Products</th>
+<th>Customers</th>
+<th>Analytics</th>
+<th>Settings</th>
+<th>Apps</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Store Owner</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>✅</td>
+<td>Install</td>
+</tr>
+<tr>
+<td>Full Access Staff</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>Limited</td>
+<td>Manage</td>
+</tr>
+<tr>
+<td>Limited Staff</td>
+<td>✅</td>
+<td>Per-permission</td>
+<td>Per-permission</td>
+<td>Per-permission</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Collaborator (partner)</td>
+<td>✅</td>
+<td>Per-permission</td>
+<td>Per-permission</td>
+<td>—</td>
+<td>View</td>
+<td>Theme only</td>
+<td>Manage own</td>
+</tr>
+</tbody></table>
+<h3>Shopify Permissions</h3>
+<ul>
+<li>20+ granular permissions (view orders, manage products, manage themes, etc.)</li>
+<li>Collaborator accounts for agencies and developers</li>
+<li>Staff can be restricted to specific POS locations</li>
+<li>API access via access scopes (read_products, write_orders, etc.)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

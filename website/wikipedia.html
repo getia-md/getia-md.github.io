@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia — IA.md | getIA.md</title>
+  <meta name="description" content="Free encyclopedia. Collaborative editing, citations, infoboxes. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=wikipedia.org&sz=64" alt="Wikipedia" onerror="this.parentElement.textContent='W'">
+      </div>
+      <h1 class="detail-brand-name">Wikipedia</h1>
+      <p class="detail-brand-tagline">Free encyclopedia. Collaborative editing, citations, infoboxes.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/wikipedia/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://wikipedia.org" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/wikipedia/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Wikipedia — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The world&#39;s largest free encyclopedia, collaboratively written and maintained by volunteers. Wikipedia&#39;s mental model is an <strong>interlinked knowledge graph</strong> — articles reference each other through hyperlinks, forming a massive web of structured knowledge. Key differentiators: anyone can edit (with varying permission levels), every edit is tracked in version history, content requires citations from reliable sources, articles exist in 300+ languages independently, and there is no paywall, no ads, and no algorithmic feed. The IA is article-centric, with categories, portals, and disambiguation pages organizing millions of entries.</p>
+<h2>Site Map</h2>
+<pre><code>├── Main Page
+│   ├── Featured Article (daily rotation)
+│   ├── Did You Know (new/expanded articles)
+│   ├── In the News (current events)
+│   ├── On This Day (historical events)
+│   ├── Today&#39;s Featured Picture
+│   └── Sister Projects (Wiktionary, Wikiquote, Commons, etc.)
+├── Article Page
+│   ├── Title
+│   ├── Lead Section (summary, right-side infobox)
+│   ├── Infobox (structured data: type, date, location, etc.)
+│   ├── Table of Contents (auto-generated, collapsible)
+│   ├── Body Sections
+│   │   ├── Section Headings (h2–h6, with [edit] links)
+│   │   ├── Text (prose with inline citations [1][2][3])
+│   │   ├── Images / Galleries
+│   │   ├── Tables
+│   │   ├── Lists
+│   │   ├── Infoboxes / Sidebars
+│   │   ├── Navboxes (bottom navigation templates)
+│   │   └── Math / Chemical Formulas (LaTeX)
+│   ├── See Also (related articles)
+│   ├── Notes / References Section
+│   │   ├── Footnotes (numbered, linked back to text)
+│   │   └── Full Citation Details (author, title, URL, date)
+│   ├── Bibliography
+│   ├── Further Reading
+│   ├── External Links
+│   ├── Categories (bottom of page)
+│   ├── Article Tabs
+│   │   ├── Article (read)
+│   │   ├── Talk (discussion about the article)
+│   │   ├── Edit / View Source
+│   │   └── View History
+│   └── Page Tools (sidebar)
+│       ├── What Links Here
+│       ├── Related Changes
+│       ├── Upload File
+│       ├── Special Pages
+│       ├── Permanent Link
+│       ├── Page Information
+│       ├── Cite This Page
+│       ├── Wikidata Item
+│       ├── Download as PDF
+│       └── Printable Version
+├── Talk Page (per article)
+│   ├── Discussion Threads (indented replies)
+│   ├── Article Assessment (quality class, importance)
+│   ├── WikiProject Banners
+│   ├── Archives (old discussions)
+│   └── New Section (+)
+├── Edit Page
+│   ├── Visual Editor (WYSIWYG)
+│   │   ├── Toolbar (bold, italic, link, cite, template, table, media)
+│   │   ├── Insert Citation Dialog
+│   │   ├── Insert Template Dialog
+│   │   ├── Preview
+│   │   └── Publish Changes (edit summary required)
+│   └── Source Editor (wikitext)
+│       ├── Wikitext Markup
+│       ├── Toolbar (formatting shortcuts)
+│       ├── Show Preview
+│       ├── Show Changes (diff)
+│       └── Publish Changes
+├── Search
+│   ├── Full-text search across all articles
+│   ├── Namespaces filter (article, talk, user, project, file...)
+│   ├── Advanced Search (date, category, template)
+│   └── Search Suggestions (autocomplete)
+├── Categories
+│   ├── Category Page (list of articles + subcategories)
+│   ├── Category Tree (hierarchical browsing)
+│   └── Hidden Categories (maintenance)
+├── Portal Pages
+│   ├── Portal:Science, Portal:History, Portal:Geography, etc.
+│   ├── Featured content for the portal topic
+│   ├── Tasks / To-do for editors
+│   └── Related WikiProjects
+├── User Page
+│   ├── User Page (personal, like a profile/wiki page)
+│   ├── User Talk Page (messages from others)
+│   ├── Contributions (all edits by this user)
+│   ├── Logs (actions taken)
+│   ├── Sandbox (personal testing space)
+│   ├── Watchlist Items
+│   └── Preferences
+├── Watchlist
+│   ├── Recent Changes to watched pages
+│   ├── Filter: Minor edits, bot edits, namespace
+│   └── Manage Watchlist
+├── Recent Changes (global)
+│   ├── All Recent Edits (real-time feed)
+│   ├── Filter: Namespace, edit type, user, tags
+│   ├── Patrolled / Unpatrolled
+│   └── Related Changes (for specific page)
+├── Special Pages
+│   ├── All Pages (alphabetical index)
+│   ├── Random Article
+│   ├── Statistics (article count, edit count, active users)
+│   ├── Log (block, delete, move, protection)
+│   ├── New Pages
+│   ├── Orphaned Pages (no links to them)
+│   ├── Dead-end Pages (no links out)
+│   ├── Disambiguation Pages (multiple meanings)
+│   └── Maintenance Reports
+├── Community / Project
+│   ├── Village Pump (community discussion)
+│   ├── Administrators&#39; Noticeboard
+│   ├── WikiProjects (topic-based editorial groups)
+│   ├── Policies &amp; Guidelines (Neutral POV, Verifiability, No Original Research, etc.)
+│   ├── Manual of Style
+│   ├── Help Pages
+│   ├── Sandbox (public testing)
+│   └── Requests for Adminship (RfA)
+├── History / Diff View
+│   ├── Revision List (date, user, edit summary, size change)
+│   ├── Diff View (side-by-side comparison of two revisions)
+│   ├── Undo / Rollback
+│   └── Thank Editor
+├── Languages Sidebar
+│   ├── List of all language versions of this article
+│   └── Add Translation
+└── Donate Banner (periodic)
+    └── Fundraiser CTA (Wikimedia Foundation)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Wikipedia wordmark/logo, search bar (prominent, center), language switcher, user menu, create account/login</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed (desktop), collapsible</td>
+<td>Main Page, Contents, Current Events, Random Article, About, Contact, Donate + Tools section (What links here, Related changes, etc.)</td>
+</tr>
+<tr>
+<td><strong>Article Tabs</strong></td>
+<td>Horizontal tabs above article title</td>
+<td>Read, Talk, Edit (or View Source), View History</td>
+</tr>
+<tr>
+<td><strong>Table of Contents</strong></td>
+<td>Auto-generated, collapsible (top of article)</td>
+<td>Jump to section, nested numbering (1, 1.1, 1.2, 2, ...)</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Not standard — categories at bottom</td>
+<td>Categories as flat taxonomy (no hierarchy in article view)</td>
+</tr>
+<tr>
+<td><strong>Interwiki Links</strong></td>
+<td>Left sidebar section</td>
+<td>Links to same article in other language Wikipedias</td>
+</tr>
+<tr>
+<td><strong>Section Edit</strong></td>
+<td>[edit] link next to each heading</td>
+<td>Edit individual section without loading full article</td>
+</tr>
+</tbody></table>
+<h3>Desktop Layout</h3>
+<pre><code>[Left Sidebar (200px)]  |  [Article Content (fluid, max ~960px)]
+                         |  [Table of Contents (floating or top)]
+─────────────────────────────────────────────────────────
+Main Page               |  Article Title [edit]
+Contents                |  ─────────────────
+Current events          |  Lead section... infobox →
+Random article          |  ─────────────────
+About Wikipedia         |  Contents
+Contact us              |  1. History
+Donate                  |  2. Geography
+─────────────           |  3. Demographics
+Tools                   |  ...
+What links here         |
+Related changes         |  [Section content with citations]
+Upload file             |
+Special pages           |  ─────────────────
+Permanent link          |  References
+Page information        |  Categories: [cat1] [cat2] [cat3]
+Cite this page          |
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Article</td>
+<td>title, body (wikitext/HTML), namespace, page_id, language, protection_level, created_at, last_edited, edit_count, page_views</td>
+<td>has many Revisions, Categories, Interwiki Links, Talk Page</td>
+</tr>
+<tr>
+<td>Revision</td>
+<td>rev_id, parent_id, user, timestamp, edit_summary, size_bytes, minor (bool), tags[]</td>
+<td>belongs to Article</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>name, parent_categories[], subcategories[], article_count</td>
+<td>many-to-many with Articles (hierarchical tree)</td>
+</tr>
+<tr>
+<td>User</td>
+<td>username, edit_count, registration_date, user_groups[] (autoconfirmed, admin, bureaucrat, etc.)</td>
+<td>has many Revisions, Talk Page, Watchlist</td>
+</tr>
+<tr>
+<td>Talk Section</td>
+<td>heading, body, signatures[], archived (bool)</td>
+<td>belongs to Talk Page (associated with Article)</td>
+</tr>
+<tr>
+<td>Infobox</td>
+<td>template_name, fields (key-value structured data)</td>
+<td>belongs to Article</td>
+</tr>
+<tr>
+<td>Citation</td>
+<td>ref_id, type (web/book/journal), author, title, url, date, access_date, publisher</td>
+<td>belongs to Article (inline)</td>
+</tr>
+<tr>
+<td>File</td>
+<td>filename, description, license, dimensions, upload_date, uploader</td>
+<td>hosted on Wikimedia Commons, used by Articles</td>
+</tr>
+<tr>
+<td>Disambiguation</td>
+<td>title, entries[] (brief description + link for each meaning)</td>
+<td>special article type</td>
+</tr>
+<tr>
+<td>Portal</td>
+<td>topic, featured_article, did_you_know, tasks[]</td>
+<td>links to many Articles</td>
+</tr>
+<tr>
+<td>Redirect</td>
+<td>from_title, to_title</td>
+<td>connects old/alt names to canonical Article</td>
+</tr>
+<tr>
+<td>WikiProject</td>
+<td>name, scope, assessment_criteria, members[]</td>
+<td>manages quality of Articles within a topic</td>
+</tr>
+</tbody></table>
+<h3>Namespaces</h3>
+<pre><code>(Main/Article) | Talk | User | User talk | Wikipedia | Wikipedia talk
+File | File talk | MediaWiki | Template | Template talk | Help | Category
+Portal | Draft | Module
+</code></pre>
+<h3>Article Quality Scale</h3>
+<pre><code>Stub → Start → C → B → Good Article (GA) → Featured Article (FA)
+</code></pre>
+<h3>Protection Levels</h3>
+<pre><code>Unprotected (anyone edits) → Semi-protected (autoconfirmed only) → Extended-confirmed → Full protection (admins only)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Read and Navigate</h3>
+<pre><code>Search → Article → Read Lead → Table of Contents → Jump to Section → Follow Wikilink → New Article → Continue
+</code></pre>
+<h3>Quick Lookup</h3>
+<pre><code>Search Bar → Type query → Autocomplete suggestion → Click → Read lead paragraph + infobox → Done
+</code></pre>
+<h3>Edit an Article</h3>
+<pre><code>Article → [Edit] Tab → Visual Editor → Make Changes → Add Citation → Preview → Write Edit Summary → Publish
+</code></pre>
+<h3>Discuss Changes</h3>
+<pre><code>Article → Talk Tab → Read Discussion → New Section → Write Opinion → Sign (~~~~) → Others Reply
+</code></pre>
+<h3>Patrol Recent Changes</h3>
+<pre><code>Recent Changes → Filter (unpatrolled) → Click Diff → Review Edit → Accept / Revert / Warn User
+</code></pre>
+<h3>Create New Article</h3>
+<pre><code>Search → &quot;Create this page&quot; → Choose Stub Template → Write Lead + Infobox + References → Add Categories → Publish → Others Expand
+</code></pre>
+<h3>Compare Versions</h3>
+<pre><code>Article → View History → Select Two Revisions → Compare → Diff View (additions green, removals red) → Undo if vandalism
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/wiki/:Title                       → Article Page
+/wiki/Talk::Title                  → Talk Page
+/wiki/User::Username               → User Page
+/wiki/User_talk::Username          → User Talk Page
+/wiki/Category::CategoryName       → Category Page
+/wiki/Portal::TopicName            → Portal Page
+/wiki/File::Filename               → File/Image Page
+/wiki/Template::TemplateName       → Template Page
+/wiki/Special:Search?search=:q     → Search Results
+/wiki/Special:RecentChanges        → Recent Changes
+/wiki/Special:Watchlist            → Watchlist
+/wiki/Special:Contributions/:user  → User Contributions
+/wiki/Special:Random               → Random Article
+/wiki/Special:AllPages             → All Pages Index
+/wiki/Special:Log                  → Action Logs
+/wiki/Special:Statistics           → Site Statistics
+/w/index.php?title=:T&amp;action=edit  → Edit Page
+/w/index.php?title=:T&amp;action=history → View History
+/w/index.php?title=:T&amp;diff=:r1&amp;oldid=:r2 → Diff View
+/w/index.php?title=:T&amp;oldid=:rev  → Specific Revision
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Article titles + full text</td>
+<td>Namespace (Article, Talk, User, etc.), Language</td>
+<td>Relevance, Last Edited, Creation Date</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>Articles in category</td>
+<td>Subcategory, Alphabetical range</td>
+<td>Alphabetical (default)</td>
+</tr>
+<tr>
+<td>Recent Changes</td>
+<td>All edits</td>
+<td>Namespace, User, Tags (reverted, visual edit, etc.), Minor/Bot</td>
+<td>Chronological (newest first)</td>
+</tr>
+<tr>
+<td>Contributions</td>
+<td>Edits by specific user</td>
+<td>Namespace, Date Range, Tags</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Watchlist</td>
+<td>Changes to watched pages</td>
+<td>Namespace, Change Type, Time Period</td>
+<td>Chronological</td>
+</tr>
+</tbody></table>
+<h3>Search Features</h3>
+<ul>
+<li>Full-text search with highlighting</li>
+<li>&quot;Did you mean?&quot; suggestions</li>
+<li>Namespace-scoped search</li>
+<li>Interwiki search (across Wikimedia projects)</li>
+<li>Hatnotes at top of articles (&quot;For other uses, see...&quot;)</li>
+<li>Disambiguation pages for ambiguous terms</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Content</th>
+<th>ToC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1000px)</td>
+<td>Fixed left sidebar (200px)</td>
+<td>Fluid article content (max ~960px)</td>
+<td>Inline (top of article, collapsible)</td>
+</tr>
+<tr>
+<td>Tablet (720–999px)</td>
+<td>Collapsed (hamburger)</td>
+<td>Full-width content</td>
+<td>Inline (collapsed by default)</td>
+</tr>
+<tr>
+<td>Mobile (&lt;720px)</td>
+<td>Hamburger drawer</td>
+<td>Full-width, simplified layout</td>
+<td>Sticky floating button (bottom)</td>
+</tr>
+</tbody></table>
+<h3>Mobile Adaptations (Mobile Web / App)</h3>
+<ul>
+<li>Simplified header (search + hamburger)</li>
+<li>Collapsible sections (tap heading to expand)</li>
+<li>Infobox: horizontally scrollable or stacked</li>
+<li>Table of Contents: floating button, opens as overlay</li>
+<li>Images: tap to view full-screen</li>
+<li>Edit: simplified visual editor</li>
+<li>Language switcher: prominent button</li>
+<li>Nearby: geo-based article discovery</li>
+<li>Offline: save articles for offline reading (Wikipedia app)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Edit</th>
+<th>Move/Rename</th>
+<th>Delete</th>
+<th>Protect</th>
+<th>Block Users</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous (IP)</td>
+<td>✅</td>
+<td>Most articles (not semi-protected)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered (new)</td>
+<td>✅</td>
+<td>Most articles (not semi-protected)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Autoconfirmed (4 days + 10 edits)</td>
+<td>✅</td>
+<td>✅ (incl. semi-protected)</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Extended Confirmed (30 days + 500 edits)</td>
+<td>✅</td>
+<td>✅ (incl. extended-confirmed)</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Rollbacker</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>— (+ one-click revert)</td>
+</tr>
+<tr>
+<td>Administrator</td>
+<td>✅</td>
+<td>✅ (incl. fully-protected)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Bureaucrat</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + grant admin rights</td>
+</tr>
+</tbody></table>
+<h3>Content Policies (enforced socially + technically)</h3>
+<ul>
+<li>Neutral Point of View (NPOV) — no bias</li>
+<li>Verifiability — all claims need reliable sources</li>
+<li>No Original Research — Wikipedia summarizes existing knowledge</li>
+<li>Biographies of Living Persons (BLP) — strict sourcing requirements</li>
+<li>Notability — subjects must have significant coverage in independent sources</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

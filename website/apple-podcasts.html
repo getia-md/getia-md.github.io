@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Podcasts — IA.md | getIA.md</title>
+  <meta name="description" content="Podcast directory. Subscribe, chapters, transcripts. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=apple.com&sz=64" alt="Apple Podcasts" onerror="this.parentElement.textContent='A'">
+      </div>
+      <h1 class="detail-brand-name">Apple Podcasts</h1>
+      <p class="detail-brand-tagline">Podcast directory. Subscribe, chapters, transcripts.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/apple-podcasts/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://podcasts.apple.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/apple-podcasts/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Apple Podcasts — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Apple&#39;s built-in podcast platform, one of the largest podcast directories in the world. Apple Podcasts&#39; mental model is <strong>subscribe and listen</strong> — users discover shows through curated editorial picks, charts, and categories, subscribe to receive new episodes, and listen through a persistent audio player. Key differentiators: deep iOS/macOS/watchOS/CarPlay integration, Apple Podcasts Subscriptions (paid shows with premium content), curated editorial channels, automatic episode transcripts (searchable), synced playback across Apple devices, and the Apple Podcasts Connect portal for creators.</p>
+<h2>Site Map</h2>
+<pre><code>├── Listen Now (Home)
+│   ├── Continue Listening (resume episodes)
+│   ├── Up Next (queue)
+│   ├── New Episodes (from subscriptions)
+│   ├── Recently Played
+│   ├── For You (personalized recommendations)
+│   ├── Trending
+│   ├── Editor&#39;s Picks / Featured
+│   └── Stations (auto-playlists)
+├── Browse
+│   ├── Top Charts
+│   │   ├── Top Shows (free)
+│   │   ├── Top Episodes
+│   │   └── Top Subscriber Shows (paid)
+│   ├── Categories
+│   │   ├── Arts, Business, Comedy, Education
+│   │   ├── Health &amp; Fitness, History, News, Science
+│   │   ├── Society &amp; Culture, Sports, Technology, True Crime
+│   │   └── TV &amp; Film, Music, Kids &amp; Family, Fiction...
+│   ├── Featured Collections (editorial curated)
+│   ├── Channels (publisher groupings)
+│   │   ├── Channel Page (shows by publisher, e.g., The New York Times, Wondery)
+│   │   ├── Subscribe to Channel (paid)
+│   │   └── Free + Premium shows
+│   ├── New &amp; Noteworthy
+│   └── Provider Networks
+├── Search
+│   ├── Shows, Episodes, Channels
+│   ├── Transcript Search (search spoken words)
+│   ├── Category Browse (when search empty)
+│   └── Recent Searches
+├── Show Page
+│   ├── Artwork, Title, Publisher
+│   ├── Description (expandable)
+│   ├── Follow / Unfollow Button
+│   ├── Subscribe (if paid channel/show)
+│   ├── Ratings &amp; Reviews (star rating + written reviews)
+│   ├── Episode List
+│   │   ├── Sort: Latest / Season / All
+│   │   ├── Filter: Played / Unplayed / Downloaded / Saved
+│   │   ├── Episode Card (title, date, duration, played status indicator)
+│   │   └── Search within show
+│   ├── You Might Also Like (related shows)
+│   ├── Trailer (if available, pinned)
+│   ├── Additional Info (frequency, language, explicit rating)
+│   └── Share Show
+├── Episode Detail
+│   ├── Title, Show, Date, Duration
+│   ├── Description / Show Notes (links, timestamps)
+│   ├── Play Button (primary CTA)
+│   ├── Download (offline)
+│   ├── Save to Library
+│   ├── Add to Queue (Play Next / Play Last)
+│   ├── Transcript (full, searchable, time-synced)
+│   │   ├── Search within transcript
+│   │   ├── Tap line → jump to timestamp
+│   │   └── Follow along while playing
+│   ├── Chapter Markers (if available)
+│   ├── Share Episode (link, clip, timestamp link)
+│   └── Mark as Played
+├── Player (Persistent)
+│   ├── Mini Player (bottom bar, above tab bar)
+│   │   ├── Artwork, Title, Show
+│   │   ├── Play/Pause
+│   │   └── Progress Bar
+│   └── Full Player (expanded)
+│       ├── Artwork (large)
+│       ├── Title, Show
+│       ├── Progress Scrubber + Time Remaining
+│       ├── Controls
+│       │   ├── Skip Back 15s
+│       │   ├── Play/Pause
+│       │   ├── Skip Forward 30s
+│       │   ├── Playback Speed (0.5x, 1x, 1.25x, 1.5x, 2x)
+│       │   └── Volume
+│       ├── Sleep Timer (5/10/15/30/45/60 min, end of episode)
+│       ├── AirPlay / Audio Output
+│       ├── Transcript (inline, scrolling)
+│       ├── Chapter List (if available)
+│       ├── Share (show, episode, clip, timestamp)
+│       ├── Up Next / Queue
+│       └── More (go to show, save, download, mark played)
+├── Library
+│   ├── Shows (followed/subscribed)
+│   ├── Saved Episodes
+│   ├── Downloaded Episodes
+│   ├── Latest Episodes (all new from followed shows)
+│   ├── Stations (custom auto-playlists)
+│   │   └── Create Station (rules: shows, play order, episode limit)
+│   └── Recently Played
+├── Queue / Up Next
+│   ├── Currently Playing
+│   ├── Up Next (manually added)
+│   ├── Reorder (drag to rearrange)
+│   └── Auto-Queue from followed shows
+├── Notifications
+│   ├── New Episodes from Followed Shows
+│   ├── Personalized Recommendations
+│   └── Channel / Subscription Updates
+├── Settings
+│   ├── General
+│   │   ├── Sync Library (iCloud)
+│   │   ├── Continuous Playback (auto-play next)
+│   │   ├── External Controls (skip duration customization)
+│   │   └── Headphone Controls
+│   ├── Downloads
+│   │   ├── Auto-Download (on/off per show)
+│   │   ├── Download When (Wi-Fi only, On Follow)
+│   │   ├── Remove Played Downloads (auto)
+│   │   └── Storage Management
+│   ├── Notifications (per show or global)
+│   ├── Playback
+│   │   ├── Skip Silence (trim dead air)
+│   │   ├── Default Playback Speed
+│   │   └── Volume Boost (enhance speech)
+│   ├── Subscriptions (Apple Podcasts Subscriptions management)
+│   └── Privacy
+├── Apple Podcasts Connect (Creator Portal — web)
+│   ├── Dashboard (downloads, followers, listeners)
+│   ├── Shows (manage multiple shows)
+│   ├── Analytics
+│   │   ├── Downloads
+│   │   ├── Listeners (unique)
+│   │   ├── Followers
+│   │   ├── Engaged Listeners
+│   │   ├── Demographics (device, country)
+│   │   └── Episode Performance
+│   ├── Subscriptions Management (pricing, free trials)
+│   ├── Channels (group shows under brand)
+│   └── Settings (RSS feed, category, artwork)
+└── Integration
+    ├── CarPlay (simplified player)
+    ├── Apple Watch (streaming, downloaded episodes)
+    ├── HomePod (Siri voice control)
+    ├── AirPods (auto-play, announce notifications)
+    └── Siri (&quot;Hey Siri, play [show name]&quot;)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>iOS: 4 tabs, always visible</td>
+<td>Listen Now, Browse, Library, Search</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Contextual</td>
+<td>Listen Now: title; Browse: title; Library: edit; Search: search bar</td>
+</tr>
+<tr>
+<td><strong>Mini Player</strong></td>
+<td>Persistent bottom bar (above tab bar)</td>
+<td>Always visible when audio playing; tap to expand</td>
+</tr>
+<tr>
+<td><strong>Full Player</strong></td>
+<td>Expand from mini player</td>
+<td>Swipe up or tap to expand; swipe down to collapse</td>
+</tr>
+<tr>
+<td><strong>Show Tabs</strong></td>
+<td>Within show page</td>
+<td>Episodes (sort/filter)</td>
+</tr>
+<tr>
+<td><strong>Transcript View</strong></td>
+<td>Within full player or episode detail</td>
+<td>Scrollable, tappable lines, search</td>
+</tr>
+<tr>
+<td><strong>CarPlay</strong></td>
+<td>Simplified grid</td>
+<td>Listen Now, Library, Browse (limited), Search (voice)</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Show</td>
+<td>title, author, artwork, description, category[], feed_url, follower_count, rating (1-5), review_count, frequency, language, explicit (bool), type (episodic/serial)</td>
+<td>has many Episodes, belongs to Channel (optional)</td>
+</tr>
+<tr>
+<td>Episode</td>
+<td>title, description, audio_url, duration, published_at, season_number, episode_number, episode_type (full/trailer/bonus), transcript, chapters[], explicit (bool)</td>
+<td>belongs to Show</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>name, artwork, description, publisher, shows[], subscription_pricing</td>
+<td>groups Shows by publisher</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>user, channel_or_show, pricing (monthly/annual), started_at, status</td>
+<td>connects User to paid Channel/Show</td>
+</tr>
+<tr>
+<td>PlaybackState</td>
+<td>episode, position_seconds, completed (bool), speed, played_at</td>
+<td>belongs to User, synced via iCloud</td>
+</tr>
+<tr>
+<td>QueueItem</td>
+<td>episode, position_in_queue, added_by (user/auto)</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Download</td>
+<td>episode, file_path, downloaded_at, auto (bool), expires_at</td>
+<td>belongs to User (on-device)</td>
+</tr>
+<tr>
+<td>Station</td>
+<td>name, rules (shows[], play_order, episode_limit), auto_generated</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), title, text, created_at</td>
+<td>belongs to Show and User</td>
+</tr>
+<tr>
+<td>Transcript</td>
+<td>episode, segments[] (text, start_time, end_time, speaker)</td>
+<td>belongs to Episode</td>
+</tr>
+<tr>
+<td>Chapter</td>
+<td>title, start_time, artwork (optional), url (optional)</td>
+<td>belongs to Episode</td>
+</tr>
+<tr>
+<td>SavedEpisode</td>
+<td>episode, saved_at</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Episode Types</h3>
+<p><code>full | trailer | bonus</code></p>
+<h3>Show Types</h3>
+<p><code>episodic (newest first, standalone) | serial (oldest first, sequential)</code></p>
+<h2>User Flows</h2>
+<h3>Discover and Follow</h3>
+<pre><code>Browse → Top Charts → Tap Show → Read Description → Play Trailer → Follow → New Episodes Auto-appear in Listen Now
+</code></pre>
+<h3>Listen to Episode</h3>
+<pre><code>Listen Now → New Episodes → Tap Episode → Play → Mini Player → Expand Full Player → Adjust Speed (1.5x) → Skip Silence → Finish → Auto-play Next
+</code></pre>
+<h3>Search by Transcript</h3>
+<pre><code>Search → Type keyword → Results (shows + episodes) → Episode result shows transcript match → Tap → Jump to Timestamp → Listen in Context
+</code></pre>
+<h3>Queue Management</h3>
+<pre><code>Episode → [+] Play Next / Play Last → Listen Now → Up Next → Reorder (drag) → Play
+</code></pre>
+<h3>Download for Offline</h3>
+<pre><code>Episode → Download (↓) → Library → Downloads → Play Offline (airplane mode) → Auto-remove After Played
+</code></pre>
+<h3>Subscribe to Premium Show</h3>
+<pre><code>Browse → Channel → Premium Show → Subscribe (pricing) → Apple ID payment → Unlock ad-free + bonus content
+</code></pre>
+<h3>Cross-Device Listening</h3>
+<pre><code>Start on iPhone → Continue on Mac → Sync via iCloud → Resume at Same Spot → Finish on Apple Watch during run
+</code></pre>
+<h3>Create Station</h3>
+<pre><code>Library → Stations → New Station → Name → Add Shows → Set Rules (newest first, limit 10 episodes) → Auto-curated playlist updates
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># Apple Podcasts Web (podcasts.apple.com)
+/                                  → Browse Home
+/genre/:genreId/:genreName         → Category Page
+/channel/:channelId/:channelName   → Channel Page
+/podcast/:podcastName/id:showId    → Show Page
+/podcast/:name/id:showId?i=:epId   → Episode Detail
+/charts                            → Top Charts
+/search?term=:query                → Search Results
+/subscribe?id=:showId              → Subscribe Landing
+
+# Deep Links (iOS)
+podcasts://show/:showId            → Open Show in Apple Podcasts
+podcasts://episode/:episodeId      → Open Episode
+podcasts://search?term=:query      → Search
+
+# Apple Podcasts Connect (creators)
+podcastsconnect.apple.com          → Creator Dashboard
+/analytics                         → Analytics
+/my-podcasts                       → Manage Shows
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Shows, Episodes, Channels, Transcript text</td>
+<td>—</td>
+<td>Relevance, Popularity</td>
+</tr>
+<tr>
+<td>Browse</td>
+<td>Curated + charts</td>
+<td>Category, Free / Subscriber</td>
+<td>Top, Trending, New</td>
+</tr>
+<tr>
+<td>Show Episodes</td>
+<td>Episodes within show</td>
+<td>Played / Unplayed / Downloaded / Saved, Season</td>
+<td>Newest, Oldest, Season</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>Followed shows, saved/downloaded episodes</td>
+<td>Shows / Episodes / Downloads</td>
+<td>Recently Updated, Title, Recently Added</td>
+</tr>
+<tr>
+<td>Transcript</td>
+<td>Spoken words within episodes</td>
+<td>—</td>
+<td>Timestamp order</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Nav</th>
+<th>Player</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>macOS Desktop</td>
+<td>Sidebar (Listen Now, Browse, Charts, Library sections)</td>
+<td>Bottom bar + expandable panel</td>
+<td>Multi-column grid</td>
+</tr>
+<tr>
+<td>iPad</td>
+<td>Bottom tab bar or sidebar (iPadOS 16+)</td>
+<td>Bottom bar + slide-over</td>
+<td>2-3 column grid</td>
+</tr>
+<tr>
+<td>iPhone</td>
+<td>Bottom tab bar</td>
+<td>Bottom bar (swipe up to expand)</td>
+<td>Single column</td>
+</tr>
+<tr>
+<td>Apple Watch</td>
+<td>Scrollable list</td>
+<td>Full screen (simple controls)</td>
+<td>Episode list only</td>
+</tr>
+<tr>
+<td>CarPlay</td>
+<td>Grid (4-8 items per screen)</td>
+<td>Full screen player</td>
+<td>Simplified show list</td>
+</tr>
+</tbody></table>
+<h3>Audio-Specific Patterns</h3>
+<ul>
+<li>Background playback (app minimized, screen locked)</li>
+<li>Lock screen controls (play/pause, skip, scrubber)</li>
+<li>Control Center integration</li>
+<li>Dynamic Island / Live Activity (iPhone 14 Pro+)</li>
+<li>AirPods auto-switch between devices</li>
+<li>Announce notifications (AirPods read episode titles)</li>
+<li>Skip silence (smart trim of dead air)</li>
+<li>Volume Boost (enhance speech clarity)</li>
+<li>Sleep timer (auto-pause)</li>
+<li>CarPlay / Android Auto (via web player — limited)</li>
+<li>Siri integration (&quot;Play the latest episode of [show]&quot;)</li>
+<li>Offline download management with auto-cleanup</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Listen</th>
+<th>Follow</th>
+<th>Download</th>
+<th>Review</th>
+<th>Transcript</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Free User (Apple ID)</td>
+<td>✅</td>
+<td>✅ (free shows, with ads if podcast has them)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Channel Subscriber (paid)</td>
+<td>✅</td>
+<td>✅ + premium/ad-free content + bonus episodes</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Creator (Podcasts Connect)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>— (own shows)</td>
+<td>✅ + Analytics, manage shows, set subscription pricing</td>
+</tr>
+<tr>
+<td>Apple Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Moderate</td>
+<td>✅ + editorial curation, policy enforcement</td>
+</tr>
+</tbody></table>
+<h3>No Separate Premium Tier</h3>
+<ul>
+<li>Apple Podcasts app is free (included with iOS/macOS)</li>
+<li>No platform-wide subscription (unlike Spotify Premium)</li>
+<li>Individual shows/channels offer paid subscriptions via Apple</li>
+<li>Apple takes 30% of subscription revenue (first year), 15% after</li>
+<li>Podcast content itself is mostly free — monetization is per-show</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

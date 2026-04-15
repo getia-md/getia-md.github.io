@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robinhood — IA.md | getIA.md</title>
+  <meta name="description" content="Commission-free trading. Simplicity-first, fractional shares. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=robinhood.com&sz=64" alt="Robinhood" onerror="this.parentElement.textContent='R'">
+      </div>
+      <h1 class="detail-brand-name">Robinhood</h1>
+      <p class="detail-brand-tagline">Commission-free trading. Simplicity-first, fractional shares.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/robinhood/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://robinhood.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/robinhood/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Robinhood — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Robinhood is a commission-free trading platform designed to democratize investing. Unlike traditional brokerages with dense, professional interfaces, Robinhood&#39;s mental model is <strong>simplicity first</strong> — a clean, mobile-native experience that strips away complexity. Users monitor a single portfolio view, tap into individual stocks or crypto, and execute trades in a few taps. The signature design: one asset at a time, big green/red chart, and a prominent Buy/Sell button.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Portfolio
+│   ├── Portfolio Value (single line chart, dramatic)
+│   ├── Daily Change ($ and %)
+│   ├── Buying Power
+│   ├── Watchlist (custom lists)
+│   ├── Top Movers (popular on Robinhood)
+│   ├── News Feed (personalized)
+│   ├── Recurring Investments Summary
+│   └── Robinhood Gold Banner (upsell)
+├── Search / Explore
+│   ├── Ticker / Company Search
+│   ├── Categories (Technology, Healthcare, Energy, etc.)
+│   ├── Collections (100 Most Popular, Upcoming Earnings)
+│   ├── Daily Movers
+│   ├── Crypto
+│   ├── IPO Access
+│   └── Trending Lists
+├── Asset Detail (Stock / ETF / Crypto)
+│   ├── Price Chart (line chart, touch-to-scrub)
+│   │   ├── Timeframes (1D, 1W, 1M, 3M, 1Y, 5Y)
+│   │   └── Color shifts green/red based on period
+│   ├── Buy / Sell Buttons (prominent)
+│   ├── Your Position (shares, avg cost, return)
+│   ├── Key Statistics
+│   │   ├── Market Cap, P/E, 52W Range, Volume
+│   │   ├── Dividend Yield
+│   │   └── Earnings Date
+│   ├── About (company description)
+│   ├── News (related articles)
+│   ├── Analyst Ratings (buy/hold/sell bar)
+│   ├── Earnings (chart)
+│   ├── People Also Own
+│   └── Add to Watchlist
+├── Order Flow
+│   ├── Buy / Sell Toggle
+│   ├── Order Type (market, limit, stop, stop-limit)
+│   ├── Shares or Dollars Toggle (fractional shares)
+│   ├── Amount Input
+│   ├── Review Order
+│   ├── Swipe Up to Confirm (signature UX)
+│   └── Order Confirmed (confetti animation)
+├── Crypto
+│   ├── Crypto Portfolio
+│   ├── Crypto List (BTC, ETH, DOGE, etc.)
+│   ├── Crypto Detail (same layout as stocks)
+│   ├── Crypto Wallet (send/receive)
+│   └── Staking (earn rewards)
+├── Options Trading
+│   ├── Options Chain
+│   ├── Strategy Builder (calls, puts, spreads)
+│   ├── Risk / Reward Preview
+│   └── Options Order Flow
+├── Recurring Investments
+│   ├── Active Recurring Buys
+│   ├── Create Recurring (asset, amount, frequency)
+│   └── Pause / Edit / Cancel
+├── Cash Card
+│   ├── Card Overview (virtual + physical)
+│   ├── Round-Ups (spare change investing)
+│   ├── Weekly Rewards (cashback categories)
+│   ├── Card Controls (freeze, PIN)
+│   └── Spending History
+├── Notifications
+│   ├── Price Alerts (set by user)
+│   ├── Order Executed
+│   ├── Earnings Alerts
+│   ├── Dividend Received
+│   └── News Alerts
+├── Account
+│   ├── Profile
+│   ├── Investing (account type, margin status)
+│   ├── Transfers (deposit / withdraw)
+│   ├── Statements &amp; Documents
+│   ├── Tax Documents (1099)
+│   ├── Robinhood Gold (subscription management)
+│   ├── Linked Banks
+│   └── Settings
+│       ├── Security (2FA, biometrics)
+│       ├── Notifications
+│       ├── Appearance (dark/light)
+│       └── Legal &amp; Regulatory
+├── Learn (Snacks)
+│   ├── Articles &amp; Explainers
+│   ├── Robinhood Snacks (newsletter)
+│   └── First Trade Experience (educational)
+└── Help
+    ├── FAQ
+    ├── Contact Support
+    └── Chat
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs</td>
+<td>Portfolio (home), Search, Cash Card (optional), Notifications, Account</td>
+</tr>
+<tr>
+<td><strong>Asset Page</strong></td>
+<td>Full-screen scroll</td>
+<td>Chart → Buy/Sell → Stats → News (single continuous page)</td>
+</tr>
+<tr>
+<td><strong>Trade Panel</strong></td>
+<td>Bottom sheet (slides up)</td>
+<td>Order entry from any asset page</td>
+</tr>
+<tr>
+<td><strong>Search</strong></td>
+<td>Full-screen overlay</td>
+<td>Ticker symbol + company name search, trending lists</td>
+</tr>
+<tr>
+<td><strong>Chart Interaction</strong></td>
+<td>Touch-and-hold scrub</td>
+<td>Drag finger across chart to see historical prices with haptic</td>
+</tr>
+</tbody></table>
+<h3>Signature UX Patterns</h3>
+<ul>
+<li><strong>Swipe Up to Submit</strong>: Orders confirmed by swiping up (prevents accidental taps)</li>
+<li><strong>Confetti on First Trade</strong>: Celebration animation for first stock purchase</li>
+<li><strong>Fractional Shares</strong>: Dollar-based investing ($5 in AAPL) not just share counts</li>
+<li><strong>Color as Feedback</strong>: Entire chart and numbers shift green/red based on performance</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Asset</td>
+<td>symbol, name, type (stock/etf/crypto), price, change, change_pct, market_cap</td>
+<td>has PriceHistory, News, AnalystRatings</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>asset, shares (supports fractional), avg_cost, current_value, total_return, unrealized_pnl</td>
+<td>belongs to Portfolio</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>asset, side, type (market/limit/stop), quantity_or_dollars, price, status, filled_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Watchlist</td>
+<td>name, assets[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>RecurringInvestment</td>
+<td>asset, amount, frequency (daily/weekly/biweekly/monthly), next_date, status</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>CryptoWallet</td>
+<td>asset, balance, address, send/receive_enabled</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>PriceAlert</td>
+<td>asset, condition (above/below), target_price, triggered</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>CashCard</td>
+<td>card_number (masked), status, weekly_reward_category, round_up_enabled</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>GoldSubscription</td>
+<td>status, tier, margin_limit, interest_rate, research_access</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Order Types</h3>
+<p><code>market | limit | stop | stop-limit | trailing-stop</code></p>
+<h3>Order Status</h3>
+<p><code>queued → placed → partially_filled → filled → cancelled → rejected</code></p>
+<h2>User Flows</h2>
+<h3>First-Time Buy (Signature Flow)</h3>
+<pre><code>Search → Find AAPL → Asset Page → [Buy] → Dollars or Shares → Enter $50 → Review → Swipe Up → Confetti → Position Appears on Home
+</code></pre>
+<h3>Set Price Alert</h3>
+<pre><code>Asset Page → [...] → Set Alert → Above/Below → Enter Price → Save → Push Notification When Triggered
+</code></pre>
+<h3>Dollar-Cost Average</h3>
+<pre><code>Asset Page → [...] → Recurring Investment → Amount ($10) → Frequency (Weekly) → Start → Auto-buys Every Week
+</code></pre>
+<h3>Crypto Transfer</h3>
+<pre><code>Crypto Asset → Send → Enter Address → Amount → Review → 2FA Confirm → Sent
+</code></pre>
+<h2>URL / Route Structure</h2>
+<blockquote>
+<p>Note: Robinhood is primarily a native mobile app. Web routes mirror mobile screens.</p>
+</blockquote>
+<pre><code>/                              → Portfolio Home
+/stocks/:symbol                → Stock Detail
+/crypto/:symbol                → Crypto Detail
+/stocks/:symbol/options        → Options Chain
+/order/:id                     → Order Detail
+/account                       → Account
+/account/transfers             → Transfers
+/account/documents             → Statements &amp; Tax Docs
+/account/gold                  → Robinhood Gold
+/cash-card                     → Cash Card
+/notifications                 → Notifications
+/learn                         → Education
+/search                        → Search / Explore
+/lists/:name                   → Watchlist
+/recurring                     → Recurring Investments
+/settings                      → Settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Ticker symbol, company name, crypto</td>
+<td>Asset type (stocks, ETFs, crypto)</td>
+<td>Relevance, popularity</td>
+</tr>
+<tr>
+<td>Explore</td>
+<td>Categories, collections, trending</td>
+<td>Sector, market cap tier</td>
+<td>Popular, price change</td>
+</tr>
+<tr>
+<td>Portfolio</td>
+<td>Holdings</td>
+<td>Asset type</td>
+<td>Value, change, name</td>
+</tr>
+<tr>
+<td>Watchlist</td>
+<td>Watchlist items</td>
+<td>—</td>
+<td>Custom order, change</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Chart</th>
+<th>Trade</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Full-width line chart, touch-scrub</td>
+<td>Bottom sheet, swipe-up confirm</td>
+<td>Bottom tab bar</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Larger chart with more detail</td>
+<td>Side panel</td>
+<td>Bottom tabs</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Full interactive chart, hover data</td>
+<td>Right sidebar order form</td>
+<td>Top nav + left sidebar</td>
+</tr>
+</tbody></table>
+<h3>Mobile-First Design Principles</h3>
+<ul>
+<li>Single-column, full-bleed design</li>
+<li>One asset at a time (no multi-chart dashboards)</li>
+<li>Large touch targets, minimal text density</li>
+<li>Green/red color coding as primary information signal</li>
+<li>Haptic feedback on chart scrub and order submission</li>
+<li>Pull-to-refresh portfolio value</li>
+<li>Dark mode default (brand identity)</li>
+<li>Fractional shares make $1 minimum accessible</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View Prices</th>
+<th>Trade</th>
+<th>Options</th>
+<th>Crypto</th>
+<th>Margin</th>
+<th>Gold Features</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unverified</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Basic (Cash)</td>
+<td>✅</td>
+<td>✅</td>
+<td>Level 1-2</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Options Enabled</td>
+<td>✅</td>
+<td>✅</td>
+<td>Level 1-3</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Gold Subscriber</td>
+<td>✅</td>
+<td>✅</td>
+<td>All levels</td>
+<td>✅</td>
+<td>✅</td>
+<td>Research, larger instant deposits, lower margin rates</td>
+</tr>
+</tbody></table>
+<h3>Regulatory Requirements</h3>
+<ul>
+<li>SEC/FINRA compliance disclosures on all trade screens</li>
+<li>Pattern Day Trader warning (&lt; $25k accounts)</li>
+<li>Options risk disclosures</li>
+<li>Crypto not SIPC-insured disclaimer</li>
+<li>Fractional share limitations disclosure</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

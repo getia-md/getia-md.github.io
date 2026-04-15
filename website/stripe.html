@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stripe — IA.md | getIA.md</title>
+  <meta name="description" content="Payment infrastructure. APIs, checkout, billing, Connect. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=64" alt="Stripe" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Stripe</h1>
+      <p class="detail-brand-tagline">Payment infrastructure. APIs, checkout, billing, Connect.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/stripe/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://stripe.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/stripe/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Stripe — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Stripe is the payment infrastructure that powers millions of internet businesses. This IA covers the <strong>Stripe product suite from the merchant&#39;s perspective</strong> — the APIs, checkout experiences, and payment processing that businesses integrate. (The Stripe Dashboard developer console is a separate IA.) The mental model is <strong>payments as infrastructure</strong> — Stripe handles the entire money flow: accept payments via cards/wallets/bank transfers, manage subscriptions, prevent fraud, handle disputes, and disburse payouts. Everything is API-first with pre-built UI components available.</p>
+<h2>Site Map</h2>
+<h3>Marketing &amp; Documentation Site</h3>
+<pre><code>├── Home
+│   ├── Hero (API-first messaging)
+│   ├── Product Suite Overview
+│   ├── Customer Logos (trust signals)
+│   ├── Code Example (live, interactive)
+│   └── Get Started CTA
+├── Products
+│   ├── Payments
+│   │   ├── Stripe Checkout (hosted payment page)
+│   │   ├── Payment Links (no-code)
+│   │   ├── Elements (embeddable UI components)
+│   │   ├── Payment Methods (cards, wallets, BNPL, bank)
+│   │   └── Pricing
+│   ├── Billing (Subscriptions)
+│   │   ├── Subscription Management
+│   │   ├── Invoicing
+│   │   ├── Revenue Recovery (smart retries)
+│   │   ├── Usage-Based Billing (metered)
+│   │   └── Customer Portal
+│   ├── Connect (Marketplace Payments)
+│   │   ├── Platform Payments
+│   │   ├── Onboarding (KYC for sub-merchants)
+│   │   ├── Split Payments
+│   │   └── Payouts to Connected Accounts
+│   ├── Radar (Fraud Prevention)
+│   │   ├── Machine Learning Fraud Detection
+│   │   ├── Custom Rules
+│   │   ├── 3D Secure
+│   │   └── Block/Allow Lists
+│   ├── Terminal (In-Person Payments)
+│   │   ├── Hardware (readers)
+│   │   ├── SDKs
+│   │   └── Unified Online + In-Person
+│   ├── Atlas (Company Incorporation)
+│   ├── Sigma (SQL Reporting)
+│   ├── Climate (Carbon Removal)
+│   ├── Identity (ID Verification)
+│   ├── Tax (Automated Tax Calculation)
+│   ├── Revenue Recognition
+│   └── Financial Connections (Bank Linking)
+├── Documentation
+│   ├── Quick Start Guide
+│   ├── API Reference
+│   │   ├── Core Resources (PaymentIntents, Charges, Customers)
+│   │   ├── Checkout
+│   │   ├── Billing
+│   │   ├── Connect
+│   │   └── Full API (200+ endpoints)
+│   ├── SDKs (Node, Python, Ruby, Go, Java, .NET, PHP)
+│   ├── Client Libraries (Stripe.js, React, iOS, Android)
+│   ├── Guides
+│   │   ├── Accept a Payment
+│   │   ├── Set Up Subscriptions
+│   │   ├── Build a Marketplace
+│   │   ├── Handle Webhooks
+│   │   └── Go Live Checklist
+│   ├── Recipes / Samples (GitHub)
+│   ├── Webhooks Reference
+│   ├── Testing (test card numbers, test clocks)
+│   └── API Changelog
+├── Pricing
+│   ├── Standard Rate (2.9% + 30¢)
+│   ├── International Cards
+│   ├── Volume Discounts (contact sales)
+│   ├── Product-Specific Pricing
+│   └── Pricing Calculator
+├── Resources
+│   ├── Stripe Press (books)
+│   ├── Stripe Sessions (conference)
+│   ├── Customer Stories
+│   ├── Guides &amp; Reports
+│   ├── Blog / Engineering Blog
+│   └── Partner Directory
+└── Company
+    ├── About
+    ├── Careers
+    ├── Newsroom
+    └── Contact Sales
+</code></pre>
+<h3>Stripe Checkout (Buyer-Facing)</h3>
+<pre><code>├── Checkout Session
+│   ├── Product / Cart Summary
+│   ├── Payment Methods (auto-optimized by region)
+│   │   ├── Card (Visa, MC, Amex)
+│   │   ├── Apple Pay / Google Pay
+│   │   ├── Bank Debit (SEPA, ACH)
+│   │   ├── Buy Now Pay Later (Afterpay, Klarna, Affirm)
+│   │   ├── Wallets (Cash App, WeChat Pay, Alipay)
+│   │   └── Local Methods (iDEAL, Bancontact, BLIK)
+│   ├── Billing Address
+│   ├── Shipping Address (if applicable)
+│   ├── Tax Calculation
+│   ├── Promo Code
+│   ├── 3D Secure (if required)
+│   └── Confirm &amp; Pay
+├── Customer Portal (subscription management)
+│   ├── Active Subscriptions
+│   ├── Update Plan (upgrade/downgrade)
+│   ├── Update Payment Method
+│   ├── View Invoices
+│   ├── Cancel Subscription
+│   └── Billing History
+└── Payment Link Page
+    ├── Product Info
+    ├── Quantity Selector
+    ├── Payment Form
+    └── Confirmation
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Docs Top Nav</strong></td>
+<td>Persistent top bar</td>
+<td>Products dropdown, Docs, API Reference, Pricing, Sign In</td>
+</tr>
+<tr>
+<td><strong>Docs Sidebar</strong></td>
+<td>Left nav tree</td>
+<td>Expandable tree: Payments &gt; Accept a Payment &gt; Card</td>
+</tr>
+<tr>
+<td><strong>Code Tabs</strong></td>
+<td>Language selector in code blocks</td>
+<td>curl / Node / Python / Ruby / PHP / Java / Go / .NET</td>
+</tr>
+<tr>
+<td><strong>API Reference</strong></td>
+<td>Two-column (docs + code)</td>
+<td>Left: description, Right: request/response examples</td>
+</tr>
+<tr>
+<td><strong>Checkout</strong></td>
+<td>Single-page, no nav</td>
+<td>Focused conversion: product → payment → confirm</td>
+</tr>
+<tr>
+<td><strong>Version Selector</strong></td>
+<td>Dropdown in API docs</td>
+<td>Select API version (2023-10-16, etc.)</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<h3>API Objects (Core)</h3>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PaymentIntent</td>
+<td>id, amount, currency, status, payment_method, customer, metadata, client_secret</td>
+<td>central payment object</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>id, email, name, default_payment_method, metadata</td>
+<td>has PaymentMethods, Subscriptions, Invoices</td>
+</tr>
+<tr>
+<td>PaymentMethod</td>
+<td>type (card/bank_transfer/wallet), card{brand, last4, exp}, billing_details</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Charge</td>
+<td>id, amount, currency, payment_method, status, receipt_url, refunded</td>
+<td>belongs to PaymentIntent</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>id, customer, items[], status, current_period, cancel_at_period_end</td>
+<td>belongs to Customer, has Invoices</td>
+</tr>
+<tr>
+<td>Invoice</td>
+<td>id, customer, amount_due, status, lines[], hosted_url, pdf</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>id, name, description, images[], active</td>
+<td>has many Prices</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>id, product, unit_amount, currency, type (one-time/recurring), interval</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Payout</td>
+<td>id, amount, currency, arrival_date, status, method</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>Dispute</td>
+<td>id, charge, amount, reason, status, evidence_due_by</td>
+<td>belongs to Charge</td>
+</tr>
+<tr>
+<td>Refund</td>
+<td>id, charge, amount, reason, status</td>
+<td>belongs to Charge</td>
+</tr>
+<tr>
+<td>WebhookEndpoint</td>
+<td>id, url, enabled_events[], status</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>ConnectedAccount</td>
+<td>id, type (express/custom/standard), charges_enabled, payouts_enabled</td>
+<td>belongs to Platform</td>
+</tr>
+</tbody></table>
+<h3>Payment Status Flow</h3>
+<pre><code>requires_payment_method → requires_confirmation → requires_action (3DS) → processing → succeeded
+                                                                                        ↘ requires_capture (auth only)
+↘ canceled
+</code></pre>
+<h3>Subscription Status</h3>
+<pre><code>incomplete → active → past_due → unpaid → canceled
+             trialing → active
+</code></pre>
+<h2>User Flows</h2>
+<h3>Accept a Card Payment (Developer Integration)</h3>
+<pre><code>Install SDK → Create PaymentIntent (server) → Render Elements (client) → Customer Enters Card → Confirm Payment → Handle 3DS (if needed) → PaymentIntent Succeeds → Webhook Fires → Fulfill Order
+</code></pre>
+<h3>Stripe Checkout (No-Code / Low-Code)</h3>
+<pre><code>Create Checkout Session (server) → Redirect Customer to Stripe-Hosted Page → Customer Pays → Redirect to Success URL → Webhook Confirms
+</code></pre>
+<h3>Payment Link (Zero Code)</h3>
+<pre><code>Dashboard → Create Payment Link → Set Product/Price → Copy URL → Share (email/social/QR) → Customer Clicks → Pays → Done
+</code></pre>
+<h3>Handle a Dispute</h3>
+<pre><code>Webhook: dispute.created → Review Reason → Gather Evidence (receipts, logs, shipping proof) → Submit via API/Dashboard → Bank Decides → Won/Lost
+</code></pre>
+<h3>Set Up Subscription</h3>
+<pre><code>Create Product + Price → Create Customer → Create Subscription → First Invoice Auto-Generated → Payment Collected → Recurring Invoices on Schedule
+</code></pre>
+<h2>URL / Route Structure</h2>
+<h3>Documentation Site</h3>
+<pre><code>/docs                              → Docs Home
+/docs/payments                     → Payments Overview
+/docs/payments/accept-a-payment    → Accept Payment Guide
+/docs/payments/payment-methods     → Payment Methods
+/docs/checkout                     → Stripe Checkout
+/docs/billing                      → Billing / Subscriptions
+/docs/billing/subscriptions        → Subscriptions Guide
+/docs/connect                      → Connect (Marketplace)
+/docs/connect/onboarding           → Connected Account Onboarding
+/docs/radar                        → Fraud Prevention
+/docs/terminal                     → In-Person Payments
+/docs/webhooks                     → Webhooks Guide
+/docs/testing                      → Testing
+/docs/api                          → API Reference Home
+/docs/api/payment_intents          → PaymentIntents API
+/docs/api/customers                → Customers API
+/docs/api/subscriptions            → Subscriptions API
+</code></pre>
+<h3>Checkout / Payment Links</h3>
+<pre><code>/checkout/session/:id              → Hosted Checkout Page
+/pay/:link_id                      → Payment Link Page
+/customer-portal/:session          → Customer Portal
+/receipt/:charge_id                → Email Receipt
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Documentation</td>
+<td>All docs, guides, API reference</td>
+<td>Product area, language</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>API Reference</td>
+<td>Object names, field names, endpoint paths</td>
+<td>Resource category</td>
+<td>Alphabetical</td>
+</tr>
+<tr>
+<td>Changelog</td>
+<td>Release notes, breaking changes</td>
+<td>Date range, product area</td>
+<td>Date</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Docs</th>
+<th>Checkout</th>
+<th>API Reference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Sidebar + content + code pane (3 columns)</td>
+<td>Centered form (480px max)</td>
+<td>Two-column (description + code)</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Collapsible sidebar + content</td>
+<td>Same centered form</td>
+<td>Stacked (description, then code)</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger menu + full-width content</td>
+<td>Full-width form, optimized inputs</td>
+<td>Stacked, horizontal scroll for code</td>
+</tr>
+</tbody></table>
+<h3>Developer-Specific UX</h3>
+<ul>
+<li>Copy-to-clipboard on all code snippets and API keys</li>
+<li>Syntax-highlighted code in every language</li>
+<li>Live API playground (make real test requests)</li>
+<li>Test mode data clearly indicated (orange banner, test card numbers)</li>
+<li>Inline expandable JSON objects</li>
+<li>&quot;Try it&quot; buttons in API reference</li>
+<li>Version pinning with migration guides</li>
+<li>Webhook event tester (send test events to your endpoint)</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Stripe Account Roles</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>API Keys</th>
+<th>Payments</th>
+<th>Refunds</th>
+<th>Settings</th>
+<th>Developers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>✅</td>
+<td>Full</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>Full</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>✅</td>
+<td>Test only</td>
+<td>Read</td>
+<td>—</td>
+<td>Limited</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Analyst</td>
+<td>✅ (reports)</td>
+<td>—</td>
+<td>Read</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Support</td>
+<td>Limited</td>
+<td>—</td>
+<td>Read</td>
+<td>✅ (limits)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>View-Only</td>
+<td>✅</td>
+<td>—</td>
+<td>Read</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>API Key Types</h3>
+<ul>
+<li><strong>Publishable Key</strong>: Client-side, limited scope (create tokens, confirm payments)</li>
+<li><strong>Secret Key</strong>: Server-side, full API access</li>
+<li><strong>Restricted Key</strong>: Custom permissions per resource</li>
+<li><strong>Webhook Signing Secret</strong>: Verify webhook payload integrity</li>
+</ul>
+<h3>Security &amp; Compliance</h3>
+<ul>
+<li>PCI DSS Level 1 certified</li>
+<li>SOC 2 Type II</li>
+<li>GDPR compliant</li>
+<li>Test/Live mode strict separation</li>
+<li>API keys shown only once on creation</li>
+<li>IP allowlisting for API access</li>
+<li>Two-factor authentication required</li>
+<li>Idempotency keys for safe retries</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

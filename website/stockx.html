@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockX — IA.md | getIA.md</title>
+  <meta name="description" content="Sneaker & streetwear marketplace. Bid/ask, authentication. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=stockx.com&sz=64" alt="StockX" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">StockX</h1>
+      <p class="detail-brand-tagline">Sneaker & streetwear marketplace. Bid/ask, authentication.</p>
+      <span class="detail-category-badge">Marketplace</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/stockx/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://stockx.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/stockx/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>StockX — Information Architecture</h1>
+<h2>Overview</h2>
+<p>StockX is a bid/ask marketplace for high-demand consumer goods — sneakers, streetwear, electronics, trading cards, and collectibles. The mental model is <strong>a stock market for physical goods</strong> — buyers place bids, sellers place asks, and when bid meets ask, a transaction occurs. Every item is verified for authenticity before being shipped to the buyer. StockX differentiates through its stock-market pricing mechanics (bid/ask spread, historical price charts, market data), authentication guarantee (every item physically inspected), anonymous transactions (buyers and sellers don&#39;t interact), and real-time market data (price history, volatility, sales volume). It transforms resale from peer-to-peer negotiation into a transparent, data-driven market.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Search Bar (prominent)
+│   ├── Trending Now (most traded)
+│   ├── Most Popular (by category)
+│   ├── New Releases
+│   ├── Below Retail
+│   ├── Featured Collections / Drops
+│   ├── Category Cards
+│   │   ├── Sneakers
+│   │   ├── Apparel
+│   │   ├── Electronics
+│   │   ├── Collectibles (trading cards, toys)
+│   │   ├── Accessories (watches, handbags)
+│   │   └── NFTs (if applicable)
+│   └── Recently Viewed
+├── Browse / Category
+│   ├── Sneakers
+│   │   ├── By Brand (Nike, Jordan, Adidas, New Balance, Yeezy, etc.)
+│   │   ├── By Silhouette (Air Jordan 1, Dunk, Yeezy 350, etc.)
+│   │   ├── By Release Date
+│   │   └── By Collaboration (Travis Scott, Off-White, etc.)
+│   ├── Apparel
+│   │   ├── By Brand (Supreme, Nike, Essentials, etc.)
+│   │   └── By Type (T-shirts, Hoodies, Pants)
+│   ├── Electronics
+│   │   ├── Phones, Consoles, GPUs, Headphones
+│   │   └── By Brand (Apple, Sony, NVIDIA)
+│   ├── Collectibles
+│   │   ├── Trading Cards (Pokemon, Sports, etc.)
+│   │   ├── Toys &amp; Figures (KAWS, Bearbrick)
+│   │   └── Accessories
+│   └── Accessories (Watches, Handbags, Sunglasses)
+├── Product Page (Core Experience)
+│   ├── Product Image(s) (stock photos, 360° where available)
+│   ├── Product Name, Brand, Colorway, Style Code
+│   ├── Ticker Symbol (e.g., &quot;AJ1-OFF-CHI&quot;)
+│   ├── Market Summary
+│   │   ├── Last Sale Price
+│   │   ├── Price Premium (% above retail)
+│   │   ├── Average Sale Price (all time)
+│   │   ├── Trade Range (52-week high/low)
+│   │   ├── Volatility
+│   │   ├── Number of Sales
+│   │   └── Price Change (daily/weekly/monthly)
+│   ├── Price Chart (line graph — 1M, 3M, 6M, 1Y, All)
+│   ├── Size Selector (each size is a separate market)
+│   │   ├── Size Grid with Lowest Ask per size
+│   │   └── Size-specific bid/ask spread
+│   ├── Buy / Bid
+│   │   ├── Buy Now (at Lowest Ask)
+│   │   ├── Place Bid (your offer, may be matched)
+│   │   └── Price by Size (table: size, lowest ask, highest bid, last sale)
+│   ├── Sell / Ask
+│   │   ├── Sell Now (at Highest Bid)
+│   │   ├── Place Ask (your asking price)
+│   │   └── Payout Estimator (after fees)
+│   ├── All Sales (recent transactions: size, price, date)
+│   ├── Product Details
+│   │   ├── Retail Price
+│   │   ├── Release Date
+│   │   ├── Colorway
+│   │   ├── Style Code / SKU
+│   │   ├── Description
+│   │   └── Condition (new with tags — StockX standard)
+│   ├── Related Products
+│   └── Price Alerts (notify me at target price)
+├── Buying
+│   ├── Buy Flow
+│   │   ├── Select Size
+│   │   ├── Choose: Buy Now (lowest ask) or Place Bid
+│   │   ├── Shipping Address
+│   │   ├── Payment Method
+│   │   ├── Price Breakdown
+│   │   │   ├── Item Price
+│   │   │   ├── Shipping
+│   │   │   ├── Processing Fee
+│   │   │   ├── Tax
+│   │   │   └── Total
+│   │   └── Confirm Purchase / Place Bid
+│   ├── Active Bids
+│   │   ├── Bid List (product, size, bid price, status, expires)
+│   │   ├── Edit Bid
+│   │   └── Cancel Bid
+│   └── Order History
+│       ├── Order Detail (status, tracking, receipt)
+│       ├── Authentication Status (pending, passed, shipped)
+│       └── Delivery Tracking
+├── Selling
+│   ├── Sell Flow
+│   │   ├── Search Product
+│   │   ├── Select Size
+│   │   ├── Choose: Sell Now (highest bid) or Place Ask
+│   │   ├── Payout Estimator (price minus fees)
+│   │   │   ├── Transaction Fee (% based on seller level)
+│   │   │   ├── Payment Processing Fee
+│   │   │   └── Estimated Payout
+│   │   └── Confirm / Place Ask
+│   ├── Active Asks
+│   │   ├── Ask List (product, size, ask price, status)
+│   │   ├── Edit Ask
+│   │   └── Cancel Ask
+│   ├── Pending Sales (matched, awaiting your shipment)
+│   │   ├── Ship by Deadline (2 business days)
+│   │   ├── Shipping Label (pre-paid)
+│   │   └── Ship to StockX Authentication Center
+│   ├── Sales History
+│   └── Seller Dashboard
+│       ├── Total Sales
+│       ├── Seller Level (1-4, based on volume + completion rate)
+│       ├── Fee Rate (decreases with level)
+│       └── Payout Methods
+├── Portfolio (Your Market Position)
+│   ├── Active Bids
+│   ├── Active Asks
+│   ├── Pending (in authentication)
+│   ├── Past Purchases / Sales
+│   ├── Following (products with alerts)
+│   ├── Spending / Earnings Summary
+│   └── Portfolio Value (estimated value of collection)
+├── Release Calendar
+│   ├── Upcoming Releases (by date)
+│   ├── Past Releases
+│   ├── Notify Me (release alert)
+│   └── Product Detail (pre-release page with estimated market price)
+├── Account
+│   ├── Profile
+│   ├── Addresses
+│   ├── Payment Methods
+│   ├── Payout Settings (bank account, PayPal)
+│   ├── Seller Level &amp; Stats
+│   ├── Notification Settings
+│   ├── Price Alerts
+│   ├── Security (2FA)
+│   └── Vacation Mode (pause active asks)
+├── Help
+│   ├── How StockX Works
+│   ├── Buyer FAQ
+│   ├── Seller FAQ
+│   ├── Authentication Process
+│   ├── Fees &amp; Pricing
+│   ├── Shipping &amp; Returns
+│   └── Contact Support
+└── Footer
+    ├── Popular Pages (Air Jordan 1, Yeezy, Supreme)
+    ├── Company (about, careers, press)
+    ├── Legal (terms, privacy)
+    └── Social Links
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Sticky top bar</td>
+<td>StockX logo, search bar (prominent), Browse, Sell, notifications, portfolio, account</td>
+</tr>
+<tr>
+<td><strong>Category Nav</strong></td>
+<td>Horizontal tabs below header (browse pages)</td>
+<td>Sneakers, Apparel, Electronics, Collectibles, Accessories</td>
+</tr>
+<tr>
+<td><strong>Product Size Grid</strong></td>
+<td>Grid selector on product page</td>
+<td>Each size shows lowest ask; click to buy/bid for that size</td>
+</tr>
+<tr>
+<td><strong>Buy/Sell Toggle</strong></td>
+<td>On product page</td>
+<td>Switch between Buy and Sell views</td>
+</tr>
+<tr>
+<td><strong>Price Chart</strong></td>
+<td>Interactive line chart</td>
+<td>Time range selector (1M, 3M, 6M, 1Y, All), hover for exact prices</td>
+</tr>
+<tr>
+<td><strong>Bottom Nav (mobile)</strong></td>
+<td>Fixed bottom bar</td>
+<td>Home, Browse, Sell, Portfolio, Account</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product</td>
+<td>name, brand, colorway, style_code, retail_price, release_date, description, images[], category, subcategory</td>
+<td>has many Sizes (each a separate market)</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>product, size_value, lowest_ask, highest_bid, last_sale, number_of_sales, price_history[]</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Bid</td>
+<td>product, size, amount, bidder, status (active/matched/expired/cancelled), expires_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Ask</td>
+<td>product, size, amount, seller, status (active/matched/expired/cancelled), expires_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Transaction</td>
+<td>product, size, price, buyer, seller, status, authentication_status</td>
+<td>between Buyer and Seller</td>
+</tr>
+<tr>
+<td>PriceHistory</td>
+<td>product, size, price, date</td>
+<td>time-series data</td>
+</tr>
+<tr>
+<td>PriceAlert</td>
+<td>product, size, target_price, direction (above/below), active</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>SellerProfile</td>
+<td>user, level (1-4), total_sales, completion_rate, fee_rate</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>transaction, status (pending/passed/failed), inspector_notes</td>
+<td>belongs to Transaction</td>
+</tr>
+</tbody></table>
+<h3>Transaction Flow</h3>
+<pre><code>Bid meets Ask (or Buy Now / Sell Now) → Transaction Created → Seller ships to StockX (2 business days) → StockX Receives → Authentication (inspection) → Pass → Ships to Buyer → Delivered
+                                                                                                     → Fail → Returned to Seller (+ penalty)
+</code></pre>
+<h3>Bid/Ask Mechanics (Stock Market Model)</h3>
+<ul>
+<li><strong>Bid</strong>: buyer&#39;s offer (like a buy limit order)</li>
+<li><strong>Ask</strong>: seller&#39;s price (like a sell limit order)</li>
+<li><strong>Spread</strong>: difference between highest bid and lowest ask</li>
+<li><strong>Last Sale</strong>: most recent transaction price</li>
+<li>Each SIZE is a separate market (Air Jordan 1 size 10 ≠ size 11)</li>
+<li>Bids/Asks can have expiration dates (1 day, 3 days, 7 days, 30 days, 60 days)</li>
+<li>No negotiation — anonymous, price-only matching</li>
+</ul>
+<h3>Seller Levels</h3>
+<pre><code>Level 1 (new): highest fees
+Level 2 (5+ sales): reduced fees
+Level 3 (15+ sales): further reduced
+Level 4 (50+ sales): lowest fees
+Criteria: sales volume + completion rate (ship on time, pass authentication)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Buy Sneakers</h3>
+<pre><code>Search &quot;Jordan 1 Chicago&quot; → Product page → View price chart (market research) → Select size (10) → See: Lowest Ask $350, Highest Bid $320 → Choose: Buy Now at $350 or Place Bid at $335 → Enter payment → Confirm → Wait for seller to ship → Authentication at StockX → Passes → Shipped to you → Delivered (new, authenticated)
+</code></pre>
+<h3>Sell Sneakers</h3>
+<pre><code>Search product → Select size → See: Highest Bid $320, Lowest Ask $350 → Choose: Sell Now at $320 or Place Ask at $340 → See payout estimate ($320 - $28 fees = $292) → Confirm → Match found → Receive prepaid shipping label → Ship to StockX (within 2 days) → Authentication → Passes → Payout to bank
+</code></pre>
+<h3>Market Research</h3>
+<pre><code>Product page → View price chart (6 month view) → Check recent sales → Compare size prices → Set Price Alert ($300 for size 10) → Wait for notification → Decide to buy/bid
+</code></pre>
+<h3>Failed Authentication</h3>
+<pre><code>Seller ships → StockX inspects → Fails (counterfeit / defect / wrong item) → Item returned to seller → Seller penalized (fee) → Buyer&#39;s order cancelled or matched with another seller
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/search?s=:query               → Search Results
+/sneakers                      → Sneakers Browse
+/sneakers/:brand               → Brand Page
+/sneakers/:brand/:silhouette   → Silhouette Page
+/:slug                         → Product Page (e.g., /jordan-1-retro-high-og-chicago)
+/:slug/chart                   → Price Chart
+/:slug/buy                     → Buy Flow
+/:slug/sell                    → Sell Flow
+/apparel                       → Apparel Browse
+/electronics                   → Electronics Browse
+/collectibles                  → Collectibles Browse
+/accessories                   → Accessories Browse
+/portfolio                     → My Portfolio
+/portfolio/buying/bids         → Active Bids
+/portfolio/buying/orders       → Purchase History
+/portfolio/selling/asks        → Active Asks
+/portfolio/selling/pending     → Pending Sales
+/portfolio/selling/history     → Sales History
+/portfolio/following           → Following (price alerts)
+/release-calendar              → Release Calendar
+/account                       → Account Settings
+/account/payment               → Payment Methods
+/account/payout                → Payout Settings
+/account/seller-level          → Seller Level
+/help                          → Help Center
+/how-it-works                  → How StockX Works
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Products</td>
+<td>Name, brand, style code, colorway</td>
+<td>Category, Brand, Price Range, Release Year, Size Available</td>
+<td>Most Popular, Lowest Ask, Highest Bid, Average Price, Recent</td>
+</tr>
+<tr>
+<td>By Size</td>
+<td>Size-specific markets</td>
+<td>Size</td>
+<td>Lowest Ask, Highest Bid, Last Sale</td>
+</tr>
+<tr>
+<td>Active Bids/Asks</td>
+<td>Product name</td>
+<td>Status, Size, Date</td>
+<td>Price, Date, Status</td>
+</tr>
+<tr>
+<td>Release Calendar</td>
+<td>Product name, brand</td>
+<td>Category, Release Date Range, Brand</td>
+<td>Release Date</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Home</th>
+<th>Product Page</th>
+<th>Size Grid</th>
+<th>Buy/Sell</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>Grid cards, featured sections</td>
+<td>Full layout: images + chart + size grid + market data</td>
+<td>Grid with prices per size</td>
+<td>Inline on product page</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>Simplified grid</td>
+<td>Stacked layout</td>
+<td>Scrollable size row</td>
+<td>Slide-over or full page</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>StockX app (primary); cards</td>
+<td>Stacked, sticky Buy/Sell bar</td>
+<td>Dropdown selector</td>
+<td>Full-screen flow</td>
+</tr>
+</tbody></table>
+<h3>StockX-Specific UX</h3>
+<ul>
+<li><strong>Stock market terminology</strong>: bid, ask, spread, last sale, trade range, volatility</li>
+<li><strong>Price charts</strong>: interactive financial-style line graphs with time range selectors</li>
+<li><strong>Size = market</strong>: each size has independent pricing (critical for sneakers)</li>
+<li><strong>Authentication badge</strong>: &quot;StockX Verified&quot; with authentication details</li>
+<li><strong>Payout estimator</strong>: shows exact take-home after fees before seller commits</li>
+<li><strong>Anonymous transactions</strong>: buyers and sellers never interact directly</li>
+<li><strong>Deadstock standard</strong>: items must be new, unworn, with original packaging</li>
+<li><strong>Release calendar</strong>: upcoming product drops with estimated market prices</li>
+<li><strong>Price alerts</strong>: set target price, get notified when market hits it</li>
+<li><strong>Portfolio view</strong>: track your collection&#39;s estimated market value over time</li>
+<li><strong>Green/Red pricing</strong>: prices shown in green (below average) or red (above average)</li>
+<li><strong>Seller level gamification</strong>: higher volume = lower fees = incentive to sell more</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Buy</th>
+<th>Sell</th>
+<th>Market Data</th>
+<th>Account</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>Limited (no full charts)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Level 1 Seller</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (standard fees)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Level 4 Seller</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (lowest fees)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Trust &amp; Verification</h3>
+<ul>
+<li>All items physically authenticated at StockX facilities</li>
+<li>Buyer Protection: guaranteed authentic or money back</li>
+<li>Seller penalties for counterfeits: permanent ban</li>
+<li>Seller penalties for late shipment: fee deduction</li>
+<li>ID verification for high-value transactions</li>
+<li>Payment methods verified before bidding/selling</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

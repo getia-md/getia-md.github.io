@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb — IA.md | getIA.md</title>
+  <meta name="description" content="Travel marketplace. Homes, experiences, map + list search. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=airbnb.com&sz=64" alt="Airbnb" onerror="this.parentElement.textContent='A'">
+      </div>
+      <h1 class="detail-brand-name">Airbnb</h1>
+      <p class="detail-brand-tagline">Travel marketplace. Homes, experiences, map + list search.</p>
+      <span class="detail-category-badge">Marketplace</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/airbnb/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://airbnb.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/airbnb/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Airbnb — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Airbnb is a two-sided marketplace connecting hosts (who list properties and experiences) with guests (who search and book). The mental model is <strong>travel with a local feel</strong> — guests discover unique places to stay (homes, treehouses, castles, tiny houses) and local experiences, while hosts monetize their spaces. Airbnb differentiates through map-based search, full-bleed photography, category-based browsing (Icons, Trending, Beachfront, Cabins, etc.), the host/guest dual-mode interface, a trust system (reviews, identity verification, AirCover insurance), and flexible date/destination search.</p>
+<h2>Site Map</h2>
+<h3>Guest Side</h3>
+<pre><code>├── Home
+│   ├── Search Bar (Where, Check In/Out, Who — flexible dates, &quot;I&#39;m flexible&quot;)
+│   ├── Category Icons (horizontal scroll)
+│   │   ├── Icons (extraordinary experiences)
+│   │   ├── Trending
+│   │   ├── Beachfront
+│   │   ├── Cabins
+│   │   ├── Amazing Views
+│   │   ├── Tiny Homes
+│   │   ├── Design
+│   │   ├── Countryside
+│   │   ├── Mansions
+│   │   ├── Lakefront
+│   │   ├── Treehouses
+│   │   ├── OMG! (unique)
+│   │   ├── Castles
+│   │   ├── Tropical
+│   │   ├── Farms
+│   │   └── 60+ categories
+│   ├── Listing Cards Grid
+│   │   ├── Image Carousel (swipeable, 5 dots)
+│   │   ├── Location, Distance
+│   │   ├── Date Available
+│   │   ├── Price per Night (total before taxes toggle)
+│   │   ├── Rating + Review Count
+│   │   ├── Guest Favorite Badge
+│   │   └── Heart (Save to Wishlist)
+│   ├── &quot;Show Total Before Taxes&quot; Toggle
+│   └── Map Toggle (right side)
+├── Search Results
+│   ├── Map + List Split View
+│   │   ├── Map (pins with prices, zoom → results update)
+│   │   ├── Listing Cards (left panel, scrollable)
+│   │   └── Hover: highlight pin ↔ card
+│   ├── Filters
+│   │   ├── Price Range (histogram slider)
+│   │   ├── Type of Place (entire home, private room, shared room, hotel)
+│   │   ├── Rooms &amp; Beds
+│   │   ├── Amenities (Wi-Fi, kitchen, washer, pool, hot tub, parking)
+│   │   ├── Property Type (house, apartment, guesthouse, hotel)
+│   │   ├── Accessibility
+│   │   ├── Top-Tier Stays (Superhost, Guest Favorites)
+│   │   ├── Booking Options (instant book, self check-in, pets)
+│   │   ├── Host Language
+│   │   └── Clear All Filters
+│   └── Sort: not explicit (algorithm-based relevance)
+├── Listing Detail
+│   ├── Photo Gallery (grid: 1 hero + 4 supporting, click for full gallery)
+│   ├── Title, Location, Host (avatar, Superhost badge)
+│   ├── Highlights (self check-in, Great Location, Free cancellation)
+│   ├── Description
+│   ├── Sleeping Arrangements (room cards with bed icons)
+│   ├── Amenities (grid with &quot;Show All&quot; modal)
+│   ├── Calendar (availability, min stay)
+│   ├── Booking Card (sticky right sidebar)
+│   │   ├── Price Per Night
+│   │   ├── Date Picker (check-in / check-out)
+│   │   ├── Guests (adults, children, infants, pets)
+│   │   ├── Price Breakdown (nightly × nights, cleaning fee, service fee, taxes)
+│   │   ├── Reserve Button (or Request to Book)
+│   │   └── &quot;You won&#39;t be charged yet&quot;
+│   ├── Reviews
+│   │   ├── Overall Rating (4.92 out of 5)
+│   │   ├── Category Scores (Cleanliness, Accuracy, Check-in, Communication, Location, Value)
+│   │   ├── Review List (searchable)
+│   │   └── Guest Favorite Badge (top 5% based on ratings + consistency)
+│   ├── Host Profile (bio, response rate, response time, joined date, reviews received)
+│   ├── Location Map (approximate, neighborhood guide)
+│   ├── House Rules
+│   ├── Safety &amp; Property Info (smoke detector, CO alarm, cameras)
+│   ├── Cancellation Policy (flexible, moderate, strict)
+│   ├── AirCover (protection guarantee)
+│   └── More Places to Stay (similar listings)
+├── Booking Flow
+│   ├── Trip Details (dates, guests — pre-filled)
+│   ├── Message to Host (optional)
+│   ├── Payment (credit card, PayPal, Apple Pay, Google Pay)
+│   ├── Coupon Code
+│   ├── Trip Insurance (optional)
+│   ├── Price Breakdown (final total with all fees)
+│   ├── Cancellation Policy Reminder
+│   ├── House Rules Agreement
+│   └── Confirm &amp; Pay
+├── Trips
+│   ├── Upcoming
+│   │   ├── Trip Card (listing image, dates, host)
+│   │   ├── Trip Detail
+│   │   │   ├── Confirmation Code
+│   │   │   ├── Check-in Instructions
+│   │   │   ├── Address (unlocked after booking)
+│   │   │   ├── Host Contact
+│   │   │   ├── Getting There (directions, transit)
+│   │   │   ├── House Manual (digital guidebook)
+│   │   │   ├── Wi-Fi Info
+│   │   │   ├── Receipt / Invoice
+│   │   │   ├── Modify Reservation
+│   │   │   ├── Cancel Reservation
+│   │   │   └── Get Help
+│   │   └── Countdown / Check-in Timer
+│   └── Past Trips
+│       ├── Leave Review
+│       ├── Rebook
+│       └── Receipt
+├── Wishlists
+│   ├── Wishlist Collections (named lists with cover images)
+│   ├── Create Wishlist
+│   ├── Collaborative Wishlists (shared with travel group)
+│   └── Map View of Wishlist
+├── Messages
+│   ├── Inbox (conversations with hosts)
+│   ├── Message Thread (text, booking requests, automated messages)
+│   ├── Quick Replies
+│   └── Translation (auto-translate)
+├── Experiences
+│   ├── Experience Search (activity type + location)
+│   ├── Experience Detail (host, photos, itinerary, reviews)
+│   └── Online Experiences (virtual activities)
+├── Account
+│   ├── Personal Info (name, email, phone, government ID, address)
+│   ├── Login &amp; Security (password, social login, 2FA)
+│   ├── Payments &amp; Payouts (payment methods, credits)
+│   ├── Taxes
+│   ├── Notifications (email, push, SMS preferences)
+│   ├── Privacy &amp; Sharing
+│   ├── Travel for Work (business travel settings)
+│   ├── Professional Hosting Tools (if also a host)
+│   ├── Refer a Host (referral program)
+│   └── Gift Cards
+├── Help Center
+│   ├── Help Topics (booking, hosting, policies, safety)
+│   ├── Contact Support
+│   ├── Resolution Center (refund requests, disputes)
+│   └── AirCover Claims
+└── Footer
+    ├── Support | Hosting | Airbnb
+    ├── Language, Currency, Accessibility
+    └── Terms, Sitemap, Privacy, Your Privacy Choices
+</code></pre>
+<h3>Host Side</h3>
+<pre><code>├── Today (Host Dashboard)
+│   ├── Reservations (checking in today, checking out, upcoming)
+│   ├── To-Do List (unread messages, reviews to write, listing updates)
+│   ├── Earnings Summary
+│   └── Performance Snapshot
+├── Calendar
+│   ├── Monthly Calendar (per listing, multi-listing view)
+│   ├── Availability Settings (blocked dates, min/max stay)
+│   ├── Pricing (nightly price, custom pricing per date)
+│   ├── Smart Pricing (dynamic pricing toggle)
+│   ├── Trip Length Discounts (weekly, monthly)
+│   └── Sync with External Calendar (iCal)
+├── Listings
+│   ├── Listing List (active, in progress, unlisted)
+│   ├── Listing Editor (multi-step)
+│   │   ├── Photos (reorder, captions, cover photo)
+│   │   ├── Title
+│   │   ├── Description
+│   │   ├── Property Type (house, apartment, etc.)
+│   │   ├── Rooms &amp; Spaces (bedrooms, beds, bathrooms)
+│   │   ├── Amenities (checklist of 40+)
+│   │   ├── Location (pin on map)
+│   │   ├── Guests (max capacity)
+│   │   ├── Pricing (base price, cleaning fee, extra guest fee)
+│   │   ├── Availability (calendar + rules)
+│   │   ├── Booking Settings (instant book, request to book)
+│   │   ├── House Rules (smoking, pets, events, quiet hours)
+│   │   ├── Safety (smoke alarm, CO detector, fire extinguisher)
+│   │   ├── Check-in Method (keypad, lockbox, smart lock, in person)
+│   │   ├── Cancellation Policy
+│   │   ├── Co-hosts (add with permissions)
+│   │   └── Languages
+│   └── Create New Listing (guided multi-step flow)
+├── Reservations
+│   ├── Upcoming
+│   ├── Completed
+│   ├── Cancelled
+│   ├── Pending (awaiting approval)
+│   └── Reservation Detail (guest info, dates, earnings, message)
+├── Earnings
+│   ├── Gross Earnings (by month, by listing)
+│   ├── Payouts (transaction history)
+│   ├── Payout Methods (bank account, PayPal)
+│   ├── Tax Information
+│   └── Transaction History (detail per reservation)
+├── Insights
+│   ├── Performance Dashboard
+│   │   ├── Views, Booking Rate, Review Score
+│   │   ├── Market Comparison (your listing vs similar)
+│   │   └── Earnings Trend
+│   ├── Review Scores (by category)
+│   └── Professional Hosting Reports
+├── Messages (same inbox, host perspective)
+├── Superhost Status
+│   ├── Superhost Criteria (4.8+ rating, &lt;1% cancellation, 10+ stays, 90% response)
+│   ├── Current Status
+│   └── Badge Benefits
+├── Guidebook
+│   ├── Local Recommendations (restaurants, attractions)
+│   └── House Manual (check-in instructions, WiFi, rules)
+└── Host Settings
+    ├── Personal Info
+    ├── Payout Methods
+    ├── Notifications
+    ├── Co-host Management
+    ├── Professional Tools (API access, channel manager)
+    └── Hosting Responsibly (local laws, insurance)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Sticky top bar</td>
+<td>Logo, search bar (expandable: Where/When/Who), Airbnb your home, user menu (globe, hamburger, avatar)</td>
+</tr>
+<tr>
+<td><strong>Expanded Search</strong></td>
+<td>Full-width expansion (click search)</td>
+<td>Three-panel: Where (map + suggestions), When (calendar, flexible dates), Who (adults, children, infants, pets)</td>
+</tr>
+<tr>
+<td><strong>Category Bar</strong></td>
+<td>Horizontal scroll icons below header</td>
+<td>Category icons (Beachfront, Cabins, etc.) + Filters button + Display Total toggle</td>
+</tr>
+<tr>
+<td><strong>Map/List Toggle</strong></td>
+<td>Bottom-right floating button (mobile) or right panel (desktop)</td>
+<td>Switch between list and map view</td>
+</tr>
+<tr>
+<td><strong>Listing Detail</strong></td>
+<td>Sticky booking card (desktop right sidebar)</td>
+<td>Price, dates, guests, Reserve button — follows scroll</td>
+</tr>
+<tr>
+<td><strong>Host/Guest Mode</strong></td>
+<td>Account menu toggle</td>
+<td>&quot;Switch to hosting&quot; / &quot;Switch to traveling&quot;</td>
+</tr>
+<tr>
+<td><strong>Bottom Nav (mobile)</strong></td>
+<td>Fixed bottom bar</td>
+<td>Explore, Wishlists, Trips, Inbox, Profile</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Listing</td>
+<td>id, title, description, property_type, room_type (entire/private/shared), guests_max, bedrooms, beds, bathrooms, amenities[], photos[], location (lat/lng, city, country), price_per_night, cleaning_fee, service_fee_pct, cancellation_policy, instant_book, min_nights, max_nights, check_in_time, check_out_time, house_rules</td>
+<td>belongs to Host, has Reviews, Reservations</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>id, name, bio, avatar, verified, superhost, response_rate, response_time, member_since, reviews_count</td>
+<td>has many Listings</td>
+</tr>
+<tr>
+<td>Guest</td>
+<td>id, name, avatar, verified, reviews_given</td>
+<td>has many Reservations</td>
+</tr>
+<tr>
+<td>Reservation</td>
+<td>id, listing, guest, check_in, check_out, guests_count, total_price, status, confirmation_code</td>
+<td>belongs to Listing and Guest</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), text, cleanliness, accuracy, check_in, communication, location, value, response (from host), created_at</td>
+<td>from Guest to Listing (and Host to Guest)</td>
+</tr>
+<tr>
+<td>Wishlist</td>
+<td>name, listings[], collaborators[], cover_image</td>
+<td>belongs to Guest</td>
+</tr>
+<tr>
+<td>Experience</td>
+<td>id, title, host, location, duration, price, category, photos[], itinerary[], reviews[]</td>
+<td>belongs to Experience Host</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>sender, body, timestamp, attachments[]</td>
+<td>between Host and Guest</td>
+</tr>
+<tr>
+<td>Payout</td>
+<td>amount, method, arrival_date, status, reservation</td>
+<td>belongs to Host</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>name, icon, filter_criteria</td>
+<td>global (system-defined)</td>
+</tr>
+</tbody></table>
+<h3>Reservation Status</h3>
+<pre><code>pending → accepted → confirmed → active (checked in) → completed → reviewed
+pending → declined
+confirmed → cancelled (by guest) → refund_processed
+confirmed → cancelled (by host) → penalties_applied
+</code></pre>
+<h3>Superhost Criteria</h3>
+<pre><code>Overall rating &gt;= 4.8
+Response rate &gt;= 90%
+Cancellation rate &lt; 1%
+At least 10 stays (or 3 stays totaling 100+ nights) in past year
+</code></pre>
+<h3>Review System</h3>
+<p>Dual-blind: both guest and host write reviews, revealed simultaneously after 14 days (or when both submit).</p>
+<h2>User Flows</h2>
+<h3>Guest: Search to Book</h3>
+<pre><code>Home → Category bar (Beachfront) or Search (Paris, June 15-22, 2 guests) → Map + List results → Filter (Entire Home, Pool) → Click listing card → Photo gallery → Read reviews → Check calendar → Reserve → Payment → Confirmation → Receive check-in instructions 48h before → Check in → Enjoy stay → Check out → Leave review
+</code></pre>
+<h3>Guest: Flexible Search (&quot;I&#39;m Flexible&quot;)</h3>
+<pre><code>Search → When: &quot;I&#39;m Flexible&quot; (weekend, week, month) → Where: &quot;I&#39;m Flexible&quot; (map regions) → Category → Browse listings → Inspiration-driven browsing (visual, not utilitarian)
+</code></pre>
+<h3>Host: Create Listing</h3>
+<pre><code>Airbnb your home → Property type → Room type (entire/private/shared) → Location (pin on map) → Guests, bedrooms, beds, bathrooms → Amenities → Photos (5+ required) → Title → Description → Price (Smart Pricing suggestion) → Availability → House rules → Review → Publish
+</code></pre>
+<h3>Host: Manage Reservation</h3>
+<pre><code>Today tab → New reservation notification → Review guest profile → Confirm (if not instant book) → Calendar updates → Send check-in instructions → Guest stays → Checkout → Review guest → Earnings posted → Payout
+</code></pre>
+<h3>Dispute Resolution</h3>
+<pre><code>Guest finds issue → Contact Host (message) → If unresolved → Help Center → Resolution Center → File claim → Airbnb mediates → AirCover applies → Refund or rebooking
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/s/:location                   → Search Results (map + list)
+/s/:location?checkin=:date&amp;checkout=:date&amp;adults=:n → Filtered Search
+/rooms/:listingId              → Listing Detail
+/rooms/:listingId/photos       → Photo Gallery
+/book/stays/:listingId         → Booking Flow
+/trips/v1                      → Your Trips
+/trips/v1/:reservationId       → Trip Detail
+/wishlists                     → Wishlists
+/wishlists/:id                 → Wishlist Detail
+/inbox                         → Messages
+/inbox/:threadId               → Conversation
+/users/show/:userId            → Public Profile
+/users/:userId/reviews         → User Reviews
+/account-settings              → Account Settings
+/account-settings/personal-info → Personal Info
+/account-settings/payments     → Payments
+/hosting                       → Host Dashboard (Today)
+/hosting/calendar              → Host Calendar
+/hosting/listings              → Manage Listings
+/hosting/listings/:id/details  → Edit Listing
+/hosting/reservations          → Reservations
+/hosting/earnings              → Earnings
+/hosting/insights              → Performance Insights
+/experiences                   → Experiences
+/experiences/:id               → Experience Detail
+/help                          → Help Center
+/help/article/:id              → Help Article
+/gift-cards                    → Gift Cards
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Filter Dimension</th>
+<th>Type</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Where</td>
+<td>Map / Text / Flexible regions</td>
+<td>City, country, &quot;I&#39;m Flexible&quot; (regions)</td>
+</tr>
+<tr>
+<td>When</td>
+<td>Calendar / Flexible</td>
+<td>Exact dates, &quot;I&#39;m Flexible&quot; (weekend, week, month)</td>
+</tr>
+<tr>
+<td>Who</td>
+<td>Stepper</td>
+<td>Adults, Children, Infants, Pets</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>Range slider with histogram</td>
+<td>Min-Max per night</td>
+</tr>
+<tr>
+<td>Type of Place</td>
+<td>Checkbox</td>
+<td>Entire home, Private room, Shared room, Hotel room</td>
+</tr>
+<tr>
+<td>Rooms &amp; Beds</td>
+<td>Stepper</td>
+<td>Bedrooms, Beds, Bathrooms</td>
+</tr>
+<tr>
+<td>Property Type</td>
+<td>Multi-select</td>
+<td>House, Apartment, Guesthouse, Hotel</td>
+</tr>
+<tr>
+<td>Amenities</td>
+<td>Checkbox</td>
+<td>Wi-Fi, Kitchen, Washer, Pool, Hot Tub, Parking, Air conditioning, Workspace</td>
+</tr>
+<tr>
+<td>Booking Options</td>
+<td>Toggle</td>
+<td>Instant Book, Self check-in, Allows pets, Free cancellation</td>
+</tr>
+<tr>
+<td>Top-Tier Stays</td>
+<td>Toggle</td>
+<td>Superhost, Guest Favorites</td>
+</tr>
+<tr>
+<td>Accessibility</td>
+<td>Checkbox</td>
+<td>Step-free, Wide doorway, Roll-in shower</td>
+</tr>
+<tr>
+<td>Host Language</td>
+<td>Multi-select</td>
+<td>English, French, Spanish, etc.</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Search</th>
+<th>Results</th>
+<th>Listing</th>
+<th>Booking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1128px)</td>
+<td>Inline header bar</td>
+<td>Map + list split (60/40)</td>
+<td>Full layout + sticky booking card</td>
+<td>Inline right sidebar</td>
+</tr>
+<tr>
+<td>Tablet (744-1127px)</td>
+<td>Expandable search</td>
+<td>List only (map toggle)</td>
+<td>Stacked, booking card inline</td>
+<td>Full page</td>
+</tr>
+<tr>
+<td>Mobile (&lt;744px)</td>
+<td>Full-screen overlay</td>
+<td>List or map toggle</td>
+<td>Stacked, sticky Reserve bar at bottom</td>
+<td>Full-screen steps</td>
+</tr>
+</tbody></table>
+<h3>Airbnb-Specific UX</h3>
+<ul>
+<li><strong>Full-bleed photography</strong>: large images, swipeable carousels, grid gallery</li>
+<li><strong>Category browsing</strong>: horizontal icon bar enables discovery-mode browsing (not just search)</li>
+<li><strong>Map + List split</strong>: synced interaction (hover card → highlight pin)</li>
+<li><strong>Flexible search</strong>: &quot;I&#39;m Flexible&quot; for dates AND destination enables wanderlust browsing</li>
+<li><strong>Price transparency</strong>: toggle to show total price before taxes (regulatory compliance)</li>
+<li><strong>Dual-blind reviews</strong>: prevents retaliation (both parties submit before either sees)</li>
+<li><strong>AirCover</strong>: trust and safety branding for host/guest protection</li>
+<li><strong>Smart Pricing</strong>: dynamic pricing suggestions for hosts based on demand</li>
+<li><strong>Superhost badge</strong>: visual trust signal prominently displayed</li>
+<li><strong>Guest Favorite badge</strong>: &quot;One of the most loved homes on Airbnb&quot; (top 5%)</li>
+<li><strong>Collaborative wishlists</strong>: group trip planning with shared lists</li>
+<li><strong>Design-forward</strong>: minimalist, magazine-quality visual design</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Book</th>
+<th>Host</th>
+<th>Manage</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest (unverified)</td>
+<td>✅</td>
+<td>— (verification required)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Guest (verified)</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>Own reservations</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own listings + reservations</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Superhost</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (priority support, bonus visibility)</td>
+<td>Own listings</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Co-host</td>
+<td>✅</td>
+<td>✅</td>
+<td>Manage specific listings (permissions vary)</td>
+<td>Assigned listings</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin (Airbnb)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>All</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Trust &amp; Verification</h3>
+<ul>
+<li>Government ID verification (required to book)</li>
+<li>Phone verification</li>
+<li>Email verification</li>
+<li>Social connections (optional — Facebook, Google)</li>
+<li>Reviews (visible history as guest and/or host)</li>
+<li>Background checks (US hosts)</li>
+<li>AirCover insurance (automatic for all bookings)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postman — IA.md | getIA.md</title>
+  <meta name="description" content="API development platform. Collections, testing, documentation. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=postman.com&sz=64" alt="Postman" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Postman</h1>
+      <p class="detail-brand-tagline">API development platform. Collections, testing, documentation.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/postman/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://postman.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/postman/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Postman — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Postman is the leading API development platform used by 30M+ developers. The mental model is <strong>workspaces containing collections of API requests</strong> — developers organize, test, document, and share APIs through a desktop/web application that serves as the universal API client. Postman differentiates through its collection-based organization (like folders of requests), environment variables (switch between dev/staging/prod), automated testing with Newman, mock servers, API documentation generation, and team workspaces for collaborative API development.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Recent Workspaces
+│   ├── Recently Viewed (collections, requests, APIs)
+│   ├── Team Activity
+│   └── Quick Actions (new request, import, explore)
+├── Workspaces
+│   ├── Personal Workspace
+│   ├── Team Workspaces
+│   │   ├── Workspace Overview
+│   │   ├── Members &amp; Roles
+│   │   └── Activity Feed
+│   ├── Public Workspaces
+│   └── Create Workspace
+├── Collections
+│   ├── Collection List (sidebar tree)
+│   ├── Collection
+│   │   ├── Folder Structure (nested)
+│   │   ├── Request
+│   │   │   ├── Request Builder
+│   │   │   │   ├── Method Selector (GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD)
+│   │   │   │   ├── URL Bar (with path variables)
+│   │   │   │   ├── Params Tab (query parameters)
+│   │   │   │   ├── Authorization Tab (API key, Bearer, OAuth2, Basic, etc.)
+│   │   │   │   ├── Headers Tab
+│   │   │   │   ├── Body Tab (form-data, raw JSON/XML, binary, GraphQL)
+│   │   │   │   ├── Pre-request Scripts (JavaScript)
+│   │   │   │   ├── Tests Tab (assertions, JavaScript)
+│   │   │   │   └── Settings (follow redirects, timeouts)
+│   │   │   └── Response Viewer
+│   │   │       ├── Body (pretty, raw, preview)
+│   │   │       ├── Headers
+│   │   │       ├── Cookies
+│   │   │       ├── Test Results (pass/fail)
+│   │   │       ├── Status Code + Time + Size
+│   │   │       └── Save as Example
+│   │   ├── Collection Settings
+│   │   │   ├── Authorization (inherited)
+│   │   │   ├── Pre-request Scripts (collection-level)
+│   │   │   ├── Tests (collection-level)
+│   │   │   └── Variables (collection-scoped)
+│   │   ├── Run Collection (Collection Runner)
+│   │   │   ├── Select Folder / Requests
+│   │   │   ├── Choose Environment
+│   │   │   ├── Iterations
+│   │   │   ├── Delay
+│   │   │   ├── Data File (CSV/JSON for data-driven tests)
+│   │   │   └── Run Results (pass/fail per request)
+│   │   └── Collection Documentation (auto-generated)
+│   ├── Import (OpenAPI, cURL, Swagger, HAR, GraphQL, WSDL)
+│   └── Export (JSON v2.1)
+├── APIs
+│   ├── API List
+│   ├── API Definition
+│   │   ├── Schema (OpenAPI / GraphQL / Protobuf / RAML / WSDL)
+│   │   ├── Schema Editor (visual or code)
+│   │   ├── Linked Collections
+│   │   ├── Validation (schema linting)
+│   │   ├── Changelog
+│   │   └── Versioning (v1, v2, etc.)
+│   ├── Mock Servers
+│   │   ├── Mock Server List
+│   │   ├── Create Mock (from collection or API)
+│   │   ├── Mock URL (simulated endpoint)
+│   │   └── Mock Call Log
+│   ├── Monitors
+│   │   ├── Monitor List
+│   │   ├── Create Monitor (scheduled collection runs)
+│   │   ├── Monitor Results (uptime, response time, failures)
+│   │   └── Alerts (email, Slack, PagerDuty)
+│   └── Documentation
+│       ├── Publish Collection as Docs
+│       ├── Custom Domain
+│       └── Published Docs (public URL)
+├── Environments
+│   ├── Environment List
+│   ├── Environment Detail
+│   │   ├── Variables (key-value, initial vs current value)
+│   │   ├── Type (default, secret, environment)
+│   │   └── Share / Export
+│   ├── Globals (cross-environment variables)
+│   └── Active Environment Selector (top bar)
+├── Flows (Visual API Workflows)
+│   ├── Flow Builder (drag-and-drop canvas)
+│   ├── Blocks (request, condition, output, delay)
+│   ├── Data Connections
+│   └── Run Flow
+├── History
+│   └── Request History (timestamped, searchable)
+├── API Network
+│   ├── Public API Network (discover APIs)
+│   ├── Team API Network (internal APIs)
+│   ├── Browse by Category
+│   └── API Detail Page (collection, documentation, fork)
+├── Postbot (AI Assistant)
+│   ├── Generate Tests (from response)
+│   ├── Generate Documentation
+│   ├── Fix Errors
+│   ├── Explain API
+│   └── Generate Collection
+├── Admin (Team/Enterprise)
+│   ├── Team Management
+│   │   ├── Members (invite, roles)
+│   │   ├── Groups
+│   │   └── SSO Configuration
+│   ├── Billing
+│   ├── Resource Usage
+│   ├── API Governance (API linting rules, style guides)
+│   ├── Secret Scanner
+│   ├── Audit Logs
+│   └── Custom Domains
+└── Settings (User)
+    ├── General (theme, editor settings)
+    ├── Shortcuts
+    ├── Data (export/import all data)
+    ├── Add-ons (Postman Agent for web)
+    ├── Certificates (client certificates)
+    ├── Proxy
+    └── Update Channel (stable/beta)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Expandable tree view</td>
+<td>Collections (folder tree), APIs, Environments, Flows, History</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Workspace selector, search, environment selector, invite, settings, account</td>
+</tr>
+<tr>
+<td><strong>Tab Bar</strong></td>
+<td>Horizontal tabs (browser-like)</td>
+<td>Open requests, collections, APIs, documentation — each in a tab</td>
+</tr>
+<tr>
+<td><strong>Request Builder</strong></td>
+<td>Main content area</td>
+<td>Method + URL bar, tabbed sections (Params, Auth, Headers, Body, Pre-request, Tests)</td>
+</tr>
+<tr>
+<td><strong>Response Panel</strong></td>
+<td>Below request builder</td>
+<td>Body, Headers, Cookies, Test Results — collapsible</td>
+</tr>
+<tr>
+<td><strong>Environment Switcher</strong></td>
+<td>Top-right dropdown</td>
+<td>Switch active environment (development, staging, production)</td>
+</tr>
+<tr>
+<td><strong>Collection Runner</strong></td>
+<td>Slide-out panel or modal</td>
+<td>Configure and run entire collection</td>
+</tr>
+<tr>
+<td><strong>Footer Bar</strong></td>
+<td>Bottom of app</td>
+<td>Console, Postman Agent status, sync status, find/replace</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Workspace Selector ▾]
+───────────────
+📁 Collections
+  └── My API
+      ├── 📂 Users
+      │   ├── GET List Users
+      │   ├── POST Create User
+      │   └── GET Get User by ID
+      └── 📂 Products
+          └── ...
+📡 APIs
+🌍 Environments
+🔀 Flows
+🕐 History
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>name, type (personal/team/public), description, members[]</td>
+<td>has Collections, APIs, Environments, Flows</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, description, auth{}, variables[], scripts{}</td>
+<td>has Folders, Requests, belongs to Workspace</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name, description, auth (inherited/custom), scripts{}</td>
+<td>belongs to Collection, has Requests</td>
+</tr>
+<tr>
+<td>Request</td>
+<td>name, method, url, headers[], body{}, auth{}, pre_request_script, test_script</td>
+<td>belongs to Folder/Collection</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>name, request, response (saved)</td>
+<td>belongs to Request</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>name, values[{key, value, type}], isPublic</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>key, initial_value, current_value, type (default/secret)</td>
+<td>belongs to Environment/Collection/Globals</td>
+</tr>
+<tr>
+<td>API</td>
+<td>name, schema (OpenAPI/GraphQL/etc.), versions[], linked_collections[], linked_docs[]</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>MockServer</td>
+<td>name, collection, url, config</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>Monitor</td>
+<td>name, collection, environment, schedule (cron), regions[], results[]</td>
+<td>belongs to Workspace</td>
+</tr>
+<tr>
+<td>Flow</td>
+<td>name, blocks[], connections[], trigger</td>
+<td>belongs to Workspace</td>
+</tr>
+</tbody></table>
+<h3>Variable Scoping (precedence high → low)</h3>
+<pre><code>Local (set via script) → Data (CSV/JSON file) → Environment → Collection → Global
+</code></pre>
+<h3>Auth Inheritance</h3>
+<pre><code>Collection Auth → Folder Auth → Request Auth
+(each level can inherit from parent or override)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Build and Test API Request</h3>
+<pre><code>New Tab → Select Method (POST) → Enter URL → Add Body (JSON) → Set Auth (Bearer token from env var) → Send → View Response → Write Test Assertions → Save to Collection
+</code></pre>
+<h3>Run Automated Tests</h3>
+<pre><code>Collection → Run Collection → Select Environment → Set Iterations → Attach Data File → Run → View Results (pass/fail per request) → Export results → Integrate with CI (Newman CLI)
+</code></pre>
+<h3>Design API Schema-First</h3>
+<pre><code>APIs → Create API → Write OpenAPI spec → Validate → Generate Collection from Schema → Add Examples → Publish Documentation → Share Mock Server URL
+</code></pre>
+<h3>Switch Between Environments</h3>
+<pre><code>Create Environments (dev: localhost:3000, staging: api.staging.example.com, prod: api.example.com) → Set {{base_url}} variable → Select environment from dropdown → All requests use active environment&#39;s variables
+</code></pre>
+<h3>Collaborate on APIs</h3>
+<pre><code>Team Workspace → Import OpenAPI spec → Generate Collection → Fork Collection (for personal experiments) → Make changes → Create Pull Request → Team reviews → Merge → Collection updated for all
+</code></pre>
+<h3>Monitor API Uptime</h3>
+<pre><code>Collection → Create Monitor → Set schedule (every 5 min) → Select regions → Enable alerts → View results over time → Get notified on failures
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                      → Home
+/workspace/:workspaceId                → Workspace overview
+/workspace/:workspaceId/collection/:id → Collection
+/workspace/:workspaceId/request/:id    → Request (opens in tab)
+/workspace/:workspaceId/api/:id        → API definition
+/workspace/:workspaceId/environment/:id → Environment
+/workspace/:workspaceId/flow/:id       → Flow builder
+/workspace/:workspaceId/monitor/:id    → Monitor detail
+/workspace/:workspaceId/mock/:id       → Mock server
+/workspace/:workspaceId/history        → Request history
+/workspace/:workspaceId/documentation  → Collection docs
+/explore                               → Public API Network
+/explore/:slug                         → Public API detail
+/admin                                 → Team admin
+/admin/team                            → Team members
+/admin/billing                         → Billing
+/admin/audit-logs                      → Audit logs
+/settings                              → User settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global (⌘K)</td>
+<td>Collections, requests, APIs, environments, docs, team members</td>
+<td>Workspace, Type</td>
+<td>Relevance, Recent</td>
+</tr>
+<tr>
+<td>Sidebar</td>
+<td>Collection names, request names, folder names</td>
+<td>—</td>
+<td>Alphabetical, Custom Order</td>
+</tr>
+<tr>
+<td>API Network</td>
+<td>API names, descriptions, categories</td>
+<td>Category, Authentication Type, Provider</td>
+<td>Relevance, Watchers, Forks</td>
+</tr>
+<tr>
+<td>History</td>
+<td>Request URL, method, response code</td>
+<td>Method, Status Code, Date Range</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>Collection Runner</td>
+<td>Request names</td>
+<td>Pass/Fail status</td>
+<td>Execution Order</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop app (primary)</td>
+<td>Full IDE-like layout: sidebar + tabs + request builder + response panel</td>
+</tr>
+<tr>
+<td>Web app (&gt;=1024px)</td>
+<td>Same as desktop, requires Postman Agent for local requests</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>Simplified, limited concurrent tabs</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Not supported — Postman is a desktop-first tool</td>
+</tr>
+</tbody></table>
+<h3>Postman-Specific UX</h3>
+<ul>
+<li><strong>Tab-based interface</strong> (like VS Code/browser — multiple requests open simultaneously)</li>
+<li><strong>Two-pane request/response</strong> layout (horizontal split)</li>
+<li><strong>Variable highlighting</strong>: <code>{{variable_name}}</code> in orange, hover to see resolved value</li>
+<li><strong>Environment badge</strong>: colored dot next to environment name</li>
+<li><strong>Console</strong> (bottom panel): raw HTTP request/response, useful for debugging</li>
+<li><strong>Collection Runner</strong> with iteration support and data-driven testing</li>
+<li><strong>Code generation</strong>: click &quot;Code&quot; to get snippet in any language (cURL, Python, JavaScript, Go, etc.)</li>
+<li><strong>Fork &amp; Pull Request</strong> workflow for collections (like git for APIs)</li>
+<li><strong>Postbot AI</strong>: generate tests, documentation, and queries from natural language</li>
+<li><strong>Dark mode</strong> available</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View</th>
+<th>Edit Collections</th>
+<th>Run</th>
+<th>Manage APIs</th>
+<th>Mock Servers</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Viewer</td>
+<td>✅</td>
+<td>—</td>
+<td>✅ (own fork)</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Workspace Visibility</h3>
+<ul>
+<li><strong>Personal</strong>: only you</li>
+<li><strong>Team</strong>: all team members (with role-based access)</li>
+<li><strong>Private Team</strong>: specific members only</li>
+<li><strong>Public</strong>: discoverable on API Network, forkable by anyone</li>
+<li><strong>Partner</strong>: shared with external collaborators</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

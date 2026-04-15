@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Overflow — IA.md | getIA.md</title>
+  <meta name="description" content="Developer Q&A. Voting, accepted answers, reputation. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=stackoverflow.com&sz=64" alt="Stack Overflow" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Stack Overflow</h1>
+      <p class="detail-brand-tagline">Developer Q&A. Voting, accepted answers, reputation.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/stack-overflow/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://stackoverflow.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/stack-overflow/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Stack Overflow — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The world&#39;s largest Q&amp;A platform for software developers. Stack Overflow&#39;s mental model is a <strong>structured knowledge base built from questions and answers</strong> — not a discussion forum. Every question seeks a definitive answer, and the best answer is community-voted to the top and officially &quot;accepted&quot; by the asker. Key differentiators: strict Q&amp;A format (no discussion threads), reputation system (earned through helpful contributions), badges and privileges (gamified progression), community moderation (elected moderators + privilege-based), duplicate detection, code formatting, the Stack Exchange network (200+ Q&amp;A sites), Stack Overflow for Teams (private), and Stack Overflow Jobs (deprecated, now talent platform).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Interesting (personalized based on tags you follow)
+│   ├── Hot (trending across Stack Overflow)
+│   ├── Week / Month (top questions by period)
+│   └── Custom Filters (saved searches)
+├── Questions
+│   ├── All Questions
+│   │   ├── Sort: Newest / Active / Bounties / Unanswered / Score
+│   │   ├── Filter: No Answers / No Accepted Answer
+│   │   ├── Tag Filter
+│   │   └── Pagination
+│   ├── Tagged Questions (filtered by tag)
+│   ├── Unanswered Questions
+│   │   ├── My Tags (questions in your favorite tags)
+│   │   ├── Newest
+│   │   └── No Answers / No Upvoted Answers
+│   └── Bounties (questions with bounty rewards)
+├── Question Detail
+│   ├── Question
+│   │   ├── Title
+│   │   ├── Body (Markdown: text, code blocks, images, links, LaTeX)
+│   │   ├── Tags (e.g., javascript, python, react)
+│   │   ├── Vote Score (↑ net upvotes - downvotes ↓)
+│   │   ├── Views Count
+│   │   ├── Asked Date, Modified Date
+│   │   ├── Author Card (name, reputation, badges, avatar)
+│   │   ├── Bounty Indicator (if active, amount, deadline)
+│   │   ├── Favorite / Bookmark (★)
+│   │   ├── Share Link
+│   │   ├── Edit (suggest edit or direct edit)
+│   │   ├── Close / Flag / Delete (privileged users)
+│   │   ├── Follow (get notified of changes)
+│   │   └── Activity Timeline (edits, comments, answers)
+│   ├── Answers
+│   │   ├── Sort: Votes (default) / Active / Oldest / Modified
+│   │   ├── Accepted Answer (✅ green checkmark, pinned top)
+│   │   ├── Answer Body (Markdown: code, explanation)
+│   │   ├── Vote (↑↓)
+│   │   ├── Author Card
+│   │   ├── Edit
+│   │   ├── Share Link to Specific Answer
+│   │   ├── Flag
+│   │   ├── Comments (on answer)
+│   │   └── &quot;Was this answer useful?&quot; (for anonymous users)
+│   ├── Comments (on question)
+│   │   ├── Comment Text (limited length, inline code)
+│   │   ├── Upvote Comment
+│   │   ├── Flag Comment
+│   │   └── &quot;Add a Comment&quot; (50+ reputation required)
+│   ├── Linked Questions (sidebar)
+│   ├── Related Questions (sidebar)
+│   └── &quot;Know someone who can answer? Share a link&quot; CTA
+├── Ask Question
+│   ├── Title (auto-suggest similar questions while typing)
+│   ├── Body (Markdown editor)
+│   │   ├── Text Formatting (bold, italic, headers, lists)
+│   │   ├── Code Block (``` with syntax highlighting)
+│   │   ├── Image Upload
+│   │   ├── Tables
+│   │   ├── Links
+│   │   └── Stack Snippets (runnable HTML/CSS/JS in-browser)
+│   ├── Tags (required, up to 5)
+│   ├── Duplicate Check (&quot;Does this answer your question?&quot; suggestions)
+│   ├── Writing Tips / Guidelines Sidebar
+│   ├── Preview
+│   └── Post Your Question
+├── Tags
+│   ├── All Tags (alphabetical or popular)
+│   ├── Tag Page
+│   │   ├── Tag Name, Description, Wiki
+│   │   ├── Questions Count, Questions/Day
+│   │   ├── Related Tags
+│   │   ├── Top Askers / Top Answerers (all time, month, week)
+│   │   ├── Questions List (sorted, filtered)
+│   │   └── Tag Synonyms
+│   ├── Tag Wiki (community-maintained tag documentation)
+│   └── Watch / Ignore Tags (affects home feed)
+├── Users
+│   ├── Users Directory
+│   │   ├── Sort: Reputation / New Users / Voters / Editors / Moderators
+│   │   ├── Period: Week / Month / Quarter / Year / All
+│   │   └── Search Users
+│   ├── User Profile
+│   │   ├── Display Name, Avatar, Location, Website, About Me, Member Since
+│   │   ├── Reputation Score
+│   │   ├── Badges (Gold / Silver / Bronze counts + specific badges)
+│   │   ├── Tabs: Profile / Activity / Saves / Settings
+│   │   ├── Activity
+│   │   │   ├── Summary (posts, score, people reached)
+│   │   │   ├── Answers
+│   │   │   ├── Questions
+│   │   │   ├── Tags (top tags by score)
+│   │   │   ├── Badges (earned)
+│   │   │   ├── Bounties (offered/earned)
+│   │   │   ├── Reputation Graph (over time)
+│   │   │   └── All Actions (timeline)
+│   │   ├── Saves (bookmarked questions)
+│   │   └── Developer Story (if created)
+│   └── Your Profile (with edit access)
+├── Search
+│   ├── Search Results (questions, answers, tags, users)
+│   ├── Advanced Search Operators
+│   │   ├── [tag] — filter by tag
+│   │   ├── user:me — your posts
+│   │   ├── score:N — minimum score
+│   │   ├── answers:N — answer count
+│   │   ├── isaccepted:yes — has accepted answer
+│   │   ├── is:question / is:answer
+│   │   ├── closed:yes / duplicate:yes
+│   │   ├── created:YYYY-MM-DD — date filter
+│   │   ├── body:&quot;code snippet&quot; — search in body
+│   │   └── title:&quot;exact phrase&quot; — search in title
+│   └── Sort: Relevance / Newest / Active / Votes
+├── Reputation &amp; Privileges
+│   ├── Reputation Page (how it works)
+│   ├── Privilege Levels
+│   │   ├── 1: Create Posts
+│   │   ├── 15: Vote Up
+│   │   ├── 50: Comment Everywhere
+│   │   ├── 125: Vote Down (costs 1 rep)
+│   │   ├── 250: View Close Votes
+│   │   ├── 500: Retag Questions
+│   │   ├── 1000: Show Total Votes (split up/down)
+│   │   ├── 2000: Edit Any Post (no peer review)
+│   │   ├── 3000: Close / Reopen Questions
+│   │   ├── 5000: Approve Tag Wiki Edits
+│   │   ├── 10,000: Access Moderator Tools (delete votes, view analytics)
+│   │   ├── 15,000: Protect Questions
+│   │   ├── 20,000: Trusted User (vote to delete)
+│   │   └── 25,000: Access to Site Analytics
+│   └── Badges
+│       ├── Gold (rare, major achievements)
+│       ├── Silver (notable contributions)
+│       ├── Bronze (participation milestones)
+│       └── Tag Badges (expertise in specific tags)
+├── Review Queues (500+ reputation)
+│   ├── Suggested Edits (approve/reject)
+│   ├── Close Votes (agree/disagree)
+│   ├── Reopen Votes
+│   ├── Low Quality Posts
+│   ├── First Questions (from new users)
+│   ├── First Answers (from new users)
+│   ├── Late Answers (old questions, new answers)
+│   └── Triage (sort new questions)
+├── Stack Overflow for Teams (Enterprise)
+│   ├── Private Q&amp;A (team-only)
+│   ├── Knowledge Base (Articles)
+│   ├── Collections
+│   ├── Team Members
+│   └── Integrations (Slack, Jira, GitHub)
+├── Collectives (sponsored tag communities)
+│   ├── Collective Page (e.g., Google Cloud, AWS, GitLab)
+│   ├── Recommended Content
+│   ├── Recognized Members
+│   ├── Articles (long-form by collective)
+│   └── Bulletins
+├── Community
+│   ├── Meta Stack Overflow (community governance)
+│   ├── Chat (real-time chat rooms)
+│   ├── Blog (official Stack Overflow blog)
+│   ├── Code of Conduct
+│   ├── Help Center (How to Ask, How to Answer, What&#39;s on-topic)
+│   └── Elections (community moderator elections)
+├── Header Tools
+│   ├── Inbox (notifications: answers, comments, badges, edits)
+│   ├── Achievements (recent reputation changes)
+│   ├── Review Queues (badge with count)
+│   └── Site Switcher (Stack Exchange network)
+└── Footer
+    ├── Stack Overflow (main)
+    ├── Stack Exchange Network (200+ sites)
+    ├── Advertising, Talent, Teams
+    └── Legal, Privacy, Terms
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed, full width</td>
+<td>Logo, Products dropdown, search bar (prominent), user avatar + rep + badges, inbox, achievements, review, site switcher</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Collapsible (desktop)</td>
+<td>Home, Questions, Tags, Users, Companies, Collectives, Explore Collectives, Teams</td>
+</tr>
+<tr>
+<td><strong>Question Tabs</strong></td>
+<td>Horizontal tabs on question list</td>
+<td>Interesting / Bounties / Hot / Week / Month</td>
+</tr>
+<tr>
+<td><strong>Sort/Filter</strong></td>
+<td>Below tabs on question list</td>
+<td>Newest / Active / Bounties / Unanswered + tag filter</td>
+</tr>
+<tr>
+<td><strong>Post Actions</strong></td>
+<td>Inline on question/answer</td>
+<td>Vote (↑↓), Accept (✅), Edit, Close, Flag, Share, Bookmark</td>
+</tr>
+<tr>
+<td><strong>Right Sidebar</strong></td>
+<td>On question detail (desktop)</td>
+<td>Linked Questions, Related Questions, Hot Network Questions, tag info</td>
+</tr>
+<tr>
+<td><strong>Comment Thread</strong></td>
+<td>Below question/answer</td>
+<td>Flat list (not threaded), expandable</td>
+</tr>
+</tbody></table>
+<h3>Desktop Layout</h3>
+<pre><code>[Left Sidebar (164px)]  |  [Content (727px)]     |  [Right Sidebar (300px)]
+──────────────────────────────────────────────────────────────────
+🏠 Home                 |  Question Title         | Linked
+📋 Questions            |  [Vote ↑] [Score] [↓]  |  • Related Q1
+🏷 Tags                 |  [Body text...]         |  • Related Q2
+👥 Users                |  Tags: [js][react]      | ──────────────
+🏢 Companies            |  ──────────────         | Related
+   Collectives          |  2 Answers              |  • Similar Q1
+                        |  [✅ Accepted Answer]   |  • Similar Q2
+                        |  [Vote ↑] [Score] [↓]  | ──────────────
+                        |  [Answer body...]       | Hot Network Qs
+                        |  ──────────────         |  • Q from physics
+                        |  [Other Answer]         |  • Q from math
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Question</td>
+<td>title, body (Markdown/HTML), tags[] (max 5), score, view_count, answer_count, accepted_answer_id, bounty (amount, deadline), closed_reason, duplicate_of, protected (bool), community_wiki (bool), created_at, modified_at, locked (bool), migration_info</td>
+<td>belongs to User; has many Answers, Comments, Tags, Votes, Revisions</td>
+</tr>
+<tr>
+<td>Answer</td>
+<td>body, score, accepted (bool), community_wiki (bool), created_at, modified_at</td>
+<td>belongs to Question and User; has Comments, Votes, Revisions</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>body (600 chars, limited markdown), score, created_at</td>
+<td>belongs to Question/Answer and User</td>
+</tr>
+<tr>
+<td>Vote</td>
+<td>value (+1/-1), type (question/answer/comment)</td>
+<td>belongs to User and Post</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name, excerpt, wiki, question_count, questions_per_day</td>
+<td>many-to-many with Questions; has Synonyms</td>
+</tr>
+<tr>
+<td>User</td>
+<td>display_name, avatar, location, website, about_me, reputation, badges (gold/silver/bronze counts), member_since, last_seen, is_moderator</td>
+<td>has many Questions, Answers, Comments, Votes, Badges</td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>name, description, type (gold/silver/bronze), category (question/answer/participation/moderation/tag), awarded_count</td>
+<td>awarded to Users</td>
+</tr>
+<tr>
+<td>Revision</td>
+<td>body, title, tags, edit_comment, created_at, editor</td>
+<td>belongs to Question/Answer</td>
+</tr>
+<tr>
+<td>Bounty</td>
+<td>amount (50-500 rep), message, deadline, auto_award (bool)</td>
+<td>belongs to Question, offered by User</td>
+</tr>
+<tr>
+<td>CloseVote</td>
+<td>reason (duplicate/off-topic/unclear/too broad/opinion-based), voter</td>
+<td>belongs to Question</td>
+</tr>
+<tr>
+<td>Flag</td>
+<td>type (spam/rude/not_an_answer/low_quality/moderator_attention), message</td>
+<td>belongs to Post, raised by User</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>task (suggested_edit/close/reopen/low_quality/first_posts), reviewer, action (approve/reject/skip), created_at</td>
+<td>belongs to Post</td>
+</tr>
+<tr>
+<td>TagBadge</td>
+<td>tag, user, type (gold/silver/bronze)</td>
+<td>awarded for score in specific tag</td>
+</tr>
+<tr>
+<td>Collective</td>
+<td>name, slug, description, members[], articles[]</td>
+<td>groups Tags and Users</td>
+</tr>
+<tr>
+<td>Article</td>
+<td>title, body, author, collective, created_at</td>
+<td>belongs to Collective</td>
+</tr>
+</tbody></table>
+<h3>Question States</h3>
+<pre><code>open → closed (duplicate / off-topic / needs details / opinion-based) → deleted
+open → protected (only established users can answer)
+open → locked (no votes, edits, or comments — mod action)
+open → community wiki (rep-free collaborative editing)
+</code></pre>
+<h3>Reputation Events</h3>
+<pre><code>Question upvoted: +10 rep
+Answer upvoted: +10 rep
+Answer accepted: +15 rep (answerer) + 2 rep (asker)
+Question downvoted: -2 rep
+Answer downvoted: -2 rep (voter loses -1)
+Suggested edit approved: +2 rep
+Bounty awarded: +N rep (bounty amount)
+Spam/offensive flags validated: -100 rep
+</code></pre>
+<h2>User Flows</h2>
+<h3>Ask a Question</h3>
+<pre><code>[Ask Question] → Type Title → Review Similar Questions → Write Body (code + explanation) → Add Tags → Preview → Post
+</code></pre>
+<h3>Answer a Question</h3>
+<pre><code>Home → Find Question (tag filter or search) → Read → Write Answer (code + explanation) → Post → Asker Accepts (✅) → Earn +15 Rep
+</code></pre>
+<h3>Search for Solution</h3>
+<pre><code>Google → Stack Overflow Question → Read Question → Scroll to Accepted Answer → Copy Code → Solve Problem
+</code></pre>
+<h3>Earn Reputation</h3>
+<pre><code>Answer Questions → Get Upvotes (+10 each) → Unlock Privileges → Edit Others&#39; Posts → Review Queue → Close Votes → Community Moderator
+</code></pre>
+<h3>Edit a Post</h3>
+<pre><code>Question/Answer → [Edit] → Suggest Edit (&lt; 2000 rep) or Direct Edit (≥ 2000) → Reviewed by Peers → Applied
+</code></pre>
+<h3>Offer Bounty</h3>
+<pre><code>Question (no good answer) → [Start Bounty] → Set Amount (50-500 rep) → Write Bounty Message → 7 Day Period → Award Best Answer
+</code></pre>
+<h3>Review Queue</h3>
+<pre><code>Top Bar → Review Icon (3) → Suggested Edits Queue → Review Edit → Approve / Reject / Improve → Next Review
+</code></pre>
+<h3>Close as Duplicate</h3>
+<pre><code>Question → [Close] → &quot;Duplicate of...&quot; → Search for Original → Link Original → Others Vote → Closed → Redirects
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                  → Home (Interesting Questions)
+/questions                         → All Questions
+/questions/ask                     → Ask a Question
+/questions/:id/:slug               → Question Detail
+/questions/:id/:slug/:answerId     → Link to Specific Answer
+/questions/tagged/:tag             → Questions with Tag
+/questions/tagged/:tag1+:tag2      → Questions with Multiple Tags
+/search?q=:query                   → Search Results
+/tags                              → All Tags
+/tags/:tagName                     → Tag Page
+/tags/:tagName/info                → Tag Wiki
+/users                             → Users Directory
+/users/:id/:slug                   → User Profile
+/users/:id/:slug?tab=answers       → User Answers
+/users/:id/:slug?tab=questions     → User Questions
+/users/:id/:slug?tab=tags          → User Top Tags
+/users/:id/:slug?tab=badges        → User Badges
+/users/:id/:slug?tab=reputation    → User Reputation History
+/review                            → Review Queues
+/review/suggested-edits            → Suggested Edits Queue
+/review/close                      → Close Votes Queue
+/collectives/:slug                 → Collective Page
+/collectives/:slug/articles        → Collective Articles
+/help                              → Help Center
+/help/how-to-ask                   → How to Ask Guide
+/help/privileges                   → Privileges
+/conduct                           → Code of Conduct
+/election                          → Moderator Elections
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Questions (title + body), Answers, Tags, Users</td>
+<td>Tags ([tag]), User (user:id), Score (score:N), Answers (answers:N), Accepted (isaccepted:yes/no), Closed (closed:yes/no), Date (created:YYYY-MM-DD), Body/Title (body:&quot;text&quot;/title:&quot;text&quot;)</td>
+<td>Relevance, Votes, Activity, Newest, Oldest</td>
+</tr>
+<tr>
+<td>Questions List</td>
+<td>All questions</td>
+<td>Tags, No Answers, No Accepted Answer</td>
+<td>Newest, Active, Bounties, Unanswered, Score</td>
+</tr>
+<tr>
+<td>Tag Page</td>
+<td>Questions with specific tag</td>
+<td>—</td>
+<td>Newest, Active, Votes, Unanswered</td>
+</tr>
+<tr>
+<td>User Activity</td>
+<td>User&#39;s posts</td>
+<td>Type (questions/answers/tags/badges)</td>
+<td>Score, Activity, Newest</td>
+</tr>
+<tr>
+<td>Review Queues</td>
+<td>Items needing review</td>
+<td>Queue type</td>
+<td>— (system-determined order)</td>
+</tr>
+</tbody></table>
+<h3>Advanced Search Operators</h3>
+<pre><code>[javascript]           → tagged with javascript
+[javascript] [react]   → tagged with both
+user:12345             → by specific user
+user:me                → by yourself
+score:10               → minimum score 10
+answers:0              → no answers
+isaccepted:yes         → has accepted answer
+is:question            → questions only
+is:answer              → answers only
+closed:yes             → closed questions
+duplicate:yes          → closed as duplicate
+views:1000             → minimum views
+created:2024-01-01..   → created after date
+body:&quot;function()&quot;      → search in body
+title:&quot;how to&quot;         → search in title
+wiki:yes               → community wiki
+hasaccepted:no         → no accepted answer
+inquestion:12345       → answers to specific question
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Left Sidebar</th>
+<th>Content</th>
+<th>Right Sidebar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1264px)</td>
+<td>Fixed (164px)</td>
+<td>Center (max 727px)</td>
+<td>Fixed (300px)</td>
+</tr>
+<tr>
+<td>Tablet (980–1263px)</td>
+<td>Collapsed (icons)</td>
+<td>Wider content</td>
+<td>Reduced right sidebar</td>
+</tr>
+<tr>
+<td>Mobile (&lt;980px)</td>
+<td>Hamburger drawer</td>
+<td>Full width</td>
+<td>Hidden (info in expandable sections)</td>
+</tr>
+</tbody></table>
+<h3>Code Display</h3>
+<ul>
+<li>Syntax highlighting (language-aware)</li>
+<li>Copy button on code blocks</li>
+<li>Horizontal scroll for long lines</li>
+<li>Stack Snippets: runnable HTML/CSS/JS in-browser</li>
+<li>Mobile: code blocks horizontally scrollable</li>
+</ul>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Simplified header (hamburger + search + inbox)</li>
+<li>Vote buttons prominent (large tap targets)</li>
+<li>Code blocks scrollable</li>
+<li>Comments collapsed by default</li>
+<li>Question list in compact card view</li>
+<li>Pull-to-refresh</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Reputation</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Ask, answer, flag, suggest edits</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Upvote</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Comment everywhere</td>
+</tr>
+<tr>
+<td>125</td>
+<td>Downvote</td>
+</tr>
+<tr>
+<td>250</td>
+<td>View close/reopen votes</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Retag questions</td>
+</tr>
+<tr>
+<td>1,000</td>
+<td>Established user (view vote splits)</td>
+</tr>
+<tr>
+<td>2,000</td>
+<td>Edit questions and answers (no review needed)</td>
+</tr>
+<tr>
+<td>3,000</td>
+<td>Vote to close/reopen</td>
+</tr>
+<tr>
+<td>5,000</td>
+<td>Approve tag wiki edits</td>
+</tr>
+<tr>
+<td>10,000</td>
+<td>Access moderator tools, delete answers</td>
+</tr>
+<tr>
+<td>15,000</td>
+<td>Protect questions</td>
+</tr>
+<tr>
+<td>20,000</td>
+<td>Trusted user (vote to delete)</td>
+</tr>
+<tr>
+<td>25,000</td>
+<td>Access site analytics</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Ask</th>
+<th>Answer</th>
+<th>Comment</th>
+<th>Vote</th>
+<th>Edit</th>
+<th>Close</th>
+<th>Moderate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>New User (1 rep)</td>
+<td>✅ (rate limited)</td>
+<td>✅</td>
+<td>Own posts only</td>
+<td>—</td>
+<td>Suggest edits</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Established (1000+)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (suggested)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Trusted (2000+)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (direct)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Close Voter (3000+)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Moderator (elected)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (binding)</td>
+<td>✅ (binding close, delete, suspend, migrate)</td>
+</tr>
+<tr>
+<td>Stack Overflow Staff</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (all)</td>
+</tr>
+</tbody></table>
+<h3>Content Quality Controls</h3>
+<ul>
+<li>Duplicate detection (suggest before asking)</li>
+<li>Review queues (community-driven quality gatekeeping)</li>
+<li>Question bans (auto-ban for consistently downvoted questions)</li>
+<li>Rate limiting for new users</li>
+<li>Protected questions (prevent answers from very new users)</li>
+<li>Community wiki (shared ownership, no rep from votes)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

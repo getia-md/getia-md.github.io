@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoorDash — IA.md | getIA.md</title>
+  <meta name="description" content="Food delivery. Restaurant browse, real-time tracking. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=doordash.com&sz=64" alt="DoorDash" onerror="this.parentElement.textContent='D'">
+      </div>
+      <h1 class="detail-brand-name">DoorDash</h1>
+      <p class="detail-brand-tagline">Food delivery. Restaurant browse, real-time tracking.</p>
+      <span class="detail-category-badge">E-Commerce</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/doordash/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://doordash.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/doordash/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>DoorDash — Information Architecture</h1>
+<h2>Overview</h2>
+<p>DoorDash is the leading food delivery platform in the US, connecting consumers with local restaurants, grocery stores, and convenience stores. The mental model is <strong>get anything delivered fast</strong> — users browse nearby restaurants, order food, and track delivery in real-time. DoorDash differentiates through DashPass (subscription for free delivery), DoorDash Drive (white-label delivery for merchants), pickup option, grocery delivery, convenience items (DashMart), group orders, and an expanding scope beyond restaurant food. The three-sided marketplace serves consumers, merchants (restaurants/stores), and Dashers (delivery drivers).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Address / Location Bar (delivery or pickup toggle)
+│   ├── Search Bar
+│   ├── Category Quick Filters (horizontal scroll)
+│   │   ├── Offers Near You
+│   │   ├── Grocery
+│   │   ├── Convenience
+│   │   ├── Pizza, Chinese, Mexican, Indian, Sushi, Thai
+│   │   ├── Fast Food, Healthy, Breakfast, Coffee
+│   │   └── Alcohol, Retail, Pets, Flowers
+│   ├── Featured Sections
+│   │   ├── National Favorites (chain restaurants)
+│   │   ├── Fastest Near You
+│   │   ├── Popular Right Now
+│   │   ├── New on DoorDash
+│   │   ├── DashPass Exclusives
+│   │   ├── Under $2 Delivery Fee
+│   │   ├── Previously Ordered
+│   │   └── Highly Rated
+│   ├── DashPass Banner (join/upgrade CTA)
+│   └── Store/Restaurant Cards
+│       ├── Image, Name, Rating, Delivery Time
+│       ├── Delivery Fee / DashPass Free Delivery
+│       └── Promotion Badge (20% off, $0 delivery)
+├── Search / Browse
+│   ├── Restaurant Search Results
+│   ├── Item Search Results (specific dishes across restaurants)
+│   ├── Filters
+│   │   ├── Sort (Fastest, Rating, Price, Distance)
+│   │   ├── Price ($, $$, $$$, $$$$)
+│   │   ├── Rating (4.5+)
+│   │   ├── Offers / Deals
+│   │   ├── DashPass
+│   │   ├── Open Now
+│   │   └── Dietary (Vegan, Gluten-Free, Halal, Kosher)
+│   └── Popular Categories (nearby)
+├── Restaurant / Store Page
+│   ├── Header (image, name, rating, delivery time + fee, distance)
+│   ├── Restaurant Info (hours, address, DashPass eligible)
+│   ├── Menu Categories (sticky tabs / sidebar scroll)
+│   ├── Menu Items
+│   │   ├── Item Card (name, description, price, image, popular badge)
+│   │   └── Item Detail Modal
+│   │       ├── Image
+│   │       ├── Description
+│   │       ├── Required Selections (size, protein)
+│   │       ├── Optional Add-Ons (extra cheese, avocado)
+│   │       ├── Special Instructions (text field)
+│   │       ├── Quantity
+│   │       └── Add to Cart
+│   ├── Reviews (recent, with photos)
+│   ├── Hours &amp; Location
+│   └── Group Order (invite others to add items)
+├── Cart (Slide-Out Drawer)
+│   ├── Restaurant Name (cart per restaurant)
+│   ├── Items (editable: quantity, remove)
+│   ├── Promo Code
+│   ├── Subtotal
+│   ├── Estimated Delivery Fee + Service Fee + Tax
+│   ├── DashPass Savings Indicator
+│   └── Go to Checkout
+├── Checkout
+│   ├── Delivery Address (saved, add new, apartment/suite)
+│   ├── Delivery Instructions (leave at door, hand to me)
+│   ├── Delivery Time (ASAP, schedule later)
+│   ├── Payment Method (cards, Apple Pay, Google Pay, PayPal, Venmo, gift card)
+│   ├── Dasher Tip (suggested amounts + custom)
+│   ├── Priority Delivery (pay extra for faster)
+│   ├── Promo Code
+│   ├── Order Summary
+│   │   ├── Subtotal
+│   │   ├── Delivery Fee (or $0 with DashPass)
+│   │   ├── Service Fee
+│   │   ├── Tax
+│   │   ├── Tip
+│   │   └── Total
+│   └── Place Order
+├── Order Tracking
+│   ├── Status Steps (confirmed → preparing → Dasher on the way → delivered)
+│   ├── Live Map (Dasher location, real-time)
+│   ├── Estimated Arrival (updating countdown)
+│   ├── Dasher Info (name, photo, vehicle)
+│   ├── Contact Dasher (call, text, chat)
+│   ├── Contact Restaurant
+│   ├── Order Details (items list)
+│   └── Receipt
+├── Orders
+│   ├── Recent Orders
+│   ├── Past Orders (history)
+│   ├── Order Detail (items, receipt, tracking)
+│   ├── Reorder (one-tap)
+│   ├── Rate &amp; Review (stars, tags: fast delivery, correct order)
+│   └── Help with Order (report issue → credits/refund)
+├── DashPass
+│   ├── Benefits ($0 delivery, reduced service fees, exclusive offers)
+│   ├── Plan Options (monthly, annual, student, family)
+│   ├── Eligible Restaurants
+│   └── Manage Subscription
+├── Account
+│   ├── Addresses (saved)
+│   ├── Payment Methods
+│   ├── DashPass Membership
+│   ├── DoorDash Credits / Gift Cards
+│   ├── Promotions
+│   ├── Notification Settings
+│   ├── Privacy
+│   └── Help
+├── Group Order
+│   ├── Create Group Order (share link)
+│   ├── Participants Add Items Independently
+│   ├── Cart Summary (all participants)
+│   ├── Individual Limits (optional spending cap)
+│   └── Host Checks Out
+├── DashMart (Convenience Store)
+│   ├── Categories (snacks, drinks, household, personal care)
+│   ├── Item Browsing (quick add)
+│   └── Fast Delivery (15-20 min)
+├── Grocery
+│   ├── Connected Stores (partner grocers)
+│   ├── Department Browse
+│   ├── Item Search
+│   └── Substitution Preferences
+└── Help
+    ├── Current Order Help (missing items, wrong items, late delivery)
+    ├── Past Order Help
+    ├── Account Issues
+    ├── DashPass Help
+    ├── Safety
+    └── Contact Support (chat)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Sticky top bar</td>
+<td>DoorDash logo, delivery/pickup toggle, address selector, search, DashPass, user menu</td>
+</tr>
+<tr>
+<td><strong>Category Bar</strong></td>
+<td>Horizontal scroll chips</td>
+<td>Cuisine types + special categories (Grocery, Convenience, Alcohol)</td>
+</tr>
+<tr>
+<td><strong>Restaurant Menu Nav</strong></td>
+<td>Sticky category tabs within restaurant page</td>
+<td>Jump to section (Popular, Appetizers, Entrees, Desserts)</td>
+</tr>
+<tr>
+<td><strong>Cart</strong></td>
+<td>Slide-out right drawer (desktop) or bottom sheet (mobile)</td>
+<td>Persistent, accessible from any page, cart badge on icon</td>
+</tr>
+<tr>
+<td><strong>Bottom Nav (mobile)</strong></td>
+<td>Fixed bottom bar</td>
+<td>Home, Search, Orders, Account</td>
+</tr>
+<tr>
+<td><strong>Tracking View</strong></td>
+<td>Full-screen overlay or dedicated page</td>
+<td>Map + status steps + Dasher info</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Restaurant</td>
+<td>name, logo, cover_image, cuisine_tags[], rating, num_ratings, delivery_time_estimate, delivery_fee, distance, dashpass_eligible, hours, address, promotions[]</td>
+<td>has MenuCategories</td>
+</tr>
+<tr>
+<td>MenuCategory</td>
+<td>name, sort_order</td>
+<td>belongs to Restaurant, has MenuItems</td>
+</tr>
+<tr>
+<td>MenuItem</td>
+<td>name, description, price, image, popular, num_ratings</td>
+<td>belongs to MenuCategory, has Customizations</td>
+</tr>
+<tr>
+<td>Customization</td>
+<td>group_name, type (required/optional), options[], max_selections</td>
+<td>belongs to MenuItem</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>id, items[], status, total, delivery_address, dasher, restaurant, timestamps{}, tip, fees{}</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Dasher</td>
+<td>name, photo, rating, vehicle</td>
+<td>assigned to Order</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating, tags (fast delivery, correct order, quality food), text</td>
+<td>belongs to Order/Restaurant</td>
+</tr>
+<tr>
+<td>DashPass</td>
+<td>plan (monthly/annual/student), status, benefits</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>GroupOrder</td>
+<td>host, link, participants[], cart_items[], spending_limit, deadline</td>
+<td>associated with Order</td>
+</tr>
+<tr>
+<td>Promotion</td>
+<td>code, type, value, conditions, expires</td>
+<td>applied to Order</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>label, street, apt_suite, instructions, coordinates</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Order Status Flow</h3>
+<pre><code>placed → confirmed (by restaurant) → preparing → ready_for_pickup → dasher_assigned → dasher_picking_up → dasher_on_the_way → delivered
+                                                                                                                                → cancelled (by user/restaurant)
+</code></pre>
+<h3>Delivery Speed Tiers</h3>
+<ul>
+<li><strong>Priority</strong>: faster delivery (higher fee)</li>
+<li><strong>Standard</strong>: regular delivery</li>
+<li><strong>Scheduled</strong>: choose a delivery window</li>
+<li><strong>No-Rush</strong>: save on fees, flexible window</li>
+</ul>
+<h2>User Flows</h2>
+<h3>Order Food</h3>
+<pre><code>Set address → Browse (or search &quot;pad thai&quot;) → Select restaurant → Browse menu → Add items (customize: extra spicy, no peanuts) → Cart → Checkout → Select payment + tip → Place order → Track live → Receive delivery → Rate
+</code></pre>
+<h3>Reorder</h3>
+<pre><code>Orders → Past orders → [Reorder] → Cart pre-filled → Modify if needed → Checkout → Track
+</code></pre>
+<h3>Group Order</h3>
+<pre><code>Restaurant page → [Group Order] → Get sharable link → Send to friends → Each person adds items → Host reviews cart → Set tip → Checkout → Track → Everyone gets food
+</code></pre>
+<h3>DashPass Value</h3>
+<pre><code>Checkout → See delivery fee ($4.99) → DashPass saves this ($0 delivery) → Service fee reduced → Total savings shown → CTA: &quot;Get DashPass and save&quot;
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/search?q=:query               → Search Results
+/store/:storeSlug              → Restaurant/Store Page
+/store/:storeSlug/item/:id     → Item Detail (usually modal)
+/checkout                      → Checkout
+/orders                        → Order History
+/orders/:id                    → Order Detail
+/orders/:id/tracking           → Live Tracking
+/dashpass                      → DashPass Info / Manage
+/account                       → Account
+/account/addresses             → Saved Addresses
+/account/payments              → Payment Methods
+/account/credits               → Credits &amp; Gift Cards
+/account/promotions            → Promotions
+/group-order/:code             → Join Group Order
+/dashmart                      → DashMart (convenience)
+/grocery                       → Grocery
+/help                          → Help Center
+/help/order/:id                → Order-specific Help
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Type</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cuisine</td>
+<td>Multi-select chips</td>
+<td>Pizza, Chinese, Mexican, Indian, Sushi, American, Thai, etc.</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Single select</td>
+<td>Fastest, Most Popular, Rating, Price, Distance</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>Chips</td>
+<td>$, $$, $$$, $$$$</td>
+</tr>
+<tr>
+<td>Rating</td>
+<td>Threshold</td>
+<td>4.5+</td>
+</tr>
+<tr>
+<td>Delivery Fee</td>
+<td>Toggle/Range</td>
+<td>Free delivery, Under $3</td>
+</tr>
+<tr>
+<td>Offers</td>
+<td>Toggle</td>
+<td>Has deals</td>
+</tr>
+<tr>
+<td>DashPass</td>
+<td>Toggle</td>
+<td>DashPass eligible only</td>
+</tr>
+<tr>
+<td>Dietary</td>
+<td>Multi-select</td>
+<td>Vegan, Vegetarian, Gluten-Free, Halal, Kosher</td>
+</tr>
+<tr>
+<td>Open Now</td>
+<td>Toggle</td>
+<td>Currently accepting orders</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Home</th>
+<th>Restaurant</th>
+<th>Cart</th>
+<th>Tracking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>Grid 3-4 cols, filters in header</td>
+<td>Menu with category sidebar, cart sidebar</td>
+<td>Right sidebar drawer</td>
+<td>Inline page with map</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>Grid 2-3 cols</td>
+<td>Full width menu, floating cart</td>
+<td>Slide-over</td>
+<td>Full page</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>DoorDash app preferred; web: vertical cards</td>
+<td>Sticky category tabs, bottom cart bar</td>
+<td>Bottom sheet</td>
+<td>Full-screen map + steps</td>
+</tr>
+</tbody></table>
+<h3>DoorDash-Specific UX</h3>
+<ul>
+<li><strong>Item search across restaurants</strong>: search &quot;tacos&quot; and see results from multiple restaurants</li>
+<li><strong>DashPass savings display</strong>: show per-order savings prominently during checkout</li>
+<li><strong>Group Order</strong>: collaborative ordering via shareable link with optional spending limits</li>
+<li><strong>Priority Delivery</strong>: pay more for faster delivery option at checkout</li>
+<li><strong>Dasher tracking</strong>: real-time GPS tracking with ETA updates</li>
+<li><strong>Rate with tags</strong>: quick rating using pre-defined tags (fast, correct, quality) + optional text</li>
+<li><strong>Substitution handling</strong>: for grocery orders, set preferences for out-of-stock items</li>
+<li><strong>Credits system</strong>: refunds often issued as DoorDash credits for future orders</li>
+<li><strong>Reorder one-tap</strong>: prominent reorder button on past orders</li>
+<li><strong>Delivery instructions</strong>: detailed options (leave at door, hand to me, meet outside)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Order</th>
+<th>Track</th>
+<th>Review</th>
+<th>Manage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>— (login required)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>User</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own orders</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>DashPass User</td>
+<td>✅</td>
+<td>✅ (free delivery)</td>
+<td>Own orders</td>
+<td>✅</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Dasher</td>
+<td>—</td>
+<td>Accept/Reject</td>
+<td>Active deliveries</td>
+<td>—</td>
+<td>Own schedule</td>
+</tr>
+<tr>
+<td>Merchant</td>
+<td>—</td>
+<td>Receive/Manage</td>
+<td>Update status</td>
+<td>Respond</td>
+<td>Restaurant portal</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>All</td>
+<td>Moderate</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

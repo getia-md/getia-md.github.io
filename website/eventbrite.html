@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventbrite — IA.md | getIA.md</title>
+  <meta name="description" content="Event ticketing. Discovery, registration, check-in. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=eventbrite.com&sz=64" alt="Eventbrite" onerror="this.parentElement.textContent='E'">
+      </div>
+      <h1 class="detail-brand-name">Eventbrite</h1>
+      <p class="detail-brand-tagline">Event ticketing. Discovery, registration, check-in.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/eventbrite/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://eventbrite.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/eventbrite/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Eventbrite — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Eventbrite is the leading self-service ticketing and event management platform, powering millions of events from small meetups to large conferences. The mental model has two sides: <strong>for attendees</strong>, it&#39;s a local event discovery engine (&quot;what&#39;s happening this weekend?&quot;); <strong>for organizers</strong>, it&#39;s an end-to-end event creation and ticketing platform. Key differentiator vs Meetup: Eventbrite handles paid ticketing (payments, fees, refunds) and scales from free community events to large paid conferences with multiple ticket tiers.</p>
+<h2>Site Map</h2>
+<h3>Attendee-Facing</h3>
+<pre><code>├── Home
+│   ├── Search Bar (keyword, location)
+│   ├── Events For You (personalized recommendations)
+│   ├── Popular Events Near You
+│   ├── This Weekend
+│   ├── Online Events
+│   ├── Category Chips (Music, Food &amp; Drink, Business, Arts, Sports, Wellness, Tech)
+│   ├── Trending in [City]
+│   ├── Collections (&quot;Free Events&quot;, &quot;Family&quot;, &quot;Festivals&quot;)
+│   └── Followed Organizers&#39; Events
+├── Browse / Search
+│   ├── Event Cards (image, title, date, location, price, organizer)
+│   ├── Map View (toggle)
+│   ├── Filters
+│   │   ├── Date (today, tomorrow, this week, this weekend, custom)
+│   │   ├── Category
+│   │   ├── Price (free, paid)
+│   │   ├── Format (in-person, online, hybrid)
+│   │   ├── Language
+│   │   └── Currency
+│   ├── Calendar View
+│   └── Sort (Date, Relevance, Distance)
+├── Event Page
+│   ├── Cover Image / Video
+│   ├── Title
+│   ├── Date &amp; Time (with timezone, &quot;Add to Calendar&quot;)
+│   ├── Location (map + address) or &quot;Online Event&quot; (platform link)
+│   ├── Description (rich text, markdown)
+│   ├── Schedule / Agenda (multi-session)
+│   ├── Speakers / Performers
+│   ├── Ticket Types &amp; Pricing
+│   │   ├── Free / General Admission
+│   │   ├── Early Bird
+│   │   ├── VIP
+│   │   ├── Group Packages
+│   │   └── Sold Out Indicator
+│   ├── Organizer Info (name, logo, description, follow)
+│   ├── Attendee Count (&quot;500 going&quot;)
+│   ├── Tags
+│   ├── Related Events
+│   ├── Share / Save
+│   └── [Get Tickets] CTA (sticky)
+├── Checkout
+│   ├── Ticket Selection (type, quantity)
+│   ├── Attendee Info (per ticket if required)
+│   ├── Custom Questions (organizer-defined)
+│   ├── Promo Code
+│   ├── Order Summary (subtotal + fees + tax)
+│   ├── Payment (card, PayPal)
+│   └── [Place Order]
+├── Order Confirmation
+│   ├── E-Ticket (QR code)
+│   ├── Add to Calendar (Google, Apple, Outlook)
+│   ├── Venue Directions
+│   ├── Share with Friends
+│   ├── Download Ticket / Apple Wallet
+│   └── Order Details (receipt)
+├── My Events
+│   ├── Upcoming (registered events)
+│   ├── Past
+│   ├── Saved / Interested
+│   └── Event Detail
+│       ├── Ticket (QR code)
+│       ├── Event Updates
+│       ├── Transfer Ticket
+│       ├── Request Refund
+│       └── Contact Organizer
+├── Account
+│   ├── Profile (name, location, interests)
+│   ├── Following (organizers)
+│   ├── Payment Methods
+│   ├── Interests / Preferences (categories, location)
+│   ├── Notifications
+│   └── Settings
+└── Help
+    ├── FAQ
+    ├── Contact
+    └── Refund Policy
+</code></pre>
+<h3>Organizer Portal</h3>
+<pre><code>├── Dashboard
+│   ├── Upcoming Events
+│   ├── Total Sales / Revenue
+│   ├── Registrations (recent)
+│   ├── Quick Actions (Create Event, View Sales)
+│   └── Payout Status
+├── Events
+│   ├── Live / Active
+│   ├── Draft
+│   ├── Past
+│   └── Create Event
+│       ├── Basic Info (title, type, category, tags)
+│       ├── Date &amp; Time (one-time, multi-day, recurring, series)
+│       ├── Location (venue search / online event link)
+│       ├── Description &amp; Media (cover image, video)
+│       ├── Agenda / Schedule
+│       ├── Tickets
+│       │   ├── Free / Paid / Donation
+│       │   ├── Ticket Types (name, price, quantity, sales window)
+│       │   ├── Promo Codes
+│       │   ├── Group Discounts
+│       │   └── Waitlist
+│       ├── Registration Settings
+│       │   ├── Custom Questions
+│       │   ├── Confirmation Email (editable)
+│       │   ├── Capacity
+│       │   └── Refund Policy
+│       ├── Preview → Publish
+│       └── Share Tools
+├── Attendees
+│   ├── Attendee List (searchable, filterable)
+│   ├── Check-In (QR scanner or manual)
+│   ├── Waitlist
+│   ├── Refunds
+│   └── Export (CSV)
+├── Orders
+│   ├── All Orders
+│   ├── Order Detail (ticket, attendee, payment)
+│   └── Refund / Cancel
+├── Promotion
+│   ├── Promo Codes
+│   ├── Social Sharing Tools
+│   ├── Embed Widget (for websites)
+│   ├── Email Invitations
+│   └── Facebook Event Sync
+├── Analytics
+│   ├── Sales &amp; Revenue
+│   ├── Page Views
+│   ├── Traffic Sources
+│   ├── Attendee Demographics
+│   └── Check-In Stats
+├── Organizer Profile
+│   ├── Public Page (logo, bio, upcoming events)
+│   ├── Followers
+│   └── Past Events
+└── Settings
+    ├── Payout (bank account, tax info)
+    ├── Team Members &amp; Roles
+    ├── Integrations (Mailchimp, Salesforce, Zoom)
+    ├── Webhooks / API
+    └── Notifications
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Fixed top bar</td>
+<td>Logo, Search, Create Event, My Tickets, Sign In</td>
+</tr>
+<tr>
+<td><strong>Category Chips</strong></td>
+<td>Horizontal scroll</td>
+<td>Music, Food &amp; Drink, Business, Tech, Arts, etc.</td>
+</tr>
+<tr>
+<td><strong>Event Page CTA</strong></td>
+<td>Sticky &quot;Get Tickets&quot; button</td>
+<td>Always visible during scroll</td>
+</tr>
+<tr>
+<td><strong>Organizer Sidebar</strong></td>
+<td>Fixed left nav</td>
+<td>Dashboard, Events, Attendees, Orders, Promotion, Analytics</td>
+</tr>
+<tr>
+<td><strong>Check-In Mode</strong></td>
+<td>Full-screen (mobile)</td>
+<td>QR scanner → confirm → next</td>
+</tr>
+<tr>
+<td><strong>Bottom Tabs (mobile attendee)</strong></td>
+<td>Tab bar</td>
+<td>Home, Search, Tickets, Profile</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Event</td>
+<td>title, category, tags[], start, end, timezone, location/online_url, cover_image, description, status (draft/live/ended/cancelled), capacity, visibility (public/private)</td>
+<td>has TicketTypes, Agenda, Organizer</td>
+</tr>
+<tr>
+<td>TicketType</td>
+<td>name, price, quantity, sales_start, sales_end, description, max_per_order</td>
+<td>belongs to Event</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>tickets[], total, fees, status, payment, promo_code, created_at</td>
+<td>belongs to Event and User</td>
+</tr>
+<tr>
+<td>Ticket</td>
+<td>ticket_type, attendee_name, attendee_email, qr_code, checked_in</td>
+<td>belongs to Order</td>
+</tr>
+<tr>
+<td>Organizer</td>
+<td>name, logo, description, followers_count, events_count</td>
+<td>has Events</td>
+</tr>
+<tr>
+<td>PromoCode</td>
+<td>code, type (percentage/fixed), value, max_uses, valid_dates</td>
+<td>belongs to Event</td>
+</tr>
+</tbody></table>
+<h3>Event Status</h3>
+<pre><code>draft → live → ended
+         ↘ cancelled / postponed → rescheduled → live
+</code></pre>
+<h2>User Flows</h2>
+<h3>Find and Attend</h3>
+<pre><code>Home → Browse (this weekend, Food &amp; Drink) → Event Page → Select 2 GA Tickets → Enter Info → Pay $50 → E-Ticket (QR) → Add to Calendar → Day-of: Show QR at Door → Checked In
+</code></pre>
+<h3>Organizer: Create and Sell</h3>
+<pre><code>Dashboard → [Create Event] → Title + Date + Location → Description → Create Ticket Tiers (Early Bird $25, GA $40, VIP $75) → Set Capacity → Preview → Publish → Share Link → Track Sales → Day-of: Check In Attendees
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/d/:location/events            → Browse by Location
+/d/:location/:category         → Category + Location
+/e/:slug                       → Event Page
+/e/:slug/register              → Checkout
+/e/:slug/confirmation/:id      → Order Confirmation
+/mytickets                     → My Tickets
+/mytickets/:orderId            → Ticket Detail
+/o/:slug                       → Organizer Page
+/manage                        → Organizer Dashboard
+/manage/events                 → My Events
+/manage/events/create          → Create Event
+/manage/events/:id             → Event Management
+/manage/events/:id/attendees   → Attendee List
+/manage/events/:id/check-in    → Check-In
+/manage/events/:id/analytics   → Analytics
+/manage/profile                → Organizer Profile
+/manage/payouts                → Payout Settings
+/account                       → Account
+/help                          → Help
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Events</td>
+<td>Title, keyword, organizer, venue</td>
+<td>Category, Date, Location, Price (free/paid), Format (in-person/online), Language</td>
+<td>Date, Relevance, Distance, Price</td>
+</tr>
+<tr>
+<td>Attendees (organizer)</td>
+<td>Name, email, order #</td>
+<td>Ticket Type, Check-In Status</td>
+<td>Name, Date, Ticket</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Browse</th>
+<th>Event Page</th>
+<th>Check-In</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop</td>
+<td>Grid 3-4 cols, map toggle</td>
+<td>Hero image + two-column (info + ticket sidebar)</td>
+<td>Table</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Grid 2 cols</td>
+<td>Single column, sticky ticket bar</td>
+<td>Simplified</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Vertical cards</td>
+<td>Scrollable, sticky &quot;Get Tickets&quot;</td>
+<td>Full-screen QR scanner</td>
+</tr>
+</tbody></table>
+<h3>Eventbrite-Specific UX</h3>
+<ul>
+<li>QR code tickets accessible from lock screen / Apple Wallet</li>
+<li>Camera-based QR scanning for organizer check-in</li>
+<li>Calendar integration (auto-add on registration)</li>
+<li>&quot;Followed organizer&quot; notifications for new events</li>
+<li>Embeddable ticket widget for external websites</li>
+<li>Multi-day and recurring event support</li>
+<li>Waitlist management when sold out</li>
+<li>Refund automation based on policy</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Attendee</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Register</th>
+<th>Manage</th>
+<th>Review</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>✅ (enter info)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅ (saved info)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Organizer</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>Create/Edit</th>
+<th>Attendees</th>
+<th>Orders</th>
+<th>Analytics</th>
+<th>Payouts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full</td>
+<td>Full</td>
+<td>Full</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full</td>
+<td>Full</td>
+<td>Full</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Door Staff</td>
+<td>—</td>
+<td>—</td>
+<td>Check-in only</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

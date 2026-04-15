@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medium — IA.md | getIA.md</title>
+  <meta name="description" content="Writing platform. Clean reading, publications, claps. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=medium.com&sz=64" alt="Medium" onerror="this.parentElement.textContent='M'">
+      </div>
+      <h1 class="detail-brand-name">Medium</h1>
+      <p class="detail-brand-tagline">Writing platform. Clean reading, publications, claps.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/medium/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://medium.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/medium/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Medium — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A creator-driven publishing and reading platform. Medium&#39;s mental model is a <strong>curated magazine you personalize</strong> — writers publish articles, readers follow topics and writers, and an algorithmic feed surfaces quality content. Key differentiators: the &quot;clap&quot; engagement system (up to 50 claps per article), the metered paywall with member-only content, publications (multi-author blogs hosted on Medium), the clean distraction-free reading experience, and the Partner Program that pays writers based on member reading time.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Feed
+│   ├── For You (personalized algorithmic feed)
+│   ├── Following (from followed writers + publications + topics)
+│   ├── Trending on Medium (top stories)
+│   └── Topic Suggestions (chips: Technology, Self Improvement, Programming, etc.)
+├── Explore
+│   ├── Topic Pages
+│   │   ├── Technology
+│   │   ├── Programming
+│   │   ├── Data Science
+│   │   ├── Self Improvement
+│   │   ├── Productivity
+│   │   ├── Writing
+│   │   └── ... (100+ topics)
+│   ├── Recommended Reading Lists
+│   ├── Staff Picks
+│   └── Publications Directory
+├── Article Page
+│   ├── Title (large, prominent)
+│   ├── Subtitle
+│   ├── Author (avatar, name, follow button, bio snippet)
+│   ├── Publication (if published in one)
+│   ├── Date, Read Time
+│   ├── Hero Image
+│   ├── Body Content
+│   │   ├── Rich Text (headings, paragraphs, quotes)
+│   │   ├── Images (full-width, side-by-side)
+│   │   ├── Code Blocks (syntax highlighted)
+│   │   ├── Embeds (tweets, YouTube, GitHub Gists, CodePen)
+│   │   ├── Pullquotes
+│   │   └── Horizontal Rules
+│   ├── Tags (up to 5)
+│   ├── Engagement Bar (sticky bottom)
+│   │   ├── Clap (up to 50 per article per user)
+│   │   ├── Responses Count
+│   │   ├── Save (bookmark)
+│   │   └── Share (Twitter, LinkedIn, Facebook, copy link)
+│   ├── Author Bio (end of article)
+│   │   ├── Avatar, Name, Bio
+│   │   ├── Follow Button
+│   │   └── More from Author
+│   ├── Responses Section
+│   │   ├── Response (mini-article format, not just a comment)
+│   │   ├── Clap on responses
+│   │   └── Reply to response
+│   ├── More from [Publication]
+│   ├── Recommended Stories
+│   └── Member-only Indicator (★ star icon)
+├── Write / Editor
+│   ├── Title Field
+│   ├── Content Editor (block-based, minimal UI)
+│   │   ├── Text (auto-formatting on Enter)
+│   │   ├── [+] Button: Image, Embed, Divider, Code Block
+│   │   ├── Inline Toolbar (bold, italic, link, heading, quote, code)
+│   │   ├── Image Upload (drag &amp; drop, URL, Unsplash)
+│   │   └── Keyboard shortcuts
+│   ├── Publish Flow
+│   │   ├── Preview
+│   │   ├── Add Tags (up to 5)
+│   │   ├── Select Publication (optional)
+│   │   ├── Set Featured Image + Alt Text
+│   │   ├── Custom Excerpt
+│   │   ├── SEO Title (optional override)
+│   │   ├── Content Licensing
+│   │   ├── Schedule Publish (date/time)
+│   │   └── Member-only Toggle (paywall)
+│   ├── Drafts (auto-save)
+│   └── Import Story (from URL)
+├── Publication
+│   ├── Publication Home (custom layout)
+│   ├── About
+│   ├── Editors / Writers
+│   ├── Tags / Sections (custom navigation)
+│   ├── Archive
+│   ├── Newsletter
+│   ├── Follow Publication
+│   └── Publication Settings (editors only)
+│       ├── Homepage Layout
+│       ├── Navigation (custom tabs)
+│       ├── Writers (invite, manage)
+│       ├── Newsletter Settings
+│       └── Custom Domain (legacy)
+├── Profile
+│   ├── Name, Avatar, Bio, Follow Button
+│   ├── Home (featured / pinned stories)
+│   ├── Lists (curated reading lists)
+│   ├── About
+│   ├── Followers / Following
+│   └── Stories Published
+├── Lists (Reading Lists)
+│   ├── Saved Stories (private bookmarks)
+│   ├── Custom Lists (public or private)
+│   └── Reading History
+├── Notifications
+│   ├── Claps on your stories
+│   ├── New followers
+│   ├── Responses to your stories
+│   ├── Highlights on your stories
+│   ├── Publication submissions
+│   └── Recommendations from people you follow
+├── Stats (Writer Dashboard)
+│   ├── Views (daily/monthly graph)
+│   ├── Reads (read ratio)
+│   ├── Fans (unique clappers)
+│   ├── Claps
+│   ├── Per-Story Breakdown
+│   ├── Traffic Sources (internal, external, search)
+│   ├── Audience Stats (followers, email subscribers)
+│   └── Partner Program Earnings (if enrolled)
+├── Settings
+│   ├── Account
+│   ├── Publishing (default license, SEO)
+│   ├── Membership (Medium Member plan)
+│   ├── Partner Program (writer monetization)
+│   ├── Email Digest Preferences
+│   ├── Notifications
+│   ├── Security (password, social logins)
+│   ├── Muted Users / Publications
+│   └── Manage Blocked Users
+└── Membership / Paywall
+    ├── Become a Member (pricing)
+    ├── Member Benefits (unlimited reading, audio, no ads)
+    └── Gift Membership
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed, clean white</td>
+<td>Medium logo (home link), &quot;Write&quot; button, search icon, notifications bell, user avatar</td>
+</tr>
+<tr>
+<td><strong>Feed Tabs</strong></td>
+<td>Below top bar on home</td>
+<td>&quot;For You&quot; / &quot;Following&quot; toggle</td>
+</tr>
+<tr>
+<td><strong>Topic Chips</strong></td>
+<td>Horizontal scrollable pills on home</td>
+<td>Technology, Programming, Self Improvement, etc. (customizable)</td>
+</tr>
+<tr>
+<td><strong>Sticky Engagement Bar</strong></td>
+<td>Fixed bottom on article page</td>
+<td>Clap, Responses, Save, Share, overflow menu</td>
+</tr>
+<tr>
+<td><strong>Reading Progress</strong></td>
+<td>Thin progress bar at top</td>
+<td>Shows % scrolled through article body</td>
+</tr>
+<tr>
+<td><strong>Floating [+]</strong></td>
+<td>In editor, left gutter</td>
+<td>Appears on empty lines to add media/embed</td>
+</tr>
+<tr>
+<td><strong>Inline Toolbar</strong></td>
+<td>In editor, on text selection</td>
+<td>Bold, italic, link, heading, quote, code</td>
+</tr>
+<tr>
+<td><strong>Mobile Nav</strong></td>
+<td>Bottom tab bar</td>
+<td>Home, Explore, Write, Bookmarks, Profile</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Story</td>
+<td>title, subtitle, body (rich text blocks), slug, featured_image, read_time, claps_count, responses_count, views_count, reads_count, published_at, member_only (bool), status (draft/published/unlisted), canonical_url, seo_title, license</td>
+<td>belongs to Author, Publication (optional); has Tags, Responses</td>
+</tr>
+<tr>
+<td>Tag / Topic</td>
+<td>name, slug, description, followers_count</td>
+<td>many-to-many with Stories</td>
+</tr>
+<tr>
+<td>Author (User)</td>
+<td>username, name, avatar, bio, twitter_handle, followers_count, following_count</td>
+<td>has many Stories, Responses, Lists, Publications</td>
+</tr>
+<tr>
+<td>Publication</td>
+<td>name, slug, description, logo, avatar, tags[], editors[], writers[]</td>
+<td>has many Stories, Newsletters, Navigation Items</td>
+</tr>
+<tr>
+<td>Response</td>
+<td>body (rich text, mini-article format), claps_count, created_at</td>
+<td>belongs to Story and User</td>
+</tr>
+<tr>
+<td>Clap</td>
+<td>count (1-50 per user per story), created_at</td>
+<td>belongs to User and Story/Response</td>
+</tr>
+<tr>
+<td>Highlight</td>
+<td>text_selection, note (optional), created_at</td>
+<td>belongs to User and Story</td>
+</tr>
+<tr>
+<td>List</td>
+<td>name, description, public (bool), stories[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Bookmark</td>
+<td>story, saved_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Newsletter</td>
+<td>publication, subject, body, sent_at, subscribers_count</td>
+<td>belongs to Publication</td>
+</tr>
+<tr>
+<td>Earnings</td>
+<td>story, month, amount, member_reading_time</td>
+<td>belongs to User (Partner Program)</td>
+</tr>
+</tbody></table>
+<h3>Story Status Flow</h3>
+<p><code>draft → (submit to publication → editor review →) published → updated → unlisted → deleted</code></p>
+<h3>Engagement Model</h3>
+<pre><code>View → Read (scrolled to end) → Clap (1-50) → Response (mini-article) → Highlight → Share
+</code></pre>
+<h2>User Flows</h2>
+<h3>Read and Discover</h3>
+<pre><code>Home → For You Feed → Scroll → Click Story → Read → Clap (1-50) → Respond → Related Stories
+</code></pre>
+<h3>Follow Topics</h3>
+<pre><code>Home → Topic Chips → Click &quot;+&quot; to follow → &quot;Customize&quot; → Select Topics → Feed adjusts to interests
+</code></pre>
+<h3>Write and Publish</h3>
+<pre><code>&quot;Write&quot; Button → Editor → Write Title + Body → Add Images → [Publish] → Tags + Featured Image + Member Toggle → Publish
+</code></pre>
+<h3>Publish to Publication</h3>
+<pre><code>Write Story → &quot;Add to Publication&quot; → Select Publication → Submit → Editor Reviews → Approved → Published in Publication
+</code></pre>
+<h3>Highlight and Save</h3>
+<pre><code>Read Article → Select Text → Highlight → Optional Note → Saved to Highlights → Share Highlight Quote
+</code></pre>
+<h3>Paywall Encounter</h3>
+<pre><code>Read Free Story → Click Member-Only Story (★) → &quot;Become a Member&quot; modal → Subscribe ($5/month) → Unlimited Reading
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home Feed
+/me/following                  → Following Feed
+/explore-topics                → Explore / Discover
+/topic/:topicSlug              → Topic Page
+/search?q=:query               → Search Results
+/:username                     → User Profile
+/:username/:storySlug-:id      → Story Page (unique ID suffix)
+/:username/about               → User About
+/:username/followers            → Followers
+/@:username                    → User Profile (alt, @ prefix)
+/p/:storyId                    → Story by ID (short link)
+/new-story                     → Editor (new)
+/p/:storyId/edit               → Editor (existing)
+/me/stories/drafts             → My Drafts
+/me/stories/public             → My Published Stories
+/me/lists                      → My Lists / Bookmarks
+/me/lists/:listId              → Specific List
+/me/stats                      → Writer Stats Dashboard
+/me/settings                   → Settings
+/me/notifications              → Notifications
+/:publicationSlug              → Publication Home
+/:publicationSlug/about        → Publication About
+/:publicationSlug/archive      → Publication Archive
+/plans                         → Membership Plans
+/gift                          → Gift Membership
+/partner-program               → Partner Program Info
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Stories, People, Publications, Tags</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Topic Page</td>
+<td>Stories with tag</td>
+<td>—</td>
+<td>Trending, Latest, Best of (period)</td>
+</tr>
+<tr>
+<td>Publication</td>
+<td>Stories in publication</td>
+<td>Tags/Sections (custom)</td>
+<td>Latest, Featured (editor pinned)</td>
+</tr>
+<tr>
+<td>Profile</td>
+<td>User&#39;s stories</td>
+<td>—</td>
+<td>Latest, Oldest</td>
+</tr>
+<tr>
+<td>Stats</td>
+<td>Your stories</td>
+<td>Date Range</td>
+<td>Views, Reads, Fans, Claps</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Header</th>
+<th>Article</th>
+<th>Feed</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1080px)</td>
+<td>Full nav bar (logo, search, write, notifications, avatar)</td>
+<td>Content centered (max 680px) + right sidebar (related, author)</td>
+<td>Center column + right sidebar</td>
+</tr>
+<tr>
+<td>Tablet (768–1079px)</td>
+<td>Condensed nav</td>
+<td>Full-width content (max 680px)</td>
+<td>Single column</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger + logo + write + avatar</td>
+<td>Full-width, optimized type</td>
+<td>Single column, bottom tab bar</td>
+</tr>
+</tbody></table>
+<h3>Reading Experience</h3>
+<ul>
+<li>Article body: max-width 680px, centered</li>
+<li>Typography: custom Medium serif font, 21px body, ~1.75 line height</li>
+<li>Code blocks: monospace, horizontal scroll, syntax highlighting</li>
+<li>Images: full-bleed (breakout of 680px column) or contained</li>
+<li>Estimated read time displayed (based on ~265 words/min)</li>
+<li>Kicker/subtitle: gray, below title</li>
+<li>Footnotes: inline tooltips</li>
+<li>Audio version: text-to-speech for member stories</li>
+</ul>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Swipe between stories in publication</li>
+<li>Reading position saved across devices</li>
+<li>Offline reading (cached articles)</li>
+<li>Share sheet integration (iOS/Android native)</li>
+<li>&quot;Open in app&quot; banner (web to app bridge)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Clap</th>
+<th>Respond</th>
+<th>Write</th>
+<th>Publish</th>
+<th>Stats</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>3 free member stories/month + all free stories</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Free Account</td>
+<td>3 free member stories/month</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (free stories only via Partner Program)</td>
+<td>Basic</td>
+</tr>
+<tr>
+<td>Medium Member ($5/month)</td>
+<td>Unlimited (all member + free stories, no ads, audio)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (member-only stories)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Partner Program Writer</td>
+<td>Per membership</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + earn from member reading time</td>
+<td>Full (earnings, traffic sources)</td>
+</tr>
+<tr>
+<td>Publication Editor</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + manage submissions</td>
+<td>Publication stats</td>
+</tr>
+<tr>
+<td>Staff / Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full + content moderation, curation</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

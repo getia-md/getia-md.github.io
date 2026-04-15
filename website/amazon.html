@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon — IA.md | getIA.md</title>
+  <meta name="description" content="Everything store. Search-driven, Prime, recommendations. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=amazon.com&sz=64" alt="Amazon" onerror="this.parentElement.textContent='A'">
+      </div>
+      <h1 class="detail-brand-name">Amazon</h1>
+      <p class="detail-brand-tagline">Everything store. Search-driven, Prime, recommendations.</p>
+      <span class="detail-category-badge">E-Commerce</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/amazon/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://amazon.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/amazon/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Amazon — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Amazon is the world&#39;s largest e-commerce platform, operating as both a first-party retailer and a third-party marketplace (60%+ of sales from third-party sellers). The mental model is <strong>the everything store</strong> — a search-driven shopping experience where customers can find virtually any product, compare sellers, read reviews, and receive fast delivery via Prime. Amazon differentiates through its recommendation engine (personalization at scale), Prime ecosystem (free shipping, video, music), Buy Box algorithm (seller competition for the default purchase option), A+ Content, and fulfillment network (FBA — Fulfilled by Amazon). The IA reflects massive catalog breadth with deep product taxonomy and seller-side complexity.</p>
+<h2>Site Map</h2>
+<h3>Customer-Facing</h3>
+<pre><code>├── Home
+│   ├── Search Bar (dominant, with category dropdown)
+│   ├── Deals of the Day
+│   ├── Personalized Recommendations (&quot;Inspired by your browsing&quot;)
+│   ├── Keep Shopping For (recently viewed)
+│   ├── Category Cards (quick access)
+│   ├── Buy Again (past purchases)
+│   ├── Prime Video / Music / Reading picks
+│   └── Trending Deals
+├── Department Navigation
+│   ├── All Departments (hamburger menu — massive category tree)
+│   ├── Category Page (subcategories, featured brands)
+│   └── Sub-category (product listings)
+├── Search Results
+│   ├── Product Listings (title, image, price, rating, Prime badge)
+│   ├── Sponsored Products (labeled ads, intermixed)
+│   ├── Left Sidebar Filters
+│   │   ├── Department
+│   │   ├── Customer Reviews (4+ stars)
+│   │   ├── Brand
+│   │   ├── Price Range
+│   │   ├── Prime (eligible toggle)
+│   │   ├── Condition (new, used, renewed)
+│   │   ├── Deals (today&#39;s deals, Lightning Deals)
+│   │   └── Category-Specific Filters (size, color, material)
+│   ├── Sort (Featured, Price, Avg Reviews, Newest)
+│   └── &quot;Did you mean...&quot; / Related Searches
+├── Product Detail Page (PDP)
+│   ├── Images (multi-angle, zoom, 360°, video)
+│   ├── Title (verbose, keyword-rich)
+│   ├── Brand Link
+│   ├── Rating (stars + review count)
+│   ├── Price / Deal Price / List Price
+│   ├── Prime Badge
+│   ├── Buy Box (primary seller)
+│   │   ├── Add to Cart
+│   │   ├── Buy Now
+│   │   ├── Quantity Selector
+│   │   ├── Delivery Estimate
+│   │   ├── Ship From / Sold By
+│   │   └── Gift Option
+│   ├── Variant Selector (size, color — visual swatches)
+│   ├── &quot;Other Sellers on Amazon&quot; (price comparison)
+│   ├── Subscribe &amp; Save (recurring delivery discount)
+│   ├── Coupons (clip coupon for discount)
+│   ├── Product Description / About This Item (bullets)
+│   ├── A+ Content (enhanced brand content — rich media)
+│   ├── Product Information / Specifications (table)
+│   ├── Customer Q&amp;A
+│   ├── Customer Reviews
+│   │   ├── Rating Distribution (5-star histogram)
+│   │   ├── Top Reviews
+│   │   ├── Review Filters (star rating, verified purchase, keyword)
+│   │   ├── Review with Images/Video
+│   │   └── Helpful Votes
+│   ├── Frequently Bought Together
+│   ├── Customers Who Bought Also Bought
+│   ├── Compare With Similar Items (table)
+│   ├── Brand Store Link
+│   └── Report Incorrect Product Information
+├── Cart
+│   ├── Cart Items (price changes highlighted)
+│   ├── &quot;Saved for Later&quot; (moved from cart)
+│   ├── Recommendations (&quot;Items Related to Your Cart&quot;)
+│   ├── Price Breakdown (subtotal, quantity)
+│   ├── Proceed to Checkout
+│   └── &quot;Buy Again&quot; Quick Add
+├── Checkout
+│   ├── Shipping Address (saved, add new)
+│   ├── Delivery Options (standard, Prime same-day, Prime next-day, No-Rush)
+│   ├── Payment Method (saved cards, gift card balance, Amazon Pay)
+│   ├── Gift Options (wrapping, message)
+│   ├── Order Review
+│   ├── Place Order
+│   └── Subscribe &amp; Save Options
+├── Orders
+│   ├── Your Orders (recent, past 3 months, yearly filter)
+│   ├── Order Detail
+│   │   ├── Items, Prices, Order Total
+│   │   ├── Tracking (shipment map, delivery date)
+│   │   ├── Return / Refund (self-service)
+│   │   ├── Write Review
+│   │   ├── Buy Again
+│   │   ├── Invoice Download
+│   │   └── Contact Seller
+│   ├── Returns (pending, completed)
+│   ├── Buy Again (sortable past purchases)
+│   └── Digital Orders (Kindle, video, apps)
+├── Account
+│   ├── Your Account (hub page)
+│   ├── Addresses
+│   ├── Payment Methods
+│   ├── Prime Membership
+│   ├── Gift Cards / Balance
+│   ├── Login &amp; Security (password, 2FA)
+│   ├── Your Lists (Wish Lists, custom lists)
+│   ├── Your Recommendations
+│   ├── Your Reviews
+│   ├── Browsing History
+│   ├── Subscribe &amp; Save Subscriptions
+│   ├── Digital Content (Kindle, Audible, Music, Video)
+│   ├── Communication Preferences
+│   ├── Trade-In
+│   ├── Amazon Household (family sharing)
+│   └── Manage Content &amp; Devices (Kindle/Echo)
+├── Prime
+│   ├── Prime Benefits Overview
+│   ├── Prime Video
+│   ├── Prime Music
+│   ├── Prime Reading
+│   ├── Prime Gaming
+│   ├── Prime Try Before You Buy
+│   ├── Amazon Fresh / Whole Foods
+│   └── Prime Day (annual event)
+├── Deals
+│   ├── Today&#39;s Deals
+│   ├── Lightning Deals (time-limited)
+│   ├── Coupons
+│   ├── Warehouse Deals (open-box)
+│   └── Outlet
+├── Brand Stores
+│   ├── Brand Storefront (custom pages per brand)
+│   ├── Brand Collection Pages
+│   └── About the Brand
+├── Help
+│   ├── Customer Service Hub
+│   ├── Returns Center (self-service)
+│   ├── Track Package
+│   ├── Digital Services Help
+│   └── Contact Us (chat, phone, email)
+└── Footer
+    ├── Back to Top
+    ├── Get to Know Us / Make Money / Payment / Help
+    ├── Country Selector
+    └── Subsidiaries (Ring, Alexa, AWS, etc.)
+</code></pre>
+<h3>Seller Central (Merchant Dashboard)</h3>
+<pre><code>├── Dashboard (performance summary, action items, news)
+├── Catalog
+│   ├── Add Product (match existing or create new)
+│   ├── Manage Inventory
+│   │   ├── Product List (active, inactive, suppressed, stranded)
+│   │   ├── Manage FBA Inventory
+│   │   ├── Manage FBA Shipments
+│   │   └── Upload via Spreadsheet (flat file)
+│   ├── Categories &amp; Listing Restrictions
+│   └── Brand Registry
+├── Orders
+│   ├── Manage Orders
+│   ├── Order Reports
+│   ├── Returns
+│   └── Buyer-Seller Messaging
+├── Advertising
+│   ├── Campaign Manager (Sponsored Products, Brands, Display)
+│   ├── Reports
+│   └── A+ Content Manager
+├── Pricing
+│   ├── Automate Pricing (rule-based repricing)
+│   ├── Fee Preview
+│   └── Business Pricing (B2B)
+├── Fulfillment
+│   ├── FBA (Fulfilled by Amazon)
+│   │   ├── Inventory Planning
+│   │   ├── Shipments
+│   │   ├── Removal Orders
+│   │   └── FBA Fees
+│   ├── FBM (Fulfilled by Merchant)
+│   └── Multi-Channel Fulfillment
+├── Reports
+│   ├── Business Reports (sales, traffic, conversion)
+│   ├── Inventory Reports
+│   ├── Payment Reports
+│   ├── Tax Reports
+│   └── Advertising Reports
+├── Performance
+│   ├── Account Health (metrics, policy compliance)
+│   ├── Customer Feedback
+│   ├── A-to-z Guarantee Claims
+│   ├── Chargeback Claims
+│   └── Voice of Customer
+├── Growth
+│   ├── Sell Globally (cross-marketplace)
+│   ├── Brand Analytics (search terms, market basket)
+│   └── New Product Opportunities
+└── Settings
+    ├── Account Info
+    ├── Shipping Settings
+    ├── Return Settings
+    ├── Tax Settings
+    ├── User Permissions
+    └── Notification Preferences
+</code></pre>
+<h2>Navigation Model</h2>
+<h3>Customer</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Navigation</strong></td>
+<td>Sticky, two-tier</td>
+<td>Row 1: Logo, delivery address, search bar (category + query), language, account, returns, cart. Row 2: Hamburger (All), department links, deals, Prime</td>
+</tr>
+<tr>
+<td><strong>Hamburger Menu</strong></td>
+<td>Full-screen flyout</td>
+<td>Department tree (3+ levels deep), Trending, Digital, Programs</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Below nav on category/product pages</td>
+<td>Department &gt; Category &gt; Subcategory</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar Filters</strong></td>
+<td>On search/category pages</td>
+<td>Faceted filtering (checkbox + range)</td>
+</tr>
+<tr>
+<td><strong>Buy Box</strong></td>
+<td>Right-column sticky on PDP</td>
+<td>Price, delivery, Add to Cart, Buy Now</td>
+</tr>
+<tr>
+<td><strong>Recommendations</strong></td>
+<td>Inline carousels throughout</td>
+<td>&quot;Inspired by...&quot;, &quot;Frequently bought together&quot;, &quot;Similar items&quot;</td>
+</tr>
+</tbody></table>
+<h3>Seller Central</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar + Dropdown Menus</strong></td>
+<td>Fixed top</td>
+<td>Catalog, Inventory, Pricing, Orders, Advertising, Reports, Performance, Settings — each with dropdown submenus</td>
+</tr>
+<tr>
+<td><strong>Search</strong></td>
+<td>Within Seller Central</td>
+<td>Search inventory by ASIN, SKU, product title</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product (ASIN)</td>
+<td>ASIN, title, brand, category, description, bullet_points[], images[], price, rating, review_count</td>
+<td>has Offers, Variants, Reviews</td>
+</tr>
+<tr>
+<td>Offer (Buy Box)</td>
+<td>seller, price, shipping, condition, fulfillment (FBA/FBM), buy_box_winner</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Variant</td>
+<td>ASIN, parent_ASIN, variation_type (size/color/style), attributes</td>
+<td>belongs to Parent Product</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>order_id, items[], status, total, shipping_address, delivery_date</td>
+<td>belongs to Customer and Seller</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating, title, text, images[], verified_purchase, helpful_votes, author</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Question</td>
+<td>text, answer_count, votes</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Seller</td>
+<td>seller_id, name, rating, feedback_count, store_url</td>
+<td>has many Offers</td>
+</tr>
+<tr>
+<td>Cart</td>
+<td>items[], subtotal, saved_for_later[]</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>WishList</td>
+<td>name, items[], visibility (public/private)</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Subscription (SnS)</td>
+<td>product, frequency, discount, status</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Deal</td>
+<td>type (lightning/daily/coupon), product, discount, start, end</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Brand Store</td>
+<td>brand, pages[], layout, featured_products[]</td>
+<td>has many Products</td>
+</tr>
+</tbody></table>
+<h3>Buy Box Algorithm (conceptual)</h3>
+<pre><code>Eligible sellers compete → Algorithm considers: price + shipping, fulfillment method (FBA preferred), seller metrics (order defect rate, cancellation rate, late shipment rate) → Winner gets default &quot;Add to Cart&quot; → Other sellers listed under &quot;Other Sellers&quot;
+</code></pre>
+<h3>Order Status</h3>
+<pre><code>pending → processing → shipped → out_for_delivery → delivered
+                                                   → delivery_attempted
+                    → cancelled / refunded / returned
+</code></pre>
+<h2>User Flows</h2>
+<h3>Search to Purchase</h3>
+<pre><code>Search &quot;wireless earbuds&quot; → Filter: 4+ stars, Prime → Sort: Featured → Compare products (reviews, ratings, price) → Product Detail → Check reviews → Add to Cart → Continue shopping or Checkout → Place Order → Track → Delivered → Leave Review
+</code></pre>
+<h3>Subscribe &amp; Save</h3>
+<pre><code>Product Detail → Subscribe &amp; Save checkbox (save 5-15%) → Select frequency (monthly/bi-monthly) → Add to Cart → Checkout → Auto-delivered on schedule → Manage subscription (skip, change frequency, cancel)
+</code></pre>
+<h3>Seller: List Product</h3>
+<pre><code>Seller Central → Catalog → Add Product → Search existing ASIN or Create New → Enter product details → Set price → Choose fulfillment (FBA/FBM) → Upload images → Activate listing → Monitor Buy Box share
+</code></pre>
+<h3>Return</h3>
+<pre><code>Your Orders → Order Detail → Return Items → Select reason → Print return label → Ship back → Refund processed (often instant) → Receive refund
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/s?k=:query                    → Search Results
+/s?k=:query&amp;rh=n::nodeId      → Filtered Search
+/dp/:asin                      → Product Detail Page
+/dp/:asin?th=1                 → Product with variant selector
+/gp/product/:asin             → Alternate PDP path
+/b?node=:nodeId                → Category/Browse Page
+/stores/:brandName             → Brand Store
+/gp/cart/view.html             → Cart
+/gp/buy/spc/handlers/display.html → Checkout
+/gp/your-account/order-history → Your Orders
+/gp/your-account/order-details?orderID=:id → Order Detail
+/hz/wishlist                   → Your Lists
+/gp/yourstore/home             → Your Amazon
+/deals                         → Today&#39;s Deals
+/amazonprime                   → Prime
+/gp/help/customer              → Help
+/gp/returns                    → Returns Center
+/sellercentral/                → Seller Central (separate domain)
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product Search</td>
+<td>Product title, description, brand, ASIN, keywords</td>
+<td>Department, Prime, Customer Review, Price, Brand, Condition, Seller, Delivery Day, Deals, Climate Pledge Friendly</td>
+<td>Featured, Price (low/high), Avg Customer Review, Newest</td>
+</tr>
+<tr>
+<td>Seller Central</td>
+<td>ASIN, SKU, product title, order ID</td>
+<td>Status, Fulfillment, Category, Condition</td>
+<td>Various</td>
+</tr>
+</tbody></table>
+<h3>Search Features</h3>
+<ul>
+<li>Autocomplete with product suggestions (with images + prices)</li>
+<li>&quot;Did you mean&quot; typo correction</li>
+<li>Related searches</li>
+<li>Visual search (mobile camera)</li>
+<li>Voice search (Alexa integration)</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Header</th>
+<th>Product Grid</th>
+<th>PDP</th>
+<th>Cart</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1200px)</td>
+<td>Full two-tier nav, wide search bar</td>
+<td>4-5 columns with sidebar filters</td>
+<td>Image gallery + Buy Box side by side</td>
+<td>Full table</td>
+</tr>
+<tr>
+<td>Tablet (768-1199px)</td>
+<td>Simplified nav</td>
+<td>2-3 columns</td>
+<td>Stacked</td>
+<td>Simplified</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Amazon app preferred; web: search + hamburger + cart</td>
+<td>1-2 columns, swipeable</td>
+<td>Stacked, sticky Buy Now bar</td>
+<td>Full-page, sticky checkout</td>
+</tr>
+</tbody></table>
+<h3>Amazon-Specific UX</h3>
+<ul>
+<li><strong>Search-dominant</strong>: the search bar is the primary navigation path</li>
+<li><strong>Buy Box</strong>: the single most important UI element — determines default seller</li>
+<li><strong>Review ecosystem</strong>: detailed reviews with images, votes, verified badges</li>
+<li><strong>Recommendation carousels</strong>: multiple &quot;inspired by&quot; sections on every page</li>
+<li><strong>Prime badges</strong>: visual distinction for Prime-eligible products</li>
+<li><strong>Price history awareness</strong>: show list price vs deal price, coupon clips</li>
+<li><strong>1-Click ordering</strong>: patented instant purchase (address + payment pre-configured)</li>
+<li><strong>Subscribe &amp; Save</strong>: recurring delivery at discount</li>
+<li><strong>A+ Content</strong>: brands can create rich HTML product descriptions</li>
+<li><strong>Frustration-free packaging</strong>: Amazon-specific packaging option indicator</li>
+<li><strong>Dense information display</strong>: maximizes data per screen (not minimalist)</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Customer</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Cart</th>
+<th>Purchase</th>
+<th>Review</th>
+<th>Lists</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>✅</td>
+<td>— (login required)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (after purchase)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Prime</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + free delivery</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Seller Central</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Inventory</th>
+<th>Orders</th>
+<th>Advertising</th>
+<th>Reports</th>
+<th>Account</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Account Owner</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>Catalog Manager</td>
+<td>CRUD</td>
+<td>Read</td>
+<td>—</td>
+<td>Limited</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Order Manager</td>
+<td>Read</td>
+<td>CRUD</td>
+<td>—</td>
+<td>Limited</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Advertising Manager</td>
+<td>—</td>
+<td>—</td>
+<td>CRUD</td>
+<td>Ad reports</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

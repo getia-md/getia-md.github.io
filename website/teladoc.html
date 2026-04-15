@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teladoc — IA.md | getIA.md</title>
+  <meta name="description" content="Virtual healthcare. Video visits, prescriptions, mental health. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=teladoc.com&sz=64" alt="Teladoc" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Teladoc</h1>
+      <p class="detail-brand-tagline">Virtual healthcare. Video visits, prescriptions, mental health.</p>
+      <span class="detail-category-badge">Health</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/teladoc/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://teladoc.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/teladoc/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Teladoc — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Teladoc is the largest telehealth platform in the US, offering virtual doctor visits across primary care, mental health, dermatology, nutrition, and chronic condition management. The mental model is <strong>feel unwell, see a doctor now</strong> — the platform prioritizes speed to care. Key differentiators: 24/7 availability (see a doctor in minutes, not days), multi-specialty coverage, integration with employer/health plan benefits, and chronic care programs (for diabetes, hypertension, weight management). Teladoc also operates BetterHelp for mental health and Livongo for chronic condition monitoring.</p>
+<h2>Site Map</h2>
+<h3>Patient App</h3>
+<pre><code>├── Home
+│   ├── Quick Actions
+│   │   ├── &quot;See a Doctor Now&quot; (urgent, General Medical)
+│   │   ├── &quot;Schedule a Visit&quot; (planned)
+│   │   ├── &quot;Talk to a Therapist&quot; (Mental Health)
+│   │   └── &quot;Send a Photo&quot; (Dermatology)
+│   ├── Upcoming Appointments
+│   ├── My Care Team (assigned providers)
+│   ├── Health Reminders (prescription refills, follow-ups)
+│   ├── Programs (Diabetes, Hypertension, Weight)
+│   └── Recent Visit Summaries
+├── Care Services
+│   ├── General Medical (24/7, &lt;10 min wait)
+│   │   ├── Cold &amp; Flu
+│   │   ├── Allergies
+│   │   ├── Infections (UTI, sinus, ear)
+│   │   ├── Skin Issues (rash, redness)
+│   │   ├── Digestive Issues
+│   │   └── Prescription Refills
+│   ├── Mental Health
+│   │   ├── Therapy (licensed therapists)
+│   │   ├── Psychiatry (medication management)
+│   │   ├── Teen Therapy (13+)
+│   │   └── Couples Therapy
+│   ├── Dermatology
+│   │   ├── Upload Photos (3 angles)
+│   │   ├── Describe Condition
+│   │   └── Dermatologist Review (async, &lt;24h)
+│   ├── Nutrition
+│   │   ├── Dietitian Consultations
+│   │   └── Meal Plans
+│   ├── Back &amp; Joint Care
+│   ├── Primary Care (Primary360)
+│   │   ├── Assigned PCP
+│   │   ├── Longitudinal Care
+│   │   ├── Health Screenings
+│   │   └── Care Coordination
+│   └── Chronic Care Programs
+│       ├── Diabetes Management (Livongo)
+│       │   ├── Connected Glucose Meter
+│       │   ├── Blood Sugar Logs
+│       │   ├── Coaching
+│       │   └── Alerts &amp; Insights
+│       ├── Hypertension Management
+│       │   ├── Connected Blood Pressure Cuff
+│       │   ├── BP Logs
+│       │   └── Coaching
+│       └── Weight Management
+│           ├── Coach Sessions
+│           ├── Meal Tracking
+│           └── Activity Goals
+├── Book / See a Doctor
+│   ├── Select Service
+│   ├── Symptoms Questionnaire (guided triage)
+│   ├── Visit Type
+│   │   ├── Video Visit
+│   │   ├── Phone Visit
+│   │   └── Async (messaging / photo-based)
+│   ├── Provider Selection
+│   │   ├── Next Available (fastest)
+│   │   ├── Choose Provider (by specialty, language, gender)
+│   │   └── My Provider (if assigned)
+│   ├── Insurance / Copay Display
+│   ├── Pre-Visit Questionnaire
+│   └── Confirm
+├── Waiting Room
+│   ├── Position / Wait Time
+│   ├── Device Check (camera, mic)
+│   ├── Upload Documents / Photos
+│   └── [Join Call]
+├── Video Visit
+│   ├── Video / Audio Stream
+│   ├── Chat Sidebar
+│   ├── Screen Share
+│   ├── End Call
+│   └── Connection Status
+├── Visit Summary (Post-Visit)
+│   ├── Diagnosis
+│   ├── Treatment Plan
+│   ├── Prescriptions (sent to pharmacy)
+│   ├── Lab Orders
+│   ├── Follow-Up Recommendations
+│   ├── Doctor&#39;s Notes
+│   ├── Download / Print
+│   └── Rate Visit
+├── My Appointments
+│   ├── Upcoming
+│   ├── Past Visits
+│   ├── Cancelled
+│   └── Reschedule / Cancel
+├── Health Records
+│   ├── Medical History
+│   ├── Conditions
+│   ├── Allergies
+│   ├── Current Medications
+│   ├── Lab Results
+│   ├── Visit Notes
+│   └── Documents
+├── Prescriptions
+│   ├── Active Prescriptions
+│   ├── Request Refill
+│   ├── Pharmacy Selection (CVS, Walgreens, etc.)
+│   └── Prescription History
+├── Messages
+│   ├── Provider Messages
+│   ├── Care Team Updates
+│   └── Attach Files
+├── Account
+│   ├── Profile
+│   ├── Insurance / Benefits Info
+│   ├── Dependent Profiles (family members)
+│   ├── Pharmacy Preferences
+│   ├── Payment Methods
+│   ├── Notifications
+│   └── Settings
+└── Help
+    ├── FAQ
+    ├── Technical Support
+    ├── Billing Questions
+    └── Emergency Disclaimer (&quot;If this is an emergency, call 911&quot;)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>4 tabs</td>
+<td>Home, Visits, Records, Account</td>
+</tr>
+<tr>
+<td><strong>Primary CTA</strong></td>
+<td>Prominent on Home</td>
+<td>&quot;See a Doctor Now&quot; (urgent) — one-tap to fastest care</td>
+</tr>
+<tr>
+<td><strong>Care Grid</strong></td>
+<td>Service cards on Home</td>
+<td>General Medical, Mental Health, Dermatology, etc.</td>
+</tr>
+<tr>
+<td><strong>Video Controls</strong></td>
+<td>Floating overlay during visit</td>
+<td>Mute, camera toggle, chat, end call</td>
+</tr>
+<tr>
+<td><strong>Wait Time Banner</strong></td>
+<td>Top of Home when active</td>
+<td>&quot;Your provider will be ready in ~5 minutes&quot;</td>
+</tr>
+<tr>
+<td><strong>Program Dashboard</strong></td>
+<td>Dedicated section for chronic care</td>
+<td>Glucose/BP charts, coaching, connected device status</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Patient</td>
+<td>name, dob, gender, email, phone, insurance, pharmacy, allergies[], conditions[], medications[], dependents[]</td>
+<td>has Appointments, Records, Prescriptions</td>
+</tr>
+<tr>
+<td>Provider</td>
+<td>name, photo, specialty, credentials, languages[], rating, availability</td>
+<td>has Appointments</td>
+</tr>
+<tr>
+<td>Appointment</td>
+<td>type (video/phone/async), service, datetime, duration, status, copay, provider, patient</td>
+<td>has VisitSummary</td>
+</tr>
+<tr>
+<td>VisitSummary</td>
+<td>diagnosis, treatment_plan, notes, prescriptions[], lab_orders[], follow_up</td>
+<td>belongs to Appointment</td>
+</tr>
+<tr>
+<td>Prescription</td>
+<td>medication, dosage, frequency, duration, refills, pharmacy, status</td>
+<td>belongs to Patient, written by Provider</td>
+</tr>
+<tr>
+<td>ChronicProgram</td>
+<td>type (diabetes/hypertension/weight), patient, coach, devices[], readings[], goals</td>
+<td>belongs to Patient</td>
+</tr>
+<tr>
+<td>DeviceReading</td>
+<td>type (glucose/bp/weight), value, timestamp, out_of_range</td>
+<td>belongs to ChronicProgram</td>
+</tr>
+<tr>
+<td>Insurance</td>
+<td>plan_name, member_id, group, copay_amount</td>
+<td>belongs to Patient</td>
+</tr>
+</tbody></table>
+<h3>Appointment Status</h3>
+<pre><code>scheduled → waiting_room → in_progress → completed → summary_available
+             ↘ cancelled / rescheduled / no_show
+</code></pre>
+<h3>Async Visit Flow</h3>
+<pre><code>submitted → provider_reviewing → response_ready → completed
+</code></pre>
+<h2>User Flows</h2>
+<h3>See a Doctor Now (Urgent)</h3>
+<pre><code>Home → [See a Doctor Now] → Symptom Questionnaire (3-5 questions) → Insurance Confirmed → Copay Shown → [Request Visit] → Waiting Room (avg 10 min) → Video Call → Visit Summary → Prescription Sent to Pharmacy
+</code></pre>
+<h3>Schedule Mental Health Therapy</h3>
+<pre><code>Care → Mental Health → Therapy → Browse Therapists → Filter (specialty, language) → Select Provider → Pick Time Slot → Confirm → Reminder → Video Session
+</code></pre>
+<h3>Dermatology (Async)</h3>
+<pre><code>Care → Dermatology → Upload 3 Photos → Describe Symptoms → Submit → Dermatologist Reviews (&lt;24h) → Diagnosis + Treatment in App → Prescription if Needed
+</code></pre>
+<h3>Monitor Diabetes (Livongo)</h3>
+<pre><code>Check Blood Sugar (connected meter auto-syncs) → Reading Appears in App → AI Insight (&quot;Higher than usual after lunch&quot;) → Coach Reaches Out if Concerning → Adjust Plan
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/care                          → Care Services
+/care/general-medical          → General Medical
+/care/mental-health            → Mental Health
+/care/dermatology              → Dermatology
+/care/primary360               → Primary Care
+/care/chronic                  → Chronic Programs
+/book                          → Book Visit
+/book/symptoms                 → Symptom Questionnaire
+/book/providers                → Provider Selection
+/waiting-room/:id              → Waiting Room
+/visit/:id                     → Video Visit
+/visit/:id/summary             → Visit Summary
+/appointments                  → My Appointments
+/appointments/:id              → Appointment Detail
+/records                       → Health Records
+/records/medications           → Medications
+/records/labs                  → Lab Results
+/prescriptions                 → Prescriptions
+/prescriptions/:id             → Prescription Detail
+/messages                      → Messages
+/programs/diabetes             → Diabetes Dashboard
+/programs/hypertension         → Hypertension Dashboard
+/programs/weight               → Weight Management
+/account                       → Account
+/account/insurance             → Insurance Info
+/account/dependents            → Family Members
+/help                          → Help
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Providers</td>
+<td>Name, specialty</td>
+<td>Specialty, Language, Gender, Availability, Insurance</td>
+<td>Soonest Available, Rating</td>
+</tr>
+<tr>
+<td>Prescriptions</td>
+<td>Medication name</td>
+<td>Status (active/expired), Provider</td>
+<td>Date, name</td>
+</tr>
+<tr>
+<td>Health Records</td>
+<td>Condition, medication</td>
+<td>Type, Date</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Visit History</td>
+<td>Provider name, diagnosis</td>
+<td>Service Type, Date Range</td>
+<td>Date</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Home</th>
+<th>Book Visit</th>
+<th>Video Visit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Card grid, bottom tabs</td>
+<td>Step-by-step wizard</td>
+<td>Full-screen video</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Larger cards, sidebar</td>
+<td>Single-page form</td>
+<td>Video + sidebar chat</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Dashboard layout</td>
+<td>Multi-column</td>
+<td>Large video + sidebar</td>
+</tr>
+</tbody></table>
+<h3>Telemedicine-Specific UX</h3>
+<ul>
+<li>One-tap &quot;See a Doctor Now&quot; for urgent care</li>
+<li>Camera/microphone permission check before visit</li>
+<li>Picture-in-picture video during chat</li>
+<li>Push notifications: appointment reminders, prescription ready</li>
+<li>Pharmacy locator with preferred pharmacy saved</li>
+<li>Dependent switching: manage family members&#39; health from one account</li>
+<li>Connected device integration (glucose meter, BP cuff, smart scale)</li>
+<li>Emergency disclaimer visible everywhere</li>
+<li>HIPAA-compliant messaging</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Patient</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Book</th>
+<th>Consult</th>
+<th>Records</th>
+<th>Prescriptions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own</td>
+<td>Own</td>
+</tr>
+<tr>
+<td>Dependent</td>
+<td>Via guardian</td>
+<td>Via guardian</td>
+<td>Via guardian</td>
+<td>Guardian view</td>
+<td>Guardian view</td>
+</tr>
+</tbody></table>
+<h3>Compliance</h3>
+<ul>
+<li>HIPAA-compliant data storage and transmission</li>
+<li>End-to-end encrypted video calls</li>
+<li>Audit logging for all record access</li>
+<li>Consent forms before first visit</li>
+<li>DEA-compliant prescribing</li>
+<li>State medical licensing compliance</li>
+<li>BAA with all technology vendors</li>
+<li>SOC 2 Type II certified</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

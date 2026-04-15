@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Substack — IA.md | getIA.md</title>
+  <meta name="description" content="Newsletter platform. Subscriber-first, paid subscriptions. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=substack.com&sz=64" alt="Substack" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Substack</h1>
+      <p class="detail-brand-tagline">Newsletter platform. Subscriber-first, paid subscriptions.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/substack/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://substack.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/substack/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Substack — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A subscription newsletter platform where independent writers publish directly to their email subscribers. Substack&#39;s mental model is <strong>&quot;your own publication&quot;</strong> — each writer runs an independent newsletter/blog with free and paid tiers, and Substack handles payments, delivery, and hosting. Key differentiators: writer-owned mailing lists (portable), a 10% revenue cut model (no ads), Substack Notes (short-form social feed), Substack Chat (community), podcast/video hosting, Substack Reads (reader app), and the Leaderboard showcasing top publications.</p>
+<h2>Site Map</h2>
+<pre><code>├── Substack Home (substack.com)
+│   ├── Discover / Browse
+│   │   ├── Categories
+│   │   │   ├── Culture, Politics, Technology, Business, Finance
+│   │   │   ├── Science, Health, Sports, Food &amp; Drink
+│   │   │   └── Faith, Music, Art, Comics, Fiction, Crypto...
+│   │   ├── Leaderboard (top free + paid publications)
+│   │   ├── Staff Picks / Featured
+│   │   ├── Trending Posts
+│   │   └── Recommendations from writers you follow
+│   ├── Substack Reads (reader inbox)
+│   │   ├── Inbox (latest from subscriptions)
+│   │   ├── Activity (likes, comments, restacks from network)
+│   │   └── Filter: All / Free / Paid
+│   ├── Notes (short-form feed)
+│   │   ├── Timeline (from subscriptions + recommendations)
+│   │   ├── Create Note (text, images, links, quotes)
+│   │   ├── Restack (like retweet)
+│   │   ├── Like / Comment
+│   │   └── Discover tab
+│   └── Search (writers, publications, posts)
+├── Individual Publication (writer.substack.com or custom domain)
+│   ├── Home
+│   │   ├── Hero (publication name, tagline, subscribe CTA)
+│   │   ├── Latest Posts
+│   │   ├── Popular Posts
+│   │   └── About / Bio
+│   ├── Archive
+│   │   ├── All Posts (chronological, paginated)
+│   │   ├── Filter: Free / Paid
+│   │   └── Search within publication
+│   ├── About Page
+│   │   ├── Writer Bio
+│   │   ├── Publication Description
+│   │   └── Subscribe CTA
+│   ├── Post / Article
+│   │   ├── Title, Subtitle
+│   │   ├── Author, Date
+│   │   ├── Body Content
+│   │   │   ├── Rich Text (headings, paragraphs, quotes)
+│   │   │   ├── Images
+│   │   │   ├── Embedded Audio Player (podcast)
+│   │   │   ├── Embedded Video
+│   │   │   ├── Footnotes
+│   │   │   ├── Buttons / CTAs
+│   │   │   ├── Paywall Break (content below is paid-only)
+│   │   │   └── Pullquotes
+│   │   ├── Like (heart) Count
+│   │   ├── Comments Section
+│   │   │   ├── Threaded Comments
+│   │   │   ├── Writer Pinned Comment
+│   │   │   └── Like on Comments
+│   │   ├── Share (copy link, Twitter, email)
+│   │   ├── Restack (share to your own Substack Notes)
+│   │   ├── Gift Link (bypass paywall for friends)
+│   │   └── Subscribe CTA (end of post, sticky bar for non-subscribers)
+│   ├── Podcast Player (if podcast publication)
+│   │   ├── Episode List
+│   │   ├── Audio Player (persistent mini player)
+│   │   └── RSS Feed Link
+│   ├── Chat (community)
+│   │   ├── Threads (topic-based)
+│   │   ├── Real-time Messages
+│   │   └── Subscriber-only access
+│   └── Subscribe
+│       ├── Free (email newsletter)
+│       ├── Paid (monthly / annual price, set by writer)
+│       ├── Founding Member (higher tier, optional)
+│       └── Group Subscriptions
+├── Writer Dashboard
+│   ├── Home (stats overview)
+│   ├── Posts
+│   │   ├── Published
+│   │   ├── Drafts
+│   │   ├── Scheduled
+│   │   └── Editor
+│   │       ├── Title + Subtitle
+│   │       ├── Rich Text Body (block editor)
+│   │       ├── Image Upload
+│   │       ├── Audio Upload (podcast)
+│   │       ├── Video Upload
+│   │       ├── Add Paywall Break
+│   │       ├── Add Button / CTA
+│   │       ├── Preview (email + web)
+│   │       ├── Send Options
+│   │       │   ├── Section (if multiple sections)
+│   │       │   ├── Audience: Everyone / Free only / Paid only
+│   │       │   ├── Publish: Now / Schedule
+│   │       │   ├── Social preview (title, subtitle, image)
+│   │       │   └── Email subject line override
+│   │       └── Import (from WordPress, Ghost, etc.)
+│   ├── Notes (create/manage)
+│   ├── Chat (manage threads)
+│   ├── Subscribers
+│   │   ├── List (name, email, type, subscribed date)
+│   │   ├── Import Subscribers (CSV)
+│   │   ├── Export Subscribers (portable mailing list)
+│   │   ├── Growth Analytics
+│   │   └── Segments (free, paid, comp, founding)
+│   ├── Stats
+│   │   ├── Subscriber Growth (chart)
+│   │   ├── Revenue / MRR
+│   │   ├── Post Performance (opens, clicks, views)
+│   │   ├── Email Open Rate
+│   │   ├── Web Views
+│   │   ├── Top Posts
+│   │   └── Churn Rate
+│   ├── Settings
+│   │   ├── Publication Details (name, description, logo, colors)
+│   │   ├── Custom Domain
+│   │   ├── Sections (multi-section newsletter)
+│   │   ├── Payments (Stripe connect, pricing, free trial)
+│   │   ├── Recommendations (cross-promote other Substacks)
+│   │   ├── Email Settings (sender name, reply-to)
+│   │   ├── Comments Policy
+│   │   ├── Homepage Layout
+│   │   ├── SEO / Social Preview
+│   │   └── Import / Export
+│   └── Payments
+│       ├── Stripe Dashboard Link
+│       ├── Earnings History
+│       ├── Substack Fee (10% of paid revenue)
+│       └── Payout Schedule
+├── Reader Settings
+│   ├── Account (email, password)
+│   ├── Subscriptions (manage all)
+│   ├── Billing (paid subscriptions list)
+│   ├── Notifications (email frequency, app push)
+│   ├── Reading Preferences
+│   └── Privacy
+└── Substack App (mobile)
+    ├── Inbox (subscriptions feed)
+    ├── Notes (short-form feed)
+    ├── Search / Discover
+    ├── Activity
+    └── Profile
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Substack Home Top Bar</strong></td>
+<td>Fixed</td>
+<td>Substack logo, Search, &quot;Start writing&quot; CTA, Sign In, user avatar</td>
+</tr>
+<tr>
+<td><strong>Substack Home Tabs</strong></td>
+<td>Horizontal tabs</td>
+<td>Inbox, Notes, Discover</td>
+</tr>
+<tr>
+<td><strong>Publication Top Bar</strong></td>
+<td>Fixed, publication-branded</td>
+<td>Publication name/logo, Home, Archive, About, Subscribe button</td>
+</tr>
+<tr>
+<td><strong>Sticky Subscribe Bar</strong></td>
+<td>Fixed bottom (for non-subscribers on post page)</td>
+<td>&quot;Subscribe to [Publication]&quot; + email input or Sign In</td>
+</tr>
+<tr>
+<td><strong>Post Engagement Bar</strong></td>
+<td>Below post, or floating</td>
+<td>Like (heart), Comment, Share, Restack</td>
+</tr>
+<tr>
+<td><strong>Writer Dashboard Nav</strong></td>
+<td>Left sidebar</td>
+<td>Home, Posts, Notes, Chat, Subscribers, Stats, Settings</td>
+</tr>
+<tr>
+<td><strong>Mobile Tab Bar</strong></td>
+<td>Bottom (Substack app)</td>
+<td>Inbox, Notes, Search, Activity, Profile</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Publication</td>
+<td>name, slug, description, logo, cover_image, custom_domain, author, pricing (monthly/annual), subscriber_count, sections[], recommendations[]</td>
+<td>belongs to Writer; has many Posts, Subscribers</td>
+</tr>
+<tr>
+<td>Post</td>
+<td>title, subtitle, body (rich text/html), slug, type (newsletter/podcast/video/thread), audience (everyone/free/paid), published_at, scheduled_at, email_subject, section, likes_count, comments_count, web_views, email_opens</td>
+<td>belongs to Publication; has Comments, Likes</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>body (short text), media[], restack_of, likes_count, comments_count, created_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Subscriber</td>
+<td>email, name, type (free/paid/comp/founding), subscribed_at, source</td>
+<td>belongs to Publication</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>body, created_at, likes_count, pinned (bool)</td>
+<td>belongs to Post and User; can be nested</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>created_at</td>
+<td>belongs to User and Post/Note/Comment</td>
+</tr>
+<tr>
+<td>Restack</td>
+<td>note (optional commentary), original_post</td>
+<td>belongs to User (sharing mechanism)</td>
+</tr>
+<tr>
+<td>ChatThread</td>
+<td>title, body, created_at, replies_count</td>
+<td>belongs to Publication (community)</td>
+</tr>
+<tr>
+<td>Section</td>
+<td>name, slug, description</td>
+<td>belongs to Publication (multi-section newsletter)</td>
+</tr>
+<tr>
+<td>GiftLink</td>
+<td>post, token, created_at, views</td>
+<td>belongs to Post (bypass paywall)</td>
+</tr>
+</tbody></table>
+<h3>Post Delivery</h3>
+<pre><code>Write → Publish → Email sent to subscribers + Post appears on web
+Post visibility: Free (all subscribers) | Paid (paid subscribers only)
+Paywall break: Content above is free preview, below requires subscription
+</code></pre>
+<h3>Subscriber Types</h3>
+<pre><code>Free subscriber → receives free posts via email
+Paid subscriber → receives all posts (free + paid)
+Founding member → paid at higher optional price (supporter tier)
+Comp subscriber → free paid access (gifted by writer)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Reader: Discover and Subscribe</h3>
+<pre><code>Substack Home → Discover → Category → Publication → Read Free Post → Subscribe (free) → Upgrade to Paid
+</code></pre>
+<h3>Reader: Daily Reading</h3>
+<pre><code>Open Substack App → Inbox → Latest Posts → Tap to Read → Like → Comment → Next Post
+</code></pre>
+<h3>Reader: Notes Browsing</h3>
+<pre><code>Notes Tab → Timeline → Read Note → Restack → Comment → Discover New Writers → Subscribe
+</code></pre>
+<h3>Writer: Publish Newsletter</h3>
+<pre><code>Dashboard → New Post → Write Title + Body → Add Paywall Break → Preview Email → Set Audience → Publish Now → Email Delivered + Web Published
+</code></pre>
+<h3>Writer: Podcast Episode</h3>
+<pre><code>Dashboard → New Post → Add Audio Upload → Write Show Notes → Set as Podcast Post → Publish → Available via RSS + Email + Web
+</code></pre>
+<h3>Writer: Grow Audience</h3>
+<pre><code>Dashboard → Recommendations → Add Substacks to Recommend → Cross-promotion → New Subscriber Joins → Welcome Email Sent
+</code></pre>
+<h3>Paid Subscription</h3>
+<pre><code>Read Post → Hit Paywall → &quot;Subscribe&quot; CTA → Choose Plan (monthly/annual) → Stripe Payment → Unlock All Content
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># Substack Home (substack.com)
+/                              → Home / Discover
+/inbox                         → Reader Inbox
+/notes                         → Notes Feed
+/search?q=:query               → Search
+/discover                      → Discover / Browse
+/leaderboard                   → Top Publications
+/category/:name                → Category Page
+/profile/:userId               → User Profile
+/settings                      → Reader Settings
+
+# Individual Publication (writer.substack.com)
+/                              → Publication Home
+/about                         → About Page
+/archive                       → All Posts Archive
+/archive?sort=new              → Archive sorted by new
+/p/:slug                       → Post / Article
+/p/:slug/comments              → Post Comments
+/podcast                       → Podcast Episodes
+/chat                          → Community Chat
+/subscribe                     → Subscribe Page
+/manage-subscription           → Manage Your Subscription
+
+# Writer Dashboard (writer.substack.com/publish)
+/publish                       → Dashboard Home
+/publish/posts                 → All Posts
+/publish/post/:id              → Edit Post
+/publish/post/new              → New Post Editor
+/publish/notes                 → Manage Notes
+/publish/chat                  → Manage Chat
+/publish/subscribers           → Subscriber List
+/publish/stats                 → Stats / Analytics
+/publish/settings              → Publication Settings
+/publish/domain                → Custom Domain Settings
+/publish/payments              → Payments / Earnings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global (substack.com)</td>
+<td>Publications, Posts, People</td>
+<td>Category</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Inbox (reader)</td>
+<td>Subscribed posts</td>
+<td>All / Free / Paid, Publication</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Publication Archive</td>
+<td>Posts within publication</td>
+<td>Free / Paid, Section</td>
+<td>Newest, Oldest, Popular</td>
+</tr>
+<tr>
+<td>Subscriber List</td>
+<td>Subscribers</td>
+<td>Type (free/paid/comp/founding), Source, Date</td>
+<td>Date, Name, Type</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>Notes from network</td>
+<td>—</td>
+<td>Latest</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Header</th>
+<th>Post Body</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1080px)</td>
+<td>Full nav bar</td>
+<td>Content centered (max 728px)</td>
+<td>Top nav, sidebar on dashboard</td>
+</tr>
+<tr>
+<td>Tablet (768–1079px)</td>
+<td>Condensed nav</td>
+<td>Full-width content (max 728px)</td>
+<td>Top nav</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Simplified header + app banner</td>
+<td>Full-width, optimized typography</td>
+<td>Bottom tab bar (app), hamburger (web)</td>
+</tr>
+</tbody></table>
+<h3>Reading Experience</h3>
+<ul>
+<li>Post body: max-width 728px, centered</li>
+<li>Typography: serif body text, clean line height (~1.7)</li>
+<li>Email-first design: posts render well in email clients</li>
+<li>Images: contained or full-width</li>
+<li>Footnotes: clickable inline</li>
+<li>Paywall break: visible divider + subscribe CTA</li>
+<li>Audio player: inline for podcast posts</li>
+<li>Read time: not shown (Substack philosophy: no metrics pressure on readers)</li>
+</ul>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Substack Reader app: native reading experience</li>
+<li>Push notifications for new posts</li>
+<li>Offline reading (cached posts)</li>
+<li>Background audio for podcast posts</li>
+<li>Share sheet integration</li>
+<li>Deep links from email to app</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read Free</th>
+<th>Read Paid</th>
+<th>Comment</th>
+<th>Write</th>
+<th>Dashboard</th>
+<th>Manage Subs</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>✅ (web)</td>
+<td>Preview + paywall</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Free Subscriber</td>
+<td>✅</td>
+<td>Preview + paywall</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Paid Subscriber</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>Own subscription</td>
+</tr>
+<tr>
+<td>Founding Member</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>Own subscription</td>
+</tr>
+<tr>
+<td>Writer (Free Publication)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (subscribers)</td>
+</tr>
+<tr>
+<td>Writer (Paid Publication)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + payments, earnings</td>
+</tr>
+<tr>
+<td>Substack Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Platform moderation, featuring</td>
+</tr>
+</tbody></table>
+<h3>Ownership Model</h3>
+<ul>
+<li>Writer owns the mailing list (exportable CSV at any time)</li>
+<li>Writer sets pricing (Substack takes 10% of paid subscriptions)</li>
+<li>Stripe handles payments directly (writer&#39;s Stripe account)</li>
+<li>Custom domain supported (DNS CNAME)</li>
+<li>No ads — revenue comes only from subscriptions</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit — IA.md | getIA.md</title>
+  <meta name="description" content="Community forums. Subreddits, voting, nested comments. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=reddit.com&sz=64" alt="Reddit" onerror="this.parentElement.textContent='R'">
+      </div>
+      <h1 class="detail-brand-name">Reddit</h1>
+      <p class="detail-brand-tagline">Community forums. Subreddits, voting, nested comments.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/reddit/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://reddit.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/reddit/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Reddit — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The world&#39;s largest collection of community forums organized around interests. Reddit&#39;s mental model is a <strong>subreddit ecosystem</strong> — each subreddit (r/topic) is an independently moderated community with its own rules, culture, and moderators. Content is democratically ranked through upvotes/downvotes, and user reputation is tracked via karma. Key differentiators: subreddit model (bottomless niche communities), the voting system (content quality is crowd-sourced), deeply threaded comment trees (collapsible), karma and awards, Reddit Premium, AMAs (Ask Me Anything), and the volunteer moderator system. Reddit is fundamentally content-and-discussion-first, not profile-first.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home Feed
+│   ├── Best (algorithmic, from subscribed subreddits)
+│   ├── Hot
+│   ├── New
+│   ├── Top (today/week/month/year/all time)
+│   ├── Rising
+│   └── Card/Classic/Compact View Toggle
+├── Popular
+│   ├── All of Reddit (trending across all subreddits)
+│   └── Filter by Country/Region
+├── All
+│   ├── Every public subreddit (unfiltered)
+│   └── Exclude specific subreddits
+├── Subreddit (r/:subreddit)
+│   ├── Subreddit Banner, Icon, Name, Description
+│   ├── Member Count, Online Count
+│   ├── Join / Leave Button
+│   ├── Create Post Button
+│   ├── Sort: Hot / New / Top / Rising / Controversial
+│   ├── Post List
+│   │   ├── Post Card (title, thumbnail, score, comments count, author, time, flair)
+│   │   └── Post Types: Text, Link, Image, Video, Gallery, Poll, Live Chat
+│   ├── Sidebar (Desktop)
+│   │   ├── About Community (description, created date, member count)
+│   │   ├── Subreddit Rules
+│   │   ├── Moderators List
+│   │   ├── Related Subreddits
+│   │   ├── Flair Filter (post categories)
+│   │   └── Community Awards
+│   ├── Wiki (subreddit wiki pages, FAQ, guides)
+│   ├── Flair (post categories specific to subreddit)
+│   └── Menu Links (custom, set by mods)
+├── Post / Thread
+│   ├── Post Content
+│   │   ├── Title (required)
+│   │   ├── Body (text/link/media)
+│   │   ├── Flair Badge
+│   │   ├── Author, Subreddit, Time
+│   │   ├── Media (images, videos, embedded links, galleries)
+│   │   └── Crosspost Origin (if crossposted)
+│   ├── Voting
+│   │   ├── Upvote (↑)
+│   │   ├── Score (net votes, can be hidden initially)
+│   │   └── Downvote (↓)
+│   ├── Actions: Save, Hide, Share, Report, Award, Crosspost
+│   ├── Comment Section
+│   │   ├── Sort: Best / Top / New / Controversial / Old / Q&amp;A
+│   │   ├── Comment Tree (threaded, infinite nesting)
+│   │   │   ├── Comment (author, score, time, flair)
+│   │   │   ├── Collapse Thread [-]
+│   │   │   ├── Reply
+│   │   │   ├── Vote (↑↓)
+│   │   │   ├── Award
+│   │   │   ├── Save
+│   │   │   ├── Report
+│   │   │   └── Nested Replies (indented)
+│   │   ├── &quot;X more replies&quot; / &quot;Continue thread →&quot;
+│   │   ├── OP (Original Poster) badge
+│   │   ├── Mod badge (green shield)
+│   │   ├── Admin badge (red)
+│   │   └── Award badges on comments
+│   └── Post Flair &amp; Automod Stickies
+├── Create Post
+│   ├── Select Community (subreddit)
+│   ├── Post Type: Text / Images &amp; Video / Link / Poll
+│   ├── Title (required)
+│   ├── Body / URL / Media Upload / Poll Options
+│   ├── Add Flair (subreddit-specific)
+│   ├── Mark NSFW / Spoiler
+│   ├── Optional: Add to collection
+│   ├── Rules Reminder (subreddit rules inline)
+│   └── Post / Save Draft
+├── Search
+│   ├── Results: Posts, Communities, People
+│   ├── Search within Subreddit
+│   ├── Filter: Relevance, Hot, Top, New, Most Comments
+│   ├── Filter: Time (past hour/day/week/month/year/all)
+│   └── Filter: Post type, Subreddit, NSFW
+├── User Profile
+│   ├── Avatar, Banner, Display Name, Username (u/:name)
+│   ├── Karma (post karma + comment karma breakdown)
+│   ├── Cake Day (account birthday)
+│   ├── Trophies / Achievements
+│   ├── Tabs: Overview, Posts, Comments, Saved (private), Hidden (private), Upvoted (private), Downvoted (private), Awards Given/Received
+│   ├── Mod of (subreddits moderated)
+│   └── Follow User
+├── Chat
+│   ├── Direct Messages (1:1)
+│   ├── Group Chats
+│   ├── Chat Rooms (subreddit-based)
+│   └── Message Requests
+├── Notifications / Inbox
+│   ├── Activity (replies, mentions, post replies)
+│   ├── Messages (private messages, legacy system)
+│   ├── Comment Replies
+│   ├── Post Replies
+│   ├── Username Mentions (u/:name)
+│   └── Mod Mail (for moderators)
+├── Reddit Premium
+│   ├── Ad-free browsing
+│   ├── Monthly Coins (for awards)
+│   ├── Custom Avatar Gear
+│   ├── Access to r/lounge (exclusive subreddit)
+│   └── Premium Badge
+├── Awards / Coins
+│   ├── Gold, Silver, Platinum, Ternion (legacy)
+│   ├── Community Awards (subreddit-specific)
+│   ├── Free Award (daily/weekly freebie)
+│   └── Award → gives recipient coins + Premium time
+├── Mod Tools (per subreddit)
+│   ├── Mod Queue (posts/comments flagged for review)
+│   ├── Reports
+│   ├── Spam Filter
+│   ├── Mod Log (action history)
+│   ├── AutoModerator (rule-based automation)
+│   ├── User Management (ban, mute, approve)
+│   ├── Flair Management (post + user flair)
+│   ├── Rules Configuration
+│   ├── Wiki Management
+│   ├── Traffic Stats
+│   ├── Community Appearance (banner, icon, colors)
+│   ├── Post Requirements (title, flair, templates)
+│   └── Mod Mail (shared inbox)
+├── Settings
+│   ├── Account (email, password, linked accounts)
+│   ├── Profile (display name, about, avatar, banner, NSFW toggle)
+│   ├── Feed Settings (home feed, content, auto-play, community recommendations)
+│   ├── Notifications (per type: push, email)
+│   ├── Chat &amp; Messaging (who can send)
+│   ├── Emails
+│   ├── Privacy (personalization, search indexing, location)
+│   └── Safety &amp; Privacy (blocked, muted accounts)
+├── Communities Directory
+│   ├── Top Communities
+│   ├── Browse by Category
+│   └── Create Community (subreddit)
+│       ├── Name (r/:name)
+│       ├── Type (Public / Restricted / Private / NSFW)
+│       ├── Description
+│       └── Topics
+└── Reddit Recap (annual, like Spotify Wrapped)
+    ├── Most Upvoted Posts
+    ├── Top Communities
+    ├── Hours Scrolled
+    └── Shareable Cards
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Reddit logo, search bar (center), Create Post (+), Chat, Notifications, user avatar/login</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Collapsible (desktop)</td>
+<td>Home, Popular, All, Custom Feeds, Recent Communities, Joined Communities, Mod Queues</td>
+</tr>
+<tr>
+<td><strong>Feed Sort Tabs</strong></td>
+<td>Horizontal tabs on feed</td>
+<td>Hot, New, Top, Rising (on subreddit: + Controversial)</td>
+</tr>
+<tr>
+<td><strong>Post Actions</strong></td>
+<td>Inline below each post</td>
+<td>Vote (↑↓), Comment count link, Award, Share, Save, Hide, Report</td>
+</tr>
+<tr>
+<td><strong>Comment Tree</strong></td>
+<td>Threaded, indented, collapsible</td>
+<td>Click [-] to collapse thread, colored depth lines</td>
+</tr>
+<tr>
+<td><strong>Right Sidebar</strong></td>
+<td>Desktop, within subreddit</td>
+<td>Community info, rules, mods, related subs</td>
+</tr>
+<tr>
+<td><strong>View Toggle</strong></td>
+<td>Card / Classic / Compact</td>
+<td>Desktop: switch between post density views</td>
+</tr>
+<tr>
+<td><strong>Mobile Nav</strong></td>
+<td>Bottom tab bar</td>
+<td>Home, Communities, Create (+), Chat, Inbox</td>
+</tr>
+</tbody></table>
+<h3>Desktop Layout</h3>
+<pre><code>[Left Sidebar (272px)]  |  [Feed (740px)]        |  [Right Sidebar (312px)]
+──────────────────────────────────────────────────────────────────
+Home                    |  [Hot|New|Top|Rising]    | r/subreddit
+Popular                 |  ─────────────────       | About Community
+All                     |  [Post Card]             | 2.1M members · 12K online
+─────────────           |   ↑ 12.5K               | ─────────────
+RECENT                  |   [Title + Content]      | Rules
+ r/programming          |   💬 432 comments        | 1. Be respectful
+ r/react                |  ─────────────────       | 2. No spam
+─────────────           |  [Post Card]             | ─────────────
+COMMUNITIES             |   ↑ 8.2K                 | Moderators
+ r/javascript           |   ...                    |  u/mod1
+ r/webdev               |                          |  u/mod2
+ ...                    |                          |
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Subreddit</td>
+<td>name (r/:name), display_name, description, sidebar_content, rules[], subscriber_count, online_count, created_at, type (public/restricted/private), nsfw (bool), wiki_enabled, flairs[], banner, icon, color_theme</td>
+<td>has many Posts, Moderators, Members, Wiki Pages, Rules</td>
+</tr>
+<tr>
+<td>Post</td>
+<td>title, body (markdown/rich text), url (for link posts), media[] (images/video/gallery), score (upvotes-downvotes), upvote_ratio, comment_count, flair, spoiler (bool), nsfw (bool), locked (bool), stickied (bool), crosspost_parent, created_at, edited (bool)</td>
+<td>belongs to Subreddit and User; has many Comments</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>body (markdown), score, created_at, edited, stickied (mod), gilded, depth, distinguished (none/mod/admin), collapsed (bool)</td>
+<td>belongs to Post and User; has parent Comment (tree)</td>
+</tr>
+<tr>
+<td>Vote</td>
+<td>value (+1/-1), target_type (post/comment)</td>
+<td>belongs to User and Post/Comment</td>
+</tr>
+<tr>
+<td>User</td>
+<td>username (u/:name), avatar, banner, post_karma, comment_karma, awardee_karma, cake_day, is_premium, trophies[], mod_of[]</td>
+<td>has many Posts, Comments, Votes, Awards</td>
+</tr>
+<tr>
+<td>Flair (Post)</td>
+<td>text, css_class, background_color, text_color, editable</td>
+<td>belongs to Subreddit</td>
+</tr>
+<tr>
+<td>Flair (User)</td>
+<td>text, css_class</td>
+<td>per Subreddit per User</td>
+</tr>
+<tr>
+<td>Award</td>
+<td>name, icon, cost (coins), gives_premium_days, gives_coins</td>
+<td>given by User to Post/Comment</td>
+</tr>
+<tr>
+<td>ModAction</td>
+<td>action (remove/approve/ban/flair/lock/sticky), mod, target, reason, created_at</td>
+<td>belongs to Subreddit</td>
+</tr>
+<tr>
+<td>WikiPage</td>
+<td>title, body (markdown), revision_history[], last_editor</td>
+<td>belongs to Subreddit</td>
+</tr>
+<tr>
+<td>CustomFeed (Multireddit)</td>
+<td>name, subreddits[], public</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>reason, target (post/comment), reporter, status</td>
+<td>belongs to Subreddit mod queue</td>
+</tr>
+<tr>
+<td>ChatMessage</td>
+<td>body, created_at</td>
+<td>belongs to Conversation/Room</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>title, description, posts[]</td>
+<td>belongs to Subreddit</td>
+</tr>
+</tbody></table>
+<h3>Post Types</h3>
+<p><code>text (self) | link | image | video | gallery (multiple images) | poll | crosspost | live_chat</code></p>
+<h3>Karma System</h3>
+<pre><code>Post upvote received: ~1 post karma (diminishing returns at scale)
+Comment upvote received: ~1 comment karma
+Award received: awardee karma
+Karma thresholds gate actions in some subreddits (anti-spam)
+</code></pre>
+<h3>Comment Sorting</h3>
+<pre><code>Best (confidence sort — balances score and sample size)
+Top (highest net score)
+New (chronological, newest first)
+Controversial (most mixed upvotes/downvotes)
+Old (chronological, oldest first)
+Q&amp;A (OP replies and highly scored answers)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Browse and Read</h3>
+<pre><code>Home → Feed (Hot) → Scroll → Click Post → Read → Expand Comment Thread → Upvote Helpful Comment → Back to Feed
+</code></pre>
+<h3>Post and Discuss</h3>
+<pre><code>Subreddit → Create Post → Select Type (Text) → Write Title + Body → Add Flair → Post → Others Comment → Reply to Comments
+</code></pre>
+<h3>Discover Communities</h3>
+<pre><code>Popular → See Trending Post → Check Subreddit → Read Rules + Top Posts → Join → Subreddit Appears in Home Feed
+</code></pre>
+<h3>Deep Comment Dive</h3>
+<pre><code>Post → Comment Section → Expand Thread → Read Nested Replies → &quot;Continue This Thread →&quot; → Deeper Discussion
+</code></pre>
+<h3>Cross-Post</h3>
+<pre><code>See Great Post → Share → Crosspost to Another Subreddit → Add Title → Post → Credits Original
+</code></pre>
+<h3>Moderation</h3>
+<pre><code>Mod Queue → Review Reported Post → Check Against Rules → Remove (with reason) / Approve → Mod Log Updated
+</code></pre>
+<h3>AMA (Ask Me Anything)</h3>
+<pre><code>r/IAmA or r/AMA → Celebrity/Expert Posts AMA → Community Asks Questions → OP Answers (distinguished) → Best Q&amp;As Voted Up
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home Feed (Best)
+/r/popular                     → Popular
+/r/all                         → All
+/r/:subreddit                  → Subreddit Feed
+/r/:subreddit/comments/:id/:slug → Post / Thread
+/r/:subreddit/comments/:id/:slug/:commentId → Direct Link to Comment
+/r/:subreddit/wiki             → Subreddit Wiki
+/r/:subreddit/wiki/:page       → Wiki Page
+/r/:subreddit/about/rules      → Subreddit Rules
+/r/:subreddit/about/moderators → Moderator List
+/r/:subreddit/about/modqueue   → Mod Queue
+/r/:subreddit/search?q=:query  → Search within Subreddit
+/r/:subreddit/submit           → Create Post in Subreddit
+/submit                        → Create Post (select subreddit)
+/search?q=:query               → Search Results
+/user/:username                → User Profile
+/user/:username/posts          → User&#39;s Posts
+/user/:username/comments       → User&#39;s Comments
+/user/:username/gilded         → User&#39;s Awarded Content
+/message/inbox                 → Inbox / Notifications
+/message/messages              → Private Messages
+/message/compose               → New Message
+/chat                          → Chat Conversations
+/settings                      → Settings
+/premium                       → Reddit Premium
+/coins                         → Reddit Coins
+/subreddits/create             → Create Community
+/subreddits/leaderboard        → Top Communities
+/r/mod                         → Mod Feed (all subreddits you mod)
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Posts, Subreddits, Users</td>
+<td>Subreddit, Time (hour/day/week/month/year/all), Post Type, NSFW</td>
+<td>Relevance, Hot, Top, New, Most Comments</td>
+</tr>
+<tr>
+<td>Subreddit</td>
+<td>Posts within subreddit</td>
+<td>Flair, Time, Post Type</td>
+<td>Hot, New, Top (with time selector), Rising, Controversial</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>Comments in post</td>
+<td>—</td>
+<td>Best, Top, New, Controversial, Old, Q&amp;A</td>
+</tr>
+<tr>
+<td>User</td>
+<td>User&#39;s posts/comments</td>
+<td>Type (posts/comments), Subreddit, Time</td>
+<td>New, Hot, Top</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Left Sidebar</th>
+<th>Feed</th>
+<th>Right Sidebar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1200px)</td>
+<td>Expanded sidebar (272px)</td>
+<td>Center feed (max 740px)</td>
+<td>Subreddit info panel (312px)</td>
+</tr>
+<tr>
+<td>Tablet (768–1199px)</td>
+<td>Collapsed (icons)</td>
+<td>Full width</td>
+<td>Hidden</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger drawer</td>
+<td>Full width</td>
+<td>Hidden (info in post header)</td>
+</tr>
+</tbody></table>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Card view default (large thumbnails)</li>
+<li>Swipe to collapse comment threads</li>
+<li>Pull-to-refresh feed</li>
+<li>Image/video: tap for full-screen, swipe gallery</li>
+<li>Voting: tap arrows (no swipe-to-vote by default)</li>
+<li>Share sheet integration</li>
+<li>Compact mode option for data saving</li>
+<li>NSFW blur (tap to reveal)</li>
+</ul>
+<h3>Old Reddit (old.reddit.com)</h3>
+<ul>
+<li>Legacy desktop layout, still actively used</li>
+<li>No right sidebar panels — sidebar is traditional HTML</li>
+<li>Classic threaded comments</li>
+<li>Custom CSS per subreddit (unique visual themes)</li>
+<li>Preferred by power users for density and performance</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Post</th>
+<th>Comment</th>
+<th>Vote</th>
+<th>Moderate</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>✅ (public subreddits)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>New User (&lt; thresholds)</td>
+<td>✅</td>
+<td>Limited (some subreddits require min karma/age)</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Regular User</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Reddit Premium</td>
+<td>✅ (no ads)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Approved User (per sub)</td>
+<td>✅</td>
+<td>✅ (in restricted subs)</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Moderator (per sub)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own subreddits (remove, ban, flair, sticky, lock, wiki)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Admin (Reddit employee)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>All subreddits</td>
+<td>✅ (site-wide policy, suspensions, content policy)</td>
+</tr>
+</tbody></table>
+<h3>Subreddit Types</h3>
+<pre><code>Public: anyone can view and post
+Restricted: anyone can view, only approved users can post
+Private: invitation only, hidden from search
+NSFW: age-gated, hidden from r/all by default
+Quarantined: warning gate, restricted discovery (controversial content)
+</code></pre>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

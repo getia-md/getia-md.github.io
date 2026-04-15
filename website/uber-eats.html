@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber Eats — IA.md | getIA.md</title>
+  <meta name="description" content="Food ordering. Quick commerce, restaurant discovery. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=ubereats.com&sz=64" alt="Uber Eats" onerror="this.parentElement.textContent='U'">
+      </div>
+      <h1 class="detail-brand-name">Uber Eats</h1>
+      <p class="detail-brand-tagline">Food ordering. Quick commerce, restaurant discovery.</p>
+      <span class="detail-category-badge">E-Commerce</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/uber-eats/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://ubereats.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/uber-eats/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Uber Eats — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Uber Eats is Uber&#39;s food and grocery delivery platform, leveraging Uber&#39;s existing driver network and mapping infrastructure. The mental model is <strong>the Uber of food</strong> — tap to browse, order, and track delivery in real-time with the same reliability and map experience as ride-hailing. Uber Eats differentiates through its integration with the Uber super app (rides + eats in one app), Uber One membership (combined ride + delivery subscription), live activity tracking (real-time driver GPS), restaurant Eats Pass, grocery delivery partnerships, and a strong international presence. The platform also serves merchants via Uber Direct (white-label delivery API).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Address / Delivery Location
+│   ├── Delivery / Pickup / Dine-In Toggle
+│   ├── Search Bar (&quot;Food, groceries, drinks, etc.&quot;)
+│   ├── Category Quick Filters (horizontal scroll)
+│   │   ├── Deals, Pizza, Burgers, Asian, Mexican, Desserts
+│   │   ├── Grocery, Convenience, Alcohol, Pharmacy
+│   │   └── &quot;See All&quot; (full category list)
+│   ├── Featured Sections
+│   │   ├── Uber One Members Save
+│   │   ├── $0 Delivery Fee
+│   │   ├── Popular Near You
+│   │   ├── Today&#39;s Offers
+│   │   ├── New on Uber Eats
+│   │   ├── Under 30 Minutes
+│   │   ├── Highly Rated
+│   │   ├── Picked for You
+│   │   └── National Brands
+│   └── Restaurant/Store Cards
+│       ├── Image, Name, Rating, Delivery Time
+│       ├── Delivery Fee
+│       ├── Uber One Badge
+│       └── Offer Badge (buy 1 get 1, % off)
+├── Search / Browse
+│   ├── Results (restaurants + specific dishes)
+│   ├── Filters
+│   │   ├── Sort (Most Popular, Rating, Delivery Time, Price)
+│   │   ├── Price Range ($-$$$$)
+│   │   ├── Max Delivery Fee
+│   │   ├── Dietary (Vegan, Vegetarian, Gluten-Free, Halal)
+│   │   ├── Rating (4.5+)
+│   │   ├── Uber One (eligible)
+│   │   └── Deals
+│   └── Related Searches
+├── Restaurant / Store Page
+│   ├── Header (photo, name, rating, delivery time/fee, distance)
+│   ├── Promotions Bar (active deals)
+│   ├── Info (hours, address, ratings breakdown)
+│   ├── Menu Categories (sticky scrollable tabs)
+│   ├── Menu Items
+│   │   ├── Item Card (name, description, price, image)
+│   │   └── Item Detail Sheet
+│   │       ├── Image
+│   │       ├── Description
+│   │       ├── Required Choices
+│   │       ├── Optional Add-Ons
+│   │       ├── Special Instructions
+│   │       ├── Quantity (+/-)
+│   │       └── Add to Cart (showing total price)
+│   ├── Previously Ordered (if returning customer)
+│   └── Ratings &amp; Reviews
+├── Cart (Bottom Drawer / Sidebar)
+│   ├── Restaurant Name
+│   ├── Items (edit quantity, remove, customize)
+│   ├── Add More Items (return to menu)
+│   ├── Promotions / Promo Code
+│   ├── Subtotal + Delivery Fee + Service Fee + Tax
+│   └── Go to Checkout
+├── Checkout
+│   ├── Delivery Address + Drop-off Options
+│   │   ├── Meet at Door
+│   │   ├── Leave at Door (+ photo confirmation)
+│   │   ├── Meet Outside
+│   │   └── Delivery Notes
+│   ├── Delivery Time (ASAP / Schedule)
+│   ├── Priority Delivery Option (extra cost for faster)
+│   ├── Payment (cards, Apple Pay, Google Pay, PayPal, Uber Cash, Venmo)
+│   ├── Tip (pre/post delivery, suggested amounts)
+│   ├── Price Breakdown
+│   │   ├── Subtotal
+│   │   ├── Delivery Fee
+│   │   ├── Service Fee
+│   │   ├── Tax
+│   │   ├── Tip
+│   │   └── Total
+│   ├── Uber One Savings (if member)
+│   └── Place Order
+├── Order Tracking (Live Activity)
+│   ├── Status Timeline
+│   │   ├── Order Confirmed
+│   │   ├── Restaurant Preparing
+│   │   ├── Driver Picking Up
+│   │   ├── On the Way (live map with route)
+│   │   └── Delivered (photo proof)
+│   ├── Live Map (real-time driver location, animated route)
+│   ├── ETA (dynamic, updates based on traffic)
+│   ├── Driver Info (name, photo, vehicle, rating)
+│   ├── Contact Driver (call, message)
+│   ├── Contact Restaurant
+│   ├── Share ETA (with friends/family)
+│   ├── Order Details
+│   └── Cancel Order (with policy info)
+├── Orders
+│   ├── Active Orders
+│   ├── Past Orders
+│   ├── Order Detail (receipt, rating, help)
+│   ├── Reorder
+│   ├── Rate Order (thumbs up/down + specific feedback tags)
+│   ├── Rate Driver
+│   └── Get Help (missing items, wrong order, late delivery)
+├── Uber One
+│   ├── Benefits ($0 delivery fee, reduced service fee, special offers, 5% savings on rides)
+│   ├── Plan (monthly / annual)
+│   ├── Eligible Restaurants
+│   └── Manage Membership
+├── Grocery
+│   ├── Partner Stores (local grocery, convenience)
+│   ├── Department Browse
+│   ├── Product Search
+│   ├── Substitution Preferences
+│   └── Large Order Support
+├── Account
+│   ├── Addresses
+│   ├── Wallet / Payment Methods
+│   ├── Uber Cash &amp; Credits
+│   ├── Promotions &amp; Offers
+│   ├── Uber One Membership
+│   ├── Order History
+│   ├── Favorites (restaurants)
+│   ├── Business Profile (Uber for Business)
+│   ├── Privacy &amp; Settings
+│   └── Help
+└── Uber App Integration
+    ├── Rides Tab (ride-hailing)
+    ├── Eats Tab (food delivery — this IA)
+    ├── Grocery Tab
+    ├── Uber One (cross-product)
+    └── Wallet (shared across Uber products)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Sticky</td>
+<td>Uber Eats logo, delivery/pickup toggle, address selector, search, cart, profile</td>
+</tr>
+<tr>
+<td><strong>Category Chips</strong></td>
+<td>Horizontal scroll below header</td>
+<td>Cuisine filters + verticals (grocery, convenience)</td>
+</tr>
+<tr>
+<td><strong>Restaurant Menu</strong></td>
+<td>Sticky category tabs</td>
+<td>Auto-scroll to section, highlight active category</td>
+</tr>
+<tr>
+<td><strong>Cart</strong></td>
+<td>Floating bottom bar (mobile) or right sidebar (desktop)</td>
+<td>Shows item count + total, tap to expand</td>
+</tr>
+<tr>
+<td><strong>Bottom Nav (mobile app)</strong></td>
+<td>Fixed bottom tabs</td>
+<td>Home, Browse, Orders, Account</td>
+</tr>
+<tr>
+<td><strong>Live Activity</strong></td>
+<td>iOS Dynamic Island / Lock Screen / notification</td>
+<td>Persistent tracking without opening app</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Restaurant</td>
+<td>name, image, cuisine[], rating, num_ratings, delivery_time, delivery_fee, distance, uber_one_eligible, hours, promotions[]</td>
+<td>has Menu</td>
+</tr>
+<tr>
+<td>MenuCategory</td>
+<td>name, items[]</td>
+<td>belongs to Restaurant</td>
+</tr>
+<tr>
+<td>MenuItem</td>
+<td>name, description, price, image, customization_groups[]</td>
+<td>belongs to MenuCategory</td>
+</tr>
+<tr>
+<td>CustomizationGroup</td>
+<td>name, required, max_select, options[]</td>
+<td>belongs to MenuItem</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>id, items[], status, total, delivery_address, driver, restaurant, timestamps, tip, fees</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>name, photo, rating, vehicle_type, license_plate, location (live)</td>
+<td>assigned to Order</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (thumbs up/down), tags[], text</td>
+<td>belongs to Order</td>
+</tr>
+<tr>
+<td>UberOne</td>
+<td>plan, status, savings_total, renewal_date</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Promotion</td>
+<td>code, type, value, conditions, auto_applied</td>
+<td>applied to Order</td>
+</tr>
+</tbody></table>
+<h3>Order Status</h3>
+<pre><code>placed → confirmed → preparing → driver_assigned → driver_en_route_to_restaurant → driver_at_restaurant → driver_picking_up → on_the_way → near_you → delivered
+</code></pre>
+<h2>User Flows</h2>
+<h3>Order Food</h3>
+<pre><code>Open Uber app → Eats tab → Search or browse → Select restaurant → Menu → Add items (customize) → Cart → Checkout → Tip + payment → Place order → Track on map → Delivered (photo proof) → Rate food + driver
+</code></pre>
+<h3>Live Tracking</h3>
+<pre><code>Order placed → Status: preparing → Driver assigned (see name/photo) → Map shows driver going to restaurant → Pickup → Map shows driver driving to you → Near you notification → Delivered → Photo at door → Rate
+</code></pre>
+<h3>Uber One Checkout Savings</h3>
+<pre><code>Add items → Cart shows: Delivery Fee $4.99 → Uber One Applied: -$4.99 → Service Fee Reduced → Total Savings: $7.48 → &quot;Saved with Uber One&quot; badge
+</code></pre>
+<h3>Schedule Order</h3>
+<pre><code>Restaurant page → Cart → Checkout → Delivery Time: Schedule → Pick date + time window → Place order → Order confirmed for scheduled time → Auto-prepared and delivered at scheduled time
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/search?q=:query               → Search Results
+/store/:storeSlug/:storeId     → Restaurant/Store Page
+/category/:slug                → Category Browse
+/checkout                      → Checkout
+/orders                        → Order History
+/orders/:id                    → Order Detail
+/orders/:id/tracking           → Live Tracking
+/uber-one                      → Uber One
+/feed                          → Browse / Discovery
+/account                       → Account
+/account/wallet                → Payment Methods
+/account/addresses             → Saved Addresses
+/account/promotions            → Promotions
+/help                          → Help Center
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Type</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cuisine</td>
+<td>Multi-select chips</td>
+<td>Pizza, Sushi, Mexican, Indian, Chinese, Thai, etc.</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Single select</td>
+<td>Most Popular, Rating, Delivery Time, Price</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>Chips</td>
+<td>$, $$, $$$, $$$$</td>
+</tr>
+<tr>
+<td>Max Delivery Fee</td>
+<td>Slider</td>
+<td>$0 - $10+</td>
+</tr>
+<tr>
+<td>Rating</td>
+<td>Threshold</td>
+<td>4.5+</td>
+</tr>
+<tr>
+<td>Dietary</td>
+<td>Multi-select</td>
+<td>Vegetarian, Vegan, Gluten-Free, Halal</td>
+</tr>
+<tr>
+<td>Uber One</td>
+<td>Toggle</td>
+<td>Members-only deals</td>
+</tr>
+<tr>
+<td>Deals</td>
+<td>Toggle</td>
+<td>Has active offers</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Home</th>
+<th>Restaurant</th>
+<th>Cart</th>
+<th>Tracking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>Grid cards, search in header</td>
+<td>Menu + cart sidebar</td>
+<td>Right sidebar</td>
+<td>Map + details side by side</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>Grid 2-3 cols</td>
+<td>Full menu, floating cart</td>
+<td>Slide-over</td>
+<td>Full page map</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Uber Eats app (primary); web: vertical cards</td>
+<td>Sticky menu tabs, bottom cart bar</td>
+<td>Bottom sheet</td>
+<td>Full-screen map + Live Activity (iOS)</td>
+</tr>
+</tbody></table>
+<h3>Uber Eats-Specific UX</h3>
+<ul>
+<li><strong>Uber super app integration</strong>: one app for rides + eats + grocery, shared wallet and account</li>
+<li><strong>Live Activity (iOS)</strong>: order tracking on Lock Screen and Dynamic Island</li>
+<li><strong>Photo proof of delivery</strong>: driver takes photo when leaving at door</li>
+<li><strong>Driver tip adjustment</strong>: can increase/decrease tip after delivery</li>
+<li><strong>Share ETA</strong>: share live tracking link with friends/family</li>
+<li><strong>Priority Delivery</strong>: pay extra for faster delivery</li>
+<li><strong>Uber One cross-product</strong>: membership benefits across rides + eats</li>
+<li><strong>Item-level feedback</strong>: report specific missing or incorrect items</li>
+<li><strong>Previously ordered</strong>: shows past items from a restaurant for quick reorder</li>
+<li><strong>Real-time map</strong>: leverages Uber&#39;s mapping infrastructure for accurate ETAs</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Order</th>
+<th>Track</th>
+<th>Review</th>
+<th>Manage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>— (login required)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>User</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own orders</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Uber One</td>
+<td>✅</td>
+<td>✅ (free delivery)</td>
+<td>Own orders</td>
+<td>✅</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>—</td>
+<td>Accept deliveries</td>
+<td>Active deliveries</td>
+<td>—</td>
+<td>Own schedule/earnings</td>
+</tr>
+<tr>
+<td>Merchant</td>
+<td>—</td>
+<td>Receive/manage</td>
+<td>Update status</td>
+<td>Respond to reviews</td>
+<td>Restaurant Manager</td>
+</tr>
+<tr>
+<td>Business Admin</td>
+<td>✅</td>
+<td>✅ (business account)</td>
+<td>Team orders</td>
+<td>—</td>
+<td>Team settings</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

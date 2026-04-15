@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram — IA.md | getIA.md</title>
+  <meta name="description" content="Cloud messaging. Channels, bots, file sharing, stickers. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=telegram.org&sz=64" alt="Telegram" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Telegram</h1>
+      <p class="detail-brand-tagline">Cloud messaging. Channels, bots, file sharing, stickers.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/telegram/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://telegram.org" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/telegram/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Telegram — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A cloud-based messaging platform emphasizing speed, security, and power-user features. Telegram&#39;s mental model is a <strong>Swiss Army knife of messaging</strong> — it combines personal chats, group chats (up to 200K members), channels (one-to-many broadcast), bots (programmable automation), file sharing (up to 2GB per file), and a full bot API platform. Key differentiators: cloud-native sync (all messages on server, not just phone), Secret Chats (end-to-end encrypted), Telegram Channels (broadcast to unlimited subscribers), inline bots, custom sticker packs, Telegram Premium (extra features), Topics in groups (forum-style threading), no file size limit (up to 2GB), and Telegram Mini Apps (web apps inside Telegram).</p>
+<h2>Site Map</h2>
+<pre><code>├── Chat List (Main Screen)
+│   ├── All Chats (sorted by recent)
+│   ├── Chat Folders (user-created tabs)
+│   │   ├── Default Folders: All Chats, Personal, Channels, Groups, Bots
+│   │   ├── Custom Folders (filter by type, include/exclude chats)
+│   │   └── Folder Tabs (horizontal, swipeable)
+│   ├── Pinned Chats (per folder)
+│   ├── Archived Chats
+│   ├── Saved Messages (self-chat, cloud clipboard)
+│   ├── Search (messages, chats, global)
+│   └── Filter: Unread, Mentions
+├── Chat View (1:1 / Group)
+│   ├── Header
+│   │   ├── Name, Avatar, Online/Last Seen
+│   │   ├── Members Count (group)
+│   │   ├── Voice/Video Call Button
+│   │   ├── Search in Chat
+│   │   └── More (⋮) Menu
+│   ├── Message Stream
+│   │   ├── Text Messages (Markdown formatting supported)
+│   │   ├── Media (photos, videos, GIFs, stickers, animations)
+│   │   ├── Files (any type, up to 2GB each)
+│   │   ├── Voice Messages (waveform)
+│   │   ├── Video Messages (round video bubbles)
+│   │   ├── Polls (regular, quiz mode)
+│   │   ├── Location (static + live)
+│   │   ├── Contact Cards
+│   │   ├── Forwarded Messages (with source attribution)
+│   │   ├── Reactions (emoji, customizable per group)
+│   │   ├── Reply (swipe right to quote)
+│   │   ├── Pinned Messages (multiple, scroll through)
+│   │   ├── Threads (reply to specific message, opens thread)
+│   │   ├── Bot Messages (inline keyboards, buttons)
+│   │   ├── Mini App Buttons (open web app)
+│   │   ├── Spoiler Text (tap to reveal)
+│   │   ├── Custom Emoji (animated, Telegram Premium)
+│   │   ├── Translations (inline, tap to translate)
+│   │   ├── Scheduled Messages
+│   │   ├── Silent Messages (no notification)
+│   │   └── Slow Mode Indicator (group setting)
+│   ├── Message Input
+│   │   ├── Text Composer (Markdown support)
+│   │   ├── Emoji / Sticker / GIF Picker (tabs)
+│   │   │   ├── Emoji (custom emoji packs for Premium)
+│   │   │   ├── Stickers (searchable, animated, video stickers)
+│   │   │   └── GIFs (inline search via @gif bot)
+│   │   ├── Attach: Photo, File, Location, Contact, Poll, Voice/Video Note
+│   │   ├── Bot Commands (/ slash commands)
+│   │   ├── Inline Bots (@botname query)
+│   │   ├── Schedule Send
+│   │   ├── Send Without Sound
+│   │   └── Send When Online
+│   └── Message Actions (long-press)
+│       ├── Reply, Forward, Copy, Edit, Delete, Pin, Translate
+│       ├── Select Multiple
+│       ├── Save to Saved Messages
+│       ├── Set Reminder
+│       └── Report
+├── Group Features
+│   ├── Group Info
+│   │   ├── Name, Avatar, Description
+│   │   ├── Members List (admin/member/restricted/banned)
+│   │   ├── Shared Media / Files / Links / Audio / Voice
+│   │   ├── Notifications (mute options: 1h, 8h, 2d, forever, custom)
+│   │   ├── Permissions (per member + default)
+│   │   ├── Invite Link (with member limit, expiry, approval)
+│   │   └── Event Log (admin actions history)
+│   ├── Topics (Forum Mode)
+│   │   ├── General Topic (default)
+│   │   ├── Custom Topics (icon, name)
+│   │   ├── Topic List View (like a forum)
+│   │   └── Per-topic Message Thread
+│   ├── Admin Rights (granular)
+│   │   ├── Change Info, Delete Messages, Ban Users
+│   │   ├── Invite via Link, Pin Messages
+│   │   ├── Manage Video Chats, Manage Topics
+│   │   ├── Add Admins, Remain Anonymous
+│   │   └── Custom Admin Title
+│   └── Slow Mode (limit: 30s to 1h between messages per user)
+├── Channel
+│   ├── Channel Page
+│   │   ├── Name, Avatar, Description, Subscriber Count
+│   │   ├── Join / Leave Button
+│   │   ├── Post Feed (admin broadcasts)
+│   │   ├── Comments (linked discussion group)
+│   │   ├── Reactions (emoji)
+│   │   ├── Views Count (per post)
+│   │   ├── Share Post (forward)
+│   │   └── Post Scheduling
+│   ├── Channel Admin
+│   │   ├── Post (text, media, files, polls, silent)
+│   │   ├── Edit / Delete Posts
+│   │   ├── Pin Post
+│   │   ├── Statistics (subscriber growth, views, shares, engagement)
+│   │   ├── Discussion Group (link group for comments)
+│   │   └── Manage Admins
+│   └── Channel Types: Public (@username) / Private (invite link)
+├── Calls
+│   ├── 1:1 Voice/Video Call
+│   ├── Group Voice Chat (unlimited participants)
+│   ├── Video Conference (screen share, up to 1000 viewers)
+│   ├── Screen Share
+│   ├── Picture-in-Picture
+│   └── Schedule Call
+├── Bots
+│   ├── Bot Chat (interact via commands or buttons)
+│   ├── Inline Bots (@bot query → inline results in any chat)
+│   ├── Bot Keyboards (custom reply keyboards)
+│   ├── Inline Keyboards (buttons under bot messages)
+│   ├── Bot Payments (in-chat payment processing)
+│   ├── Bot Games (HTML5 games within Telegram)
+│   ├── Mini Apps (WebApp) — full web apps in Telegram
+│   │   ├── Launched from bot button or attachment menu
+│   │   ├── Access to Telegram user data (with permission)
+│   │   └── Payment integration
+│   └── Bot API (for developers: create bots)
+├── Saved Messages
+│   ├── Bookmark any message from any chat
+│   ├── Self-notes (type to yourself)
+│   ├── Tags (organize saved messages)
+│   ├── Forward here as personal clipboard
+│   └── Cross-device sync
+├── People Nearby (optional, location-based)
+│   ├── Users Nearby
+│   ├── Groups Nearby
+│   └── Create Local Group
+├── Stories
+│   ├── Post Story (photo, video, text)
+│   ├── Story Viewer (contacts&#39; stories)
+│   ├── Privacy (close friends, contacts, everyone)
+│   ├── Reactions / Replies
+│   └── Stealth Mode (view without being seen — Premium)
+├── Search
+│   ├── In-Chat Search (messages in current chat)
+│   ├── Global Search
+│   │   ├── Chats &amp; Contacts
+│   │   ├── Public Channels / Groups
+│   │   ├── Messages (across all chats)
+│   │   └── By Date Navigator (calendar)
+│   └── Inline Search Filters (from:, in:, by date)
+├── Telegram Premium
+│   ├── 4GB File Upload (vs 2GB)
+│   ├── Faster Downloads
+│   ├── Double Limits (groups, pins, saved GIFs, etc.)
+│   ├── Custom Emoji
+│   ├── Animated Profile Photo
+│   ├── Premium Stickers
+│   ├── Chat Management (folders, pinned chats)
+│   ├── Voice-to-Text (transcribe voice messages)
+│   ├── Translation (real-time message translation)
+│   ├── Story Stealth Mode
+│   ├── No Ads in Channels
+│   ├── Custom App Icons
+│   └── Premium Badge
+├── Settings
+│   ├── Edit Profile (name, bio, username, photo)
+│   ├── My Account
+│   │   ├── Phone Number (change)
+│   │   ├── Username (@handle)
+│   │   ├── Bio
+│   │   └── Premium
+│   ├── Privacy &amp; Security
+│   │   ├── Phone Number (who can see)
+│   │   ├── Last Seen &amp; Online
+│   │   ├── Profile Photo (who can see)
+│   │   ├── Forwarded Messages (link to account or not)
+│   │   ├── Calls (who can call)
+│   │   ├── Groups (who can add you)
+│   │   ├── Voice Messages (who can send — Premium)
+│   │   ├── Blocked Users
+│   │   ├── Passcode Lock (app-level)
+│   │   ├── Two-Step Verification (cloud password)
+│   │   ├── Active Sessions (see all logged-in devices)
+│   │   ├── Auto-Delete Messages (default timer)
+│   │   └── Account Self-Destruct (1/3/6/12 months of inactivity)
+│   ├── Data and Storage
+│   │   ├── Storage Usage (per chat breakdown)
+│   │   ├── Auto-Download (Wi-Fi / Mobile / Roaming per type)
+│   │   ├── Data Saving (call quality, preview)
+│   │   ├── Proxy Settings (SOCKS5, MTProto)
+│   │   └── Reduce Data Usage
+│   ├── Chat Settings
+│   │   ├── Chat Folders (manage)
+│   │   ├── Theme (light/dark/custom)
+│   │   ├── Chat Wallpaper (per chat or global)
+│   │   ├── Chat Background (animated)
+│   │   ├── Font Size
+│   │   ├── Bubble Style
+│   │   ├── Animation Playback
+│   │   └── Raise to Speak (voice messages)
+│   ├── Notification Settings
+│   │   ├── Private Chats / Groups / Channels (separate)
+│   │   ├── Sound, Vibration, Priority
+│   │   ├── Badge Counter
+│   │   └── In-App Notifications
+│   ├── Devices (active sessions, terminate others)
+│   ├── Language
+│   ├── Power Saving
+│   └── Telegram Tips / FAQ
+├── Secret Chats (E2E Encrypted)
+│   ├── Not stored on cloud (device-only)
+│   ├── Self-destruct timer
+│   ├── No forwarding
+│   ├── No screenshots (or notify)
+│   └── Encryption indicator
+└── Telegram Desktop / Web
+    ├── Multi-platform (Windows, macOS, Linux, Web)
+    ├── Fully synced with mobile
+    └── Simultaneous sessions (no &quot;primary device&quot; concept)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Chat List</strong></td>
+<td>Main screen, scrollable</td>
+<td>All chats sorted by recency, swipeable folder tabs at top</td>
+</tr>
+<tr>
+<td><strong>Folder Tabs</strong></td>
+<td>Horizontal tabs above chat list</td>
+<td>All Chats, Personal, Groups, Channels, Bots, Custom</td>
+</tr>
+<tr>
+<td><strong>Chat Header</strong></td>
+<td>Fixed top in conversation</td>
+<td>Name, avatar, online status, call buttons, search, menu</td>
+</tr>
+<tr>
+<td><strong>Input Bar</strong></td>
+<td>Fixed bottom in conversation</td>
+<td>Text, emoji/sticker/GIF tabs, attach, voice/video note</td>
+</tr>
+<tr>
+<td><strong>Hamburger Menu</strong></td>
+<td>Left drawer (mobile)</td>
+<td>Saved Messages, Contacts, Settings, Calls, People Nearby, New Group/Channel</td>
+</tr>
+<tr>
+<td><strong>Message Actions</strong></td>
+<td>Long-press on message</td>
+<td>Reply, Edit, Forward, Delete, Pin, React, Copy, Select, Translate</td>
+</tr>
+<tr>
+<td><strong>Desktop Layout</strong></td>
+<td>Three-panel</td>
+<td>Chat list (left) + Chat view (center) + Info panel (right, toggleable)</td>
+</tr>
+</tbody></table>
+<h3>Desktop Layout</h3>
+<pre><code>[Chat List (320px)]  |  [Chat View (flex)]  |  [Info Panel (optional, 320px)]
+─────────────────────────────────────────────────────────────
+🔍 Search            |  Chat Name          |  Profile Photo
+─────────────        |  ───────────────    |  Phone: +1...
+📌 Pinned Chat       |  [Messages...]      |  Username: @...
+Chat 1               |                     |  Bio: ...
+Chat 2               |                     |  ──────────
+Channel 1            |                     |  Shared Media
+Bot 1                |                     |  [📷][📷][📷]
+...                  |  [Input Bar]        |  Members (1234)
+─────────────        |                     |
+[☰ Menu]             |                     |
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chat</td>
+<td>type (private/group/supergroup/channel/bot/secret/saved), name, avatar, last_message, unread_count, pinned (bool), muted_until, folder_ids[], archived (bool)</td>
+<td>has many Messages, Members</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>body (Markdown), type (text/photo/video/animation/sticker/voice/video_note/document/audio/location/poll/contact/game/invoice), sender, timestamp, edited (bool), views (channels), forward_from, reply_to, reactions[], pinned (bool), scheduled (bool), silent (bool), spoiler (bool)</td>
+<td>belongs to Chat and User</td>
+</tr>
+<tr>
+<td>User</td>
+<td>id, first_name, last_name, username, phone, bio, photo, last_seen, is_premium, is_bot</td>
+<td>has many Chats</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>title, photo, description, members_count (up to 200K), permissions[], invite_link, slow_mode, topics_enabled, linked_channel</td>
+<td>type of Chat</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td>name, icon (emoji), message_thread_id, pinned (bool), closed (bool)</td>
+<td>belongs to Group (forum mode)</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>title, photo, description, subscriber_count, username (@public), linked_group, sign_posts (show author)</td>
+<td>type of Chat, has many Posts</td>
+</tr>
+<tr>
+<td>Bot</td>
+<td>username, description, commands[], inline_mode (bool), webapp_url</td>
+<td>type of User</td>
+</tr>
+<tr>
+<td>Sticker</td>
+<td>emoji, set_name, file_id, type (static/animated/video), is_premium</td>
+<td>belongs to StickerSet</td>
+</tr>
+<tr>
+<td>StickerSet</td>
+<td>name, title, stickers[], creator</td>
+<td>many-to-many with Users (installed)</td>
+</tr>
+<tr>
+<td>Poll</td>
+<td>question, options[], type (regular/quiz), allows_multiple, correct_option (quiz), anonymous (bool), votes[]</td>
+<td>belongs to Message</td>
+</tr>
+<tr>
+<td>File</td>
+<td>file_name, mime_type, file_size (up to 2GB/4GB Premium), file_id, thumbnail</td>
+<td>belongs to Message</td>
+</tr>
+<tr>
+<td>Reaction</td>
+<td>emoji, custom_emoji_id, user</td>
+<td>belongs to Message</td>
+</tr>
+<tr>
+<td>SecretChat</td>
+<td>encryption_key, ttl (self-destruct timer), layer</td>
+<td>1:1 only, device-specific</td>
+</tr>
+<tr>
+<td>MiniApp</td>
+<td>name, url, description, photo</td>
+<td>launched by Bot</td>
+</tr>
+<tr>
+<td>Story</td>
+<td>media, caption, created_at, expires_at (24/48h), privacy, viewers[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name, icon, include_chats[], exclude_chats[], filters (groups/channels/bots/contacts/non_contacts)</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Session</td>
+<td>device, ip, location, app_version, created_at, last_active</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Message Formatting (Markdown-like)</h3>
+<pre><code>**bold** | *italic* | __underline__ | ~~strikethrough~~ | `code` | ```pre``` | ||spoiler||
+[text](url) — inline link | &gt; quote
+</code></pre>
+<h3>Group Types</h3>
+<pre><code>Basic Group: up to 200 members, limited admin control
+Supergroup: up to 200K members, full admin control, topics, slow mode
+Broadcast Channel: unlimited subscribers, admins post only
+</code></pre>
+<h2>User Flows</h2>
+<h3>Send Message</h3>
+<pre><code>Chat List → Select Chat → Type Message → Send → ✓ (sent to server) → ✓✓ (delivered, 1:1 only)
+</code></pre>
+<h3>Share File</h3>
+<pre><code>Chat → Attach (📎) → File → Browse → Select (up to 2GB) → Send → Recipient Downloads
+</code></pre>
+<h3>Create Channel</h3>
+<pre><code>Hamburger → New Channel → Name + Description → Type (Public @username / Private link) → Publish First Post
+</code></pre>
+<h3>Bot Interaction</h3>
+<pre><code>Search → Find Bot → Start → Bot Sends Welcome + Commands → Use Inline Keyboard → Bot Processes → Response
+</code></pre>
+<h3>Forum Topics (Group)</h3>
+<pre><code>Open Group → Topics View → Select Topic → Read Thread → Reply in Topic → Create New Topic
+</code></pre>
+<h3>Scheduled Message</h3>
+<pre><code>Chat → Write Message → Long-press Send → Schedule Message → Pick Date/Time → Scheduled (clock icon)
+</code></pre>
+<h3>Secret Chat</h3>
+<pre><code>Contact → More → Start Secret Chat → Device-to-Device Encryption → Set Timer → Messages Self-Destruct
+</code></pre>
+<h3>Use Mini App</h3>
+<pre><code>Bot Chat → Tap &quot;Open App&quot; Button → Mini App Loads (WebView) → Interact → Complete Action → Return to Chat
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># Telegram Deep Links
+t.me/:username                    → User/Bot/Channel Profile
+t.me/:username?start=:param       → Bot Start with Parameter
+t.me/joinchat/:hash               → Group/Channel Invite Link
+t.me/+:hash                       → Invite Link (new format)
+t.me/:channel/:postId             → Channel Post
+t.me/addstickers/:setName         → Add Sticker Set
+t.me/addemoji/:setName            → Add Custom Emoji Set
+t.me/setlanguage/:langCode        → Set Language
+t.me/addtheme/:themeName          → Add Theme
+t.me/proxy?server=:s&amp;port=:p      → Add Proxy
+t.me/socks?server=:s&amp;port=:p      → Add SOCKS5 Proxy
+
+# Telegram Web
+web.telegram.org                  → Telegram Web App (K)
+webk.telegram.org                 → Telegram Web K (newer)
+webz.telegram.org                 → Telegram Web Z
+
+# Bot API
+api.telegram.org/bot:token/:method → Bot API Endpoint
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Chats, Contacts, Public Channels/Groups/Bots, Messages</td>
+<td>Chat type, Date, From</td>
+<td>Relevance, Date</td>
+</tr>
+<tr>
+<td>In-Chat</td>
+<td>Messages in current chat</td>
+<td>From (person), Date (calendar picker), Type (media/file/link/voice)</td>
+<td>Chronological (jump to result)</td>
+</tr>
+<tr>
+<td>Channels</td>
+<td>Public channels</td>
+<td>Category, Language</td>
+<td>Subscribers, Activity</td>
+</tr>
+<tr>
+<td>Stickers</td>
+<td>Sticker sets</td>
+<td>Trending, Installed, Search by Emoji</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Bots</td>
+<td>Bot discovery</td>
+<td>Category</td>
+<td>Popularity</td>
+</tr>
+</tbody></table>
+<h3>Search Syntax</h3>
+<pre><code>in:chat_name         → search within specific chat
+from:username        → messages from specific person
+by date              → calendar navigator to jump to date
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Three-panel: chat list + chat + info</td>
+<td>All panels visible, resizable</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Two-panel: chat list + chat</td>
+<td>Info as overlay</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Single panel, stack navigation</td>
+<td>Chat List → Chat → Info (push)</td>
+</tr>
+</tbody></table>
+<h3>Multi-Platform</h3>
+<ul>
+<li>Native apps: iOS, Android, macOS, Windows, Linux</li>
+<li>Web apps: WebK, WebZ (feature-complete browser versions)</li>
+<li>All sessions fully synchronized (cloud-native)</li>
+<li>No &quot;primary device&quot; — any device can work independently</li>
+<li>Active sessions visible and manageable from any client</li>
+</ul>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Swipe right to reply</li>
+<li>Swipe left to archive</li>
+<li>Long-press for message actions</li>
+<li>Voice message: hold to record, release to send</li>
+<li>Video message (round bubble): tap and hold video note button</li>
+<li>Double-tap to react</li>
+<li>Raise to speak (proximity sensor activates voice recording)</li>
+<li>Notification inline reply</li>
+<li>Widget (Android): chat shortcuts</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Send</th>
+<th>Call</th>
+<th>Manage</th>
+<th>Bot/Mini App</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User</td>
+<td>✅ (joined chats + public channels)</td>
+<td>✅</td>
+<td>✅ (1:1 + group voice)</td>
+<td>Own chats</td>
+<td>✅ (interact)</td>
+</tr>
+<tr>
+<td>Premium User</td>
+<td>✅ + no channel ads, voice-to-text, translation</td>
+<td>✅ + custom emoji, 4GB files</td>
+<td>✅</td>
+<td>✅ + more folders, pins</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Group Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Granular: edit info, delete, ban, pin, invite, manage topics</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Channel Admin</td>
+<td>✅</td>
+<td>✅ (broadcast to subscribers)</td>
+<td>—</td>
+<td>Post, edit, delete, pin, manage admins, view stats</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Bot</td>
+<td>Read messages sent to bot</td>
+<td>Send messages, inline results, keyboards</td>
+<td>—</td>
+<td>Manage via Bot API</td>
+<td>Is the app</td>
+</tr>
+<tr>
+<td>Anonymous Admin</td>
+<td>✅</td>
+<td>✅ (posts as &quot;Admin&quot; or channel name)</td>
+<td>✅</td>
+<td>Full admin without showing identity</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Privacy Features</h3>
+<ul>
+<li>Cloud chats: encrypted client-server (TLS + MTProto)</li>
+<li>Secret chats: end-to-end encrypted (MTProto 2.0)</li>
+<li>Self-destructing messages (secret chats + any chat with timer)</li>
+<li>Account self-destruct (auto-delete after inactivity)</li>
+<li>Phone number hidden by default (share via username @)</li>
+<li>Active sessions management (terminate remotely)</li>
+<li>Proxy support (SOCKS5, MTProto proxy) for censorship circumvention</li>
+<li>No ads in private chats (channel ads with Premium removal)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

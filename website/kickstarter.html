@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kickstarter — IA.md | getIA.md</title>
+  <meta name="description" content="Crowdfunding. Campaign pages, reward tiers, stretch goals. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=kickstarter.com&sz=64" alt="Kickstarter" onerror="this.parentElement.textContent='K'">
+      </div>
+      <h1 class="detail-brand-name">Kickstarter</h1>
+      <p class="detail-brand-tagline">Crowdfunding. Campaign pages, reward tiers, stretch goals.</p>
+      <span class="detail-category-badge">Marketplace</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/kickstarter/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://kickstarter.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/kickstarter/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Kickstarter — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Kickstarter is the world&#39;s largest reward-based crowdfunding platform, specifically focused on creative projects. The mental model is <strong>all-or-nothing funding</strong> — creators set a funding goal and deadline; if the goal is met, pledges are collected and rewards fulfilled; if not, no money changes hands. Kickstarter differentiates through its strict all-or-nothing model (unlike Indiegogo&#39;s flexible funding), curated project review process (projects must be approved), creative-only focus (no charity, equity, or personal causes), community engagement (updates, comments, backer interaction), and cultural influence as the launchpad for iconic products (Pebble, Exploding Kittens, Oculus). The platform takes a 5% fee on funded projects.</p>
+<h2>Site Map</h2>
+<h3>Backer Side</h3>
+<pre><code>├── Discover (Home)
+│   ├── Search Bar
+│   ├── Featured Project (hero, editor&#39;s pick)
+│   ├── Recommended for You
+│   ├── Trending Right Now
+│   ├── Nearly Funded (close to goal)
+│   ├── Just Launched (new projects)
+│   ├── Projects We Love (staff picks)
+│   ├── Categories (quick links)
+│   └── &quot;What We Do&quot; explainer (first-time visitors)
+├── Explore
+│   ├── Category Browse
+│   │   ├── Art
+│   │   ├── Comics &amp; Illustration
+│   │   ├── Design &amp; Tech
+│   │   ├── Film
+│   │   ├── Food &amp; Craft
+│   │   ├── Games (Tabletop Games, Video Games)
+│   │   ├── Music
+│   │   ├── Publishing
+│   │   └── Each with Subcategories
+│   ├── Filter: Location, Goal Amount, % Funded, &quot;Projects We Love&quot;
+│   ├── Sort: Magic (algorithm), Popularity, Newest, End Date, Most Funded, Most Backed
+│   ├── Ending Soon
+│   └── Collections (curated themed lists)
+├── Project Page (Core Experience)
+│   ├── Project Header
+│   │   ├── Video / Hero Image
+│   │   ├── Project Title
+│   │   ├── Creator (name, avatar, location)
+│   │   ├── Category / Subcategory Badge
+│   │   └── &quot;Projects We Love&quot; Badge (if selected)
+│   ├── Funding Stats Bar
+│   │   ├── Amount Pledged / Goal (progress bar)
+│   │   ├── Number of Backers
+│   │   ├── Days to Go (or &quot;Funded!&quot; / &quot;Funding Unsuccessful&quot;)
+│   │   └── % Funded
+│   ├── Pledge Button (green &quot;Back this project&quot; CTA)
+│   ├── Tabs
+│   │   ├── Campaign
+│   │   │   ├── Story (rich text, images, GIFs)
+│   │   │   ├── Risks and Challenges (required section)
+│   │   │   └── Environmental Commitments
+│   │   ├── Rewards
+│   │   │   ├── Pledge Without a Reward
+│   │   │   ├── Reward Tiers (cards)
+│   │   │   │   ├── Pledge Amount
+│   │   │   │   ├── Title &amp; Description
+│   │   │   │   ├── Includes (list of items)
+│   │   │   │   ├── Estimated Delivery
+│   │   │   │   ├── Shipping (where and how much)
+│   │   │   │   ├── Backers Count
+│   │   │   │   ├── Limited (X of Y left) — if limited
+│   │   │   │   └── [Select] Button
+│   │   │   └── Add-Ons (optional extras)
+│   │   ├── FAQ (creator-authored)
+│   │   ├── Updates (creator posts)
+│   │   │   ├── Update List
+│   │   │   ├── Backer-Only Updates (locked for non-backers)
+│   │   │   └── Comment on Updates
+│   │   └── Comments (backer discussion)
+│   │       ├── Comment Thread
+│   │       ├── Creator Responses (highlighted)
+│   │       └── Sort (newest, oldest)
+│   ├── Reward Sidebar (desktop, sticky)
+│   │   ├── All reward tiers (scrollable)
+│   │   └── &quot;Back this project&quot; CTA
+│   ├── Creator Section
+│   │   ├── Creator Bio, Location
+│   │   ├── Past Projects (track record)
+│   │   ├── Created / Backed Count
+│   │   ├── Last Login
+│   │   └── Contact Creator
+│   ├── Social Share (Twitter, Facebook, email, embed)
+│   └── Related Projects (&quot;You might also like&quot;)
+├── Pledge Flow
+│   ├── Select Reward (or &quot;Pledge without a reward&quot;)
+│   ├── Set Pledge Amount (can go above minimum)
+│   ├── Add-Ons (select optional extras)
+│   ├── Shipping Country Selection
+│   ├── Payment Information (card — charged only if funded)
+│   ├── Review Pledge
+│   └── Confirm (&quot;Remember, this is an all-or-nothing project&quot;)
+├── Backed Projects (Your Profile)
+│   ├── Backed Projects List
+│   │   ├── Status: Live / Successfully Funded / Unsuccessful / Completed
+│   │   └── Pledge Detail
+│   │       ├── Pledge Amount &amp; Reward
+│   │       ├── Estimated Delivery
+│   │       ├── Survey Status (not sent / sent / completed)
+│   │       ├── Modify/Cancel Pledge (if campaign still live)
+│   │       └── Shipping Tracking (post-campaign)
+│   ├── Saved Projects (bookmarked)
+│   ├── Recommended Projects
+│   └── Backed History (lifetime stats)
+├── Profile
+│   ├── Public Profile (bio, location, backed projects, created projects)
+│   ├── Superbacker Badge (if eligible)
+│   └── Connected Social Accounts
+├── Messages
+│   ├── Creator Messages
+│   └── Backer-to-Creator Conversations
+├── Notifications
+│   ├── Project Updates
+│   ├── Funding Milestones
+│   ├── Survey Requests
+│   ├── Reward Shipping
+│   └── Recommended Projects
+├── Account Settings
+│   ├── Profile (name, bio, avatar, location)
+│   ├── Email / Password
+│   ├── Payment Methods
+│   ├── Notification Preferences
+│   ├── Privacy Settings
+│   └── Connected Apps
+├── Help
+│   ├── How Kickstarter Works (for backers)
+│   ├── Backer FAQ
+│   ├── Creator Guidelines
+│   ├── Trust &amp; Safety
+│   ├── Community Guidelines
+│   └── Contact Support
+└── Footer
+    ├── About (company, charter, stats, press, jobs)
+    ├── Support / Education
+    ├── Arts &amp; Culture
+    └── Legal (terms, privacy, cookie policy)
+</code></pre>
+<h3>Creator Side</h3>
+<pre><code>├── Start a Project
+│   ├── Choose Category
+│   ├── Basics
+│   │   ├── Project Title
+│   │   ├── Short Blurb
+│   │   ├── Category &amp; Subcategory
+│   │   ├── Project Image
+│   │   └── Location
+│   ├── Rewards
+│   │   ├── Create Reward Tiers
+│   │   │   ├── Pledge Amount (minimum)
+│   │   │   ├── Title
+│   │   │   ├── Description
+│   │   │   ├── Items Included
+│   │   │   ├── Estimated Delivery Month
+│   │   │   ├── Shipping (destinations + costs)
+│   │   │   └── Limit Availability (optional cap)
+│   │   ├── Add-Ons (optional extras)
+│   │   └── Reorder Tiers
+│   ├── Story
+│   │   ├── Video (strongly recommended, hosted by Kickstarter)
+│   │   ├── Campaign Story (rich text editor: text, images, GIFs)
+│   │   ├── Risks and Challenges (mandatory)
+│   │   └── Environmental Commitments (optional)
+│   ├── People
+│   │   ├── Creator Profile (bio, photo, website)
+│   │   ├── Collaborators
+│   │   └── Social Links
+│   ├── Payment
+│   │   ├── Verify Identity
+│   │   ├── Bank Account (for fund transfer)
+│   │   └── Tax Information
+│   ├── Funding
+│   │   ├── Goal Amount
+│   │   ├── Campaign Duration (1-60 days, 30 recommended)
+│   │   └── Launch Date (immediate or scheduled)
+│   ├── Preview (full project page preview)
+│   └── Submit for Review (Kickstarter approval required)
+├── Creator Dashboard (post-launch)
+│   ├── Campaign Overview
+│   │   ├── Funding Progress (real-time)
+│   │   ├── Backer Count
+│   │   ├── Pledge Amount by Day (chart)
+│   │   ├── Referral Sources (internal, direct, social, external)
+│   │   ├── Pledge Distribution by Tier
+│   │   └── Video Play Rate
+│   ├── Backers
+│   │   ├── Backer List (pledge level, survey status)
+│   │   ├── Backer Detail
+│   │   ├── Export Backer Data (CSV)
+│   │   └── New Backer Notifications
+│   ├── Updates
+│   │   ├── Post Update (rich text, backer-only or public)
+│   │   ├── Update History
+│   │   └── Engagement Stats (views, likes, comments)
+│   ├── Comments (moderate, respond)
+│   ├── Messages (direct backer communication)
+│   ├── Surveys (post-campaign)
+│   │   ├── Create Survey (reward fulfillment questions)
+│   │   ├── Send to Backers
+│   │   ├── Survey Responses
+│   │   └── Address Collection (shipping addresses)
+│   ├── Post-Campaign Tools
+│   │   ├── Pledge Manager (late pledges, add-on upgrades)
+│   │   ├── Reward Fulfillment Tracking
+│   │   ├── Shipping Status
+│   │   └── Mark Rewards as Fulfilled
+│   ├── Finances
+│   │   ├── Pledged vs Collected (card failures)
+│   │   ├── Kickstarter Fee (5%)
+│   │   ├── Payment Processing Fee (3-5%)
+│   │   ├── Payout Status
+│   │   └── Tax Documentation
+│   └── Analytics
+│       ├── Traffic Sources
+│       ├── Conversion Funnel (page view → pledge)
+│       ├── Social Sharing Stats
+│       ├── Geographic Distribution
+│       └── Referrer Breakdown
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Fixed top bar (minimal)</td>
+<td>Kickstarter logo, Explore (dropdown), Start a Project, Search, Account</td>
+</tr>
+<tr>
+<td><strong>Category Nav</strong></td>
+<td>Dropdown on Explore or sidebar on browse</td>
+<td>Category list with project counts</td>
+</tr>
+<tr>
+<td><strong>Project Tabs</strong></td>
+<td>Horizontal tabs</td>
+<td>Campaign, Rewards, FAQ, Updates (count), Comments (count)</td>
+</tr>
+<tr>
+<td><strong>Reward Sidebar</strong></td>
+<td>Sticky right sidebar (desktop)</td>
+<td>All reward tiers with &quot;Select&quot; CTAs</td>
+</tr>
+<tr>
+<td><strong>Funding Progress Bar</strong></td>
+<td>Persistent on project page</td>
+<td>Green progress bar + stats (amount, backers, days left)</td>
+</tr>
+<tr>
+<td><strong>Pledge Flow</strong></td>
+<td>Step indicator</td>
+<td>Reward → Amount → Add-Ons → Shipping → Payment → Confirm</td>
+</tr>
+<tr>
+<td><strong>Creator Dashboard Nav</strong></td>
+<td>Left sidebar</td>
+<td>Overview, Backers, Updates, Comments, Messages, Surveys, Finances, Analytics</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>title, blurb, category, subcategory, goal, currency, deadline, status, location, video_url, story_html, risks_html, launched_at, funding_amount, backer_count, percent_funded</td>
+<td>belongs to Creator</td>
+</tr>
+<tr>
+<td>Creator</td>
+<td>name, bio, avatar, location, created_count, backed_count, verified, last_login, websites[]</td>
+<td>has Projects</td>
+</tr>
+<tr>
+<td>Reward</td>
+<td>title, description, pledge_amount, includes[], estimated_delivery, shipping_type, shipping_destinations[], limit, backers_count, add_ons[]</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Pledge</td>
+<td>amount, reward, status, add_ons[], shipping_address, survey_status</td>
+<td>belongs to Backer and Project</td>
+</tr>
+<tr>
+<td>Update</td>
+<td>title, body_html, is_public, likes_count, comments_count, published_at</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>body, author, likes, created_at, is_creator_response</td>
+<td>belongs to Project or Update</td>
+</tr>
+<tr>
+<td>Survey</td>
+<td>questions[], sent_count, response_count</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>AddOn</td>
+<td>name, description, price</td>
+<td>belongs to Project, added to Pledge</td>
+</tr>
+</tbody></table>
+<h3>Project Status Flow (Kickstarter-specific)</h3>
+<pre><code>draft → submitted → in_review → approved → live → funded / not_funded
+                  → rejected (with feedback → revise → resubmit)
+live → suspended (policy violation)
+funded → collecting_pledges → funds_transferred → fulfilling → completed
+</code></pre>
+<h3>Funding Model</h3>
+<ul>
+<li><strong>All-or-Nothing</strong> (only model on Kickstarter): funds collected only if goal met by deadline</li>
+<li>If goal not met: all pledges cancelled, no money charged</li>
+<li>Kickstarter fee: 5% of funds raised (only on success)</li>
+<li>Payment processing: 3% + $0.20 per pledge</li>
+</ul>
+<h3>Pledge Status</h3>
+<pre><code>active → collected (goal met) → survey_sent → survey_completed → reward_shipped → fulfilled
+active → cancelled (goal not met — no charge)
+active → cancelled_by_backer (during campaign)
+collected → refunded (creator-initiated)
+</code></pre>
+<h2>User Flows</h2>
+<h3>Back a Project</h3>
+<pre><code>Discover → Browse category (Games) or search → Project card → Project page → Watch video → Read story → Browse rewards → Select reward ($50 tier) → Set pledge amount ($55 to add extra support) → Add-ons (dice set $15) → Select shipping country → Enter payment → Confirm → &quot;You&#39;re a backer!&quot; → Receive updates → Goal met → Charged → Survey → Receive reward
+</code></pre>
+<h3>Create a Campaign</h3>
+<pre><code>Start a Project → Category (Design &amp; Tech) → Basics (title, blurb, image) → Rewards (create 4-5 tiers) → Story (video + narrative + risks) → Funding (goal: $50,000, duration: 30 days) → Identity verification → Preview → Submit for Review → Approved (2-3 days) → Launch → Share → Campaign runs → Goal met → Funds collected → Surveys → Fulfill rewards
+</code></pre>
+<h3>Stretch Goals</h3>
+<pre><code>Campaign funded at 100% → Creator posts update: &quot;Stretch Goal at $75K: Deluxe Edition&quot; → Backers share → More backers join → $75K reached → New stretch goal at $100K → Community excitement grows → Campaign ends → All stretch goals included
+</code></pre>
+<h3>Failed Campaign</h3>
+<pre><code>Campaign live → Tracking pledges → Day 25: only 40% funded → Creator posts update encouraging sharing → Day 30: 65% funded (short of goal) → Campaign ends: &quot;Funding Unsuccessful&quot; → No charges → Creator may relaunch
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                      → Discover / Home
+/discover                              → Explore
+/discover/categories/:category          → Category Browse
+/discover/categories/:category/:sub     → Subcategory
+/discover/advanced?term=:query         → Search Results
+/projects/:creator/:slug              → Project Page
+/projects/:creator/:slug/description  → Campaign Tab
+/projects/:creator/:slug/rewards      → Rewards Tab
+/projects/:creator/:slug/faqs         → FAQ Tab
+/projects/:creator/:slug/posts        → Updates Tab
+/projects/:creator/:slug/posts/:id    → Update Detail
+/projects/:creator/:slug/comments     → Comments Tab
+/projects/:creator/:slug/pledge/new   → Pledge Flow (Select Reward)
+/projects/:creator/:slug/pledge/edit  → Modify Pledge
+/profile/:username                     → Public Profile
+/profile/:username/backed              → Backed Projects
+/profile/:username/created             → Created Projects
+/profile/settings                      → Account Settings
+/messages                              → Messages
+/help                                  → Help Center
+/help/handbook                         → Creator Handbook
+/rules                                 → Project Guidelines
+/charter                               → Kickstarter Charter
+/about/stats                           → Platform Stats
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Discover</td>
+<td>Project title, blurb, creator</td>
+<td>Category, Subcategory, Location, Goal Range, % Funded, Status (live), &quot;Projects We Love&quot;</td>
+<td>Magic (algorithm), Popularity, Newest, End Date, Most Funded, Most Backed</td>
+</tr>
+<tr>
+<td>Creator Backers</td>
+<td>Backer name, email</td>
+<td>Reward Tier, Pledge Amount, Survey Status, Shipping Country</td>
+<td>Pledge Amount, Date, Name</td>
+</tr>
+<tr>
+<td>My Backed</td>
+<td>Project title</td>
+<td>Status (live/funded/unfunded/complete), Category</td>
+<td>Date Backed, End Date</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Project Grid</th>
+<th>Project Page</th>
+<th>Reward Sidebar</th>
+<th>Pledge Flow</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>3-4 column cards</td>
+<td>Content + sticky reward sidebar</td>
+<td>Right sidebar, scrollable</td>
+<td>Centered modal/page</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>2 column cards</td>
+<td>Stacked, rewards inline below</td>
+<td>Inline after content</td>
+<td>Full page</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>1 column cards</td>
+<td>Stacked, sticky &quot;Back this project&quot; button</td>
+<td>Full-screen on tap</td>
+<td>Full-screen steps</td>
+</tr>
+</tbody></table>
+<h3>Kickstarter-Specific UX</h3>
+<ul>
+<li><strong>All-or-nothing messaging</strong>: prominently displayed — &quot;This project will only be funded if it reaches its goal&quot;</li>
+<li><strong>Funding progress bar</strong>: green fill with exact numbers — the emotional center of every project</li>
+<li><strong>Video-first</strong>: project video is the hero element, autoplay on desktop</li>
+<li><strong>&quot;Projects We Love&quot; badge</strong>: editorial curation signal (green heart)</li>
+<li><strong>Superbacker badge</strong>: for prolific backers (backed 25+ projects in past year)</li>
+<li><strong>Stretch goals</strong>: not a platform feature — communicated through Updates (creative use of updates)</li>
+<li><strong>Social proof</strong>: &quot;X backed in the last 24 hours&quot; creates urgency</li>
+<li><strong>Limited rewards</strong>: &quot;X of Y remaining&quot; creates scarcity</li>
+<li><strong>Creator track record</strong>: past projects shown with funding success/failure history</li>
+<li><strong>Community-first</strong>: comments section often very active, creator engagement expected</li>
+<li><strong>Minimal advertising</strong>: Kickstarter doesn&#39;t show ads — discovery is organic + editorial</li>
+<li><strong>Charter / B-Corp</strong>: Kickstarter emphasizes its public benefit corporation status</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Back</th>
+<th>Create</th>
+<th>Comment</th>
+<th>Manage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (after verification)</td>
+<td>✅ (on backed projects)</td>
+<td>Own pledges</td>
+</tr>
+<tr>
+<td>Creator (verified)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own projects</td>
+</tr>
+<tr>
+<td>Superbacker</td>
+<td>✅</td>
+<td>✅ (badge visible)</td>
+<td>✅</td>
+<td>✅ (badge visible)</td>
+<td>Own pledges</td>
+</tr>
+</tbody></table>
+<h3>Kickstarter Review Process</h3>
+<ul>
+<li>All projects must be submitted for review before launch</li>
+<li>Review takes 1-3 business days</li>
+<li>Projects must meet guidelines (creative, not charity/equity)</li>
+<li>Prohibited: reselling, charity, &quot;fund my life,&quot; illegal items</li>
+<li>Rejected projects receive feedback and can revise and resubmit</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

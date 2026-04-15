@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instacart — IA.md | getIA.md</title>
+  <meta name="description" content="Grocery delivery. Store browse, real-time substitutions. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=instacart.com&sz=64" alt="Instacart" onerror="this.parentElement.textContent='I'">
+      </div>
+      <h1 class="detail-brand-name">Instacart</h1>
+      <p class="detail-brand-tagline">Grocery delivery. Store browse, real-time substitutions.</p>
+      <span class="detail-category-badge">E-Commerce</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/instacart/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://instacart.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/instacart/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Instacart — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Instacart is the leading online grocery delivery and pickup platform, partnering with 1,500+ retail banners (grocery stores, pharmacies, warehouse clubs, specialty stores). The mental model is <strong>your local grocery store, delivered</strong> — customers shop from their preferred stores&#39; actual inventory, a personal shopper picks and packs the order in-store, and it&#39;s delivered (or prepared for pickup) in as fast as 1 hour. Instacart differentiates through its multi-retailer model (shop from Costco, Kroger, Sprouts, CVS, etc. in one app), real-time shopper communication (approve substitutions live), Instacart+ membership (free delivery), and the personal shopper relationship (tip, rate, communicate during shop). It&#39;s grocery-specific, not general food delivery.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Storefront
+│   ├── Address / Location Selector
+│   ├── Delivery / Pickup Toggle
+│   ├── Search Bar (&quot;Search products and stores&quot;)
+│   ├── Nearby Stores
+│   │   ├── Store Cards (logo, name, delivery time, delivery fee)
+│   │   ├── Favorite Stores
+│   │   └── By Category (Grocery, Convenience, Pharmacy, Pet, Alcohol)
+│   ├── Featured Deals &amp; Coupons
+│   ├── Buy It Again (past purchases)
+│   ├── Popular Items Near You
+│   ├── Flyers &amp; Deals (digital weekly ads)
+│   └── Instacart+ Banner (free delivery CTA)
+├── Store Page
+│   ├── Store Header (logo, name, hours, delivery time + fee)
+│   ├── Departments (horizontal scroll or sidebar)
+│   │   ├── Produce
+│   │   ├── Dairy &amp; Eggs
+│   │   ├── Meat &amp; Seafood
+│   │   ├── Bakery
+│   │   ├── Frozen
+│   │   ├── Snacks
+│   │   ├── Beverages
+│   │   ├── Household
+│   │   ├── Personal Care
+│   │   ├── Baby
+│   │   ├── Pet
+│   │   └── Pharmacy / Health
+│   ├── Featured / On Sale (store-specific promotions)
+│   ├── Buy It Again (from this store)
+│   ├── Product Grid (within department)
+│   │   ├── Product Card
+│   │   │   ├── Image
+│   │   │   ├── Name, Size/Weight
+│   │   │   ├── Price (unit price, sale price)
+│   │   │   ├── Per-Unit Pricing ($/oz, $/lb)
+│   │   │   ├── Add to Cart (+/- stepper)
+│   │   │   ├── Sale Badge
+│   │   │   └── SNAP EBT eligible badge
+│   │   └── Product Detail Modal
+│   │       ├── Large Image
+│   │       ├── Nutrition Facts
+│   │       ├── Ingredients
+│   │       ├── Product Description
+│   │       ├── Quantity / Weight Selector
+│   │       ├── Replacement Preference
+│   │       │   ├── Best Match (shopper&#39;s choice)
+│   │       │   ├── Specific Replacement (pick alternative)
+│   │       │   └── Don&#39;t Replace (refund if unavailable)
+│   │       ├── Special Instructions (&quot;pick firm bananas&quot;)
+│   │       ├── Add to Cart
+│   │       └── Similar Items
+│   └── Search (within store)
+├── Search (Cross-Store)
+│   ├── Product Search Results (from multiple stores)
+│   ├── Store Search Results
+│   ├── Filter by Store, Department, Price, Diet, Brand
+│   └── Compare Prices (same product across stores)
+├── Cart (Per-Store)
+│   ├── Items by Store (if multi-store cart)
+│   ├── Item List (quantity, price, replacement preference per item)
+│   ├── Per-Store Subtotal
+│   ├── Coupons / Promo Code
+│   ├── Cart Summary
+│   └── Go to Checkout
+├── Checkout
+│   ├── Delivery Address + Instructions (leave at door, ring bell)
+│   ├── Delivery Window
+│   │   ├── Priority (fastest, premium price)
+│   │   ├── Standard (2-hour window)
+│   │   ├── Scheduled (choose date + time window)
+│   │   └── Available Slots Calendar
+│   ├── Payment Method (credit card, debit, Apple Pay, Google Pay, SNAP EBT, FSA/HSA)
+│   ├── Shopper Tip (pre-set amounts + custom, adjustable post-delivery)
+│   ├── Replacement Preferences (default for cart)
+│   ├── Leave Notes for Shopper
+│   ├── Order Summary
+│   │   ├── Item Subtotal
+│   │   ├── Service Fee
+│   │   ├── Delivery Fee (or $0 with Instacart+)
+│   │   ├── Tip
+│   │   ├── Tax
+│   │   ├── Bag Fee (where applicable)
+│   │   ├── Instacart+ Savings (if member)
+│   │   └── Total
+│   └── Place Order
+├── Order Tracking (Live)
+│   ├── Order Status
+│   │   ├── Order Placed
+│   │   ├── Shopper Assigned (name, photo)
+│   │   ├── Shopping (live cart updates)
+│   │   │   ├── Items Found (check marks)
+│   │   │   ├── Replacements Suggested (approve/reject in real-time)
+│   │   │   ├── Items Not Found (refund or replace)
+│   │   │   └── Chat with Shopper
+│   │   ├── Checkout (shopper checking out at register)
+│   │   ├── On the Way (map with driver location)
+│   │   └── Delivered (photo proof)
+│   ├── Shopper Chat (text-based, real-time)
+│   ├── Live Updated Receipt (adjusts as items change)
+│   ├── Contact Shopper (call/text)
+│   └── ETA
+├── Orders
+│   ├── Active Orders (in progress)
+│   ├── Past Orders
+│   ├── Order Detail (items, receipt, adjustments)
+│   ├── Rate &amp; Tip
+│   │   ├── Rate Shopper (1-5 stars)
+│   │   ├── Adjust Tip (increase/decrease post-delivery)
+│   │   ├── Quality Tags (great replacements, careful with fragile items)
+│   │   └── Report Issue (wrong item, damaged, missing)
+│   ├── Reorder (all items to cart)
+│   └── Report Issue → Credits/Refund
+├── Lists
+│   ├── Shopping Lists (user-created)
+│   ├── Buy It Again (automatic from history)
+│   ├── Favorites (saved products)
+│   └── Share List (collaborative shopping)
+├── Instacart+ (Membership)
+│   ├── Benefits ($0 delivery, reduced service fee, credit back on pickup, Peacock)
+│   ├── Plan (monthly / annual)
+│   ├── Family Accounts (shared membership)
+│   └── Manage Subscription
+├── Deals &amp; Coupons
+│   ├── Featured Deals
+│   ├── Digital Coupons (clip and apply)
+│   ├── Store Flyers (weekly ads)
+│   ├── BOGO / Multi-buy Offers
+│   └── Instacart Exclusive Offers
+├── Account
+│   ├── Addresses
+│   ├── Payment Methods
+│   ├── Instacart+ Membership
+│   ├── Credits &amp; Gift Cards
+│   ├── Notification Preferences
+│   ├── SNAP EBT Card
+│   ├── FSA/HSA Card
+│   ├── Family Account
+│   ├── Loyalty Cards (store rewards cards linked)
+│   └── Privacy &amp; Settings
+├── Carts by Store
+│   └── If shopping from multiple stores: separate carts, separate orders, separate delivery
+├── Help
+│   ├── Current Order Help
+│   ├── Past Order Issues (missing, damaged, wrong items)
+│   ├── Account Help
+│   ├── Instacart+ Help
+│   └── Contact Support (chat, phone)
+└── Pickup Option
+    ├── Same Store Experience
+    ├── Schedule Pickup Window
+    ├── Arrive &amp; Notify (I&#39;m here button)
+    └── Curbside Delivery to Car
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Sticky top bar</td>
+<td>Instacart logo, address selector, delivery/pickup, search bar, Instacart+ badge, account, cart (per-store badge)</td>
+</tr>
+<tr>
+<td><strong>Store List</strong></td>
+<td>Scrollable cards or grid on home</td>
+<td>Select store before shopping</td>
+</tr>
+<tr>
+<td><strong>Department Nav</strong></td>
+<td>Left sidebar (desktop) or horizontal scroll (mobile)</td>
+<td>Navigate grocery departments within store</td>
+</tr>
+<tr>
+<td><strong>Product Grid</strong></td>
+<td>Main content area</td>
+<td>Add to cart directly from grid with +/- stepper</td>
+</tr>
+<tr>
+<td><strong>Cart</strong></td>
+<td>Right sidebar (desktop) or bottom sheet (mobile)</td>
+<td>Persistent, per-store, shows running total</td>
+</tr>
+<tr>
+<td><strong>Bottom Nav (mobile)</strong></td>
+<td>Fixed bottom bar</td>
+<td>Home, Browse, Lists, Orders, Account</td>
+</tr>
+<tr>
+<td><strong>Shopper Chat</strong></td>
+<td>Bottom overlay during active order</td>
+<td>Real-time communication about replacements</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Store</td>
+<td>name, logo, banner, address, hours, delivery_time_estimate, delivery_fee, min_order, departments[], instacart_plus_eligible</td>
+<td>has Products (inventory)</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>name, brand, description, images[], price, unit_price ($/oz), size, nutrition_facts, ingredients, upc, snap_eligible</td>
+<td>belongs to Store inventory</td>
+</tr>
+<tr>
+<td>Department</td>
+<td>name, icon, sort_order</td>
+<td>belongs to Store, has Products</td>
+</tr>
+<tr>
+<td>Cart</td>
+<td>store, items[], subtotal</td>
+<td>belongs to User, per-store</td>
+</tr>
+<tr>
+<td>CartItem</td>
+<td>product, quantity, replacement_preference, special_instructions</td>
+<td>belongs to Cart</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>store, items[], status, shopper, delivery_address, delivery_window, tip, fees, total, adjustments[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Shopper</td>
+<td>name, photo, rating</td>
+<td>assigned to Order</td>
+</tr>
+<tr>
+<td>Replacement</td>
+<td>original_product, replacement_product, approved_by (user/auto), price_diff</td>
+<td>belongs to Order</td>
+</tr>
+<tr>
+<td>ShoppingList</td>
+<td>name, items[], shared_with[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Coupon</td>
+<td>description, discount, store, product, conditions, clipped</td>
+<td>available or clipped by User</td>
+</tr>
+<tr>
+<td>InstacartPlus</td>
+<td>plan, status, savings_total, renewal_date</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>LoyaltyCard</td>
+<td>store, card_number, linked</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Order Status Flow</h3>
+<pre><code>placed → shopper_assigned → shopping → items_being_picked → replacements_needed → checkout_at_register → on_the_way → delivered
+                                                                                                                     → picked_up (if pickup)
+</code></pre>
+<h3>Replacement Flow</h3>
+<pre><code>Shopper finds item unavailable → App notifies customer → Options:
+  a) Accept shopper&#39;s suggested replacement → Price adjustment
+  b) Choose different replacement from suggestions
+  c) &quot;Don&#39;t replace&quot; → Item removed, refunded
+  d) No response → Shopper uses &quot;Best Match&quot; default
+</code></pre>
+<h2>User Flows</h2>
+<h3>Shop and Get Delivery</h3>
+<pre><code>Set address → Browse nearby stores → Select store (Costco) → Browse departments or search → Add items (+/- stepper) → Set replacement preferences per item → Cart → Checkout → Select delivery window (2-3 PM) → Set tip → Place order → Shopper assigned → Chat about replacements → Track delivery → Delivered → Rate shopper → Adjust tip
+</code></pre>
+<h3>Real-Time Replacement Approval</h3>
+<pre><code>Order in progress → Shopper can&#39;t find organic avocados → Push notification: &quot;Your shopper suggests: regular avocados&quot; → Tap: [Approve] [Choose Different] [Don&#39;t Replace] → Approve → Cart total adjusts → Shopping continues
+</code></pre>
+<h3>Multi-Store Shopping</h3>
+<pre><code>Search &quot;paper towels&quot; (cross-store) → Compare prices: Costco $18 (24-pack) vs Target $6 (6-pack) → Add from Costco → Search &quot;shampoo&quot; → Add from Target → Two separate carts → Two separate checkouts → Two separate deliveries
+</code></pre>
+<h3>Pickup</h3>
+<pre><code>Select store → Switch to &quot;Pickup&quot; → Shop (same experience) → Checkout → Select pickup window → Place order → Shopper picks items → &quot;Your order is ready&quot; notification → Drive to store → &quot;I&#39;m here&quot; button → Curbside delivery → Rate
+</code></pre>
+<h3>Reorder</h3>
+<pre><code>Orders → Past order from Costco → [Reorder] → Cart pre-filled → Remove/add items → Checkout → Deliver
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home (store selection)
+/store/:retailer/:storeSlug    → Store Home
+/store/:retailer/:storeSlug/collections/:dept → Department
+/store/:retailer/:storeSlug/product/:productId → Product Detail
+/store/:retailer/:storeSlug/search?q=:query → Store Search
+/search?q=:query               → Cross-Store Search
+/checkout                      → Checkout
+/orders                        → Order History
+/orders/:id                    → Order Detail
+/orders/:id/tracking           → Live Tracking
+/orders/:id/chat               → Shopper Chat
+/lists                         → Shopping Lists
+/lists/:id                     → List Detail
+/buy-it-again                  → Buy It Again
+/deals                         → Deals &amp; Coupons
+/instacart-plus                → Instacart+ Membership
+/account                       → Account
+/account/addresses             → Addresses
+/account/payment               → Payment Methods
+/account/loyalty-cards         → Loyalty Cards
+/account/credits               → Credits &amp; Gift Cards
+/pickup                        → Pickup Stores
+/help                          → Help Center
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cross-Store</td>
+<td>Product name, brand, UPC</td>
+<td>Store, Department, Brand, Dietary (organic, gluten-free, vegan, keto), Price Range, On Sale, SNAP Eligible</td>
+<td>Relevance, Price, Best Selling</td>
+</tr>
+<tr>
+<td>Within Store</td>
+<td>Product name, brand, UPC</td>
+<td>Department, Brand, Dietary, Price, On Sale</td>
+<td>Relevance, Price, Popular</td>
+</tr>
+<tr>
+<td>Store Search</td>
+<td>Store name, retailer brand</td>
+<td>Category (Grocery, Convenience, Pharmacy, Pet), Distance, Delivery Time, Delivery Fee</td>
+<td>Distance, Delivery Time, Rating</td>
+</tr>
+</tbody></table>
+<h3>Autocomplete</h3>
+<p>Search bar suggests: products (with price), departments, stores, past purchases</p>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Home</th>
+<th>Store</th>
+<th>Product Grid</th>
+<th>Cart</th>
+<th>Tracking</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1024px)</td>
+<td>Store cards grid, search in header</td>
+<td>Department sidebar + product grid + cart sidebar</td>
+<td>4-5 columns with quick-add</td>
+<td>Right sidebar (always visible)</td>
+<td>Map + status + chat</td>
+</tr>
+<tr>
+<td>Tablet (768-1023px)</td>
+<td>Store cards 2-3 cols</td>
+<td>Department tabs + grid</td>
+<td>3 columns</td>
+<td>Slide-over</td>
+<td>Full page</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Instacart app (primary); vertical store cards</td>
+<td>Horizontal department scroll + grid</td>
+<td>2 columns with quick-add</td>
+<td>Bottom sheet with cart count</td>
+<td>Full-screen map + chat overlay</td>
+</tr>
+</tbody></table>
+<h3>Instacart-Specific UX</h3>
+<ul>
+<li><strong>Per-item replacement preferences</strong>: set replacement strategy for each item (unique to grocery)</li>
+<li><strong>Real-time shopper chat</strong>: approve/reject substitutions while shopper is in-store</li>
+<li><strong>Unit pricing</strong>: $/oz, $/lb shown for price comparison</li>
+<li><strong>Quick-add stepper</strong>: +/- buttons directly on product card (no detail page needed for basics)</li>
+<li><strong>Multi-store carts</strong>: shop from multiple stores, each is a separate order</li>
+<li><strong>Nutrition facts</strong> and ingredients on product detail</li>
+<li><strong>Digital coupons</strong>: clip store coupons within the app</li>
+<li><strong>Loyalty card linking</strong>: connect store rewards cards for in-store pricing</li>
+<li><strong>SNAP EBT / FSA/HSA</strong>: government benefit payment support</li>
+<li><strong>Buy It Again</strong>: smart reorder based on purchase history and cadence</li>
+<li><strong>Weight-based pricing</strong>: estimated prices for produce, adjusted at checkout</li>
+<li><strong>Delivery photos</strong>: shopper takes photo of delivered bags at door</li>
+<li><strong>Post-delivery tip adjustment</strong>: can increase tip if shopper did great job</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Order</th>
+<th>Track</th>
+<th>Review</th>
+<th>Manage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>— (login required)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>User</td>
+<td>✅</td>
+<td>✅</td>
+<td>Own orders</td>
+<td>Rate shopper</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Instacart+</td>
+<td>✅</td>
+<td>✅ (free delivery)</td>
+<td>Own orders</td>
+<td>Rate shopper</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Shopper</td>
+<td>—</td>
+<td>Accept batches</td>
+<td>Shop + deliver</td>
+<td>—</td>
+<td>Own earnings/schedule</td>
+</tr>
+<tr>
+<td>Retailer</td>
+<td>—</td>
+<td>Receive via integration</td>
+<td>—</td>
+<td>—</td>
+<td>Catalog, pricing, promotions</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>All</td>
+<td>Moderate</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Shopper Access</h3>
+<ul>
+<li>Shoppers use a separate Shopper app</li>
+<li>See batch offers (store, items, delivery location, estimated earnings)</li>
+<li>Accept/decline batches</li>
+<li>Shop items, scan barcodes, communicate with customer</li>
+<li>Navigate to delivery address</li>
+<li>Deliver and photograph</li>
+<li>Earn tips and ratings</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

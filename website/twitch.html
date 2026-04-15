@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitch — IA.md | getIA.md</title>
+  <meta name="description" content="Live streaming. Chat, subscriptions, raids, clips. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=twitch.tv&sz=64" alt="Twitch" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Twitch</h1>
+      <p class="detail-brand-tagline">Live streaming. Chat, subscriptions, raids, clips.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/twitch/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://twitch.tv" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/twitch/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Twitch — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The world&#39;s leading live streaming platform, originally focused on gaming and now expanded to music, creative arts, talk shows, and IRL (In Real Life) streaming. Twitch&#39;s mental model is a <strong>live, interactive broadcast</strong> — unlike YouTube&#39;s on-demand library, Twitch is fundamentally real-time: viewers watch streamers live, interact via chat, and form communities around channels. Key differentiators: real-time chat (the core social experience), Twitch Emotes (custom emojis as cultural currency), channel subscriptions with Bits/Cheers (virtual currency tipping), Raids (sending viewers to another channel), Drops (game-linked rewards), Twitch extensions (interactive overlays), and a deep integration with gaming culture.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Following
+│   ├── Live Channels You Follow (priority)
+│   ├── Recommended Live Channels
+│   ├── Recommended Categories
+│   ├── Continue Watching (VODs)
+│   ├── Offline Channels (recently ended)
+│   └── Clips / Highlights
+├── Browse
+│   ├── Categories (Games / Creative / Music / IRL / Talk Shows)
+│   │   ├── Category Page (e.g., &quot;League of Legends&quot;)
+│   │   │   ├── Live Channels (sorted by viewers)
+│   │   │   ├── Tags Filter
+│   │   │   └── Category Info (viewer count, follower count)
+│   │   └── Sort: Viewers (High to Low), Recently Started
+│   ├── Live Channels (all)
+│   │   ├── Sort: Recommended / Viewers
+│   │   ├── Filter by Language, Tags
+│   │   └── Channel Cards (thumbnail, title, streamer, game, viewers)
+│   ├── Tags (dropdown filter)
+│   │   ├── English, Spanish, Japanese, Korean...
+│   │   ├── FPS, RPG, Strategy, Speedrun, Competitive...
+│   │   └── Charity, Drops Enabled, LGBTQIA+, Vtuber...
+│   └── Go Live / Start Streaming CTA
+├── Stream Page (Watch)
+│   ├── Video Player
+│   │   ├── Live Video Feed
+│   │   ├── Stream Title, Category/Game
+│   │   ├── Playback Controls (quality, full-screen, theater, clip)
+│   │   ├── Latency Mode (normal / low latency)
+│   │   ├── Extensions (interactive overlays, panels)
+│   │   ├── Clip Button (create 30-60s clip)
+│   │   └── Theater Mode / Full-Screen / Multi-Stream (Squad)
+│   ├── Chat (right panel)
+│   │   ├── Chat Messages (real-time, scrolling)
+│   │   ├── Emotes (Twitch global + channel-specific + BTTV/FFZ/7TV)
+│   │   ├── Bits / Cheers (animated cheer messages)
+│   │   ├── Channel Points Predictions
+│   │   ├── Polls (streamer-initiated)
+│   │   ├── Hype Train (engagement meter)
+│   │   ├── Raids / Hosts
+│   │   ├── Moderation (mod actions, AutoMod, timeout, ban)
+│   │   ├── Chat Input (text + emote picker + Bits)
+│   │   ├── Slow Mode / Followers-Only / Emote-Only / Sub-Only indicators
+│   │   └── Community Actions (shoutout, announce)
+│   ├── Below Player
+│   │   ├── Streamer Info (avatar, name, followers, follow/subscribe buttons)
+│   │   ├── Subscribe Button (tiers: $4.99 / $9.99 / $24.99)
+│   │   ├── Gift Sub Button
+│   │   ├── Bits Button
+│   │   ├── Tags (game, content type)
+│   │   ├── About / Panels (custom info panels: schedule, social links, PC specs, rules)
+│   │   └── VODs / Clips / Collections
+│   └── Extensions Panel
+│       ├── Overlay Extensions (on top of video)
+│       ├── Panel Extensions (below player)
+│       └── Component Extensions (within video)
+├── Channel Page (Profile)
+│   ├── Banner, Avatar, Channel Name, Bio, Social Links
+│   ├── Follow / Subscribe Buttons
+│   ├── Tabs: Home, About, Schedule, Videos, Chat
+│   ├── Home (when offline: last VOD, clips, panels)
+│   ├── About (bio, panels, team info)
+│   ├── Schedule (stream calendar)
+│   ├── Videos
+│   │   ├── Past Broadcasts (VODs, auto-deleted after 14/60 days)
+│   │   ├── Highlights (permanent, curated by streamer)
+│   │   ├── Clips (community-created short clips)
+│   │   ├── Collections (themed playlists)
+│   │   └── Uploads (non-live video)
+│   └── Chat Replay (on VODs)
+├── Clips
+│   ├── My Clips (clips I created)
+│   ├── Trending Clips (popular across Twitch)
+│   └── Clip Detail (play, share, link to full VOD timestamp)
+├── Search
+│   ├── Channels
+│   ├── Categories / Games
+│   ├── Tags
+│   └── Suggestions
+├── Following / Activity
+│   ├── Followed Channels (live, offline, recently ended)
+│   ├── Live Notifications
+│   └── Follow Suggestions
+├── Notifications
+│   ├── [Channel] is live
+│   ├── Raid incoming
+│   ├── Sub / Gift Sub / Bits alerts
+│   ├── Drops (game rewards unlocked)
+│   └── Community Updates
+├── Wallet / Inventory
+│   ├── Subscriptions (active subs, gift subs, Prime Gaming sub)
+│   ├── Bits Balance
+│   ├── Channel Points (per channel)
+│   ├── Drops (earned game items)
+│   ├── Turbo (ad-free viewing subscription)
+│   └── Payment Methods
+├── Prime Gaming (cross-link)
+│   ├── Free Sub (1 per month with Amazon Prime)
+│   ├── Free Games
+│   ├── In-Game Loot
+│   └── Prime Gaming Crown Badge
+├── Creator Dashboard
+│   ├── Stream Manager
+│   │   ├── Go Live (OBS/Streamlabs integration, stream key)
+│   │   ├── Stream Info (title, category, tags, language)
+│   │   ├── Quick Actions (run ad, create poll, start prediction)
+│   │   ├── Activity Feed (follows, subs, bits, raids)
+│   │   └── Mod View (chat + mod queue + viewer list)
+│   ├── Analytics
+│   │   ├── Stream Summary (viewers, chat, followers gained)
+│   │   ├── Channel Analytics (avg viewers, hours streamed, subs)
+│   │   ├── Revenue (subs, bits, ads)
+│   │   └── Achievements (milestones toward Affiliate/Partner)
+│   ├── Community
+│   │   ├── Roles (mods, VIPs, editors)
+│   │   ├── AutoMod Settings
+│   │   ├── Blocked Terms
+│   │   ├── Channel Points (customize rewards)
+│   │   └── Raids (manage incoming/outgoing)
+│   ├── Content
+│   │   ├── VOD Manager (highlight, download, delete)
+│   │   ├── Clips Manager
+│   │   ├── Collections
+│   │   └── Schedule (set recurring stream times)
+│   ├── Extensions Manager (install, configure)
+│   ├── Settings
+│   │   ├── Channel (language, mature content, delay)
+│   │   ├── Stream Key &amp; Preferences
+│   │   ├── Moderation
+│   │   ├── Affiliates / Partners Program
+│   │   └── Revenue Settings (payout, onboarding)
+│   └── Path to Affiliate / Partner
+│       ├── Affiliate Requirements (50 followers, 7 unique broadcasts, 500 min, 3 avg viewers)
+│       └── Partner Requirements (75 avg viewers, consistent schedule, community guidelines)
+├── Settings
+│   ├── Profile (display name, bio, avatar, banner)
+│   ├── Security &amp; Privacy
+│   ├── Notifications (per channel, push, email)
+│   ├── Recommendations (content preferences)
+│   ├── Accessibility (chat font size, high contrast)
+│   ├── Connections (linked accounts: Steam, Battle.net, Riot, etc.)
+│   └── Blocked / Banned Users
+└── Safety Center
+    ├── Community Guidelines
+    ├── Transparency Reports
+    └── Appeals
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed, dark theme</td>
+<td>Twitch logo, Following/Browse toggle, search bar, Bits/Prime, notifications bell, user avatar</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Collapsible</td>
+<td>Followed Channels (live indicator + viewer count), Recommended Channels</td>
+</tr>
+<tr>
+<td><strong>Stream Layout</strong></td>
+<td>Player + Chat (split)</td>
+<td>Video left (fluid), Chat right (320px fixed), theater mode removes sidebar</td>
+</tr>
+<tr>
+<td><strong>Chat Panel</strong></td>
+<td>Right panel on stream page</td>
+<td>Real-time chat, input at bottom, mod actions inline</td>
+</tr>
+<tr>
+<td><strong>Browse Grid</strong></td>
+<td>Category cards (thumbnail, name, viewers)</td>
+<td>Click to see live channels in that category</td>
+</tr>
+<tr>
+<td><strong>Mobile Nav</strong></td>
+<td>Bottom tab bar</td>
+<td>Following, Discover, Browse, Search, Profile</td>
+</tr>
+<tr>
+<td><strong>Theater Mode</strong></td>
+<td>Expand player, collapse everything except chat</td>
+<td>Wider video, no sidebar, chat remains</td>
+</tr>
+</tbody></table>
+<h3>Desktop Layout (Watching)</h3>
+<pre><code>[Collapsed Sidebar] | [Video Player (fluid)]  | [Chat Panel (320px)]
+  Followed Channels |  Stream Title — Game     |  [chat messages...]
+  • Streamer1 🔴 12K|  [Live Video Feed]       |  [emote picker]
+  • Streamer2 🔴 5K |                          |  [Bits / Cheer]
+  • Streamer3 🔴 1K |  ─────────────────       |  [send message...]
+  Recommended       |  Streamer | Follow | Sub |
+  • Rec1            |  [Panels / About]        |
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Channel</td>
+<td>login, display_name, avatar, banner, bio, follower_count, subscriber_count, partner/affiliate, stream_schedule, panels[], social_links</td>
+<td>has many Streams, VODs, Clips, Emotes</td>
+</tr>
+<tr>
+<td>Stream (Live)</td>
+<td>title, category/game, tags[], viewer_count, started_at, language, mature (bool), latency_mode</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>VOD</td>
+<td>title, duration, created_at, view_count, type (archive/highlight/upload), muted_segments[], thumbnail</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Clip</td>
+<td>title, creator, vod_offset, duration (30-60s), view_count, created_at, thumbnail</td>
+<td>belongs to Channel and VOD</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>name, box_art, viewer_count, follower_count, tags[]</td>
+<td>has many live Streams</td>
+</tr>
+<tr>
+<td>ChatMessage</td>
+<td>body, emotes[], bits_amount, user_color, badges[], timestamp</td>
+<td>belongs to Channel chat and User</td>
+</tr>
+<tr>
+<td>Emote</td>
+<td>code, image_url, type (global/channel/bits_tier), animated (bool)</td>
+<td>belongs to Twitch (global) or Channel</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>tier (1/2/3), price, started_at, streak, gifted_by</td>
+<td>connects User to Channel</td>
+</tr>
+<tr>
+<td>Bits</td>
+<td>amount, cheermote, message</td>
+<td>belongs to User, sent to Channel</td>
+</tr>
+<tr>
+<td>ChannelPoints</td>
+<td>name, icon, rewards[] (custom by streamer), cost</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>title, outcomes[], status (active/locked/resolved), created_at</td>
+<td>belongs to Channel stream</td>
+</tr>
+<tr>
+<td>Poll</td>
+<td>title, options[], duration, votes_count</td>
+<td>belongs to Channel stream</td>
+</tr>
+<tr>
+<td>HypeTrain</td>
+<td>level, progress, contributors[], expires_at</td>
+<td>belongs to Channel stream</td>
+</tr>
+<tr>
+<td>Raid</td>
+<td>from_channel, to_channel, viewer_count, raided_at</td>
+<td>connects Channels</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>game, campaign, reward_description, progress, claimed (bool)</td>
+<td>belongs to User, linked to Category</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>name, type (overlay/panel/component), developer, active (bool)</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>name, type (sub/bits/mod/vip/founder/prime/global), icon</td>
+<td>displayed on User in Chat</td>
+</tr>
+</tbody></table>
+<h3>Channel Tiers</h3>
+<pre><code>Regular → Affiliate (basic monetization) → Partner (full monetization + verified badge)
+</code></pre>
+<h3>Subscription Tiers</h3>
+<pre><code>Tier 1: $4.99/month (standard, Prime Gaming sub)
+Tier 2: $9.99/month (more emotes)
+Tier 3: $24.99/month (most emotes + badges)
+Gift Subs: anyone can gift subs to community
+</code></pre>
+<h2>User Flows</h2>
+<h3>Watch Live</h3>
+<pre><code>Home → Followed Channels → Streamer is Live → Click → Watch Stream + Chat → React (emotes, Bits) → Follow / Subscribe
+</code></pre>
+<h3>Discover New Streamers</h3>
+<pre><code>Browse → Categories → &quot;League of Legends&quot; → Sort by Viewers → Pick Channel → Watch → Follow → Raided to new streamer → Follow them too
+</code></pre>
+<h3>Interact in Chat</h3>
+<pre><code>Watch Stream → Type in Chat → Send Emotes → Cheer Bits → Channel Points Prediction → Hype Train → Community Engagement
+</code></pre>
+<h3>Create Clip</h3>
+<pre><code>Watch Stream → Cool Moment → Clip Button → Adjust Duration → Create → Share Link (Twitter, Discord)
+</code></pre>
+<h3>Subscribe with Prime</h3>
+<pre><code>Watch Stream → Subscribe → Use Free Prime Gaming Sub → Get Channel Emotes + Badge → Auto-renew monthly
+</code></pre>
+<h3>Go Live (Creator)</h3>
+<pre><code>Creator Dashboard → Stream Manager → Set Title + Category → Copy Stream Key → OBS → Start Streaming → Manage Chat/Polls/Predictions
+</code></pre>
+<h3>Raid Another Channel</h3>
+<pre><code>End Stream → /raid @otherstreamer → Community Redirected → Other Channel Receives Viewers → Welcome Raid
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home / Following
+/directory                     → Browse Categories
+/directory/all                 → Browse All Live Channels
+/directory/game/:category      → Category Page
+/directory/all/tags/:tag       → Channels with Tag
+/:username                     → Channel Page (live or offline)
+/:username/videos              → Channel VODs
+/:username/clips               → Channel Clips
+/:username/schedule            → Stream Schedule
+/:username/about               → About / Panels
+/:username/clip/:clipSlug      → Clip Detail
+/videos/:vodId                 → VOD Playback
+/search?term=:query            → Search Results
+/settings                      → User Settings
+/settings/profile              → Profile Settings
+/dashboard                     → Creator Dashboard
+/dashboard/stream              → Stream Manager
+/dashboard/analytics           → Channel Analytics
+/dashboard/community           → Community Management
+/dashboard/content             → Content Manager (VODs, Clips)
+/dashboard/extensions          → Extensions Manager
+/wallet                        → Subscriptions, Bits, Drops
+/drops                         → Drops / Rewards Inventory
+/prime                         → Prime Gaming
+/subs                          → Manage Subscriptions
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Channels, Categories/Games, Tags</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Browse Categories</td>
+<td>Category names</td>
+<td>—</td>
+<td>Viewers (default), Name</td>
+</tr>
+<tr>
+<td>Category Page</td>
+<td>Live channels in category</td>
+<td>Tags (language, content type, game genre), Language</td>
+<td>Viewers (High to Low), Recently Started, Recommended</td>
+</tr>
+<tr>
+<td>Channel VODs</td>
+<td>VODs, Highlights, Clips</td>
+<td>Type (past broadcast/highlight/upload), Date</td>
+<td>Date (newest), Views, Duration</td>
+</tr>
+<tr>
+<td>Clips</td>
+<td>Clips of channel</td>
+<td>Period (24h/7d/30d/all)</td>
+<td>Trending, Recent, Views</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Chat</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1200px)</td>
+<td>Sidebar + Player + Chat (three-panel)</td>
+<td>Right panel (320px, collapsible)</td>
+<td>Left sidebar + top bar</td>
+</tr>
+<tr>
+<td>Tablet (768–1199px)</td>
+<td>Player + Chat (two-panel)</td>
+<td>Below player or overlay</td>
+<td>Top bar</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Player (top) + Chat (below) stacked, or full-screen player</td>
+<td>Below player, scrollable</td>
+<td>Bottom tab bar</td>
+</tr>
+</tbody></table>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Portrait: video top, chat below (scrollable)</li>
+<li>Landscape: full-screen player, chat as overlay (swipe from right)</li>
+<li>Picture-in-Picture while browsing other channels</li>
+<li>Mini player while browsing Twitch</li>
+<li>Low latency mode for real-time interaction</li>
+<li>Chat-only mode (save data)</li>
+<li>Clip creation from mobile</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Watch</th>
+<th>Chat</th>
+<th>Follow</th>
+<th>Subscribe</th>
+<th>Bits</th>
+<th>Stream</th>
+<th>Dashboard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>✅ (with ads)</td>
+<td>Read only</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅ (with ads)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (paid)</td>
+<td>✅ (purchase)</td>
+<td>✅ (after setup)</td>
+<td>Basic</td>
+</tr>
+<tr>
+<td>Turbo ($8.99/mo)</td>
+<td>✅ (no ads)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Basic</td>
+</tr>
+<tr>
+<td>Subscriber (of channel)</td>
+<td>✅ (no ads on channel)</td>
+<td>✅ + sub emotes + badge</td>
+<td>✅</td>
+<td>— (already subbed)</td>
+<td>✅</td>
+<td>✅</td>
+<td>Basic</td>
+</tr>
+<tr>
+<td>VIP (channel role)</td>
+<td>✅</td>
+<td>✅ + VIP badge, bypass slow mode</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Basic</td>
+</tr>
+<tr>
+<td>Moderator (channel role)</td>
+<td>✅</td>
+<td>✅ + mod actions (timeout, ban, delete)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Basic</td>
+</tr>
+<tr>
+<td>Affiliate</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Receive subs + Bits</td>
+<td>Receive</td>
+<td>✅</td>
+<td>✅ (analytics, revenue)</td>
+</tr>
+<tr>
+<td>Partner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Receive subs + Bits + ads revenue</td>
+<td>Receive</td>
+<td>✅</td>
+<td>✅ (full analytics, transcoding, priority support)</td>
+</tr>
+<tr>
+<td>Twitch Staff</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full platform administration</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

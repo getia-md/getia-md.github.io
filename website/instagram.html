@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram — IA.md | getIA.md</title>
+  <meta name="description" content="Photo & video sharing. Feed, Stories, Reels, DMs. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=instagram.com&sz=64" alt="Instagram" onerror="this.parentElement.textContent='I'">
+      </div>
+      <h1 class="detail-brand-name">Instagram</h1>
+      <p class="detail-brand-tagline">Photo & video sharing. Feed, Stories, Reels, DMs.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/instagram/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/instagram/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Instagram — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A visual-first social platform owned by Meta, built around photo and video sharing. Instagram&#39;s mental model has evolved from a <strong>photo gallery</strong> to a <strong>multi-format visual entertainment platform</strong> — now encompassing the feed (photos + carousels), Stories (24-hour ephemeral content), Reels (TikTok-style short video), IGTV/long video, DMs, and Shopping. Key differentiators: the iconic square-grid profile, Stories with interactive stickers, Reels (vertical short-form video competing with TikTok), Instagram Shopping (in-app commerce), Close Friends list, Broadcast Channels (one-to-many messaging), and deep integration with Facebook/Meta&#39;s ad platform. The profile grid serves as a curated visual portfolio.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Feed
+│   ├── Following Feed (posts from followed accounts + suggested)
+│   ├── Favorites Feed (close friends and favorite accounts)
+│   ├── Stories Bar (top, horizontal scroll)
+│   │   ├── Your Story (first position, add new)
+│   │   ├── Close Friends Stories (green ring)
+│   │   └── Followed Accounts&#39; Stories
+│   ├── Suggested Posts (after catching up with following)
+│   ├── Sponsored Posts (ads, in-feed)
+│   └── Post Card
+│       ├── Author (avatar, username, follow button)
+│       ├── Media (photo / carousel / Reel / video)
+│       ├── Action Bar: Like (❤️), Comment (💬), Share (➤), Save (🔖)
+│       ├── Likes Count
+│       ├── Caption (with @mentions, #hashtags)
+│       ├── &quot;View all X comments&quot;
+│       ├── Timestamp
+│       └── Carousel Dots (if multi-image)
+├── Explore
+│   ├── Trending Grid (algorithmic mix of photos + Reels)
+│   ├── Topic Chips (Accounts, Audio, Tags, Places, Reels)
+│   ├── Search Bar
+│   │   ├── Results: Accounts, Tags, Places, Audio
+│   │   └── Recent Searches
+│   ├── Hashtag Page
+│   │   ├── Top Posts (grid)
+│   │   ├── Recent Posts
+│   │   ├── Related Hashtags
+│   │   └── Post Count
+│   └── Location Page
+│       ├── Map
+│       ├── Top Posts
+│       └── Recent Posts
+├── Reels
+│   ├── Full-screen Vertical Feed (swipe up)
+│   ├── Per-Reel Overlay
+│   │   ├── Right: Like, Comment, Share, Audio, More (⋯)
+│   │   ├── Bottom: @Creator, Caption, Audio Name
+│   │   └── Follow Button (inline)
+│   ├── Reel Detail (comments, share, save)
+│   └── Audio Page (all Reels using this sound)
+├── Create
+│   ├── Post (photo/video/carousel)
+│   │   ├── Select from Gallery (multi-select for carousel up to 10)
+│   │   ├── Camera Capture
+│   │   ├── Edit
+│   │   │   ├── Filters (Clarendon, Juno, Valencia, etc.)
+│   │   │   ├── Adjustments (brightness, contrast, saturation, warmth, etc.)
+│   │   │   ├── Crop / Rotate
+│   │   │   └── Cover Image (for video)
+│   │   └── Share Screen
+│   │       ├── Caption + @mentions + #hashtags
+│   │       ├── Tag People (in photo)
+│   │       ├── Add Location
+│   │       ├── Add Music
+│   │       ├── Alt Text (accessibility)
+│   │       ├── Audience (Everyone / Close Friends)
+│   │       ├── Advanced: Hide Likes, Turn Off Commenting
+│   │       ├── Reminder (set event reminder)
+│   │       ├── Share to Facebook (cross-post)
+│   │       └── Product Tags (Shopping)
+│   ├── Reel
+│   │   ├── Record (multi-clip, timer, speed)
+│   │   ├── Audio (add music/sound before or after)
+│   │   ├── Effects / AR Filters
+│   │   ├── Edit (trim, reorder clips, text, stickers, draw)
+│   │   ├── Voiceover
+│   │   ├── Auto-Captions
+│   │   └── Share (caption, tags, cover, topic)
+│   ├── Story
+│   │   ├── Photo / Video / Boomerang / Layout / Hands-Free
+│   │   ├── Stickers
+│   │   │   ├── Poll, Quiz, Question, Countdown, Emoji Slider
+│   │   │   ├── Music, GIF, Mention, Hashtag, Location
+│   │   │   ├── Link (any account), Product
+│   │   │   ├── Add Yours (collaborative template)
+│   │   │   └── AI-generated stickers
+│   │   ├── Text Overlay (fonts, colors, animation)
+│   │   ├── Drawing Tools (marker, neon, eraser)
+│   │   ├── Filters / AR Effects
+│   │   └── Share (Your Story / Close Friends / DM)
+│   └── Broadcast Channel (one-to-many messages)
+├── Stories Viewer
+│   ├── Full-screen Story (photo/video)
+│   ├── Tap Left/Right (navigate within user&#39;s stories)
+│   ├── Swipe Left/Right (navigate between users)
+│   ├── Swipe Up / Link Tap
+│   ├── Reply (message to author)
+│   ├── React (emoji reactions)
+│   ├── Story Interactions (poll, quiz, question — tap to participate)
+│   └── Story Insights (for creators: views, interactions)
+├── Post Detail
+│   ├── Photo(s) / Video / Reel
+│   ├── Author (avatar, username)
+│   ├── Like Count (hideable by author)
+│   ├── Caption (#hashtags, @mentions, tagged accounts)
+│   ├── Comments (threaded, pinned by author)
+│   │   ├── Like on Comments
+│   │   ├── Reply (nested)
+│   │   ├── Translate Comment
+│   │   └── Report / Delete
+│   ├── Timestamp
+│   ├── Location Link
+│   ├── Tagged People
+│   ├── Product Tags (tap to view/buy)
+│   └── Actions: Like, Comment, Share, Save to Collection
+├── Profile
+│   ├── Header
+│   │   ├── Avatar (tap for Story ring)
+│   │   ├── Username, Name
+│   │   ├── Bio (150 chars, links, pronouns, category)
+│   │   ├── External Link
+│   │   ├── Action Buttons: Follow, Message, Contact (email/phone/directions)
+│   │   └── Stats: Posts, Followers, Following
+│   ├── Story Highlights Row (persistent, circular icons)
+│   ├── Content Tabs
+│   │   ├── Grid (3-column, default)
+│   │   ├── Reels
+│   │   └── Tagged
+│   ├── Pinned Posts (up to 3, pinned to top of grid)
+│   ├── Saved (own profile only, private)
+│   │   ├── All Saved
+│   │   └── Collections (user-created folders)
+│   ├── Professional Dashboard (creator/business accounts)
+│   │   ├── Insights (reach, accounts engaged, content performance)
+│   │   ├── Tools (promotions, branded content, shopping)
+│   │   └── Resources (tips, guides)
+│   └── Profile Type: Personal / Creator / Business
+├── Direct Messages (DMs)
+│   ├── Primary Inbox (people you follow back)
+│   ├── General Inbox (requests from non-followers)
+│   ├── Conversation Thread
+│   │   ├── Text, Photos, Videos, GIFs, Voice Messages
+│   │   ├── Share Post / Reel / Profile / Location
+│   │   ├── Reactions (double-tap, emoji)
+│   │   ├── Reply to specific message (thread)
+│   │   ├── Vanish Mode (disappearing messages)
+│   │   └── Video/Voice Call (inline)
+│   ├── Group Chats (up to 250 people)
+│   ├── Notes (short-form status visible on DM list)
+│   ├── Channels (creator → followers broadcasts)
+│   └── Message Requests (non-followers)
+├── Activity / Notifications
+│   ├── Likes (on your posts)
+│   ├── Comments
+│   ├── Follows (new followers)
+│   ├── Mentions (@mentions in posts/stories/comments)
+│   ├── Tags (photo tags)
+│   ├── Requests (follow requests for private accounts)
+│   ├── Live (someone you follow is live)
+│   └── Shopping (order updates)
+├── Instagram Shopping
+│   ├── Shop Tab (product browsing by category)
+│   ├── Product Detail Page (images, price, description)
+│   ├── Collections (curated by brands)
+│   ├── Wishlist
+│   ├── In-Feed Product Tags (tap on post → product)
+│   ├── Live Shopping
+│   └── Checkout (in-app or redirect to brand website)
+├── Instagram Live
+│   ├── Go Live (create)
+│   │   ├── Title, Audience, Practice Mode
+│   │   ├── Add Co-broadcaster (up to 3 in Live Rooms)
+│   │   ├── Filters
+│   │   ├── Q&amp;A, Donations
+│   │   └── Shopping (pin products)
+│   ├── Watch Live
+│   │   ├── Real-time Video
+│   │   ├── Comments (scrolling)
+│   │   ├── Hearts (tap to send)
+│   │   ├── Request to Join
+│   │   └── Share
+│   └── Live Replay (saved to Reels or archive)
+├── Settings
+│   ├── Edit Profile (name, username, bio, avatar, pronouns, links)
+│   ├── Professional Dashboard (creator/business)
+│   ├── Account (personal info, verification, branded content)
+│   ├── Privacy
+│   │   ├── Account Privacy (Public / Private)
+│   │   ├── Close Friends List
+│   │   ├── Blocked Accounts
+│   │   ├── Restricted Accounts
+│   │   ├── Hidden Words (comment filter)
+│   │   ├── Story (hide from, close friends, sharing)
+│   │   ├── Comments (allow from: everyone/followers/off)
+│   │   ├── Tags &amp; Mentions
+│   │   ├── Messages (who can message you)
+│   │   ├── Activity Status (online indicator)
+│   │   └── Reels &amp; Remix
+│   ├── Notifications (granular per type + per account)
+│   ├── Security (password, 2FA, login activity, emails from IG)
+│   ├── Ads (ad preferences)
+│   ├── Supervision (parental controls)
+│   ├── Content Preferences (sensitive content, liked/saved, political content)
+│   ├── Your Activity (time spent, daily reminder, quiet mode)
+│   ├── Accessibility (alt text, captions, reduce motion)
+│   ├── Help
+│   └── About
+└── Threads Integration (cross-post, link in bio)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs, always visible</td>
+<td>Home (🏠), Search (🔍), Create (➕), Reels (🎬), Profile (👤)</td>
+</tr>
+<tr>
+<td><strong>Top Bar (Home)</strong></td>
+<td>Logo (left) + Likes (❤️) + DMs (✉️ with badge)</td>
+<td>Contextual per screen</td>
+</tr>
+<tr>
+<td><strong>Stories Bar</strong></td>
+<td>Horizontal scroll, top of Home feed</td>
+<td>Circular avatars with color ring (unseen=gradient, seen=gray, close friends=green)</td>
+</tr>
+<tr>
+<td><strong>Post Actions</strong></td>
+<td>Below each post, horizontal</td>
+<td>Like ❤️, Comment 💬, Share ➤, Save 🔖</td>
+</tr>
+<tr>
+<td><strong>Profile Tabs</strong></td>
+<td>Icon tabs below highlights</td>
+<td>Grid (▦), Reels (🎬), Tagged</td>
+</tr>
+<tr>
+<td><strong>Desktop Sidebar</strong></td>
+<td>Left sidebar (≥1024px)</td>
+<td>Home, Search, Explore, Reels, Messages, Notifications, Create, Profile</td>
+</tr>
+<tr>
+<td><strong>Reels Feed</strong></td>
+<td>Full-screen vertical swipe</td>
+<td>Same as TikTok-style: swipe up for next</td>
+</tr>
+<tr>
+<td><strong>Create (+)</strong></td>
+<td>Center tab, opens creation flow</td>
+<td>Bottom sheet: Post, Reel, Story, Live, Story Highlight</td>
+</tr>
+</tbody></table>
+<h3>Mobile Layout</h3>
+<pre><code>┌─────────────────────────────────┐
+│  [Instagram]        [❤️] [✉️3] │  ← top bar
+│  (●)(○)(○)(○)(○)(○)(○)→        │  ← stories bar
+├─────────────────────────────────┤
+│  [Avatar] username  [•••]      │
+│  ┌───────────────────────────┐ │
+│  │                           │ │
+│  │      [Photo/Video]        │ │
+│  │                           │ │
+│  └───────────────────────────┘ │
+│  ❤️ 💬 ➤              🔖      │  ← actions
+│  1,234 likes                   │
+│  username Caption text...      │
+│  View all 89 comments          │
+│  2 HOURS AGO                   │
+├─────────────────────────────────┤
+│ 🏠 Home|🔍|➕|🎬 Reels|👤 Prof│  ← tab bar
+└─────────────────────────────────┘
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Post</td>
+<td>media[] (photos/videos up to 10 carousel), caption (2,200 chars), location, filter, likes_count, comments_count, created_at, like_count_hidden (bool), comments_disabled (bool), tagged_users[], product_tags[]</td>
+<td>belongs to User; has Comments, Likes, Saves</td>
+</tr>
+<tr>
+<td>Media</td>
+<td>url, type (image/video), width, height, alt_text, order (carousel position), aspect_ratio (1:1/4:5/16:9)</td>
+<td>belongs to Post</td>
+</tr>
+<tr>
+<td>Story</td>
+<td>media (photo/video/boomerang), stickers[], text_overlays[], drawing[], duration, expires_at (24h from creation), viewer_list[]</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>StoryHighlight</td>
+<td>name, cover_image, stories[]</td>
+<td>belongs to User (persistent on profile)</td>
+</tr>
+<tr>
+<td>Reel</td>
+<td>video_url, audio, caption, duration (up to 90s), cover_image, likes_count, views_count, shares_count, comments_count</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text, likes_count, created_at, pinned (bool)</td>
+<td>belongs to Post/Reel and User; can be nested (1 level of replies)</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>created_at</td>
+<td>belongs to User and Post/Reel/Comment</td>
+</tr>
+<tr>
+<td>Save</td>
+<td>post, collection</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>SavedCollection</td>
+<td>name, cover_image</td>
+<td>belongs to User; has many saved Posts</td>
+</tr>
+<tr>
+<td>User</td>
+<td>username, display_name, avatar, bio, website, is_private, is_verified, account_type (personal/creator/business), followers_count, following_count, posts_count, pronouns, category</td>
+<td>has many Posts, Stories, Reels, Highlights</td>
+</tr>
+<tr>
+<td>Follow</td>
+<td>follower_id, following_id, status (active/pending for private accounts), close_friend (bool)</td>
+<td>connects Users</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>name, post_count, top_posts[]</td>
+<td>many-to-many with Posts</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>name, lat, lng, address</td>
+<td>many-to-many with Posts/Stories</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>name, artist, original_creator, reels_count</td>
+<td>used by many Reels</td>
+</tr>
+<tr>
+<td>BroadcastChannel</td>
+<td>name, creator, subscribers_count, messages[]</td>
+<td>belongs to Creator User</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>text (60 chars), audio_clip, expires_at (24h)</td>
+<td>belongs to User (visible on DM list)</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>name, price, images[], product_url, brand</td>
+<td>tagged in Posts/Stories</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>text, media[], reactions[], read, created_at, vanish_mode (bool)</td>
+<td>belongs to Conversation</td>
+</tr>
+</tbody></table>
+<h3>Post Types</h3>
+<p><code>single_photo | carousel (up to 10) | video | reel | collab_post (two authors)</code></p>
+<h3>Media Aspect Ratios</h3>
+<p><code>1:1 (square) | 4:5 (portrait, recommended) | 16:9 (landscape) | 9:16 (Reels/Stories)</code></p>
+<h2>User Flows</h2>
+<h3>Browse and Engage</h3>
+<pre><code>Open App → Feed → Scroll → Double-tap to Like → Tap Comment → Write Reply → Back to Feed → View Stories
+</code></pre>
+<h3>Post Photo</h3>
+<pre><code>[+] → Select Photo → Apply Filter → Edit Adjustments → Write Caption + Hashtags → Tag People → Add Location → Share
+</code></pre>
+<h3>Create Reel</h3>
+<pre><code>[+] → Reel → Select Audio → Record Clips → Add Effects/Text → Edit → Write Caption → Share → Appears in Feed + Reels Tab
+</code></pre>
+<h3>Watch Stories</h3>
+<pre><code>Feed → Tap Story Avatar (ring) → Full-screen Story → Tap Right (next) → Interact (poll/quiz) → Reply → Swipe to Next User
+</code></pre>
+<h3>Explore and Discover</h3>
+<pre><code>Explore Tab → Trending Grid → Tap Photo/Reel → Like/Save → View Profile → Follow → Their Content in Feed
+</code></pre>
+<h3>Save and Organize</h3>
+<pre><code>Post → Bookmark (🔖) → Saved → Create Collection → Add to Collection → Browse Collections Later
+</code></pre>
+<h3>Shopping</h3>
+<pre><code>Feed → Tap Product Tag on Post → Product Detail → View on Website / Add to Wishlist → Checkout
+</code></pre>
+<h3>Go Live</h3>
+<pre><code>Create → Live → Set Title → Go Live → Viewers Join → Comments/Hearts → Invite Guest → End → Share to Reels
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home Feed
+/explore                       → Explore / Discover
+/explore/tags/:tag             → Hashtag Page
+/explore/locations/:id         → Location Page
+/reels                         → Reels Feed
+/reels/audio/:audioId          → Audio Page
+/p/:postId                     → Post Detail
+/reel/:reelId                  → Reel Detail
+/:username                     → User Profile (Grid)
+/:username/reels               → User Reels
+/:username/tagged              → Tagged Posts
+/:username/saved               → Saved Posts (own profile, private)
+/:username/followers            → Followers List
+/:username/following            → Following List
+/:username/channel              → Broadcast Channel
+/direct/inbox                  → DM Inbox
+/direct/t/:threadId            → DM Conversation
+/stories/:username             → Current Stories
+/stories/:username/:storyId    → Specific Story
+/accounts/edit                 → Edit Profile
+/accounts/settings             → Settings
+/accounts/privacy              → Privacy Settings
+/accounts/professional-account → Creator/Business Dashboard
+/search?q=:query               → Search Results
+/create                        → Create (desktop)
+/live/:username                → Live Stream
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Accounts, Tags, Places, Audio, Reels</td>
+<td>Content Type tabs</td>
+<td>Relevance (algorithmic)</td>
+</tr>
+<tr>
+<td>Explore</td>
+<td>Trending posts/reels</td>
+<td>Topic chips (category)</td>
+<td>Trending (algorithmic)</td>
+</tr>
+<tr>
+<td>Hashtag Page</td>
+<td>Posts with tag</td>
+<td>—</td>
+<td>Top, Recent</td>
+</tr>
+<tr>
+<td>Location Page</td>
+<td>Posts at location</td>
+<td>—</td>
+<td>Top, Recent</td>
+</tr>
+<tr>
+<td>Profile</td>
+<td>User&#39;s posts</td>
+<td>Tab (Grid/Reels/Tagged)</td>
+<td>Chronological (grid layout)</td>
+</tr>
+<tr>
+<td>Saved</td>
+<td>Bookmarked posts</td>
+<td>Collection</td>
+<td>Saved Date</td>
+</tr>
+<tr>
+<td>DMs</td>
+<td>Messages, accounts</td>
+<td>—</td>
+<td>Recent</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Nav</th>
+<th>Feed</th>
+<th>Profile Grid</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Left sidebar (icons + labels)</td>
+<td>Center feed (max 470px post width) + right suggestions</td>
+<td>3-column grid</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Left icon sidebar (no labels)</td>
+<td>Center feed</td>
+<td>3-column grid</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tab bar (5 tabs)</td>
+<td>Full-width feed</td>
+<td>3-column grid (tight, no gap)</td>
+</tr>
+</tbody></table>
+<h3>Mobile-First Patterns</h3>
+<ul>
+<li>Camera-first: [+] launches photo/video picker or camera</li>
+<li>Double-tap to like with heart animation overlay</li>
+<li>Swipe gestures in carousel posts</li>
+<li>Pull-to-refresh feed</li>
+<li>Stories: full-screen, hold to pause, tap left/right to navigate</li>
+<li>Reels: full-screen vertical swipe (TikTok-style)</li>
+<li>Image loading: progressive blur → sharp (LQIP)</li>
+<li>Haptic feedback on actions (like, send)</li>
+<li>Dark mode (system-aware or manual)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Post</th>
+<th>Comment</th>
+<th>Message</th>
+<th>Stories</th>
+<th>Reels</th>
+<th>Shopping</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>Public profiles/posts only (limited)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Personal Account</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Browse</td>
+</tr>
+<tr>
+<td>Private Account</td>
+<td>✅</td>
+<td>Followers only see content</td>
+<td>✅</td>
+<td>✅</td>
+<td>Followers only</td>
+<td>Followers only (or public if shared to Reels)</td>
+<td>Browse</td>
+</tr>
+<tr>
+<td>Creator Account</td>
+<td>✅</td>
+<td>✅ + Insights</td>
+<td>✅</td>
+<td>✅ + Primary/General inbox</td>
+<td>✅ + Insights</td>
+<td>✅ + Insights, Remix settings</td>
+<td>✅ + Product tagging, Branded Content</td>
+</tr>
+<tr>
+<td>Business Account</td>
+<td>✅</td>
+<td>✅ + Ads, Promotions</td>
+<td>✅</td>
+<td>✅ + Quick Replies, Auto-response</td>
+<td>✅ + Shopping</td>
+<td>✅ + Shopping</td>
+<td>✅ + Catalog, Checkout, Ads</td>
+</tr>
+<tr>
+<td>Verified (blue check)</td>
+<td>✅</td>
+<td>✅ + Verified badge</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin (Meta)</td>
+<td>✅</td>
+<td>Full control</td>
+<td>Moderate</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Platform moderation</td>
+</tr>
+</tbody></table>
+<h3>Privacy Controls (User-configurable)</h3>
+<ul>
+<li>Account privacy: Public / Private (requires follow approval)</li>
+<li>Story visibility: Everyone / Close Friends / Custom</li>
+<li>Reel remixing: Allow / Don&#39;t Allow</li>
+<li>Comment controls: Everyone / Followers / Followers + Following / Off</li>
+<li>Who can tag you: Everyone / Followers / No one</li>
+<li>Message requests: Everyone / Followers + people in your contacts</li>
+<li>Activity status (online): On / Off</li>
+<li>Hide like counts on your posts</li>
+<li>Blocked accounts / Restricted accounts</li>
+<li>Sensitive content control (Explore): More / Standard / Less</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube — IA.md | getIA.md</title>
+  <meta name="description" content="Video platform. Creator studio, Shorts, recommendations. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=64" alt="YouTube" onerror="this.parentElement.textContent='Y'">
+      </div>
+      <h1 class="detail-brand-name">YouTube</h1>
+      <p class="detail-brand-tagline">Video platform. Creator studio, Shorts, recommendations.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/youtube/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/youtube/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>YouTube — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The world&#39;s largest user-generated video platform. Unlike subscription-only services like Netflix, YouTube&#39;s mental model is a <strong>creator ecosystem</strong> — anyone can upload, and an algorithmic recommendation engine drives content discovery. The IA must serve three distinct personas: viewers (consuming content), creators (producing and monetizing), and advertisers (reaching audiences). Key differentiators include Shorts (vertical short-form), YouTube Music, channel subscriptions, community posts, and YouTube Studio for creator analytics.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Recommended Videos (algorithmic feed)
+│   ├── Shorts Shelf
+│   ├── Trending
+│   ├── Subscriptions Preview
+│   ├── Recently Watched
+│   └── Category Rows (Music, Gaming, News, Sports, etc.)
+├── Explore
+│   ├── Trending
+│   ├── Music
+│   ├── Gaming
+│   ├── News
+│   ├── Sports
+│   ├── Learning
+│   └── Fashion &amp; Beauty
+├── Shorts
+│   ├── Vertical Swipe Feed (full-screen)
+│   ├── Like / Dislike
+│   ├── Comment Sheet
+│   ├── Share
+│   ├── Audio Page (all Shorts using this sound)
+│   └── Subscribe (inline)
+├── Subscriptions
+│   ├── All (chronological from subscribed channels)
+│   ├── Today / This Week / This Month
+│   ├── Channel Filter Bar (horizontal scroll)
+│   └── Manage Subscriptions
+├── Library
+│   ├── History (Watch, Search, Comment)
+│   ├── Watch Later
+│   ├── Liked Videos
+│   ├── Playlists (created + saved)
+│   ├── Downloads (Premium / mobile)
+│   └── Your Clips
+├── Video Watch Page
+│   ├── Player
+│   │   ├── Playback Controls
+│   │   ├── Quality / Speed / Subtitles (CC)
+│   │   ├── Theater / Full-Screen / Mini Player / PiP
+│   │   ├── Chapter Markers (timeline segments)
+│   │   ├── Annotations / Cards / End Screens
+│   │   └── Ambient Mode (color bleed from video)
+│   ├── Video Info
+│   │   ├── Title, Views, Date, Likes/Dislikes
+│   │   ├── Channel (avatar, name, subscriber count, Subscribe button)
+│   │   ├── Description (collapsible: links, timestamps, hashtags)
+│   │   ├── Chapters List
+│   │   ├── Transcript (auto-generated + manual)
+│   │   └── #Hashtag Links
+│   ├── Engagement Actions
+│   │   ├── Like / Dislike
+│   │   ├── Share (link, embed, social)
+│   │   ├── Save (to playlist / Watch Later)
+│   │   ├── Clip
+│   │   ├── Thanks (tip creator)
+│   │   └── Report
+│   ├── Comments Section
+│   │   ├── Sort: Top / Newest
+│   │   ├── Comment (text, emoji, timestamp links)
+│   │   ├── Reply Thread (collapsible)
+│   │   ├── Pinned Comment (creator&#39;s)
+│   │   ├── Hearted by Creator
+│   │   └── Super Chat / Super Thanks highlights
+│   └── Recommendations Sidebar / Below
+│       ├── Up Next (autoplay)
+│       ├── Related Videos
+│       └── From This Channel
+├── Channel Page
+│   ├── Banner, Avatar, Channel Name, Subscribers
+│   ├── Tabs: Home, Videos, Shorts, Live, Playlists, Community, Channels, About
+│   ├── Featured Video / Trailer (for non-subscribers)
+│   ├── Sections (customizable by creator)
+│   ├── Channel Membership (Join button, perks)
+│   └── Store (merch shelf)
+├── Community Tab
+│   ├── Creator Posts (text, images, polls, quizzes)
+│   ├── Like / Comment
+│   └── Share
+├── Playlists
+│   ├── Playlist Page (title, creator, video list)
+│   ├── Mix (auto-generated by YouTube)
+│   └── Collaborative Playlists
+├── Search
+│   ├── Results: Videos, Channels, Playlists, Shorts
+│   ├── Filters: Upload Date, Type, Duration, Features, Sort By
+│   └── Search Suggestions / Auto-complete
+├── YouTube Studio (Creator Dashboard)
+│   ├── Dashboard (overview, latest video stats, comments)
+│   ├── Content (all uploads, drafts, live, Shorts)
+│   ├── Analytics
+│   │   ├── Overview (views, watch time, subscribers)
+│   │   ├── Reach (impressions, CTR, traffic sources)
+│   │   ├── Engagement (watch time, avg view duration)
+│   │   ├── Audience (demographics, returning, geography)
+│   │   └── Revenue (if monetized)
+│   ├── Comments (moderation, held for review)
+│   ├── Subtitles (manage per video)
+│   ├── Copyright (claims, disputes)
+│   ├── Monetization (AdSense, memberships, Super Chat, merch)
+│   ├── Customization (layout, branding, basic info)
+│   ├── Audio Library (free music &amp; SFX)
+│   └── Settings (upload defaults, permissions, community)
+├── YouTube Premium
+│   ├── Ad-free playback
+│   ├── Background play (mobile)
+│   ├── Downloads
+│   └── YouTube Music (bundled)
+├── YouTube Music (cross-link or integrated)
+├── YouTube TV (cross-link)
+├── YouTube Kids (separate app)
+├── Notifications
+│   ├── Uploads from subscribed channels
+│   ├── Comment replies
+│   ├── Recommendations
+│   └── Bell preferences (All / Personalized / None per channel)
+├── Settings
+│   ├── Account
+│   ├── Notifications
+│   ├── Playback &amp; Performance
+│   ├── Privacy
+│   ├── Downloads (quality, Wi-Fi only)
+│   ├── Billing &amp; Payments
+│   ├── Connected Apps
+│   └── Advanced (Data, API)
+└── Help / Send Feedback
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Desktop: collapsible rail (icons) ↔ expanded (labels)</td>
+<td>Home, Shorts, Subscriptions, Library, History, channel list, Explore links</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>YouTube logo (hamburger toggle sidebar), search bar (center), voice search, Create (+), notifications bell, avatar</td>
+</tr>
+<tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>Mobile: 5 tabs</td>
+<td>Home, Shorts, [+ Create], Subscriptions, Library</td>
+</tr>
+<tr>
+<td><strong>Mini Player</strong></td>
+<td>Sticky bottom (mobile) or PiP (desktop)</td>
+<td>Minimized video continues playing while browsing</td>
+</tr>
+<tr>
+<td><strong>Theater / Full-Screen</strong></td>
+<td>Toggle on watch page</td>
+<td>Theater: wider player, no sidebar. Full-screen: browser full-screen</td>
+</tr>
+<tr>
+<td><strong>Shorts Feed</strong></td>
+<td>Full-screen vertical swipe</td>
+<td>One Short per screen, swipe up for next</td>
+</tr>
+</tbody></table>
+<h3>Desktop Sidebar</h3>
+<pre><code>[≡ Hamburger]
+─────────────
+🏠 Home
+🔥 Shorts
+📺 Subscriptions
+─────────────
+▶ Library
+⏰ History
+🎬 Your Videos
+⏳ Watch Later
+👍 Liked Videos
+─────────────
+Subscriptions ▾
+  Channel 1
+  Channel 2
+  Channel 3
+  Show more...
+─────────────
+Explore ▾
+  Trending
+  Music
+  Gaming
+  News
+  Sports
+  Learning
+─────────────
+Settings
+Report History
+Help
+Send Feedback
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Video</td>
+<td>title, description, thumbnail, duration, views_count, likes_count, published_at, visibility (public/unlisted/private), category, tags[], language, captions[], chapters[]</td>
+<td>belongs to Channel; has Comments, Playlist appearances</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>video_url, caption, audio_source, duration (≤60s), views, likes</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>name, handle (@), avatar, banner, description, subscriber_count, joined_at, country, links[], verified</td>
+<td>has many Videos, Shorts, Playlists, Community Posts, Memberships</td>
+</tr>
+<tr>
+<td>Playlist</td>
+<td>title, description, visibility, video_count, creator</td>
+<td>belongs to Channel; has many Videos (ordered)</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text, likes_count, reply_count, pinned, hearted, created_at</td>
+<td>belongs to Video and User; can be nested</td>
+</tr>
+<tr>
+<td>CommunityPost</td>
+<td>type (text/image/poll/quiz), body, media[], poll_options[]</td>
+<td>belongs to Channel</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>channel, notification_level (all/personalized/none)</td>
+<td>connects User to Channel</td>
+</tr>
+<tr>
+<td>WatchHistory</td>
+<td>video, timestamp, position, completed</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Membership</td>
+<td>channel, tier, perks[], price, joined_at</td>
+<td>connects User to Channel (paid)</td>
+</tr>
+<tr>
+<td>SuperChat</td>
+<td>message, amount, color_tier, duration_on_screen</td>
+<td>belongs to User and Live Stream</td>
+</tr>
+<tr>
+<td>Caption</td>
+<td>language, auto_generated, content</td>
+<td>belongs to Video</td>
+</tr>
+<tr>
+<td>Chapter</td>
+<td>title, start_time</td>
+<td>belongs to Video</td>
+</tr>
+<tr>
+<td>Card</td>
+<td>type (video/playlist/channel/link), position_time</td>
+<td>belongs to Video</td>
+</tr>
+<tr>
+<td>EndScreen</td>
+<td>elements[] (subscribe, video, playlist, link), start_time</td>
+<td>belongs to Video</td>
+</tr>
+</tbody></table>
+<h3>Content Hierarchy</h3>
+<pre><code>Channel → Videos / Shorts / Live Streams / Community Posts
+Channel → Playlists → Videos (ordered)
+Video → Chapters → Segments
+Video → Comments → Replies
+</code></pre>
+<h3>Video States</h3>
+<p><code>draft → uploading → processing → published (public/unlisted/private) → removed</code></p>
+<h2>User Flows</h2>
+<h3>Watch and Discover</h3>
+<pre><code>Home → Recommended Video → Watch → Autoplay Next → Continue Watching (rabbit hole)
+</code></pre>
+<h3>Shorts Binge</h3>
+<pre><code>Home → Shorts Shelf → Swipe Up → Like → Follow Creator → Continue Swiping
+</code></pre>
+<h3>Search and Watch</h3>
+<pre><code>Search Bar → Type/Voice Query → Filter Results → Click Video → Watch → Related Videos
+</code></pre>
+<h3>Subscribe and Get Updates</h3>
+<pre><code>Watch Video → Subscribe → Bell (All Notifications) → Home/Subscriptions → New Upload → Watch
+</code></pre>
+<h3>Creator: Upload Video</h3>
+<pre><code>YouTube Studio → Create (+) → Upload Video → Set Title/Thumbnail/Description → Visibility → Publish
+</code></pre>
+<h3>Creator: Go Live</h3>
+<pre><code>YouTube Studio → Go Live → Set Title/Category → Start Stream → Chat + Super Chat → End → VOD saved
+</code></pre>
+<h3>Creator: Post to Community</h3>
+<pre><code>Channel → Community → Create Post → Text/Image/Poll → Publish → Subscribers notified
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/feed/trending                 → Trending
+/feed/subscriptions            → Subscriptions Feed
+/feed/library                  → Library
+/feed/history                  → Watch History
+/shorts                        → Shorts Feed
+/shorts/:id                    → Individual Short
+/watch?v=:videoId              → Video Watch Page
+/watch?v=:id&amp;t=:seconds        → Video at timestamp
+/watch?v=:id&amp;list=:playlistId  → Video in playlist context
+/playlist?list=:id             → Playlist Page
+/results?search_query=:q       → Search Results
+/@:handle                      → Channel Page (by handle)
+/c/:customUrl                  → Channel Page (legacy custom URL)
+/channel/:channelId            → Channel Page (by ID)
+/@:handle/videos               → Channel Videos Tab
+/@:handle/shorts               → Channel Shorts Tab
+/@:handle/streams              → Channel Live Tab
+/@:handle/playlists            → Channel Playlists
+/@:handle/community            → Channel Community Posts
+/@:handle/about                → Channel About
+/studio                        → YouTube Studio Dashboard
+/studio/video/:id/edit         → Edit Video
+/studio/analytics              → Creator Analytics
+/studio/comments               → Comment Moderation
+/studio/monetization           → Monetization Hub
+/premium                       → YouTube Premium Landing
+/account                       → Account Settings
+/notifications                 → Notification Inbox
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Videos, Channels, Playlists, Shorts, Movies</td>
+<td>Upload Date (hour/today/week/month/year), Type (video/channel/playlist/movie/show), Duration (short &lt;4min/medium 4-20min/long &gt;20min), Features (live/4K/HDR/subtitles/360/VR180/location/creative commons)</td>
+<td>Relevance, Upload Date, View Count, Rating</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>Videos within channel</td>
+<td>Type (videos/shorts/live), Popularity</td>
+<td>Popular, Date Added (newest/oldest)</td>
+</tr>
+<tr>
+<td>Playlist</td>
+<td>Videos in playlist</td>
+<td>—</td>
+<td>Playlist order, Date Added</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>Comment text</td>
+<td>—</td>
+<td>Top Comments, Newest First</td>
+</tr>
+<tr>
+<td>YouTube Studio</td>
+<td>Creator&#39;s content</td>
+<td>Status, Visibility, Type</td>
+<td>Date, Views, Comments, Likes</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Player</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Sidebar + feed grid (3-4 cols) or watch page + recommendations sidebar</td>
+<td>Inline (resizable), theater mode, full-screen</td>
+<td>Collapsible left sidebar</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Feed grid (2-3 cols), no sidebar on watch page</td>
+<td>Inline, full-screen</td>
+<td>Mini sidebar (icons)</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Single column, vertical card list</td>
+<td>Top of screen (fixed while scrolling comments), landscape full-screen</td>
+<td>Bottom tab bar</td>
+</tr>
+</tbody></table>
+<h3>Mobile Adaptations</h3>
+<ul>
+<li>Portrait: video top, info + comments below (scrollable)</li>
+<li>Landscape: auto-enters full-screen player</li>
+<li>Mini player: minimized video persists while browsing</li>
+<li>Picture-in-Picture: video floats over other apps</li>
+<li>Shorts: full-screen vertical TikTok-style experience</li>
+<li>Offline: download videos (Premium) for offline viewing</li>
+<li>Dark mode: system-aware or manual toggle</li>
+<li>Ambient mode: soft color glow around player matching video content</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Watch</th>
+<th>Upload</th>
+<th>Comment</th>
+<th>Live Stream</th>
+<th>Monetize</th>
+<th>Studio</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>Public videos (ads)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Signed In (Free)</td>
+<td>✅ (ads)</td>
+<td>✅ (up to 15 min default, verify for longer)</td>
+<td>✅</td>
+<td>After meeting requirements</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>YouTube Premium</td>
+<td>✅ (no ads, background, downloads)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Channel Member</td>
+<td>✅ + member perks (badges, emojis, exclusive content)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Creator (Monetized)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (ads, memberships, Super Chat, merch)</td>
+<td>✅ (full analytics)</td>
+</tr>
+<tr>
+<td>Admin / YouTube Staff</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Content moderation, policy enforcement</td>
+</tr>
+</tbody></table>
+<h3>Creator Eligibility (YouTube Partner Program)</h3>
+<ul>
+<li>1,000+ subscribers AND</li>
+<li>4,000+ public watch hours (12 months) OR 10M+ Shorts views (90 days)</li>
+<li>Compliance with monetization policies</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

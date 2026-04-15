@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plaid — IA.md | getIA.md</title>
+  <meta name="description" content="Financial data API. Bank linking, transactions, identity. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=plaid.com&sz=64" alt="Plaid" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Plaid</h1>
+      <p class="detail-brand-tagline">Financial data API. Bank linking, transactions, identity.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/plaid/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://plaid.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/plaid/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Plaid — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Plaid is the financial data infrastructure that connects consumer bank accounts to fintech applications. The mental model splits into two distinct user experiences: <strong>for developers</strong>, Plaid is an API platform (integrate bank connectivity in hours, not months); <strong>for consumers</strong>, Plaid is the &quot;Connect your bank&quot; modal that appears inside thousands of apps (Venmo, Robinhood, Coinbase). Plaid&#39;s IA must serve both the developer console and the consumer-facing Link widget.</p>
+<h2>Site Map</h2>
+<h3>Developer Platform / Marketing Site</h3>
+<pre><code>├── Home
+│   ├── Hero (Connect to bank accounts — one API)
+│   ├── Product Suite Overview
+│   ├── Customer Logos (Venmo, Coinbase, Betterment, etc.)
+│   ├── How It Works (user connects bank → Plaid fetches data → app gets data)
+│   ├── Code Snippet (interactive)
+│   └── Get API Keys CTA
+├── Products
+│   ├── Auth (bank account + routing numbers)
+│   ├── Transactions (transaction history)
+│   ├── Identity (account holder info)
+│   ├── Balance (real-time balance check)
+│   ├── Investments (brokerage data)
+│   ├── Liabilities (loans, credit cards)
+│   ├── Assets (income/asset verification)
+│   ├── Income (payroll data)
+│   ├── Transfer (ACH payments)
+│   ├── Signal (risk scoring for ACH)
+│   ├── Identity Verification (KYC)
+│   ├── Monitor (AML screening)
+│   └── Beacon (fraud network)
+├── Use Cases
+│   ├── Personal Finance (budgeting apps)
+│   ├── Lending (income/asset verification)
+│   ├── Payments (ACH initiation)
+│   ├── Wealth Management (portfolio aggregation)
+│   ├── Banking (account opening)
+│   └── Crypto (fund deposits)
+├── Documentation
+│   ├── Quick Start
+│   ├── API Reference
+│   │   ├── Items &amp; Link
+│   │   ├── Auth
+│   │   ├── Transactions
+│   │   ├── Identity
+│   │   ├── Balance
+│   │   ├── Investments
+│   │   ├── Liabilities
+│   │   ├── Transfer
+│   │   ├── Income
+│   │   └── Webhooks
+│   ├── SDKs (Node, Python, Ruby, Go, Java)
+│   ├── Client Libraries (Link SDKs: Web, iOS, Android, React Native)
+│   ├── Guides
+│   │   ├── Link Integration
+│   │   ├── Handling Errors
+│   │   ├── OAuth Bank Flows
+│   │   ├── Webhook Best Practices
+│   │   └── Migration Guides
+│   ├── Sandbox &amp; Testing
+│   │   ├── Sandbox Environment
+│   │   ├── Test Credentials
+│   │   ├── Sandbox Institutions
+│   │   └── Test Scenarios
+│   └── Changelog
+├── Dashboard (Developer Console)
+│   ├── Overview
+│   │   ├── Connected Items (count)
+│   │   ├── API Calls (chart)
+│   │   ├── Error Rate
+│   │   ├── Status Banner
+│   │   └── Quick Links
+│   ├── Activity
+│   │   ├── Item Activity (connections, disconnections)
+│   │   ├── API Request Logs
+│   │   └── Error Logs
+│   ├── Link Customization
+│   │   ├── Branding (logo, colors)
+│   │   ├── Institution Selection
+│   │   ├── Products Requested
+│   │   └── Link Preview
+│   ├── Integrations
+│   │   ├── Products Enabled
+│   │   ├── Webhook Configuration
+│   │   └── Transfer Settings
+│   ├── Team
+│   │   ├── Members
+│   │   ├── Roles
+│   │   └── Invite
+│   ├── Keys
+│   │   ├── Client ID
+│   │   ├── Sandbox Secret
+│   │   ├── Development Secret
+│   │   └── Production Secret
+│   ├── Billing
+│   │   ├── Current Plan
+│   │   ├── Usage (items billed)
+│   │   ├── Invoices
+│   │   └── Payment Method
+│   └── Settings
+│       ├── Company Info
+│       ├── Compliance (application review)
+│       ├── Environments
+│       └── Allowed Redirect URIs
+├── Pricing
+│   ├── Free Tier (100 Items)
+│   ├── Growth
+│   ├── Enterprise
+│   ├── Per-Product Pricing
+│   └── Volume Discounts
+├── Security &amp; Compliance
+│   ├── SOC 2 Type II
+│   ├── GDPR
+│   ├── Data Encryption
+│   └── Penetration Testing
+└── Company
+    ├── About
+    ├── Careers
+    ├── Blog
+    ├── Plaid Exchange (partner directory)
+    └── Contact
+</code></pre>
+<h3>Plaid Link (Consumer-Facing Widget)</h3>
+<pre><code>├── Link Widget (Modal / WebView)
+│   ├── Welcome Screen
+│   │   ├── App Name + Logo (customized per developer)
+│   │   ├── &quot;Connect your bank account&quot;
+│   │   ├── Permissions Requested (transactions, identity, etc.)
+│   │   └── Continue
+│   ├── Institution Search
+│   │   ├── Search Bar (&quot;Search for your bank&quot;)
+│   │   ├── Popular Institutions (Chase, BofA, Wells Fargo)
+│   │   ├── All Institutions (12,000+)
+│   │   └── &quot;Can&#39;t find your bank?&quot;
+│   ├── Credentials
+│   │   ├── Username
+│   │   ├── Password
+│   │   └── Submit
+│   ├── MFA (Multi-Factor Authentication)
+│   │   ├── SMS Code
+│   │   ├── Security Questions
+│   │   ├── Push Notification
+│   │   └── Device Verification
+│   ├── OAuth Flow (for supported banks)
+│   │   ├── Redirect to Bank&#39;s Login
+│   │   ├── Authorize in Bank&#39;s UI
+│   │   └── Redirect Back to App
+│   ├── Account Selection
+│   │   ├── Checking Accounts
+│   │   ├── Savings Accounts
+│   │   ├── Credit Cards
+│   │   └── Select One or More
+│   ├── Success
+│   │   ├── &quot;Account connected!&quot;
+│   │   ├── Return to App
+│   │   └── (App receives public_token → exchanges for access_token)
+│   └── Error States
+│       ├── Invalid Credentials
+│       ├── MFA Failed
+│       ├── Institution Down
+│       ├── Timeout
+│       └── Connection Lost (repair flow)
+├── Plaid Portal (Consumer Data Management)
+│   ├── Connected Apps (list of apps using your bank data)
+│   ├── App Detail
+│   │   ├── Data Accessed
+│   │   ├── Connected Accounts
+│   │   └── Disconnect
+│   ├── Privacy Settings
+│   └── Delete My Data
+└── Update Mode (Re-authentication)
+    ├── &quot;Your bank connection needs attention&quot;
+    ├── Re-enter Credentials
+    ├── MFA
+    └── Connection Restored
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Marketing Site</strong></td>
+<td>Top nav</td>
+<td>Products (mega menu), Use Cases, Docs, Pricing, Dashboard, Contact</td>
+</tr>
+<tr>
+<td><strong>Dashboard Sidebar</strong></td>
+<td>Fixed left nav</td>
+<td>Overview, Activity, Link, Integrations, Team, Keys, Billing, Settings</td>
+</tr>
+<tr>
+<td><strong>Docs Sidebar</strong></td>
+<td>Left nav tree</td>
+<td>Expandable: Quick Start &gt; Link &gt; Products &gt; API Reference</td>
+</tr>
+<tr>
+<td><strong>Code Tabs</strong></td>
+<td>Language selector in docs</td>
+<td>curl, Node, Python, Ruby, Go, Java</td>
+</tr>
+<tr>
+<td><strong>Link Widget</strong></td>
+<td>Full-screen modal (no nav)</td>
+<td>Linear flow: search → credentials → MFA → select → done</td>
+</tr>
+<tr>
+<td><strong>Environment Toggle</strong></td>
+<td>Top of dashboard</td>
+<td>Sandbox / Development / Production</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<h3>API Objects</h3>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Item</td>
+<td>id, institution_id, status, error, consent_expiration, products[]</td>
+<td>represents one bank connection</td>
+</tr>
+<tr>
+<td>Account</td>
+<td>id, name, type (checking/savings/credit), subtype, mask (last 4), balances{}</td>
+<td>belongs to Item</td>
+</tr>
+<tr>
+<td>Transaction</td>
+<td>id, account_id, amount, date, name, merchant_name, category[], pending</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>Institution</td>
+<td>id, name, logo, url, products_supported[], oauth</td>
+<td>reference data (12,000+)</td>
+</tr>
+<tr>
+<td>Identity</td>
+<td>name, email, phone, address</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>Balance</td>
+<td>current, available, limit</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>LinkToken</td>
+<td>token, client_name, products[], country_codes[], language</td>
+<td>created per Link session</td>
+</tr>
+<tr>
+<td>AccessToken</td>
+<td>token, item_id</td>
+<td>server-side credential for API access</td>
+</tr>
+<tr>
+<td>Webhook</td>
+<td>url, type, code, item_id</td>
+<td>events pushed to developer</td>
+</tr>
+<tr>
+<td>TransferAuthorization</td>
+<td>decision (approved/declined), reason</td>
+<td>belongs to Transfer</td>
+</tr>
+</tbody></table>
+<h3>Link Flow Data Model</h3>
+<pre><code>1. Developer creates link_token (server-side)
+2. Link widget opens with link_token
+3. User connects bank → receives public_token (client-side, ephemeral)
+4. Developer exchanges public_token for access_token (server-side, persistent)
+5. Developer uses access_token to call Plaid APIs
+</code></pre>
+<h3>Item Status</h3>
+<pre><code>active → needs_attention (credentials changed) → update_mode → active
+          ↘ revoked (user disconnected via Plaid Portal)
+          ↘ login_required → expired
+</code></pre>
+<h2>User Flows</h2>
+<h3>Developer: First Integration</h3>
+<pre><code>Sign Up → Get API Keys (Sandbox) → Create Link Token (server) → Open Link (client) → User Connects Bank → Exchange Token → Fetch Transactions → Build Feature
+</code></pre>
+<h3>Consumer: Connect Bank Account</h3>
+<pre><code>[Inside fintech app] → &quot;Connect Bank&quot; → Plaid Link opens → Search &quot;Chase&quot; → Enter Credentials → SMS Code → Select Checking Account → &quot;Connected!&quot; → Back to App
+</code></pre>
+<h3>Consumer: Manage Connected Apps</h3>
+<pre><code>my.plaid.com → See Connected Apps → &quot;Venmo has access to Chase Checking&quot; → [Disconnect] → Confirm → Data Access Revoked
+</code></pre>
+<h3>Developer: Handle Disconnection</h3>
+<pre><code>Webhook: ITEM_ERROR → Dashboard: Error for Item → User opens app → App triggers update mode → User re-enters credentials → Connection restored
+</code></pre>
+<h2>URL / Route Structure</h2>
+<h3>Marketing + Docs</h3>
+<pre><code>/                              → Home
+/products/:product             → Product Detail
+/docs                          → Docs Home
+/docs/quickstart               → Quick Start
+/docs/api                      → API Reference
+/docs/api/:product             → Product API Docs
+/docs/link                     → Link Integration Guide
+/docs/webhooks                 → Webhooks
+/pricing                       → Pricing
+/security                      → Security
+/blog                          → Blog
+</code></pre>
+<h3>Dashboard</h3>
+<pre><code>/dashboard                     → Overview
+/dashboard/activity            → Activity &amp; Logs
+/dashboard/activity/items      → Item Activity
+/dashboard/activity/api-logs   → API Logs
+/dashboard/link                → Link Customization
+/dashboard/integrations        → Products &amp; Webhooks
+/dashboard/team                → Team
+/dashboard/keys                → API Keys
+/dashboard/billing             → Billing &amp; Usage
+/dashboard/settings            → Settings
+</code></pre>
+<h3>Consumer Portal</h3>
+<pre><code>/portal                        → Connected Apps
+/portal/:appId                 → App Detail
+/portal/privacy                → Privacy Settings
+/portal/delete                 → Delete Data
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Institution Search (Link)</td>
+<td>Bank name (fuzzy match)</td>
+<td>Country, Products Supported</td>
+<td>Popularity, name</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>All docs, API reference</td>
+<td>Product area, language</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Dashboard Activity</td>
+<td>Item ID, error code</td>
+<td>Environment, Product, Status, Date Range</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>API Logs</td>
+<td>Request URL, response code</td>
+<td>Method, Status, Endpoint, Date</td>
+<td>Timestamp</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Marketing</th>
+<th>Dashboard</th>
+<th>Link Widget</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop</td>
+<td>Full-width + code examples</td>
+<td>Sidebar + content</td>
+<td>Centered modal (400px)</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Stacked sections</td>
+<td>Collapsible sidebar</td>
+<td>Same modal</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Mobile-optimized</td>
+<td>Simplified (key info)</td>
+<td>Full-screen takeover (native WebView)</td>
+</tr>
+</tbody></table>
+<h3>Developer-Specific UX</h3>
+<ul>
+<li>Sandbox with pre-built test institutions and credentials</li>
+<li>API playground with live responses</li>
+<li>Copy-to-clipboard everywhere</li>
+<li>Environment indicator (sandbox = green banner, production = no banner)</li>
+<li>Webhook tester (send test events)</li>
+<li>Link customization with live preview</li>
+<li>Client ID and secrets shown with copy + reveal/hide</li>
+</ul>
+<h3>Consumer-Facing Link UX</h3>
+<ul>
+<li>Bank logo recognition in search results</li>
+<li>OAuth flow for modern banks (redirect to bank&#39;s own login)</li>
+<li>Error messages with clear recovery steps</li>
+<li>Institution status page (if bank is down)</li>
+<li>Smooth re-authentication flow for broken connections</li>
+<li>Privacy-first: Plaid Portal gives consumers control over their data</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Dashboard</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Overview</th>
+<th>Activity</th>
+<th>Keys</th>
+<th>Billing</th>
+<th>Team</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>✅</td>
+<td>✅</td>
+<td>All</td>
+<td>✅</td>
+<td>Manage</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>All</td>
+<td>View</td>
+<td>Manage</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>✅</td>
+<td>✅</td>
+<td>Sandbox only</td>
+<td>—</td>
+<td>View</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>Viewer</td>
+<td>✅</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+<td>View</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>API Access Levels (Environments)</h3>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th>Data</th>
+<th>Billing</th>
+<th>Banks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sandbox</td>
+<td>Simulated data, test credentials</td>
+<td>Free</td>
+<td>Test institutions</td>
+</tr>
+<tr>
+<td>Development</td>
+<td>Real banks, 100 live Items free</td>
+<td>Free (limited)</td>
+<td>All</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>Real banks, full scale</td>
+<td>Per-Item billing</td>
+<td>All (12,000+)</td>
+</tr>
+</tbody></table>
+<h3>Security &amp; Compliance</h3>
+<ul>
+<li>SOC 2 Type II audited</li>
+<li>End-to-end encryption (TLS 1.2+, AES-256 at rest)</li>
+<li>No credentials stored (OAuth preferred, credentials passed through)</li>
+<li>Token-based access (access_tokens never exposed client-side)</li>
+<li>Consumer data deletion via Plaid Portal</li>
+<li>GDPR / CCPA compliant</li>
+<li>Regular penetration testing</li>
+<li>Bank-level security standards</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

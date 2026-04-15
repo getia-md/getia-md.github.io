@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify — IA.md | getIA.md</title>
+  <meta name="description" content="Music streaming. Playlists, Discover Weekly, Connect. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=64" alt="Spotify" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Spotify</h1>
+      <p class="detail-brand-tagline">Music streaming. Playlists, Discover Weekly, Connect.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/spotify/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://spotify.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/spotify/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Spotify — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The world&#39;s leading music streaming platform. Spotify&#39;s mental model is a <strong>playlist-centric personal jukebox</strong> — playlists (both user-created and algorithmic) are the primary organizational unit, not albums. Key differentiators: Discover Weekly and Daily Mixes (personalized algorithmic playlists), Spotify Connect (cross-device playback), Spotify Wrapped (annual listening recap), a persistent mini player, and a desktop app with a resizable sidebar. Spotify also hosts podcasts and audiobooks, making it an all-in-one audio platform.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Recently Played (cards)
+│   ├── Made for You
+│   │   ├── Discover Weekly (Monday refresh)
+│   │   ├── Daily Mix 1–6 (genre-based mixes)
+│   │   ├── Release Radar (new from followed artists)
+│   │   ├── On Repeat / Repeat Rewind
+│   │   ├── Time Capsule
+│   │   └── Daylist (mood-shifting throughout day)
+│   ├── Your Top Mixes
+│   ├── New Releases for You
+│   ├── Trending / Popular
+│   ├── Moods &amp; Genres
+│   ├── Featured Playlists
+│   ├── Shows to Try (podcasts)
+│   └── Jump Back In
+├── Search
+│   ├── Search Bar (instant results)
+│   ├── Browse All (genre/mood cards grid)
+│   │   ├── Podcasts
+│   │   ├── Hip-Hop, Pop, Rock, Indie, Latin, K-Pop...
+│   │   ├── Mood (Chill, Focus, Workout, Party, Sleep...)
+│   │   ├── Charts
+│   │   ├── New Releases
+│   │   ├── Discover
+│   │   └── Audiobooks
+│   ├── Recent Searches
+│   └── Results: Songs, Artists, Albums, Playlists, Podcasts, Episodes, Users, Genres
+├── Your Library
+│   ├── Filter Pills: Playlists, Artists, Albums, Podcasts &amp; Shows, Audiobooks, Downloaded
+│   ├── Sort: Recents, Recently Added, Alphabetical, Creator
+│   ├── View: List / Grid
+│   ├── Liked Songs (auto-playlist)
+│   ├── Your Episodes (saved podcast episodes)
+│   ├── Local Files
+│   └── Create Playlist (+)
+├── Artist Page
+│   ├── Header (image, name, monthly listeners, verified badge)
+│   ├── Follow Button
+│   ├── Popular Tracks (top 5, show more)
+│   ├── Artist&#39;s Pick (pinned content)
+│   ├── Discography
+│   │   ├── Albums
+│   │   ├── Singles &amp; EPs
+│   │   └── Compilations
+│   ├── Featuring [Artist] (appears on)
+│   ├── Fans Also Like (related artists)
+│   ├── Discovered On (playlists featuring this artist)
+│   ├── About (bio, images, monthly listeners, social links, world rank)
+│   └── Merch (if available)
+├── Album Page
+│   ├── Cover Art, Title, Artist(s), Year, Track Count, Duration
+│   ├── Play / Shuffle
+│   ├── Save to Library (heart)
+│   ├── Track List (number, title, features, explicit tag, duration)
+│   ├── Credits (writers, producers — expandable)
+│   ├── More by [Artist]
+│   └── Copyrights
+├── Playlist Page
+│   ├── Cover (mosaic or custom), Title, Creator, Description
+│   ├── Total Tracks, Duration, Followers Count
+│   ├── Play / Shuffle
+│   ├── Download Toggle
+│   ├── Track List (sortable by title, artist, album, date added, duration)
+│   ├── Search within Playlist
+│   ├── Collaborative Badge + Invite
+│   ├── Recommended Songs (&quot;Add to this playlist&quot;)
+│   └── Share / Embed
+├── Now Playing (Full Player)
+│   ├── Album Art (large, animated canvas for some tracks)
+│   ├── Song Title, Artist(s), Album
+│   ├── Like (heart)
+│   ├── Progress Scrubber + Time Codes
+│   ├── Controls: Shuffle, Previous, Play/Pause, Next, Repeat
+│   ├── Queue Button
+│   ├── Lyrics (synced, line-by-line, karaoke style)
+│   ├── Devices (Spotify Connect)
+│   ├── Volume Slider (desktop)
+│   ├── Full Screen / Canvas (animated artwork)
+│   └── Share
+├── Mini Player (Persistent)
+│   ├── Album Art Thumbnail, Song Title, Artist
+│   ├── Play/Pause, Next
+│   ├── Like (heart)
+│   └── Progress Bar
+├── Queue
+│   ├── Now Playing
+│   ├── Next in Queue (user-added)
+│   └── Next From: [playlist/album/radio]
+├── Podcasts
+│   ├── Your Shows (subscribed)
+│   ├── Show Page
+│   │   ├── Cover, Title, Publisher, Description, Rating
+│   │   ├── Follow Button
+│   │   ├── Episodes List (newest first)
+│   │   └── Similar Shows
+│   ├── Episode Detail
+│   │   ├── Title, Date, Duration, Show Notes
+│   │   ├── Play / Download / Save
+│   │   └── Rate
+│   └── Podcast Charts
+├── Audiobooks
+│   ├── Browse / Store
+│   ├── Book Detail (cover, narrator, duration, chapters)
+│   ├── Included with Premium (15 hrs/month)
+│   └── Purchase Additional
+├── Spotify Wrapped (annual)
+│   ├── Top Songs, Artists, Genres, Podcasts
+│   ├── Listening Time
+│   ├── Shareable Cards (social media)
+│   └── Personal Playlist (Your Top Songs [Year])
+├── Spotify Connect
+│   ├── Available Devices (phone, desktop, web, speaker, TV, car)
+│   ├── Switch Playback
+│   └── Remote Control
+├── User Profile
+│   ├── Display Name, Avatar
+│   ├── Followers / Following
+│   ├── Public Playlists
+│   ├── Recently Played Artists
+│   └── Top Artists / Tracks (public toggle)
+├── Friend Activity (Desktop right sidebar)
+│   ├── What friends are listening to (real-time)
+│   └── Click to play same track
+├── Notifications
+│   ├── New Release from Followed Artist
+│   ├── Playlist Updates
+│   ├── Concert Recommendations
+│   └── Wrapped Availability
+├── Settings
+│   ├── Account (plan, email, password, subscription)
+│   ├── Playback
+│   │   ├── Crossfade (0-12s)
+│   │   ├── Gapless Playback
+│   │   ├── Automix
+│   │   ├── Audio Normalization
+│   │   └── Mono Audio
+│   ├── Audio Quality
+│   │   ├── Streaming (auto/low/normal/high/very high)
+│   │   ├── Download Quality
+│   │   └── Equalizer (mobile)
+│   ├── Downloads (storage location, Wi-Fi only)
+│   ├── Social (private session, share listening activity, show recently played)
+│   ├── Notifications
+│   ├── Display (language, hardware acceleration, show unavailable songs)
+│   ├── Connected Apps
+│   ├── Privacy
+│   └── Experimental Features (beta toggles)
+└── Premium Upgrade (for free users)
+    ├── Plan Comparison
+    ├── Individual / Duo / Family / Student
+    └── Free Trial CTA
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Desktop: fixed, resizable (drag divider)</td>
+<td>Home, Search sections; Your Library (scrollable list of playlists, albums, artists, podcasts)</td>
+</tr>
+<tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>Mobile: 3 tabs</td>
+<td>Home, Search, Your Library</td>
+</tr>
+<tr>
+<td><strong>Mini Player</strong></td>
+<td>Persistent bottom bar (desktop: above status bar; mobile: above tab bar)</td>
+<td>Always visible when audio playing; click/swipe up to expand to full player</td>
+</tr>
+<tr>
+<td><strong>Full Player</strong></td>
+<td>Expand from mini player</td>
+<td>Desktop: bottom bar expands; Mobile: full-screen slide-up</td>
+</tr>
+<tr>
+<td><strong>Context Menus</strong></td>
+<td>Right-click (desktop) / long-press (mobile)</td>
+<td>Add to playlist, add to queue, go to artist, go to album, share, radio, remove, credits</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Desktop: within content area</td>
+<td>Back/Forward arrows, user avatar, upgrade button (free), install app CTA</td>
+</tr>
+<tr>
+<td><strong>Right Sidebar</strong></td>
+<td>Desktop: optional, toggleable</td>
+<td>Friend Activity feed, Now Playing lyrics/canvas</td>
+</tr>
+<tr>
+<td><strong>Spotify Connect Bar</strong></td>
+<td>Above mini player (when remote)</td>
+<td>&quot;Listening on [Device]&quot; — switch button</td>
+</tr>
+</tbody></table>
+<h3>Desktop Sidebar</h3>
+<pre><code>[Spotify Logo]
+─────────────
+🏠 Home
+🔍 Search
+─────────────
+📚 Your Library     [+] [→]
+  Filter: Playlists | Artists | Albums | Podcasts
+  Sort: Recents ▾
+  ─────────────
+  🎵 Liked Songs  ♥ 2,347
+  📋 Discover Weekly
+  📋 Daily Mix 1
+  📋 My Playlist #1
+  📋 My Playlist #2
+  📻 Followed Artist 1
+  💿 Saved Album 1
+  🎙 Followed Podcast
+  ...
+─────────────
+[Mini Player]
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Track</td>
+<td>title, duration, track_number, disc_number, explicit (bool), isrc, popularity (0-100), preview_url, playable (bool), canvas_url (animated art)</td>
+<td>belongs to Album; has Artists (primary + featured)</td>
+</tr>
+<tr>
+<td>Album</td>
+<td>title, cover_art_url, release_date, type (album/single/EP/compilation), total_tracks, label, copyright, genres[]</td>
+<td>belongs to Artist(s); has many Tracks</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>name, images[], bio, genres[], monthly_listeners, followers, verified (bool), world_rank</td>
+<td>has many Albums, Tracks, Merch</td>
+</tr>
+<tr>
+<td>Playlist</td>
+<td>name, description, cover_image (mosaic or custom), public (bool), collaborative (bool), followers_count, total_tracks, total_duration</td>
+<td>belongs to User/Spotify; has many Tracks (ordered)</td>
+</tr>
+<tr>
+<td>User</td>
+<td>username, display_name, avatar, country, product (free/premium), followers_count, following_count</td>
+<td>has Playlists, Library, Following, ListeningHistory</td>
+</tr>
+<tr>
+<td>LikedSong</td>
+<td>track_id, added_at</td>
+<td>belongs to User (special auto-playlist)</td>
+</tr>
+<tr>
+<td>PlaybackState</td>
+<td>track, position_ms, device_id, shuffle (bool), repeat_mode (off/track/context), volume_percent</td>
+<td>belongs to User (real-time)</td>
+</tr>
+<tr>
+<td>QueueItem</td>
+<td>track, position_in_queue, source (user/auto)</td>
+<td>belongs to User session</td>
+</tr>
+<tr>
+<td>SpotifyConnect</td>
+<td>device_id, device_name, type (computer/smartphone/speaker/tv/car), is_active, volume</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Follow</td>
+<td>follower, following_type (artist/user/playlist), created_at</td>
+<td>connects User to entity</td>
+</tr>
+<tr>
+<td>ListeningHistory</td>
+<td>track, played_at, context (album/playlist/artist_radio/discover)</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>PodcastShow</td>
+<td>title, publisher, cover_art, description, categories[], total_episodes, rating</td>
+<td>has many Episodes</td>
+</tr>
+<tr>
+<td>PodcastEpisode</td>
+<td>title, description, audio_url, duration, published_at, show_notes</td>
+<td>belongs to Show</td>
+</tr>
+<tr>
+<td>Audiobook</td>
+<td>title, author, narrator, cover, chapters[], duration, included_in_premium (bool)</td>
+<td>standalone</td>
+</tr>
+<tr>
+<td>Concert</td>
+<td>artist, venue, date, ticket_url</td>
+<td>belongs to Artist</td>
+</tr>
+</tbody></table>
+<h3>Content Hierarchy</h3>
+<pre><code>Artist → Albums → Tracks
+Playlist → Tracks (ordered, cross-artist)
+Radio / Mix → auto-generated track list (contextual)
+Podcast Show → Episodes (chronological)
+Audiobook → Chapters (sequential)
+</code></pre>
+<h3>Playlist Types</h3>
+<pre><code>User-created | Collaborative | Algorithmic (Discover Weekly, Daily Mix, Release Radar)
+Editorial (curated by Spotify editors) | Artist-created | Mood/Activity-based
+</code></pre>
+<h2>User Flows</h2>
+<h3>Discover and Listen (Algorithmic)</h3>
+<pre><code>Home → Discover Weekly → Tap Play → Streaming → Like Song (♥) → Added to Liked Songs → Improves future recommendations
+</code></pre>
+<h3>Search and Play</h3>
+<pre><code>Search → Type query → Results → Tap Song → Plays in context → Long-press → Add to Playlist
+</code></pre>
+<h3>Create and Share Playlist</h3>
+<pre><code>Library → [+ Create Playlist] → Name/Description → Search Songs → Add to Playlist → Toggle Public → Share Link
+</code></pre>
+<h3>Collaborative Playlist</h3>
+<pre><code>Playlist → [...] Menu → Make Collaborative → Share Invite Link → Friends Add Songs → Real-time updates
+</code></pre>
+<h3>Offline Listening</h3>
+<pre><code>Playlist/Album → Download Toggle (↓) → Downloads on Wi-Fi → Airplane Mode → Play from Library → Downloads section
+</code></pre>
+<h3>Cross-Device Playback (Spotify Connect)</h3>
+<pre><code>Playing on Phone → Mini Player → Devices Icon → Select Desktop/Speaker → Audio transfers instantly → Control from any device
+</code></pre>
+<h3>Podcast Listening</h3>
+<pre><code>Search → Podcast → Show Page → Follow → Episode → Play → Speed (1.5x) → Mark as Played
+</code></pre>
+<h3>Wrapped Experience</h3>
+<pre><code>December → Wrapped Notification → Open → Swipe Through Story Cards → View Top Songs/Artists → Share to Instagram/Twitter → Wrapped Playlist saved
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/search                        → Search (empty: Browse All categories)
+/search/:query                 → Search Results
+/artist/:id                    → Artist Page
+/album/:id                     → Album Page
+/track/:id                     → Track (redirects to album context)
+/playlist/:id                  → Playlist Page
+/collection/tracks             → Liked Songs
+/collection/albums             → Saved Albums
+/collection/artists            → Followed Artists
+/collection/playlists          → Your Playlists
+/collection/podcasts           → Your Podcasts
+/genre/:id                     → Genre/Mood Page
+/section/:id                   → Browse Category Section
+/show/:id                      → Podcast Show Page
+/episode/:id                   → Podcast Episode
+/audiobook/:id                 → Audiobook Detail
+/queue                         → Queue
+/user/:id                      → User Profile
+/user/:id/playlists            → User&#39;s Public Playlists
+/lyrics                        → Lyrics View (full player)
+/settings                      → Settings
+/settings/account              → Account
+/settings/subscription         → Plan &amp; Billing
+/download                      → App Download Landing
+/wrapped                       → Spotify Wrapped (seasonal)
+/premium                       → Premium Landing Page
+/concerts                      → Live Events near You
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Songs, Artists, Albums, Playlists, Podcasts, Episodes, Audiobooks, Users, Genres &amp; Moods</td>
+<td>Content Type tabs (All/Songs/Artists/Albums/Playlists/Podcasts/Audiobooks)</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Browse All</td>
+<td>Curated categories</td>
+<td>Genre, Mood, Activity, Era</td>
+<td>Spotify-curated order</td>
+</tr>
+<tr>
+<td>Playlist</td>
+<td>Tracks within playlist</td>
+<td>Search by title/artist within playlist</td>
+<td>Title, Artist, Album, Date Added, Duration, Custom (drag)</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>Saved items</td>
+<td>Type pills (Playlists/Artists/Albums/Podcasts/Audiobooks/Downloaded)</td>
+<td>Recents, Recently Added, Alphabetical, Creator</td>
+</tr>
+<tr>
+<td>Artist Discography</td>
+<td>Albums, singles</td>
+<td>Type (Albums/Singles &amp; EPs/Compilations)</td>
+<td>Latest, Oldest</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Nav</th>
+<th>Player</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Left sidebar (fixed, resizable 200-400px) + optional right sidebar (friend activity)</td>
+<td>Bottom bar (mini player) + expandable full view</td>
+<td>Grid layout (cards), scrollable content area</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Collapsed sidebar (icons + library search)</td>
+<td>Bottom bar + expandable</td>
+<td>Adaptive grid</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tab bar (Home, Search, Library)</td>
+<td>Bottom bar (swipe up to full player)</td>
+<td>Single column / 2-col grid</td>
+</tr>
+</tbody></table>
+<h3>Audio-Specific Patterns</h3>
+<ul>
+<li>Gapless playback between tracks (seamless album experience)</li>
+<li>Crossfade option (0-12s transition between songs)</li>
+<li>Automix (smooth transitions in playlists)</li>
+<li>Audio normalization (loudness leveling across tracks)</li>
+<li>Equalizer (mobile: preset + custom bands)</li>
+<li>Background playback (app minimized)</li>
+<li>Lock screen / notification controls (iOS + Android)</li>
+<li>CarPlay / Android Auto integration</li>
+<li>Chromecast / AirPlay / Spotify Connect</li>
+<li>Offline mode with download management</li>
+<li>Streaming quality tiers (auto/low 24kbps/normal 96kbps/high 160kbps/very high 320kbps)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Stream</th>
+<th>Playlist</th>
+<th>Download</th>
+<th>Social</th>
+<th>Spotify Connect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Free User</td>
+<td>✅</td>
+<td>Shuffle-only on mobile (with ads), on-demand on desktop (with ads)</td>
+<td>Create/Follow (limited to 10,000 songs)</td>
+<td>—</td>
+<td>Follow, share</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>Premium Individual</td>
+<td>✅</td>
+<td>On-demand, no ads, very high quality (320kbps)</td>
+<td>Unlimited</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Premium Duo</td>
+<td>✅</td>
+<td>✅ (2 accounts) + Duo Mix playlist</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Premium Family</td>
+<td>✅</td>
+<td>✅ (up to 6 accounts) + Family Mix</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ + parental controls</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Premium Student</td>
+<td>✅</td>
+<td>✅ (discounted, single account)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Artist (Spotify for Artists)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>+ Artist profile management, Canvas upload, analytics</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Content moderation, catalog management</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFitnessPal — IA.md | getIA.md</title>
+  <meta name="description" content="Nutrition tracker. Food diary, barcode scan, macros. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=myfitnesspal.com&sz=64" alt="MyFitnessPal" onerror="this.parentElement.textContent='M'">
+      </div>
+      <h1 class="detail-brand-name">MyFitnessPal</h1>
+      <p class="detail-brand-tagline">Nutrition tracker. Food diary, barcode scan, macros.</p>
+      <span class="detail-category-badge">Health</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/myfitnesspal/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://myfitnesspal.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/myfitnesspal/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>MyFitnessPal — Information Architecture</h1>
+<h2>Overview</h2>
+<p>MyFitnessPal is the dominant calorie and nutrition tracking app with the world&#39;s largest food database (14M+ foods). The mental model is <strong>calories in vs calories out</strong> — users set a daily calorie goal, log every meal by searching or scanning barcodes, and track macros (protein, carbs, fat). The experience revolves around a daily food diary. Unlike Strava&#39;s social/athletic focus, MyFitnessPal is goal-oriented (lose weight, gain muscle, maintain) with nutrition as the centerpiece.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Dashboard (Today)
+│   ├── Calorie Summary (Goal – Food + Exercise = Remaining)
+│   ├── Macros Bar (protein, carbs, fat — horizontal bar)
+│   ├── Food Diary Quick View
+│   │   ├── Breakfast
+│   │   ├── Lunch
+│   │   ├── Dinner
+│   │   ├── Snacks
+│   │   └── [+ Add Food] per meal
+│   ├── Exercise Summary
+│   ├── Water Intake
+│   ├── Steps (synced from device)
+│   ├── Streak Counter
+│   └── Nutrition Insights (daily/weekly)
+├── Food Diary (Daily Log)
+│   ├── Meals (Breakfast, Lunch, Dinner, Snacks — customizable names)
+│   ├── Per Meal
+│   │   ├── Logged Foods (with serving sizes)
+│   │   ├── Meal Totals (calories, macros)
+│   │   └── [+ Add Food]
+│   ├── Daily Totals
+│   │   ├── Calories
+│   │   ├── Macros (protein, carbs, fat)
+│   │   ├── Micros (fiber, sugar, sodium, cholesterol, vitamins)
+│   │   └── Remaining
+│   ├── Complete Diary (end-of-day)
+│   │   └── &quot;If every day were like today, you&#39;d weigh X in 5 weeks&quot;
+│   └── Navigate Days (← Yesterday | Today | Tomorrow →)
+├── Add Food (Search)
+│   ├── Search (14M+ food database)
+│   ├── Barcode Scanner (camera)
+│   ├── Recent Foods
+│   ├── Frequent Foods
+│   ├── My Foods (custom created)
+│   ├── My Meals (saved combinations)
+│   ├── My Recipes (with ingredient breakdown)
+│   └── Quick Add (just enter calories)
+├── Food Detail
+│   ├── Nutrition Label (mimics FDA label)
+│   ├── Serving Size (adjustable — cups, grams, oz, pieces)
+│   ├── Number of Servings
+│   ├── Calories &amp; Macros
+│   ├── Micronutrients (full breakdown)
+│   ├── Log to Meal
+│   └── Report Inaccuracy
+├── Recipes
+│   ├── Create Recipe
+│   │   ├── Name
+│   │   ├── Add Ingredients (search + amount)
+│   │   ├── Number of Servings
+│   │   └── Auto-Calculate Per-Serving Nutrition
+│   ├── Import Recipe (from URL)
+│   ├── My Recipes
+│   └── Discover Recipes (Premium)
+├── Exercise
+│   ├── Log Exercise
+│   │   ├── Cardiovascular (search database)
+│   │   ├── Strength (exercises, sets, reps, weight)
+│   │   └── Duration → Calories Burned Estimate
+│   ├── Exercise History
+│   └── Connected Devices (auto-sync from Garmin, Apple Watch, etc.)
+├── Progress
+│   ├── Weight Log (chart over time)
+│   ├── Body Measurements (waist, hips, chest, etc.)
+│   ├── Progress Photos
+│   ├── Nutrition Reports (weekly/monthly averages)
+│   │   ├── Calories Over Time
+│   │   ├── Macro Breakdown
+│   │   └── Nutrient Summary
+│   └── Goal Progress
+├── Goals
+│   ├── Starting Weight → Current → Goal Weight
+│   ├── Weekly Goal (lose 0.5kg, maintain, gain)
+│   ├── Calorie Goal (TDEE-based)
+│   ├── Macro Goals (default or custom ratio)
+│   ├── Nutrient Goals (custom micro targets)
+│   └── Exercise Goals (weekly frequency/calories)
+├── Community (reduced)
+│   ├── Forums
+│   ├── Blog / Articles
+│   └── Success Stories
+├── Premium
+│   ├── Calorie &amp; Macro Goals by Meal
+│   ├── Food Analysis (timestamps, patterns)
+│   ├── Custom Macro Targets
+│   ├── No Ads
+│   ├── Nutrient Dashboard
+│   ├── Food Insights
+│   └── Priority Support
+├── Devices &amp; Apps
+│   ├── Connected Fitness Trackers (Garmin, Fitbit, Apple Watch)
+│   ├── Connected Apps (Strava, MapMyRun, Samsung Health)
+│   └── Sync Settings
+├── Settings
+│   ├── Profile (age, sex, height, activity level)
+│   ├── Goals (calorie, macro, nutrient)
+│   ├── Diary Settings (meal names, default foods)
+│   ├── Notifications
+│   ├── Units (metric/imperial)
+│   ├── Privacy
+│   ├── Account
+│   └── Help
+└── Help
+    ├── FAQ
+    ├── Contact Support
+    └── Exercise Database Correction
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs</td>
+<td>Dashboard, Diary, [+ Add], Progress, More</td>
+</tr>
+<tr>
+<td><strong>Add Button</strong></td>
+<td>Center tab, prominent blue (+)</td>
+<td>Quick access to food logging (the #1 action)</td>
+</tr>
+<tr>
+<td><strong>Diary Meals</strong></td>
+<td>Expandable sections</td>
+<td>Breakfast/Lunch/Dinner/Snacks with [+] per meal</td>
+</tr>
+<tr>
+<td><strong>Date Nav</strong></td>
+<td>Left/right arrows at top</td>
+<td>Navigate between days</td>
+</tr>
+<tr>
+<td><strong>Barcode Scanner</strong></td>
+<td>Camera icon in search</td>
+<td>Scan food package → instant nutrition lookup</td>
+</tr>
+<tr>
+<td><strong>Top Bar (web)</strong></td>
+<td>Fixed</td>
+<td>Food, Exercise, Reports, Apps, Community</td>
+</tr>
+</tbody></table>
+<h3>Signature UX: Barcode Scanner</h3>
+<pre><code>[+ Add Food] → [Barcode Icon] → Point Camera → Auto-Detect → &quot;Chobani Greek Yogurt&quot; → Confirm Serving → Log to Lunch
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FoodEntry</td>
+<td>food, meal_type, serving_size, num_servings, calories, protein, carbs, fat, date</td>
+<td>belongs to User&#39;s Diary</td>
+</tr>
+<tr>
+<td>Food</td>
+<td>name, brand, serving_sizes[], calories, macros{}, micros{}, barcode, verified, user_submitted</td>
+<td>database entity</td>
+</tr>
+<tr>
+<td>Recipe</td>
+<td>name, ingredients[], servings, per_serving_nutrition{}</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Meal (saved)</td>
+<td>name, foods[]</td>
+<td>reusable food combination</td>
+</tr>
+<tr>
+<td>ExerciseEntry</td>
+<td>exercise, duration, calories_burned, date, source (manual/synced)</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>WeightLog</td>
+<td>weight, date, body_fat_pct</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>type (weight/calorie/macro), target, current, daily_calorie_target, macro_split{}</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>DiaryDay</td>
+<td>date, meals{}, exercise[], water, calorie_total, macro_totals{}, complete</td>
+<td>aggregated daily</td>
+</tr>
+<tr>
+<td>Streak</td>
+<td>current_days, longest, type (logging/exercise)</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Diary Equation</h3>
+<pre><code>Daily Calorie Budget = TDEE − Deficit (or + Surplus)
+Remaining = Budget − Food Calories + Exercise Calories
+</code></pre>
+<h2>User Flows</h2>
+<h3>Log a Meal</h3>
+<pre><code>Diary → Lunch → [+ Add Food] → Search &quot;chicken breast&quot; → Select → Adjust Serving (6 oz) → Log → Diary Updated → Remaining Calories Updated
+</code></pre>
+<h3>Scan Barcode</h3>
+<pre><code>[+] → Barcode Scanner → Scan → &quot;Kind Bar Almond&quot; Found → Confirm 1 Serving → Log to Snacks → Done
+</code></pre>
+<h3>Create and Log Recipe</h3>
+<pre><code>More → Recipes → [Create] → &quot;Homemade Chili&quot; → Add Ingredients (search each) → Set Servings (6) → Save → Log 1 Serving to Dinner
+</code></pre>
+<h3>Track Weight Progress</h3>
+<pre><code>Progress → Weight → [+ Add] → Enter Today&#39;s Weight → Save → Chart Updates → &quot;You&#39;ve lost 3 lbs this month&quot;
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Dashboard
+/food/diary                    → Food Diary (today)
+/food/diary?date=YYYY-MM-DD   → Specific Day
+/food/search                   → Search Foods
+/food/:id                      → Food Detail (nutrition label)
+/food/add-to-diary             → Add Food Flow
+/recipe                        → My Recipes
+/recipe/new                    → Create Recipe
+/recipe/:id                    → Recipe Detail
+/exercise                      → Exercise Log
+/exercise/search               → Search Exercises
+/reports                       → Nutrition Reports
+/reports/calories              → Calorie Report
+/reports/macros                → Macro Report
+/progress                      → Weight &amp; Measurements
+/progress/weight               → Weight Chart
+/progress/photos               → Progress Photos
+/goals                         → Goals Setup
+/goals/calories                → Calorie Goal
+/goals/macros                  → Macro Goals
+/account                       → Account
+/settings                      → Settings
+/premium                       → Premium Features
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Food Search</td>
+<td>Food name, brand, barcode</td>
+<td>Verified, My Foods, Recent, Frequent</td>
+<td>Relevance, popularity</td>
+</tr>
+<tr>
+<td>Exercise Search</td>
+<td>Exercise name</td>
+<td>Type (cardio/strength), Recent</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Recipes</td>
+<td>Recipe name</td>
+<td>My Recipes, Imported</td>
+<td>Name, date created</td>
+</tr>
+<tr>
+<td>Diary</td>
+<td>Food entries</td>
+<td>Date, Meal</td>
+<td>Date, meal order</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Diary</th>
+<th>Food Search</th>
+<th>Reports</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Expandable meal sections, single column</td>
+<td>Full-screen search + scanner</td>
+<td>Charts (swipe between)</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Two-column (diary + daily summary)</td>
+<td>Search + nutrition preview</td>
+<td>Charts side by side</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Diary table + side nutrition panel</td>
+<td>Search + full nutrition label</td>
+<td>Dashboard with multiple charts</td>
+</tr>
+</tbody></table>
+<h3>Mobile-First Design</h3>
+<ul>
+<li>Barcode scanner as primary food entry method</li>
+<li>Quick Add for when you just know the calories</li>
+<li>Persistent calorie remaining counter</li>
+<li>Streak motivation (&quot;12-day logging streak!&quot;)</li>
+<li>Connected device auto-sync (exercise calories)</li>
+<li>Widget: remaining calories, macro bars</li>
+<li>Offline food search (cached recent/frequent)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free</th>
+<th>Premium</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Food Logging</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Barcode Scanner</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Calorie Tracking</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Macros (daily total)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Macros (per meal)</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Nutrient Dashboard</td>
+<td>Basic</td>
+<td>Full (17+ nutrients)</td>
+</tr>
+<tr>
+<td>Food Analysis</td>
+<td>—</td>
+<td>✅ (timestamps, patterns)</td>
+</tr>
+<tr>
+<td>Custom Macro Targets</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Ads</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Recipe Import</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Priority Support</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Export Data</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

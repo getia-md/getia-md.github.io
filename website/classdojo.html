@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassDojo — IA.md | getIA.md</title>
+  <meta name="description" content="School communication. Points, portfolios, parent-teacher. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=classdojo.com&sz=64" alt="ClassDojo" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">ClassDojo</h1>
+      <p class="detail-brand-tagline">School communication. Points, portfolios, parent-teacher.</p>
+      <span class="detail-category-badge">Education</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/classdojo/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://classdojo.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/classdojo/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>ClassDojo — Information Architecture</h1>
+<h2>Overview</h2>
+<p>ClassDojo is a classroom communication and behavior management platform connecting teachers, students, and parents. Unlike full school management systems (PowerSchool), ClassDojo is <strong>teacher-first and classroom-centric</strong> — a single teacher can start using it in minutes without admin involvement. The core loop: teachers award or deduct points for behavior (positive reinforcement), share class stories (photos/videos), and message parents — all in real time. Monster avatars make it fun and approachable for K-8 students. ClassDojo also offers &quot;Dojo Islands&quot; (a virtual world for students) and Dojo Tutor (AI tutoring).</p>
+<h2>Site Map</h2>
+<h3>Teacher App</h3>
+<pre><code>├── Home
+│   ├── My Classes (class cards)
+│   ├── Quick Actions (take attendance, award points)
+│   ├── Messages (unread count)
+│   ├── School Story (school-wide feed)
+│   └── Dojo Updates
+├── Class View (Primary Screen)
+│   ├── Student Grid
+│   │   ├── Monster Avatars (circle avatars in grid)
+│   │   ├── Point Totals (visible on each avatar)
+│   │   ├── Tap Avatar → Award/Deduct Point
+│   │   └── Select Multiple Students (group points)
+│   ├── Behavior Skills
+│   │   ├── Positive (Participating, Helping Others, Working Hard, Teamwork)
+│   │   ├── Needs Work (Off Task, Disrespectful, Not Prepared, Talking Out)
+│   │   └── Custom Skills (teacher-defined)
+│   ├── Random Selector (random student picker, with animation)
+│   ├── Group Maker (random groups)
+│   ├── Timer / Noise Meter / Music
+│   ├── Attendance
+│   └── Class Settings
+├── Class Story
+│   ├── Photo Posts
+│   ├── Video Posts
+│   ├── Text Updates
+│   ├── Draw (whiteboard drawing)
+│   ├── Parent Visibility (toggle per post)
+│   └── Comments &amp; Likes
+├── Portfolios (Student Work)
+│   ├── Per-Student Portfolio
+│   ├── Student-Uploaded Work (photos, drawings, voice recordings)
+│   ├── Teacher-Added Items
+│   ├── Activities (prompted by teacher)
+│   │   ├── Photo Activity (&quot;Show me your science project&quot;)
+│   │   ├── Drawing Activity
+│   │   ├── Writing Activity
+│   │   └── Video Activity
+│   └── Parent Can View
+├── Messages
+│   ├── Parent Messages (per student)
+│   ├── Broadcast to All Parents
+│   ├── Translation (auto-translate 35+ languages)
+│   ├── Read Receipts
+│   └── Scheduled Messages
+├── Reports
+│   ├── Behavior Report (per student, per class)
+│   ├── Points Over Time (chart)
+│   ├── Attendance Report
+│   ├── Skill Breakdown
+│   │   ├── Most Awarded Positive Skill
+│   │   ├── Most Common Needs Work
+│   │   └── Trends
+│   ├── Export (PDF, CSV)
+│   └── Share Report with Parents
+├── Toolkit
+│   ├── Timer
+│   ├── Noise Meter (microphone-based)
+│   ├── Directions (display instructions on screen)
+│   ├── Think-Pair-Share
+│   ├── Random Selector
+│   ├── Group Maker
+│   └── Music (focus sounds)
+├── Dojo Islands (Student World)
+│   ├── Virtual Island (student&#39;s personal space)
+│   ├── Customize with Earned Points
+│   ├── Mini-Games
+│   └── Social Features (visit friends&#39; islands)
+├── Class Settings
+│   ├── Add/Remove Students
+│   ├── Customize Behavior Skills
+│   ├── Point Values
+│   ├── Invite Parents (via code or link)
+│   ├── Class Code (for students to join)
+│   ├── Co-Teachers
+│   └── Archive / Reset Points
+├── School Story (School-Wide)
+│   ├── School Administrators Post
+│   ├── All Parents Can See
+│   └── School Announcements
+└── Settings
+    ├── Account
+    ├── Notification Preferences
+    ├── School Association
+    └── Help
+</code></pre>
+<h3>Parent App</h3>
+<pre><code>├── Home
+│   ├── Children (selector if multiple)
+│   ├── Today&#39;s Points (positive/needs work)
+│   ├── Class Story (latest posts)
+│   ├── Messages (from teacher)
+│   └── School Story
+├── Child&#39;s Page
+│   ├── Points Summary (daily/weekly)
+│   ├── Behavior Report (by skill)
+│   ├── Monster Avatar (matching classroom)
+│   ├── Portfolio (student work)
+│   ├── Attendance
+│   └── Teacher Info
+├── Messages
+│   ├── Conversations with Teacher(s)
+│   ├── Auto-Translation
+│   └── Read Receipts
+├── Class Story (read-only)
+│   ├── Photos &amp; Videos from Classroom
+│   ├── Like &amp; Comment
+│   └── Save / Download
+├── School Story
+│   ├── School Announcements
+│   └── Events
+├── Dojo Tutor (AI)
+│   ├── Math Tutoring
+│   ├── Reading Practice
+│   └── Parent Dashboard (progress)
+└── Settings
+    ├── Children Management
+    ├── Notifications (real-time points, stories, messages)
+    ├── Language
+    └── Account
+</code></pre>
+<h3>Student App</h3>
+<pre><code>├── Home
+│   ├── My Monster (avatar)
+│   ├── My Points (today)
+│   ├── Dojo Islands Access
+│   └── Portfolio (my work)
+├── Portfolio
+│   ├── My Work (photos, drawings, videos)
+│   ├── Complete Activities (teacher-assigned)
+│   └── Submit Work
+├── Dojo Islands
+│   ├── My Island (customizable)
+│   ├── Earn Items with Points
+│   ├── Visit Friends&#39; Islands
+│   └── Mini-Games
+├── Class Story (read)
+└── Profile
+    ├── Customize Monster
+    └── Settings
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Teacher: Class Grid</strong></td>
+<td>Primary view (full screen)</td>
+<td>Monster avatar grid — tap to award points</td>
+</tr>
+<tr>
+<td><strong>Teacher: Bottom Tab Bar</strong></td>
+<td>4-5 tabs</td>
+<td>Class, Story, Portfolios, Messages, Toolkit</td>
+</tr>
+<tr>
+<td><strong>Parent: Bottom Tab Bar</strong></td>
+<td>4 tabs</td>
+<td>Home, Story, Messages, Account</td>
+</tr>
+<tr>
+<td><strong>Student: Bottom Tab Bar</strong></td>
+<td>3-4 tabs</td>
+<td>Home, Portfolio, Islands, Profile</td>
+</tr>
+<tr>
+<td><strong>Point Award</strong></td>
+<td>Quick-tap flow</td>
+<td>Tap avatar → Select skill → Point awarded (sound + animation)</td>
+</tr>
+<tr>
+<td><strong>Class Switcher</strong></td>
+<td>Top bar dropdown</td>
+<td>Switch between multiple classes</td>
+</tr>
+</tbody></table>
+<h3>Signature UX: Point Award</h3>
+<pre><code>Tap &quot;Emma&#39;s Monster&quot; → ⭐ Skill Menu pops up → Tap &quot;Working Hard&quot; → +1 Point → Sound Effect → Monster Bounces → Parent Gets Notification
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Class</td>
+<td>name, grade, teacher, students[], parents[], class_code, co_teachers[], behavior_skills[]</td>
+<td>has many Students</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>name, monster_avatar, points_positive, points_negative, class, portfolio</td>
+<td>belongs to Class, has Parents</td>
+</tr>
+<tr>
+<td>BehaviorPoint</td>
+<td>student, skill, value (+1/-1), teacher, timestamp, note</td>
+<td>belongs to Student</td>
+</tr>
+<tr>
+<td>BehaviorSkill</td>
+<td>name, type (positive/needs_work), icon, point_value, custom</td>
+<td>belongs to Class</td>
+</tr>
+<tr>
+<td>StoryPost</td>
+<td>type (photo/video/text/draw), content, class, visibility (class/school), likes, comments[], created_at</td>
+<td>belongs to Class</td>
+</tr>
+<tr>
+<td>PortfolioItem</td>
+<td>student, type (photo/drawing/voice/video/text), content, activity, teacher_feedback, created_at</td>
+<td>belongs to Student</td>
+</tr>
+<tr>
+<td>Activity</td>
+<td>title, type, instructions, due_date, class, submissions[]</td>
+<td>teacher-assigned</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>sender (teacher/parent), recipient, body, translated_body, read, thread_id</td>
+<td>between Teacher and Parent</td>
+</tr>
+<tr>
+<td>Attendance</td>
+<td>student, date, status (present/absent/late)</td>
+<td>belongs to Student</td>
+</tr>
+<tr>
+<td>Monster</td>
+<td>base_type, color, accessories[], earned_items[]</td>
+<td>belongs to Student</td>
+</tr>
+<tr>
+<td>School</td>
+<td>name, code, teachers[], admins[], school_story</td>
+<td>has many Classes</td>
+</tr>
+</tbody></table>
+<h3>Gamification</h3>
+<pre><code>Points → Customize Monster → Unlock Island Items → Visit Friends
+Positive Points: accumulate, visible to parents
+Needs Work Points: tracked separately, for teacher awareness
+</code></pre>
+<h2>User Flows</h2>
+<h3>Teacher: Award Points During Class</h3>
+<pre><code>Open Class → See Student Grid → Tap &quot;Marcus&quot; → [Working Hard ⭐+1] → Sound Effect → Marcus&#39;s Points Update → Parent Gets Push Notification → Continue Teaching
+</code></pre>
+<h3>Teacher: Share Class Story</h3>
+<pre><code>Story → [+] → Take Photo of Student Work → Add Caption → Post to Class Story → Parents See in Feed → Parents Like/Comment
+</code></pre>
+<h3>Parent: Check Child&#39;s Day</h3>
+<pre><code>Open App → Home → &quot;Emma earned 3 points today 🌟&quot; → View Details (Participating x2, Helping Others x1) → Scroll Down → Class Story → See Classroom Photos
+</code></pre>
+<h3>Teacher: Generate Behavior Report</h3>
+<pre><code>Reports → Select Student → View Points Over Time → See Skill Breakdown → [Share with Parent] → PDF Generated → Sent via Message
+</code></pre>
+<h3>Student: Complete Portfolio Activity</h3>
+<pre><code>Portfolio → &quot;Draw your favorite animal&quot; → Draw → Submit → Teacher Reviews → Appears in Portfolio → Parent Can View
+</code></pre>
+<h2>URL / Route Structure</h2>
+<blockquote>
+<p>Note: ClassDojo is primarily a mobile app. Web routes are for the teacher web interface.</p>
+</blockquote>
+<pre><code>/                                → Dashboard / My Classes
+/class/:id                       → Class View (student grid)
+/class/:id/story                 → Class Story
+/class/:id/portfolios            → Portfolios
+/class/:id/portfolios/:studentId → Student Portfolio
+/class/:id/attendance            → Attendance
+/class/:id/reports               → Reports
+/class/:id/reports/:studentId    → Student Report
+/class/:id/settings              → Class Settings
+/messages                        → Messages
+/messages/:threadId              → Conversation
+/toolkit                         → Toolkit (timer, noise meter)
+/school-story                    → School Story
+/settings                        → Account Settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Students (teacher)</td>
+<td>Student name</td>
+<td>Class, Points Range</td>
+<td>Name, points</td>
+</tr>
+<tr>
+<td>Messages</td>
+<td>Parent/student name</td>
+<td>Class, Unread</td>
+<td>Recent, name</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>Student name</td>
+<td>Date Range, Skill Type</td>
+<td>Date, points</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Class Grid</th>
+<th>Story</th>
+<th>Messages</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary for parents/students)</td>
+<td>Monster grid (scrollable)</td>
+<td>Vertical feed</td>
+<td>Chat view</td>
+</tr>
+<tr>
+<td>Tablet (primary for teachers in class)</td>
+<td>Larger grid, perfect for projection</td>
+<td>Feed + sidebar</td>
+<td>Split view</td>
+</tr>
+<tr>
+<td>Desktop (web, teacher management)</td>
+<td>Full grid + sidebar reports</td>
+<td>Full feed</td>
+<td>Three-column (threads + chat)</td>
+</tr>
+</tbody></table>
+<h3>ClassDojo-Specific UX</h3>
+<ul>
+<li><strong>Monster avatars</strong>: Every student gets a unique, customizable monster — makes it fun and anonymous when projected</li>
+<li><strong>Projection mode</strong>: Teacher projects class grid on smartboard; whole class sees points awarded in real time</li>
+<li><strong>Instant parent notifications</strong>: Parent gets push notification within seconds of a point award</li>
+<li><strong>Auto-translation</strong>: Messages auto-translated into 35+ languages (critical for diverse classrooms)</li>
+<li><strong>Sound effects</strong>: Satisfying sounds on point award (positive = ding, needs work = gentle tone)</li>
+<li><strong>No student shaming</strong>: &quot;Needs Work&quot; points are private to teacher + parent; not shown on projected screen</li>
+<li><strong>One-tap point award</strong>: Minimal friction — tap student, tap skill, done</li>
+<li><strong>QR code class join</strong>: Students and parents join via QR code or 6-digit code</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Teacher</th>
+<th>Parent</th>
+<th>Student</th>
+<th>School Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Class Grid</td>
+<td>Own classes</td>
+<td>—</td>
+<td>—</td>
+<td>All classes</td>
+</tr>
+<tr>
+<td>Award Points</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Class Story</td>
+<td>Post + manage</td>
+<td>View + comment</td>
+<td>View</td>
+<td>View + post to school</td>
+</tr>
+<tr>
+<td>Portfolios</td>
+<td>View + assign</td>
+<td>View child&#39;s</td>
+<td>Submit + view own</td>
+<td>View all</td>
+</tr>
+<tr>
+<td>Messages</td>
+<td>All parents</td>
+<td>Own child&#39;s teacher</td>
+<td>—</td>
+<td>Broadcast</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>Generate + share</td>
+<td>View child&#39;s</td>
+<td>—</td>
+<td>View all</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td>Own classes</td>
+<td>Notifications</td>
+<td>Avatar</td>
+<td>School-wide</td>
+</tr>
+<tr>
+<td>Dojo Islands</td>
+<td>—</td>
+<td>Monitor</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

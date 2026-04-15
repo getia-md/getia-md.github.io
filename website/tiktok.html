@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok — IA.md | getIA.md</title>
+  <meta name="description" content="Short video. For You feed, duets, sounds, effects. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=tiktok.com&sz=64" alt="TikTok" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">TikTok</h1>
+      <p class="detail-brand-tagline">Short video. For You feed, duets, sounds, effects.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/tiktok/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://tiktok.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/tiktok/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>TikTok — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A short-form vertical video platform that redefined mobile content consumption. TikTok&#39;s mental model is an <strong>infinite scroll of algorithmically-curated short videos</strong> — unlike traditional social networks where you follow people first, TikTok&#39;s &quot;For You&quot; page (FYP) surfaces content from anyone based on machine learning. Users don&#39;t browse — they swipe. Key differentiators: the For You algorithm (interest-based, not social-graph-based), native in-app video editor with effects/sounds/filters, duets and stitches (creative collaboration), TikTok LIVE, TikTok Shop (in-video commerce), and the sound/trend-driven content culture where audio tracks are first-class entities.</p>
+<h2>Site Map</h2>
+<pre><code>├── For You Page (FYP) — Home
+│   ├── Full-screen Vertical Video Feed
+│   ├── Swipe Up to Next Video (infinite)
+│   ├── Per-Video Overlay
+│   │   ├── Right: Creator Avatar (+Follow), Heart, Comment, Bookmark, Share, Sound Disc
+│   │   ├── Bottom: @Creator, Caption (#hashtags), Sound Name (♪ marquee)
+│   │   ├── Progress Bar (bottom edge)
+│   │   └── Long-press: Save Video, Not Interested, Report
+│   └── Feed Toggle: For You | Following | Friends | LIVE
+├── Following Feed
+│   ├── Videos from Followed Creators (chronological/mixed)
+│   └── Same UI as FYP
+├── Friends Feed
+│   ├── Videos from Mutual Follows
+│   └── Stories (ephemeral, 24h)
+├── Discover / Explore
+│   ├── Search Bar (top)
+│   ├── Trending Hashtags
+│   ├── Trending Sounds
+│   ├── Trending Effects
+│   ├── Category Tabs (All, Gaming, Comedy, Sports, Food, etc.)
+│   └── Trending Creators
+├── Search
+│   ├── Top (mixed results)
+│   ├── Users
+│   ├── Videos
+│   ├── Sounds
+│   ├── LIVE
+│   ├── Hashtags
+│   └── Search Suggestions / Autocomplete
+├── Create Video ([+] Button)
+│   ├── Camera / Record
+│   │   ├── Record Button (tap or hold)
+│   │   ├── Timer (3s / 10s delay)
+│   │   ├── Duration (15s / 60s / 3min / 10min)
+│   │   ├── Speed (0.3x – 3x)
+│   │   ├── Effects / Filters (AR, beauty, green screen, etc.)
+│   │   ├── Sound / Music (add before or after recording)
+│   │   ├── Flash
+│   │   ├── Flip Camera
+│   │   └── Multi-clip recording
+│   ├── Upload from Gallery
+│   ├── Photo Mode (photo carousel post)
+│   ├── Edit
+│   │   ├── Trim / Split / Adjust Clips
+│   │   ├── Effects (visual, time, transition)
+│   │   ├── Text Overlay (timed to appear/disappear)
+│   │   ├── Stickers
+│   │   ├── Voice Effects
+│   │   ├── Voiceover
+│   │   ├── Auto-Captions
+│   │   └── Sound (original, add music, volume mixing)
+│   ├── Templates (trending formats)
+│   ├── Duet (split-screen with another video)
+│   ├── Stitch (clip + respond to another video)
+│   └── Post Settings
+│       ├── Caption (text + #hashtags + @mentions)
+│       ├── Cover Image (select frame)
+│       ├── Tag People
+│       ├── Tag Location
+│       ├── Privacy (everyone / friends / only me)
+│       ├── Allow Comments (on/off)
+│       ├── Allow Duets / Stitches
+│       ├── Allow Downloads
+│       ├── TikTok Shop Product Tags
+│       ├── Schedule Post (date/time)
+│       └── Post / Save as Draft
+├── TikTok LIVE
+│   ├── Live Feed (browse live streams)
+│   ├── Live Viewer
+│   │   ├── Full-screen Video
+│   │   ├── Real-time Chat (overlaid)
+│   │   ├── Gifts (virtual items with real money value)
+│   │   ├── Co-host (multi-guest live)
+│   │   ├── Q&amp;A
+│   │   ├── Polls
+│   │   └── Product Pins (TikTok Shop)
+│   └── Go Live (creator, 1000+ follower requirement)
+│       ├── Set Topic, Title, Cover
+│       ├── Effects / Filters
+│       ├── Invite Co-host
+│       └── Manage Chat (mod, block)
+├── TikTok Shop
+│   ├── Shop Tab (product browsing)
+│   ├── Product Detail Page
+│   ├── In-Video Shopping (tagged products)
+│   ├── Live Shopping (buy during live stream)
+│   ├── Creator Affiliate Links
+│   ├── Cart / Checkout
+│   ├── Orders / Tracking
+│   └── Reviews
+├── Inbox
+│   ├── Activity (likes, comments, mentions, follows, duet/stitch notifications)
+│   ├── Direct Messages
+│   │   ├── Individual Chats
+│   │   ├── Group Chats
+│   │   ├── Share Videos via DM
+│   │   └── Message Requests (from non-followers)
+│   └── System Notifications
+├── Profile
+│   ├── Avatar, Username, Name, Bio, Link
+│   ├── Stats: Following, Followers, Likes
+│   ├── Edit Profile
+│   ├── Share Profile
+│   ├── Tabs: Videos, Reposts, Favorites, Liked (private by default)
+│   ├── Pinned Videos (up to 3)
+│   ├── Video Grid (3 columns, cover + view count)
+│   ├── Creator Tools (if eligible)
+│   │   ├── Analytics
+│   │   ├── Creator Fund / Creativity Program
+│   │   ├── TikTok Shop Seller
+│   │   ├── Creator Marketplace
+│   │   └── LIVE settings
+│   └── QR Code (share profile)
+├── Sound Page
+│   ├── Sound Name, Artist/Creator
+│   ├── All Videos Using This Sound
+│   ├── Use This Sound (open creator with sound pre-loaded)
+│   ├── Bookmark Sound
+│   └── Sound Stats (videos created with it)
+├── Hashtag Page
+│   ├── Hashtag Name, View Count
+│   ├── Top Videos with Hashtag
+│   └── Related Hashtags
+├── Effect Page
+│   ├── Effect Name, Creator
+│   ├── Videos Using This Effect
+│   └── Try This Effect
+├── Settings &amp; Privacy
+│   ├── Account (username, phone, email, linked accounts)
+│   ├── Privacy
+│   │   ├── Private Account (on/off)
+│   │   ├── Who Can Duet / Stitch / Comment / Message / View Likes
+│   │   ├── Blocked Accounts
+│   │   ├── Downloads (allow/disallow)
+│   │   └── Personalization &amp; Data
+│   ├── Content Preferences (language, restricted mode, content filter)
+│   ├── Notifications (granular per activity type)
+│   ├── Digital Wellbeing
+│   │   ├── Screen Time Management (daily limit, break reminders)
+│   │   ├── Restricted Mode
+│   │   └── Sleep Reminders
+│   ├── Accessibility (auto-captions, text size, reduce motion)
+│   ├── Cache &amp; Storage
+│   ├── Data Saver
+│   └── Family Pairing (parent controls linked account)
+└── Creator Tools
+    ├── TikTok Creator Center (web)
+    │   ├── Analytics (video views, followers, traffic sources, audience demographics)
+    │   ├── Trending Discovery (sounds, hashtags, topics, creators)
+    │   ├── Tips &amp; Resources
+    │   └── Comment Management
+    ├── Promote (paid promotion for videos)
+    ├── Creativity Program Beta (successor to Creator Fund)
+    ├── TikTok Creator Marketplace (brand deals)
+    └── Business Suite (for business accounts)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>5 tabs, always visible</td>
+<td>Home, Friends/Discover, [+Create], Inbox, Profile</td>
+</tr>
+<tr>
+<td><strong>Top Feed Toggle</strong></td>
+<td>Horizontal tabs on Home</td>
+<td>&quot;For You&quot; / &quot;Following&quot; / &quot;Friends&quot; / &quot;LIVE&quot;</td>
+</tr>
+<tr>
+<td><strong>Full-Screen Video</strong></td>
+<td>Each video fills entire screen</td>
+<td>Swipe up for next, swipe down for previous</td>
+</tr>
+<tr>
+<td><strong>Right Action Bar</strong></td>
+<td>Vertical icons overlaid on video</td>
+<td>Avatar(+Follow), Heart, Comment, Bookmark, Share, Sound Disc</td>
+</tr>
+<tr>
+<td><strong>Bottom Caption</strong></td>
+<td>Overlaid on video bottom</td>
+<td>@username, caption with #hashtags, ♪ sound name (marquee scroll)</td>
+</tr>
+<tr>
+<td><strong>Create (+)</strong></td>
+<td>Center tab, raised</td>
+<td>Opens camera/upload (always accessible, core CTA)</td>
+</tr>
+<tr>
+<td><strong>Sound Disc</strong></td>
+<td>Spinning disc icon (bottom-right)</td>
+<td>Tap to go to sound page (see all videos with this sound)</td>
+</tr>
+<tr>
+<td><strong>Swipe Gestures</strong></td>
+<td>Up: next video, Right: creator profile, Left: TikTok Shop (if enabled)</td>
+<td>Navigation is gesture-driven, not tap-driven</td>
+</tr>
+</tbody></table>
+<h3>Mobile Layout (Full-Screen Video)</h3>
+<pre><code>┌─────────────────────────────┐
+│  For You | Following        │  ← Feed toggle
+│                             │
+│                             │
+│                             │
+│     [Full-screen Video]     │     [Avatar]
+│                             │     [❤️ 1.2M]
+│                             │     [💬 23K]
+│                             │     [🔖 Save]
+│                             │     [↗️ Share]
+│                             │     [♪ 🎵]
+│                             │
+│  @creator Caption text...   │
+│  ♪ Original Sound - creator │
+│  ════════════●══════════    │  ← progress bar
+├─────────────────────────────┤
+│ 🏠 Home | 👥 | ➕ | ✉️ | 👤│  ← tab bar
+└─────────────────────────────┘
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Video</td>
+<td>video_url, cover_image, caption, duration, views_count, likes_count, comments_count, shares_count, saves_count, created_at, visibility (public/friends/private), allow_comments, allow_duet, allow_stitch, allow_download, pinned (bool), promoted (bool)</td>
+<td>belongs to User, has Sound, Effects[], Hashtags[], ProductTags[]</td>
+</tr>
+<tr>
+<td>User</td>
+<td>username, display_name, avatar, bio, link, followers_count, following_count, total_likes, is_verified, is_private, account_type (personal/creator/business)</td>
+<td>has many Videos, LIVE Streams</td>
+</tr>
+<tr>
+<td>Sound</td>
+<td>name, artist, audio_url, duration, original (bool), video_count (how many videos use it)</td>
+<td>used by many Videos</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>name, view_count, video_count</td>
+<td>many-to-many with Videos</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>name, creator, icon, video_count</td>
+<td>used by many Videos</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text, likes_count, created_at, pinned (bool)</td>
+<td>belongs to Video and User, can be nested (replies)</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>created_at</td>
+<td>belongs to User and Video/Comment</td>
+</tr>
+<tr>
+<td>Follow</td>
+<td>follower_id, following_id, mutual (bool)</td>
+<td>connects Users</td>
+</tr>
+<tr>
+<td>Duet</td>
+<td>original_video, response_video, layout (side-by-side/top-bottom/react)</td>
+<td>connects two Videos</td>
+</tr>
+<tr>
+<td>Stitch</td>
+<td>original_video, clip_segment, response_video</td>
+<td>connects two Videos</td>
+</tr>
+<tr>
+<td>LiveStream</td>
+<td>title, category, viewer_count, started_at, co_hosts[], gifts_received</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Gift</td>
+<td>type (rose/TikTok/drama_queen/etc.), value, sender, created_at</td>
+<td>sent during LiveStream</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>text, media, created_at, read</td>
+<td>belongs to Conversation and User</td>
+</tr>
+<tr>
+<td>ProductTag</td>
+<td>product, video, position, shop_url, price</td>
+<td>connects Video to TikTok Shop Product</td>
+</tr>
+<tr>
+<td>Draft</td>
+<td>video_data, edit_state, saved_at</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>Story</td>
+<td>media, created_at, expires_at (24h), viewed_by[]</td>
+<td>belongs to User</td>
+</tr>
+</tbody></table>
+<h3>Video Types</h3>
+<p><code>standard | duet | stitch | photo_carousel | live_replay | ad/promoted</code></p>
+<h3>Video Durations</h3>
+<p><code>15s | 60s | 3min | 10min (longer for some creators)</code></p>
+<h2>User Flows</h2>
+<h3>Consume Content (FYP)</h3>
+<pre><code>Open App → FYP → Watch Video (auto-plays) → Swipe Up → Next Video → Like (double-tap) → Swipe Up → Share to Friend → Continue Swiping
+</code></pre>
+<h3>Discover via Sound</h3>
+<pre><code>Watch Video → Tap Sound Disc → Sound Page → Browse All Videos Using Sound → Watch Favorites → Use This Sound (→ creator)
+</code></pre>
+<h3>Create Video</h3>
+<pre><code>[+] → Record (hold button) → Add Sound → Apply Effect → Edit (trim, text, stickers) → Write Caption + Hashtags → Set Privacy → Post
+</code></pre>
+<h3>Duet / Stitch</h3>
+<pre><code>Watch Video → Share → Duet → Record Alongside Original → Edit → Post (side-by-side video published)
+</code></pre>
+<h3>Live Shopping</h3>
+<pre><code>FYP → Swipe into LIVE → Watch → Creator Pins Product → Tap Product → Product Detail → Add to Cart → Checkout → Order
+</code></pre>
+<h3>Follow Creator</h3>
+<pre><code>Watch Video → Tap Avatar (+) → Followed → Their Videos Appear in Following Feed → Visit Profile → Watch Grid
+</code></pre>
+<h3>Trend Participation</h3>
+<pre><code>Discover → Trending Sound → Tap &quot;Use This Sound&quot; → Record with Sound → Add Your Twist → Post → Join Trend
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># TikTok Web (tiktok.com)
+/                              → For You Feed
+/following                     → Following Feed
+/foryou                        → For You (explicit)
+/explore                       → Discover / Trending
+/@:username                    → User Profile
+/@:username/video/:videoId     → Video Detail Page
+/music/:soundSlug-:soundId     → Sound Page
+/tag/:hashtag                  → Hashtag Page
+/effect/:effectId              → Effect Page
+/search?q=:query               → Search Results
+/search/user?q=:query          → Search Users
+/search/video?q=:query         → Search Videos
+/live                          → Browse LIVE
+/live/:username                → Live Stream
+/upload                        → Upload Video (web)
+/creator-center                → Creator Center (analytics)
+/shop                          → TikTok Shop
+/messages                      → Direct Messages
+/setting                       → Settings
+/setting/privacy               → Privacy Settings
+
+# Deep Links (App)
+tiktok://feed                  → For You Feed
+tiktok://user/@:username       → User Profile
+tiktok://video/:videoId        → Video
+tiktok://sound/:soundId        → Sound Page
+tiktok://camera                → Open Creator Camera
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Users, Videos, Sounds, LIVE, Hashtags</td>
+<td>Content Type tabs (Top/Users/Videos/Sounds/LIVE/Hashtags)</td>
+<td>Relevance (algorithmic)</td>
+</tr>
+<tr>
+<td>Explore</td>
+<td>Trending content</td>
+<td>Category tabs (All, Gaming, Comedy, Sports, etc.)</td>
+<td>Trending (algorithmic)</td>
+</tr>
+<tr>
+<td>Sound Page</td>
+<td>Videos using this sound</td>
+<td>—</td>
+<td>Top, Recent</td>
+</tr>
+<tr>
+<td>Hashtag Page</td>
+<td>Videos with hashtag</td>
+<td>—</td>
+<td>Top, Recent</td>
+</tr>
+<tr>
+<td>User Videos</td>
+<td>Creator&#39;s videos</td>
+<td>—</td>
+<td>Latest, Most Popular</td>
+</tr>
+<tr>
+<td>TikTok Shop</td>
+<td>Products</td>
+<td>Category, Price, Rating</td>
+<td>Relevance, Price, Bestselling</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Video</th>
+<th>Navigation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (&lt;768px, primary)</td>
+<td>Full-screen vertical video, gesture-driven</td>
+<td>9:16 full-screen, auto-play with sound</td>
+<td>Bottom tab bar</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Full-screen video or grid browse</td>
+<td>Full-screen or embedded</td>
+<td>Bottom tab bar</td>
+</tr>
+<tr>
+<td>Desktop (≥1024px)</td>
+<td>Sidebar + centered video (max-width ~420px) or &quot;Explore&quot; grid</td>
+<td>Contained vertical video, auto-play, keyboard navigation (↑↓)</td>
+<td>Left sidebar</td>
+</tr>
+</tbody></table>
+<h3>Mobile-First Design (TikTok is mobile-native)</h3>
+<ul>
+<li>Full-screen vertical video is the default and defining experience</li>
+<li>Auto-play with sound (unlike most social platforms)</li>
+<li>Double-tap to like (heart animation)</li>
+<li>Swipe gestures: up (next), down (previous), right (profile), left (shop)</li>
+<li>Pull-to-refresh on Following feed</li>
+<li>Creator camera: always one tap away ([+])</li>
+<li>Low-bandwidth mode (auto quality adjustment)</li>
+<li>Data saver mode</li>
+<li>Download videos (if allowed by creator)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Watch</th>
+<th>Create</th>
+<th>Comment</th>
+<th>LIVE</th>
+<th>Monetize</th>
+<th>Shop</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>✅ (FYP, limited)</td>
+<td>—</td>
+<td>—</td>
+<td>Watch only</td>
+<td>—</td>
+<td>Browse</td>
+</tr>
+<tr>
+<td>Registered (under 16)</td>
+<td>✅</td>
+<td>✅ (limited to 60s, no DMs)</td>
+<td>Limited</td>
+<td>Watch only</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered (16-17)</td>
+<td>✅</td>
+<td>✅ (up to 3 min)</td>
+<td>✅</td>
+<td>Watch + Go Live (no gifts)</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Registered (18+)</td>
+<td>✅</td>
+<td>✅ (up to 10 min)</td>
+<td>✅</td>
+<td>Watch + Go Live (1000+ followers) + Send/Receive Gifts</td>
+<td>✅ (if eligible)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Creator (eligible)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Creator Fund, Marketplace, LIVE Gifts, Shop affiliate</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Business Account</td>
+<td>✅</td>
+<td>✅ + Promote (ads), product tags</td>
+<td>✅</td>
+<td>✅</td>
+<td>Ads, Shop seller, Creator Marketplace</td>
+<td>✅ (seller)</td>
+</tr>
+<tr>
+<td>Moderator / Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>Content moderation, policy enforcement</td>
+</tr>
+</tbody></table>
+<h3>Digital Wellbeing (Built-in)</h3>
+<ul>
+<li>Screen time dashboard (daily usage)</li>
+<li>Daily screen time limit (configurable)</li>
+<li>Break reminders (after continuous scrolling)</li>
+<li>Sleep reminders (no notifications during set hours)</li>
+<li>Family Pairing (parent links to teen account for controls)</li>
+<li>Restricted Mode (filter mature content)</li>
+<li>Comment filters (keywords, spam)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitLab — IA.md | getIA.md</title>
+  <meta name="description" content="DevSecOps platform. CI/CD, code review, security scanning. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=gitlab.com&sz=64" alt="GitLab" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">GitLab</h1>
+      <p class="detail-brand-tagline">DevSecOps platform. CI/CD, code review, security scanning.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/gitlab/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://gitlab.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/gitlab/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>GitLab — Information Architecture</h1>
+<h2>Overview</h2>
+<p>GitLab is an all-in-one DevSecOps platform that covers the entire software development lifecycle — from project planning through source code management, CI/CD, security scanning, monitoring, and deployment. Unlike GitHub&#39;s ecosystem approach (integrations + marketplace), GitLab&#39;s mental model is a <strong>single application for the entire DevOps toolchain</strong>. The IA reflects this with deep, hierarchical navigation across stages: Plan, Code, Build, Test, Deploy, Monitor, and Secure.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Dashboard
+│   ├── Your Work
+│   │   ├── Projects (recent, starred)
+│   │   ├── Groups
+│   │   ├── Merge Requests (assigned, review requested)
+│   │   ├── Issues (assigned)
+│   │   ├── To-Do List (action items)
+│   │   └── Activity
+│   └── Explore
+│       ├── Projects
+│       ├── Groups
+│       ├── Topics
+│       └── Snippets
+├── Group
+│   ├── Overview (subgroups, projects, README)
+│   ├── Issues (cross-project)
+│   ├── Merge Requests (cross-project)
+│   ├── Epics
+│   │   ├── Epic List (open/closed)
+│   │   ├── Epic Detail (child issues, child epics, roadmap)
+│   │   └── Epic Board
+│   ├── Milestones (cross-project)
+│   ├── Iterations
+│   ├── Boards (issue boards, cross-project)
+│   ├── Roadmap (Gantt-style)
+│   ├── CI/CD
+│   │   ├── Pipelines (across projects)
+│   │   └── Runners (group-level)
+│   ├── Security
+│   │   ├── Vulnerability Report
+│   │   ├── Security Dashboard
+│   │   ├── Compliance
+│   │   └── Audit Events
+│   ├── Packages &amp; Registries
+│   │   ├── Package Registry
+│   │   └── Container Registry
+│   ├── Analytics
+│   │   ├── Contribution Analytics
+│   │   ├── DevOps Adoption
+│   │   ├── Productivity Analytics
+│   │   └── Value Stream Analytics
+│   ├── Wiki (group-level)
+│   └── Settings
+│       ├── General
+│       ├── Integrations
+│       ├── Access Tokens
+│       ├── Repository (default branch, push rules)
+│       ├── CI/CD (variables, runners, auto DevOps)
+│       └── SAML SSO / LDAP
+├── Project
+│   ├── Overview
+│   │   ├── Details (README, activity)
+│   │   └── Releases
+│   ├── Plan
+│   │   ├── Issues
+│   │   │   ├── Issue List (filters, labels, weights)
+│   │   │   ├── Issue Detail
+│   │   │   │   ├── Description (Markdown + task lists)
+│   │   │   │   ├── Design Uploads (attached mockups)
+│   │   │   │   ├── Linked Issues / MRs
+│   │   │   │   ├── Time Tracking
+│   │   │   │   └── Related Merge Requests
+│   │   │   └── New Issue (templates, quick actions)
+│   │   ├── Issue Boards (Kanban, multiple boards)
+│   │   ├── Milestones
+│   │   ├── Iterations
+│   │   ├── Requirements
+│   │   └── Service Desk
+│   ├── Code
+│   │   ├── Repository
+│   │   │   ├── File Browser (tree)
+│   │   │   ├── File Editor (Web IDE integration)
+│   │   │   ├── Branches
+│   │   │   ├── Tags
+│   │   │   ├── Contributors
+│   │   │   ├── Graph (branch visualization)
+│   │   │   └── Compare (branch diff)
+│   │   ├── Merge Requests
+│   │   │   ├── MR List (open/merged/closed/all)
+│   │   │   ├── MR Detail
+│   │   │   │   ├── Overview (description, approvals, pipeline status)
+│   │   │   │   ├── Commits
+│   │   │   │   ├── Pipelines (MR-specific)
+│   │   │   │   ├── Changes (diff view — inline/side-by-side)
+│   │   │   │   │   ├── Inline Threads (resolvable)
+│   │   │   │   │   ├── Merge Conflicts Resolver (in-browser)
+│   │   │   │   │   └── Code Quality diff
+│   │   │   │   ├── Approval Rules (required approvers)
+│   │   │   │   ├── Merge Widget (merge when pipeline succeeds)
+│   │   │   │   └── Merge Train
+│   │   │   └── Create MR
+│   │   ├── Snippets (code fragments)
+│   │   └── Web IDE (full editor in browser)
+│   ├── Build
+│   │   ├── Pipelines
+│   │   │   ├── Pipeline List
+│   │   │   ├── Pipeline Detail (DAG / stage graph)
+│   │   │   ├── Pipeline Editor (.gitlab-ci.yml visual editor)
+│   │   │   └── Pipeline Schedules
+│   │   ├── Jobs
+│   │   │   ├── Job List
+│   │   │   └── Job Detail (log, artifacts, retry)
+│   │   └── Artifacts (browsable, downloadable)
+│   ├── Secure
+│   │   ├── Security Dashboard
+│   │   ├── Vulnerability Report
+│   │   ├── Dependency List
+│   │   ├── License Compliance
+│   │   ├── SAST Results
+│   │   ├── DAST Results
+│   │   ├── Container Scanning
+│   │   ├── Secret Detection
+│   │   └── Fuzz Testing
+│   ├── Deploy
+│   │   ├── Environments
+│   │   │   ├── Environment List (production, staging, review apps)
+│   │   │   └── Environment Detail (deployments, monitoring)
+│   │   ├── Releases
+│   │   ├── Feature Flags (built-in)
+│   │   ├── Pages (static site hosting)
+│   │   └── Terraform (GitLab-managed state)
+│   ├── Operate
+│   │   ├── Kubernetes (cluster management)
+│   │   ├── Environments (monitoring)
+│   │   └── Incidents
+│   ├── Monitor
+│   │   ├── Metrics (Prometheus integration)
+│   │   ├── Logs
+│   │   ├── Tracing
+│   │   ├── Error Tracking
+│   │   ├── Alerts
+│   │   ├── Incidents
+│   │   └── On-call Schedules
+│   ├── Analytics
+│   │   ├── Value Stream Analytics
+│   │   ├── CI/CD Analytics
+│   │   ├── Repository Analytics
+│   │   ├── Code Review Analytics
+│   │   ├── Merge Request Analytics
+│   │   └── Issue Analytics
+│   ├── Wiki (project-level)
+│   ├── Packages &amp; Registries
+│   │   ├── Package Registry (npm, Maven, PyPI, NuGet, etc.)
+│   │   ├── Container Registry (Docker images)
+│   │   ├── Infrastructure Registry (Terraform modules)
+│   │   └── Model Registry (ML models)
+│   └── Settings
+│       ├── General (visibility, merge method, merge checks)
+│       ├── Integrations (Slack, Jira, etc.)
+│       ├── Webhooks
+│       ├── Access Tokens
+│       ├── Repository (protected branches, push rules, mirroring)
+│       ├── Merge Requests (approval rules, merge checks)
+│       ├── CI/CD (variables, runners, auto DevOps, artifacts)
+│       └── Monitor (alerts, incidents)
+├── User Profile
+│   ├── Overview (activity calendar, bio)
+│   ├── Personal Projects
+│   ├── Groups
+│   ├── Contributed Projects
+│   ├── Starred Projects
+│   ├── Snippets
+│   └── Followers / Following
+├── To-Do List
+│   └── Action items (assigned issues, MRs to review, mentions)
+├── Search (global)
+│   ├── Projects, Groups, Issues, MRs, Milestones, Users, Code, Commits, Notes, Wiki
+│   └── Advanced Search (Elasticsearch — paid tier)
+├── Settings (User)
+│   ├── Profile
+│   ├── Preferences (theme, layout, syntax highlighting, navigation)
+│   ├── SSH Keys
+│   ├── Access Tokens
+│   ├── Notifications
+│   ├── Active Sessions
+│   └── Applications (OAuth)
+├── Admin Area (self-hosted)
+│   ├── Dashboard (stats, components)
+│   ├── Users / Groups / Projects
+│   ├── CI/CD (runners, jobs)
+│   ├── Monitoring (background jobs, health)
+│   ├── Settings (general, integrations, reporting)
+│   ├── License
+│   └── Abuse Reports
+└── Help / Documentation
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed top bar</td>
+<td>GitLab logo, menu (⊞), search (/ to focus), create (+), issues/MRs shortcuts, To-Do bell, user avatar</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Collapsible, context-sensitive</td>
+<td>Changes based on context (project vs group vs user); expandable sections for Plan, Code, Build, Secure, Deploy, Operate, Monitor, Analytics</td>
+</tr>
+<tr>
+<td><strong>Project Sidebar</strong></td>
+<td>Left navigation with DevOps stages</td>
+<td>Plan → Code → Build → Secure → Deploy → Operate → Monitor → Analytics</td>
+</tr>
+<tr>
+<td><strong>MR Tabs</strong></td>
+<td>Horizontal tabs</td>
+<td>Overview, Commits, Pipelines, Changes</td>
+</tr>
+<tr>
+<td><strong>Breadcrumbs</strong></td>
+<td>Below top bar</td>
+<td>Group / Subgroup / Project / Section</td>
+</tr>
+<tr>
+<td><strong>Quick Actions</strong></td>
+<td>Slash commands in comments</td>
+<td><code>/assign @user</code>, <code>/label ~bug</code>, <code>/merge</code>, <code>/close</code></td>
+</tr>
+<tr>
+<td><strong>Command Palette</strong></td>
+<td>Not yet prominent (search-first)</td>
+<td>Global search with scope selection</td>
+</tr>
+</tbody></table>
+<h3>Left Sidebar Structure (Project Context)</h3>
+<pre><code>📋 Plan
+  Issues | Boards | Milestones | Iterations
+📝 Code
+  Repository | Merge Requests | Snippets | Web IDE
+🔨 Build
+  Pipelines | Jobs | Artifacts | Pipeline Editor
+🛡 Secure
+  Security Dashboard | Vulnerability Report | Dependency List
+🚀 Deploy
+  Environments | Releases | Feature Flags | Pages
+🔧 Operate
+  Kubernetes | Incidents
+📊 Monitor
+  Metrics | Logs | Error Tracking | Alerts
+📈 Analytics
+  Value Stream | CI/CD | Repository
+📦 Packages &amp; Registries
+⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>name, path, namespace, visibility, description, default_branch, topics[], star_count, fork_count</td>
+<td>belongs to Group/User, has Issues, MRs, Pipelines</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>name, path, parent, description, visibility</td>
+<td>has Subgroups, Projects, Epics, Milestones</td>
+</tr>
+<tr>
+<td>Issue</td>
+<td>iid (project-scoped), title, description, state, labels[], assignees[], milestone, weight, time_estimate, time_spent, health_status</td>
+<td>belongs to Project, linked to MRs and Epics</td>
+</tr>
+<tr>
+<td>Epic</td>
+<td>iid, title, description, start_date, due_date, state</td>
+<td>belongs to Group, has child Issues and Epics</td>
+</tr>
+<tr>
+<td>MergeRequest</td>
+<td>iid, title, description, state, source_branch, target_branch, assignees[], reviewers[], approvals[], pipeline_status, merge_status</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Pipeline</td>
+<td>id, status, ref, sha, source (push/merge_request/schedule), stages[], duration</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Job</td>
+<td>id, name, stage, status, duration, runner, artifacts[], trace (log)</td>
+<td>belongs to Pipeline</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>name, tier (production/staging/testing/development), state, last_deployment</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>iid, status, environment, sha, ref, created_at</td>
+<td>belongs to Environment</td>
+</tr>
+<tr>
+<td>Release</td>
+<td>tag, name, description, assets[], milestones[], evidences[]</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>FeatureFlag</td>
+<td>name, description, active, strategies[], scopes[]</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Vulnerability</td>
+<td>id, severity, scanner, state, location, solution</td>
+<td>belongs to Project</td>
+</tr>
+<tr>
+<td>Runner</td>
+<td>id, description, type (shared/group/project), tags[], status</td>
+<td>belongs to instance/group/project</td>
+</tr>
+<tr>
+<td>Snippet</td>
+<td>title, file_name, content, visibility</td>
+<td>belongs to User or Project</td>
+</tr>
+<tr>
+<td>WikiPage</td>
+<td>title, content, slug</td>
+<td>belongs to Project or Group</td>
+</tr>
+</tbody></table>
+<h3>MR States</h3>
+<pre><code>opened → merged / closed
+  with: draft, approval_required, merge_conflicts, pipeline_pending
+  merge methods: merge_commit / squash / fast_forward / semi_linear
+</code></pre>
+<h3>Pipeline States</h3>
+<pre><code>created → waiting_for_resource → preparing → pending → running → success / failed / canceled / skipped / manual / scheduled
+</code></pre>
+<h2>User Flows</h2>
+<h3>Code Review (MR Flow)</h3>
+<pre><code>Create branch → Push commits → Open MR → Auto-trigger pipeline → Assign reviewers → Code review (threads) → Resolve threads → Approval rules met → Pipeline passes → Merge (with merge train if enabled)
+</code></pre>
+<h3>CI/CD Pipeline</h3>
+<pre><code>Push / MR / Schedule → .gitlab-ci.yml parsed → Pipeline created → Stages run sequentially (build → test → deploy) → Jobs in stage run in parallel → View logs → Artifacts stored → Deploy to environment → Feature flags toggle
+</code></pre>
+<h3>DevSecOps (Shift-Left Security)</h3>
+<pre><code>Push code → Pipeline runs → SAST/DAST/Container/Dependency scanning auto-triggered → Vulnerability report generated → MR shows security findings → Fix before merge → Security dashboard tracks trends
+</code></pre>
+<h3>Value Stream Analytics</h3>
+<pre><code>Plan (issue created) → Code (first commit) → Build (pipeline start) → Test (pipeline finish) → Review (MR created → merged) → Staging (deployed) → Production (deployed) → Measure cycle time
+</code></pre>
+<h3>Issue to Deployment</h3>
+<pre><code>Create issue → Assign + label → Create MR from issue → Develop → Pipeline runs → Review → Merge → Auto-deploy to staging → Manual promote to production → Issue auto-closed
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                      → Dashboard (Your Work)
+/dashboard/merge_requests              → Assigned MRs
+/dashboard/issues                      → Assigned Issues
+/dashboard/todos                       → To-Do List
+/:namespace/:project                   → Project Overview
+/:namespace/:project/-/tree/:branch    → File browser
+/:namespace/:project/-/blob/:branch/:path → View file
+/:namespace/:project/-/edit/:branch/:path → Edit file
+/:namespace/:project/-/commits/:branch → Commit history
+/:namespace/:project/-/commit/:sha     → Commit detail
+/:namespace/:project/-/issues          → Issues
+/:namespace/:project/-/issues/:iid     → Issue detail
+/:namespace/:project/-/merge_requests  → Merge requests
+/:namespace/:project/-/merge_requests/:iid → MR detail
+/:namespace/:project/-/merge_requests/:iid/diffs → MR changes
+/:namespace/:project/-/pipelines       → Pipelines
+/:namespace/:project/-/pipelines/:id   → Pipeline detail
+/:namespace/:project/-/jobs/:id        → Job detail
+/:namespace/:project/-/pipeline_editor → Pipeline editor
+/:namespace/:project/-/environments    → Environments
+/:namespace/:project/-/releases        → Releases
+/:namespace/:project/-/feature_flags   → Feature flags
+/:namespace/:project/-/security/dashboard → Security dashboard
+/:namespace/:project/-/vulnerability_report → Vulnerabilities
+/:namespace/:project/-/boards          → Issue boards
+/:namespace/:project/-/milestones      → Milestones
+/:namespace/:project/-/wiki            → Wiki
+/:namespace/:project/-/packages        → Packages
+/:namespace/:project/-/container_registry → Container images
+/:namespace/:project/-/settings/general → Settings
+/groups/:namespace                     → Group overview
+/groups/:namespace/-/epics             → Epics
+/groups/:namespace/-/boards            → Group boards
+/groups/:namespace/-/roadmap           → Roadmap
+/groups/:namespace/-/analytics/value_stream_analytics → Value Stream
+/:username                             → User profile
+/explore/projects                      → Explore
+/search?search=:query&amp;scope=:scope     → Search
+/-/profile                             → User settings
+/admin                                 → Admin area (self-hosted)
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Projects, groups, issues, MRs, milestones, users, code, commits, notes, wiki</td>
+<td>Scope (project/group/global), confidential, state</td>
+<td>Relevance, Created, Updated</td>
+</tr>
+<tr>
+<td>Issues</td>
+<td>Title, description</td>
+<td>State, label, assignee, author, milestone, weight, iteration, epic, confidential</td>
+<td>Created, Updated, Due Date, Weight, Priority</td>
+</tr>
+<tr>
+<td>MRs</td>
+<td>Title, description</td>
+<td>State, author, assignee, reviewer, label, milestone, source/target branch, WIP/draft</td>
+<td>Created, Updated, Merge Date</td>
+</tr>
+<tr>
+<td>Pipelines</td>
+<td>Pipeline ID, SHA</td>
+<td>Status, source (push/MR/schedule/API), ref, username</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Code (Advanced)</td>
+<td>File content, paths</td>
+<td>Language, filename, extension, path, blob</td>
+<td>Relevance</td>
+</tr>
+</tbody></table>
+<h3>Quick Actions (slash commands)</h3>
+<pre><code>/assign @user    /label ~bug ~critical    /milestone %v2.0
+/merge           /close                   /weight 3
+/estimate 2h     /spend 1h               /due 2024-12-01
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Left Sidebar</th>
+<th>Content</th>
+<th>Diff View</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1280px)</td>
+<td>Expanded with labels (collapsible)</td>
+<td>Full width</td>
+<td>Side-by-side diff</td>
+</tr>
+<tr>
+<td>Tablet (768-1279px)</td>
+<td>Collapsed (icons only)</td>
+<td>Full width</td>
+<td>Inline diff</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hidden (hamburger)</td>
+<td>Full width stacked</td>
+<td>Inline diff, simplified</td>
+</tr>
+</tbody></table>
+<h3>GitLab-Specific UX</h3>
+<ul>
+<li>Left sidebar navigation is the primary navigation paradigm (not top tabs)</li>
+<li>DevOps stage sections in sidebar (Plan/Code/Build/Secure/Deploy/Operate/Monitor)</li>
+<li>Web IDE for in-browser editing (VS Code-based)</li>
+<li>Pipeline visualization with DAG view (directed acyclic graph)</li>
+<li>Merge train visualization (queue of MRs)</li>
+<li>Slash commands / quick actions in all comment boxes</li>
+<li>Markdown everywhere with GitLab Flavored Markdown (task lists, math, diagrams)</li>
+<li>Dark mode / light mode</li>
+<li>Self-hosted instances have Admin Area with full system management</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Issues</th>
+<th>MR</th>
+<th>Push</th>
+<th>Merge</th>
+<th>CI/CD</th>
+<th>Settings</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅ (public/internal)</td>
+<td>Create</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Reporter</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD + Review</td>
+<td>✅ (non-protected)</td>
+<td>✅ (non-protected)</td>
+<td>Run/Retry</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Maintainer</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD + Merge</td>
+<td>✅ (all)</td>
+<td>✅ (all)</td>
+<td>Configure</td>
+<td>Limited</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD + Merge</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full</td>
+<td>✅</td>
+<td>Group/Project</td>
+</tr>
+<tr>
+<td>Admin (self-hosted)</td>
+<td>✅</td>
+<td>CRUD</td>
+<td>CRUD</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full</td>
+<td>✅</td>
+<td>Instance</td>
+</tr>
+</tbody></table>
+<h3>Additional Security Features</h3>
+<ul>
+<li>Protected branches and tags with granular push/merge access</li>
+<li>Approval rules (required approvals, code owners, specific users/groups)</li>
+<li>Merge request approval policies</li>
+<li>Compliance frameworks and pipelines</li>
+<li>Audit events (group and project level)</li>
+<li>IP restrictions, 2FA enforcement, SAML/SCIM</li>
+<li>External authorization services integration</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

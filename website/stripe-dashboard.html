@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stripe Dashboard — IA.md | getIA.md</title>
+  <meta name="description" content="Payment developer console. API keys, logs, test mode. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=64" alt="Stripe Dashboard" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Stripe Dashboard</h1>
+      <p class="detail-brand-tagline">Payment developer console. API keys, logs, test mode.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/stripe-dashboard/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://dashboard.stripe.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/stripe-dashboard/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Stripe Dashboard — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Stripe Dashboard is the merchant management interface for Stripe&#39;s payment infrastructure. The mental model combines <strong>money operations</strong> (payments, subscriptions, payouts) with <strong>developer tooling</strong> (API keys, webhooks, event logs). Stripe&#39;s defining IA feature is the <strong>test/live mode toggle</strong> — every page has parallel test and live views, with a persistent orange banner in test mode. The dashboard is deeply API-aligned: every UI object maps 1:1 to an API resource, and object IDs (<code>pi_</code>, <code>cus_</code>, <code>sub_</code>) are displayed prominently with click-to-copy.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Today&#39;s Volume (gross, net, fees)
+│   ├── Balance (available, pending, connect)
+│   ├── Revenue Chart (customizable period)
+│   ├── Recent Payments
+│   ├── Action Items (disputes, reviews, incomplete onboarding)
+│   └── Getting Started (new accounts — integration checklist)
+├── Payments
+│   ├── All Payments
+│   │   ├── Payment Detail
+│   │   │   ├── Amount, Currency, Status, Timeline
+│   │   │   ├── Customer Info (linked)
+│   │   │   ├── Payment Method (card brand, last4, 3D Secure)
+│   │   │   ├── Metadata (key-value, editable)
+│   │   │   ├── Events &amp; Logs (timeline of API events)
+│   │   │   ├── Refund (full / partial)
+│   │   │   ├── Related Objects (invoice, subscription, checkout session)
+│   │   │   └── JSON View (raw API object)
+│   │   └── Export
+│   ├── Payment Links
+│   │   ├── Create Payment Link
+│   │   ├── Manage Links (active, share URL)
+│   │   └── Analytics per Link
+│   ├── Invoices
+│   │   ├── All Invoices
+│   │   ├── Create Invoice
+│   │   ├── Invoice Detail (line items, PDF, status)
+│   │   └── Invoice Templates
+│   ├── Quotes
+│   ├── Checkout Sessions
+│   └── Terminal (in-person payments)
+│       ├── Readers (hardware devices)
+│       ├── Locations
+│       └── Orders
+├── Balances
+│   ├── Overview (available, pending, reserved)
+│   ├── Balance Transactions (all movements)
+│   ├── Payouts
+│   │   ├── Payout Schedule (daily/weekly/monthly)
+│   │   ├── Payout History
+│   │   └── Payout Detail (included transactions)
+│   └── Top-Ups
+├── Customers
+│   ├── Customer List (searchable, filterable)
+│   ├── Customer Detail
+│   │   ├── Overview (LTV, payment count, subscription)
+│   │   ├── Payments (history)
+│   │   ├── Subscriptions (active, canceled)
+│   │   ├── Payment Methods (on file)
+│   │   ├── Invoices
+│   │   ├── Credit Balance
+│   │   ├── Metadata
+│   │   ├── Tax IDs
+│   │   └── Logs (API interactions for this customer)
+│   └── Customer Portal (hosted page for self-service)
+├── Billing (Subscriptions)
+│   ├── Subscriptions
+│   │   ├── Subscription List
+│   │   ├── Subscription Detail
+│   │   │   ├── Status, Plan, Price, Schedule
+│   │   │   ├── Invoices (upcoming preview)
+│   │   │   ├── Usage Records (metered billing)
+│   │   │   ├── Pause / Cancel / Update
+│   │   │   └── Events
+│   │   └── Create Subscription
+│   ├── Products
+│   │   ├── Product List
+│   │   ├── Product Detail
+│   │   ├── Create Product
+│   │   └── Price Tiers (recurring, one-time, metered, tiered)
+│   ├── Pricing Tables (embeddable)
+│   ├── Revenue Recovery
+│   │   ├── Smart Retries
+│   │   ├── Dunning Emails
+│   │   └── Revenue Recovery Stats
+│   ├── Test Clocks (simulate subscription lifecycle)
+│   └── Coupons &amp; Promotions
+├── Connect (Platform/Marketplace Payments)
+│   ├── Accounts (connected accounts list)
+│   ├── Account Detail
+│   │   ├── Onboarding Status
+│   │   ├── Capabilities
+│   │   ├── Payouts
+│   │   └── Requirements
+│   ├── Transfers
+│   ├── Application Fees
+│   ├── Account Types (Standard / Express / Custom)
+│   └── Onboarding Flows
+├── Revenue Recognition
+│   ├── Revenue Waterfall
+│   ├── Deferred Revenue
+│   └── Journal Entries
+├── Radar (Fraud Prevention)
+│   ├── Overview (fraud rate, blocked)
+│   ├── Rules (default + custom)
+│   ├── Block/Allow Lists
+│   ├── Reviews (manual fraud review queue)
+│   ├── Risk Insights
+│   └── Radar for Fraud Teams (ML-powered)
+├── Disputes
+│   ├── All Disputes
+│   ├── Dispute Detail
+│   │   ├── Reason, Amount, Deadline
+│   │   ├── Evidence Submission (form + file upload)
+│   │   ├── Status Timeline
+│   │   └── Outcome (won/lost)
+│   ├── Early Fraud Warnings
+│   └── Dispute Stats
+├── Sigma (SQL Reporting)
+│   ├── Query Editor
+│   ├── Schema Browser
+│   ├── Saved Queries
+│   └── Scheduled Reports
+├── Reports
+│   ├── Financial Reports
+│   │   ├── Balance Summary
+│   │   ├── Payout Reconciliation
+│   │   ├── Itemized Balance Changes
+│   │   └── Ending Balance
+│   ├── Revenue Reports
+│   │   ├── Gross Volume
+│   │   ├── Net Volume
+│   │   ├── Fees
+│   │   └── Refunds
+│   ├── Tax Reports
+│   ├── Custom Reports
+│   └── Downloads / Scheduled
+├── Developers
+│   ├── API Keys
+│   │   ├── Publishable Key (pk_test_ / pk_live_)
+│   │   ├── Secret Key (sk_test_ / sk_live_)
+│   │   └── Restricted Keys (with scoped permissions)
+│   ├── Webhooks
+│   │   ├── Endpoints (list)
+│   │   ├── Create Endpoint (URL + events)
+│   │   ├── Endpoint Detail (deliveries, failures)
+│   │   └── Webhook Signing Secret
+│   ├── Events
+│   │   ├── Event Log (all events)
+│   │   └── Event Detail (type, data, linked object)
+│   ├── API Logs
+│   │   ├── Request Log (method, endpoint, status, latency)
+│   │   ├── Request Detail (request/response bodies)
+│   │   └── cURL Replay
+│   ├── API Version
+│   ├── Apps (Stripe Apps — installable extensions)
+│   ├── Workbench (new — integrated dev environment)
+│   └── Overview (integration health)
+├── Settings
+│   ├── Business Settings
+│   │   ├── Business Details (legal name, address, tax ID)
+│   │   ├── Branding (logo, colors, checkout appearance)
+│   │   ├── Public Details (support contact, statement descriptor)
+│   │   └── Custom Domains (for checkout, portal)
+│   ├── Team
+│   │   ├── Team Members
+│   │   ├── Invite (email + role)
+│   │   ├── Roles &amp; Permissions
+│   │   └── Audit Trail
+│   ├── Bank Accounts &amp; Scheduling
+│   ├── Payment Methods
+│   │   ├── Cards
+│   │   ├── Bank Transfers
+│   │   ├── Digital Wallets (Apple Pay, Google Pay)
+│   │   ├── Local Methods (Alipay, iDEAL, SEPA, etc.)
+│   │   └── Crypto (USDC)
+│   ├── Emails (receipt templates, invoice templates)
+│   ├── Tax Settings (Stripe Tax)
+│   ├── Compliance (PCI, KYC documents)
+│   ├── Data Pipeline (data export to warehouse)
+│   └── Account (2FA, sessions)
+└── Test Mode ↔ Live Mode Toggle (persistent, global)
+    ├── Orange Banner: &quot;Viewing test data — everything here is simulated&quot;
+    ├── Test API Keys (pk_test_, sk_test_)
+    ├── Test Card Numbers (4242...)
+    └── Test Clocks (time simulation for subscriptions)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible (icons or expanded)</td>
+<td>Home, Payments, Balances, Customers, Billing, Connect, Radar, Reporting, Developers, Settings — grouped by function</td>
+</tr>
+<tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed</td>
+<td>Global search (⌘K), test/live mode toggle, notification bell, help (?), account switcher</td>
+</tr>
+<tr>
+<td><strong>Test/Live Toggle</strong></td>
+<td>Persistent in top bar</td>
+<td>Orange pill &quot;Test mode&quot; with switch; entire dashboard mirrors test/live data</td>
+</tr>
+<tr>
+<td><strong>Object Header</strong></td>
+<td>Breadcrumb + ID + actions</td>
+<td>Object type, ID (click to copy), status badge, action buttons (refund, cancel)</td>
+</tr>
+<tr>
+<td><strong>Detail Tabs</strong></td>
+<td>Within object detail pages</td>
+<td>Payment: Overview / Events / Logs / Metadata</td>
+</tr>
+<tr>
+<td><strong>Quick Search</strong></td>
+<td>⌘K (Spotlight-style)</td>
+<td>Search by payment ID, customer email, amount, invoice number</td>
+</tr>
+<tr>
+<td><strong>Context Panel</strong></td>
+<td>Right sidebar (optional)</td>
+<td>JSON inspector, API docs link, recent events</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>[Account Switcher ▾]
+[🔴 Test mode / 🟢 Live mode]
+─────────────
+🏠 Home
+💳 Payments
+💰 Balances
+👤 Customers
+📦 Billing
+🔗 Connect
+🛡 Radar
+📊 Reports
+─────────────
+&lt;/&gt; Developers
+⚙ Settings
+</code></pre>
+<h2>Content Model</h2>
+<h3>Core Entities (API-aligned)</h3>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>API Object ID Prefix</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PaymentIntent</td>
+<td><code>pi_</code></td>
+<td>amount, currency, status, payment_method, customer, description, metadata{}</td>
+<td>belongs to Customer, has Charges, Refunds</td>
+</tr>
+<tr>
+<td>Charge</td>
+<td><code>ch_</code></td>
+<td>amount, status, payment_method_details, outcome, receipt_url</td>
+<td>belongs to PaymentIntent</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td><code>cus_</code></td>
+<td>email, name, phone, default_payment_method, metadata{}, balance</td>
+<td>has PaymentIntents, Subscriptions, PaymentMethods, Invoices</td>
+</tr>
+<tr>
+<td>PaymentMethod</td>
+<td><code>pm_</code></td>
+<td>type (card/bank/wallet), card.brand, card.last4, card.exp</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td><code>sub_</code></td>
+<td>status, customer, items[], current_period, cancel_at, trial_end</td>
+<td>belongs to Customer and Product</td>
+</tr>
+<tr>
+<td>Product</td>
+<td><code>prod_</code></td>
+<td>name, description, active, default_price, images[]</td>
+<td>has many Prices</td>
+</tr>
+<tr>
+<td>Price</td>
+<td><code>price_</code></td>
+<td>unit_amount, currency, recurring.interval, type (one_time/recurring), billing_scheme</td>
+<td>belongs to Product</td>
+</tr>
+<tr>
+<td>Invoice</td>
+<td><code>in_</code></td>
+<td>number, customer, amount_due, status, lines[], hosted_invoice_url</td>
+<td>belongs to Customer</td>
+</tr>
+<tr>
+<td>Payout</td>
+<td><code>po_</code></td>
+<td>amount, arrival_date, status, method, description</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>Dispute</td>
+<td><code>dp_</code></td>
+<td>payment_intent, amount, reason, status, evidence_due_by</td>
+<td>belongs to Payment</td>
+</tr>
+<tr>
+<td>Refund</td>
+<td><code>re_</code></td>
+<td>amount, charge, reason, status</td>
+<td>belongs to Charge</td>
+</tr>
+<tr>
+<td>Event</td>
+<td><code>evt_</code></td>
+<td>type, data{}, created, request.id</td>
+<td>system-generated</td>
+</tr>
+<tr>
+<td>WebhookEndpoint</td>
+<td><code>we_</code></td>
+<td>url, enabled_events[], status, secret</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>ConnectedAccount</td>
+<td><code>acct_</code></td>
+<td>type, capabilities, payouts_enabled, charges_enabled</td>
+<td>belongs to Platform</td>
+</tr>
+</tbody></table>
+<h3>Payment Status Flow</h3>
+<pre><code>requires_payment_method → requires_confirmation → requires_action (3DS) → processing → succeeded
+                                                                                     → requires_capture (auth only)
+↘ cancelled
+↘ failed (with failure_code)
+</code></pre>
+<h3>Test Mode vs Live Mode</h3>
+<ul>
+<li>Completely parallel data environments</li>
+<li>Test mode: <code>sk_test_</code>, <code>pk_test_</code> keys</li>
+<li>Live mode: <code>sk_live_</code>, <code>pk_live_</code> keys</li>
+<li>Test card numbers: <code>4242424242424242</code> (success), <code>4000000000000002</code> (decline)</li>
+<li>Test clocks: simulate time progression for subscription testing</li>
+</ul>
+<h2>User Flows</h2>
+<h3>Accept First Payment</h3>
+<pre><code>Sign up → Dashboard → Getting Started checklist → Get API keys (test mode) → Read docs → Integrate Stripe.js + server → Test with 4242... → Verify in Dashboard → Switch to Live mode → Activate account → Real payments
+</code></pre>
+<h3>Investigate Failed Payment</h3>
+<pre><code>Home (see failed payment) → Payments → Filter: status=failed → Payment Detail → View decline reason → Check Events log → View API request/response → Identify issue → Fix integration → Re-attempt
+</code></pre>
+<h3>Handle Dispute</h3>
+<pre><code>Notification email → Disputes → Dispute Detail → Review reason + evidence deadline → Gather evidence (receipts, logs, customer communication) → Upload counter-evidence → Submit → Wait for bank decision → Won/Lost
+</code></pre>
+<h3>Set Up Subscription Billing</h3>
+<pre><code>Billing → Products → Create Product → Add Price (e.g., $29/month) → Integrate via API (or Pricing Table embed) → Customer subscribes → Invoice auto-generated → Payment auto-collected → Dashboard tracks MRR
+</code></pre>
+<h3>Debug Webhook</h3>
+<pre><code>Developers → Webhooks → Select endpoint → View recent deliveries → Expand failed delivery → See request payload + response → Test with Stripe CLI (`stripe listen --forward-to localhost`) → Fix handler → Re-send event
+</code></pre>
+<h3>Test Subscription Lifecycle</h3>
+<pre><code>Test mode → Billing → Test Clocks → Create clock → Create customer + subscription at clock time → Advance time → Watch invoice creation → Advance past trial → Watch payment attempt → Test dunning → Verify lifecycle
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/dashboard                         → Home
+/test/dashboard                    → Home (test mode)
+/payments                          → Payment List
+/payments/:id                      → Payment Detail (pi_xxx)
+/payment-links                     → Payment Links
+/invoices                          → Invoice List
+/invoices/:id                      → Invoice Detail
+/customers                         → Customer List
+/customers/:id                     → Customer Detail
+/subscriptions                     → Subscription List
+/subscriptions/:id                 → Subscription Detail
+/products                          → Product List
+/products/:id                      → Product Detail
+/balance                           → Balance Overview
+/balance/payouts                   → Payout List
+/balance/payouts/:id               → Payout Detail
+/connect/accounts                  → Connected Accounts
+/connect/accounts/:id              → Account Detail
+/connect/transfers                 → Transfers
+/disputes                          → Dispute List
+/disputes/:id                      → Dispute Detail
+/radar                             → Radar Overview
+/radar/rules                       → Fraud Rules
+/radar/reviews                     → Review Queue
+/reports                           → Reports Hub
+/reports/balance                   → Balance Report
+/sigma                             → SQL Query Editor
+/developers                        → Developer Overview
+/developers/api-keys               → API Keys
+/developers/webhooks               → Webhooks
+/developers/webhooks/:id           → Webhook Detail
+/developers/events                 → Event Log
+/developers/events/:id             → Event Detail
+/developers/logs                   → API Request Log
+/settings                          → Settings
+/settings/team                     → Team Members
+/settings/branding                 → Branding
+/settings/payments                 → Payment Methods Config
+/settings/billing                  → Platform billing
+/test/...                          → All routes mirrored in test mode
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global (⌘K)</td>
+<td>Everything: payment IDs, customer emails, amounts, invoice numbers, product names</td>
+<td>—</td>
+<td>Relevance, Recent</td>
+</tr>
+<tr>
+<td>Payments</td>
+<td>Payment ID, amount, customer email, description, metadata values</td>
+<td>Status, Amount Range, Date Range, Currency, Payment Method Type, Disputed</td>
+<td>Date (newest), Amount</td>
+</tr>
+<tr>
+<td>Customers</td>
+<td>Name, email, customer ID</td>
+<td>Created Date, Has Active Subscriptions, Location</td>
+<td>Created, Name, Total Spend</td>
+</tr>
+<tr>
+<td>Subscriptions</td>
+<td>Customer, subscription ID</td>
+<td>Status, Product, Price, Created, Trial</td>
+<td>Created, Status</td>
+</tr>
+<tr>
+<td>Events</td>
+<td>Event ID, event type, resource ID</td>
+<td>Event Type, Date Range</td>
+<td>Timestamp</td>
+</tr>
+<tr>
+<td>API Logs</td>
+<td>Request URL, response body</td>
+<td>Method, Status Code, Endpoint, Date Range, API Version</td>
+<td>Timestamp</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Data Tables</th>
+<th>Detail Pages</th>
+<th>Charts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;=1280px)</td>
+<td>Full sidebar with labels</td>
+<td>Full columns, inline actions</td>
+<td>Side-by-side layout</td>
+<td>Interactive charts</td>
+</tr>
+<tr>
+<td>Tablet (1024-1279px)</td>
+<td>Icon-only sidebar</td>
+<td>Reduced columns</td>
+<td>Stacked layout</td>
+<td>Simplified charts</td>
+</tr>
+<tr>
+<td>Mobile (&lt;1024px)</td>
+<td>Hidden (hamburger), Stripe mobile app preferred</td>
+<td>Card layout</td>
+<td>Full-width stacked</td>
+<td>Sparklines</td>
+</tr>
+</tbody></table>
+<h3>Stripe-Specific UX</h3>
+<ul>
+<li><strong>Test/Live mode toggle</strong> persists globally with orange banner in test mode</li>
+<li><strong>Object IDs</strong> in monospace font, click-to-copy (pi_xxx, cus_xxx, sub_xxx)</li>
+<li><strong>API object mapping</strong>: every dashboard entity maps 1:1 to API object</li>
+<li><strong>Timeline/event log</strong> on every detail page (shows API events chronologically)</li>
+<li><strong>JSON viewer</strong>: expand raw API object on any detail page</li>
+<li><strong>Metadata</strong> key-value editor on most objects</li>
+<li><strong>cURL replay</strong>: copy any API request as cURL command from logs</li>
+<li><strong>Keyboard shortcuts</strong>: ⌘K for search, N for new, / for filter</li>
+<li><strong>Stripe Apps</strong>: installable extensions in the dashboard sidebar</li>
+<li><strong>Developer-friendly</strong>: docs links inline, code snippets, API version tracking</li>
+<li><strong>Dark mode</strong> available</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View Data</th>
+<th>Payments</th>
+<th>Refunds</th>
+<th>Disputes</th>
+<th>Connect</th>
+<th>API Keys</th>
+<th>Billing</th>
+<th>Settings</th>
+<th>Team</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Administrator</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Create/Revoke</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>✅</td>
+<td>Read</td>
+<td>—</td>
+<td>Read</td>
+<td>View</td>
+<td>View (masked)</td>
+<td>—</td>
+<td>Limited</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Analyst</td>
+<td>✅ (reports)</td>
+<td>Read</td>
+<td>—</td>
+<td>Read</td>
+<td>—</td>
+<td>—</td>
+<td>View</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Support Specialist</td>
+<td>Limited</td>
+<td>Read</td>
+<td>✅ (with limits)</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>View-Only</td>
+<td>✅</td>
+<td>Read</td>
+<td>—</td>
+<td>Read</td>
+<td>Read</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Custom Roles</td>
+<td>Configurable per permission</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Security</h3>
+<ul>
+<li>Two-factor authentication required for all roles</li>
+<li>API secret keys shown only once, then permanently masked</li>
+<li>Restricted API keys with granular resource-level permissions</li>
+<li>Webhook signing secrets for payload verification</li>
+<li>IP allowlisting (for API and dashboard)</li>
+<li>PCI DSS Level 1 compliance</li>
+<li>Audit trail for all sensitive operations</li>
+<li>SSO / SAML (enterprise)</li>
+<li>Hardware security key support</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

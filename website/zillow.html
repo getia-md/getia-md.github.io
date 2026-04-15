@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zillow — IA.md | getIA.md</title>
+  <meta name="description" content="Real estate. Listings, Zestimate, map search, agent finder. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=zillow.com&sz=64" alt="Zillow" onerror="this.parentElement.textContent='Z'">
+      </div>
+      <h1 class="detail-brand-name">Zillow</h1>
+      <p class="detail-brand-tagline">Real estate. Listings, Zestimate, map search, agent finder.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/zillow/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://zillow.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/zillow/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Zillow — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Zillow is the dominant US real estate platform where 200M+ monthly users search for homes to buy, rent, or sell. The mental model is <strong>browse the housing market like a shopping app</strong> — map-based search, rich photo galleries, and the signature &quot;Zestimate&quot; (Zillow&#39;s AI home value estimate). Key differentiator: Zillow estimates the value of every home in America, even those not for sale, turning it into a spectator sport (&quot;What&#39;s my neighbor&#39;s house worth?&quot;). The IA spans buyers, renters, sellers, and agents.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Search Bar (&quot;Enter an address, neighborhood, city, or ZIP code&quot;)
+│   ├── Buy / Rent / Sell Tabs
+│   ├── Saved Homes
+│   ├── Recently Viewed
+│   ├── Recommended Homes
+│   ├── Trending Markets
+│   └── Mortgage Rates Widget
+├── Search Results (Buy)
+│   ├── Map View (left, interactive)
+│   │   ├── Property Pins (with prices)
+│   │   ├── Zoom → Auto-Refresh Results
+│   │   ├── Draw to Search (draw boundary on map)
+│   │   └── School Overlay
+│   ├── List View (right, scrollable)
+│   │   ├── Property Cards
+│   │   │   ├── Photo(s)
+│   │   │   ├── Price + Price Change
+│   │   │   ├── Beds / Baths / Sqft
+│   │   │   ├── Address
+│   │   │   ├── Listing Type (For Sale, Pending, Sold, Coming Soon)
+│   │   │   ├── Heart (save)
+│   │   │   └── Days on Zillow
+│   │   └── Infinite Scroll
+│   ├── Filters Bar
+│   │   ├── Price Range
+│   │   ├── Beds / Baths
+│   │   ├── Home Type (House, Condo, Townhouse, Multi-family, Land, Manufactured)
+│   │   ├── More Filters
+│   │   │   ├── Square Feet
+│   │   │   ├── Lot Size
+│   │   │   ├── Year Built
+│   │   │   ├── HOA
+│   │   │   ├── Parking
+│   │   │   ├── Days on Zillow
+│   │   │   ├── Keywords (pool, garage, waterfront)
+│   │   │   ├── 3D Tour Available
+│   │   │   ├── Open House
+│   │   │   └── Listing Status
+│   │   └── Save Search (with email alerts)
+│   └── Sort (Homes for You, Price, Newest, Sqft, Lot Size)
+├── Search Results (Rent)
+│   ├── Similar Map + List Layout
+│   ├── Filters (Price, Beds, Baths, Pet Policy, Laundry, Parking)
+│   └── Apply Online Badge
+├── Property Detail (For Sale)
+│   ├── Photo Gallery (full-screen, 30+ photos)
+│   ├── 3D Home Tour (Matterport)
+│   ├── Price + Zestimate Comparison
+│   ├── Key Facts (beds, baths, sqft, year built, lot, parking)
+│   ├── &quot;What&#39;s special&quot; (AI-generated highlights)
+│   ├── Description
+│   ├── Interior Features
+│   ├── Property Details (construction, utilities, HOA)
+│   ├── Map &amp; Location
+│   │   ├── Street View
+│   │   ├── Nearby Schools (ratings from GreatSchools)
+│   │   ├── Walk Score / Transit Score / Bike Score
+│   │   ├── Neighborhood
+│   │   └── Commute Time Calculator
+│   ├── Price &amp; Tax History
+│   │   ├── Zestimate History (chart)
+│   │   ├── Price Changes
+│   │   ├── Sales History
+│   │   └── Property Tax
+│   ├── Monthly Payment Estimate
+│   │   ├── Mortgage Calculator (interactive)
+│   │   ├── Principal + Interest
+│   │   ├── Property Tax
+│   │   ├── Insurance
+│   │   ├── HOA
+│   │   └── Down Payment Slider
+│   ├── Agent Info + Contact Form
+│   ├── Open House Schedule
+│   ├── Similar Homes
+│   └── Nearby Recently Sold
+├── Property Detail (Not For Sale)
+│   ├── Zestimate (estimated value)
+│   ├── Zestimate Range (low to high)
+│   ├── Rent Zestimate
+│   ├── Tax Assessment
+│   ├── Home Facts (public records)
+│   ├── Price History
+│   ├── Owner Tools (&quot;Is this your home?&quot;)
+│   └── Claim This Home
+├── Sell
+│   ├── Zillow Home Value (enter address → see Zestimate)
+│   ├── Compare Agents
+│   │   ├── Agent List (local, by sales volume)
+│   │   ├── Agent Profile (bio, sales, reviews, listings)
+│   │   └── Contact Agent
+│   ├── Seller&#39;s Guide
+│   └── List Your Home
+├── Agent Finder
+│   ├── Search by Location
+│   ├── Agent Cards (photo, name, sales, rating)
+│   ├── Agent Profile
+│   │   ├── Active Listings
+│   │   ├── Past Sales
+│   │   ├── Reviews
+│   │   ├── Service Areas
+│   │   └── Contact
+│   └── Premier Agent (paid placement)
+├── Mortgage
+│   ├── Mortgage Calculator
+│   ├── Current Rates
+│   ├── Pre-Qualification
+│   ├── Lender Directory
+│   ├── Refinance Calculator
+│   └── Affordability Calculator
+├── Saved
+│   ├── Saved Homes (hearted properties)
+│   ├── Saved Searches (with email/push alerts)
+│   ├── Saved Agents
+│   └── Collections (custom lists)
+├── Account
+│   ├── Profile
+│   ├── Notification Settings (email frequency, push)
+│   ├── Search Preferences
+│   ├── My Home (claim ownership, track value)
+│   └── Settings
+├── Resources
+│   ├── Buying Guide
+│   ├── Renting Guide
+│   ├── Selling Guide
+│   ├── Market Data (by metro, by ZIP)
+│   ├── Neighborhood Guide
+│   └── Zillow Research (data reports)
+└── Help
+    ├── FAQ
+    ├── Contact
+    └── Report Listing
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Header</strong></td>
+<td>Fixed top bar</td>
+<td>Logo, Buy/Rent/Sell tabs, Search, Saved, Sign In</td>
+</tr>
+<tr>
+<td><strong>Search Bar</strong></td>
+<td>Prominent, always in header</td>
+<td>Autocomplete: city, ZIP, neighborhood, address, school</td>
+</tr>
+<tr>
+<td><strong>Map + List</strong></td>
+<td>Split-screen (60/40 desktop)</td>
+<td>Map pins update as you scroll list</td>
+</tr>
+<tr>
+<td><strong>Filters Bar</strong></td>
+<td>Horizontal above results</td>
+<td>Quick filters + &quot;More Filters&quot; expandable</td>
+</tr>
+<tr>
+<td><strong>Property Page</strong></td>
+<td>Long scrollable page</td>
+<td>Photos → Price → Details → Map → History → Agent</td>
+</tr>
+<tr>
+<td><strong>Mobile Bottom Sheet</strong></td>
+<td>Draggable</td>
+<td>Collapsed: search. Half: results. Full: property detail</td>
+</tr>
+<tr>
+<td><strong>Mortgage Calculator</strong></td>
+<td>Interactive widget on property page</td>
+<td>Sliders for down payment, rate, term</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Listing</td>
+<td>zpid, address, coordinates, price, zestimate, status (for_sale/pending/sold/off_market), beds, baths, sqft, lot_size, year_built, home_type, photos[], description, features{}, mls_number, days_on_zillow</td>
+<td>has PriceHistory, Agent</td>
+</tr>
+<tr>
+<td>Zestimate</td>
+<td>property, estimated_value, range_low, range_high, rent_zestimate, last_updated</td>
+<td>belongs to Property</td>
+</tr>
+<tr>
+<td>PriceHistory</td>
+<td>date, event (listed/price_change/sold), price, source</td>
+<td>belongs to Property</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>name, photo, brokerage, phone, sales_count, rating, reviews_count, active_listings[], premier</td>
+<td>has Listings</td>
+</tr>
+<tr>
+<td>SavedSearch</td>
+<td>location, filters, alert_frequency (instant/daily/weekly)</td>
+<td>belongs to User</td>
+</tr>
+<tr>
+<td>School</td>
+<td>name, rating (1-10), grades, distance, type (public/private/charter)</td>
+<td>nearby Listings</td>
+</tr>
+<tr>
+<td>Neighborhood</td>
+<td>name, walk_score, transit_score, bike_score, median_value, data{}</td>
+<td>geographic area</td>
+</tr>
+<tr>
+<td>MortgageRate</td>
+<td>type (30yr/15yr/ARM), rate, apr, date</td>
+<td>market data</td>
+</tr>
+</tbody></table>
+<h3>Listing Status</h3>
+<pre><code>coming_soon → for_sale → pending → sold
+                         ↘ withdrawn / expired
+</code></pre>
+<h2>User Flows</h2>
+<h3>Search and Save Homes</h3>
+<pre><code>Home → Search &quot;Austin, TX&quot; → Map + List → Filter (3+ bed, $400K-$600K, House) → Browse → Heart Favorite Homes → Save Search → Get Daily Email Alerts for New Listings
+</code></pre>
+<h3>Check Home Value</h3>
+<pre><code>Home → Sell Tab → Enter Address → Zestimate: $485,000 (range $460K-$510K) → Price History Chart → Comparable Sales → &quot;Thinking of selling?&quot; → Contact Agent
+</code></pre>
+<h3>Calculate Mortgage</h3>
+<pre><code>Property Page → Scroll to Payment Estimate → Adjust Down Payment (20%) → See Monthly: $2,450 → Change Rate → See Updated → &quot;Get Pre-Qualified&quot; → Zillow Home Loans
+</code></pre>
+<h3>Contact Agent</h3>
+<pre><code>Property Page → Agent Card → [Contact Agent] → &quot;I&#39;m interested in this home&quot; → Send → Agent Responds
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home
+/homes/:location               → Buy Search Results
+/homes/:location/rentals       → Rent Search Results
+/homedetails/:address/:zpid    → Property Detail
+/homes/recently-sold/:location → Recently Sold
+/mortgage-calculator           → Mortgage Calculator
+/mortgage-rates                → Current Rates
+/pre-qualification             → Pre-Qualification
+/agents/:location              → Agent Finder
+/agents/:slug                  → Agent Profile
+/sell                          → Sell Your Home
+/home-values/:location         → Home Values
+/rental-manager                → Landlord Tools
+/saved-homes                   → Saved Homes
+/saved-searches                → Saved Searches
+/my-home                       → My Home Dashboard
+/guides/:slug                  → Resource Guide
+/research                      → Market Research
+/account                       → Account Settings
+/help                          → Help Center
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Buy</td>
+<td>Address, city, ZIP, neighborhood, school district</td>
+<td>Price, Beds, Baths, Home Type, Sqft, Lot, Year Built, HOA, Parking, Days on Zillow, Open House, Keywords, 3D Tour, Status</td>
+<td>Homes for You, Price, Newest, Sqft, Lot</td>
+</tr>
+<tr>
+<td>Rent</td>
+<td>Address, city, ZIP</td>
+<td>Price, Beds, Baths, Home Type, Pets, Laundry, Parking, Amenities, Move-in Date</td>
+<td>Price, Newest, Sqft</td>
+</tr>
+<tr>
+<td>Agents</td>
+<td>Name, location</td>
+<td>Specialization, Reviews, Sales Volume</td>
+<td>Recommended, Sales, Reviews</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Draw boundary, zoom</td>
+<td>Same as buy/rent</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Search/Results</th>
+<th>Property</th>
+<th>Mortgage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Map + list split (60/40)</td>
+<td>Full gallery + two-column</td>
+<td>Interactive calculator</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Map or list toggle</td>
+<td>Full-width gallery</td>
+<td>Simplified calculator</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Cards with map toggle</td>
+<td>Swipe gallery, accordion, sticky contact</td>
+<td>Full calculator</td>
+</tr>
+</tbody></table>
+<h3>Zillow-Specific UX</h3>
+<ul>
+<li>Zestimate on every property (even off-market) — turns browsing into a game</li>
+<li>Map search: zoom in → results auto-update</li>
+<li>Draw-on-map: draw a custom boundary to search</li>
+<li>School ratings from GreatSchools (1-10) overlay on map</li>
+<li>Walk/Transit/Bike scores prominent on listings</li>
+<li>Price history graph (see when it was last sold and for how much)</li>
+<li>&quot;Save search&quot; with instant, daily, or weekly email alerts</li>
+<li>3D home tours (Matterport integration)</li>
+<li>Mortgage calculator built into every listing</li>
+<li>&quot;My Home&quot; dashboard for homeowners (track value, refinance)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Save</th>
+<th>Contact</th>
+<th>Zestimate</th>
+<th>Reviews</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>—</td>
+<td>✅ (enter info)</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Registered</td>
+<td>✅</td>
+<td>✅ (saved + alerts)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Homeowner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (own home insights)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Premier Agent</td>
+<td>✅</td>
+<td>✅</td>
+<td>Featured placement</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

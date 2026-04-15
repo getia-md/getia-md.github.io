@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gusto — IA.md | getIA.md</title>
+  <meta name="description" content="Payroll & HR. Payroll runs, benefits, hiring. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=gusto.com&sz=64" alt="Gusto" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">Gusto</h1>
+      <p class="detail-brand-tagline">Payroll & HR. Payroll runs, benefits, hiring.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/gusto/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://gusto.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/gusto/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Gusto — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Gusto is the payroll and HR platform built for small businesses, known for making payroll simple enough that a founder can run it in minutes. The mental model is <strong>payroll as the backbone</strong> — everything (benefits, compliance, tax filing, onboarding) revolves around paying people correctly and on time. Unlike BambooHR&#39;s HR-first approach, Gusto leads with payroll and wraps HR around it. Key differentiator: Gusto handles payroll tax filing, workers&#39; comp, and compliance automatically, so small business owners never think about it.</p>
+<h2>Site Map</h2>
+<pre><code>├── Home / Dashboard
+│   ├── Next Payroll (date, estimated total, action)
+│   ├── Action Items (tasks needing attention)
+│   │   ├── Missing info for new hire
+│   │   ├── Tax notice needs response
+│   │   ├── Benefits enrollment pending
+│   │   └── Timesheet approval needed
+│   ├── Company Summary (headcount, payroll cost)
+│   ├── Recent Payrolls
+│   └── News / Product Updates
+├── Payroll
+│   ├── Run Payroll
+│   │   ├── Pay Period Selection
+│   │   ├── Employee List
+│   │   │   ├── Hours (if hourly)
+│   │   │   ├── Salary (auto-populated)
+│   │   │   ├── Bonus / Commission
+│   │   │   ├── Reimbursements
+│   │   │   ├── PTO Used (auto-deducted)
+│   │   │   └── Deductions Preview
+│   │   ├── Contractor Payments
+│   │   ├── Review Payroll Summary
+│   │   │   ├── Gross Pay
+│   │   │   ├── Taxes (federal, state, local — calculated)
+│   │   │   ├── Benefits Deductions
+│   │   │   ├── Net Pay
+│   │   │   ├── Employer Taxes &amp; Contributions
+│   │   │   └── Total Cost
+│   │   └── Submit Payroll
+│   ├── Payroll History
+│   │   ├── Past Payrolls (list)
+│   │   ├── Payroll Detail (per-employee breakdown)
+│   │   └── Download Pay Stubs
+│   ├── Payroll Schedule (biweekly, semimonthly, monthly)
+│   ├── Off-Cycle Payroll (bonus, correction)
+│   ├── Year-End
+│   │   ├── W-2s (generated automatically)
+│   │   ├── 1099s (contractors)
+│   │   └── Year-End Checklist
+│   └── Tax Center
+│       ├── Tax Filings (federal, state, local — auto-filed)
+│       ├── Tax Payments (auto-deposited)
+│       ├── Tax Forms
+│       └── Tax Notices / Credits (R&amp;D, WOTC)
+├── People
+│   ├── Team Directory
+│   ├── Employee Profile
+│   │   ├── Personal Info
+│   │   ├── Job &amp; Pay (title, salary, pay schedule, FLSA status)
+│   │   ├── Tax Info (W-4, state withholding)
+│   │   ├── Benefits Enrollment
+│   │   ├── Time Off Balances
+│   │   ├── Documents (I-9, W-4, offer letter)
+│   │   └── Employment History
+│   ├── Add Employee (hire)
+│   │   ├── Personal Details
+│   │   ├── Job Details &amp; Pay
+│   │   ├── Self-Onboarding Invite (employee fills out W-4, direct deposit, I-9)
+│   │   └── Assign to Benefits
+│   ├── Contractor Profiles
+│   │   ├── W-9
+│   │   ├── Payment History
+│   │   └── 1099 Generation
+│   ├── Org Chart
+│   └── Offboarding
+│       ├── Terminate Employee
+│       ├── Final Paycheck (calculated per state law)
+│       ├── COBRA Notification
+│       └── Offboarding Checklist
+├── Benefits
+│   ├── Health Insurance
+│   │   ├── Available Plans (medical, dental, vision)
+│   │   ├── Plan Comparison
+│   │   ├── Employer Contribution Setup
+│   │   └── Employee Enrollment
+│   ├── 401(k) Retirement
+│   │   ├── Plan Setup
+│   │   ├── Employer Match
+│   │   └── Employee Contributions
+│   ├── Workers&#39; Compensation
+│   │   ├── Pay-As-You-Go (integrated with payroll)
+│   │   └── Classification Codes
+│   ├── Commuter Benefits
+│   ├── HSA / FSA
+│   ├── Life &amp; Disability
+│   └── Open Enrollment (annual)
+├── Time &amp; Attendance
+│   ├── Time Tracking (clock in/out)
+│   ├── Timesheets (weekly)
+│   ├── Approve Hours (manager)
+│   ├── Overtime Alerts
+│   └── Sync with Payroll
+├── Time Off
+│   ├── Policies (PTO, Sick, Holiday)
+│   ├── Request Time Off (employee)
+│   ├── Approve Requests (manager)
+│   ├── Calendar
+│   └── Balances
+├── Hiring &amp; Onboarding
+│   ├── Offer Letters (templates, e-sign)
+│   ├── Self-Onboarding (employee completes remotely)
+│   │   ├── W-4
+│   │   ├── Direct Deposit
+│   │   ├── I-9
+│   │   ├── Benefits Selection
+│   │   └── Company Policies Acknowledgment
+│   ├── Onboarding Checklist
+│   └── Custom Documents (e-sign)
+├── Reports
+│   ├── Payroll Summary
+│   ├── Tax Liability
+│   ├── Benefits Enrollment
+│   ├── Time Off
+│   ├── Contractor Payments
+│   ├── Total Compensation
+│   └── Custom Reports
+├── Company Settings
+│   ├── Company Info
+│   ├── Locations (multi-state support)
+│   ├── Pay Schedules
+│   ├── Bank Account (for payroll funding)
+│   ├── Departments
+│   ├── Admins &amp; Permissions
+│   ├── Document Templates
+│   ├── Integrations (QuickBooks, Xero, Slack, etc.)
+│   └── Billing / Plan
+└── Employee Self-Service
+    ├── My Paystubs
+    ├── My W-2s
+    ├── My Tax Info (edit W-4)
+    ├── My Benefits
+    ├── My Time Off
+    ├── My Documents
+    ├── Direct Deposit (edit bank info)
+    └── My Profile
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Fixed, collapsible</td>
+<td>Home, Payroll, People, Benefits, Time, Reports, Settings</td>
+</tr>
+<tr>
+<td><strong>Action Items</strong></td>
+<td>Dashboard badges</td>
+<td>Numbered badge on nav items needing attention</td>
+</tr>
+<tr>
+<td><strong>Payroll Flow</strong></td>
+<td>Step-by-step wizard</td>
+<td>Review employees → Adjustments → Summary → Submit</td>
+</tr>
+<tr>
+<td><strong>Employee Profile</strong></td>
+<td>Tabs within page</td>
+<td>Personal / Pay / Tax / Benefits / Time Off / Docs</td>
+</tr>
+<tr>
+<td><strong>Role Switch</strong></td>
+<td>Different sidebar per role</td>
+<td>Admin sees everything, employee sees self-service</td>
+</tr>
+</tbody></table>
+<h3>Signature UX: Run Payroll</h3>
+<pre><code>[Run Payroll] → Review Employee Hours → Add Bonuses → Review Summary → Total: $45,230 → [Submit Payroll] → &quot;Payroll for Dec 1-15 submitted! Employees will be paid on Dec 20.&quot; → Taxes Auto-Filed
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Employee</td>
+<td>name, email, title, department, salary/hourly_rate, pay_schedule, flsa_status, start_date, status</td>
+<td>has Paystubs, BenefitEnrollments, W4, TimeOffBalance</td>
+</tr>
+<tr>
+<td>Contractor</td>
+<td>name, email, w9, payment_method, total_paid_ytd</td>
+<td>has Payments, 1099</td>
+</tr>
+<tr>
+<td>PayrollRun</td>
+<td>period_start, period_end, pay_date, status, gross_total, tax_total, net_total, employee_count</td>
+<td>has many Paystubs</td>
+</tr>
+<tr>
+<td>Paystub</td>
+<td>employee, gross_pay, taxes{federal, state, local, fica}, deductions{health, dental, 401k}, net_pay, pay_method</td>
+<td>belongs to PayrollRun</td>
+</tr>
+<tr>
+<td>TaxFiling</td>
+<td>type (940/941/W-2/state), period, amount, status (filed/pending), filed_date</td>
+<td>auto-generated</td>
+</tr>
+<tr>
+<td>BenefitPlan</td>
+<td>type (medical/dental/vision/401k/life), carrier, tiers[], employer_contribution</td>
+<td>has Enrollments</td>
+</tr>
+<tr>
+<td>BenefitEnrollment</td>
+<td>employee, plan, tier (employee_only/family/etc), employee_contribution, dependents[]</td>
+<td>belongs to Employee</td>
+</tr>
+<tr>
+<td>TimeOffPolicy</td>
+<td>name, type (PTO/sick/holiday), accrual_rate, max_balance, carryover</td>
+<td>has many Balances</td>
+</tr>
+<tr>
+<td>TimeEntry</td>
+<td>employee, date, hours, project, status (pending/approved)</td>
+<td>belongs to Employee</td>
+</tr>
+<tr>
+<td>OfferLetter</td>
+<td>candidate_name, title, salary, start_date, template, e_signed</td>
+<td>belongs to Hire</td>
+</tr>
+<tr>
+<td>W4</td>
+<td>filing_status, allowances, additional_withholding, effective_date</td>
+<td>belongs to Employee</td>
+</tr>
+</tbody></table>
+<h3>Payroll Status</h3>
+<pre><code>draft → reviewing → submitted → processing → completed → paid
+                                              ↘ error (needs correction)
+</code></pre>
+<h3>Tax Filing (Automatic)</h3>
+<pre><code>payroll_completed → tax_calculated → filed → acknowledged
+</code></pre>
+<h2>User Flows</h2>
+<h3>Run Payroll (3-Minute Payroll)</h3>
+<pre><code>Dashboard → [Run Payroll] → Review Employee List (hours auto-synced) → Add Bonus for Sarah → Review Summary → Employer Cost: $52,300 → [Submit] → &quot;Payroll Submitted!&quot; → Taxes Auto-Filed → Employees Paid on Schedule
+</code></pre>
+<h3>Hire &amp; Onboard</h3>
+<pre><code>People → Add Employee → Enter Name + Email + Start Date + Salary → [Send Invite] → Employee Gets Self-Onboarding Email → Completes W-4, Direct Deposit, I-9, Benefits → First Payroll Includes New Hire Automatically
+</code></pre>
+<h3>Employee: View Paystub</h3>
+<pre><code>Self-Service → My Paystubs → Select Pay Date → View Breakdown (gross, taxes, deductions, net) → Download PDF
+</code></pre>
+<h3>Set Up Benefits</h3>
+<pre><code>Benefits → Health Insurance → Browse Plans → Select Plan → Set Employer Contribution (50%) → Open Enrollment → Employees Select → Deductions Auto-Apply to Payroll
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Dashboard
+/payroll                       → Payroll Home
+/payroll/run                   → Run Payroll
+/payroll/history               → Payroll History
+/payroll/history/:id           → Payroll Detail
+/payroll/tax-center            → Tax Center
+/payroll/year-end              → Year-End
+/people                        → Team Directory
+/people/:id                    → Employee Profile
+/people/:id/pay                → Pay Tab
+/people/:id/taxes              → Tax Info
+/people/:id/benefits           → Benefits Tab
+/people/new                    → Add Employee
+/people/contractors            → Contractors
+/people/offboarding/:id        → Offboarding
+/benefits                      → Benefits Admin
+/benefits/health               → Health Plans
+/benefits/401k                 → Retirement
+/benefits/enrollment           → Open Enrollment
+/time                          → Time Tracking
+/time/timesheets               → Timesheets
+/time/time-off                 → Time Off
+/time/time-off/calendar        → Calendar
+/hiring                        → Offer Letters
+/reports                       → Reports
+/reports/:type                 → Specific Report
+/settings                      → Company Settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>People</td>
+<td>Name, email, title</td>
+<td>Department, Location, Status, Type (employee/contractor)</td>
+<td>Name, Start Date</td>
+</tr>
+<tr>
+<td>Payroll History</td>
+<td>Pay period, employee</td>
+<td>Date Range, Pay Schedule</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Time Off</td>
+<td>Employee</td>
+<td>Type, Status, Date Range</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>—</td>
+<td>Date Range, Department</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Dashboard</th>
+<th>Payroll</th>
+<th>People</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop</td>
+<td>Full sidebar + dashboard</td>
+<td>Payroll review table</td>
+<td>Full profile tabs</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Collapsible sidebar</td>
+<td>Simplified table</td>
+<td>Stacked tabs</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Bottom nav (limited)</td>
+<td>Card-based review</td>
+<td>Accordion profile</td>
+</tr>
+</tbody></table>
+<h3>Gusto-Specific UX</h3>
+<ul>
+<li><strong>3-minute payroll</strong>: Pre-populated from timesheets, salary, and PTO</li>
+<li><strong>Auto-pilot payroll</strong>: Set it and forget it (auto-runs on schedule)</li>
+<li><strong>Self-onboarding</strong>: New hires complete paperwork before Day 1</li>
+<li><strong>Tax auto-filing</strong>: Federal, state, local — Gusto handles everything</li>
+<li><strong>Workers&#39; comp pay-as-you-go</strong>: Integrated into payroll (no annual audit)</li>
+<li><strong>Friendly language</strong>: &quot;Let&#39;s run payroll&quot; not &quot;Process payroll batch&quot;</li>
+<li><strong>Action items</strong>: Dashboard prominently shows what needs your attention</li>
+<li><strong>Green brand</strong>: Fresh, approachable, trustworthy</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Dashboard</th>
+<th>Payroll</th>
+<th>People</th>
+<th>Benefits</th>
+<th>Reports</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Admin (Owner)</td>
+<td>✅</td>
+<td>Run + view</td>
+<td>All CRUD</td>
+<td>Configure</td>
+<td>All</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Payroll Admin</td>
+<td>✅</td>
+<td>Run + view</td>
+<td>View</td>
+<td>View</td>
+<td>Payroll reports</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>HR Admin</td>
+<td>✅</td>
+<td>View</td>
+<td>All CRUD</td>
+<td>Configure</td>
+<td>HR reports</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Team view</td>
+<td>—</td>
+<td>Team view</td>
+<td>—</td>
+<td>Team</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Employee</td>
+<td>Self-service</td>
+<td>Own paystubs</td>
+<td>Own profile</td>
+<td>Own enrollment</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Contractor</td>
+<td>Self-service</td>
+<td>Own payments</td>
+<td>Own profile</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Compliance</h3>
+<ul>
+<li>All payroll taxes auto-calculated and auto-filed</li>
+<li>State new hire reporting (automatic)</li>
+<li>ACA compliance (1095-C generation)</li>
+<li>Workers&#39; comp (integrated, pay-as-you-go)</li>
+<li>I-9 compliance (electronic)</li>
+<li>SOC 2 Type II</li>
+<li>Encryption at rest and in transit</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

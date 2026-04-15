@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion — IA.md | getIA.md</title>
+  <meta name="description" content="All-in-one workspace. Block editor, databases, wikis. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=64" alt="Notion" onerror="this.parentElement.textContent='N'">
+      </div>
+      <h1 class="detail-brand-name">Notion</h1>
+      <p class="detail-brand-tagline">All-in-one workspace. Block editor, databases, wikis.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/notion/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://notion.so" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/notion/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Notion — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Notion is a block-based workspace that unifies notes, databases, wikis, and project management into a single tool. The mental model is <strong>everything is a block</strong> — text, images, tables, databases, embeds, and even entire pages are interchangeable blocks that can be nested, rearranged, and transformed. Pages live in a freeform hierarchy, and any page can become a database with structured properties and multiple views (table, board, gallery, calendar, timeline).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home (Teamspace Landing)
+│   ├── Recently Visited
+│   ├── Favorites (pinned pages)
+│   ├── All Teamspaces Overview
+│   └── Quick Search (⌘K)
+├── Sidebar Navigation
+│   ├── Search
+│   ├── Notion AI (Ask AI)
+│   ├── Home
+│   ├── Inbox (notifications, mentions)
+│   ├── Teamspaces
+│   │   ├── Teamspace A
+│   │   │   ├── Wiki pages
+│   │   │   ├── Project databases
+│   │   │   └── Meeting notes
+│   │   └── Teamspace B
+│   ├── Private Pages
+│   │   ├── Personal notes
+│   │   └── Drafts
+│   ├── Shared Pages
+│   ├── Favorites (starred pages)
+│   └── Trash
+├── Page View
+│   ├── Page Header
+│   │   ├── Icon (emoji or custom)
+│   │   ├── Cover Image
+│   │   ├── Title
+│   │   └── Properties (if database item)
+│   ├── Content Area (block canvas)
+│   │   ├── Text Blocks (paragraph, heading 1/2/3)
+│   │   ├── List Blocks (bulleted, numbered, to-do, toggle)
+│   │   ├── Media Blocks (image, video, file, bookmark)
+│   │   ├── Advanced Blocks
+│   │   │   ├── Table (simple)
+│   │   │   ├── Database (inline — full, linked)
+│   │   │   ├── Callout
+│   │   │   ├── Quote
+│   │   │   ├── Divider
+│   │   │   ├── Code (syntax-highlighted)
+│   │   │   ├── Math (KaTeX)
+│   │   │   ├── Table of Contents
+│   │   │   ├── Breadcrumb
+│   │   │   ├── Column Layout (2–5 columns)
+│   │   │   ├── Synced Block (live reference across pages)
+│   │   │   └── Embed (Figma, Loom, Maps, 40+ integrations)
+│   │   └── Template Button (repeatable block patterns)
+│   ├── Comments (inline + page-level)
+│   ├── Backlinks (pages referencing this page)
+│   └── Page History (version snapshots)
+├── Database
+│   ├── Views
+│   │   ├── Table View
+│   │   ├── Board View (Kanban by select property)
+│   │   ├── Gallery View (card layout with cover)
+│   │   ├── List View (compact)
+│   │   ├── Calendar View (by date property)
+│   │   └── Timeline View (Gantt-style by date range)
+│   ├── Properties
+│   │   ├── Text, Number, Select, Multi-select
+│   │   ├── Date, Person, Files, Checkbox, URL, Email, Phone
+│   │   ├── Formula, Relation, Rollup
+│   │   ├── Created time, Last edited time, Created by, Last edited by
+│   │   └── Unique ID, Status (new)
+│   ├── Filters, Sorts, Groups (per view)
+│   ├── Sub-items (nested database items)
+│   └── Database Templates (per-view defaults)
+├── Templates
+│   ├── Template Gallery (Notion-curated)
+│   ├── Community Templates
+│   └── My Templates (duplicated pages)
+├── Notion AI
+│   ├── Ask AI (Q&amp;A across workspace)
+│   ├── AI Writer (draft, summarize, translate, fix grammar)
+│   ├── AI Autofill (database property AI fill)
+│   └── AI Blocks (generated summaries, action items)
+├── Integrations &amp; Connections
+│   ├── Slack, GitHub, Jira, Google Drive, Figma...
+│   ├── Notion API (developer integrations)
+│   └── Import (Evernote, Confluence, Markdown, CSV, HTML)
+├── Settings &amp; Members
+│   ├── Workspace Settings (name, icon, domain)
+│   ├── Members &amp; Groups
+│   ├── Teamspaces
+│   ├── Identity &amp; Provisioning (SAML SSO, SCIM)
+│   ├── Connections (integrations)
+│   ├── Notifications
+│   ├── Appearance (light/dark, font: default/serif/mono)
+│   ├── Language &amp; Region
+│   └── Plans &amp; Billing
+└── Publish / Share
+    ├── Share to Web (public page)
+    ├── Share with People (invite by email)
+    ├── Guest Access
+    └── Notion Sites (custom domain publishing)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Collapsible, resizable (default 240px)</td>
+<td>Teamspace tree, favorites, private pages, search, inbox, trash</td>
+</tr>
+<tr>
+<td><strong>Breadcrumb</strong></td>
+<td>Top of page area</td>
+<td>Teamspace &gt; Parent Page &gt; Current Page</td>
+</tr>
+<tr>
+<td><strong>Block Menu</strong></td>
+<td><code>+</code> button or <code>/</code> slash command</td>
+<td>Insert any block type (40+ options)</td>
+</tr>
+<tr>
+<td><strong>Slash Command</strong></td>
+<td>Type <code>/</code> anywhere in content</td>
+<td>Quick insert: heading, database, image, embed, AI, toggle...</td>
+</tr>
+<tr>
+<td><strong>Link Autocomplete</strong></td>
+<td>Type <code>@</code> or <code>[[</code></td>
+<td>Mention page, person, date; link to existing page</td>
+</tr>
+<tr>
+<td><strong>Command Palette</strong></td>
+<td>⌘K / Ctrl+K</td>
+<td>Universal search + navigation + quick actions</td>
+</tr>
+<tr>
+<td><strong>Drag &amp; Drop</strong></td>
+<td>Block handles (⋮⋮) and sidebar items</td>
+<td>Rearrange blocks, move pages between sections</td>
+</tr>
+<tr>
+<td><strong>Turn Into</strong></td>
+<td>Select block → Transform</td>
+<td>Change any block type to another (text ↔ heading ↔ toggle ↔ callout)</td>
+</tr>
+<tr>
+<td><strong>Page Peek</strong></td>
+<td>Hold ⌘ + click link</td>
+<td>Preview linked page in side panel without navigating away</td>
+</tr>
+</tbody></table>
+<h3>Sidebar Structure</h3>
+<pre><code>🔍 Search
+🤖 Notion AI
+🏠 Home
+📥 Inbox
+─────────────
+⭐ Favorites
+  Design System ▾
+  Q1 Roadmap
+─────────────
+🏢 Teamspace: Engineering
+  📄 Wiki ▾
+    Architecture Docs
+    Onboarding Guide
+  📊 Sprint Board (database)
+  📝 Meeting Notes ▾
+─────────────
+🏢 Teamspace: Marketing
+  Campaign Tracker
+  Content Calendar
+─────────────
+🔒 Private
+  Personal Journal
+  1:1 Notes ▾
+─────────────
+👥 Shared
+  Cross-team Projects
+─────────────
+🗑 Trash
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>name, icon, domain, plan, settings</td>
+<td>has many Teamspaces, Members</td>
+</tr>
+<tr>
+<td>Teamspace</td>
+<td>name, icon, visibility (open/closed/private), default permissions</td>
+<td>has many Pages</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>title, icon, cover, parent_id, created_at, updated_at, created_by, full_width</td>
+<td>has many Blocks, child Pages, Comments</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>id, type, content, properties{}, children[], parent_id</td>
+<td>belongs to Page; can nest child Blocks</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>title, schema (properties[]), views[], is_inline</td>
+<td>special Page type; items are child Pages with property values</td>
+</tr>
+<tr>
+<td>Property</td>
+<td>name, type, options{} (colors, formulas, relations)</td>
+<td>belongs to Database schema</td>
+</tr>
+<tr>
+<td>View</td>
+<td>name, type, filters[], sorts[], groups[], visible_properties[]</td>
+<td>belongs to Database</td>
+</tr>
+<tr>
+<td>Synced Block</td>
+<td>source_block_id, synced_copies[]</td>
+<td>references across pages; edits propagate</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>body, author, inline_position (block + offset), resolved</td>
+<td>belongs to Page or inline on Block</td>
+</tr>
+<tr>
+<td>Template</td>
+<td>content (page snapshot), target_database</td>
+<td>belongs to Database or Template Gallery</td>
+</tr>
+<tr>
+<td>Connection</td>
+<td>type (Slack/GitHub/etc.), config{}</td>
+<td>belongs to Workspace</td>
+</tr>
+</tbody></table>
+<h3>Block Type Taxonomy</h3>
+<pre><code>Text: paragraph | heading_1 | heading_2 | heading_3
+Lists: bulleted_list | numbered_list | to_do | toggle
+Media: image | video | audio | file | bookmark | embed
+Data: table | database_inline | database_full_page | database_linked
+Layout: column_list | divider | table_of_contents | breadcrumb
+Annotation: callout | quote | code | math (KaTeX)
+Interactive: template_button | synced_block | link_to_page
+AI: ai_summary | ai_action_items | ai_custom_block
+</code></pre>
+<h3>Database Property Types</h3>
+<pre><code>Basic: title | text | number | select | multi_select | status | checkbox
+Date/Time: date | created_time | last_edited_time
+People: person | created_by | last_edited_by
+Media: files_and_media | url | email | phone
+Computed: formula | relation | rollup | unique_id
+</code></pre>
+<h2>User Flows</h2>
+<h3>Quick Capture</h3>
+<pre><code>⌘K → Type page title → Enter → Start writing → Drag to organize later
+— or —
+⌘N → New blank page → Write → Move to Teamspace
+</code></pre>
+<h3>Build a Wiki</h3>
+<pre><code>Teamspace → [+ New Page] → Title &quot;Engineering Wiki&quot; → Add sub-pages (Architecture, Onboarding, Runbooks) → Toggle blocks for collapsible sections → Share with team
+</code></pre>
+<h3>Database Project Tracker</h3>
+<pre><code>New Page → /database full page → Define properties (Status, Assignee, Priority, Sprint, Due Date) → Add items → Create Board View (group by Status) → Create Calendar View (by Due Date) → Filter views per team
+</code></pre>
+<h3>Knowledge Linking</h3>
+<pre><code>Write note → Type [[ → Search and select page to link → Backlink auto-appears on target page → Build knowledge graph across workspace
+</code></pre>
+<h3>Notion AI Research</h3>
+<pre><code>⌘J → &quot;Summarize all Q1 meeting notes&quot; → AI searches workspace → Returns synthesized answer with source page links
+</code></pre>
+<h3>Template Reuse</h3>
+<pre><code>Database → New Template → Design layout (e.g., &quot;Weekly Standup&quot;) → Team members click [+ New] → Select template → Pre-filled page created
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                              → Home (recently visited)
+/:workspaceSlug                → Workspace root
+/:workspaceSlug/:pageId        → Page view (UUID-based, slug suffix for readability)
+/:workspaceSlug/:pageId?v=:viewId → Database with specific view active
+/:workspaceSlug/:pageId?p=:subpageId → Page peek (side panel preview)
+/search                        → Search results
+/trash                         → Trash
+/settings                      → Workspace settings
+/settings/members              → Members
+/settings/teamspaces           → Teamspaces config
+/settings/connections           → Integrations
+/settings/billing              → Plans &amp; billing
+/templates                     → Official template gallery
+/site/:domain                  → Notion Sites (published)
+</code></pre>
+<h3>Public URLs</h3>
+<pre><code>/:workspaceSlug/:pageId (when published)  → Public read-only page
+/api/v1/...                    → Notion API endpoints
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Quick Search (⌘K)</td>
+<td>Page titles, block content, database items</td>
+<td>Created By, Date Range, Teamspace, In (specific page)</td>
+<td>Best Match, Last Edited, Created</td>
+</tr>
+<tr>
+<td>Database View</td>
+<td>Property values within current database</td>
+<td>Any property (type-aware: select, date range, person, checkbox, formula)</td>
+<td>Any property, ascending/descending</td>
+</tr>
+<tr>
+<td>In-page (⌘F)</td>
+<td>Current page text content</td>
+<td>—</td>
+<td>Position in page</td>
+</tr>
+<tr>
+<td>Notion AI (⌘J)</td>
+<td>Semantic search across entire workspace</td>
+<td>—</td>
+<td>Relevance</td>
+</tr>
+</tbody></table>
+<h3>Database Filter Operators</h3>
+<pre><code>Text: is / is not / contains / does not contain / starts with / ends with / is empty
+Number: = / ≠ / &gt; / &lt; / ≥ / ≤
+Select: is / is not / is any of / is none of
+Date: is / before / after / on or before / on or after / is within (past week, next month...)
+Person: is / is not / contains / does not contain
+Checkbox: is checked / is not checked
+Relation: contains / does not contain / is empty / is not empty
+Formula: depends on output type (text/number/date/checkbox)
+</code></pre>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sidebar</th>
+<th>Content</th>
+<th>Editor</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1280px)</td>
+<td>Expanded sidebar (240px, resizable)</td>
+<td>Centered (max 900px default, full-width toggle)</td>
+<td>Full block controls, <code>⋮⋮</code> handles, <code>/</code> menu</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Overlay sidebar (hamburger toggle)</td>
+<td>Full-width centered</td>
+<td>Simplified block menu</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Drawer (swipe from left)</td>
+<td>Full-width</td>
+<td>Touch-optimized, bottom toolbar above keyboard</td>
+</tr>
+</tbody></table>
+<h3>Mobile-Specific Features</h3>
+<ul>
+<li>Floating format bar (bold, italic, list, heading, AI) above keyboard</li>
+<li>Swipe from left edge for sidebar</li>
+<li>Share sheet for web clip capture</li>
+<li>Offline mode with background sync queue</li>
+<li>Widget: favorite pages and recent edits on home screen</li>
+<li>Simplified <code>/</code> menu (most-used block types first)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>View</th>
+<th>Edit</th>
+<th>Comment</th>
+<th>Share</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest (free)</td>
+<td>Invited pages only</td>
+<td>If page allows</td>
+<td>If page allows</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>All Teamspace pages (based on Teamspace settings)</td>
+<td>Teamspace content</td>
+<td>✅</td>
+<td>Own pages</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Teamspace Owner</td>
+<td>Teamspace pages</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Teamspace members, settings</td>
+</tr>
+<tr>
+<td>Workspace Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Settings, members, billing</td>
+</tr>
+<tr>
+<td>Workspace Owner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full control, transfer ownership</td>
+</tr>
+</tbody></table>
+<h3>Page-Level Permissions</h3>
+<ul>
+<li><strong>Full Access</strong>: Edit content + manage sharing</li>
+<li><strong>Can Edit</strong>: Edit content, cannot change sharing</li>
+<li><strong>Can Edit Content</strong>: Edit blocks but not properties/views (database-specific)</li>
+<li><strong>Can Comment</strong>: Read + add comments</li>
+<li><strong>Can View</strong>: Read-only</li>
+<li><strong>No Access</strong>: Explicitly hidden from specific members</li>
+</ul>
+<h3>Teamspace Visibility</h3>
+<ul>
+<li><strong>Open</strong>: Any workspace member can see and join</li>
+<li><strong>Closed</strong>: Visible in directory but join requires approval</li>
+<li><strong>Private</strong>: Invisible unless explicitly invited</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

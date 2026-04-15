@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber — IA.md | getIA.md</title>
+  <meta name="description" content="Ride-hailing. Real-time map, driver matching, surge pricing. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=uber.com&sz=64" alt="Uber" onerror="this.parentElement.textContent='U'">
+      </div>
+      <h1 class="detail-brand-name">Uber</h1>
+      <p class="detail-brand-tagline">Ride-hailing. Real-time map, driver matching, surge pricing.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/uber/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://uber.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/uber/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Uber — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Uber is the world&#39;s largest ride-hailing platform, connecting riders with drivers across 10,000+ cities. The mental model is <strong>tap and go</strong> — open the app, enter a destination, and a car arrives in minutes. The experience is entirely map-centric and real-time. Uber has expanded beyond rides into Uber Eats (food delivery), Uber Freight, and Uber for Business. The rider and driver apps are separate products with distinct IA. Key differentiator: massive driver network ensures ultra-fast pickup times, and dynamic surge pricing balances supply and demand.</p>
+<h2>Site Map</h2>
+<h3>Rider App</h3>
+<pre><code>├── Home (Map View)
+│   ├── Map (GPS-centered, full screen)
+│   ├── &quot;Where to?&quot; Search Bar (the primary CTA)
+│   ├── Saved Places (Home, Work, pinned)
+│   ├── Recent Destinations
+│   ├── Ride Suggestions (based on time of day)
+│   ├── Promotions Banner
+│   ├── Uber Eats Quick Access
+│   └── Reserve (scheduled rides)
+├── Set Destination
+│   ├── Search Bar (address, place name, POI)
+│   ├── Autocomplete Results
+│   ├── Map Pin Drop
+│   ├── Saved Places (Home, Work, Gym, etc.)
+│   ├── Recent Destinations
+│   ├── Add Stops (multi-stop)
+│   └── Confirm Pickup Point
+├── Choose Ride
+│   ├── Ride Options (bottom sheet, scrollable)
+│   │   ├── UberX (affordable, everyday)
+│   │   ├── Uber Comfort (newer cars, extra legroom)
+│   │   ├── UberXL (6 seats)
+│   │   ├── Uber Black (premium sedan)
+│   │   ├── Uber Black SUV (premium SUV)
+│   │   ├── UberPool / UberX Share (shared rides)
+│   │   ├── Uber Green (electric/hybrid)
+│   │   ├── Uber Pet
+│   │   ├── Uber Reserve (scheduled)
+│   │   └── Uber Hourly (by the hour)
+│   ├── Per-Type Info
+│   │   ├── Price Estimate (upfront pricing)
+│   │   ├── ETA
+│   │   ├── Surge Indicator (if applicable)
+│   │   └── Capacity
+│   ├── Payment Method (bottom)
+│   ├── Promo Code
+│   ├── Split Fare
+│   └── [Confirm UberX] (primary CTA)
+├── Matching
+│   ├── &quot;Looking for a driver...&quot; (animation)
+│   ├── Estimated Wait
+│   └── Cancel
+├── Driver Matched
+│   ├── Driver Card
+│   │   ├── Name, Photo, Rating (4.95 ★)
+│   │   ├── Car Make/Model/Color, License Plate
+│   │   ├── ETA to Pickup
+│   │   └── Trip Count
+│   ├── Driver Location (live on map)
+│   ├── Contact Driver (call, in-app message)
+│   ├── Share Trip (send link to contacts)
+│   ├── Cancel Ride (fee warning)
+│   └── Safety Center
+├── In-Ride
+│   ├── Live Route on Map
+│   ├── ETA to Destination
+│   ├── Share Live Location (link updates in real time)
+│   ├── Change Destination
+│   ├── Add Stop
+│   ├── Contact Driver
+│   ├── Emergency Button (SOS)
+│   ├── Audio Recording (opt-in safety)
+│   └── In-App Entertainment (optional)
+├── Trip Complete
+│   ├── Fare Breakdown
+│   │   ├── Base Fare
+│   │   ├── Distance
+│   │   ├── Time
+│   │   ├── Surge (if any)
+│   │   ├── Tolls
+│   │   ├── Booking Fee
+│   │   └── Total
+│   ├── Rate Driver (1-5 stars)
+│   ├── Tip (preset amounts + custom)
+│   ├── Compliments (Great Conversation, Expert Navigation, etc.)
+│   ├── Report Issue
+│   ├── Receipt (auto-emailed)
+│   └── &quot;Where to next?&quot;
+├── Activity / Trip History
+│   ├── Past Trips (reverse chronological)
+│   ├── Trip Detail
+│   │   ├── Route Map
+│   │   ├── Fare Breakdown
+│   │   ├── Receipt
+│   │   ├── Driver Info
+│   │   └── Get Help / Lost Item
+│   ├── Uber Eats Orders
+│   └── Business vs Personal
+├── Account
+│   ├── Profile (name, phone, email, photo)
+│   ├── Wallet
+│   │   ├── Payment Methods (cards, PayPal, Venmo, Cash)
+│   │   ├── Uber Cash (prepaid balance)
+│   │   ├── Uber Credits
+│   │   ├── Gift Cards
+│   │   └── Vouchers
+│   ├── Uber One (membership)
+│   │   ├── Benefits (5% off rides, free delivery on Eats)
+│   │   └── Manage Subscription
+│   ├── Saved Places
+│   ├── Business Profile (expense reporting)
+│   ├── Family Profiles (request rides for family)
+│   ├── Safety
+│   │   ├── Emergency Contacts
+│   │   ├── Trusted Contacts
+│   │   ├── RideCheck
+│   │   ├── Verify Your Ride
+│   │   ├── PIN Verification
+│   │   └── Safety Preferences
+│   ├── Privacy
+│   │   ├── Location Permissions
+│   │   ├── Data Sharing
+│   │   └── Delete Account
+│   ├── Accessibility
+│   ├── Settings (language, notifications)
+│   └── Refer &amp; Earn
+├── Help
+│   ├── Trip Issues (select recent trip)
+│   ├── Account &amp; Payment
+│   ├── Safety
+│   ├── Accessibility
+│   └── Contact Support
+└── Uber Eats (Tab / Section)
+    ├── Nearby Restaurants
+    ├── Browse by Cuisine
+    ├── Cart &amp; Checkout
+    └── Order Tracking
+</code></pre>
+<h3>Driver App</h3>
+<pre><code>├── Home
+│   ├── Go Online / Offline Toggle
+│   ├── Map (current location)
+│   ├── Earnings Today
+│   ├── Quest Progress (bonus goals)
+│   ├── Surge Map (demand heatmap)
+│   └── Scheduled Rides
+├── Ride Request (Incoming)
+│   ├── Pickup Distance/Time
+│   ├── Rider Rating
+│   ├── Ride Type
+│   ├── Estimated Fare / Duration
+│   ├── Accept / Decline (countdown timer)
+│   └── Upfront Destination (for eligible drivers)
+├── Navigating to Pickup
+│   ├── Turn-by-Turn Navigation
+│   ├── Contact Rider (call/message, anonymized numbers)
+│   ├── &quot;I&#39;ve Arrived&quot; (start wait timer)
+│   └── Cancel (after wait timer, no-show)
+├── In-Ride
+│   ├── Navigation to Destination
+│   ├── Trip Info (rider name, stops)
+│   ├── Emergency Button
+│   └── Add Stop (from rider)
+├── Trip Complete
+│   ├── Fare Summary (driver earnings)
+│   ├── Rate Rider (1-5 stars)
+│   ├── Report Issue
+│   └── Next Ride (auto-queue)
+├── Earnings
+│   ├── Today / This Week
+│   ├── Trip Breakdown (per trip)
+│   ├── Tips
+│   ├── Surge Earnings
+│   ├── Quest / Promotion Bonuses
+│   ├── Instant Cashout
+│   └── Tax Summary / 1099
+├── Account
+│   ├── Profile
+│   ├── Vehicle Info
+│   ├── Documents (license, insurance, registration)
+│   ├── Ratings &amp; Reviews
+│   ├── Rewards (Uber Pro tiers)
+│   └── Settings
+└── Help
+    ├── Trip Issues
+    ├── Account &amp; Documents
+    └── Support
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Rider Home</strong></td>
+<td>Map fills screen</td>
+<td>&quot;Where to?&quot; bar at bottom-center — one tap to start</td>
+</tr>
+<tr>
+<td><strong>Bottom Sheet</strong></td>
+<td>Draggable (3 states)</td>
+<td>Collapsed: search bar. Half: ride options. Full: details</td>
+</tr>
+<tr>
+<td><strong>Account</strong></td>
+<td>Hamburger menu or profile avatar</td>
+<td>Slides out from left</td>
+</tr>
+<tr>
+<td><strong>In-Ride</strong></td>
+<td>Minimal overlay on map</td>
+<td>Navigation + minimal controls</td>
+</tr>
+<tr>
+<td><strong>Driver</strong></td>
+<td>Map + toggle</td>
+<td>Online/Offline toggle as primary control</td>
+</tr>
+<tr>
+<td><strong>Request</strong></td>
+<td>Full-screen overlay (driver)</td>
+<td>Accept/Decline with countdown timer</td>
+</tr>
+</tbody></table>
+<h3>Rider State Machine</h3>
+<pre><code>[ Idle ] → [ Searching Destination ] → [ Choosing Ride ] → [ Matching ] → [ Waiting for Driver ] → [ In Ride ] → [ Rating ] → [ Idle ]
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rider</td>
+<td>name, phone, email, photo, rating, payment_methods[], saved_places[], emergency_contacts[]</td>
+<td>has many Trips</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>name, phone, photo, rating, vehicle, license, status, location (live), uber_pro_tier</td>
+<td>has many Trips</td>
+</tr>
+<tr>
+<td>Vehicle</td>
+<td>make, model, year, color, plate, type (sedan/SUV/luxury), capacity</td>
+<td>belongs to Driver</td>
+</tr>
+<tr>
+<td>Trip</td>
+<td>pickup, destination, stops[], ride_type, status, fare, distance, duration, route_polyline, surge, driver, rider</td>
+<td>core entity</td>
+</tr>
+<tr>
+<td>Fare</td>
+<td>base, per_minute, per_mile, surge_multiplier, tolls, booking_fee, tip, total, payment_method</td>
+<td>belongs to Trip</td>
+</tr>
+<tr>
+<td>RideType</td>
+<td>name, description, base_price, per_min, per_mile, eta, icon, capacity, features[]</td>
+<td>platform config</td>
+</tr>
+<tr>
+<td>Rating</td>
+<td>score (1-5), from, compliments[], reported</td>
+<td>belongs to Trip</td>
+</tr>
+<tr>
+<td>Promotion</td>
+<td>code, type, value, conditions[], expires</td>
+<td>applied to Trip</td>
+</tr>
+<tr>
+<td>UberOne</td>
+<td>status, benefits[], price, renewal</td>
+<td>belongs to Rider</td>
+</tr>
+</tbody></table>
+<h3>Trip Status</h3>
+<pre><code>requested → matched → driver_en_route → driver_arrived → in_progress → completed → rated
+             ↘ no_drivers_available
+             ↘ cancelled_by_rider / cancelled_by_driver
+</code></pre>
+<h2>User Flows</h2>
+<h3>Request a Ride</h3>
+<pre><code>Open App → &quot;Where to?&quot; → Type &quot;SFO Airport&quot; → Autocomplete → Confirm Pickup → See Ride Options (UberX $32, Black $65) → Select UberX → Confirm → Matching → Driver &quot;Alex&quot; in 4 min → Track on Map → Verify Car → Ride → Arrive → Rate 5★ → Tip $5
+</code></pre>
+<h3>Share Trip for Safety</h3>
+<pre><code>Driver Matched → [Share Trip] → Select Contact → They Get Link → Real-Time Map + ETA → Auto-Notifies on Arrival
+</code></pre>
+<h3>Schedule a Ride</h3>
+<pre><code>&quot;Where to?&quot; → Enter Destination → [Reserve] → Pick Date/Time → Select Ride Type → Confirm → Reminder Push → Auto-Matched at Scheduled Time
+</code></pre>
+<h3>Driver: Complete a Quest</h3>
+<pre><code>Online → Accept Rides → Quest: &quot;Complete 20 trips this weekend, earn $50 bonus&quot; → Dashboard Shows Progress (14/20) → Keep Driving → Complete → Bonus Added
+</code></pre>
+<h2>URL / Route Structure</h2>
+<blockquote>
+<p>Primarily native mobile; web routes for account management and ride requests.</p>
+</blockquote>
+<pre><code>/                              → Download App / Web Booking
+/ride                          → Request a Ride (web)
+/ride/estimate                 → Price Estimate
+/trip/:id                      → Trip Detail
+/trip/:id/receipt              → Receipt
+/ride/history                  → Trip History
+/account                       → Account
+/account/wallet                → Payment Methods
+/account/safety                → Safety Settings
+/account/business              → Business Profile
+/account/uber-one              → Uber One Membership
+/drive                         → Become a Driver
+/drive/earnings                → Driver Earnings
+/help                          → Help Center
+/help/trip/:id                 → Trip Issue
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Destination</td>
+<td>Address, place name, POI, airport</td>
+<td>—</td>
+<td>Relevance, recent</td>
+</tr>
+<tr>
+<td>Trip History</td>
+<td>Date, destination, driver</td>
+<td>Date Range, Ride Type, Business/Personal</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Issue keywords</td>
+<td>Category</td>
+<td>Relevance</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Primary</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (native, primary)</td>
+<td>Full map + bottom sheet, optimized for one-handed use</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Larger map, wider bottom sheet</td>
+</tr>
+<tr>
+<td>Desktop (web)</td>
+<td>Map + sidebar booking, mainly for estimation and history</td>
+</tr>
+</tbody></table>
+<h3>Mobile-First Design</h3>
+<ul>
+<li>Map always the primary view</li>
+<li>Bottom sheet for progressive disclosure</li>
+<li>One-handed operation (everything bottom-anchored)</li>
+<li>Real-time WebSocket updates (driver location, ETA)</li>
+<li>Background location tracking</li>
+<li>Haptic feedback (ride matched, driver arrived)</li>
+<li>Push notifications at every stage</li>
+<li>Offline fallback (cached last state)</li>
+</ul>
+<h2>Access Control</h2>
+<h3>Rider</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Guest</th>
+<th>Registered</th>
+<th>Uber One</th>
+<th>Business</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Estimate</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Request Ride</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Schedule</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Safety Features</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>—</td>
+<td>—</td>
+<td>5% off rides</td>
+<td>Expense auto-reporting</td>
+</tr>
+</tbody></table>
+<h3>Driver</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Pending</th>
+<th>Active</th>
+<th>Diamond (Pro)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Go Online</td>
+<td>—</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>See Upfront Destination</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Priority Support</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Tuition Coverage</td>
+<td>—</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody></table>
+<h3>Safety &amp; Trust</h3>
+<ul>
+<li>Real-time GPS tracking</li>
+<li>Background checks for all drivers</li>
+<li>Two-way ratings (rider &lt;-&gt; driver)</li>
+<li>Emergency button (911 integration)</li>
+<li>Trip sharing with trusted contacts</li>
+<li>PIN verification at pickup</li>
+<li>RideCheck (crash detection via accelerometer)</li>
+<li>Photo verification for drivers</li>
+<li>Anonymized phone numbers</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

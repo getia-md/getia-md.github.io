@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastodon — IA.md | getIA.md</title>
+  <meta name="description" content="Decentralized social. Federated servers, toots, boosts. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=joinmastodon.org&sz=64" alt="Mastodon" onerror="this.parentElement.textContent='M'">
+      </div>
+      <h1 class="detail-brand-name">Mastodon</h1>
+      <p class="detail-brand-tagline">Decentralized social. Federated servers, toots, boosts.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/mastodon/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://joinmastodon.org" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/mastodon/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Mastodon — Information Architecture</h1>
+<h2>Overview</h2>
+<p>A decentralized, open-source microblogging platform and the flagship of the Fediverse (federated universe). Mastodon&#39;s mental model is a <strong>network of interconnected communities</strong> — unlike centralized platforms (Twitter, Threads), Mastodon consists of thousands of independently operated &quot;instances&quot; (servers) that communicate via the ActivityPub protocol. Each instance has its own moderation, rules, and community culture, but users can follow and interact across instances seamlessly. Key differentiators: decentralization (no single company controls it), no algorithmic feed (chronological only), no ads, content warnings (CW), 500-character posts (&quot;toots&quot;), granular privacy controls per post, robust moderation tools per instance, and full data portability (move your account between instances).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home Timeline
+│   ├── Posts from Followed Accounts (chronological, no algorithm)
+│   ├── Boosts (reposts from followed accounts)
+│   ├── Replies (from followed accounts, if enabled)
+│   └── No ads, no algorithmic insertion
+├── Local Timeline
+│   ├── All Public Posts from Your Instance (chronological)
+│   ├── Shows your instance&#39;s community activity
+│   └── Good for discovering instance neighbors
+├── Federated Timeline
+│   ├── All Public Posts Your Instance Knows About (from any instance)
+│   ├── &quot;Firehose&quot; of the visible Fediverse from your instance&#39;s perspective
+│   └── Can be overwhelming; useful for broad discovery
+├── Explore
+│   ├── Trending Posts (instance-level, curated by admins)
+│   ├── Trending Hashtags
+│   ├── Trending News Links
+│   └── Suggested Accounts (instance-curated)
+├── Search
+│   ├── Posts (full-text, if instance enables it)
+│   ├── People (@user@instance.social format)
+│   ├── Hashtags (#tag)
+│   └── Cross-instance search (limited to known posts)
+├── Compose Post (&quot;Toot&quot;)
+│   ├── Text (up to 500 chars default, some instances allow more)
+│   ├── Media (images up to 4, video, audio, poll)
+│   ├── Content Warning / Subject (CW, collapsible)
+│   ├── Visibility
+│   │   ├── 🌐 Public (visible everywhere, all timelines)
+│   │   ├── 🔓 Unlisted (visible on profile, not in timelines)
+│   │   ├── 🔒 Followers-only (only followers see it)
+│   │   └── ✉️ Mentioned Only (direct message, only @mentioned users)
+│   ├── Language Selector
+│   ├── Poll (multiple choice, single choice, duration)
+│   ├── Emoji Picker (custom instance emoji + standard)
+│   ├── Scheduled Post (Mastodon 4.2+)
+│   ├── Alt Text for Images (strongly encouraged by community)
+│   └── Thread (reply to your own post to create a thread)
+├── Post Detail
+│   ├── Post Content (text, media, CW)
+│   ├── Author (avatar, display name, @user@instance)
+│   ├── Engagement: Replies Count, Boosts Count, Favorites Count
+│   ├── Reply Thread (chronological tree, not algorithmic)
+│   ├── Actions
+│   │   ├── Reply
+│   │   ├── Boost (repost to your followers, public posts only)
+│   │   ├── Favorite (★, like)
+│   │   ├── Bookmark (private save)
+│   │   ├── Share (copy link, embed)
+│   │   └── More (⋯): Mute Conversation, Block, Report, Filter, Pin, Delete, Edit
+│   ├── Boosted By (list of who boosted)
+│   └── Favorited By (list of who favorited)
+├── Profile
+│   ├── Header Image, Avatar
+│   ├── Display Name, @user@instance
+│   ├── Bio (rich text, links, custom fields for verification)
+│   ├── Metadata Fields (up to 4: website, pronouns, etc., with link verification ✅)
+│   ├── Stats: Posts, Following, Followers
+│   ├── Follow / Unfollow / Request Follow (if locked account)
+│   ├── Tabs: Posts, Posts &amp; Replies, Media, About
+│   ├── Pinned Posts (up to 5)
+│   ├── Featured Hashtags (shown on profile)
+│   └── Moved Account Notice (if migrated to new instance)
+├── Notifications
+│   ├── All
+│   ├── Mentions
+│   ├── Favorites
+│   ├── Boosts
+│   ├── Follows
+│   ├── Follow Requests (if account is locked)
+│   ├── Polls (your polls ended, polls you voted in ended)
+│   ├── Updates (posts from accounts you&#39;ve enabled notifications for)
+│   └── Admin (reports, new sign-ups — for instance admins)
+├── Direct Messages
+│   ├── Conversations (mentioned-only posts grouped by participants)
+│   ├── NOT end-to-end encrypted (visible to instance admins)
+│   └── Conversation Thread
+├── Bookmarks
+│   ├── Private Saved Posts (only visible to you)
+│   └── Chronological
+├── Favorites
+│   ├── Posts You&#39;ve Favorited
+│   └── Chronological
+├── Lists
+│   ├── User-Created Lists (custom timelines)
+│   ├── Add/Remove Accounts to List
+│   ├── List Timeline (posts from list members only)
+│   └── List Settings (show replies: all/followed/none)
+├── Filters
+│   ├── Content Filters (keyword/phrase-based)
+│   │   ├── Filter Contexts (home, notifications, public, threads, profiles)
+│   │   ├── Action: Hide or Warn (show with CW-style toggle)
+│   │   ├── Whole Word Match
+│   │   └── Expiration (temporary or permanent)
+│   └── Manage Filters
+├── Hashtag Pages
+│   ├── #tag Timeline (all posts with hashtag your instance knows about)
+│   ├── Follow Hashtag (posts appear in home timeline)
+│   └── Featured Hashtags (show on your profile)
+├── Preferences / Settings
+│   ├── Appearance
+│   │   ├── Interface Language
+│   │   ├── Theme (dark, light, high contrast)
+│   │   ├── Layout: Single-column (default) / Advanced (multi-column TweetDeck-style)
+│   │   ├── Animations (play/pause)
+│   │   └── Sensitive Media (always show / always hide)
+│   ├── Notifications
+│   │   ├── Per-type toggles (mentions, favorites, boosts, follows, polls)
+│   │   ├── Email Notifications
+│   │   └── Push Notifications
+│   ├── Profile
+│   │   ├── Display Name, Bio, Avatar, Header
+│   │   ├── Profile Metadata Fields (4 custom key-value)
+│   │   ├── Bot Account Toggle
+│   │   ├── Lock Account (require follow approval)
+│   │   ├── Discoverable (opt-in to search / suggestions)
+│   │   └── Featured Hashtags
+│   ├── Posting Defaults
+│   │   ├── Default Visibility (public/unlisted/followers-only)
+│   │   ├── Default Language
+│   │   ├── Sensitive Media Default
+│   │   └── Default Content Type (plain text / Markdown — instance-dependent)
+│   ├── Filters (manage keyword filters)
+│   ├── Follows and Followers
+│   │   ├── Follow Requests (pending)
+│   │   ├── Follows / Followers Lists
+│   │   └── Relationships (mutual, blocking, muting)
+│   ├── Import / Export
+│   │   ├── Export: Following list, Blocked list, Muted list, Bookmarks, Lists (CSV)
+│   │   ├── Import: Following, Blocks, Mutes (CSV — for migration)
+│   │   └── Request Archive (full data export)
+│   ├── Account Migration
+│   │   ├── Move to Different Instance
+│   │   ├── Redirect Profile (old → new)
+│   │   └── Followers Auto-migrate
+│   ├── Security
+│   │   ├── Two-Factor Authentication (TOTP)
+│   │   ├── Authorized Applications (OAuth apps)
+│   │   └── Active Sessions
+│   └── Delete Account
+├── Administration (Instance Admins)
+│   ├── Dashboard (sign-ups, active users, instance stats)
+│   ├── Moderation
+│   │   ├── Reports (from local and remote users)
+│   │   ├── Accounts (warn, freeze, suspend)
+│   │   ├── Audit Log
+│   │   └── Pending Accounts (if approval-required instance)
+│   ├── Federation
+│   │   ├── Known Instances (peers)
+│   │   ├── Domain Blocks (block, silence, or reject entire instances)
+│   │   ├── Domain Allows (allowlist mode)
+│   │   └── Relay Management
+│   ├── Server Settings
+│   │   ├── Instance Name, Description, Rules
+│   │   ├── Registration Mode (open/approval/closed)
+│   │   ├── Content Policies
+│   │   ├── Custom Emoji (upload for instance)
+│   │   └── Announcements (instance-wide banners)
+│   ├── Email Configuration
+│   ├── Roles &amp; Permissions (custom roles)
+│   ├── Trends (approve/reject trending content)
+│   └── Invites (generate invite links)
+└── Third-Party Clients
+    ├── Mastodon is API-first: many alternative clients exist
+    ├── iOS: Ivory, Ice Cubes, Mona, Toot!
+    ├── Android: Tusky, Megalodon, Fedilab
+    ├── Desktop: Whalebird, Hyper, Sengi
+    └── Multi-column: Pinafore (web), Elk (web)
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Single-Column (Default)</strong></td>
+<td>Desktop: centered column with top tabs. Mobile: bottom tab bar</td>
+<td>Home, Local, Federated, Explore, Live Feeds</td>
+</tr>
+<tr>
+<td><strong>Advanced Multi-Column</strong></td>
+<td>TweetDeck-style, pinnable columns</td>
+<td>Add columns: Home, Local, Federated, Notifications, Hashtags, Lists, DMs</td>
+</tr>
+<tr>
+<td><strong>Left Sidebar</strong></td>
+<td>Desktop: fixed</td>
+<td>Navigation links, compose button, instance info</td>
+</tr>
+<tr>
+<td><strong>Right Sidebar</strong></td>
+<td>Desktop: getting started / search / trending</td>
+<td>Trending hashtags, trending posts, links, suggestions</td>
+</tr>
+<tr>
+<td><strong>Bottom Tab Bar</strong></td>
+<td>Mobile</td>
+<td>Home, Search, Notifications, Profile</td>
+</tr>
+<tr>
+<td><strong>Compose Button</strong></td>
+<td>Prominent CTA</td>
+<td>Opens composer modal/screen</td>
+</tr>
+<tr>
+<td><strong>Post Actions</strong></td>
+<td>Below each post</td>
+<td>Reply, Boost, Favorite, Bookmark, More</td>
+</tr>
+<tr>
+<td><strong>Hashtag Follow</strong></td>
+<td>On hashtag pages</td>
+<td>Follow hashtag → posts appear in home timeline</td>
+</tr>
+</tbody></table>
+<h3>Single-Column Layout (Default Desktop)</h3>
+<pre><code>[Left Sidebar (300px)]  |  [Main Feed (600px)]    |  [Right Sidebar (300px)]
+──────────────────────────────────────────────────────────────────
+[Compose Button]        |  Home | Local | Federated| 🔍 Search
+──────────────          |  ─────────────────       | ──────────
+🏠 Home                 |  [Post]                  | Trending now
+🔔 Notifications        |  [Post with CW]          |  #hashtag1
+🔍 Explore              |  [Boosted Post]          |  #hashtag2
+💬 Direct Messages      |  [Post + Images]         | ──────────
+📑 Bookmarks            |  ...                     | Suggestions
+📋 Lists                |                          |  @user1
+⚙️ Preferences          |                          |  @user2
+──────────────          |                          | ──────────
+[Instance Info]         |                          | [About Instance]
+</code></pre>
+<h3>Advanced Multi-Column Layout</h3>
+<pre><code>[Home] | [Notifications] | [Local Timeline] | [#mastodon] | [List: Tech]
+  🏠   |     🔔          |      📢          |     #️⃣      |     📋
+ ...   |    ...          |     ...          |    ...      |    ...
+ ...   |    ...          |     ...          |    ...      |    ...
+</code></pre>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Status (Post/Toot)</td>
+<td>content (HTML), content_warning (CW), visibility (public/unlisted/private/direct), language, media_attachments[], poll, created_at, edited_at, sensitive (bool), in_reply_to_id, url, uri (ActivityPub), reblogs_count, favourites_count, replies_count, pinned (bool), application</td>
+<td>belongs to Account; has Replies, Boosts, Favorites, Media, Poll</td>
+</tr>
+<tr>
+<td>Account</td>
+<td>username, acct (@user@instance), display_name, bio (note), avatar, header, fields[] (metadata key-value), followers_count, following_count, statuses_count, created_at, locked (bool), bot (bool), discoverable, moved_to</td>
+<td>has many Statuses, Followers, Following</td>
+</tr>
+<tr>
+<td>MediaAttachment</td>
+<td>url, preview_url, type (image/video/audio/gifv), description (alt text), blurhash, meta (dimensions, fps)</td>
+<td>belongs to Status</td>
+</tr>
+<tr>
+<td>Poll</td>
+<td>options[], votes_count, voters_count, expires_at, multiple (bool), voted (bool for current user)</td>
+<td>belongs to Status</td>
+</tr>
+<tr>
+<td>Boost (Reblog)</td>
+<td>original_status, boosted_at</td>
+<td>belongs to Account (sharing mechanism)</td>
+</tr>
+<tr>
+<td>Favourite</td>
+<td>created_at</td>
+<td>belongs to Account and Status</td>
+</tr>
+<tr>
+<td>Bookmark</td>
+<td>created_at</td>
+<td>belongs to Account and Status (private)</td>
+</tr>
+<tr>
+<td>Follow</td>
+<td>follower, following, status (active/pending), show_reblogs, notify, languages[]</td>
+<td>connects Accounts (can be cross-instance)</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>type (mention/reblog/favourite/follow/follow_request/poll/update), account, status, created_at</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>List</td>
+<td>title, replies_policy (followed/list/none)</td>
+<td>belongs to Account, has Accounts</td>
+</tr>
+<tr>
+<td>Filter</td>
+<td>phrase, context[] (home/notifications/public/thread/account), action (warn/hide), whole_word, expires_at</td>
+<td>belongs to Account</td>
+</tr>
+<tr>
+<td>CustomEmoji</td>
+<td>shortcode, url, visible_in_picker, category</td>
+<td>belongs to Instance</td>
+</tr>
+<tr>
+<td>Tag (Hashtag)</td>
+<td>name, url, history[] (daily usage stats)</td>
+<td>many-to-many with Statuses; followable</td>
+</tr>
+<tr>
+<td>Relationship</td>
+<td>following, followed_by, blocking, blocked_by, muting, muting_notifications, requested, domain_blocking, endorsed, note</td>
+<td>between two Accounts</td>
+</tr>
+<tr>
+<td>Instance</td>
+<td>domain, title, description, rules[], registration (open/approval/closed), languages[], contact, stats (user_count, status_count, domain_count)</td>
+<td>part of the Fediverse</td>
+</tr>
+<tr>
+<td>DomainBlock</td>
+<td>domain, severity (silence/suspend/noop), comment</td>
+<td>managed by Instance Admin</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>target_account, statuses[], comment, forwarded (to remote instance), category (spam/violation/other)</td>
+<td>belongs to reporter Account</td>
+</tr>
+<tr>
+<td>Announcement</td>
+<td>content, published, all_day, starts_at, ends_at, reactions[]</td>
+<td>belongs to Instance (admin)</td>
+</tr>
+</tbody></table>
+<h3>Visibility Levels</h3>
+<pre><code>🌐 Public: Visible in all timelines (home, local, federated, profile)
+🔓 Unlisted: Visible on profile and to followers, but NOT in public timelines
+🔒 Followers-only: Only followers can see (not boostable)
+✉️ Direct / Mentioned-only: Only mentioned users can see (not truly private — instance admins can read)
+</code></pre>
+<h3>ActivityPub Federation</h3>
+<pre><code>Status → serialized as ActivityPub Activity → sent to followers&#39; instances → rendered on remote timelines
+Follow → Follow request sent to target instance → accepted/rejected → federated timeline populates
+Account Migration → Redirect + follower migration via ActivityPub Move activity
+</code></pre>
+<h2>User Flows</h2>
+<h3>Read Home Timeline</h3>
+<pre><code>Open App → Home Timeline → Scroll (chronological) → Favorite → Boost → Reply → Continue
+</code></pre>
+<h3>Discover via Local Timeline</h3>
+<pre><code>Local Tab → See Instance Community Posts → Find Interesting Account → View Profile → Follow
+</code></pre>
+<h3>Post with Content Warning</h3>
+<pre><code>Compose → Write Text → Toggle CW → Write Warning Label (e.g., &quot;Politics&quot;, &quot;Spoiler&quot;) → Attach Media + Alt Text → Set Visibility → Post
+</code></pre>
+<h3>Follow Across Instances</h3>
+<pre><code>Find @user@other-instance.social → Copy Full Handle → Search in Your Instance → Follow → Appears in Home Timeline
+</code></pre>
+<h3>Migrate Instance</h3>
+<pre><code>New Instance → Create Account → Old Instance: Settings → Account → Move → Enter New Account → Followers Auto-migrate → Old Profile Shows Redirect
+</code></pre>
+<h3>Follow a Hashtag</h3>
+<pre><code>Search → #topic → Hashtag Page → [Follow] → Posts with #topic Appear in Home Timeline
+</code></pre>
+<h3>Report Content</h3>
+<pre><code>Post → More (⋯) → Report → Select Category → Optional: Forward to Remote Instance → Submit → Instance Moderator Reviews
+</code></pre>
+<h3>Use Multi-Column Layout</h3>
+<pre><code>Settings → Appearance → Advanced Web Interface → Enable → Add Columns (Home, Notifications, #hashtag, List) → Pin → TweetDeck-style Workspace
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code># Instance Web (instance.social)
+/                                  → Home Timeline (or Landing if logged out)
+/home                              → Home Timeline
+/public/local                      → Local Timeline
+/public                            → Federated Timeline
+/explore                           → Explore / Trending
+/explore/tags                      → Trending Hashtags
+/explore/links                     → Trending Links
+/explore/suggestions               → Suggested Accounts
+/search                            → Search
+/notifications                     → Notifications
+/conversations                     → Direct Messages
+/bookmarks                         → Bookmarks
+/favourites                        → Favourites
+/lists                             → Lists
+/lists/:id                         → List Timeline
+/tags/:hashtag                     → Hashtag Timeline
+/@:username                        → Local User Profile
+/@:username/:postId                → Post Detail
+/@:username@:instance              → Remote User Profile (proxied)
+/settings/preferences              → Preferences
+/settings/profile                  → Profile Settings
+/settings/notifications            → Notification Settings
+/settings/filters                  → Content Filters
+/settings/import                   → Import Data
+/settings/export                   → Export Data
+/settings/migration                → Account Migration
+/settings/security                 → Security (2FA)
+/auth/sign_in                      → Login
+/auth/sign_up                      → Register
+/admin                             → Admin Dashboard (instance admins)
+/admin/reports                     → Reports
+/admin/accounts                    → Account Management
+/admin/instances                   → Known Instances / Domain Blocks
+
+# ActivityPub URLs (federation)
+/@:username                        → Actor endpoint
+/@:username/:postId                → Object endpoint
+/.well-known/webfinger             → Account discovery
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filter Dimensions</th>
+<th>Sort Options</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Accounts (@user@instance), Hashtags (#tag), Posts (if full-text enabled)</td>
+<td>Type tabs (All/Accounts/Hashtags/Posts)</td>
+<td>Relevance</td>
+</tr>
+<tr>
+<td>Home</td>
+<td>Posts from followed accounts</td>
+<td>—</td>
+<td>Chronological only (no algorithm)</td>
+</tr>
+<tr>
+<td>Local</td>
+<td>Posts from instance</td>
+<td>—</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Federated</td>
+<td>All known public posts</td>
+<td>—</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Hashtag</td>
+<td>Posts with hashtag</td>
+<td>Local / Federated toggle</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>Your activity</td>
+<td>Type (All/Mentions/Favorites/Boosts/Follows/Polls/Updates)</td>
+<td>Chronological</td>
+</tr>
+<tr>
+<td>Content Filters</td>
+<td>Keyword/phrase filter</td>
+<td>Context (home/notifications/public/threads/profiles), Action (hide/warn)</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h3>Search Limitations (by design)</h3>
+<ul>
+<li>Full-text search of posts is opt-in per instance (privacy consideration)</li>
+<li>Users can opt out of being discoverable</li>
+<li>No algorithmic search ranking — results are chronological or by relevance</li>
+<li>Cross-instance search limited to posts your instance already knows about</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Layout</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥900px)</td>
+<td>Single-column (sidebar + feed + sidebar) or Multi-column (advanced)</td>
+<td>Three-panel default, TweetDeck-style optional</td>
+</tr>
+<tr>
+<td>Tablet (600–899px)</td>
+<td>Single-column, reduced sidebars</td>
+<td>Sidebars as overlays</td>
+</tr>
+<tr>
+<td>Mobile (&lt;600px)</td>
+<td>Single-column, bottom tab bar</td>
+<td>Full-width feed, push navigation</td>
+</tr>
+</tbody></table>
+<h3>Third-Party Client Ecosystem</h3>
+<ul>
+<li>Mastodon&#39;s open API enables diverse clients</li>
+<li>Mobile: Ivory (iOS, premium), Ice Cubes (iOS, open source), Tusky (Android), Megalodon (Android)</li>
+<li>Desktop: Whalebird, Hyper, Sengi</li>
+<li>Web alternatives: Elk (modern UI), Phanpy (minimal), Pinafore (lightweight)</li>
+<li>Each client can offer different UX while connecting to the same Mastodon account/instance</li>
+</ul>
+<h3>Accessibility</h3>
+<ul>
+<li>Alt text for images (community norm, some instances require it)</li>
+<li>Content warnings for sensitive topics (community-enforced)</li>
+<li>High contrast theme option</li>
+<li>Reduced motion option</li>
+<li>Screen reader friendly (semantic HTML)</li>
+<li>Custom CSS per instance (can improve accessibility)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Read</th>
+<th>Post</th>
+<th>Boost</th>
+<th>Favorite</th>
+<th>Follow</th>
+<th>Admin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unauthenticated</td>
+<td>Public posts, public profiles, explore</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>User</td>
+<td>✅ (home, local, federated)</td>
+<td>✅ (500+ chars, media, polls)</td>
+<td>✅ (public posts only)</td>
+<td>✅</td>
+<td>✅ (cross-instance)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Locked Account User</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Requires approval</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Instance Moderator</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Review reports, warn/suspend accounts</td>
+</tr>
+<tr>
+<td>Instance Admin</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>Full: users, federation, settings, domain blocks, custom emoji, announcements</td>
+</tr>
+</tbody></table>
+<h3>Federation &amp; Moderation Model</h3>
+<pre><code>Each instance is independently operated:
+- Instance admin sets rules, registration policy, domain blocks
+- Moderation is local (your instance admin handles your reports)
+- Domain blocks: instance-level silencing or suspending entire remote instances
+- Users can migrate between instances (take followers, not posts)
+- No central authority — decentralized governance
+</code></pre>
+<h3>Privacy Philosophy</h3>
+<ul>
+<li>Chronological timelines only (no engagement-maximizing algorithm)</li>
+<li>No ads, no tracking, no data selling</li>
+<li>Per-post visibility controls</li>
+<li>Content warnings as a cultural norm</li>
+<li>Full data export and account migration</li>
+<li>Instance admins have access to local data (choose your instance wisely)</li>
+<li>Direct messages are NOT end-to-end encrypted (visible to instance admins)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursera — IA.md | getIA.md</title>
+  <meta name="description" content="Online learning. University courses, certificates, degrees. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=coursera.org&sz=64" alt="Coursera" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Coursera</h1>
+      <p class="detail-brand-tagline">Online learning. University courses, certificates, degrees.</p>
+      <span class="detail-category-badge">Education</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/coursera/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://coursera.org" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/coursera/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Coursera — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Coursera is the world&#39;s largest MOOC (Massive Open Online Course) platform, offering university-quality courses, professional certificates, and full degrees from top institutions (Stanford, Google, IBM, Yale). The mental model is <strong>academic rigor meets online accessibility</strong> — structured courses with video lectures, graded assignments, peer reviews, and certificates. Key differentiator vs Udemy: university partnerships, accredited degrees, and Google/Meta/IBM professional certificates. Coursera also serves enterprises (Coursera for Business) and governments (Coursera for Campus).</p>
+<h2>Site Map</h2>
+<pre><code>├── Home
+│   ├── Search Bar (prominent)
+│   ├── Continue Learning (in-progress courses)
+│   ├── Recommended for You (personalized)
+│   ├── Explore Top Courses
+│   ├── Professional Certificates (Google, Meta, IBM)
+│   ├── Degree Programs
+│   ├── New &amp; Trending
+│   ├── Categories (Data Science, Business, CS, Health, etc.)
+│   └── Free Courses
+├── Explore / Catalog
+│   ├── Browse by Category
+│   │   ├── Data Science &amp; Analytics
+│   │   ├── Computer Science
+│   │   ├── Business
+│   │   ├── Health
+│   │   ├── Social Sciences
+│   │   ├── Arts &amp; Humanities
+│   │   └── Personal Development
+│   ├── Browse by Institution
+│   │   ├── Universities (Stanford, Yale, Michigan)
+│   │   └── Companies (Google, IBM, Meta)
+│   ├── Browse by Skill
+│   ├── Professional Certificates
+│   ├── Specializations (course sequences)
+│   ├── Guided Projects (2-hour, hands-on)
+│   ├── Degrees (online bachelor&#39;s / master&#39;s)
+│   └── Coursera Plus (subscription access)
+├── Course Page
+│   ├── Title, Institution Logo, Instructor(s)
+│   ├── Rating (stars + review count)
+│   ├── Enrollment Count (&quot;2.5M already enrolled&quot;)
+│   ├── Preview Video
+│   ├── About This Course
+│   ├── What You&#39;ll Learn (skills list)
+│   ├── Skills You&#39;ll Gain (tags)
+│   ├── Syllabus / Course Content
+│   │   ├── Week 1: Module Title
+│   │   │   ├── Videos (3h 20m)
+│   │   │   ├── Readings (45m)
+│   │   │   ├── Quizzes (2)
+│   │   │   └── Programming Assignments (1)
+│   │   ├── Week 2: ...
+│   │   └── Week N: Final Assessment
+│   ├── Instructor Bio(s)
+│   ├── Offered By (institution description)
+│   ├── Reviews
+│   ├── Career Outcomes (&quot;86% started a new career&quot;)
+│   ├── Pricing (audit free vs certificate paid)
+│   ├── Financial Aid Available
+│   ├── Enroll for Free / Start Free Trial
+│   └── Related Courses
+├── Learning View (Enrolled)
+│   ├── Course Navigation
+│   │   ├── Week / Module Tabs
+│   │   ├── Content List (videos, readings, quizzes)
+│   │   └── Progress Checkmarks
+│   ├── Video Player
+│   │   ├── Subtitles (auto-generated, multi-language)
+│   │   ├── Playback Speed (0.75x–2x)
+│   │   ├── Transcript (synced, searchable)
+│   │   ├── Notes (linked to timestamp)
+│   │   └── Download Video (mobile offline)
+│   ├── Readings
+│   ├── Discussion Forums (per module)
+│   ├── Quizzes
+│   │   ├── Questions (MCQ, coding, short answer)
+│   │   ├── Attempts (limited or unlimited)
+│   │   ├── Feedback (per question)
+│   │   └── Passing Score
+│   ├── Programming Assignments (Jupyter Notebooks, sandboxed)
+│   ├── Peer Review Assignments
+│   │   ├── Submit Work
+│   │   ├── Review Peers (assigned)
+│   │   └── Receive Reviews
+│   ├── Progress Bar (overall completion)
+│   ├── Deadlines (suggested or hard)
+│   └── Resources / Downloads
+├── Specializations
+│   ├── Overview (3-5 courses in sequence)
+│   ├── Course List (ordered)
+│   ├── Capstone Project
+│   ├── Certificate on Completion
+│   └── Enroll
+├── Professional Certificates
+│   ├── Google Data Analytics
+│   ├── Google UX Design
+│   ├── Meta Front-End Developer
+│   ├── IBM Data Science
+│   └── ... (50+)
+│   ├── Program Page
+│   │   ├── Employer-Recognized
+│   │   ├── No Experience Needed
+│   │   ├── Job-Ready Skills
+│   │   ├── Courses in Program
+│   │   └── Career Outcomes
+├── Degrees
+│   ├── Bachelor&#39;s Programs
+│   ├── Master&#39;s Programs
+│   ├── Application Process
+│   ├── Tuition (fraction of on-campus cost)
+│   ├── Accreditation Info
+│   └── Compare Programs
+├── My Learning
+│   ├── In Progress
+│   ├── Completed
+│   ├── Certificates
+│   ├── Achievements
+│   └── Learning Goals
+├── Certificates
+│   ├── My Certificates (sharable)
+│   ├── Share on LinkedIn
+│   ├── Download PDF
+│   └── Verify Certificate
+├── Career Resources
+│   ├── Job Search Tools
+│   ├── Interview Prep
+│   └── Career Guidance
+├── Account
+│   ├── Profile
+│   ├── Coursera Plus Subscription
+│   ├── Payment History
+│   ├── Financial Aid Applications
+│   ├── Notifications
+│   ├── Language Preferences
+│   └── Settings
+└── For Enterprise
+    ├── Coursera for Business
+    ├── Coursera for Campus
+    ├── Coursera for Government
+    └── Content Partnerships
+</code></pre>
+<h2>Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Top Bar</strong></td>
+<td>Fixed header</td>
+<td>Logo, Explore (dropdown), Search, My Learning, Profile</td>
+</tr>
+<tr>
+<td><strong>Explore Dropdown</strong></td>
+<td>Mega menu</td>
+<td>Goals (tabs) → Categories → Popular Courses</td>
+</tr>
+<tr>
+<td><strong>Course Sidebar</strong></td>
+<td>Left nav in learning view</td>
+<td>Week/module tree with progress checkmarks</td>
+</tr>
+<tr>
+<td><strong>Video Player</strong></td>
+<td>Full-width with controls</td>
+<td>Play/pause, speed, subtitles, notes, transcript</td>
+</tr>
+<tr>
+<td><strong>Progress Bar</strong></td>
+<td>Top of learning view</td>
+<td>Overall completion % with module breakdown</td>
+</tr>
+<tr>
+<td><strong>Mobile Bottom Bar</strong></td>
+<td>Learning view</td>
+<td>Previous / Next content, Mark Complete</td>
+</tr>
+</tbody></table>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Course</td>
+<td>title, description, institution, instructors[], category, level (beginner/intermediate/advanced), duration, language, rating, enrollment_count, price, audit_available</td>
+<td>has Modules, belongs to Institution</td>
+</tr>
+<tr>
+<td>Module (Week)</td>
+<td>title, order, videos[], readings[], quizzes[], assignments[]</td>
+<td>belongs to Course</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>title, duration, subtitles[], transcript, downloadable</td>
+<td>belongs to Module</td>
+</tr>
+<tr>
+<td>Quiz</td>
+<td>questions[], passing_score, attempts_allowed, time_limit</td>
+<td>belongs to Module</td>
+</tr>
+<tr>
+<td>ProgrammingAssignment</td>
+<td>instructions, environment (Jupyter/sandbox), rubric, auto_graded</td>
+<td>belongs to Module</td>
+</tr>
+<tr>
+<td>PeerReviewAssignment</td>
+<td>instructions, rubric, reviews_required</td>
+<td>belongs to Module</td>
+</tr>
+<tr>
+<td>Enrollment</td>
+<td>user, course, progress_pct, grade, started_at, completed_at, certificate_earned</td>
+<td>belongs to User and Course</td>
+</tr>
+<tr>
+<td>Certificate</td>
+<td>course/specialization, user, grade, issued_at, verification_url, shareable</td>
+<td>belongs to Enrollment</td>
+</tr>
+<tr>
+<td>Specialization</td>
+<td>title, courses[] (ordered), capstone, institution</td>
+<td>sequence of Courses</td>
+</tr>
+<tr>
+<td>ProfessionalCertificate</td>
+<td>title, courses[], employer_partners[], no_experience_required, job_outcomes</td>
+<td>type of Specialization</td>
+</tr>
+<tr>
+<td>Degree</td>
+<td>title, institution, type (BS/MS/MBA), tuition, accreditation, duration</td>
+<td>has many Courses</td>
+</tr>
+<tr>
+<td>Institution</td>
+<td>name, logo, type (university/company), description</td>
+<td>has many Courses</td>
+</tr>
+<tr>
+<td>Instructor</td>
+<td>name, title, bio, avatar, institution, rating</td>
+<td>has many Courses</td>
+</tr>
+</tbody></table>
+<h3>Course Pricing Model</h3>
+<pre><code>Audit (free) → access videos and readings, no certificate
+Single Course Purchase → certificate on completion
+Specialization → monthly subscription while enrolled
+Coursera Plus → $59/mo, unlimited certificates for 7,000+ courses
+Degree → per-credit tuition, accredited
+</code></pre>
+<h2>User Flows</h2>
+<h3>Discover and Enroll</h3>
+<pre><code>Home → Search &quot;data science&quot; → Results → Course Page → Preview Video → Review Syllabus → [Enroll for Free] (or Start 7-Day Trial) → Begin Week 1
+</code></pre>
+<h3>Complete Course</h3>
+<pre><code>My Learning → Continue Course → Watch Video → Take Notes → Complete Quiz → Submit Assignment → Peer Review → Final Exam → Pass → Certificate Generated → Share on LinkedIn
+</code></pre>
+<h3>Financial Aid</h3>
+<pre><code>Course Page → Financial Aid → Application Form (explain need, 150 words) → Submit → Review (15 days) → Approved → Full Access + Certificate at No Cost
+</code></pre>
+<h3>Professional Certificate</h3>
+<pre><code>Home → Professional Certificates → Google Data Analytics → Enroll → Complete 8 Courses → Capstone Project → Earn Certificate → Add to Resume → Apply for Jobs
+</code></pre>
+<h2>URL / Route Structure</h2>
+<pre><code>/                                  → Home
+/browse                            → Explore Catalog
+/browse/:category                  → Category Page
+/courses                           → All Courses
+/learn/:slug                       → Course Page
+/learn/:slug/home/welcome          → Learning View Home
+/learn/:slug/lecture/:id           → Video Lecture
+/learn/:slug/quiz/:id              → Quiz
+/learn/:slug/peer/:id              → Peer Review
+/learn/:slug/supplement/:id        → Reading
+/learn/:slug/discussions           → Discussion Forums
+/specializations/:slug             → Specialization Page
+/professional-certificates/:slug   → Professional Certificate
+/degrees/:slug                     → Degree Program
+/degrees/:slug/apply               → Application
+/my-learning                       → My Learning
+/my-learning/completed             → Completed
+/account/certificates              → My Certificates
+/account                           → Account
+/search?query=:q                   → Search Results
+/instructor/:slug                  → Instructor Profile
+/university/:slug                  → Institution Page
+/courseraplus                       → Coursera Plus
+/for-business                      → Enterprise
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Search Scope</th>
+<th>Filters</th>
+<th>Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Catalog</td>
+<td>Course title, skill, topic, instructor, institution</td>
+<td>Category, Level, Language, Duration, Rating, Free/Paid, Certification Type, Institution</td>
+<td>Most Popular, Highest Rated, Newest</td>
+</tr>
+<tr>
+<td>My Learning</td>
+<td>Course title</td>
+<td>Status (in-progress/completed), Category</td>
+<td>Last Accessed, Enrolled Date</td>
+</tr>
+<tr>
+<td>Within Course</td>
+<td>Video titles, transcript text, forum posts</td>
+<td>Module, Content Type</td>
+<td>Module order, relevance</td>
+</tr>
+</tbody></table>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Browse</th>
+<th>Learning View</th>
+<th>Video</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Grid (4 cols), filters sidebar</td>
+<td>Sidebar + video/content (70/30 split)</td>
+<td>Large player + transcript sidebar</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Grid (2-3 cols)</td>
+<td>Toggle sidebar</td>
+<td>Full-width player</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Single column cards</td>
+<td>Full-screen video, bottom nav</td>
+<td>Full-screen player, gesture controls</td>
+</tr>
+</tbody></table>
+<h3>Learning-Specific UX</h3>
+<ul>
+<li>Auto-save progress (resume from exact position)</li>
+<li>Keyboard shortcuts (space = play/pause, arrow = 10s skip)</li>
+<li>Playback speed (0.75x–2x)</li>
+<li>Subtitles in 20+ languages (auto-translated)</li>
+<li>Note-taking synced to video timestamp</li>
+<li>Offline download (mobile app)</li>
+<li>Deadline reminders (push notifications)</li>
+<li>Discussion forums moderated with TA support</li>
+<li>Peer review with structured rubrics</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Browse</th>
+<th>Audit</th>
+<th>Certificate</th>
+<th>Degrees</th>
+<th>Teach</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest</td>
+<td>✅</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Free (Audit)</td>
+<td>✅</td>
+<td>✅ (videos + readings)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Single Purchase</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (purchased course)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Coursera Plus</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (7,000+ courses)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Degree Student</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Financial Aid</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (approved courses)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Instructor</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td>Own courses</td>
+</tr>
+<tr>
+<td>Enterprise Learner</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ (assigned catalog)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">🏗️</span>
+        <span class="logo-text">getIA.md</span>
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
