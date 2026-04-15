@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things 3 — IA.md | getIA.md</title>
+  <meta name="description" content="GTD task manager. Areas, Projects, Today view. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=culturedcode.com&sz=64" alt="Things 3" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Things 3</h1>
+      <p class="detail-brand-tagline">GTD task manager. Areas, Projects, Today view.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/things/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://culturedcode.com/things" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/things/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Things 3</h1>
+<h2>Overview</h2>
+<p>Things 3 is a GTD (Getting Things Done)-inspired task manager for Apple platforms. Its IA faithfully implements GTD&#39;s structure: an Inbox for capture, Today/Upcoming/Anytime/Someday for temporal scoping, and Areas → Projects → Tasks for the organizational hierarchy. The design is intentionally opinionated — no custom views, no team features, just a refined personal productivity system.</p>
+<h2>Site Map</h2>
+<pre><code>Things 3
+├── Inbox (Quick Capture)
+├── Today
+│   ├── Today items
+│   └── This Evening (sub-section)
+├── Upcoming (date-based timeline)
+├── Anytime (no specific date)
+├── Someday (deferred / low priority)
+├── Logbook (completed items)
+├── Trash
+├── Areas
+│   └── [Area]
+│       └── Projects
+│           └── [Project]
+│               ├── Headings (sections)
+│               └── Tasks
+│                   ├── Checklist Items
+│                   ├── Notes (rich text)
+│                   ├── Tags
+│                   ├── Deadline
+│                   ├── When (start date: Today/Evening/Someday/specific date)
+│                   └── Reminders
+├── Quick Find (⌘F)
+└── Preferences
+    ├── General
+    ├── Quick Entry (global shortcut)
+    ├── Calendar Integration
+    ├── Siri &amp; Shortcuts
+    └── Things Cloud (sync)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Fixed list — Inbox, Today, Upcoming, Anytime, Someday, Logbook, Trash; followed by Areas and Projects tree</li>
+<li><strong>Main content:</strong> Task list for selected view; projects show headings as section dividers</li>
+<li><strong>Task detail:</strong> Inline expansion below task title — notes, checklist, tags, dates</li>
+<li><strong>Quick Entry (⌃Space):</strong> Global floating window to capture a task from any app</li>
+<li><strong>Quick Find (⌘F):</strong> Instant search across all tasks, projects, and areas</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Inbox</td>
+<td>Default capture location</td>
+<td>→ Tasks</td>
+</tr>
+<tr>
+<td>Area</td>
+<td>title, order</td>
+<td>→ Projects, Tasks (area-level)</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>title, area, notes, deadline, when (start), tags</td>
+<td>→ Headings, Tasks</td>
+</tr>
+<tr>
+<td>Heading</td>
+<td>title, order</td>
+<td>→ Tasks (within project)</td>
+</tr>
+<tr>
+<td>Task (To-Do)</td>
+<td>title, notes, when (today/evening/someday/date), deadline, tags, checklist</td>
+<td>→ Checklist Items</td>
+</tr>
+<tr>
+<td>Checklist Item</td>
+<td>title, completed</td>
+<td>→ Task</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name</td>
+<td>→ Tasks, Projects (many-to-many)</td>
+</tr>
+<tr>
+<td>Logbook</td>
+<td>Completed tasks with completion date</td>
+<td>→ Tasks, Projects</td>
+</tr>
+<tr>
+<td>Repeating Task</td>
+<td>repeat schedule (daily/weekly/monthly/custom)</td>
+<td>→ Task template</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. GTD Capture</h3>
+<p><code>⌃Space (Quick Entry) → Type task → Optionally set When/Deadline/Tags/Project → Save → Lands in Inbox or specified project</code></p>
+<h3>2. Daily Review (Today)</h3>
+<p><code>Today → Review morning tasks → Drag tasks to re-order → Complete tasks (checkmark) → Evening: switch to &quot;This Evening&quot; section → Clear Today</code></p>
+<h3>3. Weekly Review</h3>
+<p><code>Inbox → Process each item: assign project, set When date, or move to Someday → Review Someday list → Promote items to Anytime or schedule</code></p>
+<h3>4. Project Planning</h3>
+<p><code>+ New Project → Set area → Add Headings (e.g., &quot;Research&quot;, &quot;Draft&quot;, &quot;Review&quot;) → Add tasks under each → Set project deadline → Review in Upcoming</code></p>
+<h2>URL / Route Structure</h2>
+<p>Things 3 is a native Apple app using URL schemes:</p>
+<pre><code>things:///show?id=inbox              # Show Inbox
+things:///show?id=today              # Show Today
+things:///show?id=upcoming           # Show Upcoming
+things:///show?id=anytime            # Show Anytime
+things:///show?id=someday            # Show Someday
+things:///show?id=logbook            # Show Logbook
+things:///add?title={t}&amp;when={d}     # Quick add task
+things:///add-project?title={t}      # Create project
+things:///search?query={q}           # Search
+things:///json?data=[...]            # Bulk import (JSON)
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Quick Find (⌘F):</strong> Instant full-text search across task titles, notes, project names, area names, tags</li>
+<li><strong>Tag filtering:</strong> Click a tag to filter current view to matching items; multi-tag AND filtering</li>
+<li><strong>Built-in views as filters:</strong> Today, Upcoming, Anytime, Someday are effectively temporal filters</li>
+<li><strong>Type-to-filter:</strong> In any list, start typing to narrow visible items</li>
+<li><strong>No custom filter/query builder</strong> — intentionally limited to keep UX simple</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>macOS</td>
+<td>Two-pane: sidebar + task list; task detail expands inline; multiple windows supported</td>
+</tr>
+<tr>
+<td>iPad</td>
+<td>Sidebar + list; landscape shows both; portrait collapses sidebar; drag &amp; drop between lists</td>
+</tr>
+<tr>
+<td>iPhone</td>
+<td>Single-pane push navigation; swipe gestures for complete/schedule; Magic Plus button for context-aware add</td>
+</tr>
+<tr>
+<td>Apple Watch</td>
+<td>View Today list, complete tasks, add via dictation</td>
+</tr>
+<tr>
+<td>No web/Android</td>
+<td>Apple ecosystem only; sync via Things Cloud</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Single-user</td>
+<td>Things is personal — no collaboration or sharing features</td>
+</tr>
+<tr>
+<td>Things Cloud</td>
+<td>Proprietary sync across Mac, iPhone, iPad, Apple Watch; encrypted</td>
+</tr>
+<tr>
+<td>No export</td>
+<td>No built-in bulk export (data accessible via AppleScript on Mac)</td>
+</tr>
+<tr>
+<td>Siri / Shortcuts</td>
+<td>Add tasks via voice or iOS Shortcuts automation</td>
+</tr>
+<tr>
+<td>Mail to Things</td>
+<td>Forward emails to a personal Things address to create tasks</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

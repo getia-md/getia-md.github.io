@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevenLabs — IA.md | getIA.md</title>
+  <meta name="description" content="AI voice synthesis, voice cloning, dubbing. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=64" alt="ElevenLabs" onerror="this.parentElement.textContent='E'">
+      </div>
+      <h1 class="detail-brand-name">ElevenLabs</h1>
+      <p class="detail-brand-tagline">AI voice synthesis, voice cloning, dubbing.</p>
+      <span class="detail-category-badge">AI</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/elevenlabs/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/elevenlabs/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>ElevenLabs — Information Architecture</h1>
+<h2>Overview</h2>
+<p>ElevenLabs is an AI voice technology platform specializing in text-to-speech, voice cloning, and audio content creation. The IA is built around a <strong>voice-centric creative studio</strong> — the core objects are Voices (both pre-made and user-cloned), and the primary workflows involve generating speech, dubbing content, and creating audio experiences (audiobooks, podcasts). The platform spans three main surfaces: the web app (Speech Synthesis, Voice Lab, Projects, Dubbing), the API (for developer integration), and consumer products (Reader app, voice library). ElevenLabs&#39; architecture uniquely supports both individual creators and enterprise-scale voice solutions.</p>
+<h2>Site Map</h2>
+<pre><code>elevenlabs.io
+├── / (Home — marketing, demos)
+├── /app (Web application)
+│   ├── /speech-synthesis (Text-to-Speech)
+│   ├── /voice-lab (Voice management &amp; cloning)
+│   │   └── /{voice_id} (Voice settings)
+│   ├── /voice-library (Community voice marketplace)
+│   ├── /projects (Long-form content — audiobooks, podcasts)
+│   │   └── /{project_id}
+│   ├── /dubbing (Video/audio dubbing)
+│   │   └── /{dubbing_id}
+│   ├── /sound-effects (AI sound effect generation)
+│   ├── /voice-isolator (Background noise removal)
+│   ├── /history (Generation history)
+│   └── /usage (Usage analytics)
+├── /docs (API documentation)
+├── /pricing
+├── /blog
+├── /about
+├── /settings
+│   ├── /profile
+│   ├── /subscription
+│   ├── /api-keys
+│   └── /billing
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — Speech Synthesis, Voice Lab, Voice Library, Projects, Dubbing, Sound Effects, Voice Isolator, History</li>
+<li><strong>Tool-specific navigation</strong>: Each tool has its own workspace layout (speech synthesis has voice selector + text input + audio output)</li>
+<li><strong>Voice navigation</strong>: Voice selector dropdown appears across all generation tools — pick from My Voices, Pre-made, or Voice Library</li>
+<li><strong>Project navigation</strong>: Within a Project — chapter list (left), text editor (center), audio playback (bottom)</li>
+<li><strong>Utility navigation</strong>: Top-right — usage meter, avatar → Settings, API Keys, Billing</li>
+<li><strong>Mobile</strong>: Responsive; speech synthesis works on mobile; complex tools (Projects, Dubbing) are desktop-optimized</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Voice</td>
+<td>Name, description, preview sample, settings (stability, similarity, style), category, language</td>
+<td>User-owned (cloned) or ElevenLabs (pre-made)</td>
+</tr>
+<tr>
+<td>Cloned Voice</td>
+<td>Uploaded audio samples, processing status, voice profile</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Generation</td>
+<td>Text input, voice used, model, audio output (MP3), character count, timestamp</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Title, chapters, voice assignments per character, full manuscript text, generated audio</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Dubbing Job</td>
+<td>Source video/audio, target languages, speaker mapping, dubbed output</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Sound Effect</td>
+<td>Text prompt, generated audio clip</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Voice Library Entry</td>
+<td>Published voice with description, preview, category, usage count</td>
+<td>Community-shared</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Text-to-Speech Generation</h3>
+<ol>
+<li>User opens Speech Synthesis</li>
+<li>Selects voice from dropdown (pre-made, cloned, or community voice)</li>
+<li>Adjusts voice settings: stability (consistency), similarity boost, style exaggeration</li>
+<li>Selects model (Multilingual v2, Turbo v2.5, English v1)</li>
+<li>Types or pastes text (up to character limit based on plan)</li>
+<li>Clicks Generate → audio streams/plays immediately</li>
+<li>Download as MP3 or save to History</li>
+</ol>
+<h3>Voice Cloning</h3>
+<ol>
+<li>User opens Voice Lab → &quot;Add Voice&quot; → &quot;Instant Voice Clone&quot;</li>
+<li>Uploads audio samples (minimum 1 minute of clear speech)</li>
+<li>Names the voice and adds description/labels</li>
+<li>Voice is processed and added to &quot;My Voices&quot;</li>
+<li>Alternatively: &quot;Professional Voice Clone&quot; requires 30+ minutes of studio-quality audio and verification</li>
+<li>Cloned voice available across all tools (speech synthesis, projects, dubbing)</li>
+</ol>
+<h3>Audiobook/Podcast Project</h3>
+<ol>
+<li>User creates a Project → selects type (Audiobook, Podcast)</li>
+<li>Uploads manuscript (TXT, PDF, EPUB) or pastes text</li>
+<li>System auto-detects chapters → user can edit chapter boundaries</li>
+<li>Assigns voices to characters/narrators</li>
+<li>Generates chapter by chapter — can re-generate individual paragraphs</li>
+<li>Exports complete audiobook as MP3 files per chapter</li>
+</ol>
+<h3>Video Dubbing</h3>
+<ol>
+<li>User opens Dubbing → uploads video or provides YouTube URL</li>
+<li>Selects source language and target language(s)</li>
+<li>System transcribes → translates → assigns voices → generates dubbed audio</li>
+<li>User reviews with side-by-side comparison (original vs. dubbed)</li>
+<li>Can swap voices, edit translated text, adjust timing</li>
+<li>Export dubbed video</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Marketing home</td>
+</tr>
+<tr>
+<td><code>/app/speech-synthesis</code></td>
+<td>TTS workspace</td>
+</tr>
+<tr>
+<td><code>/app/voice-lab</code></td>
+<td>Voice management</td>
+</tr>
+<tr>
+<td><code>/app/voice-lab/{uuid}</code></td>
+<td>Individual voice settings</td>
+</tr>
+<tr>
+<td><code>/app/voice-library</code></td>
+<td>Community voices</td>
+</tr>
+<tr>
+<td><code>/app/projects/{uuid}</code></td>
+<td>Project workspace</td>
+</tr>
+<tr>
+<td><code>/app/dubbing/{uuid}</code></td>
+<td>Dubbing job</td>
+</tr>
+<tr>
+<td><code>/app/sound-effects</code></td>
+<td>SFX generator</td>
+</tr>
+<tr>
+<td><code>/app/history</code></td>
+<td>Generation history</td>
+</tr>
+<tr>
+<td><code>/docs/{path}</code></td>
+<td>API documentation</td>
+</tr>
+<tr>
+<td><code>/pricing</code></td>
+<td>Plans</td>
+</tr>
+<tr>
+<td><code>/settings/*</code></td>
+<td>Account settings</td>
+</tr>
+</tbody></table>
+<p>App routes under <code>/app</code> prefix. UUIDs for user content. Marketing pages at root.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Voice Library search</strong>: Search community voices by name, description, language, accent, gender, age, use case</li>
+<li><strong>Voice Library filters</strong>: Language, gender, age, accent, use case (narration, characters, news, etc.)</li>
+<li><strong>History search</strong>: Filter generations by voice, date range</li>
+<li><strong>Project navigation</strong>: Chapters listed in sidebar — no search within project text (use browser search)</li>
+<li><strong>No generation prompt search</strong>: History organized chronologically, not searchable by text content</li>
+<li><strong>Voice Lab</strong>: My Voices searchable by name</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + workspace (voice selector, text input, audio player)</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + full workspace</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Sidebar as drawer + stacked workspace elements</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom nav or hamburger + speech synthesis as single-column; Projects/Dubbing limited</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Speech synthesis is the most mobile-friendly tool — text input + voice selector + play button</li>
+<li>Audio player adapts to bottom of viewport (persistent playback bar)</li>
+<li>Voice Library grid (voice cards) reflows from 4→2→1 columns</li>
+<li>Project editor (multi-pane: chapters + editor + audio) collapses to tabbed view on mobile</li>
+<li>Dubbing comparison view stacks vertically on narrow screens</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, listen to voice demos, browse Voice Library</td>
+</tr>
+<tr>
+<td>Free</td>
+<td>10,000 characters/mo, 3 custom voices, speech synthesis only, personal use</td>
+</tr>
+<tr>
+<td>Starter ($5/mo)</td>
+<td>30,000 chars/mo, 10 custom voices, commercial license</td>
+</tr>
+<tr>
+<td>Creator ($22/mo)</td>
+<td>100,000 chars/mo, 30 custom voices, Projects, Professional Voice Clone</td>
+</tr>
+<tr>
+<td>Pro ($99/mo)</td>
+<td>500,000 chars/mo, 160 custom voices, Dubbing, priority queue, usage analytics</td>
+</tr>
+<tr>
+<td>Scale ($330/mo)</td>
+<td>2,000,000 chars/mo, higher concurrency, dedicated support</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Custom characters, SLA, SSO, PII redaction, on-premise options</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, Google OAuth</li>
+<li>Voice cloning consent: Users must confirm they have rights to clone a voice; professional cloning requires identity verification</li>
+<li>API access: Available on all paid plans; API key in Settings</li>
+<li>Commercial use: Starter and above include commercial license</li>
+<li>Content policy: No deepfake/impersonation; voice cloning requires consent documentation</li>
+<li>Usage: Character-based billing (not per-generation)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

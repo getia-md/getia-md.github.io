@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descript — IA.md | getIA.md</title>
+  <meta name="description" content="AI video/audio editor. Transcript-based editing. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=descript.com&sz=64" alt="Descript" onerror="this.parentElement.textContent='D'">
+      </div>
+      <h1 class="detail-brand-name">Descript</h1>
+      <p class="detail-brand-tagline">AI video/audio editor. Transcript-based editing.</p>
+      <span class="detail-category-badge">AI</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/descript/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://descript.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/descript/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Descript — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Descript is a video and audio editing platform built on a revolutionary concept: <strong>edit media by editing text</strong>. The IA centers on a <strong>transcript-driven editing paradigm</strong> — when you upload a video or audio file, Descript transcribes it, and editing the transcript directly edits the underlying media. Delete a sentence from the transcript, and the corresponding audio/video segment is removed. This document-like metaphor makes the product accessible to non-editors while supporting professional workflows. Key AI features include Studio Sound (audio enhancement), Eye Contact (gaze correction), Green Screen (background removal), Filler Word Removal, and AI Voices (text-to-speech overdubbing). The IA supports both individual creators and team collaboration.</p>
+<h2>Site Map</h2>
+<pre><code>descript.com
+├── / (Marketing home)
+├── /pricing
+├── /features
+│   ├── /transcription
+│   ├── /screen-recording
+│   ├── /video-editing
+│   ├── /podcasting
+│   └── /ai-features
+├── /templates (Video/audio templates)
+├── /blog
+├── /resources
+│   ├── /tutorials
+│   └── /help-center
+└── /download
+
+app.descript.com (Web app) / Desktop app
+├── / (Drive — all projects)
+├── /project/{project_id} (Project workspace)
+│   ├── Transcript editor (main)
+│   ├── Timeline (bottom panel)
+│   ├── Canvas (video preview + scenes)
+│   ├── Scenes panel (left)
+│   └── Inspector (right — properties)
+├── /templates (Template gallery)
+├── /settings
+│   ├── /account
+│   ├── /team
+│   ├── /billing
+│   └── /ai-voices
+└── /record (Screen/webcam recorder)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Drive navigation</strong>: Grid or list view of all projects, sorted by date; folders for organization</li>
+<li><strong>Project workspace navigation</strong>: Multi-panel layout — Scenes sidebar (left), Canvas + Transcript (center), Inspector panel (right), Timeline (bottom)</li>
+<li><strong>Toolbar navigation</strong>: Top toolbar — text formatting, media insertion, AI actions (Filler Word Removal, Studio Sound, etc.)</li>
+<li><strong>Mode switching</strong>: Toggle between Script mode (text-first), Timeline mode (traditional NLE), and Canvas mode (visual design)</li>
+<li><strong>Utility navigation</strong>: Top-right — share/export button, collaborate button, avatar → Settings</li>
+<li><strong>Panel toggles</strong>: Each panel (Scenes, Inspector, Timeline, Comments) can be shown/hidden</li>
+<li><strong>Mobile</strong>: Not available — desktop application + web app (desktop-optimized)</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>Container for all media, transcript, compositions, scenes</td>
+<td>User/Team-owned</td>
+</tr>
+<tr>
+<td>Composition</td>
+<td>A single video/audio output with its own transcript, scenes, and timeline</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Transcript</td>
+<td>Auto-generated text with word-level timestamps, speaker labels, editable</td>
+<td>Part of composition</td>
+</tr>
+<tr>
+<td>Scene</td>
+<td>Visual layout template applied to a segment (title card, talking head, B-roll, etc.)</td>
+<td>Part of composition</td>
+</tr>
+<tr>
+<td>Media Asset</td>
+<td>Video, audio, image, or screen recording file imported into project</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>AI Voice</td>
+<td>Cloned or stock voice for text-to-speech overdubbing</td>
+<td>User/Descript-provided</td>
+</tr>
+<tr>
+<td>Template</td>
+<td>Pre-designed scene layouts and project structures</td>
+<td>Descript-curated or user-created</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>Timestamped comment on transcript for collaboration</td>
+<td>Team collaboration</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Podcast Editing (Transcript-First)</h3>
+<ol>
+<li>User creates new project → uploads audio file(s)</li>
+<li>Descript transcribes automatically (speaker detection for multi-person)</li>
+<li>User reads transcript → selects and deletes filler words (&quot;um&quot;, &quot;uh&quot;) or entire sentences</li>
+<li>Corresponding audio segments are removed — no waveform editing needed</li>
+<li>Applies Studio Sound (AI noise removal, loudness normalization)</li>
+<li>Exports as MP3/WAV with chapter markers</li>
+</ol>
+<h3>Video Editing</h3>
+<ol>
+<li>User imports video or records screen/webcam via built-in recorder</li>
+<li>Transcript generated → user edits text to trim video</li>
+<li>Switches to Canvas mode → applies Scene templates (lower thirds, titles, B-roll inserts)</li>
+<li>Applies AI features: Eye Contact correction, Green Screen background removal</li>
+<li>Adds transitions between scenes</li>
+<li>Exports as MP4 or publishes directly to YouTube/social</li>
+</ol>
+<h3>AI Overdubbing</h3>
+<ol>
+<li>User trains an AI Voice clone (reads a script for ~10 minutes)</li>
+<li>Types new text in transcript where they want to add/change words</li>
+<li>AI Voice generates speech matching the user&#39;s voice</li>
+<li>Seamlessly inserted into the audio/video — sounds like the original speaker</li>
+<li>Used for correcting mistakes, adding new sections, or translating</li>
+</ol>
+<h3>Team Collaboration</h3>
+<ol>
+<li>Project owner shares project with team members</li>
+<li>Team members can add timestamped comments on the transcript</li>
+<li>Assigned reviewers can suggest edits (tracked changes style)</li>
+<li>Owner accepts/rejects changes</li>
+<li>Version history allows rollback to any previous state</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>descript.com/</code></td>
+<td>Marketing site</td>
+</tr>
+<tr>
+<td><code>descript.com/pricing</code></td>
+<td>Plans</td>
+</tr>
+<tr>
+<td><code>descript.com/features/{feature}</code></td>
+<td>Feature pages</td>
+</tr>
+<tr>
+<td><code>descript.com/download</code></td>
+<td>Desktop app download</td>
+</tr>
+<tr>
+<td><code>app.descript.com/</code></td>
+<td>Drive (project list)</td>
+</tr>
+<tr>
+<td><code>app.descript.com/project/{uuid}</code></td>
+<td>Project workspace</td>
+</tr>
+<tr>
+<td><code>app.descript.com/templates</code></td>
+<td>Template gallery</td>
+</tr>
+<tr>
+<td><code>app.descript.com/settings/*</code></td>
+<td>Account settings</td>
+</tr>
+<tr>
+<td><code>app.descript.com/record</code></td>
+<td>Screen recorder</td>
+</tr>
+</tbody></table>
+<p>Desktop app is the primary editing surface (Electron). Web app provides cloud project management and lighter editing. UUIDs for projects.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Project search</strong>: Search projects by name in Drive</li>
+<li><strong>Transcript search</strong>: Cmd+F within a project searches transcript text (finds specific words/phrases in the recording)</li>
+<li><strong>Template search</strong>: Search templates by category (Social, Podcast, Education, Business)</li>
+<li><strong>Media search</strong>: Search imported media files within a project by filename</li>
+<li><strong>No cross-project search</strong>: Cannot search transcript content across all projects</li>
+<li><strong>Speaker filter</strong>: Filter transcript by speaker (useful for multi-person recordings)</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop App (primary)</td>
+<td>Multi-panel workspace: Scenes (left) + Canvas/Transcript (center) + Inspector (right) + Timeline (bottom). All panels resizable, draggable, dockable</td>
+</tr>
+<tr>
+<td>Web App</td>
+<td>Similar layout to desktop but lighter — some AI features desktop-only</td>
+</tr>
+<tr>
+<td>Marketing Site</td>
+<td>Fully responsive: hero → features grid → testimonials → CTA</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Desktop app requires minimum ~1200px width for comfortable use</li>
+<li>Panel layout can be customized: hide/show individual panels</li>
+<li>Canvas preview scales to available width while maintaining aspect ratio</li>
+<li>Transcript editor has a max-width container for readability</li>
+<li>Marketing site adapts fully from desktop to mobile</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, download app (trial)</td>
+</tr>
+<tr>
+<td>Free</td>
+<td>1 project, 1 hour transcription, basic editing, watermark on video</td>
+</tr>
+<tr>
+<td>Hobbyist ($24/mo)</td>
+<td>Unlimited projects, 10 hrs transcription/mo, no watermark, basic AI features</td>
+</tr>
+<tr>
+<td>Business ($33/mo)</td>
+<td>Hobbyist features + full AI suite (Studio Sound, Eye Contact, Green Screen, Filler Words), team collaboration</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Business + SSO, admin controls, custom training, priority support</td>
+</tr>
+<tr>
+<td>Team roles</td>
+<td>Owner → Editor → Commenter → Viewer</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, Google OAuth</li>
+<li>Project sharing: Link-based sharing with role assignment; public link for view-only</li>
+<li>AI Voice cloning: Requires consent verification; available on Business+ plans</li>
+<li>Export: Watermark on Free tier; paid plans have clean export</li>
+<li>Storage: Cloud storage included (varies by plan); media files synced across devices</li>
+<li>Transcription: Character/hour limits per plan per month</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

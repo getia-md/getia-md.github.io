@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udemy — IA.md | getIA.md</title>
+  <meta name="description" content="Course marketplace. Instructor-created, ratings. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=udemy.com&sz=64" alt="Udemy" onerror="this.parentElement.textContent='U'">
+      </div>
+      <h1 class="detail-brand-name">Udemy</h1>
+      <p class="detail-brand-tagline">Course marketplace. Instructor-created, ratings.</p>
+      <span class="detail-category-badge">Education</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/udemy/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://udemy.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/udemy/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Udemy</h1>
+<h2>1. Overview</h2>
+<p>Udemy is the world&#39;s largest online course marketplace, with 200,000+ instructor-created courses spanning technology, business, design, personal development, and more. The IA is marketplace-driven — courses are products with pricing, ratings, reviews, and sales promotions. Unlike curated platforms, any qualified instructor can publish a course, creating a vast and diverse catalog. The platform emphasizes discoverability through categories, search, and frequent promotional pricing.</p>
+<h2>2. Site Map</h2>
+<pre><code>Udemy
+├── Home
+│   ├── Personalized Recommendations
+│   ├── Top Courses
+│   ├── Trending
+│   ├── Sale Banner (frequent promotions)
+│   ├── Learners Are Viewing
+│   └── Categories Spotlight
+├── Categories
+│   ├── Development
+│   │   ├── Web Development
+│   │   ├── Mobile Development
+│   │   ├── Programming Languages
+│   │   ├── Game Development
+│   │   ├── Database Design
+│   │   └── Software Testing
+│   ├── Business
+│   │   ├── Entrepreneurship
+│   │   ├── Communication
+│   │   ├── Management
+│   │   ├── Sales
+│   │   └── Business Strategy
+│   ├── Finance &amp; Accounting
+│   ├── IT &amp; Software
+│   ├── Office Productivity
+│   ├── Personal Development
+│   ├── Design
+│   ├── Marketing
+│   ├── Lifestyle
+│   ├── Photography &amp; Video
+│   ├── Health &amp; Fitness
+│   ├── Music
+│   └── Teaching &amp; Academics
+├── Course Detail Page
+│   ├── Preview Video
+│   ├── Course Description
+│   ├── What You&#39;ll Learn (objectives)
+│   ├── Requirements / Prerequisites
+│   ├── Curriculum (section → lecture list)
+│   ├── Instructor Profile
+│   ├── Rating &amp; Reviews
+│   ├── Student Count
+│   ├── Last Updated Date
+│   ├── Price / Discount
+│   ├── Certificate of Completion
+│   ├── 30-Day Money-Back Guarantee
+│   └── Related Courses
+├── Course Player
+│   ├── Video Player
+│   ├── Curriculum Sidebar (sections + lectures)
+│   ├── Notes (timestamped)
+│   ├── Q&amp;A (per lecture)
+│   ├── Reviews
+│   ├── Resources (downloadable)
+│   ├── Announcements
+│   ├── Transcript
+│   └── Progress Tracker
+├── My Learning
+│   ├── All Courses (purchased)
+│   ├── In Progress
+│   ├── Wishlist
+│   ├── Archived
+│   ├── Learning Paths
+│   └── Certificates
+├── Cart / Checkout
+│   ├── Cart Items
+│   ├── Coupon Code
+│   ├── Payment
+│   └── Gift Course
+├── Teach on Udemy
+│   ├── Instructor Dashboard
+│   ├── Course Creation
+│   │   ├── Plan Curriculum
+│   │   ├── Record / Upload Videos
+│   │   ├── Set Pricing
+│   │   ├── Landing Page Builder
+│   │   └── Review &amp; Publish
+│   ├── Performance Analytics
+│   ├── Revenue / Payouts
+│   ├── Student Communications
+│   └── Instructor Community
+├── Udemy Business (B2B)
+│   ├── Curated Course Collection
+│   ├── Learning Paths
+│   ├── Admin Dashboard
+│   ├── Analytics &amp; Reporting
+│   └── SSO / Integration
+├── Profile
+│   ├── Purchase History
+│   ├── Certificates
+│   ├── Payment Methods
+│   └── Notification Settings
+└── Settings
+    ├── Account
+    ├── Privacy
+    ├── Notifications
+    ├── Payment Methods
+    └── Language / Currency
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar with category mega menu</li>
+<li><strong>Desktop Top Bar</strong>: Categories (mega dropdown), Search bar (prominent), Teach, My Learning, Cart, Wishlist, Notifications, Profile</li>
+<li><strong>Mobile</strong>: Hamburger menu + bottom tab bar (Featured, Search, My Learning, Wishlist, Account)</li>
+<li><strong>Category Mega Menu</strong>: 13 top-level categories → subcategories → topics</li>
+<li><strong>Course Player</strong>: Sidebar curriculum (desktop); top sheet curriculum (mobile); sticky progress bar</li>
+<li><strong>Breadcrumb</strong>: Category &gt; Subcategory &gt; Topic on browse pages</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Course</td>
+<td>title, subtitle, description, objectives, requirements, instructor, price, sale price, rating, review count, student count, language, last updated, level, duration, certificate</td>
+<td>→ Sections, → Instructor, → Category</td>
+</tr>
+<tr>
+<td>Section</td>
+<td>title, position, lecture count, duration</td>
+<td>→ Course, → Lectures</td>
+</tr>
+<tr>
+<td>Lecture</td>
+<td>title, video, duration, resources, preview flag, article (text-only option)</td>
+<td>→ Section</td>
+</tr>
+<tr>
+<td>Quiz</td>
+<td>title, questions, position within section</td>
+<td>→ Section</td>
+</tr>
+<tr>
+<td>Assignment</td>
+<td>title, description, student submission</td>
+<td>→ Section</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), text, student, date, helpful votes</td>
+<td>→ Course</td>
+</tr>
+<tr>
+<td>Q&amp;A Post</td>
+<td>question/answer, author, lecture reference, upvotes, instructor response</td>
+<td>→ Lecture</td>
+</tr>
+<tr>
+<td>Instructor</td>
+<td>name, bio, photo, rating, student count, course count, social links</td>
+<td>→ Courses</td>
+</tr>
+<tr>
+<td>Certificate</td>
+<td>student name, course title, completion date, Udemy credential ID</td>
+<td>→ Course, → Student</td>
+</tr>
+<tr>
+<td>Coupon</td>
+<td>code, discount, expiry, instructor-created</td>
+<td>→ Course</td>
+</tr>
+<tr>
+<td>Learning Path</td>
+<td>name, description, courses (ordered), creator</td>
+<td>→ Courses</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Purchasing a Course</h3>
+<ol>
+<li>Search or browse → Find course → View course detail page</li>
+<li>Watch preview video → Read description, objectives, reviews</li>
+<li>Check price (or wait for sale — Udemy runs frequent 80-90% off promotions)</li>
+<li>Add to cart → Checkout → Pay → Course added to &quot;My Learning&quot;</li>
+<li>Begin watching immediately</li>
+</ol>
+<h3>Learning a Course</h3>
+<ol>
+<li>My Learning → Select course → Course player opens</li>
+<li>Watch lecture → Auto-advance to next → Progress bar updates</li>
+<li>Take notes (timestamped to video) → Download resources</li>
+<li>Ask question in Q&amp;A → Instructor or community answers</li>
+<li>Complete all lectures → Certificate of Completion generated</li>
+</ol>
+<h3>Publishing a Course (Instructor)</h3>
+<ol>
+<li>Sign up as instructor → Access course creation tools</li>
+<li>Plan curriculum: outline sections and lectures</li>
+<li>Record videos → Upload → Add resources, quizzes, assignments</li>
+<li>Build landing page: title, description, preview video, pricing</li>
+<li>Submit for review → Udemy quality team reviews → Approved → Published to marketplace</li>
+<li>Monitor analytics: enrollments, revenue, ratings, Q&amp;A</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>udemy.com/                                  # Homepage
+udemy.com/courses/{category}/               # Category page
+udemy.com/courses/{category}/{subcategory}/ # Subcategory page
+udemy.com/topic/{topic}/                    # Topic page (e.g., python)
+udemy.com/course/{slug}/                    # Course detail / landing page
+udemy.com/course/{slug}/learn/              # Course player (enrolled)
+udemy.com/course/{slug}/learn/lecture/{id}  # Specific lecture
+udemy.com/user/{username}/                  # Instructor profile
+udemy.com/my-courses/learning/              # My Learning
+udemy.com/cart/                             # Shopping cart
+udemy.com/teaching/                         # Instructor dashboard
+udemy.com/teaching/courses/                 # Instructor&#39;s courses
+udemy.com/certificate/{credentialId}/       # Certificate verification
+business.udemy.com/                         # Udemy Business
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Search Bar</strong>: Autocomplete with courses, instructors, and topics; keyword search across titles, descriptions</li>
+<li><strong>Category Browse</strong>: 13 categories → subcategories → topics with course count</li>
+<li><strong>Filters</strong>: Rating (4.5+, 4.0+, 3.5+), Duration (0-1h, 1-3h, 3-6h, 6-17h, 17+h), Level (Beginner, Intermediate, Advanced, All), Language, Price (Free, Paid), Features (Subtitles, Quizzes, Practice Tests)</li>
+<li><strong>Sort</strong>: Most Popular, Highest Rated, Newest</li>
+<li><strong>Topic Pages</strong>: Aggregated pages for popular skills (e.g., &quot;Python&quot;, &quot;Excel&quot;)</li>
+<li><strong>Instructor Search</strong>: Find all courses by a specific instructor</li>
+<li><strong>Smart Recommendations</strong>: Based on purchase history, browsing, and similar learners</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App</td>
+<td>Bottom tab bar; vertical course cards; full-screen video player; offline downloads; picture-in-picture</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Grid course cards; course player with collapsible sidebar; landscape video</td>
+</tr>
+<tr>
+<td>Desktop (primary)</td>
+<td>Top nav with mega menu; course grid with hover preview; player with persistent sidebar curriculum</td>
+</tr>
+<tr>
+<td>TV (Udemy app)</td>
+<td>Lean-back viewing; simplified browse; large video player; no note-taking</td>
+</tr>
+<tr>
+<td>Offline (mobile)</td>
+<td>Download lectures for offline viewing; progress syncs when back online</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>Browse catalog, view course pages, read reviews, search; cannot enroll</td>
+</tr>
+<tr>
+<td>Free User</td>
+<td>Enroll in free courses, purchase paid courses, take notes, Q&amp;A, earn certificates</td>
+</tr>
+<tr>
+<td>Paid Course Owner</td>
+<td>Lifetime access to purchased course, including future updates; 30-day refund window</td>
+</tr>
+<tr>
+<td>Udemy Business User</td>
+<td>Access curated course collection via employer; learning paths; admin reporting</td>
+</tr>
+<tr>
+<td>Instructor</td>
+<td>Create and publish courses, set pricing, view analytics, earn revenue (37-97% split depending on channel), respond to Q&amp;A and reviews</td>
+</tr>
+<tr>
+<td>Premium Instructor</td>
+<td>Higher visibility, promotional tools, instructor community access</td>
+</tr>
+<tr>
+<td>Udemy Staff</td>
+<td>Content quality review, feature courses, manage marketplace, moderate reviews</td>
+</tr>
+<tr>
+<td>Admin (Udemy Business)</td>
+<td>Manage licenses, assign learning paths, view team analytics, SSO configuration</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

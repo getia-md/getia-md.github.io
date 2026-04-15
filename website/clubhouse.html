@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubhouse — IA.md | getIA.md</title>
+  <meta name="description" content="Drop-in audio. Rooms, clubs, replays. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=joinclubhouse.com&sz=64" alt="Clubhouse" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Clubhouse</h1>
+      <p class="detail-brand-tagline">Drop-in audio. Rooms, clubs, replays.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/clubhouse/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://joinclubhouse.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/clubhouse/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Clubhouse</h1>
+<h2>1. Overview</h2>
+<p>Clubhouse is a drop-in audio conversation platform where users join live rooms to listen, speak, and network. The IA centers on real-time audio rooms organized by topics and clubs, with a hallway-style feed that surfaces active and upcoming conversations. The ephemeral nature of live rooms (now supplemented by replays) creates urgency, while clubs and following graphs provide persistent community structure.</p>
+<h2>2. Site Map</h2>
+<pre><code>Clubhouse
+├── Hallway (Home Feed)
+│   ├── Live Rooms (happening now)
+│   ├── Upcoming Rooms (scheduled)
+│   └── Replays (recorded rooms)
+├── Explore / Search
+│   ├── People
+│   ├── Clubs
+│   ├── Topics
+│   └── Suggested Rooms
+├── Room (live audio)
+│   ├── Stage (speakers)
+│   ├── Audience
+│   ├── Raise Hand
+│   ├── Chat (text backchannel)
+│   ├── Links / Pinned
+│   └── Replay toggle
+├── Clubs
+│   ├── Club Profile
+│   ├── Members
+│   ├── Rooms (past/scheduled)
+│   └── Rules / Description
+├── Notifications
+│   ├── Room Invites
+│   ├── Followers
+│   ├── Club Updates
+│   └── Scheduled Reminders
+├── Profile
+│   ├── Bio
+│   ├── Clubs
+│   ├── Followers / Following
+│   ├── Replays
+│   └── Interests (topics)
+├── Messages (DMs / Backchannel)
+├── Create
+│   ├── Start a Room (open / social / closed)
+│   └── Schedule a Room
+└── Settings
+    ├── Account
+    ├── Notifications
+    ├── Privacy
+    └── Linked Accounts
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Bottom tab bar (mobile-first)</li>
+<li><strong>Bottom Tabs</strong>: Hallway (home), Search/Explore, Notifications, Messages, Profile</li>
+<li><strong>Room Entry</strong>: Tap room card from Hallway → drops into live audio room</li>
+<li><strong>FAB (Floating Action Button)</strong>: Green &quot;Start a Room&quot; button always visible at bottom</li>
+<li><strong>Room Navigation</strong>: Minimize room to floating pill at top while browsing other screens</li>
+<li><strong>Topic Chips</strong>: Tappable interest tags in Explore to filter rooms by topic</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Room</td>
+<td>title, topic tags, room type (open/social/closed), speakers, listener count, start time, replay flag</td>
+<td>→ Club, → Speakers, → Replay</td>
+</tr>
+<tr>
+<td>Replay</td>
+<td>audio recording, room title, speakers, duration, timestamp, clip support</td>
+<td>→ Room, → Club</td>
+</tr>
+<tr>
+<td>Club</td>
+<td>name, avatar, description, rules, member count, admin list, topic</td>
+<td>→ Rooms, → Members</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>name, username, bio, photo, follower count, interests/topics, clubs</td>
+<td>→ Rooms, → Clubs</td>
+</tr>
+<tr>
+<td>Scheduled Event</td>
+<td>title, date/time, description, club, hosts, reminder count</td>
+<td>→ Room (when live)</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td>name, related topics</td>
+<td>→ Rooms, → Clubs, → Profiles</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>text, sender, timestamp, room link</td>
+<td>→ User(s)</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Joining a Live Room</h3>
+<ol>
+<li>Open app → Hallway shows active rooms with speaker avatars and listener count</li>
+<li>Tap room card → Immediately dropped into room as listener (audio plays)</li>
+<li>Raise hand icon → Moderator can invite to stage → Unmute and speak</li>
+<li>Leave quietly at any time by tapping &quot;Leave&quot; button</li>
+</ol>
+<h3>Scheduling a Room</h3>
+<ol>
+<li>Tap &quot;Start a Room&quot; → Choose &quot;Schedule for later&quot;</li>
+<li>Set title, topic, date/time, co-hosts, club (optional)</li>
+<li>Share event link → Followers receive notification before start</li>
+<li>At scheduled time, creator opens room → Attendees get ping to join</li>
+</ol>
+<h3>Exploring Topics</h3>
+<ol>
+<li>Tap Explore → Browse topic categories (Tech, Music, Health, etc.)</li>
+<li>Tap topic → See live rooms, upcoming events, and clubs under that topic</li>
+<li>Follow topic → Hallway prioritizes rooms matching followed topics</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>joinclubhouse.com/                          # Landing page / download
+joinclubhouse.com/room/{roomId}             # Room deeplink (opens in app)
+joinclubhouse.com/club/{clubSlug}           # Club profile
+joinclubhouse.com/event/{eventId}           # Scheduled event
+joinclubhouse.com/@{username}               # User profile
+joinclubhouse.com/topic/{topicSlug}         # Topic page
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Universal Search</strong>: People, clubs, topics, rooms</li>
+<li><strong>Hallway Filters</strong>: &quot;For You&quot; (algorithmic) vs. following-based feed</li>
+<li><strong>Topic Browsing</strong>: Explore tab organized by category with horizontal scroll</li>
+<li><strong>Club Discovery</strong>: Search clubs by name or browse by topic</li>
+<li><strong>Language Filter</strong>: Filter rooms by spoken language</li>
+<li><strong>No Full-Text Audio Search</strong>: Audio content is not transcribed for search (replays are browse-only)</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (primary)</td>
+<td>Single-pane; bottom tab bar; rooms are full-screen audio with speaker grid; floating minimized room pill</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Enlarged phone layout; larger speaker grid in rooms</td>
+</tr>
+<tr>
+<td>Web (joinclubhouse.com)</td>
+<td>Marketing site + limited room listening on web; profile and club pages viewable; deeplinks redirect to app</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>Not a primary platform; web-based listening added for accessibility</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Listener</td>
+<td>Join open rooms, listen, raise hand, react with emoji, view profiles</td>
+</tr>
+<tr>
+<td>Speaker (on stage)</td>
+<td>Speak, mute/unmute self, share links</td>
+</tr>
+<tr>
+<td>Room Moderator</td>
+<td>Move users to stage, mute speakers, remove users, end room, pin links, toggle replay</td>
+</tr>
+<tr>
+<td>Club Admin</td>
+<td>Create rooms under club, manage members, edit club info, schedule events</td>
+</tr>
+<tr>
+<td>Club Member</td>
+<td>Join club rooms, receive notifications, appear in member list</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Follow people/clubs, set interests, DM, start/schedule rooms</td>
+</tr>
+<tr>
+<td>Non-registered Visitor</td>
+<td>View landing page; must download app and sign up to access content</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

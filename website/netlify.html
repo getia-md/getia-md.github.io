@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netlify — IA.md | getIA.md</title>
+  <meta name="description" content="JAMstack hosting. Deploy previews, forms, functions. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=netlify.com&sz=64" alt="Netlify" onerror="this.parentElement.textContent='N'">
+      </div>
+      <h1 class="detail-brand-name">Netlify</h1>
+      <p class="detail-brand-tagline">JAMstack hosting. Deploy previews, forms, functions.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/netlify/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://netlify.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/netlify/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Netlify — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Netlify pioneered the JAMstack hosting model and remains a leading platform for deploying modern web applications. The IA is organized around a <strong>site-centric deployment dashboard</strong> — every project is a &quot;site&quot; with its own deploy history, build settings, domain configuration, and function endpoints. The architecture supports Git-based continuous deployment (push to deploy), deploy previews (per-PR deployments), serverless functions, edge functions, forms, identity (auth), and split testing. Netlify&#39;s IA reflects a developer-friendly philosophy: minimal configuration, sensible defaults, and a flat hierarchy where sites are the primary organizational unit.</p>
+<h2>Site Map</h2>
+<pre><code>app.netlify.com
+├── / (Team dashboard — all sites)
+├── /teams/{team_slug}
+│   └── /overview (Team overview)
+├── /sites/{site_id} (Individual site)
+│   ├── /overview (Deploy status, recent deploys)
+│   ├── /deploys (Deploy history)
+│   │   └── /{deploy_id} (Deploy detail — log, summary)
+│   ├── /settings
+│   │   ├── /general (Site name, build settings, repo link)
+│   │   ├── /build-deploy (Build command, publish dir, env vars)
+│   │   ├── /domain-management (Custom domains, DNS, HTTPS)
+│   │   ├── /notifications (Deploy notifications — Slack, email, webhook)
+│   │   ├── /forms (Form submissions)
+│   │   ├── /functions (Serverless functions config)
+│   │   ├── /identity (Auth/user management)
+│   │   ├── /access-control (Password protection, JWT)
+│   │   └── /analytics
+│   ├── /functions (Function logs &amp; invocations)
+│   ├── /forms (Form submission data)
+│   ├── /analytics (Site analytics)
+│   └── /plugins (Build plugins)
+├── /account/settings
+│   ├── /general
+│   ├── /billing
+│   ├── /members
+│   └── /audit-log
+├── /integrations (Integration marketplace)
+└── /drop (Drag-and-drop deploy)
+
+netlify.com (marketing)
+├── / (Home)
+├── /pricing
+├── /products/* (Platform, Connect, Create)
+├── /docs (Documentation)
+└── /blog
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Top bar — Sites (team dashboard), Integrations, Docs, Support, Team selector</li>
+<li><strong>Site navigation</strong>: Left sidebar within a site — Overview, Deploys, Functions, Forms, Analytics, Plugins, Settings</li>
+<li><strong>Settings navigation</strong>: Nested sub-nav within Settings — General, Build &amp; Deploy, Domain Management, Notifications, etc.</li>
+<li><strong>Team navigation</strong>: Team dropdown in top bar → switch between teams/orgs</li>
+<li><strong>Deploy navigation</strong>: Deploy list → click deploy → deploy log with build output, summary, and deploy preview link</li>
+<li><strong>Breadcrumbs</strong>: Team → Site → Section → Sub-section</li>
+<li><strong>Mobile</strong>: Responsive dashboard; deploy logs are scrollable single-column</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Site</td>
+<td>Name, repo link, build settings, domains, deploy history, functions, forms</td>
+<td>Team-owned</td>
+</tr>
+<tr>
+<td>Deploy</td>
+<td>Commit hash, branch, status (success/fail/building), build log, deploy URL, timestamp</td>
+<td>Part of site</td>
+</tr>
+<tr>
+<td>Deploy Preview</td>
+<td>Unique URL for a specific PR/branch deploy, shareable</td>
+<td>Part of site</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>Serverless function file, invocation logs, endpoint URL</td>
+<td>Part of site</td>
+</tr>
+<tr>
+<td>Form</td>
+<td>HTML form name, submissions list, notification settings</td>
+<td>Part of site</td>
+</tr>
+<tr>
+<td>Build Plugin</td>
+<td>npm package extending build process, configuration</td>
+<td>Part of site</td>
+</tr>
+<tr>
+<td>Environment Variable</td>
+<td>Key-value pair, scoped to deploy context (production, branch deploys, deploy previews)</td>
+<td>Part of site</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>Name, members, sites, billing plan, audit log</td>
+<td>Team-owned</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Deploy a New Site</h3>
+<ol>
+<li>User clicks &quot;Add New Site&quot; → &quot;Import from Git&quot;</li>
+<li>Connects GitHub/GitLab/Bitbucket → selects repository</li>
+<li>Configures: branch to deploy, build command, publish directory</li>
+<li>Clicks Deploy → build starts immediately</li>
+<li>Build log streams in real-time → site deployed to <code>{site-name}.netlify.app</code></li>
+<li>Subsequent Git pushes trigger automatic deploys</li>
+</ol>
+<h3>Deploy Preview Workflow</h3>
+<ol>
+<li>Developer opens a PR on GitHub</li>
+<li>Netlify automatically builds the PR branch</li>
+<li>Deploy preview URL posted as PR comment (unique URL per commit)</li>
+<li>Reviewer clicks link → sees the changes live</li>
+<li>PR merged → production deploy triggered automatically</li>
+</ol>
+<h3>Custom Domain Setup</h3>
+<ol>
+<li>User navigates to Site → Settings → Domain Management</li>
+<li>Adds custom domain → Netlify provides DNS records</li>
+<li>Option A: Use Netlify DNS (point nameservers) — automatic HTTPS via Let&#39;s Encrypt</li>
+<li>Option B: External DNS — add CNAME record manually</li>
+<li>HTTPS certificate provisioned automatically</li>
+</ol>
+<h3>Serverless Functions</h3>
+<ol>
+<li>User creates <code>/netlify/functions/</code> directory in repo</li>
+<li>Writes function files (JS/TS) → each file becomes an API endpoint</li>
+<li>Deploys → functions available at <code>/.netlify/functions/{name}</code></li>
+<li>Monitor invocations and logs in Functions tab</li>
+<li>Environment variables accessible in function runtime</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>app.netlify.com/</code></td>
+<td>Team dashboard</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/teams/{slug}</code></td>
+<td>Team overview</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/sites/{site_id}</code></td>
+<td>Site overview</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/sites/{site_id}/deploys</code></td>
+<td>Deploy history</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/sites/{site_id}/deploys/{deploy_id}</code></td>
+<td>Deploy detail</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/sites/{site_id}/settings/general</code></td>
+<td>Site settings</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/sites/{site_id}/functions</code></td>
+<td>Functions</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/sites/{site_id}/forms</code></td>
+<td>Forms</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/sites/{site_id}/analytics</code></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/account/settings</code></td>
+<td>Account settings</td>
+</tr>
+<tr>
+<td><code>app.netlify.com/drop</code></td>
+<td>Drag-and-drop deploy</td>
+</tr>
+</tbody></table>
+<p>Site IDs are human-readable slugs (derived from site name). Deploy IDs are alphanumeric.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Site search</strong>: Search sites by name in team dashboard</li>
+<li><strong>Deploy filtering</strong>: Filter deploys by branch (production, branch deploys, deploy previews), status (success, failed, building), date</li>
+<li><strong>Function logs</strong>: Filter by function name, date range</li>
+<li><strong>Form submissions</strong>: Filter by form name, date range</li>
+<li><strong>Plugin search</strong>: Search build plugins by name/category in integration marketplace</li>
+<li><strong>No full-text search</strong>: Cannot search deploy logs or function output content</li>
+<li><strong>Docs search</strong>: Full-text documentation search</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1024px)</td>
+<td>Top nav + site sidebar + main content area</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Collapsible sidebar + full-width content</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger menu, single-column layout, deploy logs as scrollable blocks</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Dashboard site cards reflow from grid to list on mobile</li>
+<li>Deploy log output is monospace with horizontal scroll for long lines</li>
+<li>Settings forms stack vertically</li>
+<li>Analytics charts resize responsively</li>
+<li>Drag-and-drop deploy area works on desktop only</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, docs (no dashboard)</td>
+</tr>
+<tr>
+<td>Free (Starter)</td>
+<td>1 member, 100GB bandwidth, 300 build minutes/mo, basic features</td>
+</tr>
+<tr>
+<td>Pro ($19/member/mo)</td>
+<td>Unlimited members, 1TB bandwidth, 25K build minutes, analytics, background functions</td>
+</tr>
+<tr>
+<td>Business ($99/member/mo)</td>
+<td>Pro + SAML SSO, audit log, priority support</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Custom limits, SLA, dedicated support, advanced security</td>
+</tr>
+<tr>
+<td>Team roles</td>
+<td>Owner → Admin → Developer → Collaborator (view-only on specific sites)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, GitHub OAuth, GitLab OAuth, Bitbucket OAuth</li>
+<li>Site-level access: Sites can be public (anyone can view) or password-protected</li>
+<li>Deploy notifications: Per-site webhook/email/Slack configuration</li>
+<li>Environment variables: Secret by default; not exposed in build logs</li>
+<li>Audit log: Available on Business+ plans — tracks all team member actions</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

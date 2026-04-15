@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaunchDarkly — IA.md | getIA.md</title>
+  <meta name="description" content="Feature flags. Targeting, experiments, rollouts. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=launchdarkly.com&sz=64" alt="LaunchDarkly" onerror="this.parentElement.textContent='L'">
+      </div>
+      <h1 class="detail-brand-name">LaunchDarkly</h1>
+      <p class="detail-brand-tagline">Feature flags. Targeting, experiments, rollouts.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/launchdarkly/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://launchdarkly.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/launchdarkly/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>LaunchDarkly — Information Architecture</h1>
+<h2>Overview</h2>
+<p>LaunchDarkly is the market-leading feature management platform that enables teams to control feature releases through feature flags (also called feature toggles). The IA is structured around a <strong>flag-centric management hierarchy</strong>: Organization → Project → Environment → Feature Flags. Each flag can be toggled, targeted to specific user segments, and configured with multivariate values. The platform goes beyond simple on/off toggles to support progressive rollouts, A/B experiments, entitlements, and release automation. The IA also incorporates Segments (reusable user groups), Metrics (for experimentation), and Contexts (the evolution of &quot;users&quot; into multi-dimensional targeting entities). The dashboard is designed for both developers (who create flags) and product managers (who control rollouts).</p>
+<h2>Site Map</h2>
+<pre><code>app.launchdarkly.com
+├── / (Dashboard — flag activity, recent changes)
+├── /{project_key}/flags (Feature flags list)
+│   └── /{flag_key} (Flag detail — targeting, variations, activity)
+│       ├── /targeting (Targeting rules &amp; rollout)
+│       ├── /variations (Flag value variations)
+│       ├── /activity (Audit log for this flag)
+│       ├── /experiments (A/B experiments linked)
+│       └── /settings (Flag metadata)
+├── /{project_key}/segments (User/Context segments)
+│   └── /{segment_key}
+├── /{project_key}/contexts (Context explorer — live user data)
+│   └── /{context_id}
+├── /{project_key}/experiments (Experimentation)
+│   └── /{experiment_key}
+├── /{project_key}/metrics (Metric definitions for experiments)
+│   └── /{metric_key}
+├── /{project_key}/releases (Release pipelines)
+│   └── /{release_id}
+├── /settings
+│   ├── /projects (Project management)
+│   ├── /environments (Environment management)
+│   ├── /members (Team members &amp; roles)
+│   ├── /teams
+│   ├── /integrations (Slack, Jira, Datadog, etc.)
+│   ├── /webhooks
+│   ├── /access-tokens
+│   ├── /security (SSO, MFA)
+│   └── /billing
+├── /changelog (Account-wide audit log)
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — Dashboard, Feature Flags, Segments, Contexts, Experiments, Releases</li>
+<li><strong>Environment selector</strong>: Prominent dropdown in top bar — switches all views between environments (Production, Staging, Development, QA)</li>
+<li><strong>Project selector</strong>: Top-left dropdown for multi-project organizations</li>
+<li><strong>Flag detail navigation</strong>: Tabs within a flag — Targeting, Variations, Insights, Activity, Code References, Settings</li>
+<li><strong>Settings navigation</strong>: Separate settings section — Projects, Environments, Members, Teams, Integrations, Billing</li>
+<li><strong>Utility navigation</strong>: Top-right — changelog (audit), avatar → Account, Sign out</li>
+<li><strong>Quick actions</strong>: Flag list has inline toggles — flip a flag on/off without opening the detail page</li>
+<li><strong>Mobile</strong>: Not optimized for mobile — enterprise desktop tool</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Feature Flag</td>
+<td>Key, name, description, variations (boolean, string, number, JSON), targeting rules, prerequisites, tags</td>
+<td>Project-scoped</td>
+</tr>
+<tr>
+<td>Targeting Rule</td>
+<td>Context attributes (email, plan, country, etc.), operator, values, rollout percentage, variation to serve</td>
+<td>Part of flag</td>
+</tr>
+<tr>
+<td>Variation</td>
+<td>Named value — the actual value served to the application (e.g., true/false, &quot;v1&quot;/&quot;v2&quot;)</td>
+<td>Part of flag</td>
+</tr>
+<tr>
+<td>Segment</td>
+<td>Key, name, rules for including/excluding contexts, reusable across flags</td>
+<td>Project-scoped</td>
+</tr>
+<tr>
+<td>Context</td>
+<td>Entity being evaluated (user, device, organization) with attributes, flag evaluations</td>
+<td>Runtime data</td>
+</tr>
+<tr>
+<td>Experiment</td>
+<td>Flag + metric pairing, statistical analysis of variation impact</td>
+<td>Project-scoped</td>
+</tr>
+<tr>
+<td>Metric</td>
+<td>Custom event (click-through, conversion, latency), measured for experiments</td>
+<td>Project-scoped</td>
+</tr>
+<tr>
+<td>Release Pipeline</td>
+<td>Staged rollout plan: flag changes across environments with approval gates</td>
+<td>Project-scoped</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Named deployment target (production, staging, dev) with independent flag states</td>
+<td>Project-level</td>
+</tr>
+<tr>
+<td>Audit Entry</td>
+<td>Who changed what flag, when, in which environment, old/new values</td>
+<td>Account-level</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Creating and Rolling Out a Feature Flag</h3>
+<ol>
+<li>Developer creates a flag: key (<code>enable-new-checkout</code>), name, boolean type</li>
+<li>Flag defaults to <code>false</code> in all environments</li>
+<li>Wraps new feature code with flag check: <code>if (ldClient.variation(&#39;enable-new-checkout&#39;)))</code></li>
+<li>Deploys code — feature is off for all users</li>
+<li>Product manager opens flag → Targeting tab → enables for internal team (segment: &quot;employees&quot;)</li>
+<li>Monitors feedback → adds 10% rollout to production users</li>
+<li>Gradually increases to 50%, 100% → flag becomes permanent → remove flag from code</li>
+</ol>
+<h3>Targeted Rollout with Segments</h3>
+<ol>
+<li>User creates Segment: &quot;beta-users&quot; with rules (email contains &quot;@beta.com&quot; OR attribute &quot;plan&quot; = &quot;enterprise&quot;)</li>
+<li>Opens flag → Targeting → adds targeting rule: Segment &quot;beta-users&quot; → serve <code>true</code></li>
+<li>All matching users see the new feature</li>
+<li>Segment is reusable — apply to multiple flags</li>
+</ol>
+<h3>A/B Experiment</h3>
+<ol>
+<li>User creates Metric: &quot;checkout-conversion&quot; (custom event from app)</li>
+<li>Creates Experiment: links flag (<code>checkout-variant</code>) with metric</li>
+<li>Flag has 3 variations: &quot;control&quot;, &quot;variant-a&quot;, &quot;variant-b&quot;</li>
+<li>Sets rollout: 34% each variation</li>
+<li>Experiment runs → statistical analysis shows which variant performs best</li>
+<li>Winning variant rolled out to 100%</li>
+</ol>
+<h3>Release Pipeline</h3>
+<ol>
+<li>Team creates Release Pipeline with stages: Dev → Staging → Canary → Production</li>
+<li>Links flag changes to each stage</li>
+<li>Start release → flag enabled in Dev automatically</li>
+<li>Promote to Staging → approval gate (requires team lead approval)</li>
+<li>Promote to Canary (5% of production) → monitor metrics</li>
+<li>Promote to Production (100%) — full rollout complete</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Dashboard</td>
+</tr>
+<tr>
+<td><code>/{project_key}/flags</code></td>
+<td>Flag list</td>
+</tr>
+<tr>
+<td><code>/{project_key}/flags/{flag_key}</code></td>
+<td>Flag detail</td>
+</tr>
+<tr>
+<td><code>/{project_key}/flags/{flag_key}/targeting</code></td>
+<td>Targeting rules</td>
+</tr>
+<tr>
+<td><code>/{project_key}/segments/{segment_key}</code></td>
+<td>Segment detail</td>
+</tr>
+<tr>
+<td><code>/{project_key}/contexts</code></td>
+<td>Context explorer</td>
+</tr>
+<tr>
+<td><code>/{project_key}/experiments/{key}</code></td>
+<td>Experiment detail</td>
+</tr>
+<tr>
+<td><code>/{project_key}/releases/{id}</code></td>
+<td>Release pipeline</td>
+</tr>
+<tr>
+<td><code>/settings/projects</code></td>
+<td>Project management</td>
+</tr>
+<tr>
+<td><code>/settings/members</code></td>
+<td>Team members</td>
+</tr>
+<tr>
+<td><code>/settings/integrations</code></td>
+<td>Integrations</td>
+</tr>
+<tr>
+<td><code>/changelog</code></td>
+<td>Audit log</td>
+</tr>
+</tbody></table>
+<p>Project and flag keys are developer-defined slugs (e.g., <code>my-app</code>, <code>enable-dark-mode</code>). Environment key is a query parameter or part of the UI state, not the URL.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Flag search</strong>: Search flags by key, name, or tag; filter by status (on/off), tags, maintainer</li>
+<li><strong>Flag list filtering</strong>: Filter by archived, temporary/permanent, recently changed, stale (not evaluated)</li>
+<li><strong>Context search</strong>: Search individual contexts by key or attributes</li>
+<li><strong>Segment search</strong>: Search segments by key or name</li>
+<li><strong>Audit log search</strong>: Filter by member, flag, project, environment, date range, action type</li>
+<li><strong>Code references</strong>: Search codebase for flag references (integrated with GitHub/GitLab)</li>
+<li><strong>Tag system</strong>: Flags and segments can be tagged for categorization (e.g., &quot;frontend&quot;, &quot;mobile&quot;, &quot;experiment&quot;)</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + flag list with inline toggles + targeting rules detail</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + full content</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Sidebar as overlay + simplified flag list</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Not a primary use case — basic functionality available but complex targeting rules are impractical</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Flag list is a data-dense table — environment toggle columns visible on desktop, hidden on mobile</li>
+<li>Targeting rules builder uses nested conditions — requires desktop-width for comfortable editing</li>
+<li>Dashboard activity feed works at all sizes</li>
+<li>Experiment results charts resize responsively</li>
+<li>Audit log table scrolls horizontally on narrow screens</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>No access</td>
+</tr>
+<tr>
+<td>Reader</td>
+<td>View flags, segments, contexts (no modifications)</td>
+</tr>
+<tr>
+<td>Writer</td>
+<td>Reader + create/edit flags, targeting rules, segments</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Writer + manage projects, environments, members, integrations</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Admin + billing, account-level settings</td>
+</tr>
+<tr>
+<td>Custom roles</td>
+<td>Enterprise: define granular permissions per resource type</td>
+</tr>
+<tr>
+<td>Approval workflows</td>
+<td>Require approval from specific roles before flag changes in production</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, Google OAuth, SSO/SAML (Enterprise), MFA</li>
+<li>Environment-level permissions: Different roles per environment (e.g., Writer in staging, Reader in production)</li>
+<li>Approval gates: Require approval before changes to specific flags or environments</li>
+<li>API tokens: Service tokens (project-scoped) and personal tokens (user-scoped)</li>
+<li>SDK keys: Client-side and server-side keys per environment (client-side keys are safe to expose)</li>
+<li>Audit trail: Every flag change logged with who, what, when, and diff</li>
+<li>Integrations: Slack notifications, Jira ticket linking, Datadog/New Relic metrics forwarding</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

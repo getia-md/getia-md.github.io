@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expedia — IA.md | getIA.md</title>
+  <meta name="description" content="Travel booking. Bundles, One Key rewards. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=expedia.com&sz=64" alt="Expedia" onerror="this.parentElement.textContent='E'">
+      </div>
+      <h1 class="detail-brand-name">Expedia</h1>
+      <p class="detail-brand-tagline">Travel booking. Bundles, One Key rewards.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/expedia/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://expedia.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/expedia/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Expedia</h1>
+<h2>1. Overview</h2>
+<p>Expedia is a full-service online travel agency (OTA) enabling booking of flights, hotels, vacation rentals, car rentals, cruises, and bundled packages. The IA is transaction-driven — every surface is designed to move users from search to booking. The platform differentiates through its One Key rewards program (unifying Expedia, Hotels.com, and Vrbo), bundle discounts (&quot;Save when you book together&quot;), and price tracking with alerts. The experience is optimized for comparison shopping across hundreds of providers.</p>
+<h2>2. Site Map</h2>
+<pre><code>Expedia
+├── Home
+│   ├── Search Module
+│   │   ├── Stays
+│   │   ├── Flights
+│   │   ├── Cars
+│   │   ├── Packages (flight + hotel)
+│   │   ├── Things to Do
+│   │   ├── Cruises
+│   │   └── Groups &amp; Meetings
+│   ├── Deals &amp; Promotions
+│   ├── Trending Destinations
+│   ├── Recently Searched
+│   ├── One Key Benefits
+│   └── App Download CTA
+├── Search Results
+│   ├── Hotel Results
+│   │   ├── List + Map Toggle
+│   │   ├── Filters Panel
+│   │   ├── Sort Options
+│   │   ├── Price Comparison
+│   │   ├── VIP Access Properties
+│   │   └── Bundle Savings Callout
+│   ├── Flight Results
+│   │   ├── Filter (airline, stops, times, duration)
+│   │   ├── Price Calendar
+│   │   ├── Fare Comparison
+│   │   └── Flexible Dates
+│   ├── Car Rental Results
+│   ├── Vacation Rental Results
+│   └── Package Results
+├── Property Detail (Hotel)
+│   ├── Photos Gallery
+│   ├── Overview (rating, location, description)
+│   ├── Room Types &amp; Rates
+│   │   ├── Room photos
+│   │   ├── Amenities
+│   │   ├── Cancellation Policy
+│   │   ├── Price per night
+│   │   └── Reserve Button
+│   ├── Location &amp; Map
+│   ├── Amenities List
+│   ├── Reviews (verified travelers)
+│   ├── Nearby Properties
+│   └── Add to Trip
+├── Flight Detail
+│   ├── Flight Segments (outbound + return)
+│   ├── Fare Classes (basic, main, flex)
+│   ├── Baggage Policy
+│   ├── Seat Selection
+│   └── Price Breakdown
+├── Booking Flow
+│   ├── Traveler Information
+│   ├── Payment
+│   │   ├── Credit/Debit Card
+│   │   ├── One Key Cash (rewards)
+│   │   ├── PayPal
+│   │   └── Pay Later (Affirm)
+│   ├── Travel Protection (insurance)
+│   ├── Price Summary
+│   ├── Promo Code
+│   └── Confirmation
+├── Trips (My Trips)
+│   ├── Upcoming Trips
+│   ├── Past Trips
+│   ├── Cancelled
+│   ├── Trip Detail
+│   │   ├── Itinerary
+│   │   ├── Booking Confirmations
+│   │   ├── Check-in Links
+│   │   └── Add Activities
+│   └── Share Trip
+├── One Key Rewards
+│   ├── Membership Tiers (Blue, Silver, Gold, Platinum)
+│   ├── OneKeyCash Balance
+│   ├── Earn Rules
+│   ├── VIP Access Properties
+│   └── Cross-brand Usage (Expedia, Hotels.com, Vrbo)
+├── Price Tracking
+│   ├── Watched Trips
+│   ├── Price Alerts
+│   └── Price Drop Refunds (for tracked items)
+├── Things to Do
+│   ├── Attractions
+│   ├── Tours
+│   ├── Day Trips
+│   └── Transfers
+├── Account
+│   ├── Profile
+│   ├── Payment Methods
+│   ├── Traveler Profiles (saved info)
+│   ├── Communication Preferences
+│   ├── One Key Status
+│   └── Credits &amp; Coupons
+├── Customer Service
+│   ├── Help Center
+│   ├── Virtual Agent (chatbot)
+│   ├── Call Support
+│   └── Manage Booking (change/cancel)
+└── Cruises
+    ├── Cruise Search
+    ├── Cruise Lines
+    ├── Destinations
+    └── Cabin Selection
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar with tabbed search module</li>
+<li><strong>Desktop Top Bar</strong>: Logo, &quot;Español&quot; toggle, Support, Trips, Sign In | One Key callout</li>
+<li><strong>Search Module Tabs</strong>: Stays, Flights, Cars, Packages, Things to Do, Cruises — each with form fields</li>
+<li><strong>Mobile Bottom Tabs</strong>: Search, Trips, Rewards, Account</li>
+<li><strong>Results Page</strong>: Sticky filter bar + scrollable list; map toggle (hotels); sort dropdown</li>
+<li><strong>Booking Flow</strong>: Linear stepper — Select → Details → Payment → Confirmation</li>
+<li><strong>Cross-sell</strong>: After hotel booking, suggest flights/cars/activities (&quot;Complete your trip&quot;)</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hotel</td>
+<td>name, star rating, guest rating, review count, address, amenities, photos, VIP Access flag, property type</td>
+<td>→ Rooms, → Reviews, → Destination</td>
+</tr>
+<tr>
+<td>Room</td>
+<td>name, bed type, max occupancy, rate (per night), cancellation policy, meal plan, amenities</td>
+<td>→ Hotel</td>
+</tr>
+<tr>
+<td>Flight</td>
+<td>airline, flight number, departure/arrival, duration, stops, aircraft, fare classes, baggage</td>
+<td>→ Airline, → Route</td>
+</tr>
+<tr>
+<td>Car Rental</td>
+<td>vendor, car type/class, pickup/dropoff location, price per day, features (GPS, insurance)</td>
+<td>→ Vendor</td>
+</tr>
+<tr>
+<td>Vacation Rental</td>
+<td>inherits Hotel + kitchen, bedrooms, host info</td>
+<td>→ Vrbo integration</td>
+</tr>
+<tr>
+<td>Package</td>
+<td>hotel + flight (+ car optional), bundle discount, total price, savings amount</td>
+<td>→ Hotel, → Flight</td>
+</tr>
+<tr>
+<td>Activity/Experience</td>
+<td>name, provider, duration, price, availability, cancellation policy, description, meeting point</td>
+<td>→ Destination</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-10), text, traveler name, date, trip type, verified flag</td>
+<td>→ Hotel/Experience</td>
+</tr>
+<tr>
+<td>One Key Cash</td>
+<td>balance, earning rate by tier, redemption rate ($1 = 1 OneKeyCash)</td>
+<td>→ Account</td>
+</tr>
+<tr>
+<td>Price Alert</td>
+<td>property/flight, target price, current price, status (active/triggered)</td>
+<td>→ Account</td>
+</tr>
+<tr>
+<td>Trip</td>
+<td>name, dates, destination, bookings (hotel, flight, car, activities), shared users</td>
+<td>→ Bookings</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Booking a Hotel</h3>
+<ol>
+<li>Home → &quot;Stays&quot; tab → Enter destination, dates, guests</li>
+<li>Search → Results page with map and list</li>
+<li>Filter: Star rating, price range, guest rating, amenities, neighborhood, cancellation</li>
+<li>Sort: Recommended, Price (low-high), Guest Rating, Distance</li>
+<li>Click hotel → View photos, amenities, room types</li>
+<li>Select room → Choose rate (refundable vs. non-refundable)</li>
+<li>Checkout → Enter traveler info → Payment → Apply One Key Cash → Confirm</li>
+<li>Receive confirmation email → Booking appears in Trips</li>
+</ol>
+<h3>Booking a Package (Flight + Hotel)</h3>
+<ol>
+<li>Home → &quot;Packages&quot; tab → Enter origin, destination, dates, guests</li>
+<li>Select flight (outbound) → Select flight (return) → View package hotels</li>
+<li>Each hotel shows &quot;Member Price&quot; and &quot;Bundle Savings: $X&quot;</li>
+<li>Select hotel + room → View total package price</li>
+<li>Checkout → Potential savings of 10-30% vs. separate bookings</li>
+</ol>
+<h3>Using Price Tracking</h3>
+<ol>
+<li>Search for a flight or hotel → Don&#39;t book yet</li>
+<li>Click &quot;Track Price&quot; or bell icon on result</li>
+<li>Receive email/push notification when price drops</li>
+<li>If price drops after booking (within policy), receive automatic credit/refund</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>expedia.com/                                # Homepage
+expedia.com/Hotels                          # Hotel search
+expedia.com/Hotel-Search?destination={dest}&amp;checkIn={date}&amp;checkOut={date}  # Hotel results
+expedia.com/h{hotelId}.Hotel-Information    # Hotel detail
+expedia.com/Flights                         # Flight search
+expedia.com/Flights-Search?leg1={params}    # Flight results
+expedia.com/Cars                            # Car rental search
+expedia.com/Vacation-Packages              # Package search
+expedia.com/things-to-do/{destination}      # Activities
+expedia.com/Cruises                         # Cruise search
+expedia.com/trips                           # My Trips
+expedia.com/rewards                         # One Key Rewards
+expedia.com/deals                           # Deals &amp; promotions
+expedia.com/service/                        # Help center
+expedia.com/account                         # Account settings
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Multi-Product Search</strong>: Separate search forms for stays, flights, cars, packages, activities, cruises</li>
+<li><strong>Hotel Filters</strong>: Price range, star rating, guest rating, amenities (pool, WiFi, parking, breakfast), property type (hotel, resort, B&amp;B), neighborhood, cancellation policy, payment (pay later), VIP Access</li>
+<li><strong>Flight Filters</strong>: Airline, stops (nonstop, 1 stop, 2+), departure time, duration, price, cabin class</li>
+<li><strong>Price Calendar</strong>: Visual calendar showing cheapest dates for flexible travelers</li>
+<li><strong>Flexible Dates</strong>: &quot;+/- 3 days&quot; option to find lowest fares</li>
+<li><strong>Sort</strong>: Recommended, Price, Guest Rating, Distance, Stars, Duration (flights)</li>
+<li><strong>Map Search</strong>: Interactive map for hotels; zoom/pan to search area</li>
+<li><strong>Bundle Suggestions</strong>: Cross-sell cards suggesting related products to add to trip</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App (primary for booking management)</td>
+<td>Bottom tab bar; vertical search results; full-screen booking flow; push notifications for price alerts</td>
+</tr>
+<tr>
+<td>Mobile Web</td>
+<td>Responsive; same search/book flow; prompts app download</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Side-by-side map + list for hotels; expanded property cards</td>
+</tr>
+<tr>
+<td>Desktop (primary for research/booking)</td>
+<td>Tabbed search module; results with filter sidebar + map; wide property detail with photo gallery</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>Search, compare prices, view properties; must sign in to book</td>
+</tr>
+<tr>
+<td>Registered User (One Key Blue)</td>
+<td>Book, track prices, earn 1x OneKeyCash, access member prices</td>
+</tr>
+<tr>
+<td>One Key Silver</td>
+<td>2x OneKeyCash, VIP Access at select properties (room upgrades, late checkout)</td>
+</tr>
+<tr>
+<td>One Key Gold</td>
+<td>3x OneKeyCash, enhanced VIP Access, priority support</td>
+</tr>
+<tr>
+<td>One Key Platinum</td>
+<td>4x OneKeyCash, best VIP Access perks, top-tier support</td>
+</tr>
+<tr>
+<td>Business Travel User</td>
+<td>Managed booking with corporate rates, expense reporting, policy enforcement</td>
+</tr>
+<tr>
+<td>Travel Agent</td>
+<td>Access to agent portal, commission tracking, group booking tools</td>
+</tr>
+<tr>
+<td>Property Partner</td>
+<td>Manage listing, set rates/availability, respond to reviews, access performance analytics</td>
+</tr>
+<tr>
+<td>Airline / Car Partner</td>
+<td>Inventory and rate management via partner extranet</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

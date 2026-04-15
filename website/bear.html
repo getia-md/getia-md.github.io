@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bear — IA.md | getIA.md</title>
+  <meta name="description" content="Markdown notes. Tags, nested tags, focus mode. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=bear.app&sz=64" alt="Bear" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">Bear</h1>
+      <p class="detail-brand-tagline">Markdown notes. Tags, nested tags, focus mode.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/bear/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://bear.app" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/bear/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Bear</h1>
+<h2>Overview</h2>
+<p>Bear is a Markdown-based note-taking app exclusively for Apple platforms (macOS, iOS, iPadOS). Its IA is radically simple: there are no notebooks or folders — organization is entirely tag-based, with nested tags (e.g., <code>#work/projects/alpha</code>) creating a virtual hierarchy. The focus is on beautiful typography, a distraction-free writing experience, and fast search.</p>
+<h2>Site Map</h2>
+<pre><code>bear.app
+├── Sidebar
+│   ├── Notes (all)
+│   ├── Untagged
+│   ├── Todo (notes with checkboxes)
+│   ├── Today
+│   ├── Archive
+│   ├── Trash
+│   └── Tags Tree
+│       ├── #tag
+│       │   └── #tag/subtag
+│       │       └── #tag/subtag/child
+│       └── ...
+├── Note List (middle pane)
+│   ├── Note previews
+│   ├── Sort (date modified, date created, title)
+│   └── Pin to top
+├── Editor (right pane)
+│   ├── Markdown content
+│   ├── Rich previews (images, code blocks, sketches)
+│   ├── Inline tags (#)
+│   ├── Backlinks / Wikilinks ([[note title]])
+│   ├── Table of Contents
+│   ├── Focus Mode (typewriter scrolling)
+│   └── Export (PDF, HTML, DOCX, MD, JPG, etc.)
+├── Preferences
+│   ├── General
+│   ├── Editor (font, theme, Markdown compatibility)
+│   ├── Privacy (encryption, app lock)
+│   └── Bear Pro (sync, export, themes)
+└── No web app / No Android
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Three-pane layout (Mac):</strong> Sidebar (tags/system collections) → Note List → Editor</li>
+<li><strong>iOS:</strong> Tab-like navigation — Sidebar → Note List → Note (push navigation)</li>
+<li><strong>Tag-driven navigation:</strong> Clicking a tag in the sidebar filters the note list; clicking a nested tag shows children</li>
+<li><strong>Wikilinks:</strong> <code>[[note title]]</code> creates bidirectional links between notes for non-hierarchical navigation</li>
+<li><strong>Quick open (⌘P):</strong> Jump to any note by title search</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Note</td>
+<td>title (first line), body (Markdown), created date, modified date, pinned</td>
+<td>→ Tags (inline), Backlinks</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name, nesting (via <code>/</code>), auto-generated from note content</td>
+<td>→ Notes (many-to-many)</td>
+</tr>
+<tr>
+<td>Wikilink</td>
+<td><code>[[target note title]]</code></td>
+<td>→ Notes (bidirectional)</td>
+</tr>
+<tr>
+<td>Todo Item</td>
+<td>checkbox within note body</td>
+<td>→ Note</td>
+</tr>
+<tr>
+<td>Attachment</td>
+<td>images, files, sketches (Apple Pencil)</td>
+<td>→ Note (inline)</td>
+</tr>
+<tr>
+<td>Archive</td>
+<td>archived notes (hidden from main view)</td>
+<td>→ Notes</td>
+</tr>
+<tr>
+<td>Trash</td>
+<td>deleted notes (30-day retention)</td>
+<td>→ Notes</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Capture a Note</h3>
+<p><code>⌘N (or + button) → Start typing → Add #tags inline → Auto-saved → Tag tree updates in sidebar</code></p>
+<h3>2. Organize with Nested Tags</h3>
+<p><code>In note, type #work/projects/alpha → Sidebar shows work → projects → alpha hierarchy → Click any level to filter</code></p>
+<h3>3. Link Notes Together</h3>
+<p><code>In note, type [[Meeting Notes 2024]] → Creates clickable link → Target note shows backlink → Navigate between related notes</code></p>
+<h3>4. Focus Writing Session</h3>
+<p><code>Open note → View → Focus Mode → Typewriter scrolling enabled → Hide sidebar (⌘1) → Hide note list (⌘2) → Distraction-free writing</code></p>
+<h2>URL / Route Structure</h2>
+<p>Bear is a native app and does not use web URLs. Internal linking uses:</p>
+<pre><code>bear://x-callback-url/open-note?title={title}    # Open note by title
+bear://x-callback-url/open-note?id={id}           # Open note by ID
+bear://x-callback-url/create?title={t}&amp;text={t}   # Create note
+bear://x-callback-url/search?term={query}         # Search
+bear://x-callback-url/open-tag?name={tag}          # Open tag
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search (⌘F in sidebar):</strong> Full-text search across all note titles and body content; instant results</li>
+<li><strong>In-note search (⌘F in editor):</strong> Find within current note with highlight</li>
+<li><strong>Special search tokens:</strong> <code>@today</code>, <code>@yesterday</code>, <code>@images</code>, <code>@files</code>, <code>@todo</code>, <code>@done</code>, <code>@code</code></li>
+<li><strong>Tag filtering:</strong> Select tag in sidebar to filter note list; nested tags include children</li>
+<li><strong>System collections:</strong> Pre-built filters — Notes, Untagged, Todo, Today, Archive, Trash</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>macOS</td>
+<td>Three-pane resizable layout; hide sidebar/note list independently; multiple windows</td>
+</tr>
+<tr>
+<td>iPad</td>
+<td>Adaptive layout — sidebar + list + editor in landscape; stack in portrait; Split View supported</td>
+</tr>
+<tr>
+<td>iPhone</td>
+<td>Single-pane push navigation: Tags → Note List → Editor</td>
+</tr>
+<tr>
+<td>No web app</td>
+<td>No browser access; sync via iCloud across Apple devices only</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Single-user</td>
+<td>Bear is personal — no collaboration, no sharing within app</td>
+</tr>
+<tr>
+<td>App Lock</td>
+<td>Face ID / Touch ID / password to open app</td>
+</tr>
+<tr>
+<td>Note Encryption</td>
+<td>Individual notes can be encrypted with a password</td>
+</tr>
+<tr>
+<td>Export/Share</td>
+<td>Share notes via export (PDF, MD, etc.) or system share sheet</td>
+</tr>
+<tr>
+<td>Bear Pro</td>
+<td>Subscription required for sync, all themes, and advanced export formats</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

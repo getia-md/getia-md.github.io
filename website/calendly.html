@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendly — IA.md | getIA.md</title>
+  <meta name="description" content="Scheduling. Event types, round-robin, workflows. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=calendly.com&sz=64" alt="Calendly" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Calendly</h1>
+      <p class="detail-brand-tagline">Scheduling. Event types, round-robin, workflows.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/calendly/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://calendly.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/calendly/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Calendly</h1>
+<h2>Overview</h2>
+<p>Calendly eliminates the back-and-forth of scheduling by letting users share a booking link that shows their real-time availability. The IA revolves around Event Types (templates for meetings) and Scheduled Events (booked meetings). Routing forms, round-robin assignment, and workflow automations extend the platform from personal scheduling to team-wide booking infrastructure.</p>
+<h2>Site Map</h2>
+<pre><code>calendly.com
+├── Home (Upcoming Events Dashboard)
+├── Event Types
+│   ├── One-on-One
+│   ├── Group
+│   ├── Collective (multiple hosts)
+│   ├── Round Robin
+│   └── [Each Event Type]
+│       ├── Event Details (name, duration, location)
+│       ├── Availability
+│       ├── Invitee Questions
+│       ├── Notifications &amp; Workflows
+│       └── Confirmation Page
+├── Scheduled Events
+│   ├── Upcoming
+│   ├── Past
+│   ├── Date Range Filter
+│   └── Event Detail
+│       ├── Invitee Info
+│       ├── Reschedule / Cancel
+│       └── No-show
+├── Workflows (Automations)
+│   ├── Email Reminders
+│   ├── Follow-ups
+│   ├── SMS Notifications
+│   └── Custom Workflows
+├── Routing Forms
+│   ├── Questions
+│   └── Routing Rules → Event Types
+├── Analytics
+│   ├── Popular Times
+│   ├── Event Volume
+│   └── Team Activity
+├── Integrations
+│   ├── Calendars (Google, Outlook, iCloud)
+│   ├── Video (Zoom, Teams, Meet)
+│   ├── CRM (Salesforce, HubSpot)
+│   └── Embed / API
+├── Admin
+│   ├── Organization Settings
+│   ├── Managed Events
+│   ├── Teams
+│   └── Billing
+└── Booking Page (Public)
+    ├── User/Team Profile
+    ├── Event Type Selection
+    ├── Date/Time Picker
+    └── Invitee Form
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Top bar:</strong> Calendly logo, Home, Event Types, Scheduled Events, Workflows, Routing, Analytics, Admin</li>
+<li><strong>Home dashboard:</strong> Today&#39;s upcoming events, quick actions, recent bookings</li>
+<li><strong>Event Type editor:</strong> Step-by-step settings (Details → Availability → Questions → Notifications → Confirmation)</li>
+<li><strong>Booking page (public):</strong> Clean single-column flow — select event type → pick date/time → fill form → confirm</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>User</td>
+<td>name, email, timezone, calendar connections</td>
+<td>→ Event Types, Scheduled Events</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>name, members, booking page</td>
+<td>→ Round Robin pools, Collective events</td>
+</tr>
+<tr>
+<td>Event Type</td>
+<td>name, slug, duration, color, location, questions</td>
+<td>→ Availability rules, Workflows</td>
+</tr>
+<tr>
+<td>Scheduled Event</td>
+<td>date/time, status (active/canceled/rescheduled), invitee</td>
+<td>→ Event Type, User</td>
+</tr>
+<tr>
+<td>Invitee</td>
+<td>name, email, responses to questions, timezone</td>
+<td>→ Scheduled Event</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td>trigger (before/after event), action (email/SMS/webhook)</td>
+<td>→ Event Types</td>
+</tr>
+<tr>
+<td>Routing Form</td>
+<td>questions, routing rules</td>
+<td>→ Event Types</td>
+</tr>
+<tr>
+<td>Availability</td>
+<td>schedule (weekly hours), date overrides, buffer, limits</td>
+<td>→ Event Type</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Set Up and Share</h3>
+<p><code>Event Types → + New → Name, duration, location → Set availability → Add questions → Copy link → Share</code></p>
+<h3>2. Invitee Books a Meeting</h3>
+<p><code>Open booking link → Select event type → Choose date/time from available slots → Fill form → Confirm → Calendar invite sent</code></p>
+<h3>3. Round Robin Scheduling</h3>
+<p><code>Admin creates Round Robin event type → Add team members → Set distribution (optimize for availability or equal) → Invitee books → Auto-assigned</code></p>
+<h3>4. Automate Follow-ups</h3>
+<p><code>Workflows → + New → Trigger: After event ends → Action: Send follow-up email → Apply to event types → Activate</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>calendly.com/event_types                          # Manage event types
+calendly.com/event_types/{id}/edit                # Edit event type
+calendly.com/scheduled_events                     # Upcoming/past events
+calendly.com/{username}                           # Public booking page
+calendly.com/{username}/{event-slug}              # Specific event type booking
+calendly.com/{username}/{event-slug}/{date}       # Date-specific slots
+calendly.com/d/{invitee-uuid}                     # Invitee confirmation/reschedule
+calendly.com/routing/{form_id}                    # Routing form
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Scheduled events:</strong> Filter by date range, event type, status (active/canceled), invitee name/email</li>
+<li><strong>Event types:</strong> Search by name, filter by active/inactive</li>
+<li><strong>Analytics filters:</strong> Date range, event type, team member</li>
+<li><strong>Booking page:</strong> Availability auto-filtered by invitee&#39;s timezone and host&#39;s connected calendars</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1024px+)</td>
+<td>Full admin dashboard with sidebar navigation; booking page as centered card</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Responsive admin layout, booking page adapts naturally</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Fully responsive booking page (critical for invitees); admin app with simplified navigation</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Organization Owner</td>
+<td>Billing, all settings, manage all teams and members</td>
+</tr>
+<tr>
+<td>Organization Admin</td>
+<td>Manage members, teams, managed events, security settings</td>
+</tr>
+<tr>
+<td>Team Manager</td>
+<td>Manage team event types, view team analytics</td>
+</tr>
+<tr>
+<td>Team Member</td>
+<td>Own event types, view personal scheduled events</td>
+</tr>
+<tr>
+<td>Invitee (external)</td>
+<td>Book, reschedule, cancel own appointments via link</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

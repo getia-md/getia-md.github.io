@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercari — IA.md | getIA.md</title>
+  <meta name="description" content="C2C marketplace. Shipping labels, authentication. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=mercari.com&sz=64" alt="Mercari" onerror="this.parentElement.textContent='M'">
+      </div>
+      <h1 class="detail-brand-name">Mercari</h1>
+      <p class="detail-brand-tagline">C2C marketplace. Shipping labels, authentication.</p>
+      <span class="detail-category-badge">Marketplace</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/mercari/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://mercari.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/mercari/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Mercari</h1>
+<h2>1. Overview</h2>
+<p>Mercari is a consumer-to-consumer (C2C) marketplace where anyone can buy and sell almost anything — from clothing and electronics to home goods and collectibles. The IA revolves around <strong>listing simplicity</strong> (photo-first listing in minutes), <strong>buyer protection</strong> (item authentication for luxury goods, money-back guarantee), and <strong>prepaid shipping labels</strong> that remove friction. Mercari&#39;s architecture supports both web and app with near-feature-parity.</p>
+<h2>2. Site Map</h2>
+<pre><code>mercari.com
+├── Home (personalized feed)
+├── Browse
+│   ├── Categories
+│   │   ├── Women&#39;s
+│   │   ├── Men&#39;s
+│   │   ├── Electronics
+│   │   ├── Home
+│   │   ├── Toys &amp; Games
+│   │   ├── Sports
+│   │   └── ... (20+ categories)
+│   ├── Brands
+│   ├── Trending
+│   └── Deals
+├── Search
+│   ├── Results
+│   ├── Saved searches
+│   └── Search alerts
+├── Sell
+│   ├── List an item
+│   ├── Shipping options
+│   ├── Smart pricing
+│   └── Seller dashboard
+├── Item Detail Page
+│   ├── Photos
+│   ├── Description
+│   ├── Seller info
+│   ├── Shipping details
+│   ├── Make an offer
+│   ├── Buy now
+│   └── Authenticate (luxury)
+├── Mercari Authenticate
+│   ├── How it works
+│   └── Eligible brands
+├── My Page (Profile)
+│   ├── Listings
+│   ├── Purchases
+│   ├── Offers (sent/received)
+│   ├── Balance &amp; earnings
+│   ├── Reviews
+│   └── Settings
+├── Help Center
+│   ├── Buying
+│   ├── Selling
+│   ├── Shipping
+│   ├── Returns
+│   └── Contact
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── Prohibited items
+└── Auth
+    ├── Log in
+    └── Sign up
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Top bar</td>
+<td>Logo, Search bar (prominent), Browse, Sell button, Inbox, Profile, Cart</td>
+</tr>
+<tr>
+<td>Browse</td>
+<td>Category sidebar + filters</td>
+<td>Category tree, price range, condition, brand</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Multi-column</td>
+<td>Categories, Resources, Company, Legal, App badges</td>
+</tr>
+<tr>
+<td>App</td>
+<td>Bottom tab bar</td>
+<td>Home, Search, Sell (camera icon), Inbox, My Page</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: Search bar is the dominant navigation element. The &quot;Sell&quot; button is always visible as a persistent CTA, reflecting the two-sided marketplace model.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Listing</td>
+<td>title, photos (up to 12), description, price, condition, category, brand, size, shipping method, seller</td>
+</tr>
+<tr>
+<td>Offer</td>
+<td>listing, buyer, amount, expiration, counter-offer, status</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>username, avatar, rating, reviews count, listings, verified badge</td>
+</tr>
+<tr>
+<td>Transaction</td>
+<td>listing, buyer, seller, price, shipping tracking, status (purchased → shipped → delivered → rated)</td>
+</tr>
+<tr>
+<td>Shipping Label</td>
+<td>carrier, tracking number, estimated delivery, prepaid flag</td>
+</tr>
+<tr>
+<td>Authentication</td>
+<td>listing, status (pending/authentic/not authentic), certificate</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. List an item</h3>
+<ol>
+<li>Tap &quot;Sell&quot; → camera opens → take/upload photos</li>
+<li>AI auto-suggests title, category, brand from photo</li>
+<li>Fill in details (condition, description, price)</li>
+<li>Select shipping (prepaid label or ship on your own)</li>
+<li>Enable Smart Pricing (auto price drops) → Publish</li>
+</ol>
+<h3>5b. Buy an item</h3>
+<ol>
+<li>Search or browse → find item → view detail page</li>
+<li>&quot;Buy Now&quot; or &quot;Make an Offer&quot; (negotiate)</li>
+<li>Checkout → select payment method (credit, debit, Mercari balance)</li>
+<li>Seller ships → tracking visible to buyer</li>
+<li>Item delivered → buyer confirms → rate seller → funds released</li>
+</ol>
+<h3>5c. Authenticate luxury item</h3>
+<ol>
+<li>Seller lists luxury item → opts into Mercari Authenticate</li>
+<li>Buyer purchases → item ships to Mercari authentication center</li>
+<li>Expert inspection → item verified authentic</li>
+<li>Forwarded to buyer with authentication certificate</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>/                           → Home feed
+/search/                    → Search results
+/search/?keyword={q}        → Keyword search
+/category/{id}/             → Category browse
+/item/{item-id}/            → Item detail page
+/sell/                      → List new item
+/mypage/                    → User profile/dashboard
+/mypage/listings/           → Active listings
+/mypage/purchases/          → Purchase history
+/mypage/balance/            → Earnings &amp; balance
+/authenticate/              → Authentication info
+/help/                      → Help center
+/help/{category}/           → Help category
+/help/{category}/{article}/ → Help article
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global search</td>
+<td>Autocomplete, recent searches, trending terms, photo search</td>
+</tr>
+<tr>
+<td>Filters</td>
+<td>Category, price range, condition (new/like new/good/fair/poor), brand, size, color</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Relevance, newest, price low-high, price high-low, likes</td>
+</tr>
+<tr>
+<td>Saved search</td>
+<td>Save criteria → push notification when new match listed</td>
+</tr>
+<tr>
+<td>Smart pricing alerts</td>
+<td>Buyer gets notified when watched item drops in price</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Multi-column grid (4-5 items), sidebar filters, full item detail</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>3-column grid, collapsible filters</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>2-column grid, bottom sheet filters, floating sell button</td>
+</tr>
+<tr>
+<td>App (iOS/Android)</td>
+<td>Bottom tabs, camera-first sell flow, swipeable photos, push notifications</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Browse, search, view items (cannot buy or sell)</td>
+</tr>
+<tr>
+<td>Logged-in User</td>
+<td>Buy, sell, make offers, message sellers, reviews</td>
+</tr>
+<tr>
+<td>Verified User</td>
+<td>Higher selling limits, direct deposit of earnings</td>
+</tr>
+<tr>
+<td>Seller</td>
+<td>Listing management, earnings dashboard, shipping labels</td>
+</tr>
+<tr>
+<td>Buyer</td>
+<td>Purchase history, returns, order tracking</td>
+</tr>
+<tr>
+<td>Internal Moderator</td>
+<td>Listing review, prohibited items enforcement, dispute resolution</td>
+</tr>
+<tr>
+<td>Authentication Team</td>
+<td>Luxury item verification, certificate issuance</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesforce — IA.md | getIA.md</title>
+  <meta name="description" content="Enterprise CRM. Lightning, AppExchange, Einstein AI. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=salesforce.com&sz=64" alt="Salesforce" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Salesforce</h1>
+      <p class="detail-brand-tagline">Enterprise CRM. Lightning, AppExchange, Einstein AI.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/salesforce/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://salesforce.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/salesforce/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Salesforce</h1>
+<h2>Overview</h2>
+<p>Salesforce is the dominant enterprise CRM, built on a metadata-driven platform where nearly every aspect — objects, fields, pages, workflows — is customizable. The IA is organized around &quot;Clouds&quot; (Sales, Service, Marketing, Commerce, etc.) that share a common data model. Lightning Experience provides the modern UI layer, AppExchange extends it with third-party apps, and Einstein AI adds predictive intelligence throughout.</p>
+<h2>Site Map</h2>
+<pre><code>salesforce.com
+├── Home
+│   ├── Key Deals
+│   ├── Assistant (Einstein)
+│   ├── Dashboard Snapshot
+│   └── Recent Records
+├── Sales Cloud
+│   ├── Leads
+│   ├── Contacts
+│   ├── Accounts
+│   ├── Opportunities (pipeline)
+│   ├── Forecasting
+│   ├── Products &amp; Price Books
+│   ├── Quotes / CPQ
+│   ├── Activities (Tasks &amp; Events)
+│   ├── Campaigns
+│   └── Reports &amp; Dashboards
+├── Service Cloud
+│   ├── Cases
+│   ├── Service Console
+│   ├── Knowledge Base
+│   ├── Omni-Channel (routing)
+│   ├── Entitlements &amp; SLAs
+│   └── Field Service
+├── Marketing Cloud
+│   ├── Journey Builder
+│   ├── Email Studio
+│   ├── Social Studio
+│   ├── Advertising Studio
+│   └── Data Extensions
+├── Platform
+│   ├── App Builder (Lightning)
+│   ├── Objects &amp; Fields
+│   ├── Flows (Process Automation)
+│   ├── Apex (Custom Code)
+│   ├── API
+│   └── AppExchange
+├── Einstein AI
+│   ├── Lead Scoring
+│   ├── Opportunity Insights
+│   ├── Next Best Action
+│   ├── Einstein Copilot
+│   └── Prediction Builder
+├── Setup (Admin)
+│   ├── Company Settings
+│   ├── Users &amp; Permissions
+│   ├── Security
+│   ├── Objects &amp; Fields
+│   ├── Automation (Flows, Process Builder)
+│   ├── Environments (Sandbox)
+│   └── Data Management
+└── AppExchange (Marketplace)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Navigation bar (top):</strong> App Launcher (waffle), App-specific tabs (Leads, Contacts, Opportunities, etc.), Global Search, Setup gear, Notifications bell</li>
+<li><strong>App Launcher:</strong> Switch between Lightning Apps (Sales, Service, custom apps); each app shows its own tab set</li>
+<li><strong>Record page:</strong> Lightning page layout — header (key fields), tabs (Details, Activity, Related Lists, Chatter)</li>
+<li><strong>Utility bar (bottom):</strong> Persistent quick-access tools (Notes, History, Einstein, Macros)</li>
+<li><strong>Setup (admin):</strong> Separate navigation tree for all configuration; searchable</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Account</td>
+<td>name, industry, type, billing address, owner</td>
+<td>→ Contacts, Opportunities, Cases</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>name, email, phone, title, account</td>
+<td>→ Opportunities (Roles), Cases, Activities</td>
+</tr>
+<tr>
+<td>Lead</td>
+<td>name, email, company, status, source, score</td>
+<td>→ Converted Account/Contact/Opportunity</td>
+</tr>
+<tr>
+<td>Opportunity</td>
+<td>name, stage, amount, close date, probability</td>
+<td>→ Account, Contact Roles, Products, Quotes</td>
+</tr>
+<tr>
+<td>Case</td>
+<td>subject, status, priority, origin, owner</td>
+<td>→ Account, Contact, Knowledge Articles</td>
+</tr>
+<tr>
+<td>Campaign</td>
+<td>name, type, status, members</td>
+<td>→ Leads, Contacts, Opportunities</td>
+</tr>
+<tr>
+<td>Custom Object</td>
+<td>user-defined schema, relationships</td>
+<td>→ Standard or Custom Objects</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>type (tabular/summary/matrix/joined), filters</td>
+<td>→ Dashboard</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>components (charts, metrics, tables)</td>
+<td>→ Reports</td>
+</tr>
+<tr>
+<td>Flow</td>
+<td>type (screen/auto/scheduled), elements, variables</td>
+<td>→ Objects, Actions</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Lead-to-Opportunity Conversion</h3>
+<p><code>Leads → Open Lead → Qualify → Convert → Creates Account + Contact + Opportunity → Opportunity enters pipeline → Manage through stages</code></p>
+<h3>2. Pipeline Review</h3>
+<p><code>Opportunities → Kanban (by stage) → Drag to next stage → Open opportunity → Log activity → Update close date/amount → Forecasting updates</code></p>
+<h3>3. Case Resolution</h3>
+<p><code>Service Console → Open case from queue → Review customer history (related account/contact) → Search Knowledge Base → Reply → Resolve → Customer survey</code></p>
+<h3>4. Admin: Build a Custom Object</h3>
+<p><code>Setup → Object Manager → + New Custom Object → Define fields → Create page layout → Add to Lightning App → Set permissions → Deploy</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>{instance}.lightning.force.com/lightning/page/home           # Home
+{instance}.lightning.force.com/lightning/o/Lead/list          # Leads list
+{instance}.lightning.force.com/lightning/r/Lead/{id}/view     # Lead record
+{instance}.lightning.force.com/lightning/o/Opportunity/list   # Opportunities
+{instance}.lightning.force.com/lightning/r/Opportunity/{id}/view  # Opportunity record
+{instance}.lightning.force.com/lightning/o/Case/list          # Cases
+{instance}.lightning.force.com/lightning/setup/SetupOneHome/home  # Setup
+{instance}.lightning.force.com/lightning/r/Dashboard/{id}/view   # Dashboard
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search (top bar):</strong> Full-text across all objects; search scope configurable; recent items shown as type-ahead</li>
+<li><strong>List view filters:</strong> Save filtered views of any object (e.g., &quot;My Open Opportunities This Quarter&quot;)</li>
+<li><strong>Report builder:</strong> Advanced filter logic (up to 20 filters with AND/OR), cross-object joins, bucketing</li>
+<li><strong>SOQL (developer):</strong> Structured query language for programmatic data access</li>
+<li><strong>Einstein Search:</strong> AI-enhanced search with natural language understanding and personalized ranking</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1280px+)</td>
+<td>Full Lightning Experience — record pages, related lists, utility bar</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Lightning adapts with responsive record pages; console layout stacks</td>
+</tr>
+<tr>
+<td>Mobile (Salesforce Mobile)</td>
+<td>Optimized native app — record access, activity logging, dashboards, notifications, offline capability</td>
+</tr>
+<tr>
+<td>Lightning Embedded</td>
+<td>Lightning components can be embedded in external apps and portals</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>System Administrator</td>
+<td>Full access — Setup, all data, all features</td>
+</tr>
+<tr>
+<td>Custom Profile</td>
+<td>Object-level CRUD, field-level security, app access per profile</td>
+</tr>
+<tr>
+<td>Permission Set</td>
+<td>Additive permissions layered on top of profile</td>
+</tr>
+<tr>
+<td>Role Hierarchy</td>
+<td>Vertical data visibility (manager sees reports&#39; records)</td>
+</tr>
+<tr>
+<td>Sharing Rules</td>
+<td>Horizontal data sharing between roles/groups</td>
+</tr>
+<tr>
+<td>OWD (Org-Wide Defaults)</td>
+<td>Default record visibility (Private, Public Read, Public Read/Write)</td>
+</tr>
+<tr>
+<td>Record-Level Sharing</td>
+<td>Manual sharing of individual records</td>
+</tr>
+<tr>
+<td>Experience Cloud (Portal)</td>
+<td>External users with limited, scoped access to specific objects</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

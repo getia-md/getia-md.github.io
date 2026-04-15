@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubSpot — IA.md | getIA.md</title>
+  <meta name="description" content="CRM platform. Marketing, Sales, Service, CMS Hubs. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=hubspot.com&sz=64" alt="HubSpot" onerror="this.parentElement.textContent='H'">
+      </div>
+      <h1 class="detail-brand-name">HubSpot</h1>
+      <p class="detail-brand-tagline">CRM platform. Marketing, Sales, Service, CMS Hubs.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/hubspot/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://hubspot.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/hubspot/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — HubSpot</h1>
+<h2>Overview</h2>
+<p>HubSpot is a CRM platform organized into five &quot;Hubs&quot; — Marketing, Sales, Service, CMS, and Operations — all sharing a unified contact database. The IA follows a hub-and-spoke model: the CRM is the center, and each Hub adds domain-specific tools (email campaigns, deal pipelines, ticket queues, website pages, data sync). This architecture lets teams use one Hub or all five, with data flowing seamlessly between them.</p>
+<h2>Site Map</h2>
+<pre><code>hubspot.com
+├── CRM (Core)
+│   ├── Contacts
+│   ├── Companies
+│   ├── Deals (pipeline)
+│   ├── Tickets
+│   ├── Custom Objects
+│   ├── Activity Feed
+│   └── Tasks
+├── Marketing Hub
+│   ├── Email
+│   ├── Landing Pages
+│   ├── Forms
+│   ├── Social Media
+│   ├── Ads
+│   ├── SEO
+│   ├── Blog
+│   ├── Campaigns
+│   ├── Workflows (automation)
+│   └── Analytics
+├── Sales Hub
+│   ├── Deals Pipeline
+│   ├── Forecasting
+│   ├── Sequences (email drips)
+│   ├── Meetings
+│   ├── Playbooks
+│   ├── Quotes
+│   └── Sales Analytics
+├── Service Hub
+│   ├── Tickets
+│   ├── Knowledge Base
+│   ├── Customer Portal
+│   ├── Feedback Surveys
+│   ├── SLA Management
+│   └── Service Analytics
+├── CMS Hub
+│   ├── Website Pages
+│   ├── Blog
+│   ├── Design Tools
+│   ├── File Manager
+│   └── HubDB (structured data)
+├── Operations Hub
+│   ├── Data Sync
+│   ├── Data Quality
+│   ├── Programmable Automation
+│   └── Datasets
+├── Reports &amp; Dashboards
+│   ├── Dashboard Builder
+│   ├── Custom Reports
+│   └── Attribution
+├── Settings
+│   ├── Account
+│   ├── Users &amp; Teams
+│   ├── Properties (custom fields)
+│   ├── Integrations (App Marketplace)
+│   ├── Tracking Code
+│   └── Domains
+└── Marketing Site
+    ├── Products
+    ├── Pricing
+    ├── Solutions
+    └── Resources (Academy, Blog, Community)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Top nav bar:</strong> CRM, Marketing, Sales, Service, CMS, Operations, Automation, Reporting — each opens a mega-menu</li>
+<li><strong>Left sidebar (context-dependent):</strong> Changes per Hub section — e.g., Marketing shows Email, Ads, Social; Sales shows Deals, Sequences</li>
+<li><strong>CRM record page:</strong> Contact/Company/Deal record with timeline (all interactions), properties sidebar, associated records</li>
+<li><strong>Global search:</strong> ⌘K/Ctrl+K for universal search</li>
+<li><strong>Settings:</strong> Separate global settings accessible from any Hub</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Contact</td>
+<td>name, email, lifecycle stage, lead status, properties</td>
+<td>→ Companies, Deals, Tickets, Activities</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>name, domain, industry, properties</td>
+<td>→ Contacts, Deals</td>
+</tr>
+<tr>
+<td>Deal</td>
+<td>name, stage, amount, close date, pipeline</td>
+<td>→ Contacts, Companies, Line Items</td>
+</tr>
+<tr>
+<td>Ticket</td>
+<td>subject, status, priority, pipeline, SLA</td>
+<td>→ Contacts, Companies</td>
+</tr>
+<tr>
+<td>Custom Object</td>
+<td>user-defined schema</td>
+<td>→ Any standard object</td>
+</tr>
+<tr>
+<td>Email (Marketing)</td>
+<td>subject, content, lists, send time, A/B variant</td>
+<td>→ Contacts, Campaign</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td>triggers, actions, enrollment criteria</td>
+<td>→ Contacts, Deals, Tickets</td>
+</tr>
+<tr>
+<td>Landing Page</td>
+<td>title, template, form, URL</td>
+<td>→ Campaign</td>
+</tr>
+<tr>
+<td>Knowledge Base Article</td>
+<td>title, body, category</td>
+<td>→ Service Hub</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>name, widgets (report cards)</td>
+<td>→ Reports</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>type (contact/deal/custom), filters, visualization</td>
+<td>→ Dashboard</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Inbound Marketing Funnel</h3>
+<p><code>Create Landing Page → Add Form → Set up Thank-You email (Workflow) → Nurture with email sequence → Score leads → Hand off to Sales pipeline</code></p>
+<h3>2. Sales Deal Management</h3>
+<p><code>CRM → Deals → Pipeline view → Drag deal to next stage → Log call/email → Create quote → Forecast revenue</code></p>
+<h3>3. Customer Service Ticket</h3>
+<p><code>Customer submits form/email → Ticket created → Auto-assigned (round-robin) → Agent works ticket → Resolution → Satisfaction survey triggered</code></p>
+<h3>4. Build a Custom Report</h3>
+<p><code>Reporting → + Create Report → Choose data source (Contacts, Deals, etc.) → Add filters → Select chart type → Save to Dashboard</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>app.hubspot.com/contacts/{portal_id}/objects/contacts     # Contacts list
+app.hubspot.com/contacts/{portal_id}/contact/{id}         # Contact record
+app.hubspot.com/contacts/{portal_id}/objects/deals        # Deals pipeline
+app.hubspot.com/email/{portal_id}/                        # Marketing email
+app.hubspot.com/workflows/{portal_id}/                    # Workflows
+app.hubspot.com/reports-dashboard/{portal_id}/{dash_id}   # Dashboard
+app.hubspot.com/knowledge/{portal_id}/                    # Knowledge base
+app.hubspot.com/settings/{portal_id}/                     # Settings
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search (⌘K):</strong> Search across contacts, companies, deals, tickets, emails, pages, and settings</li>
+<li><strong>List/filter builder:</strong> Advanced property-based filtering with AND/OR logic; save as Smart Lists (dynamic) or Static Lists</li>
+<li><strong>Pipeline filters:</strong> Filter deals/tickets by stage, owner, amount, date, custom properties</li>
+<li><strong>Report filters:</strong> Cross-object filtering with date ranges, attribution models</li>
+<li><strong>CRM record search:</strong> Search within timeline activity for a specific contact/company</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1280px+)</td>
+<td>Full Hub navigation + CRM record with timeline + sidebar properties</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Responsive layout; some tools require desktop for full functionality</td>
+</tr>
+<tr>
+<td>Mobile app (iOS/Android)</td>
+<td>CRM access (contacts, deals, tasks), call/email logging, notifications; limited Marketing/CMS features</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Super Admin</td>
+<td>Full account access, billing, all Hubs, user management</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Manage users, settings, content across Hubs</td>
+</tr>
+<tr>
+<td>User (per-Hub)</td>
+<td>Access to specific Hub features based on seat type (Marketing, Sales, Service)</td>
+</tr>
+<tr>
+<td>View-only</td>
+<td>Read access to reports and CRM data; cannot edit</td>
+</tr>
+<tr>
+<td>Partner</td>
+<td>Agency/partner access with scoped permissions</td>
+</tr>
+<tr>
+<td>Teams</td>
+<td>Hierarchical team structure for ownership and visibility rules</td>
+</tr>
+<tr>
+<td>Field-level permissions</td>
+<td>Restrict editing of specific CRM properties by role</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

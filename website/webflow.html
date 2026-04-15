@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webflow — IA.md | getIA.md</title>
+  <meta name="description" content="Visual web builder. CMS, interactions, hosting. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=webflow.com&sz=64" alt="Webflow" onerror="this.parentElement.textContent='W'">
+      </div>
+      <h1 class="detail-brand-name">Webflow</h1>
+      <p class="detail-brand-tagline">Visual web builder. CMS, interactions, hosting.</p>
+      <span class="detail-category-badge">Design</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/webflow/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://webflow.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/webflow/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Webflow</h1>
+<h2>1. Overview</h2>
+<p>Webflow is a visual web development platform that combines a drag-and-drop designer with the full power of HTML, CSS, and JavaScript — producing clean, semantic code without requiring developers to write it. The IA serves <strong>designers</strong> (visual builder, interactions, CMS), <strong>developers</strong> (custom code, APIs, logic), <strong>marketers</strong> (CMS, SEO, forms), and <strong>enterprises</strong> (hosting, security, collaboration). Webflow University (education) is a major content pillar alongside the product.</p>
+<h2>2. Site Map</h2>
+<pre><code>webflow.com
+├── Home
+├── Product
+│   ├── Designer (visual builder)
+│   ├── CMS (dynamic content)
+│   ├── Interactions &amp; animations
+│   ├── Ecommerce
+│   ├── Localization (multi-language)
+│   ├── Memberships
+│   ├── Logic (visual workflows)
+│   ├── Hosting
+│   ├── SEO
+│   ├── Accessibility
+│   └── Figma to Webflow
+├── Solutions
+│   ├── By role (Designers, Marketers, Developers)
+│   ├── By company size (Startup, Enterprise)
+│   ├── By use case (Landing pages, Blogs, Portfolios, Ecommerce)
+│   └── Enterprise
+├── Pricing
+│   ├── Site plans (Free / Basic / CMS / Business / Enterprise)
+│   ├── Workspace plans (Starter / Growth / Enterprise)
+│   └── Ecommerce plans
+├── Templates
+│   ├── Free templates
+│   ├── Premium templates
+│   ├── Browse by category
+│   └── Template detail &amp; preview
+├── Marketplace
+│   ├── Templates
+│   ├── Apps (integrations)
+│   └── Experts (hire Webflow developers)
+├── Resources
+│   ├── Webflow University (courses &amp; tutorials)
+│   ├── Blog
+│   ├── Community forum
+│   ├── Showcase (user-built sites)
+│   ├── Glossary
+│   ├── Made in Webflow
+│   └── Events / Conf
+├── Developers
+│   ├── API documentation
+│   ├── Custom code
+│   ├── Logic (workflows)
+│   └── Integrations
+├── About
+│   ├── Company
+│   ├── Careers
+│   ├── Press
+│   └── Accessibility statement
+├── Support
+│   ├── Help articles
+│   ├── Status page
+│   └── Contact
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── DPA
+└── Auth
+    ├── Log in
+    └── Get started (free)
+
+Webflow Designer (App)
+├── Canvas (visual editor)
+├── Left panel
+│   ├── Elements (drag-and-drop)
+│   ├── Navigator (element tree)
+│   ├── Components
+│   └── Pages
+├── Right panel
+│   ├── Style panel (CSS visual editor)
+│   ├── Settings (element attributes)
+│   ├── Interactions (animations)
+│   └── Conditional visibility
+├── Top bar
+│   ├── Breakpoint switcher (desktop, tablet, mobile landscape, mobile portrait)
+│   ├── Preview
+│   ├── Publish
+│   └── Share / Collaborate
+├── CMS panel
+│   ├── Collections
+│   ├── Collection items
+│   └── Dynamic bindings
+├── Ecommerce
+│   ├── Products
+│   ├── Orders
+│   └── Settings
+├── Logic panel
+│   ├── Flows (visual automation)
+│   ├── Triggers
+│   └── Actions
+└── Settings
+    ├── General
+    ├── Publishing
+    ├── SEO
+    ├── Custom code
+    ├── Forms
+    ├── Integrations
+    └── Backups
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>webflow.com</td>
+<td>Top nav</td>
+<td>Logo, Product, Solutions, Resources, Enterprise, Pricing, Log in, Get started</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Mega-menu</td>
+<td>Feature grid with icons + descriptions</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Mega-menu</td>
+<td>University, Blog, Community, Showcase, Marketplace</td>
+</tr>
+<tr>
+<td>Designer</td>
+<td>Dual panel</td>
+<td>Left panel (elements, navigator) + Right panel (styles, settings, interactions)</td>
+</tr>
+<tr>
+<td>Designer top bar</td>
+<td>Breakpoint switcher + tools</td>
+<td>Responsive preview, publish, collaborate</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Multi-column</td>
+<td>Product, Company, Resources, Community, Legal</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: The Designer is a full IDE experience in the browser — left panel for structure, right panel for styling, top bar for responsive preview. The website itself uses Webflow-built marketing (eating their own dog food).</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Site (Project)</td>
+<td>name, subdomain/custom domain, plan, collaborators, published status</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>name, slug, SEO settings, custom code, template</td>
+</tr>
+<tr>
+<td>CMS Collection</td>
+<td>name, fields (text, image, rich text, reference, multi-reference, date, switch, color, etc.)</td>
+</tr>
+<tr>
+<td>CMS Item</td>
+<td>collection, field values, slug, published status, draft</td>
+</tr>
+<tr>
+<td>Component</td>
+<td>name, properties (configurable per instance), slots</td>
+</tr>
+<tr>
+<td>Interaction</td>
+<td>trigger (scroll, click, hover, load), animation steps, easing, targets</td>
+</tr>
+<tr>
+<td>Form</td>
+<td>name, fields, action (email, webhook, Zapier), submissions</td>
+</tr>
+<tr>
+<td>Ecommerce Product</td>
+<td>name, slug, price, images, SKU, categories, variants, tax, shipping</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Build a website</h3>
+<ol>
+<li>Sign up → choose template or start blank</li>
+<li>Designer opens → drag elements to canvas</li>
+<li>Style with visual CSS panel (classes, flexbox, grid)</li>
+<li>Add pages → set navigation</li>
+<li>Preview across breakpoints → adjust responsive design</li>
+<li>Publish to webflow.io subdomain or custom domain</li>
+</ol>
+<h3>5b. CMS-driven blog</h3>
+<ol>
+<li>Create CMS Collection (e.g., &quot;Blog Posts&quot;) → define fields</li>
+<li>Add CMS items (articles with title, body, image, author, date)</li>
+<li>Create Collection Template page → bind dynamic content</li>
+<li>Create Collection List on pages → display post cards</li>
+<li>Publish → new CMS items auto-populate pages</li>
+</ol>
+<h3>5c. Add interactions</h3>
+<ol>
+<li>Select element → open Interactions panel</li>
+<li>Choose trigger (scroll into view, mouse hover, page load, click)</li>
+<li>Define animation (opacity, transform, position, size, color)</li>
+<li>Set timing, easing, delay</li>
+<li>Preview → interaction plays on trigger</li>
+</ol>
+<h3>5d. Client handoff</h3>
+<ol>
+<li>Designer builds site → invites client to workspace</li>
+<li>Client accesses CMS Editor (simplified view — edit content only)</li>
+<li>Client updates text, images, CMS items — cannot break design</li>
+<li>Changes publish via &quot;Publish&quot; button or auto-publish</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code># webflow.com (marketing)
+/                               → Home
+/product/                       → Product overview
+/designer/                      → Designer feature
+/cms/                           → CMS feature
+/interactions-animations/       → Interactions
+/ecommerce/                     → Ecommerce
+/pricing/                       → Pricing
+/templates/                     → Template directory
+/templates/{slug}/              → Template detail
+/marketplace/                   → Marketplace
+/marketplace/apps/              → App integrations
+/experts/                       → Hire an expert
+/blog/                          → Blog
+/blog/{slug}/                   → Blog post
+/made-in-webflow/               → Showcase
+/university/                    → Webflow University
+/university/lessons/{slug}/     → Lesson
+/developers/                    → Developer docs
+
+# Designer (app)
+/design/{site-id}               → Visual editor
+/editor/{site-id}               → CMS Editor (client)
+
+# Published site
+/                               → Home
+/{page-slug}                    → Static page
+/{collection-slug}/{item-slug}  → CMS item page
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Template search</td>
+<td>By keyword, category (business, portfolio, blog, ecommerce), free/premium</td>
+</tr>
+<tr>
+<td>Marketplace search</td>
+<td>Apps by category, experts by skill</td>
+</tr>
+<tr>
+<td>University search</td>
+<td>Full-text across lessons and courses</td>
+</tr>
+<tr>
+<td>Blog search</td>
+<td>By keyword, category</td>
+</tr>
+<tr>
+<td>Designer (Navigator)</td>
+<td>Search elements in the DOM tree</td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>Search/filter collection items by field values</td>
+</tr>
+<tr>
+<td>Help search</td>
+<td>Keyword → categorized support articles</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Full Designer panels, marketing site with rich animations</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Designer works but reduced canvas space</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Designer not supported (desktop required), marketing site fully responsive</td>
+</tr>
+<tr>
+<td>Designer breakpoints</td>
+<td>4 built-in: Desktop (default) → Tablet (991px) → Mobile Landscape (767px) → Mobile Portrait (478px)</td>
+</tr>
+<tr>
+<td>Published sites</td>
+<td>Responsive per designer&#39;s breakpoint configurations</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Marketing site, templates, showcase, University, blog</td>
+</tr>
+<tr>
+<td>Free Account</td>
+<td>2 projects, Designer access, webflow.io subdomain, limited CMS items</td>
+</tr>
+<tr>
+<td>Basic Plan</td>
+<td>Custom domain, no CMS</td>
+</tr>
+<tr>
+<td>CMS Plan</td>
+<td>CMS, 2000 items, form submissions</td>
+</tr>
+<tr>
+<td>Business Plan</td>
+<td>10,000 CMS items, custom code, form file uploads</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>SSO, SLA, advanced security, dedicated support, custom limits</td>
+</tr>
+<tr>
+<td>Workspace Collaborator</td>
+<td>Designer access with configurable permissions (can design / can edit content / can manage)</td>
+</tr>
+<tr>
+<td>CMS Editor (Client)</td>
+<td>Content editing only — no design access, simple UI</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>API access, custom code injection, Logic</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>Infrastructure, template review, marketplace curation</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

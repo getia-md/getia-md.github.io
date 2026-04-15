@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craft — IA.md | getIA.md</title>
+  <meta name="description" content="Beautiful docs. Blocks, cards, AI assistant. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=craft.do&sz=64" alt="Craft" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Craft</h1>
+      <p class="detail-brand-tagline">Beautiful docs. Blocks, cards, AI assistant.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/craft/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://craft.do" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/craft/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Craft</h1>
+<h2>Overview</h2>
+<p>Craft is a document editor that prioritizes visual beauty and structure. Documents are built from blocks (text, toggles, cards, code, images) that can be nested, linked, and styled. The standout feature is the ability to share any document as a polished website with one click. With spaces for team collaboration and an AI assistant, Craft positions itself between notes apps and presentation tools.</p>
+<h2>Site Map</h2>
+<pre><code>craft.do
+├── Home
+│   ├── Daily Notes
+│   ├── Recent Documents
+│   ├── Favorites
+│   └── Quick Note (widget)
+├── Spaces
+│   └── [Space]
+│       ├── Folders
+│       │   └── Documents
+│       └── Shared Documents
+├── Document
+│   ├── Blocks
+│   │   ├── Text (headings, body, lists)
+│   │   ├── Page / Sub-page (linked document)
+│   │   ├── Card (visual link block)
+│   │   ├── Toggle (collapsible)
+│   │   ├── Code Block
+│   │   ├── Image / File
+│   │   ├── Divider
+│   │   ├── Table
+│   │   └── Embed (web, video)
+│   ├── Backlinks
+│   ├── AI Assistant
+│   ├── Comments
+│   ├── Version History
+│   └── Share / Publish as Website
+├── All Documents (search index)
+├── Trash
+├── Settings
+│   ├── Account
+│   ├── Spaces
+│   ├── Appearance (themes)
+│   └── Subscription
+└── Templates
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Space selector, folder/document tree, Daily Notes, Favorites, Trash</li>
+<li><strong>Document view:</strong> Full-width canvas; blocks are inline-editable; sub-pages appear as cards or inline</li>
+<li><strong>Block-level actions:</strong> Slash command (/) for inserting blocks; drag handle for reordering; @ for mentions and links</li>
+<li><strong>Back-linking:</strong> Documents link to each other via <code>@</code> mentions or card blocks; backlinks panel shows reverse references</li>
+<li><strong>AI Assistant:</strong> Inline AI available in any document for summarizing, continuing, rewriting</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Space</td>
+<td>name, icon, type (personal/team), members</td>
+<td>→ Folders, Documents</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name, icon</td>
+<td>→ Sub-folders, Documents</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>title, blocks, created date, cover image, icon</td>
+<td>→ Sub-documents, Backlinks, Comments</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>type, content, styling, nesting level</td>
+<td>→ Document</td>
+</tr>
+<tr>
+<td>Sub-page</td>
+<td>linked document appearing as a block</td>
+<td>→ Parent Document, Child Document</td>
+</tr>
+<tr>
+<td>Card</td>
+<td>visual preview of a linked document</td>
+<td>→ Target Document</td>
+</tr>
+<tr>
+<td>Daily Note</td>
+<td>auto-created per date</td>
+<td>→ Space</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text, author, block reference</td>
+<td>→ Document, Block</td>
+</tr>
+<tr>
+<td>Published Page</td>
+<td>URL, password, SEO settings</td>
+<td>→ Document</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Create a Structured Document</h3>
+<p><code>+ New Document → Type title → / (slash) → Choose block types → Nest content with Tab → Add cards linking to sub-pages → Style with covers and icons</code></p>
+<h3>2. Daily Notes Workflow</h3>
+<p><code>Open Daily Notes → Today&#39;s note auto-created → Capture thoughts, meeting notes, links → Link to project docs with @ → Review past daily notes</code></p>
+<h3>3. Publish as Website</h3>
+<p><code>Document → Share → Publish to Web → Copy public URL → Optionally set password, custom subdomain, SEO title → Share link</code></p>
+<h3>4. Team Collaboration</h3>
+<p><code>Create Team Space → Invite members → Create shared folders → Co-edit documents in real-time → Add comments on specific blocks</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>craft.do/                                      # Home
+craft.do/s/{space_id}                          # Space
+craft.do/d/{document_id}                       # Document (authenticated)
+craft.do/d/{document_id}/{block_id}            # Jump to specific block
+{custom-subdomain}.craft.me/{slug}             # Published page
+craft.do/templates                             # Template gallery
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search (⌘K):</strong> Full-text across all documents, titles, and block content within a space</li>
+<li><strong>Backlinks panel:</strong> See all documents referencing the current document</li>
+<li><strong>Recent documents:</strong> Sorted by last opened/modified</li>
+<li><strong>Favorites:</strong> Manually pinned documents for quick access</li>
+<li><strong>Folder browsing:</strong> Hierarchical navigation as alternative to search</li>
+<li><strong>No advanced filter builder</strong> — search is keyword-based</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>macOS</td>
+<td>Full sidebar + editor; native app with system integrations (Spotlight, Shortcuts)</td>
+</tr>
+<tr>
+<td>iPad</td>
+<td>Sidebar + editor in landscape; editor only in portrait; Apple Pencil for sketching</td>
+</tr>
+<tr>
+<td>iPhone</td>
+<td>Single-pane; document list → document; Quick Note widget for capture</td>
+</tr>
+<tr>
+<td>Web (craft.do)</td>
+<td>Full editor in browser, slightly reduced feature set vs native</td>
+</tr>
+<tr>
+<td>Published pages</td>
+<td>Fully responsive; optimized for reading on any screen size</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Space Owner</td>
+<td>Full control: settings, members, billing, all documents</td>
+</tr>
+<tr>
+<td>Space Editor</td>
+<td>Create/edit documents, manage folders, comment</td>
+</tr>
+<tr>
+<td>Space Viewer</td>
+<td>Read documents, cannot edit</td>
+</tr>
+<tr>
+<td>Document Sharer</td>
+<td>Per-document link sharing with view/edit/comment permissions</td>
+</tr>
+<tr>
+<td>Published Visitor</td>
+<td>View published page; no sign-in required; optional password</td>
+</tr>
+<tr>
+<td>Personal Space</td>
+<td>Private to account; not shared unless explicitly published</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

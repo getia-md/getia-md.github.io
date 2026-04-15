@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peloton — IA.md | getIA.md</title>
+  <meta name="description" content="Connected fitness. Live classes, leaderboard, metrics. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=onepeloton.com&sz=64" alt="Peloton" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Peloton</h1>
+      <p class="detail-brand-tagline">Connected fitness. Live classes, leaderboard, metrics.</p>
+      <span class="detail-category-badge">Health</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/peloton/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://onepeloton.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/peloton/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Peloton</h1>
+<h2>1. Overview</h2>
+<p>Peloton is a connected fitness platform combining hardware (bikes, treads, rowers, Guide) with a vast library of live and on-demand classes. The IA centers on class discovery and workout tracking, with a real-time leaderboard creating competitive motivation. The experience spans hardware screens, mobile app, and web — all unified by a profile that tracks lifetime metrics, achievements, and social connections.</p>
+<h2>2. Site Map</h2>
+<pre><code>Peloton
+├── Home
+│   ├── Continue (in-progress programs)
+│   ├── Upcoming Live Classes
+│   ├── Recommended for You
+│   ├── Featured Collections
+│   ├── Challenges
+│   └── Streak &amp; Weekly Goal
+├── Classes
+│   ├── Cycling
+│   ├── Running / Walking
+│   ├── Strength
+│   ├── Yoga
+│   ├── Meditation
+│   ├── Stretching
+│   ├── Cardio
+│   ├── Boxing / Shadowboxing
+│   ├── Rowing
+│   ├── Outdoor (audio)
+│   ├── Pilates
+│   └── Barre
+├── Class Detail
+│   ├── Instructor
+│   ├── Duration / Difficulty
+│   ├── Music Playlist
+│   ├── Class Plan / Targets
+│   ├── Ratings
+│   ├── Taken by (friend activity)
+│   └── Schedule (live) or Play (on-demand)
+├── In-Class
+│   ├── Video Stream (instructor)
+│   ├── Metrics Panel (output, cadence, resistance, heart rate)
+│   ├── Leaderboard (real-time ranking)
+│   ├── High Five (tap to encourage)
+│   ├── Milestones (badge popups)
+│   └── Music / Closed Captions
+├── Schedule
+│   ├── Live Class Calendar
+│   ├── Encore (replayed live classes)
+│   └── My Schedule (booked classes)
+├── Programs
+│   ├── Multi-week structured programs
+│   │   ├── Beginner (Mastering the Basics)
+│   │   ├── Power Zone Training
+│   │   ├── Strength Programs
+│   │   └── Yoga Programs
+│   └── Progress tracking
+├── Challenges
+│   ├── Monthly Challenges
+│   ├── Annual Challenge
+│   └── Community Challenges
+├── Profile
+│   ├── Workout History
+│   ├── Personal Records (PRs)
+│   ├── Achievements / Badges
+│   ├── Stats (total rides, minutes, output)
+│   ├── Followers / Following
+│   ├── Tags (community groups)
+│   └── Heart Rate Zones
+├── Social
+│   ├── Feed (friends&#39; workouts)
+│   ├── High Fives
+│   ├── Tags (interest groups)
+│   └── Session (ride together)
+├── Settings
+│   ├── Account
+│   ├── Subscription
+│   ├── Device Pairing (HRM, weights)
+│   ├── Privacy
+│   └── Notifications
+└── Website (onepeloton.com)
+    ├── Shop (hardware, accessories, apparel)
+    ├── Membership Plans
+    ├── Financing
+    ├── Instructors
+    ├── Blog / Community
+    └── Corporate Wellness
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Bottom tab bar (mobile), sidebar (bike/tread screen)</li>
+<li><strong>Bike/Tread Screen</strong>: Bottom tab — Home, Classes, Schedule, Profile; top bar with search and settings</li>
+<li><strong>Mobile App Bottom Tabs</strong>: Home, Classes, Challenges, Profile</li>
+<li><strong>Class Discovery</strong>: Browse by category → Filter by duration, instructor, difficulty, music genre</li>
+<li><strong>In-Class</strong>: Full-screen with overlay metrics; swipe for leaderboard/music; tap for high five</li>
+<li><strong>Live Schedule</strong>: Calendar view with time-based class grid; tap to book/join</li>
+<li><strong>Stack</strong>: Queue multiple classes to play back-to-back</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Class</td>
+<td>title, instructor, category, duration, difficulty, music playlist, live/on-demand, language, equipment, ratings, total rides</td>
+<td>→ Instructor, → Category, → Program</td>
+</tr>
+<tr>
+<td>Workout (completed)</td>
+<td>class reference, date, duration, output (kJ), avg cadence, avg resistance, heart rate data, personal record flag, leaderboard rank</td>
+<td>→ User, → Class</td>
+</tr>
+<tr>
+<td>Program</td>
+<td>name, description, weeks, classes per week, difficulty, progress</td>
+<td>→ Classes (ordered)</td>
+</tr>
+<tr>
+<td>Instructor</td>
+<td>name, bio, photo, specialties, class count, quote</td>
+<td>→ Classes</td>
+</tr>
+<tr>
+<td>Challenge</td>
+<td>name, description, goal (minutes/classes), duration, participants, progress</td>
+<td>→ Workouts</td>
+</tr>
+<tr>
+<td>Achievement / Badge</td>
+<td>name, icon, criteria, date earned</td>
+<td>→ Profile</td>
+</tr>
+<tr>
+<td>Personal Record (PR)</td>
+<td>metric (output, distance, speed), value, class, date</td>
+<td>→ Workout</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name (community group), member count</td>
+<td>→ Users</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, description, curated classes</td>
+<td>→ Classes</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Taking an On-Demand Class</h3>
+<ol>
+<li>Browse Classes → Filter by type (Cycling), duration (30 min), instructor</li>
+<li>Tap class → View playlist, difficulty, ratings, friends who took it</li>
+<li>Clip in / Start → Full-screen instructor video + real-time metrics</li>
+<li>During class: monitor output vs. leaderboard; receive high fives; hit targets</li>
+<li>Post-class: view workout summary, PR badges, share to feed</li>
+</ol>
+<h3>Joining a Live Class</h3>
+<ol>
+<li>Schedule tab → Browse upcoming live classes by time</li>
+<li>Tap class → &quot;Book&quot; → Added to My Schedule with reminder</li>
+<li>At class time: Join → Live leaderboard with thousands of riders</li>
+<li>Instructor shouts out milestones (100th ride, birthday) → Community energy</li>
+<li>Post-class: replay available as on-demand within hours</li>
+</ol>
+<h3>Stacking Classes</h3>
+<ol>
+<li>Browse Classes → Tap &quot;Add to Stack&quot; on multiple classes</li>
+<li>View Stack queue → Reorder if needed</li>
+<li>Start Stack → Classes play consecutively with brief transition</li>
+<li>Total metrics tracked across the entire stack</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>onepeloton.com/                             # Marketing homepage
+onepeloton.com/classes                      # Class library (web)
+onepeloton.com/classes/{classId}            # Class detail
+onepeloton.com/schedule                     # Live schedule
+onepeloton.com/programs                     # Programs
+onepeloton.com/instructors                  # Instructor directory
+onepeloton.com/instructors/{slug}           # Instructor profile
+onepeloton.com/shop                         # Hardware &amp; accessories
+onepeloton.com/membership                   # Membership plans
+members.onepeloton.com/                     # Member web app
+members.onepeloton.com/profile/{username}   # Member profile
+members.onepeloton.com/classes              # Class browse (logged in)
+api.onepeloton.com/                         # API
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Class Search</strong>: Keyword search across titles, instructors, playlists</li>
+<li><strong>Category Filter</strong>: Cycling, Strength, Yoga, Running, Meditation, etc.</li>
+<li><strong>Duration Filter</strong>: 5, 10, 15, 20, 30, 45, 60, 75, 90 minutes</li>
+<li><strong>Difficulty Filter</strong>: Beginner, Intermediate, Advanced (based on community ratings)</li>
+<li><strong>Instructor Filter</strong>: Select one or multiple instructors</li>
+<li><strong>Music Genre Filter</strong>: Pop, Rock, Hip Hop, EDM, Country, Latin, etc.</li>
+<li><strong>Sort</strong>: Popular, Top Rated, Newest, Trending</li>
+<li><strong>Bookmark/Stack</strong>: Save classes for later or queue for back-to-back</li>
+<li><strong>Friends Filter</strong>: &quot;Taken by friends&quot; to see what your network is doing</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bike/Tread Screen (21.5&quot;/23.8&quot;)</td>
+<td>Full-screen instructor video; persistent metrics bar; swipeable leaderboard; touch controls</td>
+</tr>
+<tr>
+<td>Mobile App</td>
+<td>Bottom tab bar; portrait class browse; landscape in-class view; compact metrics</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Enhanced browse grid; landscape in-class with split metrics panel</td>
+</tr>
+<tr>
+<td>Web (members.onepeloton.com)</td>
+<td>Sidebar navigation; class grid with filters; video player for app-free users</td>
+</tr>
+<tr>
+<td>Apple Watch</td>
+<td>Workout metrics (heart rate, calories); class controls; stand-alone outdoor workouts</td>
+</tr>
+<tr>
+<td>TV Apps (Fire TV, Roku, Apple TV, Android TV)</td>
+<td>Lean-back class browse; full-screen video; remote control navigation</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>App Membership (no hardware)</td>
+<td>Full class library on phone/tablet/TV/web; no live metrics or leaderboard</td>
+</tr>
+<tr>
+<td>All-Access Membership (with hardware)</td>
+<td>Full class library + live metrics, leaderboard, stacking, programs, challenges</td>
+</tr>
+<tr>
+<td>Free Tier</td>
+<td>Limited class selection (3 classes/month); no leaderboard</td>
+</tr>
+<tr>
+<td>Family Member (additional profile)</td>
+<td>Separate profile on same hardware; personal stats, schedule, preferences</td>
+</tr>
+<tr>
+<td>Guest Mode</td>
+<td>Try a class on someone&#39;s bike; no profile or tracking</td>
+</tr>
+<tr>
+<td>Instructor</td>
+<td>Teach live/recorded classes; interact with leaderboard; milestone shoutouts</td>
+</tr>
+<tr>
+<td>Corporate Wellness Member</td>
+<td>Access via employer program; usage reported to employer (aggregated)</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

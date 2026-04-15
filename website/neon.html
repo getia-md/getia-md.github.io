@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon — IA.md | getIA.md</title>
+  <meta name="description" content="Serverless Postgres. Branching, autoscaling. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=neon.tech&sz=64" alt="Neon" onerror="this.parentElement.textContent='N'">
+      </div>
+      <h1 class="detail-brand-name">Neon</h1>
+      <p class="detail-brand-tagline">Serverless Postgres. Branching, autoscaling.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/neon/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://neon.tech" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/neon/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Neon — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Neon is a serverless Postgres platform that separates storage and compute, enabling features impossible with traditional Postgres: instant branching, autoscaling to zero, point-in-time restore, and bottomless storage. The IA follows a <strong>project-branch-endpoint model</strong> — each project is a Postgres cluster, branches are copy-on-write snapshots of the database, and endpoints are compute instances that serve queries. Like PlanetScale, Neon embraces the Git branching metaphor for databases, but applies it to Postgres. The platform targets developers who want managed Postgres with developer-friendly features (database preview branches for PRs, instant provisioning, scale-to-zero for cost efficiency).</p>
+<h2>Site Map</h2>
+<pre><code>console.neon.tech
+├── / (Projects list — dashboard)
+├── /projects/{project_id}
+│   ├── /branches (Branch list)
+│   │   └── /{branch_id} (Branch detail — tables, roles, compute)
+│   ├── /tables (Schema browser / table viewer)
+│   ├── /sql-editor (Web SQL console)
+│   ├── /databases (Database list within project)
+│   ├── /roles (Postgres roles / users)
+│   ├── /monitoring (CPU, memory, connections, storage metrics)
+│   ├── /integrations (Vercel, GitHub, Hasura, etc.)
+│   ├── /settings
+│   │   ├── /general
+│   │   ├── /compute (Autoscaling config)
+│   │   ├── /storage (Data retention, history)
+│   │   └── /delete
+│   └── /connection-details (Connection strings)
+├── /settings
+│   ├── /account
+│   ├── /billing
+│   ├── /api-keys
+│   └── /organizations
+├── /docs (Documentation — docs.neon.tech)
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — Projects (top-level list), then within a project: Dashboard, Branches, Tables, SQL Editor, Databases, Roles, Monitoring, Integrations, Settings</li>
+<li><strong>Branch selector</strong>: Prominent dropdown at top of project pages — switch between branches to view their schema, data, and compute</li>
+<li><strong>Connection details</strong>: Accessible from dashboard and sidebar — shows connection string with branch selector</li>
+<li><strong>Utility navigation</strong>: Top-right — organization switcher, avatar → Account Settings, Billing, API Keys</li>
+<li><strong>Docs navigation</strong>: Separate docs site (docs.neon.tech) with sidebar table of contents</li>
+<li><strong>Mobile</strong>: Responsive console; SQL editor works but is optimized for desktop</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>Name, region, Postgres version, branches, databases, roles, connection pooler config</td>
+<td>User/Org-owned</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>Name, parent branch, creation point (LSN/timestamp), compute endpoint, databases, schema</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Compute Endpoint</td>
+<td>vCPU size, autoscaling range (min/max CU), suspend timeout, status (active/idle)</td>
+<td>Part of branch</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>Name (within Postgres), owner role, size, tables</td>
+<td>Part of branch</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>Postgres role name, password, permissions</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Table</td>
+<td>Name, columns, data (browseable in UI), row count</td>
+<td>Part of database</td>
+</tr>
+<tr>
+<td>Integration</td>
+<td>Connected service (Vercel, GitHub), config, status</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Monitoring Metric</td>
+<td>CPU utilization, RAM, active connections, storage size, compute hours</td>
+<td>Analytics</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Creating a Project</h3>
+<ol>
+<li>User clicks &quot;New Project&quot; → enters name, selects region (AWS us-east-1, eu-west-1, ap-southeast-1)</li>
+<li>Selects Postgres version (14, 15, 16)</li>
+<li>Project created instantly (&lt; 1 second) with default <code>main</code> branch</li>
+<li>Connection string displayed immediately — copy for application use</li>
+<li>Default database <code>neondb</code> and role created automatically</li>
+</ol>
+<h3>Database Branching for Development</h3>
+<ol>
+<li>Developer navigates to Branches → &quot;Create Branch&quot;</li>
+<li>Selects parent branch (<code>main</code>) and branching point (current or point-in-time)</li>
+<li>Branch created instantly (copy-on-write — no data duplication)</li>
+<li>Branch gets its own compute endpoint and connection string</li>
+<li>Developer tests schema changes on branch without affecting production</li>
+<li>When satisfied, applies migration to <code>main</code> via application migration tool</li>
+</ol>
+<h3>Vercel Integration (Preview Branches)</h3>
+<ol>
+<li>User connects Neon project to Vercel project via Integration</li>
+<li>For each Vercel preview deployment (PR), Neon creates a database branch automatically</li>
+<li>Preview deployment connects to its own database branch</li>
+<li>PR merged → preview branch can be auto-deleted</li>
+<li>Enables full-stack preview environments with isolated data</li>
+</ol>
+<h3>Point-in-Time Restore</h3>
+<ol>
+<li>User navigates to branch → History</li>
+<li>Selects a timestamp or LSN to restore to</li>
+<li>Creates a new branch from that point in history</li>
+<li>New branch has the exact data state at that moment</li>
+<li>Can be used for debugging, data recovery, or analysis</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Projects dashboard</td>
+</tr>
+<tr>
+<td><code>/projects/{project_id}</code></td>
+<td>Project overview</td>
+</tr>
+<tr>
+<td><code>/projects/{project_id}/branches</code></td>
+<td>Branch list</td>
+</tr>
+<tr>
+<td><code>/projects/{project_id}/branches/{branch_id}</code></td>
+<td>Branch detail</td>
+</tr>
+<tr>
+<td><code>/projects/{project_id}/tables</code></td>
+<td>Table browser</td>
+</tr>
+<tr>
+<td><code>/projects/{project_id}/sql-editor</code></td>
+<td>SQL console</td>
+</tr>
+<tr>
+<td><code>/projects/{project_id}/monitoring</code></td>
+<td>Metrics</td>
+</tr>
+<tr>
+<td><code>/projects/{project_id}/settings/*</code></td>
+<td>Project settings</td>
+</tr>
+<tr>
+<td><code>/settings/*</code></td>
+<td>Account settings</td>
+</tr>
+</tbody></table>
+<p>Project IDs are short alphanumeric strings. Branch IDs are also alphanumeric. Clean hierarchical routing.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Project search</strong>: Filter projects by name on dashboard</li>
+<li><strong>Branch filtering</strong>: Filter by parent branch, creation date</li>
+<li><strong>Table browser</strong>: Browse tables with column details; data viewer with row pagination</li>
+<li><strong>SQL Editor</strong>: Full SQL query capability — the primary data exploration tool</li>
+<li><strong>Monitoring filters</strong>: Time range selector (1h, 6h, 24h, 7d, 30d) for metrics</li>
+<li><strong>No cross-project search</strong>: Each project is independent</li>
+<li><strong>Docs search</strong>: Full-text search on docs.neon.tech</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + content area with tables, charts, SQL editor</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + full content</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Sidebar as drawer + simplified layout</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger nav + single-column; SQL editor limited but functional</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Connection string display includes copy button at all sizes</li>
+<li>Branch selector remains accessible as a dropdown at all breakpoints</li>
+<li>Monitoring charts resize responsively (axis labels may truncate)</li>
+<li>Table data viewer scrolls horizontally for wide tables</li>
+<li>SQL editor on mobile shows results below query input (stacked)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, docs (no console)</td>
+</tr>
+<tr>
+<td>Free</td>
+<td>1 project, 0.5 GiB storage, 1 branch (+ dev branches with 24hr data retention), autosuspend after 5 min</td>
+</tr>
+<tr>
+<td>Launch ($19/mo)</td>
+<td>10 projects, 10 GiB storage, 100 branches, configurable autosuspend, point-in-time restore (7 days)</td>
+</tr>
+<tr>
+<td>Scale ($69/mo)</td>
+<td>50 projects, 50 GiB storage, 500 branches, 30-day history, read replicas, IP allow list</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Custom limits, SSO, audit logs, SLA, dedicated support, 99.99% uptime</td>
+</tr>
+<tr>
+<td>Organization roles</td>
+<td>Admin (full control, billing) → Member (manage projects) → Viewer (read-only)</td>
+</tr>
+<tr>
+<td>Database roles</td>
+<td>Postgres standard roles — owner, read-write, read-only</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, GitHub OAuth, Google OAuth</li>
+<li>API keys: Bearer tokens for Neon API (manage projects, branches programmatically)</li>
+<li>Connection auth: Postgres password per role; connection pooler (PgBouncer) included</li>
+<li>Branch permissions: Branches inherit project permissions; no per-branch access control</li>
+<li>IP allowlisting: Scale plan and above — restrict database connections to specific IPs</li>
+<li>Data residency: Region selection at project creation; data stays in chosen AWS region</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

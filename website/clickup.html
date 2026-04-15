@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClickUp — IA.md | getIA.md</title>
+  <meta name="description" content="All-in-one productivity. Spaces/Folders/Lists hierarchy. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=clickup.com&sz=64" alt="ClickUp" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">ClickUp</h1>
+      <p class="detail-brand-tagline">All-in-one productivity. Spaces/Folders/Lists hierarchy.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/clickup/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://clickup.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/clickup/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — ClickUp</h1>
+<h2>Overview</h2>
+<p>ClickUp is an all-in-one productivity platform that consolidates project management, docs, goals, whiteboards, and chat into a single application. Its IA is defined by a deep hierarchy — Workspace → Space → Folder → List → Task — offering extreme customizability at every level. Each node in the hierarchy can have its own statuses, custom fields, and views, making it both powerful and complex.</p>
+<h2>Site Map</h2>
+<pre><code>clickup.com
+├── Home (Dashboard)
+│   ├── My Work
+│   ├── Favorites
+│   └── Assigned Comments
+├── Spaces
+│   └── [Space]
+│       ├── Folders
+│       │   └── Lists
+│       │       ├── List View
+│       │       ├── Board View
+│       │       ├── Calendar View
+│       │       ├── Gantt View
+│       │       ├── Table View
+│       │       ├── Mind Map
+│       │       └── Activity View
+│       └── Folderless Lists
+├── Everything View
+├── Docs
+│   ├── Documents
+│   └── Wikis
+├── Whiteboards
+├── Dashboards
+├── Goals
+├── Inbox (Notifications)
+├── Chat
+├── Automations
+├── Integrations
+├── Template Center
+└── Settings
+    ├── Workspace
+    ├── Spaces
+    ├── People
+    ├── Imports/Exports
+    └── Security
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Home, Inbox, Docs, Dashboards, Whiteboards, Goals, plus the Spaces tree (collapsible)</li>
+<li><strong>Top bar:</strong> Global search (⌘K), quick-create (+), breadcrumb trail, notifications bell</li>
+<li><strong>View bar:</strong> Horizontal tabs for switching between views within any list/folder/space</li>
+<li><strong>Task detail:</strong> Full-page or modal view with subtasks, comments, attachments, activity, relationships</li>
+<li><strong>Everything View:</strong> Flat view aggregating all tasks across all spaces with filters</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>name, members, plan</td>
+<td>→ Spaces</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>name, color, avatar, features enabled</td>
+<td>→ Folders, Lists, Statuses</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name, statuses override</td>
+<td>→ Lists</td>
+</tr>
+<tr>
+<td>List</td>
+<td>name, statuses, custom fields</td>
+<td>→ Tasks</td>
+</tr>
+<tr>
+<td>Task</td>
+<td>title, assignee(s), status, priority, due date, time estimate, tags</td>
+<td>→ Subtasks, Checklists, Comments, Attachments, Dependencies</td>
+</tr>
+<tr>
+<td>Doc</td>
+<td>title, content (blocks), sharing</td>
+<td>→ Workspace, Pages</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>name, target (number/currency/true-false/task), owner</td>
+<td>→ Key Results, Tasks</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>name, widgets</td>
+<td>→ Data sources (lists, spaces)</td>
+</tr>
+<tr>
+<td>Whiteboard</td>
+<td>name, objects, collaborators</td>
+<td>→ Workspace</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Set Up a New Space</h3>
+<p><code>Sidebar → + Create Space → Name, color, icon → Enable features (Statuses, Time Tracking, Custom Fields, etc.) → Create default lists</code></p>
+<h3>2. Create a Task with Dependencies</h3>
+<p><code>List → + New Task → Title, assignee, priority → Open detail → Add dependency (waiting on / blocking) → Set due dates</code></p>
+<h3>3. Build a Dashboard</h3>
+<p><code>Dashboards → + New → Add widgets (Sprint Velocity, Workload, Time Tracking, Custom Charts) → Select data sources → Arrange</code></p>
+<h3>4. Set and Track Goals</h3>
+<p><code>Goals → + New Goal → Define target type → Add key results → Link tasks → Monitor completion percentage</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>app.clickup.com/{workspace_id}/home                    # Home dashboard
+app.clickup.com/{workspace_id}/v/l/{list_id}           # List view
+app.clickup.com/{workspace_id}/v/b/{list_id}           # Board view
+app.clickup.com/{workspace_id}/v/dc/{list_id}          # Calendar view
+app.clickup.com/{workspace_id}/v/gh/{list_id}          # Gantt view
+app.clickup.com/t/{task_id}                            # Task detail
+app.clickup.com/{workspace_id}/docs/{doc_id}           # Document
+app.clickup.com/{workspace_id}/dashboards/{id}         # Dashboard
+app.clickup.com/{workspace_id}/goals                   # Goals
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search (⌘K):</strong> Full-text across tasks, docs, comments, people; recent searches, saved searches</li>
+<li><strong>List/Folder filters:</strong> Multi-field filter builder (status, assignee, priority, tags, custom fields, dates) with AND/OR/NOT logic</li>
+<li><strong>Group by &amp; Sort:</strong> Group by any field; multi-level sort</li>
+<li><strong>Me Mode:</strong> Quick toggle to filter any view to only the current user&#39;s tasks</li>
+<li><strong>Saved filters:</strong> Persist as reusable filter sets applicable across views</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1280px+)</td>
+<td>Full sidebar + view + task detail panel (three columns possible)</td>
+</tr>
+<tr>
+<td>Tablet (768–1279px)</td>
+<td>Collapsible sidebar, single-view focus, task detail as overlay</td>
+</tr>
+<tr>
+<td>Mobile app</td>
+<td>Bottom nav (Home, Notifications, Add, Search, Menu), card-based task views</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Owner</td>
+<td>Full workspace control, billing, transfer ownership</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>User management, workspace settings, all spaces</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>Access granted spaces, create tasks, manage own items</td>
+</tr>
+<tr>
+<td>Guest (internal)</td>
+<td>Limited to specific lists/folders, no space-level access</td>
+</tr>
+<tr>
+<td>Guest (external)</td>
+<td>Specific item/list access only, no sidebar navigation</td>
+</tr>
+<tr>
+<td>Custom Role</td>
+<td>Configurable permissions per feature (Enterprise plan)</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket — IA.md | getIA.md</title>
+  <meta name="description" content="Read-it-later. Tags, highlights, recommendations. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=getpocket.com&sz=64" alt="Pocket" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Pocket</h1>
+      <p class="detail-brand-tagline">Read-it-later. Tags, highlights, recommendations.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/pocket/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://getpocket.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/pocket/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Pocket</h1>
+<h2>1. Overview</h2>
+<p>Pocket (by Mozilla) is a read-it-later service that lets users save articles, videos, and web pages for offline consumption. The IA is intentionally minimal — a <strong>save → organize → read</strong> pipeline. Pocket differentiates through its recommendation engine (surfacing curated articles), tagging system, and distraction-free reading mode that strips away website clutter. It serves as both a personal reading library and a content discovery platform.</p>
+<h2>2. Site Map</h2>
+<pre><code>getpocket.com
+├── Home (marketing)
+├── My List (Auth — core experience)
+│   ├── Saved items
+│   ├── Archive
+│   ├── Favorites
+│   ├── Highlights
+│   ├── Tags
+│   │   └── /{tag-name}
+│   ├── All items / Articles / Videos
+│   └── Search
+├── Discover (Recommendations)
+│   ├── Best of web (curated)
+│   ├── Topics
+│   │   ├── Technology
+│   │   ├── Science
+│   │   ├── Self-improvement
+│   │   ├── Food
+│   │   ├── Entertainment
+│   │   └── ... (12+ topics)
+│   ├── Popular
+│   └── Trending
+├── Collections (editorial)
+│   ├── Curated reading lists
+│   └── /{collection-slug}
+├── Pocket Premium
+│   ├── Permanent library
+│   ├── Full-text search
+│   ├── Suggested tags
+│   ├── Ad-free Discover
+│   └── Unlimited highlights
+├── Apps &amp; Extensions
+│   ├── Browser extension (Chrome, Firefox, Safari)
+│   ├── iOS app
+│   ├── Android app
+│   └── API
+├── Help
+│   ├── Getting started
+│   ├── Saving content
+│   ├── Reading &amp; listening
+│   ├── Account
+│   └── Contact
+├── About
+│   ├── Company
+│   └── Blog
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── Cookie policy
+└── Auth
+    ├── Log in
+    └── Sign up
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>App/Web (auth)</td>
+<td>Left sidebar</td>
+<td>My List, Archive, Favorites, Highlights, Tags, Discover</td>
+</tr>
+<tr>
+<td>My List</td>
+<td>Top bar</td>
+<td>All / Articles / Videos, sort, filter, search</td>
+</tr>
+<tr>
+<td>Item view</td>
+<td>Minimal toolbar</td>
+<td>Font size, theme (light/dark/sepia), listen (TTS), archive, favorite, tag, share, delete</td>
+</tr>
+<tr>
+<td>Discover</td>
+<td>Topic tabs</td>
+<td>Best Of, Popular, Topics</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>Popup</td>
+<td>Save current page, add tags, view recent saves</td>
+</tr>
+<tr>
+<td>Mobile app</td>
+<td>Bottom tabs</td>
+<td>Home (My List), Discover, Search, Settings</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: The reading view is purposefully distraction-free — no ads, no sidebar, no related articles. The focus is entirely on the content. Tags replace folders as the organizational paradigm.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Saved Item</td>
+<td>URL, title, excerpt, thumbnail, domain/source, date saved, tags, favorite flag, status (unread/archived), estimated read time, type (article/video)</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name, items count, user-defined</td>
+</tr>
+<tr>
+<td>Highlight</td>
+<td>text selection, item, color, note</td>
+</tr>
+<tr>
+<td>Recommendation</td>
+<td>title, URL, excerpt, source, topic, curator note</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>title, description, items (ordered), curator</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Save &amp; read</h3>
+<ol>
+<li>Browse the web → click Pocket extension or share-to-Pocket</li>
+<li>Article saved → appears in My List</li>
+<li>Optionally add tags for organization</li>
+<li>Open in Pocket → distraction-free reader view</li>
+<li>Archive when finished (or delete)</li>
+</ol>
+<h3>5b. Tag &amp; organize</h3>
+<ol>
+<li>View My List → select item(s) → &quot;Tag&quot;</li>
+<li>Type tag name(s) → apply (Premium: auto-suggested tags)</li>
+<li>Browse by tag in sidebar → filtered view of saved items</li>
+<li>Bulk actions: tag, archive, delete, favorite</li>
+</ol>
+<h3>5c. Discover &amp; save</h3>
+<ol>
+<li>Visit Discover tab → browse curated recommendations</li>
+<li>Filter by topic (Technology, Science, Food, etc.)</li>
+<li>Read article preview → save to My List for later</li>
+<li>Articles surfaced by editorial team + algorithmic recommendations</li>
+</ol>
+<h3>5d. Listen (TTS)</h3>
+<ol>
+<li>Open saved article → tap &quot;Listen&quot; button</li>
+<li>Text-to-speech reads article aloud</li>
+<li>Control speed, play/pause → listen while commuting</li>
+<li>Syncs position across devices</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>/                           → Marketing home
+/saves/                     → My List (auth)
+/saves/archive/             → Archived items
+/saves/favorites/           → Favorited items
+/saves/highlights/          → All highlights
+/saves/tags/{tag}/          → Items with tag
+/saves/search?query={q}    → Search saved items
+/explore/                   → Discover / Recommendations
+/explore/{topic}/           → Topic recommendations
+/collections/{slug}/        → Curated collection
+/read/{item-id}             → Reader view
+/premium/                   → Pocket Premium
+/apps/                      → Download apps
+/help/                      → Help center
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>My List search</td>
+<td>Keyword search across saved titles and content (Premium: full-text)</td>
+</tr>
+<tr>
+<td>Tag filter</td>
+<td>Click tag in sidebar → show all items with that tag</td>
+</tr>
+<tr>
+<td>Type filter</td>
+<td>All, Articles only, Videos only</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Newest saved, oldest saved</td>
+</tr>
+<tr>
+<td>Status filter</td>
+<td>My List (unread) vs. Archive</td>
+</tr>
+<tr>
+<td>Discover filter</td>
+<td>By topic, popularity, trending</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Sidebar + list/grid view, wide reader view, multi-column Discover</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Collapsible sidebar, grid view, comfortable reader</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Bottom tabs, card list, full-screen reader, swipe to archive</td>
+</tr>
+<tr>
+<td>Browser extension</td>
+<td>Compact popup — save button, tags, recent saves</td>
+</tr>
+<tr>
+<td>App (iOS/Android)</td>
+<td>Offline reading, TTS, dark mode, widget for quick save</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Marketing page, public collections, Discover (limited)</td>
+</tr>
+<tr>
+<td>Free User</td>
+<td>Save unlimited items, 3 highlights/article, tags, archive, basic search</td>
+</tr>
+<tr>
+<td>Pocket Premium</td>
+<td>Full-text search, permanent library (saved even if original deleted), suggested tags, unlimited highlights, ad-free Discover</td>
+</tr>
+<tr>
+<td>Mozilla Account (SSO)</td>
+<td>Firefox integration, synced saves across browsers</td>
+</tr>
+<tr>
+<td>API Developer</td>
+<td>Save, retrieve, modify items programmatically</td>
+</tr>
+<tr>
+<td>Editorial Team</td>
+<td>Curate Discover content, create Collections</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>Recommendation engine tuning, content moderation</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

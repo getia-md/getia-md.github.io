@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InVision — IA.md | getIA.md</title>
+  <meta name="description" content="Design prototyping. Freehand, DSM, collaboration. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=invisionapp.com&sz=64" alt="InVision" onerror="this.parentElement.textContent='I'">
+      </div>
+      <h1 class="detail-brand-name">InVision</h1>
+      <p class="detail-brand-tagline">Design prototyping. Freehand, DSM, collaboration.</p>
+      <span class="detail-category-badge">Design</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/invision/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://invisionapp.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/invision/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — InVision</h1>
+<h2>1. Overview</h2>
+<p>InVision is a digital product design platform that pioneered <strong>clickable prototyping</strong> from static screens and later expanded into collaborative whiteboarding (Freehand) and design system management (DSM). While the company has scaled down its product suite, the IA reflects its historical role as a design collaboration hub — connecting designers, developers, and stakeholders through prototypes, design specs, and real-time collaboration boards. Key products include prototyping, Freehand, and DSM.</p>
+<h2>2. Site Map</h2>
+<pre><code>invisionapp.com
+├── Home
+├── Product
+│   ├── Freehand (collaborative whiteboard)
+│   │   ├── Overview
+│   │   ├── Templates
+│   │   ├── Brainstorming
+│   │   ├── Wireframing
+│   │   ├── Diagramming
+│   │   └── Meetings &amp; workshops
+│   ├── Prototyping
+│   │   ├── Create prototypes
+│   │   ├── Transitions &amp; gestures
+│   │   ├── Comments &amp; feedback
+│   │   └── User testing
+│   ├── Design System Manager (DSM)
+│   │   ├── Component library
+│   │   ├── Design tokens
+│   │   ├── Documentation
+│   │   └── Code snippets
+│   ├── Inspect (developer handoff)
+│   │   ├── Specs &amp; measurements
+│   │   ├── Asset export
+│   │   └── Code generation
+│   └── Integrations
+│       ├── Sketch plugin (Craft)
+│       ├── Figma
+│       ├── Jira
+│       ├── Slack
+│       └── Confluence
+├── Solutions
+│   ├── By role (Designers, Product Managers, Developers)
+│   ├── By use case (Brainstorming, Wireframing, Prototyping, Handoff)
+│   └── Enterprise
+├── Pricing
+│   ├── Free / Pro / Enterprise
+│   └── Feature comparison
+├── Templates (Freehand)
+│   ├── Brainstorming
+│   ├── Wireframe kits
+│   ├── Sprint planning
+│   ├── User journey maps
+│   └── Retrospectives
+├── Resources
+│   ├── Blog (Inside Design)
+│   ├── Design resources &amp; guides
+│   ├── Webinars
+│   ├── Community
+│   └── Design Genome (research)
+├── Learn
+│   ├── Help center
+│   ├── Tutorials
+│   └── API documentation
+├── About
+│   ├── Company
+│   ├── Careers
+│   ├── Press
+│   └── Security
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── DPA
+└── Auth
+    ├── Sign in
+    └── Sign up free
+
+InVision App (Web)
+├── Dashboard
+│   ├── All projects
+│   ├── Spaces (team folders)
+│   ├── Recent
+│   ├── Archived
+│   └── Trash
+├── Prototype Project
+│   ├── Screens (uploaded designs)
+│   ├── Build mode (add hotspots, links, transitions)
+│   ├── Preview / Play mode
+│   ├── Comment mode (annotate screens)
+│   ├── Inspect mode (developer specs)
+│   ├── History (version tracking)
+│   └── Share / Invite
+├── Freehand Board
+│   ├── Infinite canvas
+│   ├── Drawing tools (pen, shapes, sticky notes)
+│   ├── Text, images, embeds
+│   ├── Templates
+│   ├── Voting / reactions
+│   ├── Timer
+│   ├── Cursor presence (real-time)
+│   └── Share / Export
+├── DSM
+│   ├── Components
+│   ├── Design tokens (colors, typography, spacing)
+│   ├── Documentation pages
+│   ├── Code snippets (per component)
+│   └── Version history
+├── Team Settings
+│   ├── Members &amp; roles
+│   ├── Billing
+│   ├── SSO
+│   └── Integrations
+└── Profile
+    ├── Account
+    ├── Notifications
+    └── Preferences
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>invisionapp.com</td>
+<td>Top nav</td>
+<td>Logo, Product, Solutions, Pricing, Templates, Resources, Sign in, Sign up</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Dropdown</td>
+<td>Freehand, Prototyping, DSM, Inspect, Integrations</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>Left sidebar</td>
+<td>All, Spaces, Recent, Archived, Trash, Freehand, DSM</td>
+</tr>
+<tr>
+<td>Prototype</td>
+<td>Mode switcher</td>
+<td>Build, Preview, Comment, Inspect, History</td>
+</tr>
+<tr>
+<td>Freehand</td>
+<td>Floating toolbar</td>
+<td>Drawing tools, shapes, text, sticky notes, connectors</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: InVision uses a mode-switching paradigm in prototypes — Build (add interactions), Preview (test), Comment (feedback), Inspect (handoff) — each mode shows the same screens with different overlays.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project (Prototype)</td>
+<td>name, type, screens, hotspots, comments, collaborators, space, status</td>
+</tr>
+<tr>
+<td>Screen</td>
+<td>image, name, sort order, hotspots, fixed elements, transition effects</td>
+</tr>
+<tr>
+<td>Hotspot</td>
+<td>position (x, y, w, h), target screen, gesture (tap, swipe, hover), transition (slide, fade, etc.)</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>author, screen, position (x, y), text, status (open/resolved), replies, timestamp</td>
+</tr>
+<tr>
+<td>Freehand Board</td>
+<td>name, elements, collaborators, template source, space</td>
+</tr>
+<tr>
+<td>Freehand Element</td>
+<td>type (sticky, shape, drawing, text, image, embed), position, style</td>
+</tr>
+<tr>
+<td>DSM Component</td>
+<td>name, description, design preview, code snippet, design tokens, version</td>
+</tr>
+<tr>
+<td>Design Token</td>
+<td>category (color, typography, spacing), name, value, platform (web/iOS/Android)</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>name, projects, members, permissions</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Create a prototype</h3>
+<ol>
+<li>New Project → upload screen designs (PNG/JPG from Sketch, Figma, etc.)</li>
+<li>Enter Build mode → draw hotspots on interactive elements</li>
+<li>Link hotspots to target screens → set transition animation</li>
+<li>Preview mode → click through prototype on device frame</li>
+<li>Share link → stakeholders comment directly on screens</li>
+</ol>
+<h3>5b. Freehand brainstorming session</h3>
+<ol>
+<li>Create new Freehand → choose template (or blank)</li>
+<li>Share link with team → real-time cursors visible</li>
+<li>Add sticky notes, drawings, diagrams, wireframes</li>
+<li>Vote on ideas (dot voting) → use timer for timeboxing</li>
+<li>Export as PDF or continue iterating</li>
+</ol>
+<h3>5c. Design system management (DSM)</h3>
+<ol>
+<li>Set up DSM → add components from design tool</li>
+<li>Add design tokens (colors, fonts, spacing)</li>
+<li>Write documentation for each component</li>
+<li>Add code snippets (HTML/CSS, React, Swift)</li>
+<li>Team references DSM as single source of truth</li>
+</ol>
+<h3>5d. Developer handoff (Inspect)</h3>
+<ol>
+<li>Developer opens shared prototype → Inspect mode</li>
+<li>Click any element → view specs (dimensions, spacing, colors, fonts)</li>
+<li>Copy generated code (CSS, Swift, Android)</li>
+<li>Download assets (images, icons in multiple resolutions)</li>
+<li>Leave comments for questions → designer responds</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code># invisionapp.com (marketing)
+/                               → Home
+/freehand/                      → Freehand product
+/prototyping/                   → Prototyping product
+/dsm/                           → Design System Manager
+/inspect/                       → Developer handoff
+/pricing/                       → Pricing
+/templates/                     → Freehand templates
+/inside-design/                 → Blog
+/resources/                     → Design resources
+/learn/                         → Help &amp; tutorials
+/enterprise/                    → Enterprise
+
+# InVision App
+/d/main/                        → Dashboard
+/d/{project-id}/                → Project overview
+/console/{project-id}/          → Prototype build mode
+/console/{project-id}/play      → Prototype preview
+/freehand/{board-id}            → Freehand board
+/dsm/{org-slug}/                → DSM library
+/dsm/{org-slug}/{component}/    → Component detail
+/settings/                      → Team settings
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dashboard search</td>
+<td>Search projects by name, filter by space</td>
+</tr>
+<tr>
+<td>Template search</td>
+<td>Search Freehand templates by category, keyword</td>
+</tr>
+<tr>
+<td>DSM search</td>
+<td>Search components, tokens by name</td>
+</tr>
+<tr>
+<td>Comment filter</td>
+<td>Open, resolved, by author, by screen</td>
+</tr>
+<tr>
+<td>Blog search</td>
+<td>By keyword, category (design, product, culture)</td>
+</tr>
+<tr>
+<td>Help search</td>
+<td>Keyword across tutorials and documentation</td>
+</tr>
+<tr>
+<td>Screen search</td>
+<td>Find screens within prototype by name</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Full dashboard, prototype builder, Freehand canvas, Inspect panel</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Freehand usable (touch), prototype viewer functional, limited builder</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Prototype preview (playback), Freehand view-only, marketing site responsive</td>
+</tr>
+<tr>
+<td>Prototype preview</td>
+<td>Renders in device frame (iPhone, Android, desktop) with proper viewport</td>
+</tr>
+<tr>
+<td>Freehand</td>
+<td>Touch-optimized for tablets, supports Apple Pencil</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Marketing site, blog, resources, template gallery</td>
+</tr>
+<tr>
+<td>Free User</td>
+<td>Freehand (limited boards), prototype viewing</td>
+</tr>
+<tr>
+<td>Pro User</td>
+<td>Unlimited prototypes, Freehand boards, Inspect, DSM</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>SSO, advanced permissions, audit logs, dedicated support</td>
+</tr>
+<tr>
+<td>Collaborator (invited)</td>
+<td>View + comment on shared prototypes (no seat required)</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Full project access — upload, build, comment, manage</td>
+</tr>
+<tr>
+<td>Viewer</td>
+<td>View prototypes, use Inspect, download assets</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Team management, billing, SSO, permissions, spaces</td>
+</tr>
+<tr>
+<td>Developer (Inspect)</td>
+<td>Inspect mode, code, assets — no design editing</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>Platform management, template curation, support</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

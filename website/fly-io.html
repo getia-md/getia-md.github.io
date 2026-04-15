@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fly.io — IA.md | getIA.md</title>
+  <meta name="description" content="Edge compute. Machines API, global deployment. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=fly.io&sz=64" alt="Fly.io" onerror="this.parentElement.textContent='F'">
+      </div>
+      <h1 class="detail-brand-name">Fly.io</h1>
+      <p class="detail-brand-tagline">Edge compute. Machines API, global deployment.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/fly-io/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://fly.io" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/fly-io/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Fly.io — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Fly.io is an edge compute platform that runs full-stack applications on hardware in 30+ regions worldwide, deploying containers close to users via its Machines API. The IA reflects a <strong>CLI-first, infrastructure-as-code philosophy</strong> — while a web dashboard exists, the primary interface is the <code>flyctl</code> CLI and the Machines API. The dashboard serves as a monitoring and management companion rather than the primary creation interface. Key architectural concepts include Machines (individual VMs that can be started/stopped in milliseconds), Volumes (persistent storage), Fly Proxy (global Anycast load balancing), and Fly Postgres (managed Postgres clusters). The platform targets developers who want Heroku-like simplicity with infrastructure-level control and global edge deployment.</p>
+<h2>Site Map</h2>
+<pre><code>fly.io (marketing + dashboard)
+├── / (Home — marketing)
+├── /pricing
+├── /docs (Documentation)
+│   ├── /getting-started
+│   ├── /apps
+│   ├── /machines
+│   ├── /networking
+│   ├── /reference
+│   └── /blueprints (Deployment guides)
+├── /dashboard (App list)
+│   └── /apps/{app_name}
+│       ├── /overview (Status, machines, regions)
+│       ├── /machines (Machine list — VMs)
+│       │   └── /{machine_id}
+│       ├── /monitoring (Metrics, logs)
+│       ├── /networking (IP addresses, certificates, services)
+│       ├── /volumes (Persistent storage)
+│       ├── /secrets (Environment secrets)
+│       ├── /tokens (Deploy tokens)
+│       └── /settings
+├── /dashboard/personal
+│   ├── /billing
+│   ├── /tokens
+│   └── /settings
+├── /dashboard/orgs/{org_slug}
+│   ├── /billing
+│   ├── /members
+│   └── /settings
+├── /blog
+├── /community (Community forum)
+└── /status (Status page)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Top bar — Apps, Machines, Docs, Blog, Community, Dashboard</li>
+<li><strong>Dashboard navigation</strong>: Left sidebar — Apps (list), then within an app: Overview, Machines, Monitoring, Networking, Volumes, Secrets, Settings</li>
+<li><strong>CLI as primary nav</strong>: Most users interact via <code>fly</code> CLI commands — <code>fly apps</code>, <code>fly deploy</code>, <code>fly machines</code>, <code>fly logs</code></li>
+<li><strong>Utility navigation</strong>: Top-right — org switcher, avatar → Account Settings, Billing, Tokens</li>
+<li><strong>Docs navigation</strong>: Left sidebar TOC organized by topic (Getting Started, Apps, Machines, Networking, Databases, Reference)</li>
+<li><strong>Region awareness</strong>: Machine list shows region codes (iad, cdg, nrt, etc.) prominently</li>
+<li><strong>Mobile</strong>: Dashboard is responsive; CLI is the recommended mobile interface</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>App</td>
+<td>Name, organization, regions, machines, volumes, secrets, networking config</td>
+<td>Org-owned</td>
+</tr>
+<tr>
+<td>Machine</td>
+<td>ID, region, state (started/stopped/destroyed), image, CPU/memory config, checks</td>
+<td>Part of app</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>ID, region, size, attached machine, snapshots</td>
+<td>Part of app</td>
+</tr>
+<tr>
+<td>Secret</td>
+<td>Key-value pair, encrypted at rest, available to all machines</td>
+<td>Part of app</td>
+</tr>
+<tr>
+<td>IP Address</td>
+<td>Type (v4 shared, v4 dedicated, v6), region (global Anycast)</td>
+<td>Part of app</td>
+</tr>
+<tr>
+<td>Certificate</td>
+<td>Custom domain, DNS validation status, TLS cert status</td>
+<td>Part of app</td>
+</tr>
+<tr>
+<td>Fly Postgres Cluster</td>
+<td>Postgres app with primary + replicas across regions</td>
+<td>Org-owned</td>
+</tr>
+<tr>
+<td>Blueprint</td>
+<td>Deployment guide for specific stack (Rails, Django, Next.js, etc.)</td>
+<td>Fly.io-curated</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>Name, members, apps, billing, tokens</td>
+<td>Org-owned</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Deploying an App (CLI-First)</h3>
+<ol>
+<li>Developer runs <code>fly launch</code> in project directory</li>
+<li>CLI auto-detects framework → generates <code>fly.toml</code> config and Dockerfile</li>
+<li>Selects organization, app name, regions</li>
+<li><code>fly deploy</code> builds Docker image → pushes to Fly registry → creates Machine(s)</li>
+<li>App deployed to selected region(s) with Anycast IP</li>
+<li>Subsequent deploys: <code>fly deploy</code> — builds and performs rolling update</li>
+</ol>
+<h3>Multi-Region Deployment</h3>
+<ol>
+<li>Developer deploys app to primary region (e.g., <code>iad</code>)</li>
+<li>Adds regions: <code>fly scale count 2 --region cdg,nrt</code> (Europe, Asia)</li>
+<li>Fly Proxy routes users to nearest region via Anycast</li>
+<li>For databases: sets up read replicas in additional regions</li>
+<li><code>fly regions list</code> shows current deployment topology</li>
+</ol>
+<h3>Machine Management</h3>
+<ol>
+<li>Navigate to Dashboard → App → Machines (or <code>fly machines list</code>)</li>
+<li>See all machines: ID, region, state, CPU/RAM, image version</li>
+<li>Start/stop individual machines for cost control</li>
+<li>Scale horizontally: add machines in specific regions</li>
+<li>Scale vertically: change CPU/memory per machine</li>
+</ol>
+<h3>Secrets Management</h3>
+<ol>
+<li>Developer runs <code>fly secrets set DATABASE_URL=postgres://...</code></li>
+<li>Secret encrypted and stored in Fly&#39;s vault</li>
+<li>All machines in the app can access via environment variable</li>
+<li>Setting a secret triggers a rolling restart of all machines</li>
+<li>Dashboard shows secret names (not values) — values only accessible at runtime</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>fly.io/</code></td>
+<td>Marketing home</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard</code></td>
+<td>App list</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/apps/{app_name}</code></td>
+<td>App overview</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/apps/{app_name}/machines</code></td>
+<td>Machine list</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/apps/{app_name}/machines/{id}</code></td>
+<td>Machine detail</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/apps/{app_name}/monitoring</code></td>
+<td>Metrics and logs</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/apps/{app_name}/networking</code></td>
+<td>IPs and certs</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/apps/{app_name}/volumes</code></td>
+<td>Volumes</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/apps/{app_name}/secrets</code></td>
+<td>Secrets</td>
+</tr>
+<tr>
+<td><code>fly.io/dashboard/orgs/{slug}/*</code></td>
+<td>Organization management</td>
+</tr>
+<tr>
+<td><code>fly.io/docs/*</code></td>
+<td>Documentation</td>
+</tr>
+</tbody></table>
+<p>App names are globally unique slugs. Machine IDs are alphanumeric. Dashboard under <code>/dashboard</code> prefix.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>App search</strong>: Search apps by name on dashboard</li>
+<li><strong>Machine filtering</strong>: Filter by region, state (started, stopped), in dashboard</li>
+<li><strong>Log search</strong>: Filter logs by region, machine ID, time range; keyword search in log output</li>
+<li><strong>Docs search</strong>: Full-text documentation search (Algolia-powered)</li>
+<li><strong>CLI search</strong>: <code>fly apps list</code>, <code>fly machines list</code> with text-based filtering</li>
+<li><strong>No marketplace/template search</strong>: Blueprints are in docs, not a searchable marketplace</li>
+<li><strong>Metrics filtering</strong>: Time range, region, machine</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1024px)</td>
+<td>Sidebar + main content (machine table, metrics charts, log stream)</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Collapsible sidebar + full content</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger nav + single-column; machine table scrolls horizontally</td>
+</tr>
+</tbody></table>
+<ul>
+<li>CLI is the primary interface — no responsive constraints</li>
+<li>Dashboard machine list shows region codes as colored badges (always visible)</li>
+<li>Metrics charts resize with viewport</li>
+<li>Log stream is monospace with auto-scroll (works on mobile)</li>
+<li>Docs site is fully responsive with collapsible sidebar TOC</li>
+<li>Marketing site is fully responsive with mobile-first design</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, docs, community forum</td>
+</tr>
+<tr>
+<td>Free (Hobby)</td>
+<td>Up to 3 shared-CPU VMs, 3 shared-IPv4, 1GB volumes, limited free allowance</td>
+</tr>
+<tr>
+<td>Pay-as-you-go</td>
+<td>Usage-based billing, all machine types, dedicated CPU, GPU machines</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>Shared billing, member management, deploy tokens, SSO (Enterprise)</td>
+</tr>
+<tr>
+<td>Org roles</td>
+<td>Admin (full control, billing, members) → Member (deploy, manage apps) → Billing Manager</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, GitHub OAuth</li>
+<li>Deploy tokens: Scoped to specific apps for CI/CD (not full account access)</li>
+<li>Secrets: Encrypted at rest; not readable via API or dashboard — runtime-only</li>
+<li>Networking: Private networking between apps in same org; WireGuard VPN for dev access</li>
+<li>Machines API: Full REST API for programmatic machine lifecycle management</li>
+<li>IP restrictions: Apps can bind to private or public IPs; internal services accessible only within the org network</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

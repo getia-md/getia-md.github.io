@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basecamp — IA.md | getIA.md</title>
+  <meta name="description" content="Project management. Hill Charts, Campfire, Lineup. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=basecamp.com&sz=64" alt="Basecamp" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">Basecamp</h1>
+      <p class="detail-brand-tagline">Project management. Hill Charts, Campfire, Lineup.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/basecamp/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://basecamp.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/basecamp/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Basecamp</h1>
+<h2>Overview</h2>
+<p>Basecamp takes an opinionated, anti-complexity stance on project management. Each project is a self-contained &quot;basecamp&quot; with six fixed tools: Message Board, To-dos, Schedule, Docs &amp; Files, Campfire (chat), and Automatic Check-ins. There are no Gantt charts, no custom fields, and no infinite configurations — by design. The Lineup view provides leadership-level project tracking, and Hill Charts offer a unique progress visualization.</p>
+<h2>Site Map</h2>
+<pre><code>basecamp.com
+├── Home (HQ)
+│   ├── Your Assignments
+│   ├── Your Bookmarks
+│   ├── Your Schedule
+│   └── Your Drafts
+├── Projects
+│   └── [Project]
+│       ├── Message Board (long-form announcements)
+│       ├── To-dos
+│       │   ├── To-do Lists
+│       │   │   └── To-do Items (assignee, due date, notes)
+│       │   └── Completed
+│       ├── Campfire (group chat)
+│       ├── Schedule (shared calendar)
+│       ├── Docs &amp; Files
+│       │   ├── Documents
+│       │   └── Files
+│       ├── Automatic Check-ins (recurring prompts)
+│       └── Card Table (kanban — optional)
+│           └── Columns → Cards
+├── Teams
+│   └── [Team] (same six tools as projects)
+├── Lineup (leadership view)
+│   ├── Projects on timeline
+│   └── Hill Charts
+├── Hey! (Notifications)
+│   ├── New for You
+│   └── Catch Up (read later)
+├── Pings (Direct Messages)
+├── Activity (global feed)
+│   ├── Latest Activity
+│   ├── Someone&#39;s Activity
+│   └── Overdue To-dos
+├── Find (Search)
+└── Admin
+    ├── Account Settings
+    ├── People
+    ├── Billing
+    └── Templates
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Top bar:</strong> Home, Lineup, Hey! (notifications), Activity, Find, Pings, My Stuff dropdown</li>
+<li><strong>Home page:</strong> Project cards in a grid; &quot;Your Assignments&quot; and &quot;Your Schedule&quot; are personal aggregations</li>
+<li><strong>Inside a project:</strong> Six tool icons at the top (Message Board, To-dos, Campfire, Schedule, Docs &amp; Files, Check-ins)</li>
+<li><strong>Breadcrumbs:</strong> Always visible, showing Project → Tool → Item hierarchy</li>
+<li><strong>No sidebar:</strong> Basecamp deliberately avoids persistent sidebars to keep attention on one thing at a time</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>name, description, color, people, tools enabled</td>
+<td>→ Messages, To-dos, Events, Documents, Campfire, Check-ins</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>title, body (rich text), category, creator</td>
+<td>→ Comments, Project</td>
+</tr>
+<tr>
+<td>To-do List</td>
+<td>title, description</td>
+<td>→ To-do Items</td>
+</tr>
+<tr>
+<td>To-do Item</td>
+<td>title, assignee, due date, notes, completed</td>
+<td>→ Comments</td>
+</tr>
+<tr>
+<td>Campfire</td>
+<td>Real-time group chat per project</td>
+<td>→ Messages (chat), Project</td>
+</tr>
+<tr>
+<td>Event (Schedule)</td>
+<td>title, date/time, duration, recurring</td>
+<td>→ Comments, Project</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>title, body (rich text)</td>
+<td>→ Project</td>
+</tr>
+<tr>
+<td>File</td>
+<td>name, type, size</td>
+<td>→ Project</td>
+</tr>
+<tr>
+<td>Check-in</td>
+<td>recurring question (e.g., &quot;What did you work on today?&quot;)</td>
+<td>→ Responses, Project</td>
+</tr>
+<tr>
+<td>Card Table</td>
+<td>columns, cards</td>
+<td>→ Project</td>
+</tr>
+<tr>
+<td>Hill Chart</td>
+<td>scopes, positions (uphill/downhill)</td>
+<td>→ To-do Lists</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Kick Off a Project</h3>
+<p><code>Home → + New Project → Name, description, people → Choose tools → Post intro on Message Board → Create To-do Lists → Set Schedule milestones</code></p>
+<h3>2. Post an Update</h3>
+<p><code>Project → Message Board → + New Message → Choose category (Announcement/FYI/Pitch/Heartbeat) → Write → Notify → Team comments</code></p>
+<h3>3. Track Progress with Hill Charts</h3>
+<p><code>Project → To-dos → Hill Chart → Drag scopes uphill (figuring out) → Over the hill → Downhill (execution) → Compare snapshots over time</code></p>
+<h3>4. Daily Check-in</h3>
+<p><code>Automatic Check-in fires (e.g., &quot;What did you work on today?&quot;) → Respond in-app or via email → Team sees all responses in one thread</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>3.basecamp.com/{account_id}/                           # Home
+3.basecamp.com/{account_id}/projects/{project_id}      # Project overview
+3.basecamp.com/{account_id}/buckets/{id}/messages       # Message Board
+3.basecamp.com/{account_id}/buckets/{id}/todolists      # To-dos
+3.basecamp.com/{account_id}/buckets/{id}/chats/{id}     # Campfire
+3.basecamp.com/{account_id}/buckets/{id}/schedules/{id} # Schedule
+3.basecamp.com/{account_id}/buckets/{id}/vaults/{id}    # Docs &amp; Files
+3.basecamp.com/{account_id}/reports/todos               # My Assignments
+3.basecamp.com/{account_id}/lineup                      # Lineup
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Find (global search):</strong> Full-text across messages, to-dos, documents, comments, and campfire chats</li>
+<li><strong>Scoped search:</strong> Filter by project, person, type (message/to-do/document/event)</li>
+<li><strong>Activity feed:</strong> Filter by project or person; &quot;Overdue&quot; filter for to-dos</li>
+<li><strong>Hey! menu:</strong> Catch Up feature lets you defer notifications to read later</li>
+<li><strong>No custom filters or saved views</strong> — consistent with Basecamp&#39;s simplicity philosophy</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1024px+)</td>
+<td>Centered content column (max-width), no persistent sidebar</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Same centered layout, responsive project grid</td>
+</tr>
+<tr>
+<td>Mobile (iOS/Android app)</td>
+<td>Bottom tab nav (Home, Hey!, Activity, Pings, My Stuff), full-featured native app</td>
+</tr>
+<tr>
+<td>Email integration</td>
+<td>Reply to most notifications via email; content posted back to Basecamp</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Account Owner</td>
+<td>Billing, full admin, manage all people and projects</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Manage people, create projects, access all projects</td>
+</tr>
+<tr>
+<td>User</td>
+<td>Access assigned projects, create content within them</td>
+</tr>
+<tr>
+<td>Client (external)</td>
+<td>Access specific projects; can be hidden from certain tools (e.g., Campfire)</td>
+</tr>
+<tr>
+<td>Guest</td>
+<td>Single-project access, limited to invited tools</td>
+</tr>
+<tr>
+<td>Public link</td>
+<td>Share a message/document as read-only public URL</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

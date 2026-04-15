@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Framer — IA.md | getIA.md</title>
+  <meta name="description" content="Website builder. Components, CMS, animations. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=framer.com&sz=64" alt="Framer" onerror="this.parentElement.textContent='F'">
+      </div>
+      <h1 class="detail-brand-name">Framer</h1>
+      <p class="detail-brand-tagline">Website builder. Components, CMS, animations.</p>
+      <span class="detail-category-badge">Design</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/framer/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://framer.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/framer/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Framer</h1>
+<h2>1. Overview</h2>
+<p>Framer is a website builder that emphasizes speed, visual polish, and component-driven design. Originally a prototyping tool, Framer has pivoted to a full <strong>publish-ready website builder</strong> with a built-in CMS, animations, responsive breakpoints, and localization. The IA is streamlined for speed — designers can go from idea to published site in hours, not weeks. Framer sites are known for smooth animations, modern aesthetics, and excellent performance.</p>
+<h2>2. Site Map</h2>
+<pre><code>framer.com
+├── Home
+├── Features
+│   ├── Design (visual canvas)
+│   ├── CMS (content management)
+│   ├── Animations (scroll, hover, page transitions)
+│   ├── Components (reusable, with variants + overrides)
+│   ├── Responsive design (breakpoints)
+│   ├── Localization (multi-language)
+│   ├── SEO
+│   ├── Forms
+│   ├── Hosting (edge CDN)
+│   ├── Analytics
+│   └── AI (generate copy, images, layouts)
+├── Templates
+│   ├── Free templates
+│   ├── Premium templates
+│   ├── Browse by category (Landing, Portfolio, SaaS, Agency, Blog)
+│   └── Template detail &amp; preview
+├── Marketplace
+│   ├── Components (community-built)
+│   ├── Templates
+│   └── Plugins
+├── Pricing
+│   ├── Free / Mini / Basic / Pro
+│   └── Feature comparison
+├── Resources
+│   ├── Academy (video tutorials)
+│   ├── Blog
+│   ├── Community (Discord)
+│   ├── Showcase (sites built with Framer)
+│   ├── Updates / Changelog
+│   └── Developers (code components)
+├── Enterprise
+│   ├── Solutions
+│   ├── Security
+│   └── Contact sales
+├── Support
+│   ├── Help center
+│   └── Contact
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── DPA
+└── Auth
+    ├── Log in
+    └── Start for free
+
+Framer Editor (Canvas)
+├── Canvas (WYSIWYG)
+├── Left panel
+│   ├── Layers (element tree)
+│   ├── Pages
+│   ├── CMS Collections
+│   ├── Assets
+│   └── Components library
+├── Right panel
+│   ├── Properties (layout, sizing, typography, colors, effects)
+│   ├── Fill &amp; border
+│   ├── Interactions (hover, scroll, tap animations)
+│   ├── CMS bindings
+│   └── Responsive overrides
+├── Top bar
+│   ├── Breakpoint selector (Desktop, Tablet, Phone)
+│   ├── Preview
+│   ├── Publish
+│   ├── Share / Collaborate
+│   └── AI tools
+├── CMS panel
+│   ├── Collections (define schema)
+│   ├── Items (add/edit content)
+│   └── Template pages
+└── Settings
+    ├── General (name, domain, favicon)
+    ├── SEO
+    ├── Analytics
+    ├── Localization
+    ├── Custom code
+    ├── Redirects
+    └── Forms
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>framer.com</td>
+<td>Top nav</td>
+<td>Logo, Features, Templates, Pricing, Enterprise, Resources, Log in, Start for free</td>
+</tr>
+<tr>
+<td>Features</td>
+<td>Dropdown</td>
+<td>Design, CMS, Animations, Components, AI, Localization</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Dual panel</td>
+<td>Left (layers, pages, CMS, assets) + Right (properties, interactions)</td>
+</tr>
+<tr>
+<td>Editor top</td>
+<td>Toolbar</td>
+<td>Breakpoint switch, preview, publish, undo/redo</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Compact</td>
+<td>Product, Resources, Company, Legal</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: The editor is canvas-centric — maximum space for the visual design, with collapsible panels. Framer emphasizes &quot;what you see is what ships&quot; — the editor IS the published site layout.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Site (Project)</td>
+<td>name, slug, custom domain, plan, collaborators, published URL</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>name, path, SEO metadata, layout, breakpoint overrides</td>
+</tr>
+<tr>
+<td>Component</td>
+<td>name, variants, properties (configurable), overrides, code component flag</td>
+</tr>
+<tr>
+<td>CMS Collection</td>
+<td>name, fields (text, rich text, image, number, boolean, date, link, color, reference)</td>
+</tr>
+<tr>
+<td>CMS Item</td>
+<td>collection, field values, slug, published flag</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>trigger (scroll, hover, appear, tap), properties (opacity, scale, position, rotation), easing, delay</td>
+</tr>
+<tr>
+<td>Form</td>
+<td>fields, action (email, webhook), submissions</td>
+</tr>
+<tr>
+<td>Locale</td>
+<td>language, country, translations, published flag</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Build a site from template</h3>
+<ol>
+<li>Browse templates → preview → &quot;Use Template&quot;</li>
+<li>Framer editor opens with template loaded</li>
+<li>Replace content (text, images) → adjust styles</li>
+<li>Set custom domain → configure SEO</li>
+<li>Publish → site live on edge CDN</li>
+</ol>
+<h3>5b. Design from scratch</h3>
+<ol>
+<li>New project → blank canvas</li>
+<li>Draw frames → add elements (text, images, buttons, sections)</li>
+<li>Use auto-layout (flexbox-based) for responsive structure</li>
+<li>Create components → reuse with variants</li>
+<li>Add animations → preview → publish</li>
+</ol>
+<h3>5c. CMS-powered pages</h3>
+<ol>
+<li>Create CMS Collection (e.g., &quot;Projects&quot;) → define fields</li>
+<li>Add items (content entries)</li>
+<li>Create CMS page → bind fields to design elements</li>
+<li>Create collection list on pages → displays items dynamically</li>
+<li>Add/edit CMS items → site updates automatically</li>
+</ol>
+<h3>5d. Localization</h3>
+<ol>
+<li>Settings → Localization → add languages</li>
+<li>Content auto-duplicated per locale</li>
+<li>Translate content (or use AI auto-translate)</li>
+<li>Set locale-specific URLs (e.g., /fr/, /de/)</li>
+<li>Visitors see localized version based on browser language or URL</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code># framer.com (marketing)
+/                               → Home
+/features/                      → Features
+/features/{feature}/            → Feature detail
+/templates/                     → Template directory
+/templates/{slug}/              → Template preview
+/marketplace/                   → Components &amp; plugins
+/pricing/                       → Pricing
+/academy/                       → Video tutorials
+/blog/                          → Blog
+/blog/{slug}/                   → Blog post
+/showcase/                      → Site showcase
+/updates/                       → Changelog
+/developers/                    → Code components docs
+/help/                          → Help center
+
+# Editor
+/projects/{id}                  → Editor canvas
+
+# Published site (custom domain)
+/                               → Home
+/{page-path}                    → Page
+/{collection}/{item-slug}       → CMS detail page
+/{locale}/{page-path}           → Localized page
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Template search</td>
+<td>By keyword, category (SaaS, Agency, Portfolio, Blog), free/premium</td>
+</tr>
+<tr>
+<td>Marketplace search</td>
+<td>Components, plugins by keyword and category</td>
+</tr>
+<tr>
+<td>Academy search</td>
+<td>Search tutorials by topic</td>
+</tr>
+<tr>
+<td>Editor — Layers</td>
+<td>Search elements in layer tree by name</td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>Filter/search collection items by field values</td>
+</tr>
+<tr>
+<td>Help search</td>
+<td>Keyword → categorized articles</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Full editor canvas, dual panels, marketing site with showcase animations</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Editor usable but constrained; marketing site responsive</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Editor not supported (desktop only); marketing site fully responsive</td>
+</tr>
+<tr>
+<td>Editor breakpoints</td>
+<td>Desktop (1200px default) → Tablet → Phone (390px)</td>
+</tr>
+<tr>
+<td>Published sites</td>
+<td>Responsive per breakpoint configurations set in editor</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Marketing site, templates, showcase, academy</td>
+</tr>
+<tr>
+<td>Free Account</td>
+<td>1 site, Framer subdomain, limited CMS items, Framer badge</td>
+</tr>
+<tr>
+<td>Mini Plan</td>
+<td>Custom domain, remove badge, basic features</td>
+</tr>
+<tr>
+<td>Basic Plan</td>
+<td>More CMS items, form submissions, analytics</td>
+</tr>
+<tr>
+<td>Pro Plan</td>
+<td>Advanced staging, password protection, high CMS limits</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>SSO, SLA, audit logs, advanced security</td>
+</tr>
+<tr>
+<td>Collaborator</td>
+<td>Editor access with role-based permissions (edit / comment / view)</td>
+</tr>
+<tr>
+<td>CMS Editor</td>
+<td>Content editing only (simplified editor view)</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>Code components (React), custom API integrations</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>Template curation, marketplace review, infrastructure</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

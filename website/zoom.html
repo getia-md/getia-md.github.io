@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom — IA.md | getIA.md</title>
+  <meta name="description" content="Video meetings. Rooms, Webinars, Phone, Team Chat. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=zoom.us&sz=64" alt="Zoom" onerror="this.parentElement.textContent='Z'">
+      </div>
+      <h1 class="detail-brand-name">Zoom</h1>
+      <p class="detail-brand-tagline">Video meetings. Rooms, Webinars, Phone, Team Chat.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/zoom/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://zoom.us" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/zoom/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Zoom</h1>
+<h2>1. Overview</h2>
+<p>Zoom is a unified communications platform anchored by video conferencing, expanded into team chat, phone, webinars, virtual events, and collaborative workspaces (Zoom Rooms). The IA is organized around communication modalities — Meet, Chat, Phone, Whiteboard — with a persistent left sidebar and calendar-driven meeting entry points. The platform serves individual users, teams, and enterprises with a scalable permission model.</p>
+<h2>2. Site Map</h2>
+<pre><code>Zoom
+├── Home (Dashboard)
+│   ├── Upcoming Meetings
+│   ├── New Meeting (instant)
+│   ├── Join Meeting (by ID)
+│   ├── Schedule Meeting
+│   └── Recent Activity
+├── Meetings
+│   ├── Upcoming
+│   ├── Previous (with recordings)
+│   ├── Personal Meeting Room
+│   └── Meeting Templates
+├── In-Meeting
+│   ├── Video Grid / Speaker View / Gallery
+│   ├── Screen Share
+│   ├── Chat (in-meeting)
+│   ├── Breakout Rooms
+│   ├── Reactions / Raise Hand
+│   ├── Whiteboard
+│   ├── Polls
+│   ├── Closed Captions / Live Transcription
+│   ├── Recording (local / cloud)
+│   ├── Virtual Background
+│   └── AI Companion (summary, notes)
+├── Team Chat
+│   ├── Channels (public / private)
+│   ├── Direct Messages
+│   ├── Group Chats
+│   ├── Files
+│   ├── Starred Messages
+│   └── Apps / Integrations
+├── Zoom Phone
+│   ├── Calls (history)
+│   ├── Voicemail
+│   ├── Contacts
+│   ├── Call Queue
+│   ├── Auto Receptionist
+│   └── SMS
+├── Webinars
+│   ├── Schedule Webinar
+│   ├── Registration
+│   ├── Practice Session
+│   ├── Q&amp;A
+│   └── Analytics
+├── Whiteboard
+│   ├── My Whiteboards
+│   ├── Shared Whiteboards
+│   └── Templates
+├── Contacts
+│   ├── Company Directory
+│   ├── External Contacts
+│   ├── Channels
+│   └── Starred
+├── Zoom Rooms (conference room hardware)
+├── Zoom Events (virtual event platform)
+├── Zoom Apps (marketplace integrations)
+├── Settings
+│   ├── Profile
+│   ├── Meeting Settings
+│   ├── Recording
+│   ├── Audio / Video
+│   ├── Virtual Background
+│   ├── Accessibility
+│   └── Security
+├── Admin Console (for admins)
+│   ├── User Management
+│   ├── Room Management
+│   ├── Account Settings
+│   ├── Usage Reports
+│   └── Billing
+└── Web Portal (zoom.us)
+    ├── Pricing
+    ├── Solutions
+    ├── Resources
+    ├── Support
+    └── Developer (APIs / SDKs)
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Left sidebar (desktop app), top nav (web portal)</li>
+<li><strong>Desktop App Sidebar</strong>: Home, Team Chat, Phone, Meetings, Contacts, Whiteboards, More (Notes, Apps)</li>
+<li><strong>Mobile App Bottom Tabs</strong>: Meet, Team Chat, Phone, Contacts, More</li>
+<li><strong>Meeting Entry Points</strong>: Calendar integration, &quot;New Meeting&quot; button, meeting URL, meeting ID, Outlook/Google plugin</li>
+<li><strong>In-Meeting Controls</strong>: Bottom toolbar — Mute, Video, Security, Participants, Chat, Share Screen, Record, Reactions, More</li>
+<li><strong>Web Portal</strong>: Top nav — Solutions, Pricing, Plans, Contact Sales, Resources; separate from desktop app</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Meeting</td>
+<td>title, ID, passcode, host, participants, scheduled time, duration, recurring flag, waiting room, recording</td>
+<td>→ Host, → Participants, → Recording</td>
+</tr>
+<tr>
+<td>Recording</td>
+<td>video file, audio transcript, chat log, duration, cloud/local, share settings</td>
+<td>→ Meeting</td>
+</tr>
+<tr>
+<td>Chat Message</td>
+<td>text, sender, timestamp, reactions, files, threads, pins</td>
+<td>→ Channel/DM, → User</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>name, description, type (public/private), members, pinned messages</td>
+<td>→ Messages, → Team</td>
+</tr>
+<tr>
+<td>Webinar</td>
+<td>title, panelists, registrants, Q&amp;A, polls, practice session</td>
+<td>→ Host, → Analytics</td>
+</tr>
+<tr>
+<td>Whiteboard</td>
+<td>canvas, title, collaborators, created date, share settings</td>
+<td>→ Users</td>
+</tr>
+<tr>
+<td>Phone Call</td>
+<td>caller, callee, duration, recording, voicemail</td>
+<td>→ User</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>name, email, phone, presence status, company</td>
+<td>→ Directory</td>
+</tr>
+<tr>
+<td>AI Companion Summary</td>
+<td>meeting summary, action items, next steps, smart chapters</td>
+<td>→ Meeting, → Recording</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Joining a Meeting</h3>
+<ol>
+<li>Receive meeting link via email/calendar/chat → Click link</li>
+<li>Browser opens → Option to join via app or web client</li>
+<li>Preview video/audio → Select camera, microphone, virtual background</li>
+<li>Click &quot;Join&quot; → Enter waiting room (if enabled) → Host admits</li>
+<li>In meeting: unmute, turn on video, share screen, chat, react</li>
+</ol>
+<h3>Scheduling a Meeting</h3>
+<ol>
+<li>Home → &quot;Schedule&quot; → Set title, date/time, duration, recurring options</li>
+<li>Configure: Waiting room, passcode, video on/off defaults, recording settings</li>
+<li>Add alternative hosts, enable breakout rooms</li>
+<li>Save → Calendar invite sent to participants → Meeting link generated</li>
+</ol>
+<h3>Using AI Companion</h3>
+<ol>
+<li>During meeting, AI Companion generates real-time summary</li>
+<li>After meeting ends, summary with action items delivered to host</li>
+<li>Host reviews and shares summary with participants via chat or email</li>
+<li>Smart chapters divide recording into navigable sections</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>zoom.us/                                   # Marketing homepage
+zoom.us/join                               # Join meeting by ID
+zoom.us/j/{meetingId}                      # Meeting join link
+zoom.us/my/{personalLinkName}              # Personal meeting room
+zoom.us/meeting/schedule                   # Schedule a meeting
+zoom.us/profile                            # User profile
+zoom.us/meeting                            # Meeting list
+zoom.us/recording                          # Cloud recordings
+zoom.us/webinar                            # Webinar management
+zoom.us/whiteboard                         # Whiteboards
+zoom.us/phone                              # Zoom Phone dashboard
+zoom.us/signin                             # Login
+zoom.us/pricing                            # Plan comparison
+zoom.us/docs/                              # Developer docs
+marketplace.zoom.us/                       # Zoom Apps marketplace
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Contact Search</strong>: Search by name, email across company directory and external contacts</li>
+<li><strong>Chat Search</strong>: Full-text search across channels and DMs; filter by date, sender, channel</li>
+<li><strong>Meeting Search</strong>: Find past meetings by title, date, or participant</li>
+<li><strong>Recording Search</strong>: Search cloud recordings; AI-generated transcript search within recordings</li>
+<li><strong>Smart Chapters</strong>: Jump to specific sections of recorded meetings</li>
+<li><strong>Marketplace Search</strong>: Browse and search Zoom Apps by category</li>
+<li><strong>Admin Search</strong>: User lookup, usage reports by date range, room search</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop App (primary)</td>
+<td>Left sidebar + main content area; Gallery view up to 49 participants; multi-monitor support</td>
+</tr>
+<tr>
+<td>Mobile App</td>
+<td>Bottom tab bar; single-pane; portrait/landscape meeting view; simplified controls</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Split view for chat + meeting; gallery view scaled; landscape optimized</td>
+</tr>
+<tr>
+<td>Web Client (browser)</td>
+<td>Near-parity with desktop app; no breakout room hosting (limitation); top toolbar</td>
+</tr>
+<tr>
+<td>Zoom Rooms (hardware)</td>
+<td>Touch panel for controls; large display for gallery/speaker view; designed for conference rooms</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Free User</td>
+<td>Host 40-min meetings (100 participants), Team Chat, Whiteboard (3 boards), basic Mail &amp; Calendar</td>
+</tr>
+<tr>
+<td>Pro User</td>
+<td>30-hour meetings, 100 participants, cloud recording (5 GB), AI Companion, custom branding</td>
+</tr>
+<tr>
+<td>Business User</td>
+<td>300 participants, SSO, managed domains, company branding, admin dashboard</td>
+</tr>
+<tr>
+<td>Enterprise User</td>
+<td>1000 participants, unlimited cloud storage, dedicated support, Zoom Phone, Webinar, Events</td>
+</tr>
+<tr>
+<td>Meeting Host</td>
+<td>Start/end meeting, admit from waiting room, mute participants, manage breakout rooms, record</td>
+</tr>
+<tr>
+<td>Co-Host</td>
+<td>Same as host except cannot end meeting or assign other co-hosts</td>
+</tr>
+<tr>
+<td>Participant</td>
+<td>Join, unmute self, share screen (if permitted), chat, raise hand, react</td>
+</tr>
+<tr>
+<td>Webinar Panelist</td>
+<td>Video/audio enabled, present, Q&A; attendees are view-only</td>
+</tr>
+<tr>
+<td>Webinar Attendee</td>
+<td>Watch, submit Q&amp;A, participate in polls; no video/audio unless promoted</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Manage users, configure settings, view reports, assign licenses, manage Zoom Rooms</td>
+</tr>
+<tr>
+<td>Room Controller</td>
+<td>Start/join meetings on Zoom Room hardware; manage room calendar</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthropic Console — IA.md | getIA.md</title>
+  <meta name="description" content="API playground, Workbench, usage, billing. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=console.anthropic.com&sz=64" alt="Anthropic Console" onerror="this.parentElement.textContent='A'">
+      </div>
+      <h1 class="detail-brand-name">Anthropic Console</h1>
+      <p class="detail-brand-tagline">API playground, Workbench, usage, billing.</p>
+      <span class="detail-category-badge">AI</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/anthropic-console/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://console.anthropic.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/anthropic-console/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Anthropic Console — Information Architecture</h1>
+<h2>Overview</h2>
+<p>The Anthropic Console is the developer-facing portal for building with Claude&#39;s API. The IA is structured as a <strong>developer console</strong> modeled after cloud platform dashboards (GCP Console, Stripe Dashboard) — it combines an interactive API playground (Workbench), API key management, usage monitoring, billing, and prompt optimization tools. Unlike claude.ai (the consumer product), the Console targets developers and organizations integrating Claude into their applications. The Workbench is the centerpiece: an interactive prompt engineering environment where developers can test prompts, adjust parameters, compare models, and generate API code snippets.</p>
+<h2>Site Map</h2>
+<pre><code>console.anthropic.com
+├── / (Dashboard — usage overview, quick actions)
+├── /workbench (API Playground / Prompt Workbench)
+│   └── /{workbench_id} (Saved workbench session)
+├── /prompts (Prompt library — saved prompt templates)
+│   └── /{prompt_id}
+├── /api-keys (API key management)
+├── /usage (Usage analytics — tokens, costs, rate limits)
+├── /billing
+│   ├── /plans
+│   ├── /invoices
+│   └── /payment-methods
+├── /settings
+│   ├── /organization
+│   ├── /members
+│   ├── /limits (Rate limits &amp; spend limits)
+│   └── /profile
+├── /logs (API request logs)
+├── /docs (→ redirects to docs.anthropic.com)
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — Dashboard, Workbench, Prompts, API Keys, Logs, Usage, Billing, Settings</li>
+<li><strong>Workbench navigation</strong>: Top bar with model selector, temperature/max-tokens sliders, system prompt panel, user/assistant message pairs</li>
+<li><strong>Settings navigation</strong>: Sub-tabs within Settings — Organization, Members, Limits, Profile</li>
+<li><strong>Utility navigation</strong>: Top-right — organization switcher (for multi-org users), avatar → Profile, Sign out</li>
+<li><strong>Contextual navigation</strong>: Workbench has &quot;Get Code&quot; button that generates Python/TypeScript/curl code from current config</li>
+<li><strong>Documentation links</strong>: Contextual links throughout the UI pointing to docs.anthropic.com</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workbench Session</td>
+<td>Model, system prompt, message pairs, parameters (temperature, max_tokens, top_p), response</td>
+<td>User-owned, saveable</td>
+</tr>
+<tr>
+<td>Saved Prompt</td>
+<td>Named prompt template with variables, model config, system prompt</td>
+<td>User/Org-owned</td>
+</tr>
+<tr>
+<td>API Key</td>
+<td>Key string, name, permissions, created date, last used</td>
+<td>Org-scoped</td>
+</tr>
+<tr>
+<td>Usage Record</td>
+<td>Timestamp, model, input/output tokens, cost, endpoint</td>
+<td>Org-scoped</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>Name, members, billing info, API keys, rate limits</td>
+<td>Org</td>
+</tr>
+<tr>
+<td>Invoice</td>
+<td>Billing period, usage breakdown by model, total cost</td>
+<td>Org billing</td>
+</tr>
+<tr>
+<td>Log Entry</td>
+<td>API request details — model, tokens, latency, status code, truncated prompt</td>
+<td>Org-scoped</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Prompt Engineering in Workbench</h3>
+<ol>
+<li>Developer opens Workbench → selects model (Claude Sonnet 4, Opus 4, Haiku)</li>
+<li>Writes system prompt in dedicated panel</li>
+<li>Adds user message → clicks &quot;Run&quot; or Cmd+Enter</li>
+<li>Response streams in the assistant panel</li>
+<li>Adjusts parameters (temperature, max tokens) → re-runs</li>
+<li>Clicks &quot;Get Code&quot; → copies Python/TypeScript/curl snippet</li>
+<li>Saves as named prompt for later use or sharing with team</li>
+</ol>
+<h3>API Key Management</h3>
+<ol>
+<li>Developer navigates to API Keys</li>
+<li>Clicks &quot;Create Key&quot; → names the key, sets permissions</li>
+<li>Key displayed once → copy and store securely</li>
+<li>Key appears in list with usage stats and last-used date</li>
+<li>Can revoke/delete keys; set rate limits per key</li>
+</ol>
+<h3>Monitoring Usage &amp; Costs</h3>
+<ol>
+<li>Developer navigates to Usage</li>
+<li>Views dashboard: tokens consumed (input/output), costs by model, request volume</li>
+<li>Filters by date range, model, API key</li>
+<li>Charts show trends over time</li>
+<li>Billing page shows invoices and payment methods</li>
+</ol>
+<h3>Organization Management</h3>
+<ol>
+<li>Admin navigates to Settings → Members</li>
+<li>Invites team members by email</li>
+<li>Assigns roles (Admin, Developer, Billing)</li>
+<li>Sets spend limits and rate limits for the organization</li>
+<li>Manages multiple API keys with different permission scopes</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Dashboard</td>
+</tr>
+<tr>
+<td><code>/workbench</code></td>
+<td>New workbench session</td>
+</tr>
+<tr>
+<td><code>/workbench/{uuid}</code></td>
+<td>Saved workbench session</td>
+</tr>
+<tr>
+<td><code>/prompts</code></td>
+<td>Prompt library</td>
+</tr>
+<tr>
+<td><code>/prompts/{uuid}</code></td>
+<td>Individual saved prompt</td>
+</tr>
+<tr>
+<td><code>/api-keys</code></td>
+<td>API key management</td>
+</tr>
+<tr>
+<td><code>/usage</code></td>
+<td>Usage analytics</td>
+</tr>
+<tr>
+<td><code>/billing</code></td>
+<td>Billing management</td>
+</tr>
+<tr>
+<td><code>/billing/invoices</code></td>
+<td>Invoice history</td>
+</tr>
+<tr>
+<td><code>/settings/organization</code></td>
+<td>Org settings</td>
+</tr>
+<tr>
+<td><code>/settings/members</code></td>
+<td>Team management</td>
+</tr>
+<tr>
+<td><code>/settings/limits</code></td>
+<td>Rate/spend limits</td>
+</tr>
+<tr>
+<td><code>/logs</code></td>
+<td>API logs</td>
+</tr>
+</tbody></table>
+<p>Standard SPA routing. UUIDs for saved prompts and workbench sessions.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Prompt search</strong>: Search saved prompts by name</li>
+<li><strong>Usage filters</strong>: Filter by date range, model (Sonnet, Opus, Haiku), API key</li>
+<li><strong>Log filters</strong>: Filter API logs by model, status code, date range, latency threshold</li>
+<li><strong>No global search</strong>: No unified search across the entire console</li>
+<li><strong>API key search</strong>: Filter keys by name</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + Workbench with side-by-side system/user/assistant panels</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + full Workbench</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Minimal sidebar (icons) + Workbench panels stack vertically</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Functional but not optimized — Workbench is a desktop tool</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Workbench panels (system prompt, messages, parameters) stack vertically on narrow screens</li>
+<li>Usage charts resize responsively</li>
+<li>API key table adapts to narrower widths (truncated key previews)</li>
+<li>Code generation modal is full-screen on mobile</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>No access (authentication required)</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>Use Workbench, manage own API keys, view usage</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Full access — manage members, billing, org settings, all API keys</td>
+</tr>
+<tr>
+<td>Billing</td>
+<td>View/manage billing, invoices, payment methods</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, Google OAuth, GitHub OAuth</li>
+<li>Organization model: Users belong to one or more organizations; API keys are org-scoped</li>
+<li>API key permissions: Keys can be scoped to specific capabilities</li>
+<li>Rate limits: Configurable per-org and per-key; different tiers have different defaults</li>
+<li>Spend limits: Admins can set monthly spend caps to prevent cost overruns</li>
+<li>SOC 2 Type II compliant; data not used for training by default</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

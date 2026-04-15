@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bluesky — IA.md | getIA.md</title>
+  <meta name="description" content="Decentralized social. AT Protocol, custom feeds. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=bsky.app&sz=64" alt="Bluesky" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">Bluesky</h1>
+      <p class="detail-brand-tagline">Decentralized social. AT Protocol, custom feeds.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/bluesky/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://bsky.app" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/bluesky/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Bluesky</h1>
+<h2>1. Overview</h2>
+<p>Bluesky is a decentralized social network built on the AT Protocol (Authenticated Transfer Protocol), offering a Twitter-like microblogging experience with user sovereignty over data and algorithms. The IA mirrors familiar social feeds — timeline, notifications, profile — but adds protocol-level features like custom feeds, starter packs, domain-based identity verification, and the ability to self-host your data through Personal Data Servers (PDS).</p>
+<h2>2. Site Map</h2>
+<pre><code>Bluesky
+├── Home / Timeline
+│   ├── Following (chronological)
+│   ├── Discover (algorithmic)
+│   └── Custom Feeds (user-subscribed)
+│       ├── What&#39;s Hot
+│       ├── Mutuals
+│       ├── Quiet Posters
+│       └── [Community-built feeds]
+├── Search / Explore
+│   ├── Trending Topics
+│   ├── Trending Posts
+│   ├── Suggested Follows
+│   └── Search (posts, users, feeds)
+├── Notifications
+│   ├── Likes
+│   ├── Reposts
+│   ├── Replies
+│   ├── Mentions
+│   ├── Follows
+│   └── Quotes
+├── Messages (DMs)
+│   ├── Conversations
+│   └── Message Requests
+├── Feeds (custom feed browser)
+│   ├── My Feeds (pinned)
+│   ├── Discover Feeds
+│   └── Feed detail (preview + subscribe)
+├── Lists
+│   ├── Curation Lists
+│   ├── Moderation Lists (mute/block)
+│   └── List detail
+├── Starter Packs
+│   ├── My Starter Packs
+│   └── Starter Pack detail (follow all)
+├── Profile
+│   ├── Posts
+│   ├── Replies
+│   ├── Media
+│   ├── Likes
+│   ├── Feeds (created)
+│   ├── Lists (created)
+│   ├── Starter Packs (created)
+│   ├── Followers / Following
+│   └── Domain handle (identity)
+├── Settings
+│   ├── Account
+│   ├── Privacy
+│   ├── Moderation
+│   │   ├── Content Filters
+│   │   ├── Muted Words
+│   │   ├── Muted Accounts
+│   │   ├── Blocked Accounts
+│   │   └── Moderation Lists
+│   ├── App Passwords
+│   ├── Handle Change
+│   └── Export Data
+└── Web / Docs
+    ├── AT Protocol Documentation
+    ├── Developer API
+    ├── Community Guidelines
+    └── Blog
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Left sidebar (desktop) / bottom tab bar (mobile)</li>
+<li><strong>Desktop Sidebar</strong>: Home, Search, Notifications, Messages, Feeds, Lists, Profile, Settings</li>
+<li><strong>Mobile Bottom Tabs</strong>: Home, Search, Notifications, Messages, Profile</li>
+<li><strong>Feed Switcher</strong>: Horizontal tabs at top of Home — Following, Discover, pinned custom feeds</li>
+<li><strong>Compose</strong>: Floating &quot;+&quot; button (mobile) / &quot;New Post&quot; button in sidebar (desktop)</li>
+<li><strong>Thread Navigation</strong>: Tap post → thread view with parent and replies</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Post</td>
+<td>text (300 chars), images (4 max), video, link card, language tag, timestamp, like/repost/reply counts</td>
+<td>→ Thread, → Author, → Feed(s)</td>
+</tr>
+<tr>
+<td>Reply</td>
+<td>inherits Post + parent reference, root reference</td>
+<td>→ Thread, → Parent Post</td>
+</tr>
+<tr>
+<td>Repost</td>
+<td>reference to original post, timestamp</td>
+<td>→ Post, → User</td>
+</tr>
+<tr>
+<td>Quote Post</td>
+<td>inherits Post + embedded quoted post</td>
+<td>→ Original Post</td>
+</tr>
+<tr>
+<td>Custom Feed</td>
+<td>name, description, algorithm (feed generator), creator, like count</td>
+<td>→ Posts (filtered/sorted)</td>
+</tr>
+<tr>
+<td>List</td>
+<td>name, description, type (curation/moderation), members</td>
+<td>→ Users</td>
+</tr>
+<tr>
+<td>Starter Pack</td>
+<td>name, description, included users, included feeds, creator</td>
+<td>→ Users, → Feeds</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>display name, handle (domain-based), avatar, banner, bio, follower/following counts</td>
+<td>→ Posts, → Feeds, → Lists</td>
+</tr>
+<tr>
+<td>Label</td>
+<td>type (content warning, moderation), source (labeler service)</td>
+<td>→ Post, → User</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Custom Feed Discovery</h3>
+<ol>
+<li>Tap &quot;Feeds&quot; in nav → Browse &quot;Discover Feeds&quot; section</li>
+<li>Preview feed (see sample posts) → Tap &quot;Pin&quot; to add to home tab bar</li>
+<li>Return to Home → Swipe between Following, Discover, and pinned custom feeds</li>
+<li>Reorder or unpin feeds in Settings → Saved Feeds</li>
+</ol>
+<h3>Setting Up Domain Handle</h3>
+<ol>
+<li>Go to Settings → Handle → &quot;I have my own domain&quot;</li>
+<li>Add DNS TXT record <code>_atproto.{domain}</code> with DID value</li>
+<li>Verify → Handle changes from <code>user.bsky.social</code> to <code>user.com</code></li>
+<li>Domain serves as decentralized identity verification</li>
+</ol>
+<h3>Using Starter Packs</h3>
+<ol>
+<li>Receive starter pack link from another user</li>
+<li>Open link → See list of recommended accounts and feeds</li>
+<li>Tap &quot;Follow All&quot; → Instantly follow all accounts in pack</li>
+<li>Subscribed feeds added to Home feed tabs</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>bsky.app/                                  # Home / timeline
+bsky.app/profile/{handle}                  # User profile
+bsky.app/profile/{handle}/post/{postId}    # Post / thread detail
+bsky.app/profile/{handle}/feed/{feedSlug}  # Custom feed
+bsky.app/profile/{handle}/lists/{listId}   # List detail
+bsky.app/starter-pack/{handle}/{packId}    # Starter pack
+bsky.app/search?q={query}                  # Search results
+bsky.app/feeds                             # Feed discovery
+bsky.app/notifications                     # Notifications
+bsky.app/messages                          # DMs
+bsky.app/settings                          # Settings
+docs.bsky.app/                             # Developer documentation
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Universal Search</strong>: Posts (full-text), users (handle/display name), feeds</li>
+<li><strong>Trending</strong>: Trending topics and posts on Explore tab</li>
+<li><strong>Post Filters</strong>: Search results filterable by &quot;Latest&quot; or &quot;Top&quot;; filter by language</li>
+<li><strong>Content Filters</strong>: User-configurable content labels (adult, violence, etc.) via moderation settings</li>
+<li><strong>Muted Words</strong>: Keyword-based muting hides posts containing specified terms</li>
+<li><strong>Feed Algorithms</strong>: Custom feeds act as persistent search/filter — e.g., &quot;Posts with images from mutuals&quot;</li>
+<li><strong>Moderation Lists</strong>: Subscribe to community-maintained block/mute lists</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (&lt; 768px)</td>
+<td>Bottom tab bar; single-column feed; full-screen thread view; swipe between feed tabs</td>
+</tr>
+<tr>
+<td>Tablet (768–1024px)</td>
+<td>Bottom tab bar; wider feed column; optional right sidebar for trending</td>
+</tr>
+<tr>
+<td>Desktop (&gt; 1024px)</td>
+<td>Left sidebar navigation; centered feed column; right sidebar (trending, suggested follows)</td>
+</tr>
+<tr>
+<td>PWA</td>
+<td>Installable progressive web app; notifications support; works offline for cached content</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Registered User</td>
+<td>Post, reply, repost, quote, like, DM, create feeds/lists/starter packs, customize moderation</td>
+</tr>
+<tr>
+<td>Custom Handle User</td>
+<td>Uses own domain as handle; serves as verification (no separate verification system)</td>
+</tr>
+<tr>
+<td>Feed Generator Operator</td>
+<td>Hosts feed algorithm; defines ranking/filtering logic via AT Protocol feed generator API</td>
+</tr>
+<tr>
+<td>Labeler Service</td>
+<td>Applies moderation labels to content/accounts; users can subscribe to labeler services</td>
+</tr>
+<tr>
+<td>PDS Self-Hoster</td>
+<td>Hosts own data server; full data sovereignty; can migrate between providers</td>
+</tr>
+<tr>
+<td>Non-registered Visitor</td>
+<td>View public profiles and posts on bsky.app; cannot interact</td>
+</tr>
+<tr>
+<td>Muted/Blocked User</td>
+<td>Muted: posts hidden from muter&#39;s feeds; Blocked: cannot view or interact with blocker</td>
+</tr>
+<tr>
+<td>App Password Holder</td>
+<td>Third-party app access with limited permissions; revocable from settings</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

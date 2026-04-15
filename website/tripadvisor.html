@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tripadvisor — IA.md | getIA.md</title>
+  <meta name="description" content="Travel reviews. Things to do, restaurants, forums. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=tripadvisor.com&sz=64" alt="Tripadvisor" onerror="this.parentElement.textContent='T'">
+      </div>
+      <h1 class="detail-brand-name">Tripadvisor</h1>
+      <p class="detail-brand-tagline">Travel reviews. Things to do, restaurants, forums.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/tripadvisor/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://tripadvisor.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/tripadvisor/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Tripadvisor</h1>
+<h2>1. Overview</h2>
+<p>Tripadvisor is a travel platform combining user-generated reviews, price comparison, and booking for hotels, restaurants, attractions, and experiences. The IA is destination-centric — users start with a location and drill into categories (hotels, things to do, restaurants) with reviews as the core content type. The platform&#39;s moat is its massive review database (1B+ reviews), which powers rankings, &quot;Travelers&#39; Choice&quot; awards, and trust-based discovery.</p>
+<h2>2. Site Map</h2>
+<pre><code>Tripadvisor
+├── Home
+│   ├── Search (hotel, restaurant, attraction, flight)
+│   ├── Trending Destinations
+│   ├── Travelers&#39; Choice Awards
+│   ├── Travel Guides
+│   ├── Recently Viewed
+│   └── Personalized Recommendations
+├── Destination Page
+│   ├── Overview
+│   ├── Hotels
+│   ├── Things to Do
+│   │   ├── Tours &amp; Activities
+│   │   ├── Attractions
+│   │   ├── Day Trips
+│   │   ├── Outdoor Activities
+│   │   └── Nightlife
+│   ├── Restaurants
+│   ├── Flights
+│   ├── Vacation Rentals
+│   ├── Travel Forum
+│   ├── Travel Guide
+│   └── Map View
+├── Hotel Page
+│   ├── Photos (user + professional)
+│   ├── Overview &amp; Amenities
+│   ├── Location (map)
+│   ├── Reviews (sorted by date, rating, traveler type)
+│   ├── Q&amp;A
+│   ├── Price Comparison (across booking sites)
+│   ├── Room Types &amp; Availability
+│   ├── Nearby Hotels
+│   └── Traveler Rating Summary
+├── Restaurant Page
+│   ├── Photos
+│   ├── Menu
+│   ├── Reviews
+│   ├── Cuisine &amp; Price Range
+│   ├── Location &amp; Hours
+│   ├── Reserve a Table
+│   └── Ranking in City
+├── Attraction / Thing to Do
+│   ├── Photos
+│   ├── Reviews
+│   ├── Description
+│   ├── Duration / Hours / Prices
+│   ├── Book Tour / Experience
+│   └── Nearby Things to Do
+├── Tours &amp; Experiences (Viator integration)
+│   ├── Book Experience
+│   ├── Availability Calendar
+│   ├── Pricing &amp; Group Size
+│   └── Cancellation Policy
+├── Travel Forum
+│   ├── Destination Forums
+│   ├── Topic Forums (cruises, air travel, etc.)
+│   ├── Ask a Question
+│   └── Top Contributors
+├── Trips (trip planning)
+│   ├── Create a Trip
+│   ├── Add Saves (hotels, restaurants, attractions)
+│   ├── Itinerary View
+│   └── Share Trip
+├── Profile
+│   ├── Reviews Written
+│   ├── Photos Contributed
+│   ├── Trips
+│   ├── Badges / Points
+│   ├── Travel Map
+│   ├── Followers / Following
+│   └── Contributions Level
+├── Write a Review
+│   ├── Rating (1-5 bubbles)
+│   ├── Review Text
+│   ├── Photos
+│   ├── Traveler Type
+│   └── Date of Visit
+├── Business Owners (Management Center)
+│   ├── Claim Listing
+│   ├── Respond to Reviews
+│   ├── Update Info / Photos
+│   ├── Analytics
+│   ├── Advertising (Sponsored Placements)
+│   └── Tripadvisor Plus (premium listing)
+└── Settings
+    ├── Account
+    ├── Notifications
+    ├── Privacy
+    ├── Travel Preferences
+    └── Linked Accounts
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar with search-first design</li>
+<li><strong>Desktop Top Bar</strong>: Logo, Search bar (prominent), Discover, Trips, Review, Notifications, Profile</li>
+<li><strong>Desktop Sub-Nav (destination page)</strong>: Hotels, Things to Do, Restaurants, Flights, Vacation Rentals, Forums</li>
+<li><strong>Mobile Bottom Tabs</strong>: Explore, Search, Trips, Review, Profile</li>
+<li><strong>Map View</strong>: Toggle between list and map for hotels, restaurants, attractions</li>
+<li><strong>Review Navigation</strong>: Within any listing, tabs for Overview, Reviews, Q&amp;A, Location</li>
+<li><strong>Breadcrumb</strong>: Destination &gt; Category &gt; Specific Listing (e.g., Tokyo &gt; Hotels &gt; Park Hyatt)</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hotel</td>
+<td>name, address, star rating, Tripadvisor rating, review count, amenities, price range, photos, rooms, booking links</td>
+<td>→ Destination, → Reviews, → Booking Partners</td>
+</tr>
+<tr>
+<td>Restaurant</td>
+<td>name, address, cuisine types, price range, rating, review count, menu, hours, reservation link</td>
+<td>→ Destination, → Reviews</td>
+</tr>
+<tr>
+<td>Attraction</td>
+<td>name, address, type (museum, park, etc.), rating, review count, hours, admission price, duration</td>
+<td>→ Destination, → Reviews</td>
+</tr>
+<tr>
+<td>Experience/Tour</td>
+<td>name, provider, price, duration, group size, cancellation policy, availability, rating</td>
+<td>→ Destination, → Reviews (via Viator)</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), title, text, photos, date of visit, traveler type (family, couple, solo, business), helpful votes, response (from owner)</td>
+<td>→ Listing</td>
+</tr>
+<tr>
+<td>Forum Post</td>
+<td>title, body, author, destination, replies, helpful votes</td>
+<td>→ Forum, → Destination</td>
+</tr>
+<tr>
+<td>Trip</td>
+<td>name, destinations, saved items (hotels, restaurants, attractions), notes, shared users</td>
+<td>→ Profile</td>
+</tr>
+<tr>
+<td>Destination</td>
+<td>name, country, description, top hotels/restaurants/attractions, forum, travel guide</td>
+<td>→ Hotels, Restaurants, Attractions</td>
+</tr>
+<tr>
+<td>Photo</td>
+<td>image, caption, uploader, listing, date, helpful votes</td>
+<td>→ Listing</td>
+</tr>
+<tr>
+<td>Travelers&#39; Choice Award</td>
+<td>listing, year, category (top hotel, best restaurant, etc.)</td>
+<td>→ Listing</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Researching a Hotel</h3>
+<ol>
+<li>Search &quot;Hotels in Paris&quot; → Results page with map + list</li>
+<li>Filter: 4-star+, pool, free cancellation, under $200/night</li>
+<li>Sort by: Traveler Ranked (default), Price, Distance</li>
+<li>Click hotel → Read reviews (filter by &quot;Couples&quot; / &quot;Recent&quot;)</li>
+<li>View photos → Compare prices across Booking.com, Expedia, Hotels.com</li>
+<li>Click &quot;View Deal&quot; → Redirect to booking partner site to complete reservation</li>
+</ol>
+<h3>Writing a Review</h3>
+<ol>
+<li>Visited a restaurant → Profile → &quot;Write a Review&quot; or search for the restaurant</li>
+<li>Rate overall (1-5 bubbles) → Rate food, service, value, atmosphere</li>
+<li>Write review text → Upload photos → Select date of visit and traveler type</li>
+<li>Submit → Review appears on listing after brief moderation</li>
+<li>Earn contribution points → Level up contributor badge</li>
+</ol>
+<h3>Planning a Trip</h3>
+<ol>
+<li>Create Trip (&quot;Tokyo Summer 2026&quot;) → Search and save hotels, restaurants, attractions</li>
+<li>Saved items organized in trip → View as list or on map</li>
+<li>Share trip with travel companions → They can add/view saves</li>
+<li>On the trip: reference saves for directions, hours, reviews</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>tripadvisor.com/                                # Homepage
+tripadvisor.com/Tourism-g{geoId}-{destination}  # Destination page
+tripadvisor.com/Hotels-g{geoId}-{destination}   # Hotel listing
+tripadvisor.com/Hotel_Review-g{geoId}-d{id}-Reviews-{slug}  # Hotel detail
+tripadvisor.com/Restaurants-g{geoId}-{destination}  # Restaurant listing
+tripadvisor.com/Restaurant_Review-g{geoId}-d{id}-Reviews-{slug}  # Restaurant detail
+tripadvisor.com/Attractions-g{geoId}-{destination}  # Things to do
+tripadvisor.com/Attraction_Review-g{geoId}-d{id}-Reviews-{slug}  # Attraction detail
+tripadvisor.com/AttractionProductReview-g{geoId}-d{id}-{slug}  # Tour/experience
+tripadvisor.com/ShowForum-g{geoId}-{destination}  # Destination forum
+tripadvisor.com/Profile/{username}             # User profile
+tripadvisor.com/Trips                          # My Trips
+tripadvisor.com/UserReview                     # Write a review
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Global Search</strong>: Hotels, restaurants, things to do, flights, destinations, forums</li>
+<li><strong>Hotel Filters</strong>: Star rating, price range, amenities (pool, WiFi, spa, breakfast), traveler rating, hotel class, distance from center, brand, free cancellation</li>
+<li><strong>Restaurant Filters</strong>: Cuisine, price range ($ to $$$$), dietary (vegan, GF), meal type (breakfast, lunch, dinner), open now</li>
+<li><strong>Attraction Filters</strong>: Category (museums, tours, nature), price, duration, rating</li>
+<li><strong>Review Filters</strong>: Rating, traveler type (family, couple, solo, business), date, language</li>
+<li><strong>Sort</strong>: Traveler Ranked (default), Price (low to high), Distance, Rating</li>
+<li><strong>Map View</strong>: Geographic filtering; zoom to see results in visible area</li>
+<li><strong>Price Comparison</strong>: Hotel prices compared across 200+ booking sites in real time</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App</td>
+<td>Bottom tab bar; card-based listing; swipeable photos; map toggle; streamlined review writing</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Grid listing; map + list side-by-side; expanded review reading</td>
+</tr>
+<tr>
+<td>Desktop (primary)</td>
+<td>Full top nav; list + map layout; price comparison sidebar; forum in full width</td>
+</tr>
+<tr>
+<td>Mobile Web</td>
+<td>Responsive; prompts app download; same functionality as app</td>
+</tr>
+<tr>
+<td>SEO Pages</td>
+<td>Server-rendered destination, hotel, restaurant pages optimized for search engine indexing</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>Browse listings, read reviews, compare prices, view forums; prompted to sign up for saving</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Write reviews, upload photos, create trips, save listings, post in forums, follow users</td>
+</tr>
+<tr>
+<td>Top Contributor</td>
+<td>Badge (Level 3-6), priority review visibility, access to exclusive contributor events</td>
+</tr>
+<tr>
+<td>Business Owner (claimed)</td>
+<td>Respond to reviews, update listing info/photos, view analytics, purchase ads</td>
+</tr>
+<tr>
+<td>Tripadvisor Plus Subscriber</td>
+<td>Members-only hotel prices, perks at select properties</td>
+</tr>
+<tr>
+<td>Forum Moderator</td>
+<td>Manage forum posts, pin topics, enforce community guidelines</td>
+</tr>
+<tr>
+<td>Advertising Partner</td>
+<td>Sponsored placement in search results, display ads, premium listing features</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

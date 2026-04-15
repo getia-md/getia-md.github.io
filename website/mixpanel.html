@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixpanel — IA.md | getIA.md</title>
+  <meta name="description" content="Event analytics. Funnels, flows, retention charts. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=mixpanel.com&sz=64" alt="Mixpanel" onerror="this.parentElement.textContent='M'">
+      </div>
+      <h1 class="detail-brand-name">Mixpanel</h1>
+      <p class="detail-brand-tagline">Event analytics. Funnels, flows, retention charts.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/mixpanel/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://mixpanel.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/mixpanel/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Mixpanel</h1>
+<h2>Overview</h2>
+<p>Mixpanel is an event-based product analytics platform focused on helping teams measure what people do inside their product. The IA is built around three core report types — Insights (trends), Funnels (conversion), and Flows (user paths) — plus Retention and advanced analysis. Unlike page-view analytics, Mixpanel tracks custom events and properties, enabling teams to ask &quot;Who did what, and why?&quot; rather than &quot;How many page views?&quot;</p>
+<h2>Site Map</h2>
+<pre><code>mixpanel.com
+├── Home (Overview Dashboard)
+│   ├── Key Metrics Summary
+│   ├── Recent Reports
+│   └── Bookmarks
+├── Reports
+│   ├── Insights (Trends &amp; Segmentation)
+│   ├── Funnels (Conversion Analysis)
+│   ├── Flows (User Path Analysis)
+│   ├── Retention (Cohort Retention)
+│   └── Custom Reports
+├── Users
+│   ├── User Profiles
+│   ├── Cohorts (behavioral segments)
+│   └── User Look-Up (event stream)
+├── Boards (Dashboards)
+│   ├── Personal Boards
+│   ├── Team Boards
+│   └── Board Builder (drag-and-drop layout)
+├── Alerts
+│   ├── Custom Alerts (threshold-based)
+│   └── Anomaly Detection (automatic)
+├── Data Management
+│   ├── Lexicon (event/property dictionary)
+│   ├── Data Views (filtered event subsets)
+│   ├── Lookup Tables
+│   ├── Custom Properties (computed)
+│   └── Data Pipelines (export)
+├── Settings
+│   ├── Organization
+│   ├── Projects
+│   ├── Team Members
+│   ├── Service Accounts
+│   └── Data Governance
+└── Marketing Site
+    ├── Product
+    ├── Solutions
+    ├── Pricing
+    └── Templates (pre-built reports)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Home, Reports (Insights, Funnels, Flows, Retention), Users, Boards, Data Management</li>
+<li><strong>Report builder:</strong> Select report type → Choose events → Add breakdowns (properties) → Set date range → Visualize (line, bar, table, pie)</li>
+<li><strong>Boards:</strong> Grid layout of report cards; click card to open full report</li>
+<li><strong>User Look-Up:</strong> Search user → Profile page with properties, event timeline, cohort memberships</li>
+<li><strong>Top bar:</strong> Project switcher, global search, bookmarks, alerts, user menu</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>name, token, timezone, data retention</td>
+<td>→ Events, Properties, Reports</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>name, properties, volume, first/last seen</td>
+<td>→ Users, Reports</td>
+</tr>
+<tr>
+<td>Property</td>
+<td>name, type (event/user/group/lookup), data type</td>
+<td>→ Events, Users</td>
+</tr>
+<tr>
+<td>User (Profile)</td>
+<td>distinct_id, user properties, event history</td>
+<td>→ Cohorts, Events</td>
+</tr>
+<tr>
+<td>Cohort</td>
+<td>name, definition (behavioral/demographic), size</td>
+<td>→ Users, Reports (segment by)</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>type (insight/funnel/flow/retention), query, visualization, board</td>
+<td>→ Events, Properties, Cohorts</td>
+</tr>
+<tr>
+<td>Board</td>
+<td>name, cards (reports), layout</td>
+<td>→ Reports</td>
+</tr>
+<tr>
+<td>Alert</td>
+<td>name, metric, threshold/anomaly, notification channel</td>
+<td>→ Report metric</td>
+</tr>
+<tr>
+<td>Lexicon Entry</td>
+<td>event/property, description, tags, visibility (visible/hidden/dropped)</td>
+<td>→ Data governance</td>
+</tr>
+<tr>
+<td>Data View</td>
+<td>name, filtered event subset</td>
+<td>→ Reports</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Analyze Event Trends</h3>
+<p><code>Reports → Insights → Select event (e.g., &quot;Song Played&quot;) → Breakdown by property (e.g., &quot;Genre&quot;) → Set to Last 30 Days → Line chart → Compare to previous period → Save to Board</code></p>
+<h3>2. Measure Conversion</h3>
+<p><code>Reports → Funnels → Add steps (e.g., &quot;Search&quot; → &quot;View Item&quot; → &quot;Add to Cart&quot; → &quot;Purchase&quot;) → View conversion rates → Breakdown by user property (e.g., &quot;Plan Type&quot;) → Identify drop-off</code></p>
+<h3>3. Explore User Paths</h3>
+<p><code>Reports → Flows → Set starting event → View top paths users take → Click a path branch to drill down → Identify unexpected navigation patterns</code></p>
+<h3>4. Set Up an Alert</h3>
+<p><code>Alerts → + New → Select metric (e.g., &quot;Daily Active Users&quot;) → Set threshold (e.g., &quot;drops below 1000&quot;) → Choose notification (email/Slack) → Save</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>mixpanel.com/project/{project_id}/view/home          # Home
+mixpanel.com/project/{project_id}/view/insights       # Insights report
+mixpanel.com/project/{project_id}/view/funnels        # Funnels report
+mixpanel.com/project/{project_id}/view/flows          # Flows report
+mixpanel.com/project/{project_id}/view/retention      # Retention report
+mixpanel.com/project/{project_id}/view/users          # Users / Cohorts
+mixpanel.com/project/{project_id}/view/boards/{id}    # Board
+mixpanel.com/project/{project_id}/view/user/{id}      # User profile
+mixpanel.com/project/{project_id}/data-management     # Lexicon
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search:</strong> Find reports, boards, events, properties, cohorts by name</li>
+<li><strong>Lexicon search:</strong> Search/filter events and properties; manage visibility (show/hide/drop)</li>
+<li><strong>Report filtering:</strong> Filter by any event/user property with operators (equals, contains, greater than, etc.); AND/OR conditions</li>
+<li><strong>Cohort builder:</strong> Multi-condition behavioral + demographic filters</li>
+<li><strong>User search:</strong> Look up by distinct_id or user property</li>
+<li><strong>Date range:</strong> Relative (last N days) or absolute; comparison to previous period</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1280px+)</td>
+<td>Full report builder with sidebar, chart, and breakdown panels</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Board viewing works; report building is cramped but functional</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>View boards and reports (read-only); no report creation; dashboard-optimized</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Organization Owner</td>
+<td>Billing, all projects, member management</td>
+</tr>
+<tr>
+<td>Organization Admin</td>
+<td>Manage members, project settings</td>
+</tr>
+<tr>
+<td>Project Owner</td>
+<td>Full project control, data governance</td>
+</tr>
+<tr>
+<td>Project Admin</td>
+<td>Manage project settings, data views</td>
+</tr>
+<tr>
+<td>Analyst</td>
+<td>Create/edit reports, cohorts, boards</td>
+</tr>
+<tr>
+<td>Consumer</td>
+<td>View reports and boards, cannot create or modify</td>
+</tr>
+<tr>
+<td>Service Account</td>
+<td>API access with scoped permissions</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

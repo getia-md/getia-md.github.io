@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midjourney — IA.md | getIA.md</title>
+  <meta name="description" content="AI image generation. /imagine, variations, upscale. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=midjourney.com&sz=64" alt="Midjourney" onerror="this.parentElement.textContent='M'">
+      </div>
+      <h1 class="detail-brand-name">Midjourney</h1>
+      <p class="detail-brand-tagline">AI image generation. /imagine, variations, upscale.</p>
+      <span class="detail-category-badge">AI</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/midjourney/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://midjourney.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/midjourney/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Midjourney — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Midjourney is an AI image generation platform known for its distinctive aesthetic and artistic quality. Originally operating exclusively through Discord, the product has expanded to a dedicated web application at midjourney.com. The IA reflects this unique evolution: a <strong>gallery-centric creation workspace</strong> where the primary interaction loop is prompt → generation → variation → upscale → organize. The web app centers on a visual grid of generated images, with a persistent prompt bar at the bottom. Key features include the prompt editor, image editor (inpainting/outpainting), style references, character references, and organizational features like folders and image ratings. The Discord-native <code>/imagine</code> command remains a parallel interface.</p>
+<h2>Site Map</h2>
+<pre><code>midjourney.com
+├── / (Home / image feed)
+├── /explore (Community showcase)
+├── /create (Generation workspace)
+├── /imagine (Prompt editor with advanced params)
+├── /archive
+│   ├── / (All generated images)
+│   ├── /likes (Liked images)
+│   ├── /folders (Organized folders)
+│   └── /folders/{folder_id}
+├── /image/{image_id} (Individual image detail)
+├── /editor/{task_id} (Image editor — inpaint/outpaint)
+├── /profile/{username} (Public profile gallery)
+├── /account
+│   ├── /billing
+│   └── /settings
+├── /docs (Documentation)
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Top bar with tabs — Home, Explore, Create, Archive</li>
+<li><strong>Persistent element</strong>: Bottom prompt bar (always visible in Create mode)</li>
+<li><strong>Secondary navigation</strong>: Archive sub-tabs — All, Likes, Folders, Smart Folders</li>
+<li><strong>Image navigation</strong>: Click any image → full-screen lightbox with action buttons (Vary, Upscale, Remix, Edit)</li>
+<li><strong>Utility navigation</strong>: Top-right profile avatar → Account, Billing, Settings, Log out</li>
+<li><strong>Filter navigation</strong>: Explore page has style/tag filters; Archive has date/model/aspect ratio filters</li>
+<li><strong>Mobile</strong>: Bottom tab bar replaces top nav; prompt bar adapts to keyboard</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Image Generation (Job)</td>
+<td>4-image grid from a single prompt, with model version, parameters, seed</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Individual Image</td>
+<td>High-res image with metadata: prompt, params (--ar, --v, --s, --c), seed, model</td>
+<td>Part of job</td>
+</tr>
+<tr>
+<td>Variation</td>
+<td>New generation derived from a parent image with modified prompt/params</td>
+<td>User-owned, linked to parent</td>
+</tr>
+<tr>
+<td>Upscale</td>
+<td>Enhanced resolution version of a selected image</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>Named container for organizing images</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Style Reference</td>
+<td>Image used as visual style input for new generations</td>
+<td>Linked to job</td>
+</tr>
+<tr>
+<td>Prompt</td>
+<td>Text description + parameters (aspect ratio, stylize, chaos, weird, model version)</td>
+<td>Part of job</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Basic Image Generation</h3>
+<ol>
+<li>User navigates to Create → focus on prompt bar at bottom</li>
+<li>Types descriptive prompt (e.g., &quot;a cyberpunk cat in neon rain, cinematic lighting&quot;)</li>
+<li>Adjusts parameters: aspect ratio, model version (v6, niji), stylize, chaos</li>
+<li>Submits → 4-image grid generates (30-60 seconds)</li>
+<li>User selects favorite → Upscale (U1-U4) or Vary (V1-V4, Subtle/Strong)</li>
+<li>Final image saved to Archive</li>
+</ol>
+<h3>Image Editing (Inpaint/Outpaint)</h3>
+<ol>
+<li>User selects an image → clicks Edit</li>
+<li>Editor opens with brush tools for masking regions</li>
+<li>User masks area to change → types replacement prompt</li>
+<li>Midjourney regenerates masked area while preserving the rest</li>
+<li>Can also extend canvas (outpaint) in any direction</li>
+</ol>
+<h3>Style/Character References</h3>
+<ol>
+<li>User attaches an image URL as <code>--sref</code> (style reference) or <code>--cref</code> (character reference)</li>
+<li>Midjourney extracts visual style or character features</li>
+<li>New generation applies the referenced style/character to the new prompt</li>
+<li>Enables consistent character design across multiple images</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Home feed</td>
+</tr>
+<tr>
+<td><code>/explore</code></td>
+<td>Community gallery</td>
+</tr>
+<tr>
+<td><code>/create</code></td>
+<td>Generation workspace</td>
+</tr>
+<tr>
+<td><code>/archive</code></td>
+<td>User&#39;s image archive</td>
+</tr>
+<tr>
+<td><code>/archive/folders/{uuid}</code></td>
+<td>Specific folder</td>
+</tr>
+<tr>
+<td><code>/image/{uuid}</code></td>
+<td>Image detail page</td>
+</tr>
+<tr>
+<td><code>/editor/{uuid}</code></td>
+<td>Image editor</td>
+</tr>
+<tr>
+<td><code>/profile/{username}</code></td>
+<td>Public user profile</td>
+</tr>
+<tr>
+<td><code>/account/*</code></td>
+<td>Account management</td>
+</tr>
+<tr>
+<td><code>/docs/*</code></td>
+<td>Documentation</td>
+</tr>
+</tbody></table>
+<p>Image IDs are UUIDs. Public profiles use usernames. No SEO slugs on images (visual content, not text).</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Prompt search</strong>: Search own Archive by prompt text</li>
+<li><strong>Explore search</strong>: Search community images by keyword/prompt</li>
+<li><strong>Filters</strong>: Model version (v5, v6, niji), aspect ratio, date range, favorites</li>
+<li><strong>Smart Folders</strong>: Auto-organized by AI-detected content categories</li>
+<li><strong>Rating system</strong>: Users can rate own images (1-5 stars) to train personal style preferences</li>
+<li><strong>No tag system</strong>: Organization relies on prompt text matching and folders</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full grid view (4-6 columns), persistent prompt bar, side panels for image detail</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>3-4 column grid, prompt bar at bottom</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>2-3 column grid, prompt bar at bottom, image detail as overlay</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>1-2 column grid, prompt bar fixed at bottom above keyboard, image detail full-screen</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Image grids use masonry layout adapting to viewport width</li>
+<li>Prompt bar is always fixed to bottom, expands on focus to show parameter controls</li>
+<li>Lightbox view is full-screen on mobile with swipe-to-navigate</li>
+<li>Touch: pinch-to-zoom on images, swipe between images in lightbox</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Browse Explore gallery only; no generation</td>
+</tr>
+<tr>
+<td>Free Trial</td>
+<td>~25 free generations to try the service</td>
+</tr>
+<tr>
+<td>Basic ($10/mo)</td>
+<td>~200 generations/mo, standard queue, community gallery</td>
+</tr>
+<tr>
+<td>Standard ($30/mo)</td>
+<td>~900 generations/mo, fast hours, unlimited relaxed, stealth mode option</td>
+</tr>
+<tr>
+<td>Pro ($60/mo)</td>
+<td>~1800 generations/mo, more fast hours, stealth mode, concurrent jobs</td>
+</tr>
+<tr>
+<td>Mega ($120/mo)</td>
+<td>~3600 generations/mo, maximum fast hours, 12 concurrent jobs</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Discord OAuth (primary), email/password (web app)</li>
+<li>Image visibility: Public by default; Stealth mode (Pro+) makes images private</li>
+<li>Commercial usage: All paid plans include commercial license</li>
+<li>Content moderation: NSFW content blocked; prompts filtered by content policy</li>
+<li>Discord integration: All web generations also appear in Discord DMs (if linked)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

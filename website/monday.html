@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monday.com — IA.md | getIA.md</title>
+  <meta name="description" content="Work OS. Colorful boards, automations, dashboards. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=monday.com&sz=64" alt="Monday.com" onerror="this.parentElement.textContent='M'">
+      </div>
+      <h1 class="detail-brand-name">Monday.com</h1>
+      <p class="detail-brand-tagline">Work OS. Colorful boards, automations, dashboards.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/monday/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://monday.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/monday/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Monday.com</h1>
+<h2>Overview</h2>
+<p>Monday.com is a &quot;Work OS&quot; — a flexible platform where teams build custom workflows using colorful, spreadsheet-like boards. The IA is built around workspaces → folders → boards → groups → items, with each board acting as a configurable database. Heavy emphasis on visual customization (colors, column types) and automation recipes differentiate it from traditional project management tools.</p>
+<h2>Site Map</h2>
+<pre><code>monday.com
+├── My Work
+│   ├── Assigned to Me
+│   └── Mentioned
+├── Workspaces
+│   └── [Workspace]
+│       ├── Folders
+│       │   └── Boards
+│       │       ├── Main Table (default)
+│       │       ├── Kanban View
+│       │       ├── Timeline View
+│       │       ├── Calendar View
+│       │       ├── Chart View
+│       │       ├── Files Gallery
+│       │       └── Dashboard
+│       └── Docs
+├── Inbox (Notifications)
+├── Dashboards
+├── Automations Center
+├── Integrations Center
+├── Apps Marketplace
+├── Admin
+│   ├── Users
+│   ├── Billing
+│   ├── Security
+│   ├── Customization
+│   └── API
+└── Marketing Site
+    ├── Products (Work Mgmt, CRM, Dev, Service)
+    ├── Solutions
+    ├── Pricing
+    └── Resources
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Workspace selector (dropdown), favorites, recent boards, workspace tree (folders → boards)</li>
+<li><strong>Top bar:</strong> Search, Inbox (bell icon), My Work, &quot;+&quot; button for new board/doc/dashboard</li>
+<li><strong>Board-level header:</strong> View switcher tabs, filter, sort, group by, person filter, automations, integrations</li>
+<li><strong>Item detail:</strong> Opens as a slide-out panel with updates (comments), activity log, files</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>name, icon, color, type (open/closed)</td>
+<td>→ Folders, Boards, Members</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name</td>
+<td>→ Sub-folders, Boards</td>
+</tr>
+<tr>
+<td>Board</td>
+<td>name, type (main/shareable/private), columns</td>
+<td>→ Groups, Items, Views, Automations</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>name, color, collapsed state</td>
+<td>→ Items</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>column values (status, person, date, number, text, etc.)</td>
+<td>→ Sub-items, Updates, Files</td>
+</tr>
+<tr>
+<td>Column</td>
+<td>type, title, settings</td>
+<td>Defines board schema</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>name, widgets</td>
+<td>→ Boards (data sources)</td>
+</tr>
+<tr>
+<td>Automation</td>
+<td>trigger, conditions, actions</td>
+<td>→ Boards</td>
+</tr>
+<tr>
+<td>Doc</td>
+<td>title, content blocks</td>
+<td>→ Workspace</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Create a Board from Template</h3>
+<p><code>+ New → Board → Choose template (or blank) → Name board → Set workspace → Customize columns</code></p>
+<h3>2. Set Up an Automation</h3>
+<p><code>Board → Automations → + Add Automation → Select recipe (e.g., &quot;When status changes, notify someone&quot;) → Configure → Activate</code></p>
+<h3>3. Build a Cross-Board Dashboard</h3>
+<p><code>+ New → Dashboard → Add Widget → Select board(s) + column(s) → Choose chart type → Arrange layout</code></p>
+<h3>4. Track Personal Work</h3>
+<p><code>My Work → View items assigned to me across all boards → Filter by date/status → Click item to open detail</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>{slug}.monday.com/boards/{board_id}                  # Board main table
+{slug}.monday.com/boards/{board_id}/views/{view_id}  # Specific view
+{slug}.monday.com/boards/{board_id}/pulses/{item_id} # Item detail
+{slug}.monday.com/dashboards/{id}                    # Dashboard
+{slug}.monday.com/docs/{id}                          # Document
+{slug}.monday.com/workspaces/{id}                    # Workspace landing
+{slug}.monday.com/inbox                              # Notifications
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search:</strong> Searches across boards, items, updates, and docs; supports filtering by board, person, date</li>
+<li><strong>Board-level filters:</strong> Column-based filtering with AND/OR logic; saveable as filter presets</li>
+<li><strong>Quick filters (person pills):</strong> One-click filter to a specific person&#39;s items</li>
+<li><strong>Sort:</strong> Multi-column sort within any board view</li>
+<li><strong>Group by:</strong> Re-organize items by any column value dynamically</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1200px+)</td>
+<td>Full sidebar + board with horizontal scroll for many columns</td>
+</tr>
+<tr>
+<td>Tablet (768–1199px)</td>
+<td>Collapsible sidebar, board adapts with fewer visible columns</td>
+</tr>
+<tr>
+<td>Mobile app</td>
+<td>Bottom nav (Home, My Work, Inbox, Search, Menu), simplified board views, swipe actions</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Admin</td>
+<td>Full account control, billing, security, user management</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>Create boards, full edit in assigned workspaces</td>
+</tr>
+<tr>
+<td>Viewer</td>
+<td>View boards, cannot edit items or columns</td>
+</tr>
+<tr>
+<td>Guest</td>
+<td>Access only to boards explicitly shared, limited features</td>
+</tr>
+<tr>
+<td>Board Owner</td>
+<td>Manage board permissions, columns, automations</td>
+</tr>
+<tr>
+<td>Board Subscriber</td>
+<td>Receive notifications without editing</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poshmark — IA.md | getIA.md</title>
+  <meta name="description" content="Social commerce. Posh Parties, offers, bundles. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=poshmark.com&sz=64" alt="Poshmark" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Poshmark</h1>
+      <p class="detail-brand-tagline">Social commerce. Posh Parties, offers, bundles.</p>
+      <span class="detail-category-badge">Marketplace</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/poshmark/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://poshmark.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/poshmark/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Poshmark</h1>
+<h2>1. Overview</h2>
+<p>Poshmark is a social commerce marketplace for new and secondhand fashion, home, and beauty. Its differentiator is the <strong>social selling model</strong> — Posh Parties (themed live shopping events), sharing listings to boost visibility, bundles for multi-item purchases, and an offer/counter-offer negotiation system. The IA treats every user as both a buyer and a seller, with the closet (profile) as the storefront and sharing as the primary growth mechanic.</p>
+<h2>2. Site Map</h2>
+<pre><code>poshmark.com
+├── Home (feed)
+├── Browse
+│   ├── Women
+│   ├── Men
+│   ├── Kids
+│   ├── Home
+│   ├── Beauty
+│   ├── Pets
+│   ├── Electronics
+│   ├── Luxury (Posh Authenticate)
+│   └── Boutiques
+├── Brands
+│   ├── A-Z directory
+│   └── /{brand-name}
+├── Posh Parties
+│   ├── Upcoming parties
+│   ├── Current parties
+│   ├── Past parties
+│   └── Party detail (themed: &quot;Best in Shoes&quot;, &quot;Nike Party&quot;, etc.)
+├── Sell
+│   ├── List an item
+│   ├── Seller tools
+│   ├── Posh Ambassador program
+│   └── Shipping guide (prepaid labels)
+├── Listing Page
+│   ├── Photos
+│   ├── Description &amp; details
+│   ├── Size, brand, condition
+│   ├── Buy now / Make offer
+│   ├── Bundle (add to bundle with same seller)
+│   ├── Comments
+│   ├── Share / Like
+│   └── Seller closet link
+├── Closet (User Profile)
+│   ├── Available listings
+│   ├── Sold items
+│   ├── About
+│   ├── Meet the Posher
+│   ├── Love Notes (reviews)
+│   └── Followers / Following
+├── My Closet (Dashboard)
+│   ├── My listings
+│   ├── My purchases
+│   ├── My offers (sent/received)
+│   ├── My bundles
+│   ├── My earnings
+│   ├── Posh Stats
+│   └── Settings
+├── Help Center
+│   ├── Buying
+│   ├── Selling
+│   ├── Shipping &amp; returns
+│   ├── Posh Protect
+│   └── Contact
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── Seller policy
+└── Auth
+    ├── Log in
+    └── Sign up
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Top bar</td>
+<td>Logo, Search, Browse (categories), Posh Parties, Sell, notifications, Profile</td>
+</tr>
+<tr>
+<td>Browse</td>
+<td>Category mega-menu</td>
+<td>Departments → Categories → Subcategories, Brand browse</td>
+</tr>
+<tr>
+<td>Listing</td>
+<td>Action bar</td>
+<td>Buy, Offer, Bundle, Share, Like, Comment</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Multi-column</td>
+<td>Categories, Company, Resources, Legal, App badges</td>
+</tr>
+<tr>
+<td>App</td>
+<td>Bottom tabs</td>
+<td>Feed, Shop, Sell (+), Closet, Account</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: &quot;Share&quot; is a primary action — sharing your own or others&#39; listings to followers and parties is how items get visibility. The feed is a social timeline of shared listings.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Listing</td>
+<td>photos (up to 16), title, description, size, brand, category, original price, listing price, condition, likes, comments, shares</td>
+</tr>
+<tr>
+<td>Closet (User)</td>
+<td>username, avatar, bio, cover photo, listings count, followers, following, Love Notes, Posh Ambassador status</td>
+</tr>
+<tr>
+<td>Offer</td>
+<td>listing, buyer, amount, counter-amount, expiration (24h), status</td>
+</tr>
+<tr>
+<td>Bundle</td>
+<td>seller, buyer, items list, bundle discount, offer, shipping</td>
+</tr>
+<tr>
+<td>Posh Party</td>
+<td>theme, date/time, host(s), listed items, duration</td>
+</tr>
+<tr>
+<td>Love Note (Review)</td>
+<td>buyer, seller, listing, rating, comment, photo</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Buy with offer</h3>
+<ol>
+<li>Browse/search → find listing → &quot;Make an Offer&quot;</li>
+<li>Enter offer amount (must meet minimum % of listing price)</li>
+<li>Seller receives → Accept / Counter / Decline within 24h</li>
+<li>If accepted → buyer charged → seller ships with prepaid label</li>
+<li>Item delivered → buyer accepts or opens case → seller paid after 3 days</li>
+</ol>
+<h3>5b. Create a bundle</h3>
+<ol>
+<li>Visit a seller&#39;s closet → add multiple items to bundle</li>
+<li>Seller sees bundle → offers bundle discount</li>
+<li>Buyer can also make an offer on the bundle</li>
+<li>Single checkout, single shipping for all items</li>
+</ol>
+<h3>5c. Posh Party participation</h3>
+<ol>
+<li>View upcoming parties → join a themed party (e.g., &quot;Date Night Style&quot;)</li>
+<li>Share eligible listings to the party</li>
+<li>Browse party listings → like, share, buy</li>
+<li>Host picks &quot;Host Picks&quot; — featured listings get extra visibility</li>
+</ol>
+<h3>5d. Sell an item</h3>
+<ol>
+<li>Tap &quot;Sell&quot; → photo first (up to 16 photos)</li>
+<li>Fill in brand, size, category, condition, price</li>
+<li>Publish → share to feed, parties, followers</li>
+<li>Buyer purchases → prepaid USPS label generated → ship within 3 days</li>
+<li>Earnings credited to Posh balance after buyer accepts</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>/                           → Home feed
+/search?query={q}           → Search results
+/category/{department}/     → Department browse
+/brand/{brand-name}/        → Brand listings
+/listing/{listing-id}       → Listing detail
+/closet/{username}          → User closet (shop)
+/closet/{username}/about    → Meet the Posher
+/parties/                   → Posh Parties index
+/party/{party-id}           → Party detail
+/sell/                      → List item
+/account/                   → Dashboard (auth)
+/account/listings/          → My listings (auth)
+/account/offers/            → My offers (auth)
+/account/earnings/          → My earnings (auth)
+/help/                      → Help center
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global search</td>
+<td>By keyword, brand, seller; autocomplete with suggestions</td>
+</tr>
+<tr>
+<td>Filters</td>
+<td>Category, size, brand, price range, condition (NWT/NWOT/Good/Fair), color</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Just Shared, Recently Reduced, Lowest Price, Highest Price, Relevance</td>
+</tr>
+<tr>
+<td>Brand browse</td>
+<td>A-Z directory, popular brands, brand + category combos</td>
+</tr>
+<tr>
+<td>Saved search</td>
+<td>Push alerts when new matching listings posted</td>
+</tr>
+<tr>
+<td>My Closet filter</td>
+<td>Available, sold, drafts, price drops needed</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>4-5 column listing grid, sidebar filters, full closet view</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>3-column grid, collapsible filters</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>2-column grid, bottom-sheet filters, sticky sell button</td>
+</tr>
+<tr>
+<td>App (iOS/Android)</td>
+<td>Bottom tabs, swipe-to-share, camera-first sell, party notifications</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Browse, search, view listings and closets</td>
+</tr>
+<tr>
+<td>Logged-in User</td>
+<td>Buy, sell, offer, bundle, share, like, comment, follow</td>
+</tr>
+<tr>
+<td>Posh Ambassador</td>
+<td>Verified badge, community leader perks, party hosting eligibility</td>
+</tr>
+<tr>
+<td>Suggested User</td>
+<td>Boosted visibility, onboarding mentor for new users</td>
+</tr>
+<tr>
+<td>Seller</td>
+<td>Earnings dashboard, shipping labels, Posh Stats analytics</td>
+</tr>
+<tr>
+<td>Internal Moderator</td>
+<td>Listing review, counterfeit detection, dispute resolution</td>
+</tr>
+<tr>
+<td>Authentication Team</td>
+<td>Posh Authenticate for luxury items ($500+)</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

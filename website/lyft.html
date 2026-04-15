@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyft — IA.md | getIA.md</title>
+  <meta name="description" content="Ride-hailing. Shared rides, bikes/scooters, Lyft Pink. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=lyft.com&sz=64" alt="Lyft" onerror="this.parentElement.textContent='L'">
+      </div>
+      <h1 class="detail-brand-name">Lyft</h1>
+      <p class="detail-brand-tagline">Ride-hailing. Shared rides, bikes/scooters, Lyft Pink.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/lyft/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://lyft.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/lyft/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Lyft</h1>
+<h2>1. Overview</h2>
+<p>Lyft is a ride-hailing and micromobility platform connecting riders with drivers, bikes, and scooters. The IA is trip-centric — the home screen is a map with a destination input field, and the entire experience flows toward getting from A to B as quickly as possible. Secondary features include ride scheduling, shared rides, Lyft Pink membership, and a driver-side app with earnings tracking. The platform also operates bikeshare and scooter programs in select cities.</p>
+<h2>2. Site Map</h2>
+<pre><code>Lyft
+├── Home (Map + Ride Request)
+│   ├── Where to? (destination input)
+│   ├── Map (current location, nearby drivers)
+│   ├── Saved Places (Home, Work, favorites)
+│   ├── Recent Destinations
+│   └── Promos / Offers
+├── Ride Options
+│   ├── Lyft (standard)
+│   ├── Lyft XL (larger vehicle)
+│   ├── Lyft Lux / Lux Black (premium)
+│   ├── Shared (pooled rides)
+│   ├── Wait &amp; Save (cheaper, flexible pickup)
+│   ├── Scheduled Rides (future booking)
+│   ├── Priority Pickup (faster)
+│   └── Price Estimate + ETA
+├── In-Ride
+│   ├── Driver Info (name, photo, car, plate)
+│   ├── Live Map (route tracking)
+│   ├── ETA to Destination
+│   ├── Share Ride (safety — share trip with contacts)
+│   ├── Contact Driver (call/text)
+│   ├── Emergency (911 button)
+│   └── Music (Spotify integration)
+├── Post-Ride
+│   ├── Rate Driver (1-5 stars)
+│   ├── Tip Driver
+│   ├── Receipt
+│   ├── Report Issue
+│   └── Lost &amp; Found
+├── Bikes &amp; Scooters
+│   ├── Map (available vehicles nearby)
+│   ├── Unlock (QR scan)
+│   ├── Pricing
+│   └── Parking zones
+├── Ride History
+│   ├── Past Rides
+│   ├── Receipts
+│   └── Re-request Ride
+├── Lyft Pink (subscription)
+│   ├── Ride Discounts (5-15% off)
+│   ├── Priority Pickups
+│   ├── Bike/Scooter Discounts
+│   ├── Grubhub+ Included
+│   └── Relaxed Cancellation
+├── Rewards / Offers
+│   ├── Available Promos
+│   ├── Referral Program
+│   └── Ride Challenges
+├── Profile
+│   ├── Account Info
+│   ├── Payment Methods
+│   ├── Business Profile
+│   ├── Accessibility Preferences
+│   └── Safety Preferences
+├── Safety
+│   ├── Emergency Contacts
+│   ├── Trusted Contacts
+│   ├── Share Ride
+│   ├── Safety Toolkit (911, report)
+│   └── Community Guidelines
+├── Settings
+│   ├── Account
+│   ├── Payment
+│   ├── Notifications
+│   ├── Privacy
+│   └── Accessibility
+├── Driver App (separate)
+│   ├── Go Online / Offline
+│   ├── Ride Requests
+│   ├── Navigation
+│   ├── Earnings Dashboard
+│   ├── Weekly Summary
+│   ├── Bonuses / Streaks
+│   ├── Express Drive (rental program)
+│   └── Driver Profile / Ratings
+└── Website (lyft.com)
+    ├── Ride with Lyft
+    ├── Drive with Lyft
+    ├── Business (Lyft Business)
+    ├── Bikes &amp; Scooters
+    └── Safety
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Map-centric home + bottom sheet + hamburger menu</li>
+<li><strong>Home Screen</strong>: Full-screen map + &quot;Where to?&quot; input (bottom sheet)</li>
+<li><strong>Bottom Sheet</strong>: Slides up to show ride options after destination entry</li>
+<li><strong>Hamburger Menu (top left)</strong>: Ride History, Lyft Pink, Payment, Promos, Settings, Safety, Help</li>
+<li><strong>In-Ride</strong>: Full-screen map with persistent driver info bar and safety actions</li>
+<li><strong>Driver App</strong>: Bottom tab bar — Home (map), Earnings, Rewards, Account</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ride Request</td>
+<td>pickup, destination, ride type, price estimate, ETA, surge multiplier</td>
+<td>→ Rider, → Driver</td>
+</tr>
+<tr>
+<td>Trip</td>
+<td>route, distance, duration, fare, tip, driver, rider, rating, timestamp</td>
+<td>→ Receipt, → History</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>name, photo, vehicle (make, model, color, plate), rating, ride count</td>
+<td>→ Trip</td>
+</tr>
+<tr>
+<td>Ride Type</td>
+<td>name (Lyft, XL, Lux, Shared), capacity, price multiplier, description</td>
+<td>→ Ride Request</td>
+</tr>
+<tr>
+<td>Scheduled Ride</td>
+<td>pickup, destination, ride type, scheduled time, reminder</td>
+<td>→ Ride Request</td>
+</tr>
+<tr>
+<td>Receipt</td>
+<td>fare breakdown (base, distance, time, tolls, fees, tip), payment method</td>
+<td>→ Trip</td>
+</tr>
+<tr>
+<td>Promo / Offer</td>
+<td>code, discount (%, $ off), expiry, conditions</td>
+<td>→ Ride Request</td>
+</tr>
+<tr>
+<td>Saved Place</td>
+<td>name (Home, Work, custom), address, coordinates</td>
+<td>→ Profile</td>
+</tr>
+<tr>
+<td>Bike/Scooter</td>
+<td>type, ID, battery level (scooter), location (coordinates), pricing</td>
+<td>→ Map</td>
+</tr>
+<tr>
+<td>Lyft Pink Plan</td>
+<td>tier, discount rates, perks, billing cycle</td>
+<td>→ Profile</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Requesting a Ride</h3>
+<ol>
+<li>Open app → Map shows current location → Tap &quot;Where to?&quot;</li>
+<li>Enter destination (search, saved, recent) → Bottom sheet slides up</li>
+<li>View ride options: Lyft ($12, 5 min), XL ($18, 4 min), Shared ($8, 8 min)</li>
+<li>Select ride type → Confirm pickup location → &quot;Request Lyft&quot;</li>
+<li>Matched with driver → See driver name, photo, car, ETA</li>
+<li>Driver arrives → Get in → Live trip tracking → Arrive at destination</li>
+<li>Rate driver → Add tip → Receipt generated</li>
+</ol>
+<h3>Scheduling a Ride</h3>
+<ol>
+<li>Tap &quot;Where to?&quot; → Enter destination → Select ride type</li>
+<li>Tap clock icon → Choose date and time (up to 7 days ahead)</li>
+<li>Confirm → Receive confirmation notification</li>
+<li>15 minutes before: reminder notification → Driver matched → Pickup at scheduled time</li>
+</ol>
+<h3>Using Bikes/Scooters</h3>
+<ol>
+<li>Home map → Switch to Bikes/Scooters view</li>
+<li>See available vehicles nearby on map</li>
+<li>Walk to vehicle → Scan QR code to unlock</li>
+<li>Ride → Park in designated zone → End ride in app</li>
+<li>Charge calculated by time + distance → Receipt generated</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>lyft.com/                                   # Marketing homepage
+lyft.com/rider                              # Rider info
+lyft.com/driver                             # Driver signup
+lyft.com/ride-types                         # Ride options explained
+lyft.com/lyft-pink                          # Lyft Pink membership
+lyft.com/business                           # Lyft Business
+lyft.com/bikes                              # Bike/scooter info
+lyft.com/safety                             # Safety page
+lyft.com/rider/receipt?ride={rideId}        # Receipt (web)
+lyft.com/invite/{referralCode}              # Referral link
+lyft.com/help                               # Help center
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Destination Search</strong>: Address autocomplete (powered by Google Maps/Mapbox), recent destinations, saved places</li>
+<li><strong>Ride Type Filter</strong>: After destination entry, filter by ride type (standard, XL, Lux, Shared, Wait &amp; Save)</li>
+<li><strong>Price Comparison</strong>: Side-by-side price and ETA for each ride type</li>
+<li><strong>Bike/Scooter Map</strong>: Filter map to show bikes only, scooters only, or both</li>
+<li><strong>Ride History Search</strong>: Browse past rides by date; no keyword search</li>
+<li><strong>Help Center Search</strong>: Keyword search across FAQ and support articles</li>
+<li><strong>No Route Search</strong>: Single origin-destination model; no multi-stop browsing</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App (primary)</td>
+<td>Full-screen map; bottom sheet for ride options; swipeable ride cards; in-ride full screen</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Larger map; expanded bottom sheet; wider ride option cards</td>
+</tr>
+<tr>
+<td>Web (lyft.com)</td>
+<td>Marketing site; price estimator tool; no ride requesting</td>
+</tr>
+<tr>
+<td>Apple Watch</td>
+<td>Ride ETA, driver arrival notification, trip status; cannot request rides</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>No desktop ride app; web used for account management and Lyft Business admin</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rider</td>
+<td>Request rides, schedule rides, rate drivers, tip, save places, use promos, rent bikes/scooters</td>
+</tr>
+<tr>
+<td>Lyft Pink Rider</td>
+<td>All rider features + 5-15% ride discount, priority pickup, relaxed cancellation, Grubhub+</td>
+</tr>
+<tr>
+<td>Business Rider</td>
+<td>Rides billed to company account; travel policies enforced; receipt auto-sent to employer</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>Accept ride requests, navigate, earn fares and tips, track earnings, maintain rating</td>
+</tr>
+<tr>
+<td>Express Drive Driver</td>
+<td>Uses Lyft rental vehicle; weekly rental fee deducted from earnings</td>
+</tr>
+<tr>
+<td>Business Admin</td>
+<td>Manage rider accounts, set ride policies, view spend reports, allocate budgets</td>
+</tr>
+<tr>
+<td>Minor (under 18)</td>
+<td>Cannot ride alone; must be accompanied by account holder (per ToS)</td>
+</tr>
+<tr>
+<td>Banned Rider/Driver</td>
+<td>Account deactivated; cannot request or accept rides</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

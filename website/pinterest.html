@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest — IA.md | getIA.md</title>
+  <meta name="description" content="Visual discovery. Pins, boards, shopping, Lens. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=pinterest.com&sz=64" alt="Pinterest" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Pinterest</h1>
+      <p class="detail-brand-tagline">Visual discovery. Pins, boards, shopping, Lens.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/pinterest/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://pinterest.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/pinterest/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Pinterest</h1>
+<h2>1. Overview</h2>
+<p>Pinterest is a visual discovery engine that helps users find inspiration, save ideas, and shop products through an image-first interface. The IA is organized around Pins (individual ideas), Boards (curated collections), and a personalized Home Feed powered by visual recommendation algorithms. The platform bridges inspiration and action — from mood board to purchase, recipe to meal, design idea to renovation.</p>
+<h2>2. Site Map</h2>
+<pre><code>Pinterest
+├── Home Feed (personalized)
+├── Search / Explore
+│   ├── Trending
+│   ├── Categories
+│   │   ├── Home Decor
+│   │   ├── Fashion
+│   │   ├── Food &amp; Drink
+│   │   ├── Beauty
+│   │   ├── DIY &amp; Crafts
+│   │   ├── Travel
+│   │   └── [30+ categories]
+│   └── Lens (visual search / camera)
+├── Create
+│   ├── Create Pin
+│   ├── Create Idea Pin (multi-page)
+│   └── Create Board
+├── Notifications
+│   ├── Activity
+│   └── Messages
+├── Profile
+│   ├── Created Pins
+│   ├── Saved Boards
+│   │   └── [Board] → Pins, Sections
+│   ├── Tried (completed ideas)
+│   └── Followers / Following
+├── Business Hub (creator/business accounts)
+│   ├── Analytics
+│   ├── Ads Manager
+│   ├── Catalogs
+│   └── Claim Website
+├── Settings
+│   ├── Account
+│   ├── Profile
+│   ├── Privacy
+│   ├── Notifications
+│   ├── Security
+│   └── Brand Permissions
+└── Shopping
+    ├── Shop Tab
+    ├── Product Pins
+    ├── Shopping Lists
+    └── Verified Merchant badges
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar (desktop), bottom tab bar (mobile)</li>
+<li><strong>Desktop Top Bar</strong>: Home, Explore, Create (+), Notifications (bell), Messages, Profile avatar, Search bar (prominent)</li>
+<li><strong>Mobile Bottom Tabs</strong>: Home, Search, Create (+), Notifications, Profile</li>
+<li><strong>Pin Detail</strong>: Overlay / full-screen modal; &quot;More like this&quot; waterfall below</li>
+<li><strong>Board Navigation</strong>: Grid of boards → tap board → masonry grid of pins within</li>
+<li><strong>Back Behavior</strong>: Browser-like history stack; pins can be deep-linked</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pin</td>
+<td>image/video, title, description, link (source URL), creator, saves count, comments</td>
+<td>→ Board(s), → Topic, → Product</td>
+</tr>
+<tr>
+<td>Idea Pin</td>
+<td>multi-page (up to 20 pages), video/image per page, music, tags, step-by-step</td>
+<td>→ Profile, → Topic</td>
+</tr>
+<tr>
+<td>Board</td>
+<td>name, description, cover, privacy (public/secret), collaborators, sections</td>
+<td>→ Pins, → Profile</td>
+</tr>
+<tr>
+<td>Board Section</td>
+<td>name, position within board</td>
+<td>→ Pins, → Board</td>
+</tr>
+<tr>
+<td>Product Pin</td>
+<td>price, availability, merchant, buy link, reviews</td>
+<td>→ Pin, → Catalog</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td>name, related topics, curated Pins</td>
+<td>→ Pins, → Search</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>display name, username, bio, avatar, website, verified status, follower count</td>
+<td>→ Boards, → Pins</td>
+</tr>
+<tr>
+<td>Collection (Shopping List)</td>
+<td>saved product pins, price tracking</td>
+<td>→ Product Pins</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Saving Inspiration</h3>
+<ol>
+<li>Scroll Home Feed → Tap Pin → View detail with source link</li>
+<li>Tap &quot;Save&quot; → Select existing board or create new board</li>
+<li>Pin saved to board → &quot;More like this&quot; suggestions appear below</li>
+<li>Repeat to build a thematic collection</li>
+</ol>
+<h3>Visual Search with Lens</h3>
+<ol>
+<li>Tap Search → Tap Camera icon (Lens)</li>
+<li>Point camera at object (furniture, outfit, food) → Capture</li>
+<li>Pinterest returns visually similar Pins and shoppable products</li>
+<li>Tap result → View Pin detail → Save or shop</li>
+</ol>
+<h3>Shopping Flow</h3>
+<ol>
+<li>Browse Home Feed or Search → Tap Product Pin (price badge visible)</li>
+<li>View product details, price, availability, merchant info</li>
+<li>Tap &quot;Visit&quot; → Redirect to merchant website for checkout</li>
+<li>Or tap &quot;Save to Shopping List&quot; for price-drop notifications</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>pinterest.com/                              # Home feed (logged in) / landing (logged out)
+pinterest.com/search/pins/?q={query}        # Search results
+pinterest.com/ideas/{topic}/                # Topic / category page
+pinterest.com/pin/{pinId}/                  # Pin detail
+pinterest.com/{username}/                   # User profile
+pinterest.com/{username}/{board-slug}/      # Board view
+pinterest.com/{username}/{board}/{section}/ # Board section
+pinterest.com/settings/                     # Account settings
+pinterest.com/business/                     # Business hub
+ads.pinterest.com/                          # Ads Manager
+analytics.pinterest.com/                    # Analytics dashboard
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Search Bar</strong>: Keyword search with autocomplete, trending suggestions, recent searches</li>
+<li><strong>Guided Search</strong>: Clickable filter bubbles (e.g., &quot;modern&quot; &quot;minimalist&quot; &quot;small space&quot;) refine results contextually</li>
+<li><strong>Visual Search (Lens)</strong>: Camera-based; crop area of an image to search for similar items</li>
+<li><strong>Search Filters</strong>: Pins / Boards / Profiles toggle; aspect ratio, color filter for design searches</li>
+<li><strong>Shop Filter</strong>: Filter by price range, brand, availability, verified merchant</li>
+<li><strong>Board Search</strong>: Search within a specific board&#39;s pins</li>
+<li><strong>Home Feed Tuning</strong>: &quot;Hide&quot; or &quot;See fewer like this&quot; to adjust algorithmic recommendations</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (&lt; 768px)</td>
+<td>2-column masonry grid; bottom tab bar; full-screen pin detail; swipe to browse</td>
+</tr>
+<tr>
+<td>Tablet (768–1024px)</td>
+<td>3–4 column masonry grid; bottom tab bar; split view for boards</td>
+</tr>
+<tr>
+<td>Desktop (1024–1440px)</td>
+<td>5–6 column masonry grid; top nav bar; pin detail as centered overlay modal</td>
+</tr>
+<tr>
+<td>Large Desktop (&gt; 1440px)</td>
+<td>7+ column masonry grid; wider pin modal with side panel for &quot;More like this&quot;</td>
+</tr>
+<tr>
+<td>Web (logged out)</td>
+<td>Full-screen pin preview with signup wall after scroll threshold</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>View pins (limited), search; prompted to sign up after a few interactions</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Save pins, create boards, follow users/topics, comment, message, shop</td>
+</tr>
+<tr>
+<td>Creator Account</td>
+<td>All user features + Idea Pins analytics, audience insights, claim website</td>
+</tr>
+<tr>
+<td>Business Account</td>
+<td>All creator features + Ads Manager, catalog upload, conversion tracking, Shopping API</td>
+</tr>
+<tr>
+<td>Board Collaborator</td>
+<td>Add/remove pins on shared board; cannot delete the board itself</td>
+</tr>
+<tr>
+<td>Verified Merchant</td>
+<td>Blue checkmark on product pins, &quot;Verified Merchant&quot; badge, Shop tab eligibility</td>
+</tr>
+<tr>
+<td>Advertiser</td>
+<td>Create promoted pins, set targeting, manage campaigns and budgets</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

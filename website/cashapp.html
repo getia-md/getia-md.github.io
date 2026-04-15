@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash App — IA.md | getIA.md</title>
+  <meta name="description" content="P2P, Bitcoin, Cash Card, Boost rewards. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=cash.app&sz=64" alt="Cash App" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Cash App</h1>
+      <p class="detail-brand-tagline">P2P, Bitcoin, Cash Card, Boost rewards.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/cashapp/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://cash.app" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/cashapp/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Cash App</h1>
+<h2>1. Overview</h2>
+<p>Cash App by Block (formerly Square) is a mobile-first financial platform combining P2P payments, Bitcoin trading, stock investing, the Cash Card (customizable Visa debit), Boost instant rewards, and direct deposit. The IA is minimal and action-oriented, reflecting Cash App&#39;s design philosophy of reducing financial friction. The website primarily drives app downloads; the app itself is the product.</p>
+<h2>2. Site Map</h2>
+<pre><code>cash.app
+├── Home
+├── Features
+│   ├── Send &amp; Receive
+│   ├── Cash Card
+│   │   ├── Customize design
+│   │   └── Boosts (rewards)
+│   ├── Direct Deposit
+│   ├── Bitcoin
+│   ├── Stocks
+│   ├── Cash App Borrow
+│   ├── Cash App Taxes
+│   └── Cash App Pay (for merchants)
+├── $Cashtag (public profiles)
+│   └── /{$cashtag}
+├── Help
+│   ├── Getting started
+│   ├── Sending &amp; receiving
+│   ├── Cash Card
+│   ├── Bitcoin
+│   ├── Stocks
+│   ├── Account &amp; settings
+│   └── Contact support
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   ├── Licenses
+│   └── Law enforcement guide
+├── Card (app-only)
+│   ├── Active Boosts
+│   ├── Card settings
+│   └── Spending history
+└── Auth
+    ├── Log in (phone/email)
+    └── Sign up
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Website global</td>
+<td>Minimal top nav</td>
+<td>Logo, features link, sign in, download CTA</td>
+</tr>
+<tr>
+<td>Website footer</td>
+<td>Compact</td>
+<td>Legal, Support, Social links</td>
+</tr>
+<tr>
+<td>App</td>
+<td>Bottom tab bar</td>
+<td>Home ($), Card, Investing, Banking</td>
+</tr>
+<tr>
+<td>App home</td>
+<td>Action buttons</td>
+<td>Pay, Request, Scan QR</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: The website is ultra-minimal — almost a single-page experience funneling to the app. Navigation in-app is icon-driven with the $ symbol as the central action hub.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Transaction</td>
+<td>sender, recipient, amount, note, status, timestamp</td>
+</tr>
+<tr>
+<td>$Cashtag Profile</td>
+<td>display name, $cashtag, avatar, QR code</td>
+</tr>
+<tr>
+<td>Cash Card</td>
+<td>design, Boosts enabled, last 4, status</td>
+</tr>
+<tr>
+<td>Boost</td>
+<td>merchant/category, reward (% or $), duration, activation status</td>
+</tr>
+<tr>
+<td>Bitcoin Holding</td>
+<td>amount (BTC/sats), USD value, buy/sell history</td>
+</tr>
+<tr>
+<td>Stock Holding</td>
+<td>ticker, shares (fractional), value, buy/sell history</td>
+</tr>
+<tr>
+<td>Direct Deposit</td>
+<td>routing number, account number, pay schedule</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Send money</h3>
+<ol>
+<li>Open app → tap $ on home screen</li>
+<li>Enter dollar amount</li>
+<li>Tap &quot;Pay&quot; → search by $cashtag, phone, or email</li>
+<li>Add note (optional) → confirm</li>
+<li>Instant transfer from balance or linked bank</li>
+</ol>
+<h3>5b. Buy Bitcoin</h3>
+<ol>
+<li>Navigate to Investing tab → Bitcoin</li>
+<li>Tap &quot;Buy&quot; → enter USD amount</li>
+<li>Review exchange rate → confirm</li>
+<li>BTC added to wallet → option to withdraw to external wallet</li>
+</ol>
+<h3>5c. Activate Boost</h3>
+<ol>
+<li>Go to Card tab → browse available Boosts</li>
+<li>Tap a Boost (e.g., &quot;10% off at Chipotle&quot;) → &quot;Add Boost&quot;</li>
+<li>Use Cash Card at that merchant → discount applied instantly</li>
+<li>One active Boost at a time → swap anytime</li>
+</ol>
+<h3>5d. Cash App Pay (merchant)</h3>
+<ol>
+<li>Merchant integrates Cash App Pay button</li>
+<li>Customer taps Cash App Pay at checkout</li>
+<li>Redirected to Cash App → approve payment</li>
+<li>Confirmation → return to merchant</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>/                           → Home (minimal landing)
+/app/                       → App download redirect
+/$cashtag/                  → Public cashtag profile
+/card/                      → Cash Card info
+/bitcoin/                   → Bitcoin feature
+/stocks/                    → Stock investing
+/direct-deposit/            → Direct deposit info
+/taxes/                     → Cash App Taxes
+/borrow/                    → Cash App Borrow
+/help/                      → Help center
+/help/{category}/           → Help category
+/help/{category}/{article}/ → Help article
+/legal/                     → Legal index
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Person search</td>
+<td>By $cashtag, phone, email; recent contacts prioritized</td>
+</tr>
+<tr>
+<td>QR scan</td>
+<td>Camera-based instant lookup</td>
+</tr>
+<tr>
+<td>Stock search</td>
+<td>By ticker or company name</td>
+</tr>
+<tr>
+<td>Boost browse</td>
+<td>By category, nearby merchants</td>
+</tr>
+<tr>
+<td>Help search</td>
+<td>Keyword search across all support articles</td>
+</tr>
+<tr>
+<td>Transaction filter</td>
+<td>By type (sent/received), date, amount</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Marketing page with animated product showcases, download CTAs</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Simplified marketing layout</td>
+</tr>
+<tr>
+<td>Mobile web (&lt;768px)</td>
+<td>Deep-link to app, app-store redirect, minimal content</td>
+</tr>
+<tr>
+<td>App (iOS/Android)</td>
+<td>Full product experience — payments, card, investing, banking</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Website marketing, help center, $cashtag profiles</td>
+</tr>
+<tr>
+<td>Basic User</td>
+<td>Send/receive (low limits), Cash Card</td>
+</tr>
+<tr>
+<td>Verified User (ID)</td>
+<td>Higher limits, Bitcoin, stocks, direct deposit, Borrow</td>
+</tr>
+<tr>
+<td>Cash Card Holder</td>
+<td>Boosts, card customization, ATM withdrawals</td>
+</tr>
+<tr>
+<td>Business Account</td>
+<td>Cash App Pay acceptance, invoicing, analytics</td>
+</tr>
+<tr>
+<td>Internal Admin</td>
+<td>Fraud detection, compliance, account review</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal — IA.md | getIA.md</title>
+  <meta name="description" content="Encrypted messaging. Disappearing messages, sealed sender. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=signal.org&sz=64" alt="Signal" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Signal</h1>
+      <p class="detail-brand-tagline">Encrypted messaging. Disappearing messages, sealed sender.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/signal/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://signal.org" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/signal/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Signal</h1>
+<h2>1. Overview</h2>
+<p>Signal is a privacy-first encrypted messaging platform built on the open-source Signal Protocol. The IA prioritizes simplicity, minimal data collection, and direct access to conversations. Unlike mainstream messengers, Signal deliberately omits engagement-driven features (stories algorithms, ads, suggested contacts) to keep the focus on secure, distraction-free communication.</p>
+<h2>2. Site Map</h2>
+<pre><code>Signal
+├── Home (Download CTA)
+├── Features
+│   ├── End-to-End Encryption
+│   ├── Group Chats
+│   ├── Disappearing Messages
+│   ├── Sealed Sender
+│   ├── Voice &amp; Video Calls
+│   ├── Stories
+│   └── Username &amp; Phone Number Privacy
+├── Download
+│   ├── iOS
+│   ├── Android
+│   └── Desktop (Windows / macOS / Linux)
+├── Blog
+│   └── [Article Detail]
+├── Donate
+├── Careers
+├── Help / Support
+│   ├── Getting Started
+│   ├── Account &amp; Settings
+│   ├── Messaging
+│   ├── Calling
+│   ├── Troubleshooting
+│   └── Security
+├── Community (GitHub / Community Forum)
+└── Legal
+    ├── Terms of Service
+    ├── Privacy Policy
+    └── Open Source Licenses
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Minimal top bar with logo + text links</li>
+<li><strong>Primary Nav</strong>: Features, Support, Blog, Donate, Download (CTA button)</li>
+<li><strong>Mobile</strong>: Hamburger menu collapsing all primary links</li>
+<li><strong>In-App Nav (mobile)</strong>: Bottom tab bar — Chats, Calls, Stories, Settings</li>
+<li><strong>In-App Nav (desktop)</strong>: Left sidebar — conversation list, top toolbar for search and compose</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Conversation</td>
+<td>participants, last message, timestamp, pinned, muted, archived</td>
+<td>→ Messages, → Contact(s)</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>body (encrypted), sender, timestamp, delivery status, reactions, reply-to</td>
+<td>→ Conversation, → Attachments</td>
+</tr>
+<tr>
+<td>Disappearing Message</td>
+<td>inherits Message + expiration timer</td>
+<td>→ Conversation</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>name, avatar, members, admin list, group link, disappearing timer</td>
+<td>→ Conversations, → Members</td>
+</tr>
+<tr>
+<td>Story</td>
+<td>media, caption, timestamp, viewers list, expiry (24h)</td>
+<td>→ Contact</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>name, phone number, username, verified safety number, blocked flag</td>
+<td>→ Conversations</td>
+</tr>
+<tr>
+<td>Blog Post</td>
+<td>title, date, author, body (markdown), cover image</td>
+<td>standalone</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Registration</h3>
+<ol>
+<li>Download app → Enter phone number → Receive SMS verification</li>
+<li>Create PIN (for Signal registration lock) → Set profile name / avatar</li>
+<li>Optionally set a username → Grant contacts permission or skip</li>
+<li>Land on empty conversation list</li>
+</ol>
+<h3>Sending a Disappearing Message</h3>
+<ol>
+<li>Open conversation → Tap timer icon in header</li>
+<li>Select duration (30s → 4 weeks) → Confirm</li>
+<li>All subsequent messages in thread auto-delete after the set interval</li>
+<li>Timer badge appears on conversation header</li>
+</ol>
+<h3>Verifying Safety Numbers</h3>
+<ol>
+<li>Open conversation → Tap contact name → &quot;View Safety Number&quot;</li>
+<li>Compare 60-digit number or scan QR code in person</li>
+<li>Mark as &quot;Verified&quot; → Verified badge appears on conversation</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>signal.org/                          # Landing / download CTA
+signal.org/download/                 # Platform-specific download links
+signal.org/features/                 # Feature overview
+signal.org/blog/                     # Blog listing
+signal.org/blog/{slug}/              # Blog post detail
+signal.org/donate/                   # Donation page
+signal.org/docs/                     # Technical documentation
+support.signal.org/                  # Help center (subdomain)
+support.signal.org/hc/en/articles/{id}  # Help article detail
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>In-App Message Search</strong>: Full-text search across all conversations (decrypted locally on device)</li>
+<li><strong>Conversation Filter</strong>: All / Unread toggle in chat list</li>
+<li><strong>Help Center</strong>: Keyword search across support articles</li>
+<li><strong>No server-side indexing</strong>: All search is performed client-side due to end-to-end encryption; Signal servers cannot read message content</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (&lt; 768px)</td>
+<td>Single-pane: conversation list or message thread (back arrow to return)</td>
+</tr>
+<tr>
+<td>Tablet (768–1024px)</td>
+<td>Split view: narrow conversation list + message pane</td>
+</tr>
+<tr>
+<td>Desktop App (&gt; 1024px)</td>
+<td>Persistent left sidebar (conversation list) + main message area + optional right panel (contact details)</td>
+</tr>
+<tr>
+<td>Website</td>
+<td>Simple single-column layout; download CTA hero scales down; hamburger nav on mobile</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Registered User</td>
+<td>Send/receive messages, create groups, post stories, voice/video calls</td>
+</tr>
+<tr>
+<td>Group Admin</td>
+<td>Add/remove members, edit group info, manage join link, set disappearing timer</td>
+</tr>
+<tr>
+<td>Group Member</td>
+<td>Send messages, react, reply; cannot modify group settings unless permitted</td>
+</tr>
+<tr>
+<td>Non-registered Visitor</td>
+<td>View website, download app, read blog and support articles</td>
+</tr>
+<tr>
+<td>Blocked Contact</td>
+<td>Cannot send messages or call the blocking user; no notification sent</td>
+</tr>
+<tr>
+<td>Linked Device</td>
+<td>Access synced messages; can be revoked from primary device at any time</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

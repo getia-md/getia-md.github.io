@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma — IA.md | getIA.md</title>
+  <meta name="description" content="ORM. Schema, migrations, Prisma Studio. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=prisma.io&sz=64" alt="Prisma" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Prisma</h1>
+      <p class="detail-brand-tagline">ORM. Schema, migrations, Prisma Studio.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/prisma/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://prisma.io" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/prisma/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Prisma — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Prisma is a next-generation ORM (Object-Relational Mapping) for Node.js and TypeScript that replaces traditional ORMs with a <strong>schema-first, type-safe database toolkit</strong>. The IA spans two distinct surfaces: the open-source toolkit (Prisma Client, Prisma Migrate, Prisma Studio) used locally in a developer&#39;s project, and the Prisma Data Platform (cloud service for data management, optimization, and team collaboration). The core architectural innovation is the Prisma Schema (<code>schema.prisma</code>): a single declarative file that defines the data model, database connection, and generator configuration. From this schema, Prisma generates a fully type-safe client API. Prisma Studio provides a visual database browser, and the platform adds Prisma Accelerate (connection pooling + caching) and Prisma Pulse (real-time database events).</p>
+<h2>Site Map</h2>
+<pre><code>prisma.io (marketing + docs)
+├── / (Home)
+├── /orm (Prisma ORM product page)
+├── /data-platform (Prisma Data Platform)
+├── /pricing
+├── /docs (Documentation — extensive)
+│   ├── /orm
+│   │   ├── /overview
+│   │   ├── /prisma-schema
+│   │   ├── /prisma-client
+│   │   ├── /prisma-migrate
+│   │   └── /reference (API reference)
+│   ├── /accelerate
+│   ├── /pulse
+│   └── /platform
+├── /blog
+├── /showcase (Companies using Prisma)
+└── /community
+
+console.prisma.io (Prisma Data Platform)
+├── / (Projects list)
+├── /{workspace}/{project}
+│   ├── /environments (Environment list — production, staging, etc.)
+│   │   └── /{environment}
+│   │       ├── /accelerate (Connection pooling + caching config)
+│   │       ├── /pulse (Real-time event streams config)
+│   │       └── /connection-string
+│   ├── /schema (Schema viewer — read from connected database)
+│   ├── /insights (Query performance analytics)
+│   └── /settings
+├── /settings
+│   ├── /account
+│   ├── /billing
+│   └── /members
+└── /auth
+
+Local Development (CLI/Studio)
+├── prisma/schema.prisma (Schema file)
+├── npx prisma studio (Visual DB browser at localhost:5555)
+├── npx prisma migrate (Schema migration management)
+├── npx prisma generate (Client code generation)
+└── npx prisma db push (Quick schema push — no migration files)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Documentation navigation</strong>: Left sidebar with nested sections — ORM (Schema, Client, Migrate, Reference), Accelerate, Pulse, Platform</li>
+<li><strong>Console navigation</strong>: Left sidebar — Projects, then within project: Environments, Schema, Insights, Settings</li>
+<li><strong>Local development</strong>: CLI commands are the navigation interface — no persistent UI besides Prisma Studio</li>
+<li><strong>Prisma Studio navigation</strong>: Left sidebar lists database tables → click table → data browser with column headers, filtering, sorting</li>
+<li><strong>Docs version selector</strong>: Version dropdown for different Prisma versions</li>
+<li><strong>Marketing site navigation</strong>: Top bar — Product (ORM, Accelerate, Pulse), Docs, Blog, Pricing, Community</li>
+<li><strong>Mobile</strong>: Docs are responsive; Studio is desktop-only (localhost tool)</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Prisma Schema</td>
+<td><code>datasource</code>, <code>generator</code>, <code>model</code> blocks, relations, enums, in <code>.prisma</code> DSL</td>
+<td>Project file</td>
+</tr>
+<tr>
+<td>Model</td>
+<td>Table definition with fields, types, attributes (@id, @unique, @relation, @default)</td>
+<td>Part of schema</td>
+</tr>
+<tr>
+<td>Migration</td>
+<td>SQL migration file, timestamp, name, applied status</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Prisma Client</td>
+<td>Auto-generated TypeScript/JS client with type-safe query methods</td>
+<td>Generated artifact</td>
+</tr>
+<tr>
+<td>Studio Session</td>
+<td>Visual database browser — table views, row editing, filtering</td>
+<td>Local session</td>
+</tr>
+<tr>
+<td>Platform Project</td>
+<td>Workspace, environments, Accelerate/Pulse config, connection strings</td>
+<td>Team-owned</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Named database connection with Accelerate/Pulse settings</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Query Insight</td>
+<td>Query pattern, execution count, latency, cache hit rate (Accelerate)</td>
+<td>Analytics</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Setting Up Prisma in a Project</h3>
+<ol>
+<li>Developer runs <code>npm install prisma --save-dev</code> and <code>npx prisma init</code></li>
+<li>Prisma creates <code>prisma/schema.prisma</code> with default config</li>
+<li>Developer configures database connection in schema (<code>datasource db</code>)</li>
+<li>Defines data models (e.g., <code>model User { id Int @id, name String, email String @unique }</code>)</li>
+<li>Runs <code>npx prisma migrate dev --name init</code> → creates SQL migration and applies it</li>
+<li>Runs <code>npx prisma generate</code> → generates Prisma Client</li>
+<li>Imports and uses type-safe client in application code</li>
+</ol>
+<h3>Schema Evolution (Migration)</h3>
+<ol>
+<li>Developer modifies schema (adds field, new model, changes relation)</li>
+<li>Runs <code>npx prisma migrate dev --name add-posts</code></li>
+<li>Prisma generates SQL migration file (viewable, editable)</li>
+<li>Migration applied to development database</li>
+<li>In production: <code>npx prisma migrate deploy</code> applies pending migrations</li>
+<li>Prisma Client regenerated with updated types</li>
+</ol>
+<h3>Prisma Studio (Visual Database Browser)</h3>
+<ol>
+<li>Developer runs <code>npx prisma studio</code> → opens browser at <code>localhost:5555</code></li>
+<li>Left sidebar shows all models/tables from the schema</li>
+<li>Click a model → see data in a spreadsheet-like grid</li>
+<li>Add, edit, delete records visually</li>
+<li>Navigate relations — click related records to follow foreign keys</li>
+<li>Filter and sort data by column values</li>
+</ol>
+<h3>Prisma Accelerate Setup</h3>
+<ol>
+<li>Developer creates project on console.prisma.io</li>
+<li>Adds database connection string → creates environment</li>
+<li>Enables Accelerate → gets a Prisma Accelerate connection URL</li>
+<li>Replaces direct database URL with Accelerate URL in application</li>
+<li>Queries now go through Accelerate: connection pooling + global caching</li>
+<li>Monitors cache hit rates and query performance in Insights</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prisma.io/</code></td>
+<td>Marketing home</td>
+</tr>
+<tr>
+<td><code>prisma.io/docs/{section}/{page}</code></td>
+<td>Documentation</td>
+</tr>
+<tr>
+<td><code>prisma.io/docs/orm/prisma-schema</code></td>
+<td>Schema reference</td>
+</tr>
+<tr>
+<td><code>prisma.io/docs/orm/prisma-client/{topic}</code></td>
+<td>Client API docs</td>
+</tr>
+<tr>
+<td><code>console.prisma.io/</code></td>
+<td>Platform project list</td>
+</tr>
+<tr>
+<td><code>console.prisma.io/{workspace}/{project}</code></td>
+<td>Project dashboard</td>
+</tr>
+<tr>
+<td><code>console.prisma.io/{workspace}/{project}/environments/{env}</code></td>
+<td>Environment detail</td>
+</tr>
+<tr>
+<td><code>console.prisma.io/{workspace}/{project}/insights</code></td>
+<td>Query insights</td>
+</tr>
+<tr>
+<td><code>localhost:5555</code></td>
+<td>Prisma Studio (local)</td>
+</tr>
+</tbody></table>
+<p>Documentation uses hierarchical path structure. Console uses workspace/project/environment hierarchy.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Documentation search</strong>: Full-text search across all docs (Algolia-powered) — critical given documentation depth</li>
+<li><strong>Prisma Studio filters</strong>: Filter table data by column values, sort by any column</li>
+<li><strong>Platform Insights</strong>: Filter queries by time range, cache status (hit/miss), latency threshold</li>
+<li><strong>Schema search</strong>: No built-in schema search — developers use IDE search in <code>.prisma</code> files</li>
+<li><strong>No model marketplace</strong>: Prisma doesn&#39;t have a schema/model sharing platform</li>
+<li><strong>Community search</strong>: Community forum (GitHub Discussions) has search</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Docs: sidebar TOC + content + right sidebar (on-page navigation). Studio: sidebar + data grid</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Docs: collapsible sidebar + content. Studio: full layout</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Docs: hamburger sidebar + full content. Console: simplified layout</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Docs: hamburger sidebar + single-column content. Studio: N/A (localhost tool)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Documentation is the most important responsive surface — code examples use horizontal scroll</li>
+<li>Schema syntax highlighting adapts to available width</li>
+<li>Console data tables (Insights) scroll horizontally on narrow screens</li>
+<li>Prisma Studio is a desktop tool — no responsive constraints needed</li>
+<li>Marketing site is fully responsive</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, documentation, community</td>
+</tr>
+<tr>
+<td>Open-source user</td>
+<td>Full Prisma ORM (Client, Migrate, Studio) — no account needed</td>
+</tr>
+<tr>
+<td>Platform Free</td>
+<td>1 project, limited Accelerate queries, limited Pulse events</td>
+</tr>
+<tr>
+<td>Platform Pro ($49/mo)</td>
+<td>Multiple projects, higher Accelerate/Pulse limits, Insights</td>
+</tr>
+<tr>
+<td>Platform Business</td>
+<td>Pro + team management, SSO, priority support</td>
+</tr>
+<tr>
+<td>Platform Enterprise</td>
+<td>Custom limits, SLA, dedicated support, audit logs</td>
+</tr>
+<tr>
+<td>Workspace roles</td>
+<td>Admin (billing, members, all projects) → Developer (manage projects, environments) → Viewer (read-only)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: GitHub OAuth, Google OAuth, email/password (Platform)</li>
+<li>No auth for local tools: Prisma CLI/Studio run locally without authentication</li>
+<li>Database access: Prisma connects using standard database credentials (connection string)</li>
+<li>Accelerate: Uses API key for connection pooling/caching proxy</li>
+<li>Prisma Studio: Only accessible on localhost — not exposed publicly</li>
+<li>Schema security: Schema file should not be committed with production credentials (use env vars)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

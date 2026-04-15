@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SendGrid — IA.md | getIA.md</title>
+  <meta name="description" content="Transactional email API. Templates, analytics. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=sendgrid.com&sz=64" alt="SendGrid" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">SendGrid</h1>
+      <p class="detail-brand-tagline">Transactional email API. Templates, analytics.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/sendgrid/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://sendgrid.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/sendgrid/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — SendGrid (Twilio SendGrid)</h1>
+<h2>Overview</h2>
+<p>SendGrid is a transactional and marketing email platform (now part of Twilio). The IA splits into two major areas: Email API (for developers sending transactional emails programmatically) and Marketing Campaigns (for marketers building email campaigns with a visual editor). Shared infrastructure — sender authentication, suppression management, and analytics — spans both use cases.</p>
+<h2>Site Map</h2>
+<pre><code>sendgrid.com
+├── Dashboard
+│   ├── Email Activity (recent sends)
+│   ├── Stats Overview (delivered, opens, clicks, bounces)
+│   └── Account Health
+├── Email API
+│   ├── Integration Guide (setup wizard)
+│   ├── SMTP Relay Settings
+│   ├── API Keys
+│   ├── Dynamic Templates
+│   │   ├── Template Editor (drag-and-drop / code)
+│   │   └── Versions
+│   ├── Inbound Parse (receive email)
+│   ├── Mail Settings
+│   │   ├── BCC
+│   │   ├── Footer
+│   │   ├── Spam Check
+│   │   └── Click/Open Tracking
+│   └── Webhooks (Event &amp; Inbound)
+├── Marketing
+│   ├── Contacts
+│   │   ├── All Contacts
+│   │   ├── Lists
+│   │   ├── Segments (dynamic filters)
+│   │   └── Custom Fields
+│   ├── Single Sends (one-time campaigns)
+│   │   ├── Design Editor
+│   │   ├── Code Editor
+│   │   ├── Audience Selection
+│   │   ├── Schedule / Send
+│   │   └── A/B Testing
+│   ├── Automations
+│   │   ├── Welcome Series
+│   │   ├── Custom Automation Builder
+│   │   └── Entry Criteria
+│   └── Signup Forms
+├── Stats (Analytics)
+│   ├── Overview (delivered, bounced, opens, clicks, unsubscribes)
+│   ├── Category Stats
+│   ├── Mailbox Provider Stats
+│   ├── Geography Stats
+│   ├── Device Stats
+│   └── Subuser Stats
+├── Activity (Email Event Feed)
+│   ├── Delivered / Bounced / Blocked / Deferred
+│   └── Search by recipient
+├── Suppressions
+│   ├── Bounces
+│   ├── Blocks
+│   ├── Spam Reports
+│   ├── Invalid Emails
+│   ├── Global Unsubscribes
+│   └── Unsubscribe Groups
+├── Sender Authentication
+│   ├── Domain Authentication (DKIM/SPF)
+│   ├── Link Branding (CNAME)
+│   └── Reverse DNS
+├── Settings
+│   ├── Account Details
+│   ├── API Keys
+│   ├── Teammates
+│   ├── Two-Factor Auth
+│   ├── Alerts
+│   ├── Subusers
+│   ├── IP Management (dedicated IPs)
+│   └── Billing
+└── Docs
+    ├── API Reference (v3)
+    ├── Libraries (SDKs)
+    └── Guides
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Dashboard, Email API, Marketing, Stats, Activity, Suppressions, Settings</li>
+<li><strong>Email API sub-nav:</strong> Integration Guide, Dynamic Templates, Mail Settings, Webhooks</li>
+<li><strong>Marketing sub-nav:</strong> Contacts, Single Sends, Automations, Signup Forms</li>
+<li><strong>Template editor:</strong> Full-screen drag-and-drop or code editor with preview and test send</li>
+<li><strong>Top bar:</strong> Search, account dropdown, support, documentation link</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>API Key</td>
+<td>name, permissions (full/restricted), scopes</td>
+<td>→ Account</td>
+</tr>
+<tr>
+<td>Dynamic Template</td>
+<td>name, versions (subject, HTML, test data)</td>
+<td>→ Transactional sends</td>
+</tr>
+<tr>
+<td>Single Send (Campaign)</td>
+<td>name, subject, from, content, list/segment, send time</td>
+<td>→ Contacts, Stats</td>
+</tr>
+<tr>
+<td>Automation</td>
+<td>name, entry criteria, email sequence, status</td>
+<td>→ Contacts</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>email, first/last name, custom fields, lists, segments</td>
+<td>→ Lists, Segments, Campaigns</td>
+</tr>
+<tr>
+<td>List</td>
+<td>name, contact count</td>
+<td>→ Contacts</td>
+</tr>
+<tr>
+<td>Segment</td>
+<td>name, conditions (AND/OR on contact fields + engagement)</td>
+<td>→ Contacts (dynamic)</td>
+</tr>
+<tr>
+<td>Unsubscribe Group</td>
+<td>name, description</td>
+<td>→ Contacts (suppressed), Campaigns</td>
+</tr>
+<tr>
+<td>Email Event</td>
+<td>type (delivered/open/click/bounce/spam/unsubscribe), email, timestamp, metadata</td>
+<td>→ Activity feed</td>
+</tr>
+<tr>
+<td>Sender Authentication</td>
+<td>domain, status (verified/pending), DNS records</td>
+<td>→ Account</td>
+</tr>
+<tr>
+<td>Dedicated IP</td>
+<td>address, warmup status, subuser assignment</td>
+<td>→ Account</td>
+</tr>
+<tr>
+<td>Subuser</td>
+<td>username, email quota, IPs</td>
+<td>→ Parent Account</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Set Up Transactional Email</h3>
+<p><code>Email API → Integration Guide → Choose method (Web API / SMTP) → Generate API key → Install SDK → Authenticate domain (DNS records) → Send test email → Go live</code></p>
+<h3>2. Build and Send a Campaign</h3>
+<p><code>Marketing → Single Sends → + Create → Select contacts list/segment → Design email (drag-and-drop) → Preview → Schedule or Send Now → Monitor stats</code></p>
+<h3>3. Create a Dynamic Template</h3>
+<p><code>Email API → Dynamic Templates → + Create → Code or design editor → Add Handlebars variables ({{name}}) → Set test data → Save version → Use template_id in API calls</code></p>
+<h3>4. Investigate Delivery Issues</h3>
+<p><code>Activity → Search by recipient email → View event timeline (processed → delivered or bounced) → Check bounce reason → Suppressions → Remove from bounce list if resolved</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>app.sendgrid.com/                                    # Dashboard
+app.sendgrid.com/email_activity                      # Email Activity
+app.sendgrid.com/statistics/overview                 # Stats
+app.sendgrid.com/dynamic_templates                   # Dynamic Templates
+app.sendgrid.com/dynamic_templates/{id}/version/{v}  # Template editor
+app.sendgrid.com/marketing/contacts                  # Contacts
+app.sendgrid.com/marketing/singleSends               # Single Sends
+app.sendgrid.com/marketing/automations               # Automations
+app.sendgrid.com/suppressions/bounces                # Bounces
+app.sendgrid.com/settings/sender_auth                # Domain authentication
+app.sendgrid.com/settings/api_keys                   # API Keys
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Email Activity search:</strong> By recipient email, subject, date range, event type (delivered/bounced/opened), message ID</li>
+<li><strong>Contact search:</strong> By email, name, list membership, segment, custom field values</li>
+<li><strong>Stats filters:</strong> By date range, category, mailbox provider, device type, geography</li>
+<li><strong>Suppression search:</strong> By email address within each suppression type</li>
+<li><strong>Template search:</strong> By template name</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1280px+)</td>
+<td>Full sidebar + analytics dashboards + template editor</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Dashboard and stats viewable; template editor requires larger screen</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Not optimized — SendGrid is a desktop/developer-focused dashboard</td>
+</tr>
+<tr>
+<td>Email rendering</td>
+<td>Email design editor includes inbox preview across 40+ email clients and devices</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Account Owner</td>
+<td>Full access, billing, IP management, subusers</td>
+</tr>
+<tr>
+<td>Teammate (Admin)</td>
+<td>All features except billing and account deletion</td>
+</tr>
+<tr>
+<td>Teammate (Read-only)</td>
+<td>View stats, activity, settings; cannot send or modify</td>
+</tr>
+<tr>
+<td>Teammate (Custom)</td>
+<td>Granular per-feature permissions (e.g., Marketing only)</td>
+</tr>
+<tr>
+<td>Subuser</td>
+<td>Isolated sending environment with own stats, IPs, reputation</td>
+</tr>
+<tr>
+<td>API Key (restricted)</td>
+<td>Scoped to specific API endpoints (e.g., Mail Send only)</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

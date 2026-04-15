@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betterment — IA.md | getIA.md</title>
+  <meta name="description" content="Goal-based investing. Robo-advisor, tax coordination. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=betterment.com&sz=64" alt="Betterment" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">Betterment</h1>
+      <p class="detail-brand-tagline">Goal-based investing. Robo-advisor, tax coordination.</p>
+      <span class="detail-category-badge">Fintech</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/betterment/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://betterment.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/betterment/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Betterment</h1>
+<h2>1. Overview</h2>
+<p>Betterment is a goal-based robo-advisor that helps users invest toward specific life goals (retirement, safety net, major purchase). The IA is organized around <strong>goals as first-class objects</strong> — each goal gets its own portfolio, allocation, and timeline. Betterment also offers a cash management account, 401(k) for businesses, and crypto portfolios. The platform emphasizes tax coordination across accounts and automated rebalancing.</p>
+<h2>2. Site Map</h2>
+<pre><code>betterment.com
+├── Home
+├── Investing
+│   ├── Goal-based investing
+│   ├── Portfolio strategies
+│   │   ├── Core (broad market)
+│   │   ├── Socially responsible (SRI)
+│   │   ├── Goldman Sachs Smart Beta
+│   │   ├── BlackRock Target Income
+│   │   └── Crypto portfolios
+│   ├── Tax-loss harvesting
+│   ├── Tax coordination
+│   ├── Charitable giving
+│   └── Retirement (IRA, Roth, Rollover)
+├── Cash Management
+│   ├── Cash Reserve (high-yield)
+│   ├── Checking
+│   └── Features &amp; rates
+├── Betterment at Work (401k)
+│   ├── For employers
+│   ├── For employees
+│   ├── Pricing
+│   └── Request demo
+├── Advisor Solutions (B2B)
+│   ├── Betterment for Advisors
+│   ├── Features
+│   └── Get started
+├── Resources
+│   ├── Blog / Perspectives
+│   ├── Help center
+│   ├── Calculators &amp; tools
+│   └── Retirement calculator
+├── Pricing
+├── About
+│   ├── Company
+│   ├── Careers
+│   ├── Press
+│   └── Security
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── Disclosures
+└── Auth
+    ├── Log in
+    └── Get started
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Top nav</td>
+<td>Logo, Investing, Cash, 401(k), Advisors, Resources, Pricing, Log in, Get started</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Sub-nav</td>
+<td>Overview, Strategies, Tax features, Performance, FAQ</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Multi-column</td>
+<td>Products, Resources, Company, Legal</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>Left sidebar + goal cards</td>
+<td>Overview, Goals (each as a card), Cash, Tax, Settings</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: Goal cards are the primary UI metaphor in the dashboard — each goal is a visual card showing progress toward target with its own allocation.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Goal</td>
+<td>name, type (retirement, safety net, custom), target amount, timeline, portfolio strategy, risk level</td>
+</tr>
+<tr>
+<td>Portfolio</td>
+<td>strategy name, ETF allocations, risk score, performance, rebalancing log</td>
+</tr>
+<tr>
+<td>Tax-loss Harvest</td>
+<td>primary security, replacement, harvest amount, wash-sale status</td>
+</tr>
+<tr>
+<td>Cash Reserve</td>
+<td>balance, APY, FDIC coverage, linked accounts</td>
+</tr>
+<tr>
+<td>401(k) Plan</td>
+<td>employer, match formula, vesting schedule, participant count</td>
+</tr>
+<tr>
+<td>Blog Post</td>
+<td>title, author, date, category, body, CTA</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Create a goal</h3>
+<ol>
+<li>Sign up / log in → &quot;Add a goal&quot; from dashboard</li>
+<li>Select goal type (Retirement, Safety Net, Major Purchase, General Investing, Education)</li>
+<li>Set target amount + target date</li>
+<li>Select portfolio strategy (Core, SRI, Smart Beta, etc.)</li>
+<li>Adjust risk level slider → preview allocation</li>
+<li>Fund initial deposit → enable auto-deposit → goal live</li>
+</ol>
+<h3>5b. Tax coordination</h3>
+<ol>
+<li>Connect external accounts (401k, IRA, taxable)</li>
+<li>Betterment analyzes all holdings across accounts</li>
+<li>Recommends asset location (which assets in which account type for tax efficiency)</li>
+<li>User approves → rebalancing adjusts allocations across accounts</li>
+</ol>
+<h3>5c. 401(k) employer setup</h3>
+<ol>
+<li>HR visits Betterment at Work → &quot;Request demo&quot;</li>
+<li>Sales consultation → plan design</li>
+<li>Employer sets match rules, vesting schedule</li>
+<li>Employees invited → individual goal-based 401(k) experience</li>
+<li>Payroll integration → contributions automated</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>/                               → Home
+/investing/                     → Investing overview
+/portfolio/core/                → Core portfolio strategy
+/portfolio/sri/                 → SRI portfolio
+/portfolio/crypto/              → Crypto portfolios
+/tax-loss-harvesting/           → TLH feature
+/tax-coordination/              → Tax coordination
+/cash-reserve/                  → Cash management
+/checking/                      → Betterment Checking
+/401k/                          → Betterment at Work
+/advisors/                      → Advisor Solutions
+/pricing/                       → Fee schedule
+/resources/                     → Blog &amp; tools
+/resources/{slug}/              → Blog post
+/calculators/retirement/        → Retirement calculator
+/help/                          → Help center
+/help/{category}/{article}/     → Help article
+/app/goals/                     → Dashboard (auth)
+/app/goals/{goal-id}/           → Individual goal (auth)
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Help search</td>
+<td>Keyword-based, categorized by product area</td>
+</tr>
+<tr>
+<td>Blog search</td>
+<td>By topic (Investing, Taxes, Retirement, Market Commentary)</td>
+</tr>
+<tr>
+<td>Portfolio comparison</td>
+<td>Side-by-side strategy comparison tool</td>
+</tr>
+<tr>
+<td>Goal filtering</td>
+<td>Dashboard filters by goal type, performance, funding status</td>
+</tr>
+<tr>
+<td>Calculator inputs</td>
+<td>Interactive sliders for age, savings, expected return</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Full nav, goal card grid, side-by-side charts, interactive tools</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>2-column goal cards, collapsible sidebar</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger menu, stacked goal cards, simplified charts</td>
+</tr>
+<tr>
+<td>App (iOS/Android)</td>
+<td>Tab bar (Home, Goals, Cash, Transfers, More), swipeable goal cards</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Marketing, pricing, blog, calculators</td>
+</tr>
+<tr>
+<td>Free User</td>
+<td>Account overview, basic financial tools</td>
+</tr>
+<tr>
+<td>Funded Investor</td>
+<td>Goal management, portfolio, TLH, tax coordination, performance</td>
+</tr>
+<tr>
+<td>Cash Reserve User</td>
+<td>High-yield savings, checking, transfers</td>
+</tr>
+<tr>
+<td>401(k) Participant</td>
+<td>Employer plan, goal-based investing, rollovers</td>
+</tr>
+<tr>
+<td>401(k) Admin (Employer)</td>
+<td>Plan configuration, employee management, compliance</td>
+</tr>
+<tr>
+<td>Financial Advisor (B2B)</td>
+<td>Multi-client dashboard, model portfolios, billing</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>Compliance review, support, account management</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

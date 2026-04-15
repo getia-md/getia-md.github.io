@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khan Academy — IA.md | getIA.md</title>
+  <meta name="description" content="Free education. Mastery learning, Khanmigo AI. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=khanacademy.org&sz=64" alt="Khan Academy" onerror="this.parentElement.textContent='K'">
+      </div>
+      <h1 class="detail-brand-name">Khan Academy</h1>
+      <p class="detail-brand-tagline">Free education. Mastery learning, Khanmigo AI.</p>
+      <span class="detail-category-badge">Education</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/khan-academy/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://khanacademy.org" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/khan-academy/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Khan Academy</h1>
+<h2>1. Overview</h2>
+<p>Khan Academy is a free, nonprofit education platform offering mastery-based learning across math, science, computing, humanities, and test prep. The IA is structured as a knowledge tree — subjects branch into units, units into lessons, lessons into individual exercises and videos. The mastery system tracks comprehension through spaced repetition and adaptive practice, while Khanmigo (AI tutor) provides personalized guidance. The platform serves learners from K-12 through adult education.</p>
+<h2>2. Site Map</h2>
+<pre><code>Khan Academy
+├── Home (Dashboard)
+│   ├── Continue Learning
+│   ├── Mastery Progress (current courses)
+│   ├── Streak Counter
+│   ├── Assigned (teacher assignments)
+│   └── Recommendations
+├── Subjects
+│   ├── Math
+│   │   ├── Early Math (K-2)
+│   │   ├── Arithmetic
+│   │   ├── Pre-Algebra
+│   │   ├── Algebra 1 &amp; 2
+│   │   ├── Geometry
+│   │   ├── Trigonometry
+│   │   ├── Precalculus
+│   │   ├── Calculus (AP/College)
+│   │   ├── Statistics
+│   │   ├── Linear Algebra
+│   │   └── Multivariable Calculus
+│   ├── Science
+│   │   ├── Biology (AP/College)
+│   │   ├── Chemistry (AP/College)
+│   │   ├── Physics (AP/College)
+│   │   ├── Organic Chemistry
+│   │   └── Health &amp; Medicine
+│   ├── Computing
+│   │   ├── Computer Programming
+│   │   ├── Computer Science
+│   │   ├── Algorithms
+│   │   └── Pixar in a Box
+│   ├── Humanities
+│   │   ├── US History
+│   │   ├── World History
+│   │   ├── Art History
+│   │   ├── Grammar
+│   │   └── Government &amp; Civics
+│   ├── Economics
+│   │   ├── Microeconomics
+│   │   ├── Macroeconomics
+│   │   └── Finance &amp; Capital Markets
+│   └── Test Prep
+│       ├── SAT
+│       ├── LSAT
+│       ├── MCAT
+│       ├── AP Courses
+│       └── Praxis
+├── Course → Unit → Lesson → Content
+│   ├── Video (lecture)
+│   ├── Article (text explanation)
+│   ├── Practice Exercise (adaptive)
+│   ├── Unit Test
+│   └── Course Challenge (mastery)
+├── Khanmigo (AI Tutor)
+│   ├── Chat with AI
+│   ├── Tutor Mode (Socratic method)
+│   ├── Writing Coach
+│   ├── Debate Partner
+│   └── Teacher Tools (AI-assisted)
+├── Teacher Dashboard
+│   ├── Classes
+│   ├── Assignments
+│   ├── Student Progress Reports
+│   ├── Mastery Overview
+│   └── Course Mastery Goals
+├── Parent Dashboard
+│   ├── Child&#39;s Activity
+│   ├── Progress Reports
+│   └── Weekly Summary Emails
+├── Profile
+│   ├── Energy Points
+│   ├── Badges / Avatars
+│   ├── Mastery Progress by Subject
+│   ├── Activity Log
+│   └── Goals
+├── District / Admin
+│   ├── Rostering (Clever, ClassLink)
+│   ├── District-wide reporting
+│   └── Implementation resources
+└── About
+    ├── Mission
+    ├── Research
+    ├── Donate
+    ├── Careers
+    └── Press
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar (desktop/web), bottom tab bar (mobile app)</li>
+<li><strong>Desktop Top Bar</strong>: Subjects (mega dropdown), Search, Khanmigo, Donate | Profile, Teacher/Parent toggle</li>
+<li><strong>Mobile Bottom Tabs</strong>: Home, Search, Bookmarks, Profile</li>
+<li><strong>Subject Drill-Down</strong>: Subject → Course → Unit → Lesson → Video/Exercise</li>
+<li><strong>Breadcrumb</strong>: Always visible showing Subject &gt; Course &gt; Unit &gt; Lesson position</li>
+<li><strong>Sidebar</strong>: Left sidebar shows unit/lesson outline for navigation within a course</li>
+<li><strong>Mastery Map</strong>: Visual representation of skill mastery (familiar → proficient → mastered)</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Course</td>
+<td>title, subject, description, unit count, mastery percentage</td>
+<td>→ Units</td>
+</tr>
+<tr>
+<td>Unit</td>
+<td>title, position, lesson count, unit test</td>
+<td>→ Course, → Lessons</td>
+</tr>
+<tr>
+<td>Lesson</td>
+<td>title, position, content items (videos, articles, exercises)</td>
+<td>→ Unit</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>title, duration, transcript, subtitles, Sal/instructor, YouTube ID</td>
+<td>→ Lesson</td>
+</tr>
+<tr>
+<td>Article</td>
+<td>title, body (rich text with LaTeX), author</td>
+<td>→ Lesson</td>
+</tr>
+<tr>
+<td>Exercise</td>
+<td>question set (adaptive), skill tag, mastery level, hints, explanation</td>
+<td>→ Lesson, → Skill</td>
+</tr>
+<tr>
+<td>Unit Test</td>
+<td>questions (sampled from unit), score, mastery impact</td>
+<td>→ Unit</td>
+</tr>
+<tr>
+<td>Course Challenge</td>
+<td>questions (sampled across course), cumulative mastery</td>
+<td>→ Course</td>
+</tr>
+<tr>
+<td>Skill</td>
+<td>name, mastery level (needs practice → mastered), spaced repetition schedule</td>
+<td>→ Exercise(s)</td>
+</tr>
+<tr>
+<td>Badge</td>
+<td>name, icon, criteria, rarity</td>
+<td>→ Profile</td>
+</tr>
+<tr>
+<td>Assignment (teacher-created)</td>
+<td>content items, due date, class, students</td>
+<td>→ Class</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Mastery Learning</h3>
+<ol>
+<li>Select Course (e.g., Algebra 1) → Unit 1 → Lesson 1</li>
+<li>Watch video → Read article (optional) → Start practice exercise</li>
+<li>Exercise adapts: correct answers advance; wrong answers provide hints</li>
+<li>Mastery level progresses: Attempted → Familiar → Proficient → Mastered</li>
+<li>Take Unit Test → Mastery level adjusts → Move to next unit or review</li>
+</ol>
+<h3>Teacher Assigning Work</h3>
+<ol>
+<li>Teacher creates class → Students join via class code</li>
+<li>Teacher browses course → Selects exercises/videos → Assigns to class with due date</li>
+<li>Students see assignment on their Home dashboard → Complete exercises</li>
+<li>Teacher views Student Progress → Mastery heat map (red → yellow → green)</li>
+<li>Identify struggling students → Provide targeted support</li>
+</ol>
+<h3>Using Khanmigo AI Tutor</h3>
+<ol>
+<li>Stuck on a problem → Tap Khanmigo icon</li>
+<li>AI asks guiding questions (Socratic method) — does not give direct answers</li>
+<li>Student works through reasoning → Khanmigo confirms or redirects</li>
+<li>For writing: Khanmigo provides feedback, suggestions, not rewrites</li>
+<li>Teacher can review Khanmigo conversation logs</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>khanacademy.org/                                # Homepage
+khanacademy.org/math                            # Math subject
+khanacademy.org/math/algebra                    # Algebra course
+khanacademy.org/math/algebra/unit-1             # Unit
+khanacademy.org/math/algebra/unit-1/lesson-1    # Lesson
+khanacademy.org/math/algebra/unit-1/lesson-1/v/{videoSlug}  # Video
+khanacademy.org/math/algebra/unit-1/lesson-1/e/{exerciseSlug}  # Exercise
+khanacademy.org/math/algebra/unit-1/lesson-1/a/{articleSlug}   # Article
+khanacademy.org/profile                         # User profile
+khanacademy.org/coach/dashboard                 # Teacher dashboard
+khanacademy.org/sat                             # SAT prep
+khanacademy.org/computing                       # Computing courses
+khanacademy.org/search?q={query}                # Search results
+khanacademy.org/donate                          # Donation page
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Global Search</strong>: Videos, articles, exercises by keyword across all subjects</li>
+<li><strong>Subject Browse</strong>: Hierarchical navigation — Subject → Course → Unit → Lesson</li>
+<li><strong>Grade Filter</strong>: K-12 grade-level alignment for age-appropriate content</li>
+<li><strong>Mastery Filter</strong>: Show &quot;Needs practice&quot; skills for review sessions</li>
+<li><strong>Teacher Search</strong>: Find content to assign; search by standard (Common Core, NGSS)</li>
+<li><strong>Language Filter</strong>: Content available in 50+ languages</li>
+<li><strong>Test Prep Filter</strong>: SAT, LSAT, MCAT with practice test mode</li>
+<li><strong>Khanmigo</strong>: Natural language query — &quot;Explain quadratic formula&quot; triggers tutoring conversation</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App</td>
+<td>Bottom tab bar; vertical video player; exercise one-question-at-a-time; simplified mastery map</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Split view — video + notes; larger exercise area; course sidebar</td>
+</tr>
+<tr>
+<td>Desktop (primary)</td>
+<td>Left sidebar course outline + main content area; video player with transcript; exercise with workspace</td>
+</tr>
+<tr>
+<td>Classroom / Projector</td>
+<td>Full-screen video mode; teacher controls for pacing</td>
+</tr>
+<tr>
+<td>Offline</td>
+<td>Mobile app supports downloaded videos and exercises for offline access</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Learner (free)</td>
+<td>Full access to all content: videos, articles, exercises, mastery tracking, badges</td>
+</tr>
+<tr>
+<td>Learner (Khanmigo)</td>
+<td>All free features + AI tutor, writing coach, debate partner (requires Khanmigo subscription or district license)</td>
+</tr>
+<tr>
+<td>Teacher (free)</td>
+<td>Create classes, assign content, view student progress, mastery reports, class management</td>
+</tr>
+<tr>
+<td>Teacher (Khanmigo)</td>
+<td>All teacher features + AI lesson planning, rubric creation, student support insights</td>
+</tr>
+<tr>
+<td>Parent (free)</td>
+<td>Link to child&#39;s account, view progress reports, receive weekly summaries</td>
+</tr>
+<tr>
+<td>District Admin</td>
+<td>Roster management (Clever/ClassLink), district-wide reporting, implementation support</td>
+</tr>
+<tr>
+<td>Content Creator (internal)</td>
+<td>Create/edit videos, articles, exercises; manage course structure</td>
+</tr>
+<tr>
+<td>Translator</td>
+<td>Contribute translations via Crowdin integration; localize content</td>
+</tr>
+<tr>
+<td>Donor</td>
+<td>No special access; donation supports free mission</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

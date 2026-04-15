@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Hunt — IA.md | getIA.md</title>
+  <meta name="description" content="Product launches. Upvotes, daily leaderboard. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=producthunt.com&sz=64" alt="Product Hunt" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">Product Hunt</h1>
+      <p class="detail-brand-tagline">Product launches. Upvotes, daily leaderboard.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/producthunt/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://producthunt.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/producthunt/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Product Hunt</h1>
+<h2>1. Overview</h2>
+<p>Product Hunt is a daily curation platform for discovering and launching new tech products, apps, tools, and services. The IA revolves around a daily leaderboard — products launched each day compete for upvotes, with a community of makers, investors, and early adopters providing feedback. The platform also hosts Collections, Discussions, and launch tools for founders to build pre-launch audiences.</p>
+<h2>2. Site Map</h2>
+<pre><code>Product Hunt
+├── Home (Today&#39;s Launches)
+│   ├── Daily Leaderboard
+│   ├── Top Products (ranked by upvotes)
+│   ├── Time-based filters (Today, Yesterday, This Week, This Month)
+│   └── Featured / Staff Picks
+├── Product Page
+│   ├── Gallery (screenshots, video)
+│   ├── Description &amp; tagline
+│   ├── Maker info
+│   ├── Upvote button &amp; count
+│   ├── Comments / Discussion
+│   ├── Related Products
+│   ├── Alternatives
+│   └── Reviews
+├── Topics
+│   ├── AI
+│   ├── Developer Tools
+│   ├── Design
+│   ├── Productivity
+│   ├── Marketing
+│   └── [50+ topics]
+├── Collections
+│   ├── Staff Collections
+│   ├── Community Collections
+│   └── [Collection] → Products list
+├── Launches
+│   ├── Ship (pre-launch pages)
+│   ├── Coming Soon
+│   └── Launch Checklist
+├── Discussions
+│   ├── Ask PH
+│   ├── Introductions
+│   └── General
+├── Leaderboard
+│   ├── Daily / Weekly / Monthly
+│   ├── Golden Kitty Awards (annual)
+│   └── Hall of Fame
+├── Profile
+│   ├── Products Made
+│   ├── Products Hunted
+│   ├── Upvotes
+│   ├── Collections
+│   ├── Activity
+│   └── Streak (daily visit)
+├── Newsletter
+├── Changelog (Product Hunt&#39;s own updates)
+└── Advertise
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar (desktop), bottom tab bar (mobile)</li>
+<li><strong>Desktop Top Bar</strong>: Logo (home), Products, Launches, Discussions, Collections, Advertise | Search, Notifications, Profile</li>
+<li><strong>Mobile Bottom Tabs</strong>: Home, Topics, Launch, Notifications, Profile</li>
+<li><strong>Daily Navigation</strong>: Date picker or &quot;Yesterday&quot; / &quot;This Week&quot; / &quot;This Month&quot; tabs on home</li>
+<li><strong>Product Detail</strong>: Modal overlay on desktop; full-screen on mobile</li>
+<li><strong>Topic Chips</strong>: Horizontal scrollable topic filters on home and search</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product</td>
+<td>name, tagline, description, URL, gallery (images/video), upvote count, comment count, maker(s), topic tags, launch date, featured badge</td>
+<td>→ Maker(s), → Topic(s), → Comments, → Collections</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text, author, timestamp, upvotes, replies, maker badge</td>
+<td>→ Product, → User</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, description, curator, products list, follower count</td>
+<td>→ Products, → Curator</td>
+</tr>
+<tr>
+<td>Discussion</td>
+<td>title, body, author, category (Ask PH, etc.), comments, upvotes</td>
+<td>→ Comments</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td>name, slug, product count, description</td>
+<td>→ Products</td>
+</tr>
+<tr>
+<td>Ship Page (Coming Soon)</td>
+<td>name, description, email signup count, maker, launch date</td>
+<td>→ Product (when launched)</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>name, headline, avatar, Twitter/website, maker history, upvote history, streak</td>
+<td>→ Products, → Collections</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating, text, author, helpful votes</td>
+<td>→ Product</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Discovering Products</h3>
+<ol>
+<li>Visit home → See today&#39;s product launches ranked by upvotes</li>
+<li>Browse by topic chips (AI, Developer Tools, etc.) or time period</li>
+<li>Click product → View gallery, description, maker comments</li>
+<li>Upvote with one click → Leave a comment or question for the maker</li>
+<li>Click &quot;Get it&quot; → Redirect to product website</li>
+</ol>
+<h3>Launching a Product</h3>
+<ol>
+<li>Creator sets up Ship page (pre-launch) → Collects email signups</li>
+<li>On launch day: Submit product with tagline, description, screenshots, video</li>
+<li>Product appears on daily leaderboard at midnight PT</li>
+<li>Maker responds to comments throughout the day → Engages community</li>
+<li>End of day → Final ranking determined; top products get featured badge</li>
+</ol>
+<h3>Curating Collections</h3>
+<ol>
+<li>Click &quot;Collections&quot; → &quot;New Collection&quot;</li>
+<li>Add title and description → Search and add products</li>
+<li>Publish → Collection appears on profile and in Collections directory</li>
+<li>Community can follow the collection for updates</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>producthunt.com/                            # Today&#39;s launches
+producthunt.com/products/{slug}             # Product page
+producthunt.com/posts/{slug}                # Launch post (legacy)
+producthunt.com/topics/{topic}              # Topic page
+producthunt.com/collections/{slug}          # Collection page
+producthunt.com/@{username}                 # User profile
+producthunt.com/discussions                 # Discussion forum
+producthunt.com/discussions/{id}            # Discussion thread
+producthunt.com/leaderboard/daily/{date}    # Daily leaderboard
+producthunt.com/leaderboard/monthly/{year}/{month}  # Monthly leaderboard
+producthunt.com/ship                        # Pre-launch / Ship pages
+producthunt.com/newsletter                  # Newsletter signup
+producthunt.com/golden-kitty-awards         # Annual awards
+producthunt.com/advertise                   # Advertising info
+api.producthunt.com/v2/                     # GraphQL API
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Global Search</strong>: Products, collections, makers, discussions, topics</li>
+<li><strong>Topic Filters</strong>: Filter home feed by product category</li>
+<li><strong>Time Filters</strong>: Today, Yesterday, This Week, This Month, Custom Date</li>
+<li><strong>Leaderboard</strong>: Daily #1-5 products, weekly top, monthly top, yearly Golden Kitty</li>
+<li><strong>Sort Options</strong>: Popular (upvotes), Newest, Most Discussed</li>
+<li><strong>Alternative Products</strong>: &quot;Alternatives to {product}&quot; sections on product pages</li>
+<li><strong>Newsletter Curation</strong>: Daily/weekly email digest of top-ranked products</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (&lt; 768px)</td>
+<td>Single-column product list; bottom tab bar; product detail full-screen; simplified gallery</td>
+</tr>
+<tr>
+<td>Tablet (768–1024px)</td>
+<td>Wider product cards; two-column collections; product detail as sheet</td>
+</tr>
+<tr>
+<td>Desktop (&gt; 1024px)</td>
+<td>Product list with preview on hover; product detail as modal overlay; right sidebar for trending/ads</td>
+</tr>
+<tr>
+<td>Email (Newsletter)</td>
+<td>Responsive email template; top 5 products with thumbnails and upvote counts</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>Browse products, view comments, search; prompted to sign up for upvoting</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Upvote, comment, create collections, follow topics/makers, submit products, daily streak</td>
+</tr>
+<tr>
+<td>Maker (verified)</td>
+<td>Launch products, respond with &quot;Maker&quot; badge on comments, access launch analytics, create Ship pages</td>
+</tr>
+<tr>
+<td>Hunter</td>
+<td>Submit/hunt other people&#39;s products to the leaderboard (with attribution)</td>
+</tr>
+<tr>
+<td>Moderator / Staff</td>
+<td>Feature products, manage content, curate staff collections, moderate discussions</td>
+</tr>
+<tr>
+<td>Advertiser</td>
+<td>Promote products as sponsored listings on the leaderboard</td>
+</tr>
+<tr>
+<td>API User</td>
+<td>Query products, posts, collections via GraphQL API with OAuth token</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

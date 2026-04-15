@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion Calendar — IA.md | getIA.md</title>
+  <meta name="description" content="Calendar + Notion integration, scheduling links. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=calendar.notion.so&sz=64" alt="Notion Calendar" onerror="this.parentElement.textContent='N'">
+      </div>
+      <h1 class="detail-brand-name">Notion Calendar</h1>
+      <p class="detail-brand-tagline">Calendar + Notion integration, scheduling links.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/notion-calendar/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://calendar.notion.so" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/notion-calendar/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Notion Calendar</h1>
+<h2>1. Overview</h2>
+<p>Notion Calendar (formerly Cron) is a calendar application deeply integrated with Notion workspaces, combining time management with project and document context. The IA bridges two worlds — calendar events and Notion database items — allowing users to see their schedule alongside linked Notion pages, documents, and tasks. It features scheduling links, multi-calendar overlay, and keyboard-driven navigation for power users.</p>
+<h2>2. Site Map</h2>
+<pre><code>Notion Calendar
+├── Calendar Views
+│   ├── Day View
+│   ├── Week View (default)
+│   ├── Month View
+│   ├── Multi-day Custom View
+│   └── Agenda / List View
+├── Event Detail
+│   ├── Title
+│   ├── Date / Time / Duration
+│   ├── Location (physical or virtual link)
+│   ├── Attendees (with availability)
+│   ├── Video Conferencing (Zoom, Meet, Teams auto-link)
+│   ├── Description / Notes
+│   ├── Linked Notion Page
+│   ├── Recurring Settings
+│   ├── Reminders
+│   └── Calendar (which calendar)
+├── Notion Integration
+│   ├── Linked Notion Databases
+│   ├── Database Items as Calendar Events
+│   ├── Notion Page Preview (inline)
+│   └── Open in Notion
+├── Scheduling Links
+│   ├── My Scheduling Page
+│   ├── Availability Slots
+│   ├── Duration Options
+│   ├── Buffer Time
+│   ├── Meeting Location Default
+│   └── Shared Link
+├── Sidebar
+│   ├── Mini Calendar (date picker)
+│   ├── Calendar List (toggle visibility)
+│   │   ├── Personal Calendars
+│   │   ├── Work Calendars
+│   │   ├── Shared Calendars
+│   │   └── Notion Database Calendars
+│   ├── Other People&#39;s Calendars (overlay)
+│   └── Upcoming Events
+├── Availability
+│   ├── Check Availability (compare with attendees)
+│   ├── Find a Time
+│   └── Overlay teammates&#39; calendars
+├── Settings
+│   ├── Account
+│   ├── Connected Accounts (Google, Notion)
+│   ├── Calendar Settings
+│   ├── Working Hours
+│   ├── Default Meeting Duration
+│   ├── Default Video Conferencing
+│   ├── Time Zone
+│   ├── Keyboard Shortcuts
+│   ├── Appearance (dark/light)
+│   └── Notifications
+└── Website
+    ├── Product Overview
+    ├── Download (macOS, Windows, iOS, Android)
+    ├── Pricing (included with Notion)
+    └── Help Center
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Left sidebar + top toolbar</li>
+<li><strong>Left Sidebar</strong>: Mini calendar, calendar list (toggle visibility), Notion databases, other people&#39;s calendars</li>
+<li><strong>Top Toolbar</strong>: View switcher (Day/Week/Month), Today button, navigation arrows (prev/next), settings</li>
+<li><strong>Keyboard-Driven</strong>: Heavy keyboard shortcut support (legacy from Cron); <code>c</code> to create, <code>t</code> for today, number keys for views</li>
+<li><strong>Event Creation</strong>: Click/drag on calendar grid → Quick event form; or <code>c</code> shortcut</li>
+<li><strong>Notion Link</strong>: Click linked Notion page in event → Opens Notion page in-app or in Notion</li>
+<li><strong>Multi-Calendar Overlay</strong>: Toggle teammate calendars to see combined availability</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Event</td>
+<td>title, start/end time, location, description, attendees, recurrence, reminders, conferencing link, status (busy/free), calendar</td>
+<td>→ Calendar, → Notion Page, → Attendees</td>
+</tr>
+<tr>
+<td>Calendar</td>
+<td>name, color, source (Google, Notion database), visibility toggle, owner</td>
+<td>→ Events</td>
+</tr>
+<tr>
+<td>Notion Database (synced)</td>
+<td>database name, date property mapping, Notion workspace</td>
+<td>→ Events (derived from database items)</td>
+</tr>
+<tr>
+<td>Scheduling Link</td>
+<td>URL, duration options, availability rules, buffer time, location default, booking confirmations</td>
+<td>→ Calendar, → User</td>
+</tr>
+<tr>
+<td>Attendee</td>
+<td>name, email, RSVP status (accepted/declined/tentative), calendar overlay</td>
+<td>→ Event</td>
+</tr>
+<tr>
+<td>Notion Page (linked)</td>
+<td>title, page preview, workspace</td>
+<td>→ Event</td>
+</tr>
+<tr>
+<td>Working Hours</td>
+<td>day-of-week, start/end time, time zone</td>
+<td>→ Availability</td>
+</tr>
+<tr>
+<td>Time Zone</td>
+<td>primary, secondary (display), travel detection</td>
+<td>→ Events, → Views</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Scheduling a Meeting</h3>
+<ol>
+<li>See open time slot on calendar → Click and drag to set duration</li>
+<li>Event form opens: add title, attendees, location</li>
+<li>Toggle attendees&#39; calendar overlay → Find mutual free time</li>
+<li>Add video conferencing (auto-generates Zoom/Meet link)</li>
+<li>Link a Notion page for meeting notes → Save → Invites sent</li>
+</ol>
+<h3>Using Scheduling Links</h3>
+<ol>
+<li>Settings → Scheduling → Create scheduling link</li>
+<li>Set availability: which days, which hours, which calendar to check</li>
+<li>Set options: 15/30/60 min durations, buffer between meetings</li>
+<li>Share link with external person → They see available slots</li>
+<li>They book → Event auto-created on both calendars</li>
+</ol>
+<h3>Viewing Notion Database as Calendar</h3>
+<ol>
+<li>Settings → Connect Notion Workspace → Authorize</li>
+<li>Select Notion database with a date property</li>
+<li>Database items appear as events on the calendar (color-coded)</li>
+<li>Click database event → See Notion page preview → Open full page in Notion</li>
+<li>Changes sync bidirectionally</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>calendar.notion.so/                         # Web app / landing
+calendar.notion.so/app                      # Calendar web app
+calendar.notion.so/scheduling/{username}    # Public scheduling page
+calendar.notion.so/scheduling/{username}/{linkSlug}  # Specific scheduling link
+calendar.notion.so/download                 # Desktop/mobile app downloads
+notion.so/product/calendar                  # Product page on Notion site
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Event Search</strong>: Search events by title, attendee, or description across all calendars</li>
+<li><strong>Calendar Filtering</strong>: Toggle calendars on/off to filter visible events</li>
+<li><strong>Date Navigation</strong>: Jump to specific date via mini calendar or keyboard shortcut</li>
+<li><strong>Availability Check</strong>: Visual overlay of multiple people&#39;s calendars to find free slots</li>
+<li><strong>Notion Database Filter</strong>: Inherits Notion database filters (status, assignee, date range)</li>
+<li><strong>No Content Search</strong>: Calendar app; search is limited to events, not documents (documents live in Notion)</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop App (macOS/Windows)</td>
+<td>Full sidebar + week view; keyboard shortcuts; multi-monitor support; menu bar quick-view</td>
+</tr>
+<tr>
+<td>Web App</td>
+<td>Same as desktop; responsive but optimized for wide screens</td>
+</tr>
+<tr>
+<td>Mobile App (iOS/Android)</td>
+<td>Day/3-day/week/month views; swipe navigation; simplified event creation; push notifications for reminders</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Week view with larger touch targets; sidebar toggleable</td>
+</tr>
+<tr>
+<td>Menu Bar (macOS)</td>
+<td>Floating mini calendar + upcoming events; quick event creation without opening full app</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Calendar Owner</td>
+<td>Full CRUD on own events; manage calendars; create scheduling links; set working hours</td>
+</tr>
+<tr>
+<td>Calendar Viewer (shared)</td>
+<td>View events on shared calendar; no edit access</td>
+</tr>
+<tr>
+<td>Calendar Editor (shared)</td>
+<td>View and modify events on shared calendar</td>
+</tr>
+<tr>
+<td>Event Attendee</td>
+<td>View event details, RSVP, add to own calendar</td>
+</tr>
+<tr>
+<td>Scheduling Link Visitor</td>
+<td>View available time slots; book a meeting (no account required)</td>
+</tr>
+<tr>
+<td>Notion Workspace Member</td>
+<td>View Notion-linked database events on calendar; open Notion pages</td>
+</tr>
+<tr>
+<td>Notion Workspace Admin</td>
+<td>Manage Notion ↔ Calendar integration settings for workspace</td>
+</tr>
+<tr>
+<td>Free Notion User</td>
+<td>Basic calendar features included</td>
+</tr>
+<tr>
+<td>Paid Notion User</td>
+<td>Full calendar features including Notion database sync, scheduling links</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

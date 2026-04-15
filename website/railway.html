@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway — IA.md | getIA.md</title>
+  <meta name="description" content="Deploy anything. Project canvas, logs, metrics. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=railway.app&sz=64" alt="Railway" onerror="this.parentElement.textContent='R'">
+      </div>
+      <h1 class="detail-brand-name">Railway</h1>
+      <p class="detail-brand-tagline">Deploy anything. Project canvas, logs, metrics.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/railway/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://railway.app" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/railway/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Railway — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Railway is a cloud deployment platform that emphasizes simplicity and developer experience. The IA is built around a unique <strong>project canvas model</strong> — each project is a visual canvas where services (apps, databases, cron jobs) appear as connected cards that can be arranged spatially. This canvas metaphor differentiates Railway from traditional dashboard-based platforms (Heroku, Render): you can visually see your infrastructure topology. Each service card on the canvas links to logs, deployments, variables, and settings. Railway supports deploying from GitHub, Docker, or templates, and includes managed databases (Postgres, Redis, MySQL, MongoDB) as first-class canvas objects.</p>
+<h2>Site Map</h2>
+<pre><code>railway.app
+├── / (Home — marketing)
+├── /pricing
+├── /templates (Community deployment templates)
+│   └── /{template_slug}
+├── /changelog
+├── /docs (Documentation)
+├── /dashboard (Projects list)
+├── /project/{project_id} (Project canvas)
+│   ├── /service/{service_id} (Service detail)
+│   │   ├── /deployments
+│   │   │   └── /{deployment_id} (Deployment logs)
+│   │   ├── /variables (Environment variables)
+│   │   ├── /metrics (CPU, memory, network)
+│   │   ├── /settings (Build, deploy, networking config)
+│   │   └── /volumes
+│   └── /settings (Project settings)
+│       ├── /general
+│       ├── /members
+│       ├── /environments
+│       └── /danger
+├── /account
+│   ├── /billing
+│   ├── /tokens
+│   ├── /teams
+│   └── /referrals
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Top bar — Dashboard (projects list), Templates, Docs, changelog; team selector</li>
+<li><strong>Canvas navigation</strong>: The project canvas IS the navigation — click service cards to drill into detail; drag to arrange; zoom/pan the canvas</li>
+<li><strong>Service navigation</strong>: Within a service — tabs for Deployments, Variables, Metrics, Settings, Volumes</li>
+<li><strong>Environment selector</strong>: Top bar within a project — switch between environments (production, staging, development)</li>
+<li><strong>Utility navigation</strong>: Top-right — avatar → Account, Billing, Teams, Tokens, Sign out</li>
+<li><strong>Template navigation</strong>: Browse templates by category with search</li>
+<li><strong>Mobile</strong>: Canvas is viewable but interaction-limited; service details work well on mobile</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>Name, canvas (visual layout of services), environments, members, settings</td>
+<td>User/Team-owned</td>
+</tr>
+<tr>
+<td>Service</td>
+<td>Name, source (GitHub repo, Docker image, or database), deployments, variables, volumes, networking</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>Build logs, deploy logs, status, commit hash, timestamp, resource usage</td>
+<td>Part of service</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Named deployment context (production, staging, etc.) with independent variables and service instances</td>
+<td>Part of project</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Key-value pair, scoped to service + environment, supports references (${{service.VAR}})</td>
+<td>Part of service</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>Persistent storage attached to a service, mount path, size</td>
+<td>Part of service</td>
+</tr>
+<tr>
+<td>Template</td>
+<td>Pre-configured project blueprint with services, variables, and deployment instructions</td>
+<td>Community/Railway</td>
+</tr>
+<tr>
+<td>Database Service</td>
+<td>Managed Postgres/Redis/MySQL/MongoDB as a canvas service with connection string</td>
+<td>Part of project</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Deploying from GitHub</h3>
+<ol>
+<li>User clicks &quot;New Project&quot; → &quot;Deploy from GitHub Repo&quot;</li>
+<li>Connects GitHub → selects repository</li>
+<li>Railway auto-detects language/framework → configures build (Nixpacks)</li>
+<li>Service appears as a card on the project canvas</li>
+<li>Deployment starts automatically → build + deploy logs stream in real-time</li>
+<li>Public URL generated (or custom domain configurable)</li>
+<li>Subsequent pushes to the configured branch trigger automatic deploys</li>
+</ol>
+<h3>Adding a Database</h3>
+<ol>
+<li>On the project canvas → right-click or &quot;New&quot; → &quot;Database&quot;</li>
+<li>Selects database type (Postgres, Redis, MySQL, MongoDB)</li>
+<li>Database service appears as a card on the canvas</li>
+<li>Connection string auto-populated as variable → reference from app service using <code>${{Postgres.DATABASE_URL}}</code></li>
+<li>Database is accessible immediately — no configuration needed</li>
+</ol>
+<h3>Multi-Environment Workflow</h3>
+<ol>
+<li>User creates environments (production, staging, development) in Project Settings</li>
+<li>Each environment has independent service deployments and variables</li>
+<li>Environment selector in top bar switches the canvas view</li>
+<li>Deploy to staging first → test → promote to production</li>
+<li>Variables can differ per environment (different API keys, database URLs)</li>
+</ol>
+<h3>Template Deployment</h3>
+<ol>
+<li>User browses template gallery (e.g., &quot;Next.js + Postgres + Redis&quot;)</li>
+<li>Clicks &quot;Deploy&quot; → configures variables (API keys, secrets)</li>
+<li>Railway provisions all services defined in the template</li>
+<li>Canvas shows the complete topology with connected services</li>
+<li>User customizes by connecting their own GitHub repo</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Marketing home</td>
+</tr>
+<tr>
+<td><code>/dashboard</code></td>
+<td>Projects list</td>
+</tr>
+<tr>
+<td><code>/project/{uuid}</code></td>
+<td>Project canvas</td>
+</tr>
+<tr>
+<td><code>/project/{uuid}/service/{uuid}</code></td>
+<td>Service detail</td>
+</tr>
+<tr>
+<td><code>/project/{uuid}/service/{uuid}/deployments/{uuid}</code></td>
+<td>Deployment logs</td>
+</tr>
+<tr>
+<td><code>/project/{uuid}/service/{uuid}/variables</code></td>
+<td>Variables</td>
+</tr>
+<tr>
+<td><code>/project/{uuid}/service/{uuid}/metrics</code></td>
+<td>Metrics</td>
+</tr>
+<tr>
+<td><code>/project/{uuid}/settings</code></td>
+<td>Project settings</td>
+</tr>
+<tr>
+<td><code>/templates</code></td>
+<td>Template gallery</td>
+</tr>
+<tr>
+<td><code>/templates/{slug}</code></td>
+<td>Template detail</td>
+</tr>
+<tr>
+<td><code>/account/*</code></td>
+<td>Account settings</td>
+</tr>
+<tr>
+<td><code>/docs/*</code></td>
+<td>Documentation</td>
+</tr>
+</tbody></table>
+<p>UUIDs for projects, services, and deployments. Templates use slugs.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Project search</strong>: Search projects by name on dashboard</li>
+<li><strong>Template search</strong>: Full-text search + category filters (Databases, Frameworks, Tools, etc.)</li>
+<li><strong>Log search</strong>: Search/filter deployment logs by keyword (within a specific deployment)</li>
+<li><strong>Variable search</strong>: Filter variables by key name within a service</li>
+<li><strong>No cross-project search</strong>: Projects are independent workspaces</li>
+<li><strong>Docs search</strong>: Full-text documentation search</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full project canvas with service cards, zoom/pan, drag-and-drop</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Canvas with smaller cards, fewer visible at once</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Canvas viewable but cramped; service detail as slide-over panel</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Canvas replaced with service list view; service detail full-screen</td>
+</tr>
+</tbody></table>
+<ul>
+<li>The canvas is the most distinctive UI element — uses WebGL/Canvas rendering for smooth pan/zoom</li>
+<li>On mobile, the canvas experience degrades to a list of services (practical but loses the visual topology)</li>
+<li>Deployment logs are monospace with automatic scroll and search highlighting</li>
+<li>Metrics charts resize responsively</li>
+<li>Template cards reflow from grid to single-column</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, docs, template gallery (view only)</td>
+</tr>
+<tr>
+<td>Free (Hobby)</td>
+<td>$5 free credit/mo, limited resources, 1 member per project</td>
+</tr>
+<tr>
+<td>Pro ($5/seat/mo + usage)</td>
+<td>Unlimited projects, team members, higher resource limits, usage-based billing</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>Pro features + shared billing, team management, role-based access</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>SSO, audit logs, SLA, priority support, custom networking</td>
+</tr>
+<tr>
+<td>Project roles</td>
+<td>Admin (full control) → Member (deploy, manage services) → Viewer (read-only)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, GitHub OAuth</li>
+<li>Usage-based billing: CPU, memory, network, and storage billed per usage (Pro plan)</li>
+<li>Environment isolation: Each environment has separate deployments and variables</li>
+<li>Variable visibility: Secrets masked in UI; only accessible to service runtime</li>
+<li>Public networking: Services can have public URLs or be private (service-to-service only)</li>
+<li>Token-based CI: API tokens for deploying from CI/CD pipelines</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

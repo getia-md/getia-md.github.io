@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yelp — IA.md | getIA.md</title>
+  <meta name="description" content="Local business reviews. Photos, check-in, reservations. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=yelp.com&sz=64" alt="Yelp" onerror="this.parentElement.textContent='Y'">
+      </div>
+      <h1 class="detail-brand-name">Yelp</h1>
+      <p class="detail-brand-tagline">Local business reviews. Photos, check-in, reservations.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/yelp/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://yelp.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/yelp/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Yelp</h1>
+<h2>1. Overview</h2>
+<p>Yelp is a local business discovery and review platform covering restaurants, home services, shopping, nightlife, and more. The IA is location-driven — the home screen centers on a search bar with location context, surfacing nearby businesses with user reviews as the primary trust signal. Yelp combines consumer-facing discovery with business-facing tools (advertising, reservations, waitlist, request-a-quote), creating a two-sided marketplace for local commerce.</p>
+<h2>2. Site Map</h2>
+<pre><code>Yelp
+├── Home
+│   ├── Search (business name, category, or service)
+│   ├── Location (auto-detected or entered)
+│   ├── Category Quick Links
+│   │   ├── Restaurants
+│   │   ├── Home Services
+│   │   ├── Auto Services
+│   │   ├── Shopping
+│   │   ├── Nightlife
+│   │   ├── Beauty &amp; Spa
+│   │   ├── Health &amp; Medical
+│   │   └── Active Life
+│   ├── Trending Near You
+│   ├── Recently Viewed
+│   └── Collections / Lists
+├── Search Results
+│   ├── Business List
+│   ├── Map View
+│   ├── Filters Panel
+│   ├── Sponsored Results
+│   └── Sort Options
+├── Business Page
+│   ├── Photos &amp; Videos
+│   ├── Business Info
+│   │   ├── Address, Phone, Website
+│   │   ├── Hours of Operation
+│   │   ├── Price Range ($ to $$$$)
+│   │   ├── Categories / Tags
+│   │   ├── Amenities &amp; Attributes
+│   │   └── Health &amp; Safety
+│   ├── Reviews
+│   │   ├── Overall Rating (1-5 stars)
+│   │   ├── Review Highlights (AI-generated)
+│   │   ├── Individual Reviews
+│   │   ├── Sort (date, rating, Yelp Sort)
+│   │   ├── Filter by rating
+│   │   └── Owner Responses
+│   ├── Actions
+│   │   ├── Write a Review
+│   │   ├── Add Photos
+│   │   ├── Check In
+│   │   ├── Bookmark
+│   │   ├── Share
+│   │   └── Report
+│   ├── Reservation (OpenTable / Yelp Reservations)
+│   ├── Waitlist (Yelp Waitlist)
+│   ├── Order Food (delivery/pickup)
+│   ├── Request a Quote (services)
+│   ├── Menu (restaurants)
+│   ├── Q&amp;A
+│   └── Nearby Businesses
+├── Restaurants
+│   ├── Browse by Cuisine
+│   ├── Browse by Feature (outdoor seating, delivery, etc.)
+│   ├── Best of Lists
+│   └── Reservations
+├── Home Services
+│   ├── Request a Quote Flow
+│   ├── Browse by Service (plumbing, electrician, etc.)
+│   └── Cost Guides
+├── Write a Review
+│   ├── Star Rating (1-5)
+│   ├── Review Text
+│   ├── Photos / Videos
+│   ├── Check-In
+│   └── Useful / Funny / Cool votes
+├── Profile
+│   ├── Reviews
+│   ├── Photos
+│   ├── Bookmarks (saved businesses)
+│   ├── Collections
+│   ├── Check-Ins
+│   ├── Friends
+│   ├── Compliments
+│   ├── Elite Status
+│   └── Activity Feed
+├── Collections
+│   ├── Create Collection (curated business lists)
+│   ├── Public / Private
+│   └── Follow Collections
+├── Events (Yelp Events / Elite Events)
+├── Talk (forum, being sunset)
+├── Yelp for Business
+│   ├── Claim Business
+│   ├── Business Dashboard
+│   ├── Respond to Reviews
+│   ├── Update Business Info / Photos
+│   ├── Yelp Ads
+│   ├── Yelp Deals / Gift Certificates
+│   ├── Analytics &amp; Insights
+│   ├── Yelp Reservations
+│   ├── Yelp Waitlist
+│   ├── Yelp Connect (posts to followers)
+│   └── Request a Quote Management
+├── Yelp Fusion API (developers)
+└── Settings
+    ├── Account
+    ├── Privacy
+    ├── Notifications
+    ├── Friend Invitations
+    └── External Applications
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar with search-first design (desktop), bottom tab bar (mobile)</li>
+<li><strong>Desktop Top Bar</strong>: Logo, Search (two fields: &quot;Find&quot; + &quot;Near&quot;), Write a Review, Restaurants, Home Services, Auto Services, More | Notifications, Messages, Profile</li>
+<li><strong>Mobile Bottom Tabs</strong>: Search, Collections/Bookmarks, Review, Notifications, Profile</li>
+<li><strong>Search Results</strong>: List view + map toggle; sticky filter bar at top</li>
+<li><strong>Business Page</strong>: Long-scroll single page with tabbed sections (Overview, Reviews, Photos, Menu)</li>
+<li><strong>Category Navigation</strong>: Browse categories → subcategories → filtered results</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Business</td>
+<td>name, address, phone, website, hours, categories, price range, rating (1-5), review count, photos, attributes, claimed/unclaimed</td>
+<td>→ Reviews, → Photos, → Owner</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), text, photos, author, date, useful/funny/cool votes, check-in, owner response</td>
+<td>→ Business, → User</td>
+</tr>
+<tr>
+<td>Photo</td>
+<td>image, caption, uploader, date, category (food, inside, outside, menu)</td>
+<td>→ Business, → Review</td>
+</tr>
+<tr>
+<td>Check-In</td>
+<td>user, business, timestamp, message (optional)</td>
+<td>→ Business, → User</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, description, businesses list, creator, public/private, followers</td>
+<td>→ Businesses, → User</td>
+</tr>
+<tr>
+<td>Q&amp;A</td>
+<td>question, asker, answers, business</td>
+<td>→ Business</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>name, date, location, description, business (if applicable)</td>
+<td>→ Business</td>
+</tr>
+<tr>
+<td>Request a Quote</td>
+<td>service type, description, contact info, responses from businesses</td>
+<td>→ Business(es)</td>
+</tr>
+<tr>
+<td>Ad</td>
+<td>business, placement, budget, targeting, impressions, clicks</td>
+<td>→ Business</td>
+</tr>
+<tr>
+<td>Reservation</td>
+<td>party size, date, time, restaurant, confirmation</td>
+<td>→ Business</td>
+</tr>
+<tr>
+<td>Waitlist Entry</td>
+<td>party size, estimated wait, position, notifications</td>
+<td>→ Business</td>
+</tr>
+<tr>
+<td>Menu</td>
+<td>sections, items (name, price, description, photo)</td>
+<td>→ Business (restaurant)</td>
+</tr>
+<tr>
+<td>Business Post (Yelp Connect)</td>
+<td>text, photos, CTA, date</td>
+<td>→ Business</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Finding a Restaurant</h3>
+<ol>
+<li>Home → Search &quot;sushi&quot; near &quot;San Francisco&quot;</li>
+<li>Results: list of sushi restaurants with ratings, review count, price range, distance</li>
+<li>Filter: 4+ stars, $$ price range, open now, outdoor seating</li>
+<li>Sort: Best Match (default), Rating, Review Count, Distance</li>
+<li>Click restaurant → View reviews, photos, menu</li>
+<li>Make reservation (OpenTable/Yelp) or order delivery → Done</li>
+</ol>
+<h3>Writing a Review</h3>
+<ol>
+<li>Visit business → Search for it on Yelp → &quot;Write a Review&quot;</li>
+<li>Rate 1-5 stars → Write review describing experience</li>
+<li>Add photos of food/ambiance → Submit</li>
+<li>Community votes: Useful / Funny / Cool → Top reviews rise</li>
+<li>Business owner may respond to review publicly</li>
+</ol>
+<h3>Requesting a Quote (Home Services)</h3>
+<ol>
+<li>Home → &quot;Home Services&quot; → Select category (e.g., &quot;Plumber&quot;)</li>
+<li>&quot;Request a Quote&quot; flow → Describe project, location, timeline</li>
+<li>Yelp matches request to qualified local businesses</li>
+<li>Businesses respond with quotes, availability, pricing</li>
+<li>User compares quotes → Contacts chosen business → Hires</li>
+</ol>
+<h3>Check-In and Engagement</h3>
+<ol>
+<li>At a business → Open Yelp → &quot;Check In&quot;</li>
+<li>Check-in appears on profile activity → Friends see it</li>
+<li>Accumulate check-ins → Unlock badges / contribute to Elite eligibility</li>
+<li>Leave tips for other visitors (&quot;Try the spicy tuna roll&quot;)</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>yelp.com/                                   # Homepage
+yelp.com/search?find_desc={query}&amp;find_loc={location}  # Search results
+yelp.com/biz/{business-slug}                # Business page
+yelp.com/biz/{business-slug}?sort_by=date_desc  # Business reviews sorted
+yelp.com/biz_photos/{business-slug}         # Business photos
+yelp.com/menu/{business-slug}               # Restaurant menu
+yelp.com/writeareview/biz/{business-slug}   # Write a review
+yelp.com/user_details?userid={userId}       # User profile
+yelp.com/collection/{userId}/{collectionSlug}  # Collection
+yelp.com/reservations/{business-slug}       # Reservation page
+yelp.com/nearby?find_desc={category}        # Category browse
+yelp.com/request_a_quote                    # Request a quote flow
+biz.yelp.com/                               # Business owner dashboard
+developers.yelp.com/                        # API / Yelp Fusion
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Dual Search</strong>: &quot;Find&quot; (business name, category, service) + &quot;Near&quot; (location)</li>
+<li><strong>Category Filters</strong>: Restaurants, Home Services, Auto, Shopping, Nightlife, Beauty, Health, Active Life</li>
+<li><strong>Restaurant Filters</strong>: Cuisine, price range, open now, reservations, delivery, outdoor seating, good for groups, good for kids, hot and new</li>
+<li><strong>Service Filters</strong>: License verified, response time, years in business, free estimates</li>
+<li><strong>Rating Filter</strong>: 1-5 stars (show only 4+, etc.)</li>
+<li><strong>Distance Filter</strong>: Driving, biking, walking radius; or map boundary</li>
+<li><strong>Sort</strong>: Best Match (Yelp&#39;s algorithm), Rating, Review Count, Distance</li>
+<li><strong>Map Search</strong>: Interactive map; move/zoom to search visible area</li>
+<li><strong>Review Search</strong>: Search within a business&#39;s reviews by keyword</li>
+<li><strong>Review Highlights</strong>: AI-generated summary of common themes in reviews</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App (primary)</td>
+<td>Bottom tab bar; location-aware home; full-screen business page; camera for photo upload; nearby discovery</td>
+</tr>
+<tr>
+<td>Mobile Web</td>
+<td>Responsive; search-first; prompts app download for reservations and check-in</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Expanded search results; side-by-side map + list; wider business page</td>
+</tr>
+<tr>
+<td>Desktop (primary for research)</td>
+<td>Two-column search results (list + map); business page with photo gallery, reviews, sidebar (hours, map, actions)</td>
+</tr>
+<tr>
+<td>SEO Pages</td>
+<td>Server-rendered business and category pages heavily optimized for local SEO</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>Search, browse businesses, read reviews (limited), view photos; prompted to sign up for full access</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Write reviews, upload photos, check in, bookmark, create collections, message businesses, request quotes</td>
+</tr>
+<tr>
+<td>Elite User</td>
+<td>Annual designation; access to Elite events, &quot;Elite&quot; badge on reviews, higher review visibility</td>
+</tr>
+<tr>
+<td>Business Owner (claimed)</td>
+<td>Respond to reviews, update business info/photos/hours, view analytics, post updates (Yelp Connect)</td>
+</tr>
+<tr>
+<td>Business Advertiser</td>
+<td>All owner features + run Yelp Ads, set budget/targeting, track ROI</td>
+</tr>
+<tr>
+<td>Yelp Reservations/Waitlist Business</td>
+<td>Manage reservations and waitlist through Yelp; integration with POS</td>
+</tr>
+<tr>
+<td>API Developer</td>
+<td>Access business data, reviews, photos via Yelp Fusion API (rate-limited)</td>
+</tr>
+<tr>
+<td>Community Manager (Yelp)</td>
+<td>Organize Elite events, manage community, moderate content</td>
+</tr>
+<tr>
+<td>Content Moderator</td>
+<td>Review flagged content, enforce guidelines, manage recommendation algorithm appeals</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

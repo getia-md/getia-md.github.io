@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depop — IA.md | getIA.md</title>
+  <meta name="description" content="Gen-Z fashion resale. Social shopping, explore. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=depop.com&sz=64" alt="Depop" onerror="this.parentElement.textContent='D'">
+      </div>
+      <h1 class="detail-brand-name">Depop</h1>
+      <p class="detail-brand-tagline">Gen-Z fashion resale. Social shopping, explore.</p>
+      <span class="detail-category-badge">Marketplace</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/depop/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://depop.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/depop/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Depop</h1>
+<h2>1. Overview</h2>
+<p>Depop is a social shopping platform targeting Gen-Z, focused on secondhand fashion, vintage clothing, and unique/handmade items. The IA blends <strong>social media patterns</strong> (follow sellers, like items, explore feed) with <strong>marketplace mechanics</strong> (buy, sell, ship). The Explore page is the heart of discovery — curated edits, trending styles, and algorithmically surfaced items create a scrollable, Instagram-like experience for fashion resale.</p>
+<h2>2. Site Map</h2>
+<pre><code>depop.com
+├── Home
+├── Explore
+│   ├── For You (algorithmic feed)
+│   ├── Trending
+│   ├── Edits (curated collections)
+│   ├── Top sellers
+│   └── Depop Picks
+├── Search
+│   ├── Results grid
+│   ├── Category browse
+│   │   ├── Womenswear
+│   │   ├── Menswear
+│   │   ├── Jewelry &amp; Accessories
+│   │   ├── Bags
+│   │   ├── Shoes
+│   │   └── Home &amp; Tech
+│   └── Style tags (Y2K, Cottagecore, Streetwear, etc.)
+├── Sell
+│   ├── List an item
+│   ├── Seller hub
+│   ├── Shipping guide
+│   └── Seller tips / blog
+├── Item Page
+│   ├── Photos
+│   ├── Description
+│   ├── Size &amp; condition
+│   ├── Seller profile link
+│   ├── Buy / Make offer
+│   ├── Like / Save
+│   └── Share
+├── User Profile (Shop)
+│   ├── Bio &amp; avatar
+│   ├── Listings
+│   ├── Reviews
+│   ├── Followers / Following
+│   └── Sold items
+├── Messages (DMs)
+├── Help
+│   ├── Buying
+│   ├── Selling
+│   ├── Shipping &amp; returns
+│   ├── Safety
+│   └── Contact
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── Community guidelines
+└── Auth
+    ├── Log in
+    └── Sign up
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Top bar</td>
+<td>Logo, Search bar, Explore, Sell, Messages, Profile, Cart</td>
+</tr>
+<tr>
+<td>Explore</td>
+<td>Horizontal tabs</td>
+<td>For You, Trending, Edits, Categories</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>Filter bar</td>
+<td>Style, size, price, condition, color, brand, sort</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Compact</td>
+<td>About, Help, Legal, Social links, App badges</td>
+</tr>
+<tr>
+<td>App</td>
+<td>Bottom tab bar</td>
+<td>Home, Search, Sell (+), Inbox, Profile</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: Social-first navigation — the explore/feed experience dominates. User profiles function as storefronts, blending social following with commerce.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Item</td>
+<td>photos (up to 4), description, price, size, condition, brand, category, style tags, likes count</td>
+</tr>
+<tr>
+<td>User / Shop</td>
+<td>username, avatar, bio, location, followers, following, listings, reviews, verified seller badge</td>
+</tr>
+<tr>
+<td>Edit (Curated)</td>
+<td>title, description, items list, editor, cover image</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>buyer, seller, rating (1-5 stars), comment, transaction date</td>
+</tr>
+<tr>
+<td>Message Thread</td>
+<td>participants, messages, item reference, timestamps</td>
+</tr>
+<tr>
+<td>Style Tag</td>
+<td>name (e.g., &quot;Y2K&quot;, &quot;Grunge&quot;), associated items count</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Browse &amp; buy</h3>
+<ol>
+<li>Open Explore → scroll &quot;For You&quot; feed or browse edits</li>
+<li>Tap item → view photos, description, seller reviews</li>
+<li>&quot;Buy&quot; or &quot;Make an offer&quot;</li>
+<li>Checkout (Apple Pay, card, PayPal) → confirm</li>
+<li>Seller ships → buyer receives → leave review</li>
+</ol>
+<h3>5b. List &amp; sell</h3>
+<ol>
+<li>Tap Sell (+) → take/upload up to 4 photos</li>
+<li>Add description, brand, size, condition, price</li>
+<li>Add style tags (e.g., #vintage #y2k #streetwear)</li>
+<li>Choose shipping option → publish</li>
+<li>Item appears in your shop and in search/explore</li>
+</ol>
+<h3>5c. Social engagement</h3>
+<ol>
+<li>Discover seller on Explore → view their shop/profile</li>
+<li>Follow seller → their new listings appear in your feed</li>
+<li>Like items → saved to your likes; seller gets notification</li>
+<li>DM seller with questions → negotiate or discuss</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>/                           → Home
+/explore/                   → Explore / For You
+/search/?q={query}          → Search results
+/category/{slug}/           → Category browse
+/products/{item-id}/        → Item detail page
+/sell/                      → List new item
+/{username}/                → User shop / profile
+/{username}/reviews/        → Seller reviews
+/messages/                  → Message inbox
+/likes/                     → Liked items (auth)
+/help/                      → Help center
+/help/{topic}/              → Help article
+/blog/                      → Seller tips &amp; style guides
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global search</td>
+<td>Autocomplete, trending searches, recent searches</td>
+</tr>
+<tr>
+<td>Filters</td>
+<td>Category, subcategory, size, price range, condition, brand, color, style tag</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Relevance, newest, price low-high, price high-low</td>
+</tr>
+<tr>
+<td>Style tags</td>
+<td>Clickable tags (#vintage, #y2k) that filter results</td>
+</tr>
+<tr>
+<td>Saved search</td>
+<td>Notifications when new items match</td>
+</tr>
+<tr>
+<td>Explore algorithm</td>
+<td>Personalized based on likes, follows, browse history</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>4-column item grid, sidebar filters, full seller profiles</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>3-column grid, top filter bar</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>2-column grid, bottom-sheet filters, swipeable photos</td>
+</tr>
+<tr>
+<td>App (iOS/Android)</td>
+<td>Bottom tabs, camera-first sell, pull-to-refresh feed, push notifications for likes/messages</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Browse, search, view items and profiles</td>
+</tr>
+<tr>
+<td>Logged-in User</td>
+<td>Buy, sell, like, follow, message, reviews</td>
+</tr>
+<tr>
+<td>Verified Seller</td>
+<td>Verification badge, boosted visibility</td>
+</tr>
+<tr>
+<td>Top Seller</td>
+<td>Featured in Explore, analytics dashboard</td>
+</tr>
+<tr>
+<td>Internal Moderator</td>
+<td>Content moderation, counterfeit review, dispute resolution</td>
+</tr>
+<tr>
+<td>Editorial Team</td>
+<td>Create Edits, featured collections, Depop Picks</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

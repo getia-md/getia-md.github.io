@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlanetScale — IA.md | getIA.md</title>
+  <meta name="description" content="Serverless MySQL. Branching, deploy requests. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=planetscale.com&sz=64" alt="PlanetScale" onerror="this.parentElement.textContent='P'">
+      </div>
+      <h1 class="detail-brand-name">PlanetScale</h1>
+      <p class="detail-brand-tagline">Serverless MySQL. Branching, deploy requests.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/planetscale/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://planetscale.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/planetscale/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>PlanetScale — Information Architecture</h1>
+<h2>Overview</h2>
+<p>PlanetScale is a serverless MySQL-compatible database platform built on Vitess (the technology that powers YouTube&#39;s database infrastructure). The IA is organized around a <strong>Git-inspired database workflow</strong> — the revolutionary concept is database branching: just as developers create Git branches for code changes, PlanetScale lets you create database branches for schema changes, then merge them via deploy requests (analogous to pull requests). This paradigm shapes the entire product architecture: databases contain branches, branches have schemas, and changes flow through a review process. The platform combines database management, schema migration, query insights, and connection management in a developer-oriented console.</p>
+<h2>Site Map</h2>
+<pre><code>app.planetscale.com
+├── / (Organization dashboard — databases list)
+├── /{org}/{database} (Database overview)
+│   ├── /branches (Branch list)
+│   │   └── /{branch_name} (Branch detail — schema, console, settings)
+│   ├── /deploy-requests (Schema change requests)
+│   │   └── /{dr_number} (Deploy request detail — diff, review, deploy)
+│   ├── /console (Web SQL console)
+│   ├── /insights (Query performance analytics)
+│   ├── /settings
+│   │   ├── /general
+│   │   ├── /branches (Default branch, protection)
+│   │   ├── /backups (Backup schedule)
+│   │   ├── /boost (Query caching)
+│   │   └── /danger-zone (Delete database)
+│   └── /connect (Connection strings)
+├── /{org}/settings
+│   ├── /members
+│   ├── /billing
+│   ├── /integrations
+│   ├── /sso
+│   └── /audit-log
+├── /docs (Documentation)
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — organization-scoped: Databases, Settings, Docs</li>
+<li><strong>Database navigation</strong>: Top tabs within database — Overview, Branches, Deploy Requests, Insights, Console, Settings</li>
+<li><strong>Branch navigation</strong>: Branch selector dropdown (similar to Git branch switcher) — present in Console and Schema views</li>
+<li><strong>Deploy request navigation</strong>: List view → detail view with schema diff, comments, and deploy action</li>
+<li><strong>Organization navigation</strong>: Org switcher in top-left; Settings sub-nav for Members, Billing, Integrations</li>
+<li><strong>Console navigation</strong>: SQL editor with schema browser sidebar (tables, columns)</li>
+<li><strong>Mobile</strong>: Responsive but designed for desktop — SQL console requires wide viewport</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Database</td>
+<td>Name, region, plan, branches, deploy requests, connection strings</td>
+<td>Org-owned</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>Name, schema (tables/columns), parent branch, status (production, development), connection string</td>
+<td>Part of database</td>
+</tr>
+<tr>
+<td>Deploy Request</td>
+<td>Source branch, target branch, schema diff, status (open, deployed, closed), comments, reviewer</td>
+<td>Part of database</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td>Tables, columns (name, type, constraints), indexes, foreign keys</td>
+<td>Part of branch</td>
+</tr>
+<tr>
+<td>Query Insight</td>
+<td>Query pattern, execution count, latency (p50, p99), rows read/returned, time range</td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td>Backup</td>
+<td>Timestamp, branch, size, retention period, restore status</td>
+<td>Part of database</td>
+</tr>
+<tr>
+<td>Connection String</td>
+<td>Host, username, password, SSL config, framework-specific format</td>
+<td>Part of branch</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Creating a Database</h3>
+<ol>
+<li>User clicks &quot;New Database&quot; → enters name, selects region (AWS us-east-1, eu-west-1, etc.)</li>
+<li>Database created with a <code>main</code> branch (production)</li>
+<li>Connection string provided → copy into application config</li>
+<li>Connect via MySQL client, ORM, or web console</li>
+</ol>
+<h3>Schema Change via Deploy Request</h3>
+<ol>
+<li>Developer creates a new branch from <code>main</code> (e.g., <code>add-users-table</code>)</li>
+<li>Opens web console connected to the development branch</li>
+<li>Runs DDL statements: <code>CREATE TABLE users (...)</code>, <code>ALTER TABLE ...</code></li>
+<li>Creates a Deploy Request: source=<code>add-users-table</code>, target=<code>main</code></li>
+<li>Schema diff displayed — reviewers see added/modified/removed tables and columns</li>
+<li>Reviewer approves → &quot;Deploy Changes&quot; applies schema to production without downtime</li>
+<li>PlanetScale handles online DDL — no table locks, no downtime</li>
+</ol>
+<h3>Query Performance Analysis</h3>
+<ol>
+<li>User navigates to Insights tab</li>
+<li>Sees top queries ranked by total time, frequency, or latency</li>
+<li>Clicks a query → sees execution plan, latency percentiles, rows examined</li>
+<li>Identifies slow queries → optimizes with indexes or query rewrites</li>
+<li>PlanetScale Boost: enable query caching for specific query patterns</li>
+</ol>
+<h3>Connecting from Application</h3>
+<ol>
+<li>User goes to Connect tab → selects branch and framework</li>
+<li>Platform generates connection string in the framework&#39;s format (Rails, Django, Laravel, Prisma, etc.)</li>
+<li>Downloads SSL certificate (or uses secure connection string with embedded cert)</li>
+<li>Adds connection string to application&#39;s environment variables</li>
+<li>Application connects via standard MySQL protocol</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Dashboard</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}</code></td>
+<td>Database overview</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/branches</code></td>
+<td>Branch list</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/branches/{branch}</code></td>
+<td>Branch detail</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/deploy-requests</code></td>
+<td>Deploy request list</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/deploy-requests/{number}</code></td>
+<td>Deploy request detail</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/console</code></td>
+<td>SQL console</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/insights</code></td>
+<td>Query analytics</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/settings/*</code></td>
+<td>Database settings</td>
+</tr>
+<tr>
+<td><code>/{org}/{db}/connect</code></td>
+<td>Connection strings</td>
+</tr>
+<tr>
+<td><code>/{org}/settings/*</code></td>
+<td>Org settings</td>
+</tr>
+</tbody></table>
+<p>Clean hierarchical routing: org → database → feature. Branch names in URLs. Deploy requests use sequential numbers (like GitHub PRs).</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Database search</strong>: Filter databases by name on dashboard</li>
+<li><strong>Branch filtering</strong>: Filter by type (production, development), status</li>
+<li><strong>Deploy request filtering</strong>: Filter by status (open, deployed, closed), author</li>
+<li><strong>Query Insights filtering</strong>: Filter by time range, sort by total time, frequency, latency</li>
+<li><strong>Console</strong>: SQL query execution — not a search feature per se, but the primary data exploration tool</li>
+<li><strong>Schema browser</strong>: Browse tables and columns in console sidebar — no search</li>
+<li><strong>Audit log search</strong>: Filter by user, action type, date range (Enterprise)</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + content area with tables, schema diffs, console</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + full content</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Sidebar as drawer + simplified content</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger nav + single-column; Console impractical on mobile</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Schema diff view uses side-by-side on desktop, unified diff on mobile</li>
+<li>SQL console requires minimum ~1024px for comfortable use (editor + results table)</li>
+<li>Query insights charts resize responsively</li>
+<li>Connection string display adapts to viewport (code blocks with horizontal scroll)</li>
+<li>Deploy request conversation (comments) works well on mobile</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, docs (no app access)</td>
+</tr>
+<tr>
+<td>Free (Hobby)</td>
+<td>1 database, 5GB storage, 1 billion row reads/mo, 10 million row writes/mo, 1 production branch</td>
+</tr>
+<tr>
+<td>Scaler ($29/mo)</td>
+<td>More resources, 2 production branches, horizontal sharding, query insights</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>Scaler + org management, multiple members, deploy request approvals</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>SSO/SAML, audit logs, dedicated support, SLA, SOC 2</td>
+</tr>
+<tr>
+<td>Org roles</td>
+<td>Admin (full control) → Member (create databases, branches, deploy requests) → Viewer (read-only)</td>
+</tr>
+<tr>
+<td>Branch protection</td>
+<td>Production branches require deploy requests; direct DDL blocked</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, GitHub OAuth, Google OAuth</li>
+<li>Database-level permissions: Admin, Writer, Reader per database</li>
+<li>Deploy request reviews: Can require approval from specific team members before deploying</li>
+<li>Branch protection: Production branches locked from direct schema changes — must go through deploy requests</li>
+<li>Connection passwords: Generated per-branch; rotatable without downtime</li>
+<li>Audit log: All schema changes, deployments, and access events logged (Enterprise)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

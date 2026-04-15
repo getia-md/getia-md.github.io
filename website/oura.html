@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oura — IA.md | getIA.md</title>
+  <meta name="description" content="Health tracking ring. Sleep score, readiness, activity. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=ouraring.com&sz=64" alt="Oura" onerror="this.parentElement.textContent='O'">
+      </div>
+      <h1 class="detail-brand-name">Oura</h1>
+      <p class="detail-brand-tagline">Health tracking ring. Sleep score, readiness, activity.</p>
+      <span class="detail-category-badge">Health</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/oura/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://ouraring.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/oura/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Oura</h1>
+<h2>1. Overview</h2>
+<p>Oura is a health tracking platform centered on the Oura Ring — a wearable that continuously monitors sleep, activity, heart rate, temperature, and blood oxygen. The IA is organized around three daily scores — Sleep, Readiness, and Activity — that distill complex biometric data into actionable guidance. The app surfaces trends over time and provides personalized insights, bridging the gap between raw sensor data and practical health decisions.</p>
+<h2>2. Site Map</h2>
+<pre><code>Oura
+├── Home (Today)
+│   ├── Sleep Score
+│   ├── Readiness Score
+│   ├── Activity Score
+│   ├── Daily Insights
+│   ├── Body Clock (circadian rhythm)
+│   └── Tags (log lifestyle factors)
+├── Sleep
+│   ├── Sleep Score breakdown
+│   │   ├── Total Sleep
+│   │   ├── Efficiency
+│   │   ├── Restfulness
+│   │   ├── REM Sleep
+│   │   ├── Deep Sleep
+│   │   ├── Latency
+│   │   └── Timing
+│   ├── Sleep Stages Graph (hypnogram)
+│   ├── Heart Rate During Sleep
+│   ├── HRV (Heart Rate Variability)
+│   ├── Respiratory Rate
+│   ├── Blood Oxygen (SpO2)
+│   ├── Sleep Trends (weekly/monthly)
+│   └── Bedtime Guidance
+├── Readiness
+│   ├── Readiness Score breakdown
+│   │   ├── Resting Heart Rate
+│   │   ├── HRV Balance
+│   │   ├── Body Temperature
+│   │   ├── Recovery Index
+│   │   ├── Sleep Balance
+│   │   ├── Previous Day Activity
+│   │   └── Activity Balance
+│   └── Readiness Trends
+├── Activity
+│   ├── Activity Score breakdown
+│   │   ├── Steps
+│   │   ├── Active Calories
+│   │   ├── Total Calories
+│   │   ├── Walking Equivalency
+│   │   ├── Training Frequency
+│   │   ├── Training Volume
+│   │   └── Inactivity Alerts
+│   ├── Activity Goal Progress
+│   ├── Workouts (auto-detected + manual)
+│   └── Activity Trends
+├── Trends
+│   ├── Score Trends (30/90/180 days)
+│   ├── Biometric Trends
+│   ├── Correlations (Tags vs. Scores)
+│   └── Resilience
+├── Explore
+│   ├── Guided Sessions (audio)
+│   │   ├── Meditation
+│   │   ├── Breathwork
+│   │   ├── Sleep Sounds
+│   │   └── Education
+│   ├── Articles &amp; Tips
+│   └── Content Partners
+├── Tags
+│   ├── Log Tags (caffeine, alcohol, stress, etc.)
+│   ├── Custom Tags
+│   └── Tag Correlations with Scores
+├── Cycle Tracking (Period Prediction)
+│   ├── Cycle Calendar
+│   ├── Temperature Deviation
+│   └── Period Predictions
+├── Profile
+│   ├── Ring Settings
+│   ├── Goals
+│   ├── Subscription
+│   └── Health Integrations
+├── Settings
+│   ├── Account
+│   ├── Ring (firmware, battery)
+│   ├── Units &amp; Preferences
+│   ├── Notifications
+│   ├── Health App Sync (Apple Health, Google Health Connect)
+│   └── Data Export
+└── Website (ouraring.com)
+    ├── Shop
+    │   ├── Oura Ring (Gen 3 / Gen 4)
+    │   ├── Sizing Kit
+    │   └── Accessories
+    ├── Membership
+    ├── Science / Research
+    ├── Blog (The Pulse)
+    └── Business (Oura for Business)
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Bottom tab bar (mobile)</li>
+<li><strong>Bottom Tabs</strong>: Home, Sleep, Readiness, Activity (or combined &quot;Scores&quot;), Explore</li>
+<li><strong>Home</strong>: Three score rings (Sleep, Readiness, Activity) → tap any for detail</li>
+<li><strong>Drill-Down</strong>: Score → Breakdown → Individual metric → Trend chart</li>
+<li><strong>Swipe Between Days</strong>: Horizontal swipe on any screen to view past days</li>
+<li><strong>Insights Panel</strong>: Cards on Home with contextual tips based on data</li>
+<li><strong>Ring Icon</strong>: Battery status and ring connection indicator in top bar</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sleep Score</td>
+<td>score (0-100), breakdown components, sleep stages, biometrics, date</td>
+<td>→ Night&#39;s Sleep Data</td>
+</tr>
+<tr>
+<td>Readiness Score</td>
+<td>score (0-100), breakdown components, recovery metrics, date</td>
+<td>→ Sleep Score, → Activity</td>
+</tr>
+<tr>
+<td>Activity Score</td>
+<td>score (0-100), steps, calories, training, inactivity, date</td>
+<td>→ Workouts</td>
+</tr>
+<tr>
+<td>Biometric Reading</td>
+<td>type (HR, HRV, SpO2, temperature), value, timestamp</td>
+<td>→ Score component</td>
+</tr>
+<tr>
+<td>Sleep Stages</td>
+<td>wake, light, deep, REM — duration per stage, hypnogram</td>
+<td>→ Sleep Score</td>
+</tr>
+<tr>
+<td>Workout</td>
+<td>type, duration, calories, average HR, source (auto-detected/manual)</td>
+<td>→ Activity Score</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name (predefined or custom), timestamp</td>
+<td>→ Correlation analysis</td>
+</tr>
+<tr>
+<td>Insight</td>
+<td>title, body, type (tip/alert/trend), date</td>
+<td>→ Scores, → Trends</td>
+</tr>
+<tr>
+<td>Guided Session</td>
+<td>title, type (meditation/breathwork), instructor, duration, audio</td>
+<td>→ Explore</td>
+</tr>
+<tr>
+<td>Cycle Data</td>
+<td>cycle day, temperature deviation, period dates, prediction</td>
+<td>→ Profile</td>
+</tr>
+<tr>
+<td>Trend</td>
+<td>metric, timeframe (30/90/180 days), data points, direction</td>
+<td>→ Scores</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Morning Check-In</h3>
+<ol>
+<li>Wake up → Open app → Ring syncs overnight data automatically</li>
+<li>Home shows three scores: Sleep (82), Readiness (71), Activity (yesterday&#39;s 95)</li>
+<li>Tap Sleep → View hypnogram, time in each stage, HRV, resting HR</li>
+<li>Read insight: &quot;Your deep sleep was 15% below your baseline. Consider avoiding caffeine after 2 PM.&quot;</li>
+<li>Add Tag: &quot;Late coffee&quot; to track correlation over time</li>
+</ol>
+<h3>Understanding Readiness</h3>
+<ol>
+<li>Tap Readiness score → See component breakdown</li>
+<li>Temperature +0.3°C above baseline → Body may be fighting something</li>
+<li>HRV below personal average → Recovery is low</li>
+<li>Insight suggests: &quot;Take it easy today. Opt for light activity.&quot;</li>
+<li>Check trend → See readiness dip pattern correlated with &quot;Poor sleep&quot; tag</li>
+</ol>
+<h3>Tracking Cycle</h3>
+<ol>
+<li>Enable Cycle Tracking in settings → Log period start</li>
+<li>Oura tracks basal body temperature deviations nightly</li>
+<li>Algorithm predicts cycle phases and next period</li>
+<li>View Cycle Calendar → See temperature curve overlaid with cycle days</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>ouraring.com/                               # Marketing homepage
+ouraring.com/product                        # Ring product page
+ouraring.com/product/rings/{model}          # Specific ring model
+ouraring.com/sizing                         # Sizing kit order
+ouraring.com/membership                     # Membership plans
+ouraring.com/blog                           # The Pulse blog
+ouraring.com/blog/{slug}                    # Blog article
+ouraring.com/research                       # Scientific research
+ouraring.com/business                       # Oura for Business
+cloud.ouraring.com/                         # Web dashboard (limited)
+cloud.ouraring.com/dashboard                # Data overview
+api.ouraring.com/                           # Developer API
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Tag Search</strong>: Browse and create custom tags for lifestyle factors</li>
+<li><strong>Trend Filters</strong>: View trends by 7, 30, 90, or 180 days</li>
+<li><strong>Workout Filter</strong>: By type (running, cycling, weight training, etc.)</li>
+<li><strong>Guided Content Browse</strong>: Filter by type (meditation, breathwork, sleep), duration</li>
+<li><strong>Correlation Discovery</strong>: Automatic analysis of how tags correlate with scores (e.g., &quot;alcohol&quot; → lower sleep score)</li>
+<li><strong>No Social Search</strong>: Oura is a personal health tool with no social features</li>
+<li><strong>Data Export</strong>: Full data export to CSV for external analysis</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App (primary)</td>
+<td>Bottom tab bar; score rings on home; full-screen charts; swipe between days</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Expanded charts with more data points visible; larger hypnogram</td>
+</tr>
+<tr>
+<td>Web Dashboard (cloud.ouraring.com)</td>
+<td>Limited data view; scores and trends; no guided content</td>
+</tr>
+<tr>
+<td>Oura Ring (hardware)</td>
+<td>No screen; LED pulse for alignment/charging; all data viewed in app</td>
+</tr>
+<tr>
+<td>Apple Watch / Widget</td>
+<td>Score summary widget; quick glance at today&#39;s scores</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ring Owner (no membership)</td>
+<td>Basic scores (Sleep, Readiness, Activity); no detailed insights, trends, or guided content</td>
+</tr>
+<tr>
+<td>Member (subscription)</td>
+<td>Full access: detailed breakdowns, trends, insights, guided sessions, cycle tracking, tags, data export</td>
+</tr>
+<tr>
+<td>Lifetime Member (Gen 3 purchase before cutoff)</td>
+<td>Full membership included with ring purchase; no subscription required</td>
+</tr>
+<tr>
+<td>API Developer</td>
+<td>Access personal data via OAuth API; rate-limited reads of sleep, activity, readiness</td>
+</tr>
+<tr>
+<td>Oura for Business User</td>
+<td>Ring provided by employer; aggregated (anonymized) insights shared with organization</td>
+</tr>
+<tr>
+<td>Guest (no ring)</td>
+<td>Browse website, blog, research; cannot access app features</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

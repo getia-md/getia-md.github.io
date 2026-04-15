@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT — IA.md | getIA.md</title>
+  <meta name="description" content="AI chatbot. GPTs, Canvas, memory, plugins. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=chat.openai.com&sz=64" alt="ChatGPT" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">ChatGPT</h1>
+      <p class="detail-brand-tagline">AI chatbot. GPTs, Canvas, memory, plugins.</p>
+      <span class="detail-category-badge">AI</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/chatgpt/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://chat.openai.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/chatgpt/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>ChatGPT — Information Architecture</h1>
+<h2>Overview</h2>
+<p>ChatGPT is OpenAI&#39;s conversational AI product, serving hundreds of millions of users across web, mobile, and desktop. The IA revolves around a <strong>conversation-first paradigm</strong> — every interaction begins and lives within a chat thread. The architecture has expanded from simple Q&amp;A to a multi-modal workspace supporting GPTs (custom agents), Canvas (collaborative editing), memory (persistent user context), file analysis, image generation (DALL·E), browsing, and code execution. The left sidebar acts as an ever-growing conversation history, while the main canvas is dedicated to the active thread. The product differentiates free, Plus, Team, and Enterprise tiers, each unlocking additional models (GPT-4o, o1, o3) and capabilities.</p>
+<h2>Site Map</h2>
+<pre><code>chat.openai.com
+├── / (New chat / home)
+├── /c/{conversation_id} (Individual conversation)
+├── /g/{gpt_id} (GPT detail / launch)
+├── /gpts
+│   ├── /discovery (GPT Store browse)
+│   ├── /mine (My GPTs)
+│   └── /editor (GPT Builder)
+├── /canvas (Canvas documents)
+├── /settings
+│   ├── /general
+│   ├── /personalization (Custom instructions, memory)
+│   ├── /data-controls
+│   ├── /security
+│   └── /subscription
+├── /share/{share_id} (Shared conversation read-only)
+├── /auth/login
+└── /auth/callback
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — conversation list with search, grouped by date (Today, Yesterday, Previous 7 Days, etc.)</li>
+<li><strong>Secondary navigation</strong>: Top-left model selector dropdown (GPT-4o, o1, o3-mini, etc.)</li>
+<li><strong>Utility navigation</strong>: Bottom-left user avatar → Settings, My Plan, My GPTs, Log out</li>
+<li><strong>Contextual navigation</strong>: Within a conversation — branch points (edit &amp; regenerate), Canvas toggle, attachment menu</li>
+<li><strong>Mobile navigation</strong>: Hamburger menu replaces sidebar; swipe to open conversation list</li>
+<li><strong>GPT Store</strong>: Separate browse experience with category tabs (Writing, Productivity, Research, etc.)</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Conversation</td>
+<td>Thread of alternating user/assistant messages, each with timestamps, model tag, optional attachments</td>
+<td>User-owned, deletable</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>Text (Markdown), code blocks, images, file attachments, tool-use indicators</td>
+<td>Part of conversation</td>
+</tr>
+<tr>
+<td>Canvas Document</td>
+<td>Rich-text or code document co-edited with AI, versioned</td>
+<td>Linked to conversation</td>
+</tr>
+<tr>
+<td>GPT</td>
+<td>Name, description, instructions, conversation starters, knowledge files, actions, icon</td>
+<td>Creator-owned, publishable</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>Key-value facts extracted from conversations</td>
+<td>User-owned, editable/deletable</td>
+</tr>
+<tr>
+<td>Shared Link</td>
+<td>Read-only snapshot of a conversation at share time</td>
+<td>Public or link-only</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Folder grouping conversations + files + custom instructions</td>
+<td>User/Team-owned</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>New Conversation</h3>
+<ol>
+<li>User lands on <code>/</code> → sees prompt input + suggested prompts</li>
+<li>Types message → selects model (or uses default)</li>
+<li>Message streams in real-time via SSE</li>
+<li>Conversation auto-saved to sidebar with AI-generated title</li>
+<li>User can continue, branch (edit earlier message), or start new chat</li>
+</ol>
+<h3>Using a GPT</h3>
+<ol>
+<li>User navigates to GPT Store or <code>/g/{id}</code></li>
+<li>Sees GPT description + conversation starters</li>
+<li>Clicks starter or types custom prompt</li>
+<li>Conversation opens in main chat with GPT context pre-loaded</li>
+<li>GPT may invoke external actions (API calls) with user consent</li>
+</ol>
+<h3>Canvas Workflow</h3>
+<ol>
+<li>User requests a document or code artifact</li>
+<li>ChatGPT opens Canvas panel alongside chat</li>
+<li>User can directly edit text; AI can suggest inline changes</li>
+<li>Version history allows rollback</li>
+<li>Export as file or copy to clipboard</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Home / new chat</td>
+</tr>
+<tr>
+<td><code>/c/{uuid}</code></td>
+<td>Existing conversation</td>
+</tr>
+<tr>
+<td><code>/g/{slug}</code></td>
+<td>GPT detail and launch page</td>
+</tr>
+<tr>
+<td><code>/gpts/discovery</code></td>
+<td>GPT Store</td>
+</tr>
+<tr>
+<td><code>/gpts/editor</code></td>
+<td>GPT Builder</td>
+</tr>
+<tr>
+<td><code>/gpts/editor/{gpt_id}</code></td>
+<td>Edit specific GPT</td>
+</tr>
+<tr>
+<td><code>/share/{share_id}</code></td>
+<td>Shared conversation (public)</td>
+</tr>
+<tr>
+<td><code>/settings/*</code></td>
+<td>Settings sub-pages</td>
+</tr>
+</tbody></table>
+<p>Routes are client-side (SPA); the conversation ID is a UUID. Shared links use a separate short ID. No SEO-oriented slug pattern — conversations are private by default.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Conversation search</strong>: Full-text search across conversation titles and message content, accessible from sidebar search bar</li>
+<li><strong>GPT Store search</strong>: Keyword search + category filters (Top Picks, DALL·E, Writing, Research, Programming, Education, Lifestyle)</li>
+<li><strong>No advanced filters</strong>: No date-range, model-type, or tag-based filtering for conversations</li>
+<li><strong>Memory search</strong>: Users can browse and search stored memory items in Settings → Personalization</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1024px)</td>
+<td>Persistent sidebar + full chat canvas + optional Canvas side panel</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Collapsible sidebar, full chat, Canvas overlays</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Sidebar hidden (hamburger toggle), full-width chat, Canvas as bottom sheet or full-screen</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Message bubbles are full-width on mobile with reduced padding</li>
+<li>Model selector moves into a compact dropdown</li>
+<li>File upload and attachment options collapse into a <code>+</code> menu</li>
+<li>Touch-optimized: swipe-to-open sidebar, long-press for message actions</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>No access (login required)</td>
+</tr>
+<tr>
+<td>Free user</td>
+<td>GPT-4o-mini, limited GPT-4o, limited image gen, no Canvas, basic memory</td>
+</tr>
+<tr>
+<td>Plus ($20/mo)</td>
+<td>Full GPT-4o, o1, o3-mini, Canvas, DALL·E, Advanced Data Analysis, 50 GPT-4o messages/3hr</td>
+</tr>
+<tr>
+<td>Team ($25/user/mo)</td>
+<td>Plus features + workspace, admin console, no training on data</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Team features + SSO/SAML, SCIM, admin analytics, extended context, priority access</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, Google OAuth, Microsoft OAuth, Apple Sign-In</li>
+<li>Data controls: Users can opt out of model training, export data, delete account</li>
+<li>Shared links: Anyone with link can view; creator can revoke</li>
+<li>GPT publishing: Private, anyone with link, or public (GPT Store)</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

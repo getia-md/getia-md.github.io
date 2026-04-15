@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Looker — IA.md | getIA.md</title>
+  <meta name="description" content="BI platform. LookML, Explores, embedded analytics. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=looker.com&sz=64" alt="Looker" onerror="this.parentElement.textContent='L'">
+      </div>
+      <h1 class="detail-brand-name">Looker</h1>
+      <p class="detail-brand-tagline">BI platform. LookML, Explores, embedded analytics.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/looker/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://looker.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/looker/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Looker (Google Cloud)</h1>
+<h2>Overview</h2>
+<p>Looker is a business intelligence platform (now part of Google Cloud) built on a unique modeling layer called LookML. Unlike traditional BI tools where users write SQL directly, Looker uses LookML to define a semantic data model — dimensions, measures, relationships — which then powers a self-service Explore interface. The IA is organized around Explores (ad-hoc analysis), Looks (saved queries), and Dashboards (collections of visualizations).</p>
+<h2>Site Map</h2>
+<pre><code>looker.com
+├── Home
+│   ├── Recently Viewed
+│   ├── Favorites
+│   ├── Boards (curated collections)
+│   └── Folders
+├── Explore
+│   ├── [Explore Name] (per-model)
+│   │   ├── Dimensions (fields)
+│   │   ├── Measures (aggregations)
+│   │   ├── Filters
+│   │   ├── Pivots
+│   │   ├── Visualization (chart type)
+│   │   ├── Data Table
+│   │   └── SQL Tab (generated query)
+│   └── Browse Explores by Model
+├── Looks (Saved Queries)
+│   ├── Look Detail (visualization + data)
+│   └── Look Scheduler (email/Slack delivery)
+├── Dashboards
+│   ├── Dashboard Builder
+│   │   ├── Tiles (Look tiles, Text, Markdown, Images)
+│   │   ├── Filters (dashboard-level)
+│   │   ├── Cross-filtering
+│   │   └── Drill-down
+│   ├── LookML Dashboards (code-defined)
+│   └── User-defined Dashboards (UI-built)
+├── Boards (Curated Collections)
+│   ├── Looks, Dashboards, Explores organized thematically
+│   └── Sections
+├── Folders
+│   ├── Personal Folder
+│   ├── Shared Folders
+│   └── Users Folder (per-user personal space)
+├── Admin (for admins)
+│   ├── Users &amp; Groups
+│   ├── Roles
+│   ├── Content Access
+│   ├── Connections (database)
+│   ├── Projects (LookML repos)
+│   ├── Platform Settings
+│   ├── Queries (performance)
+│   └── Scheduler History
+├── Develop (LookML IDE)
+│   ├── Projects
+│   │   ├── Models
+│   │   ├── Views
+│   │   ├── Explores
+│   │   ├── Dashboards (LookML)
+│   │   └── Derived Tables
+│   ├── Git Integration
+│   ├── Data Tests
+│   └── Content Validator
+└── Embedded Analytics
+    ├── Embed SDK
+    ├── SSO Embed
+    └── API
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Home, Explore, Develop, Admin (role-dependent), Folders, Boards</li>
+<li><strong>Explore interface:</strong> Field picker (left) → Visualization + Data (center) → Filter bar (top)</li>
+<li><strong>Dashboard:</strong> Tile grid with filter bar; each tile links to its underlying Explore/Look</li>
+<li><strong>LookML IDE (Develop):</strong> File tree (left) → Code editor (center) → SQL Runner / Model diagram</li>
+<li><strong>Drill-down:</strong> Click any data point → Drill menu shows related dimensions/Explores</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Connection</td>
+<td>name, dialect (BigQuery/Snowflake/Postgres/etc.), credentials</td>
+<td>→ Models</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>name, git repo, models, views</td>
+<td>→ LookML files</td>
+</tr>
+<tr>
+<td>Model</td>
+<td>name, connection, explores</td>
+<td>→ Views, Explores</td>
+</tr>
+<tr>
+<td>View</td>
+<td>name, SQL table/derived, dimensions, measures</td>
+<td>→ Model, Explores</td>
+</tr>
+<tr>
+<td>Explore</td>
+<td>name, base view, joins, always_filter</td>
+<td>→ Model, Looks, Dashboards</td>
+</tr>
+<tr>
+<td>Dimension</td>
+<td>name, type, SQL definition, label, group</td>
+<td>→ View</td>
+</tr>
+<tr>
+<td>Measure</td>
+<td>name, type (count/sum/average/etc.), SQL, drill_fields</td>
+<td>→ View</td>
+</tr>
+<tr>
+<td>Look</td>
+<td>name, explore query, visualization type, filters</td>
+<td>→ Explore, Folder, Dashboard tile</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>name, tiles, filters, layout</td>
+<td>→ Looks, Queries, Folder</td>
+</tr>
+<tr>
+<td>Board</td>
+<td>name, sections</td>
+<td>→ Looks, Dashboards, Explores</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name, parent folder</td>
+<td>→ Looks, Dashboards, child Folders</td>
+</tr>
+<tr>
+<td>Schedule</td>
+<td>destination (email/S3/Slack/webhook), frequency, format</td>
+<td>→ Look, Dashboard</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Explore Data (Self-Service)</h3>
+<p><code>Explore → Select Explore (e.g., &quot;Orders&quot;) → Pick dimensions (date, product category) → Pick measures (total revenue, order count) → Add filter (date range) → Run → Visualize → Save as Look</code></p>
+<h3>2. Build a Dashboard</h3>
+<p><code>+ New → Dashboard → Add tiles from existing Looks or new queries → Arrange layout → Add dashboard filters (linked to tile filters) → Save → Share folder</code></p>
+<h3>3. Develop LookML Model</h3>
+<p><code>Develop → Open Project → Edit View file (add dimension/measure) → Validate LookML → Test in Explore → Commit to Git → Deploy to production</code></p>
+<h3>4. Schedule a Report</h3>
+<p><code>Look or Dashboard → Schedule → Set recipients (email/Slack/S3) → Set frequency (daily/weekly/cron) → Set format (PDF/CSV/PNG) → Set filters → Save</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>{instance}.looker.com/                                    # Home
+{instance}.looker.com/explore/{model}/{explore}           # Explore
+{instance}.looker.com/looks/{look_id}                     # Look
+{instance}.looker.com/dashboards/{dashboard_id}           # Dashboard
+{instance}.looker.com/folders/{folder_id}                 # Folder
+{instance}.looker.com/boards/{board_id}                   # Board
+{instance}.looker.com/projects/{project}/files            # LookML IDE
+{instance}.looker.com/admin                               # Admin panel
+{instance}.looker.com/sql/{connection}                    # SQL Runner
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Global search:</strong> Find Looks, Dashboards, Explores, Boards by name or description</li>
+<li><strong>Explore field search:</strong> Search dimensions and measures by name within the field picker</li>
+<li><strong>Explore filters:</strong> Multi-field filter bar with operators (is, is not, contains, starts with, in range, etc.)</li>
+<li><strong>Dashboard filters:</strong> Dashboard-level filters that propagate to all tiles; linked or independent</li>
+<li><strong>Content Validator:</strong> Identify broken content (Looks/Dashboards referencing deleted LookML fields)</li>
+<li><strong>SQL Runner:</strong> Direct SQL query execution against connected databases</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1280px+)</td>
+<td>Full Explore interface, LookML IDE, dashboard builder</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Dashboard viewing works; Explore and IDE require desktop</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Dashboard and Look viewing via responsive layout; no editing; scheduled reports via email</td>
+</tr>
+<tr>
+<td>Embedded</td>
+<td>Looker content embeds responsively in iframes; responsive SDK controls available</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Admin</td>
+<td>Full platform access — users, connections, LookML projects, all content</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>LookML IDE access, create/edit models, deploy to production</td>
+</tr>
+<tr>
+<td>Explorer</td>
+<td>Create Explores, save Looks, build Dashboards</td>
+</tr>
+<tr>
+<td>Viewer</td>
+<td>View shared Looks and Dashboards; cannot create Explores</td>
+</tr>
+<tr>
+<td>Embed User (SSO)</td>
+<td>Scoped access to embedded content; row-level security via user attributes</td>
+</tr>
+<tr>
+<td>Model Set</td>
+<td>Restrict which models/Explores a role can access</td>
+</tr>
+<tr>
+<td>Permission Set</td>
+<td>Granular feature permissions (explore, schedule, download, create, admin)</td>
+</tr>
+<tr>
+<td>Folder Access</td>
+<td>Content-level read/write per folder for users/groups</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

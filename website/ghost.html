@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost — IA.md | getIA.md</title>
+  <meta name="description" content="Publishing platform. Memberships, newsletters, open-source. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=ghost.org&sz=64" alt="Ghost" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">Ghost</h1>
+      <p class="detail-brand-tagline">Publishing platform. Memberships, newsletters, open-source.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/ghost/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://ghost.org" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/ghost/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Ghost</h1>
+<h2>1. Overview</h2>
+<p>Ghost is an open-source publishing platform focused on professional content creators who want to build a membership-based business around their writing. The IA supports the full creator economy stack: <strong>publishing</strong> (posts, pages, newsletters), <strong>memberships</strong> (free and paid tiers), <strong>newsletters</strong> (built-in email), and <strong>monetization</strong> (Stripe integration for subscriptions). Ghost positions itself as the independent, open-source alternative to Substack and WordPress, with a focus on speed, clean design, and owning your audience.</p>
+<h2>2. Site Map</h2>
+<pre><code>ghost.org (Marketing &amp; Docs)
+├── Home
+├── Features
+│   ├── Publishing (editor, scheduling, SEO)
+│   ├── Memberships &amp; subscriptions
+│   ├── Newsletters (built-in email)
+│   ├── Themes &amp; design
+│   ├── Integrations (Zapier, Slack, Stripe, etc.)
+│   ├── Analytics (built-in)
+│   └── API &amp; headless
+├── Pricing
+│   ├── Ghost(Pro) hosted plans (Starter / Creator / Team / Business)
+│   └── Self-hosted (free, open-source)
+├── Themes
+│   ├── Official themes
+│   ├── Marketplace (3rd party)
+│   └── Theme detail (demo, features, install)
+├── Integrations
+│   ├── Native integrations
+│   ├── Zapier integrations
+│   └── Custom integrations (API)
+├── Resources
+│   ├── Blog
+│   ├── Tutorials
+│   ├── Creator resources
+│   └── Migration guides (from WordPress, Substack, Medium)
+├── Developers
+│   ├── API documentation (Content API, Admin API)
+│   ├── Theme development (Handlebars)
+│   ├── Webhooks
+│   ├── SDKs (JS, helpers)
+│   └── Self-hosting guide
+├── Explore (showcase)
+│   ├── Featured publications
+│   └── Case studies
+├── About
+│   ├── Non-profit foundation
+│   ├── Open source (GitHub)
+│   ├── Careers
+│   └── Changelog
+├── Help
+│   ├── Getting started
+│   ├── Publishing
+│   ├── Memberships
+│   ├── Email / newsletters
+│   ├── Themes
+│   └── Contact
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── DPA
+└── Auth
+    ├── Log in
+    └── Start free trial
+
+yourblog.com (Ghost Publication)
+├── Home (post feed)
+├── Post
+│   ├── Title, feature image, author, date
+│   ├── Body (rich content — cards, embeds, galleries)
+│   ├── Tags
+│   ├── Members-only indicator (free/paid)
+│   ├── Comments (native)
+│   └── Share
+├── Pages (About, Contact, etc.)
+├── Tags
+│   └── /tag/{slug}/
+├── Authors
+│   └── /author/{slug}/
+├── Subscribe
+│   ├── Free signup
+│   ├── Paid plans (monthly/yearly)
+│   └── Stripe checkout
+├── Account (member)
+│   ├── Profile
+│   ├── Subscription management
+│   ├── Email preferences
+│   └── Billing (Stripe customer portal)
+├── Archive / All posts
+
+Ghost Admin (CMS)
+├── Dashboard (KPIs: MRR, members, engagement)
+├── Posts
+│   ├── Published
+│   ├── Drafts
+│   ├── Scheduled
+│   └── Editor (rich block editor)
+├── Pages
+├── Tags
+├── Members
+│   ├── All members
+│   ├── Free members
+│   ├── Paid members
+│   ├── Import / Export
+│   └── Labels
+├── Newsletter
+│   ├── Newsletter settings
+│   ├── Send history
+│   └── Email analytics (opens, clicks)
+├── Offers &amp; Coupons
+├── Recommendations
+├── Settings
+│   ├── General
+│   ├── Design (navigation, branding)
+│   ├── Membership (tiers, pricing)
+│   ├── Email (newsletter design, sender)
+│   ├── Integrations
+│   ├── Code injection
+│   ├── Labs
+│   └── Staff (users &amp; roles)
+└── Analytics
+    ├── Web analytics
+    ├── Email analytics
+    └── Revenue
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ghost.org</td>
+<td>Top nav</td>
+<td>Logo, Features, Pricing, Themes, Docs, Explore, Log in, Get started</td>
+</tr>
+<tr>
+<td>Publication (frontend)</td>
+<td>Theme-dependent header</td>
+<td>Site title/logo, primary nav links, Subscribe CTA, member menu</td>
+</tr>
+<tr>
+<td>Ghost Admin</td>
+<td>Left sidebar</td>
+<td>Dashboard, Posts, Pages, Tags, Members, Newsletter, Offers, Explore, Settings</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Minimal top bar</td>
+<td>Post title, settings panel (slug, excerpt, tags, feature image, scheduling, visibility)</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: Ghost Admin is intentionally minimal — the left sidebar has fewer than 10 items. The editor is distraction-free, with settings tucked behind a side panel. The focus is on writing.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Post</td>
+<td>title, slug, body (Mobiledoc/Lexical), feature image, excerpt, tags, authors, published date, visibility (public/members/paid), newsletter flag, email status</td>
+</tr>
+<tr>
+<td>Page</td>
+<td>title, slug, body, feature image, template</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>name, slug, description, feature image, meta (SEO)</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>name, slug, bio, avatar, location, social links</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>email, name, status (free/paid/complimentary), subscription tier, created date, labels, email preferences, Stripe customer ID</td>
+</tr>
+<tr>
+<td>Tier</td>
+<td>name, description, monthly price, yearly price, benefits, visibility</td>
+</tr>
+<tr>
+<td>Newsletter</td>
+<td>name, sender, design settings, status, post association</td>
+</tr>
+<tr>
+<td>Offer</td>
+<td>name, code, discount (% or amount), tier, duration, redemptions</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Publish a post</h3>
+<ol>
+<li>Ghost Admin → New Post → editor opens</li>
+<li>Write content with cards (image, gallery, embed, bookmark, code, callout, etc.)</li>
+<li>Open settings panel → tags, excerpt, feature image, visibility (public/members/paid)</li>
+<li>Toggle &quot;Email newsletter&quot; → send as email to members</li>
+<li>Publish → post live on site + email sent (if enabled)</li>
+</ol>
+<h3>5b. Build membership business</h3>
+<ol>
+<li>Settings → Membership → define tiers (Free, Paid Monthly, Paid Yearly)</li>
+<li>Connect Stripe → set prices</li>
+<li>Create subscriber-only content (set visibility to &quot;Members&quot; or &quot;Paid members&quot;)</li>
+<li>Readers visit site → hit paywall → sign up (free) or subscribe (paid)</li>
+<li>Dashboard shows MRR, member growth, churn, revenue</li>
+</ol>
+<h3>5c. Reader — Subscribe and read</h3>
+<ol>
+<li>Visit publication → browse free posts</li>
+<li>Hit members-only post → &quot;Subscribe&quot; CTA</li>
+<li>Enter email (free) or select paid plan (Stripe checkout)</li>
+<li>Receive welcome email → full access to content</li>
+<li>Manage subscription via account page (cancel, update payment, email prefs)</li>
+</ol>
+<h3>5d. Newsletter workflow</h3>
+<ol>
+<li>Write post → toggle &quot;Send as newsletter&quot;</li>
+<li>Select newsletter (can have multiple) → preview email</li>
+<li>Publish → post goes live on site + email delivered to segment</li>
+<li>View email analytics (opens, clicks, unsubscribes)</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code># ghost.org
+/                               → Home
+/features/                      → Features
+/pricing/                       → Pricing
+/themes/                        → Theme marketplace
+/docs/                          → Documentation
+/docs/{api-name}/               → API reference
+/tutorials/                     → Tutorials
+/explore/                       → Publication showcase
+/changelog/                     → Changelog
+/help/                          → Help center
+
+# Publication (yourblog.com)
+/                               → Home (post list)
+/{post-slug}/                   → Post
+/page/{n}/                      → Pagination
+/tag/{tag-slug}/                → Tag archive
+/author/{author-slug}/          → Author archive
+/#/portal/signup                → Subscribe modal
+/#/portal/account               → Member account
+
+# Ghost Admin
+/ghost/                         → Dashboard
+/ghost/#/posts/                 → Post list
+/ghost/#/editor/post/{id}       → Editor
+/ghost/#/pages/                 → Pages
+/ghost/#/tags/                  → Tags
+/ghost/#/members/               → Members
+/ghost/#/settings/              → Settings
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Publication search</td>
+<td>Native search (Sodo Search) — full-text, instant results</td>
+</tr>
+<tr>
+<td>Admin — Posts</td>
+<td>Filter by status (published/draft/scheduled), tag, author, visibility</td>
+</tr>
+<tr>
+<td>Admin — Members</td>
+<td>Filter by status (free/paid/complimentary), label, subscription tier</td>
+</tr>
+<tr>
+<td>Theme docs search</td>
+<td>Full-text documentation search</td>
+</tr>
+<tr>
+<td>Tag archives</td>
+<td>Built-in content filtering by tag</td>
+</tr>
+<tr>
+<td>Author archives</td>
+<td>Built-in content filtering by author</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Full theme layout, sidebar (if theme supports), wide reading view</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Responsive theme, condensed navigation</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Single-column, hamburger nav, full-width images, mobile subscribe CTA</td>
+</tr>
+<tr>
+<td>Ghost Admin</td>
+<td>Responsive — works on tablet, limited on phone (desktop recommended)</td>
+</tr>
+<tr>
+<td>Email (newsletter)</td>
+<td>Responsive email template, optimized for all email clients</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Public Visitor</td>
+<td>Read public posts, search, browse archives</td>
+</tr>
+<tr>
+<td>Free Member</td>
+<td>All public + members-only content, comments, email newsletters</td>
+</tr>
+<tr>
+<td>Paid Member</td>
+<td>All content including paid-tier posts, full archive access</td>
+</tr>
+<tr>
+<td>Contributor (staff)</td>
+<td>Create drafts, cannot publish</td>
+</tr>
+<tr>
+<td>Author (staff)</td>
+<td>Publish own posts, manage own profile</td>
+</tr>
+<tr>
+<td>Editor (staff)</td>
+<td>Publish and edit all posts, manage tags, invite contributors</td>
+</tr>
+<tr>
+<td>Administrator</td>
+<td>Full access — settings, members, integrations, staff, design, billing</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Administrator + transfer ownership, billing management</td>
+</tr>
+<tr>
+<td>API (Integration)</td>
+<td>Content API (read-only, public) and Admin API (read-write, authenticated)</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

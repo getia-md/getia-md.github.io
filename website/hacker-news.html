@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker News — IA.md | getIA.md</title>
+  <meta name="description" content="Tech news. Minimal UI, karma, Show HN. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=64" alt="Hacker News" onerror="this.parentElement.textContent='H'">
+      </div>
+      <h1 class="detail-brand-name">Hacker News</h1>
+      <p class="detail-brand-tagline">Tech news. Minimal UI, karma, Show HN.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/hacker-news/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://news.ycombinator.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/hacker-news/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Hacker News</h1>
+<h2>1. Overview</h2>
+<p>Hacker News (HN) is Y Combinator&#39;s minimalist technology news aggregator and discussion forum. The IA is intentionally sparse — a single-column list of links ranked by a gravity-based algorithm, threaded comments, and virtually no media embellishments. This design philosophy prioritizes substance over presentation, rewarding intellectual curiosity and deep technical discussion. The site has barely changed its layout since 2007.</p>
+<h2>2. Site Map</h2>
+<pre><code>Hacker News
+├── Front Page (Top Stories)
+├── New (newest submissions)
+├── Past (top stories from past days)
+├── Comments (recent comments across all threads)
+├── Ask HN
+│   └── [Ask HN submissions — community questions]
+├── Show HN
+│   └── [Show HN submissions — project demos]
+├── Jobs
+│   └── [YC company job postings]
+├── Submit
+│   └── Submit link or text post
+├── Item (story/comment detail)
+│   ├── Story metadata (points, submitter, time, comment count)
+│   └── Threaded comments (recursive)
+├── User Profile
+│   ├── About
+│   ├── Karma
+│   ├── Submissions
+│   └── Comments
+├── Threads (user&#39;s comment history)
+├── Favorites (saved stories/comments)
+├── Leaders (top karma users)
+├── Guidelines
+├── FAQ
+├── API
+│   ├── /v0/topstories
+│   ├── /v0/newstories
+│   ├── /v0/item/{id}
+│   └── /v0/user/{id}
+└── Lists
+    ├── Best (highest-voted recent stories)
+    ├── Active (most-discussed)
+    └── Noob Comments (new users&#39; comments for mentoring)
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Single horizontal text nav bar at top (orange header)</li>
+<li><strong>Top Bar Links</strong>: Y logo | Hacker News | new | past | comments | ask | show | jobs | submit</li>
+<li><strong>Right Side</strong>: Login/logout, username link</li>
+<li><strong>No Sidebar</strong>: Pure single-column layout</li>
+<li><strong>Pagination</strong>: &quot;More&quot; link at bottom of every list page (30 items per page)</li>
+<li><strong>Thread Navigation</strong>: Click comment count → full threaded discussion; indent = nesting depth</li>
+<li><strong>No JavaScript-based Navigation</strong>: All navigation is server-rendered page loads</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Story</td>
+<td>title, URL (or text body for Ask/Show HN), points, submitter, timestamp, comment count</td>
+<td>→ Comments, → User</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text (markdown-ish), author, timestamp, parent, points (hidden for 24h)</td>
+<td>→ Story, → Parent Comment, → User</td>
+</tr>
+<tr>
+<td>Ask HN</td>
+<td>title (prefixed &quot;Ask HN:&quot;), text body, points, submitter</td>
+<td>→ Comments</td>
+</tr>
+<tr>
+<td>Show HN</td>
+<td>title (prefixed &quot;Show HN:&quot;), URL, text body, points</td>
+<td>→ Comments</td>
+</tr>
+<tr>
+<td>Job Posting</td>
+<td>title, URL, company (YC batch), timestamp</td>
+<td>standalone (no comments/votes)</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>username, created date, karma, about (text), submissions, comments</td>
+<td>→ Stories, → Comments</td>
+</tr>
+<tr>
+<td>Poll (rare)</td>
+<td>title, options, vote counts</td>
+<td>→ Comments</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Reading &amp; Voting</h3>
+<ol>
+<li>Visit front page → Scan ranked list of 30 story titles with domains</li>
+<li>Click title → Opens external link (or HN text post)</li>
+<li>Click comment count → View threaded discussion</li>
+<li>Upvote stories/comments (if &gt;500 karma: can also downvote comments)</li>
+<li>Click &quot;More&quot; at bottom → Next page of stories</li>
+</ol>
+<h3>Submitting a Story</h3>
+<ol>
+<li>Click &quot;submit&quot; in nav → Enter URL and title (or text for Ask/Show HN)</li>
+<li>Submit → Story appears on /newest</li>
+<li>If it gains upvotes quickly, it rises to the front page via ranking algorithm</li>
+<li>Points decay over time (gravity model): score / (age + 2)^1.8</li>
+</ol>
+<h3>Show HN Flow</h3>
+<ol>
+<li>Submit with title starting &quot;Show HN:&quot; + project URL + description</li>
+<li>Appears on /show page and /newest</li>
+<li>Community provides feedback in comments</li>
+<li>Successful Show HN posts reach front page</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>news.ycombinator.com/                       # Front page (top stories)
+news.ycombinator.com/newest                 # New submissions
+news.ycombinator.com/past?page={date}       # Past top stories
+news.ycombinator.com/newcomments            # Recent comments
+news.ycombinator.com/ask                    # Ask HN
+news.ycombinator.com/show                   # Show HN
+news.ycombinator.com/jobs                   # YC job postings
+news.ycombinator.com/item?id={id}           # Story or comment detail
+news.ycombinator.com/user?id={username}     # User profile
+news.ycombinator.com/threads?id={username}  # User&#39;s comments
+news.ycombinator.com/favorites?id={username}# User&#39;s favorites
+news.ycombinator.com/submit                 # Submit form
+news.ycombinator.com/leaders                # Top karma leaderboard
+hacker-news.firebaseio.com/v0/             # Public API root
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>No Built-in Search</strong>: HN has no native search feature on the site</li>
+<li><strong>Algolia HN Search</strong>: hn.algolia.com provides full-text search (official integration)<ul>
+<li>Filter by stories, comments, date range, popularity</li>
+</ul>
+</li>
+<li><strong>List Filters</strong>: Top / New / Best / Active / Ask / Show / Jobs — predefined views</li>
+<li><strong>Past Page</strong>: Browse top stories by specific date</li>
+<li><strong>No Tags/Categories</strong>: Stories are not categorized; ranking is purely algorithmic</li>
+<li><strong>Flagging</strong>: Users can flag inappropriate content; flagged stories may be de-ranked or killed</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>All Sizes</td>
+<td>Same HTML layout — no responsive breakpoints; table-based layout from 2007</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Horizontal scroll possible on very narrow screens; text remains readable; tap targets are small</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>Narrow centered column (~85% width); generous whitespace; monospace-friendly</td>
+</tr>
+<tr>
+<td>No Media Queries</td>
+<td>Site predates responsive web design; works through simplicity rather than adaptation</td>
+</tr>
+<tr>
+<td>Third-Party Apps</td>
+<td>Mobile experience primarily through third-party clients (Harmonic, Hack, Materialistic) that provide proper mobile UI</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>Read all stories and comments; view profiles; use API</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Submit stories, comment, upvote, flag, edit own posts (within ~2 hours), save favorites</td>
+</tr>
+<tr>
+<td>User (karma &gt; 500)</td>
+<td>Downvote comments, access to /bestcomments</td>
+</tr>
+<tr>
+<td>User (karma &gt; 30)</td>
+<td>Can set &quot;showdead&quot; to see killed/flagged posts</td>
+</tr>
+<tr>
+<td>Moderator (dang, sctb)</td>
+<td>Edit titles, merge duplicates, kill/unkill stories, detach comments, ban users, add [flagged]/[dead] labels</td>
+</tr>
+<tr>
+<td>New User</td>
+<td>Comments may appear in /newcomments for community mentoring; rate-limited posting</td>
+</tr>
+<tr>
+<td>Banned/Hellbanned</td>
+<td>Posts visible only to self; invisible to others (shadow ban)</td>
+</tr>
+<tr>
+<td>YC Founder</td>
+<td>Can post jobs to /jobs; may have special submission privileges</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

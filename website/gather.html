@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gather — IA.md | getIA.md</title>
+  <meta name="description" content="Virtual office. Spatial video, customizable maps. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=gather.town&sz=64" alt="Gather" onerror="this.parentElement.textContent='G'">
+      </div>
+      <h1 class="detail-brand-name">Gather</h1>
+      <p class="detail-brand-tagline">Virtual office. Spatial video, customizable maps.</p>
+      <span class="detail-category-badge">Productivity</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/gather/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://gather.town" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/gather/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Gather</h1>
+<h2>1. Overview</h2>
+<p>Gather is a virtual office platform that uses 2D spatial video to recreate the spontaneous interactions of a physical office. The IA combines a customizable pixel-art map (the &quot;space&quot;) with proximity-based audio/video — conversations activate as avatars walk near each other, and fade as they walk away. The platform bridges the gap between Slack-style async chat and Zoom-style scheduled meetings by enabling ambient, always-on presence.</p>
+<h2>2. Site Map</h2>
+<pre><code>Gather
+├── Space (Virtual Office)
+│   ├── Map (2D pixel-art layout)
+│   │   ├── Open Areas (desks, lobby, lounge)
+│   │   ├── Private Rooms (enclosed areas)
+│   │   ├── Meeting Rooms
+│   │   ├── Social Zones (games, watercooler)
+│   │   └── Interactive Objects (whiteboards, TV screens, games)
+│   ├── Avatars (team members moving in space)
+│   ├── Proximity Audio/Video (spatial)
+│   ├── Chat
+│   │   ├── Nearby Chat (proximity-based)
+│   │   ├── Direct Messages
+│   │   └── Space-wide Chat
+│   ├── Screen Share (to nearby or room)
+│   ├── Desk Assignment (personal desk)
+│   └── Status / Away
+├── Mapmaker (space editor)
+│   ├── Tile Map Editor
+│   ├── Objects Library
+│   ├── Room Configuration
+│   ├── Spawn Points
+│   ├── Interactive Areas (private, spotlight)
+│   └── Templates
+├── Calendar Integration
+│   ├── Scheduled meetings (auto-gather in rooms)
+│   └── Google Calendar / Outlook sync
+├── Dashboard (admin)
+│   ├── Members
+│   ├── Spaces
+│   ├── Usage Analytics
+│   ├── Billing
+│   └── Guest Access Policies
+├── Settings
+│   ├── Profile / Avatar
+│   ├── Audio / Video
+│   ├── Notifications
+│   ├── Keyboard Shortcuts
+│   └── Accessibility
+├── Templates
+│   ├── Office Templates
+│   ├── Event Templates
+│   ├── Classroom Templates
+│   └── Social Templates
+└── Website (gather.town)
+    ├── Product
+    ├── Use Cases (Remote Teams, Events, Education)
+    ├── Pricing
+    ├── Blog
+    └── Support
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Spatial (2D movement) + bottom toolbar</li>
+<li><strong>Primary Navigation</strong>: Move avatar with arrow keys / WASD; walk to areas/people to interact</li>
+<li><strong>Bottom Toolbar</strong>: Minimap, Chat, Screen Share, Emotes, Calendar, Settings</li>
+<li><strong>Left Panel</strong>: Participants list with status indicators; click name to locate on map</li>
+<li><strong>Minimap</strong>: Overview of entire space; click to teleport to location</li>
+<li><strong>Right-click Menu</strong>: On objects (interact, configure) or people (follow, message, invite to room)</li>
+<li><strong>Room Entry</strong>: Walk into enclosed area → automatic private room (audio/video isolated from main space)</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Space</td>
+<td>name, map (tiles/objects), capacity, access settings, members</td>
+<td>→ Rooms, → Members, → Objects</td>
+</tr>
+<tr>
+<td>Room (Map Area)</td>
+<td>boundaries, privacy flag, capacity, label</td>
+<td>→ Space, → Occupants</td>
+</tr>
+<tr>
+<td>Avatar</td>
+<td>user reference, appearance (sprite), position (x,y), status, desk assignment</td>
+<td>→ User, → Space</td>
+</tr>
+<tr>
+<td>Interactive Object</td>
+<td>type (whiteboard, screen, game, poster), position, configuration, link/embed</td>
+<td>→ Space, → Room</td>
+</tr>
+<tr>
+<td>Chat Message</td>
+<td>text, sender, timestamp, scope (nearby/DM/space-wide)</td>
+<td>→ User(s), → Space</td>
+</tr>
+<tr>
+<td>Screen Share</td>
+<td>stream, sharer, scope (nearby/room), active flag</td>
+<td>→ Space</td>
+</tr>
+<tr>
+<td>Desk</td>
+<td>position, assigned user, label, decorations</td>
+<td>→ Space, → User</td>
+</tr>
+<tr>
+<td>Calendar Event</td>
+<td>title, time, linked room, participants</td>
+<td>→ Space Room, → Calendar</td>
+</tr>
+<tr>
+<td>Map Template</td>
+<td>layout, objects, theme, capacity recommendation</td>
+<td>→ Mapmaker</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Spontaneous Conversation</h3>
+<ol>
+<li>Open Gather → Avatar appears at assigned desk in virtual office</li>
+<li>See colleague&#39;s avatar nearby → Walk over (arrow keys)</li>
+<li>Proximity video activates as you get close → Start talking</li>
+<li>Walk away → Video fades out naturally</li>
+<li>No scheduling, no links — just walk and talk</li>
+</ol>
+<h3>Setting Up a Virtual Office</h3>
+<ol>
+<li>Create new Space → Choose template (small office, large campus, custom)</li>
+<li>Open Mapmaker → Drag-and-drop tiles, walls, furniture, objects</li>
+<li>Define private rooms, meeting areas, social zones</li>
+<li>Add interactive objects: whiteboards, embedded links, games</li>
+<li>Set spawn point → Invite team via link</li>
+<li>Members create avatars → Join space → Assigned to desks</li>
+</ol>
+<h3>Hosting a Virtual Event</h3>
+<ol>
+<li>Create Space from event template (conference hall, expo floor)</li>
+<li>Configure: stage area (spotlight mode), breakout rooms, info boards</li>
+<li>Share link → Guests join with avatars</li>
+<li>Keynote: speaker in spotlight area → broadcasts to all</li>
+<li>Networking: attendees walk around and chat spatially</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>gather.town/                                # Marketing homepage
+gather.town/pricing                         # Pricing page
+app.gather.town/app/{spaceId}               # Space (virtual office)
+app.gather.town/app/{spaceId}/mapmaker       # Map editor
+app.gather.town/dashboard                   # Admin dashboard
+app.gather.town/invite/{inviteCode}         # Space invite link
+gather.town/templates                       # Space templates
+gather.town/blog                            # Blog
+gather.town/use-cases/{useCase}             # Use case pages
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Participant Search</strong>: Find people in space by name → click to locate on map</li>
+<li><strong>Object Search</strong>: In Mapmaker, search object library by category (furniture, tech, decor, games)</li>
+<li><strong>Template Browse</strong>: Filter by use case (office, event, education), size, theme</li>
+<li><strong>Chat Search</strong>: Search chat history within space</li>
+<li><strong>No Content Search</strong>: Gather is a spatial presence tool, not a content repository; search is limited to people and objects</li>
+<li><strong>Status Filter</strong>: Filter participant list by online/away/busy/desk status</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop Browser (primary)</td>
+<td>Full 2D map view; avatar movement; proximity video; split screen with chat panel</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Touch-based movement (virtual joystick); reduced map viewport; video overlay</td>
+</tr>
+<tr>
+<td>Mobile App</td>
+<td>Simplified view; participant list with tap-to-call; limited spatial features; primarily for joining conversations</td>
+</tr>
+<tr>
+<td>Large Display</td>
+<td>Expanded map view; higher fidelity tiles; more simultaneous video tiles</td>
+</tr>
+<tr>
+<td>Mapmaker</td>
+<td>Desktop-only; drag-and-drop editor requires mouse/keyboard</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Space Owner</td>
+<td>Full admin: edit map, manage members, billing, configure space settings, delete space</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Edit map, manage members, configure rooms and objects, view analytics</td>
+</tr>
+<tr>
+<td>Moderator (Builder)</td>
+<td>Edit map and objects; cannot manage members or billing</td>
+</tr>
+<tr>
+<td>Member</td>
+<td>Enter space, move avatar, chat, video, screen share, interact with objects</td>
+</tr>
+<tr>
+<td>Guest</td>
+<td>Temporary access via invite link; limited to specific areas; no map editing</td>
+</tr>
+<tr>
+<td>Spotlight Speaker</td>
+<td>Broadcast audio/video to entire space (event mode); others are listen-only</td>
+</tr>
+<tr>
+<td>Desk Holder</td>
+<td>Assigned desk with personalized decorations; desk acts as persistent location</td>
+</tr>
+<tr>
+<td>Away / Do Not Disturb</td>
+<td>Avatar shows status; proximity video may be disabled; still visible on map</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behance — IA.md | getIA.md</title>
+  <meta name="description" content="Creative portfolio. Projects, moodboards, Adobe. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=behance.net&sz=64" alt="Behance" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">Behance</h1>
+      <p class="detail-brand-tagline">Creative portfolio. Projects, moodboards, Adobe.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/behance/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://behance.net" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/behance/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Behance</h1>
+<h2>1. Overview</h2>
+<p>Behance is Adobe&#39;s creative portfolio platform for showcasing and discovering professional design, illustration, photography, and other creative work. The IA is organized around Projects (multi-image case studies), Moodboards, and Live Streams, with deep integration into the Adobe Creative Cloud ecosystem. The platform serves as both a public portfolio and a professional discovery tool for recruiters and art directors.</p>
+<h2>2. Site Map</h2>
+<pre><code>Behance
+├── Home / Discover
+│   ├── For You (personalized)
+│   ├── Curated Galleries
+│   ├── Featured Projects
+│   ├── Creative Fields
+│   │   ├── Graphic Design
+│   │   ├── Illustration
+│   │   ├── Photography
+│   │   ├── UI/UX
+│   │   ├── Motion Graphics
+│   │   ├── 3D Art
+│   │   ├── Fashion
+│   │   └── [20+ fields]
+│   └── Trending
+├── Project Detail
+│   ├── Image gallery (scrollable case study)
+│   ├── Description &amp; tools used
+│   ├── Appreciations (likes) &amp; views
+│   ├── Comments
+│   ├── Tags &amp; creative fields
+│   ├── Owner info
+│   └── Related Projects
+├── Moodboards
+│   ├── User&#39;s Moodboards
+│   └── [Moodboard] → Saved projects, images, references
+├── Live Streams
+│   ├── Live Now
+│   ├── Upcoming
+│   └── Replays
+├── Jobs
+│   ├── Job Listings
+│   ├── Filter by role, location, type
+│   └── Job Detail → Apply
+├── Search
+│   ├── Projects
+│   ├── People
+│   ├── Moodboards
+│   ├── Assets (Adobe Stock integration)
+│   └── Live Streams
+├── Profile
+│   ├── Projects
+│   ├── Moodboards
+│   ├── Appreciated (liked projects)
+│   ├── Following / Followers
+│   ├── Stats
+│   ├── Resume / Work Experience
+│   ├── Tools &amp; Skills
+│   ├── Availability badge
+│   └── Adobe Portfolio link
+├── Adobe Portfolio (connected)
+│   └── Custom portfolio website (powered by Behance content)
+├── ProSite
+├── Hire Me / Freelance
+└── Settings
+    ├── Account (Adobe ID)
+    ├── Notifications
+    ├── Privacy
+    └── Connected Apps
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar (desktop), bottom tab bar (mobile app)</li>
+<li><strong>Desktop Top Bar</strong>: Behance logo (home), Explore, Live, Jobs, Hire Freelancers | Search, Notifications, Upload, Profile</li>
+<li><strong>Mobile App Bottom Tabs</strong>: Home, Search, Create (+), Notifications, Profile</li>
+<li><strong>Creative Field Navigation</strong>: Category chips on Explore; sidebar on search results</li>
+<li><strong>Project Viewing</strong>: Long vertical scroll through project images (case study format)</li>
+<li><strong>Adobe Ecosystem Links</strong>: Deep links to Creative Cloud, Adobe Portfolio, Adobe Stock</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Project</td>
+<td>cover image, images/videos (ordered), title, description, creative fields, tags, tools used, appreciations, views, comments, published date, license</td>
+<td>→ Owner, → Creative Fields, → Tags</td>
+</tr>
+<tr>
+<td>Moodboard</td>
+<td>name, description, saved items (projects, images, external references), visibility</td>
+<td>→ User, → Projects</td>
+</tr>
+<tr>
+<td>Live Stream</td>
+<td>title, streamer, scheduled time, status (live/replay), viewer count, category</td>
+<td>→ User, → Creative Field</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>name, bio, location, avatar, banner, creative fields, tools, follower count, work experience, availability</td>
+<td>→ Projects, → Moodboards</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text, author, timestamp, appreciations</td>
+<td>→ Project</td>
+</tr>
+<tr>
+<td>Job Listing</td>
+<td>title, company, location, type, salary range, description, creative field</td>
+<td>→ Company</td>
+</tr>
+<tr>
+<td>Asset</td>
+<td>image, license type, Adobe Stock metadata</td>
+<td>→ Adobe Stock</td>
+</tr>
+<tr>
+<td>Team/Company</td>
+<td>name, logo, members, projects</td>
+<td>→ Projects, → Job Listings</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Publishing a Project</h3>
+<ol>
+<li>Click &quot;Create a Project&quot; → Upload images/videos in sequence</li>
+<li>Arrange order → Add captions, descriptions for each module</li>
+<li>Set cover image → Add title, creative fields, tags, tools used</li>
+<li>Set visibility (public, private, draft) → Publish</li>
+<li>Project appears in followers&#39; feeds, field galleries, and search</li>
+</ol>
+<h3>Discovering Work</h3>
+<ol>
+<li>Visit Explore → Browse by creative field or &quot;For You&quot; recommendations</li>
+<li>Scroll project grid → Click to open full case study (long vertical scroll)</li>
+<li>Appreciate (like) → Save to Moodboard for reference</li>
+<li>Follow creator for future projects</li>
+</ol>
+<h3>Building a Portfolio</h3>
+<ol>
+<li>Upload multiple projects showcasing different skills</li>
+<li>Set profile bio, work experience, tools/skills</li>
+<li>Enable &quot;Available for Freelance&quot; badge</li>
+<li>Optionally connect Adobe Portfolio for a custom domain portfolio site</li>
+<li>Projects auto-sync from Behance to Adobe Portfolio</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>behance.net/                                # Home / discover
+behance.net/gallery/{id}/{slug}             # Project detail
+behance.net/search/projects?field={field}   # Browse by creative field
+behance.net/search/projects?search={query}  # Search results
+behance.net/{username}                      # User profile
+behance.net/{username}/moodboards           # User&#39;s moodboards
+behance.net/{username}/appreciated          # Liked projects
+behance.net/live                            # Live streams
+behance.net/live/{streamId}                 # Stream detail/replay
+behance.net/joblist                         # Job board
+behance.net/joblist/{id}                    # Job detail
+behance.net/hire                            # Hire freelancers
+myportfolio.com/ (or custom domain)         # Adobe Portfolio (connected)
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Global Search</strong>: Projects, people, moodboards, assets, live streams</li>
+<li><strong>Creative Field Filter</strong>: 20+ fields (Graphic Design, Photography, Motion, etc.)</li>
+<li><strong>Tool Filter</strong>: Filter by software used (Photoshop, Figma, Blender, etc.)</li>
+<li><strong>Color Filter</strong>: Search by dominant color in projects</li>
+<li><strong>Sort</strong>: Recommended, Most Appreciated, Most Viewed, Most Discussed, Most Recent</li>
+<li><strong>Location Filter</strong>: Find creators by city/country</li>
+<li><strong>Availability Filter</strong>: Show only &quot;Available for Freelance&quot; profiles</li>
+<li><strong>Adobe Stock Integration</strong>: Search stock assets alongside community projects</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App</td>
+<td>Bottom tab bar; single-column project grid; full-screen project viewer; swipe between projects</td>
+</tr>
+<tr>
+<td>Mobile Web (&lt; 768px)</td>
+<td>1-2 column grid; hamburger nav; project detail as vertical scroll page</td>
+</tr>
+<tr>
+<td>Tablet (768–1024px)</td>
+<td>2-3 column grid; project detail with sidebar metadata</td>
+</tr>
+<tr>
+<td>Desktop (&gt; 1024px)</td>
+<td>3-4 column project grid; sticky top nav; project detail as full-width scroll with floating action bar</td>
+</tr>
+<tr>
+<td>Large Desktop (&gt; 1440px)</td>
+<td>5+ column grid; wider project detail; expanded sidebar (tools, tags, related)</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>Browse projects, view profiles, search; limited views before sign-up prompt</td>
+</tr>
+<tr>
+<td>Registered User (free)</td>
+<td>Upload projects, create moodboards, appreciate, comment, follow, go live</td>
+</tr>
+<tr>
+<td>Adobe Creative Cloud Subscriber</td>
+<td>Full Behance access + Adobe Portfolio, extra storage, Fonts, Stock integration</td>
+</tr>
+<tr>
+<td>Pro / Freelance User</td>
+<td>&quot;Available for Hire&quot; badge, priority in search, enhanced analytics</td>
+</tr>
+<tr>
+<td>Company / Team</td>
+<td>Team profile, post jobs, manage team portfolio, coordinate hiring</td>
+</tr>
+<tr>
+<td>Curator / Staff</td>
+<td>Feature projects in curated galleries, manage trending, moderate content</td>
+</tr>
+<tr>
+<td>Job Poster</td>
+<td>Create and manage job listings, receive applications</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

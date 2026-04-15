@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotjar — IA.md | getIA.md</title>
+  <meta name="description" content="Heatmaps, session recordings, surveys, feedback. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=hotjar.com&sz=64" alt="Hotjar" onerror="this.parentElement.textContent='H'">
+      </div>
+      <h1 class="detail-brand-name">Hotjar</h1>
+      <p class="detail-brand-tagline">Heatmaps, session recordings, surveys, feedback.</p>
+      <span class="detail-category-badge">Business</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/hotjar/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://hotjar.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/hotjar/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Hotjar</h1>
+<h2>Overview</h2>
+<p>Hotjar is a behavior analytics and user feedback tool that shows you what users do on your website through visual tools: heatmaps (click/move/scroll), session recordings, and surveys. Unlike event-based analytics platforms, Hotjar focuses on qualitative &quot;why&quot; insights. The IA is organized around three pillars: Observe (heatmaps, recordings), Ask (surveys, feedback), and Engage (user interviews).</p>
+<h2>Site Map</h2>
+<pre><code>hotjar.com
+├── Dashboard
+│   ├── Key Metrics (Recordings, Heatmaps, Surveys)
+│   ├── Highlights (saved clips)
+│   └── Trends
+├── Observe
+│   ├── Heatmaps
+│   │   ├── Click Maps
+│   │   ├── Move Maps
+│   │   ├── Scroll Maps
+│   │   ├── Rage Click Maps
+│   │   └── Comparison (device/segment)
+│   ├── Recordings (Session Replay)
+│   │   ├── Recording List (filterable)
+│   │   ├── Recording Player
+│   │   │   ├── Playback Controls
+│   │   │   ├── User Journey (page sequence)
+│   │   │   ├── Events Timeline
+│   │   │   ├── Console Errors
+│   │   │   └── User Details
+│   │   └── Segments (filtered views)
+│   └── Funnels
+│       ├── Funnel Builder
+│       └── Drop-off Analysis → Recordings
+├── Ask
+│   ├── Surveys
+│   │   ├── Survey Builder (questions, targeting, appearance)
+│   │   ├── Survey Results (responses, NPS, charts)
+│   │   └── Templates
+│   ├── Feedback (Widget)
+│   │   ├── Incoming Feedback
+│   │   ├── Feedback Widget Settings
+│   │   └── Sentiment Analysis
+│   └── Interviews (Engage)
+│       ├── Recruit Participants
+│       ├── Schedule
+│       └── Incentives
+├── Highlights
+│   ├── Saved Clips (from recordings)
+│   ├── Collections
+│   └── Share / Embed
+├── Trends
+│   ├── Metrics Over Time
+│   └── Page-Level Trends
+├── Integrations
+│   ├── Analytics (Google Analytics, Segment)
+│   ├── A/B Testing (Optimizely, VWO)
+│   ├── Collaboration (Slack, Jira, Trello)
+│   └── Tag Managers
+├── Settings
+│   ├── Organization
+│   ├── Sites
+│   ├── Team Members
+│   ├── Billing
+│   ├── Tracking Code
+│   └── Privacy (data suppression)
+└── Marketing Site
+    ├── Products
+    ├── Pricing
+    ├── Use Cases
+    └── Resources
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Left sidebar:</strong> Dashboard, Heatmaps, Recordings, Surveys, Feedback, Funnels, Highlights, Trends, Engage</li>
+<li><strong>Heatmap viewer:</strong> URL input → Select page → Toggle between Click/Move/Scroll/Rage click → Filter by device/date/segment</li>
+<li><strong>Recording player:</strong> Full-page video player with timeline, user journey sidebar, event markers</li>
+<li><strong>Survey builder:</strong> Step flow — Questions → Appearance → Targeting (page/behavior) → Launch</li>
+<li><strong>Highlights:</strong> Clips saved from recordings organized in collections for sharing with team</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Key Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Site</td>
+<td>domain, tracking code, plan</td>
+<td>→ Heatmaps, Recordings, Surveys</td>
+</tr>
+<tr>
+<td>Heatmap</td>
+<td>URL/page, type (click/move/scroll), date range, device filter</td>
+<td>→ Site</td>
+</tr>
+<tr>
+<td>Recording</td>
+<td>session ID, pages visited, duration, country, device, user ID, events</td>
+<td>→ Highlights, Site</td>
+</tr>
+<tr>
+<td>Event (in recording)</td>
+<td>type (click, rage click, u-turn, error), timestamp, element</td>
+<td>→ Recording</td>
+</tr>
+<tr>
+<td>Survey</td>
+<td>name, questions, targeting rules, appearance, status (active/paused)</td>
+<td>→ Responses, Site</td>
+</tr>
+<tr>
+<td>Survey Response</td>
+<td>answers, user info, page URL, timestamp</td>
+<td>→ Survey</td>
+</tr>
+<tr>
+<td>Feedback</td>
+<td>rating (emoji), comment, screenshot, page URL, timestamp</td>
+<td>→ Site</td>
+</tr>
+<tr>
+<td>Highlight (Clip)</td>
+<td>start/end time, note, recording reference</td>
+<td>→ Recording, Collection</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, highlights</td>
+<td>→ Highlights</td>
+</tr>
+<tr>
+<td>Funnel</td>
+<td>steps (URLs/events), conversion rates</td>
+<td>→ Recordings (drop-off links)</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>1. Analyze Page Performance with Heatmaps</h3>
+<p><code>Heatmaps → + New → Enter page URL → View click map → Switch to scroll map → See where users stop scrolling → Filter by mobile → Share with team</code></p>
+<h3>2. Watch User Sessions</h3>
+<p><code>Recordings → Filter (e.g., &quot;Rage clicks &gt; 0&quot; + &quot;Pages visited includes /checkout&quot;) → Play recording → Watch user struggle → Save highlight → Share clip</code></p>
+<h3>3. Collect User Feedback</h3>
+<p><code>Surveys → + New → Choose template (NPS, exit intent, custom) → Add questions → Set targeting (specific page, after 30s, exit intent) → Launch → Review responses</code></p>
+<h3>4. Investigate Funnel Drop-off</h3>
+<p><code>Funnels → + New → Define steps (e.g., &quot;/products&quot; → &quot;/cart&quot; → &quot;/checkout&quot; → &quot;/confirmation&quot;) → View conversion rates → Click drop-off → Watch recordings of users who dropped</code></p>
+<h2>URL / Route Structure</h2>
+<pre><code>insights.hotjar.com/sites/{site_id}/dashboard              # Dashboard
+insights.hotjar.com/sites/{site_id}/heatmaps/{id}          # Heatmap
+insights.hotjar.com/sites/{site_id}/recordings              # Recording list
+insights.hotjar.com/sites/{site_id}/recordings/{id}/play    # Recording player
+insights.hotjar.com/sites/{site_id}/surveys/{id}            # Survey
+insights.hotjar.com/sites/{site_id}/surveys/{id}/responses  # Survey responses
+insights.hotjar.com/sites/{site_id}/feedback                # Feedback inbox
+insights.hotjar.com/sites/{site_id}/funnels/{id}            # Funnel
+insights.hotjar.com/sites/{site_id}/highlights              # Highlights
+</code></pre>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Recording filters:</strong> Page URL visited, country, device, duration, rage clicks, u-turns, console errors, user attributes, date range, referrer</li>
+<li><strong>Heatmap filters:</strong> Device type, date range, custom user attributes</li>
+<li><strong>Survey response filters:</strong> By question answer, page, date, completion status</li>
+<li><strong>Feedback filters:</strong> By rating (emoji), date, page URL, keyword in comment</li>
+<li><strong>Funnel filters:</strong> By user segment, device, date range</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (1280px+)</td>
+<td>Full dashboard, heatmap overlay, recording player with journey sidebar</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Dashboard and survey results viewable; recording player functional</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Limited — dashboard metrics viewable; heatmap/recording analysis requires desktop</td>
+</tr>
+<tr>
+<td>Tracked site</td>
+<td>Hotjar tracks behavior on all device sizes; heatmaps can be filtered by device</td>
+</tr>
+</tbody></table>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Account Owner</td>
+<td>Billing, all sites, organization settings</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Manage team, all sites, full feature access</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Create/manage heatmaps, recordings filters, surveys; cannot manage team</td>
+</tr>
+<tr>
+<td>Viewer</td>
+<td>View heatmaps, recordings, survey results; cannot create or modify</td>
+</tr>
+<tr>
+<td>Site-level access</td>
+<td>Members can be scoped to specific sites within an organization</td>
+</tr>
+<tr>
+<td>Privacy controls</td>
+<td>CSS selectors to suppress sensitive content in recordings; IP blocking</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

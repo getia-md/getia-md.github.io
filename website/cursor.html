@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor — IA.md | getIA.md</title>
+  <meta name="description" content="AI code editor. Cmd+K, Composer, Tab completion. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=cursor.com&sz=64" alt="Cursor" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Cursor</h1>
+      <p class="detail-brand-tagline">AI code editor. Cmd+K, Composer, Tab completion.</p>
+      <span class="detail-category-badge">AI</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/cursor/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://cursor.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/cursor/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Cursor — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Cursor is a VS Code-forked AI code editor that deeply integrates LLM capabilities into every layer of the coding experience. The IA inherits VS Code&#39;s <strong>editor-centric workspace model</strong> (file tree, tabs, terminal, panels) but adds AI-native surfaces: Cmd+K (inline edit/generate), Composer (multi-file AI agent), Tab (intelligent autocomplete), and Chat (contextual conversation). The key architectural differentiator is that AI is not a sidebar bolt-on — it operates within the code itself, editing across files, understanding project context via codebase indexing, and proposing diffs that users accept or reject. The product ships as a desktop application (Electron) with a companion web presence for marketing, docs, and account management.</p>
+<h2>Site Map</h2>
+<pre><code>cursor.com (marketing/account)
+├── / (Marketing home)
+├── /pricing
+├── /changelog
+├── /docs (Documentation)
+│   ├── /get-started
+│   ├── /tab
+│   ├── /cmd-k
+│   ├── /chat
+│   ├── /composer
+│   └── /context
+├── /settings (Web account settings)
+│   ├── /subscription
+│   ├── /usage
+│   └── /team
+├── /blog
+├── /privacy
+└── /download
+
+Desktop App (Electron)
+├── Editor workspace (VS Code-derived)
+│   ├── File explorer (sidebar)
+│   ├── Open editors (tabs)
+│   ├── Terminal panel
+│   ├── Source control (Git)
+│   ├── Extensions
+│   └── Search
+├── AI Surfaces
+│   ├── Cmd+K (inline prompt bar)
+│   ├── Chat (right sidebar panel)
+│   ├── Composer (multi-file agent panel)
+│   └── Tab (autocomplete — no UI, inline ghost text)
+├── Settings
+│   ├── AI model selection
+│   ├── Codebase indexing
+│   ├── Privacy mode
+│   └── Rules for AI (.cursorrules)
+└── Command palette (Cmd+Shift+P)
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation (desktop app)</strong>: VS Code activity bar — Explorer, Search, Source Control, Extensions, plus Cursor-specific Chat icon</li>
+<li><strong>File navigation</strong>: File tree in sidebar, Cmd+P quick-open, tab bar, breadcrumbs</li>
+<li><strong>AI navigation</strong>: Cmd+K triggers inline prompt anywhere in code; Cmd+L opens Chat panel; Cmd+I opens Composer</li>
+<li><strong>Settings navigation</strong>: Cursor settings (gear icon) → tabs for General, Models, Features, Privacy, Rules</li>
+<li><strong>Command palette</strong>: Cmd+Shift+P — unified command access (VS Code convention)</li>
+<li><strong>Web navigation</strong>: Top bar — Features, Pricing, Docs, Blog, Download, Sign In</li>
+<li><strong>No mobile navigation</strong>: Desktop-only application</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workspace</td>
+<td>Root directory with files, .cursorrules, .cursor/ config</td>
+<td>User-defined</td>
+</tr>
+<tr>
+<td>File</td>
+<td>Source code file open in editor — the primary object of interaction</td>
+<td>Project</td>
+</tr>
+<tr>
+<td>Cmd+K Edit</td>
+<td>Inline prompt → diff preview → accept/reject</td>
+<td>Ephemeral</td>
+</tr>
+<tr>
+<td>Chat Conversation</td>
+<td>Message thread with code context references (@file, @symbol, @codebase)</td>
+<td>Session-based</td>
+</tr>
+<tr>
+<td>Composer Session</td>
+<td>Multi-file editing agent with step-by-step plan, file changes, terminal commands</td>
+<td>Session-based</td>
+</tr>
+<tr>
+<td>Tab Completion</td>
+<td>Ghost-text autocomplete suggestion using ML model</td>
+<td>Ephemeral</td>
+</tr>
+<tr>
+<td>.cursorrules</td>
+<td>Project-specific instructions for AI behavior</td>
+<td>Project config</td>
+</tr>
+<tr>
+<td>Codebase Index</td>
+<td>Embedded vector index of all project files for semantic search</td>
+<td>Auto-generated</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Cmd+K Inline Editing</h3>
+<ol>
+<li>User selects code block (or places cursor at insertion point)</li>
+<li>Presses Cmd+K → inline prompt bar appears</li>
+<li>Types instruction (e.g., &quot;add error handling&quot; or &quot;convert to async/await&quot;)</li>
+<li>Cursor generates diff preview — green/red inline changes</li>
+<li>User presses Enter to accept, Escape to reject, or edits the prompt</li>
+<li>Changes applied to file</li>
+</ol>
+<h3>Composer (Multi-File Agent)</h3>
+<ol>
+<li>User presses Cmd+I → Composer panel opens</li>
+<li>Types high-level task (e.g., &quot;add authentication to the API using JWT&quot;)</li>
+<li>Composer analyzes codebase context → creates a step-by-step plan</li>
+<li>Generates changes across multiple files simultaneously</li>
+<li>User reviews each file&#39;s diff → Accept All or accept individually</li>
+<li>Can run terminal commands (npm install, etc.) as part of the plan</li>
+</ol>
+<h3>Chat with Context</h3>
+<ol>
+<li>User opens Chat panel (Cmd+L)</li>
+<li>Types question — automatically includes current file as context</li>
+<li>Can explicitly add context: @filename, @symbol, @codebase (searches indexed codebase), @web</li>
+<li>AI responds with code suggestions, explanations, referenced files</li>
+<li>&quot;Apply&quot; button on code blocks inserts/replaces code in the active file</li>
+</ol>
+<h3>Tab Autocomplete</h3>
+<ol>
+<li>User types code → Cursor predicts next edit (not just next token)</li>
+<li>Ghost text appears showing suggested completion</li>
+<li>Tab to accept, keep typing to refine, Escape to dismiss</li>
+<li>Can predict multi-line completions and even the next edit location</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>cursor.com/</code></td>
+<td>Marketing home</td>
+</tr>
+<tr>
+<td><code>cursor.com/pricing</code></td>
+<td>Plans and pricing</td>
+</tr>
+<tr>
+<td><code>cursor.com/docs/{section}</code></td>
+<td>Documentation</td>
+</tr>
+<tr>
+<td><code>cursor.com/changelog</code></td>
+<td>Version history</td>
+</tr>
+<tr>
+<td><code>cursor.com/settings</code></td>
+<td>Web account management</td>
+</tr>
+<tr>
+<td><code>cursor.com/settings/subscription</code></td>
+<td>Subscription management</td>
+</tr>
+<tr>
+<td><code>cursor.com/settings/usage</code></td>
+<td>Usage stats (requests, tokens)</td>
+</tr>
+<tr>
+<td><code>cursor.com/download</code></td>
+<td>Download page</td>
+</tr>
+</tbody></table>
+<p>Desktop app uses local file paths (not URLs). Web presence is marketing + account management only.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Code search</strong>: VS Code&#39;s built-in search (Cmd+Shift+F) — regex, file-type filters, include/exclude patterns</li>
+<li><strong>Semantic search</strong>: @codebase in Chat/Composer uses vector embedding search over project files</li>
+<li><strong>Quick open</strong>: Cmd+P — fuzzy file name search</li>
+<li><strong>Symbol search</strong>: Cmd+T — search by function/class/variable name</li>
+<li><strong>Docs search</strong>: Documentation site has keyword search</li>
+<li><strong>No cloud search</strong>: All code stays local; no cloud-hosted workspace search</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop App</td>
+<td>Fixed layout — sidebar (resizable), editor pane(s), panel (bottom), chat (right). Supports split editors, drag-and-drop panels</td>
+</tr>
+<tr>
+<td>Marketing Site</td>
+<td>Responsive: desktop hero → tablet card stack → mobile single-column</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Responsive: sidebar TOC (desktop) → hamburger (mobile), content max-width container</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Desktop app is not responsive in the traditional sense — it&#39;s a native-feeling window with resizable panes</li>
+<li>Minimum window size approximately 800x600</li>
+<li>Chat and Composer panels can be resized or toggled</li>
+<li>Multi-monitor support: editor windows can be detached</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Free (Hobby)</td>
+<td>2000 completions, 50 slow premium requests/mo, limited models</td>
+</tr>
+<tr>
+<td>Pro ($20/mo)</td>
+<td>Unlimited completions, 500 fast premium requests/mo, all models (GPT-4, Claude, etc.)</td>
+</tr>
+<tr>
+<td>Business ($40/seat/mo)</td>
+<td>Pro features + team billing, admin dashboard, enforced privacy mode, centralized settings</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Business + SSO/SAML, custom deployment, audit logs, dedicated support</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: GitHub OAuth, Google OAuth, email/password</li>
+<li>Privacy Mode: When enabled, no code is stored on Cursor servers; all requests are ephemeral</li>
+<li>Model selection: Users choose which LLM to use (Claude, GPT-4, Cursor&#39;s own models)</li>
+<li>.cursorrules: Project-level AI behavior configuration (not access control, but AI governance)</li>
+<li>No telemetry by default in privacy mode; opt-in usage analytics</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloudflare — IA.md | getIA.md</title>
+  <meta name="description" content="CDN, Workers, Pages, R2, D1, Zero Trust. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=cloudflare.com&sz=64" alt="Cloudflare" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">Cloudflare</h1>
+      <p class="detail-brand-tagline">CDN, Workers, Pages, R2, D1, Zero Trust.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/cloudflare/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://cloudflare.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/cloudflare/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Cloudflare — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Cloudflare is a global cloud platform offering a vast suite of products spanning CDN, DNS, DDoS protection, Workers (serverless compute), Pages (static hosting), R2 (object storage), D1 (serverless database), Zero Trust security, and more. The IA is one of the most complex in the developer tools space, organized as an <strong>account-zone-product hierarchy</strong>. At the top level, an Account contains Zones (domains), and each Zone has product-specific configuration pages. The dashboard simultaneously serves developers (Workers, Pages, R2), infrastructure teams (DNS, CDN, firewall), and security teams (WAF, Zero Trust, SSL). This creates a deep, multi-layered navigation structure reflecting Cloudflare&#39;s evolution from a CDN company to a comprehensive cloud platform.</p>
+<h2>Site Map</h2>
+<pre><code>dash.cloudflare.com
+├── / (Account home — zones list, quick actions)
+├── /{account_id}
+│   ├── /workers (Workers &amp; Pages)
+│   │   ├── /services (Worker services list)
+│   │   │   └── /{service_name} (Worker detail — triggers, settings, metrics)
+│   │   ├── /pages (Pages projects)
+│   │   │   └── /{project_name} (Pages project — deployments, settings)
+│   │   ├── /kv (KV storage namespaces)
+│   │   ├── /r2 (R2 object storage buckets)
+│   │   ├── /d1 (D1 databases)
+│   │   ├── /queues (Message queues)
+│   │   ├── /durable-objects
+│   │   └── /ai (Workers AI)
+│   ├── /domains (Domain registration)
+│   ├── /zero-trust (Cloudflare Zero Trust dashboard)
+│   │   ├── /access (Access policies)
+│   │   ├── /gateway (DNS/HTTP filtering)
+│   │   └── /tunnels (Cloudflare Tunnels)
+│   └── /billing
+├── /{zone_name} (Zone-specific settings)
+│   ├── /dns (DNS records)
+│   ├── /ssl-tls (SSL/TLS config)
+│   ├── /security
+│   │   ├── /waf (Web Application Firewall)
+│   │   ├── /bots (Bot management)
+│   │   ├── /ddos (DDoS protection)
+│   │   └── /page-shield
+│   ├── /speed (Performance optimization)
+│   ├── /caching (Cache config, purge)
+│   ├── /rules (Page Rules, Transform Rules, Redirect Rules)
+│   ├── /network
+│   ├── /traffic (Load balancing, health checks)
+│   ├── /analytics (Zone analytics)
+│   └── /workers-routes (Worker route bindings)
+
+cloudflare.com (marketing/docs)
+├── / (Home)
+├── /products/* (Product pages)
+├── /plans (Pricing)
+├── /developers (Developer platform hub)
+└── /learning-center (Educational content)
+
+developers.cloudflare.com (Documentation)
+├── /workers
+├── /pages
+├── /r2
+├── /d1
+├── /ai
+└── /{product}/*
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — organized by product domain: Websites (zones), Workers &amp; Pages, R2, D1, Zero Trust, Email, Registrar</li>
+<li><strong>Account switching</strong>: Top-left dropdown for multi-account users</li>
+<li><strong>Zone navigation</strong>: Within a zone — left sidebar changes to zone-specific sections (DNS, SSL, Security, Speed, Caching, Rules, etc.)</li>
+<li><strong>Workers navigation</strong>: Separate sub-dashboard — Services, KV, R2, D1, Queues, Durable Objects, AI</li>
+<li><strong>Breadcrumbs</strong>: Account → Product/Zone → Feature → Detail</li>
+<li><strong>Quick actions</strong>: Home dashboard has cards for common tasks (add site, create worker, etc.)</li>
+<li><strong>Notification center</strong>: Bell icon for alerts (DDoS events, certificate renewals, etc.)</li>
+<li><strong>Mobile</strong>: Responsive but complex; primary use case is desktop</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Zone (Domain)</td>
+<td>Domain name, DNS records, SSL config, security settings, caching rules, analytics</td>
+<td>Account-owned</td>
+</tr>
+<tr>
+<td>Worker Service</td>
+<td>Script code, triggers (routes, cron, queue), environment variables, KV/R2 bindings, metrics</td>
+<td>Account-owned</td>
+</tr>
+<tr>
+<td>Pages Project</td>
+<td>Git repo link, build settings, deployments, custom domains, environment variables</td>
+<td>Account-owned</td>
+</tr>
+<tr>
+<td>R2 Bucket</td>
+<td>Bucket name, objects, access policy, CORS config, lifecycle rules</td>
+<td>Account-owned</td>
+</tr>
+<tr>
+<td>D1 Database</td>
+<td>Database name, tables, schema, query console, backups</td>
+<td>Account-owned</td>
+</tr>
+<tr>
+<td>DNS Record</td>
+<td>Type (A, AAAA, CNAME, MX, TXT), name, content, TTL, proxy status</td>
+<td>Part of zone</td>
+</tr>
+<tr>
+<td>Firewall Rule</td>
+<td>Expression, action (block, challenge, allow), priority</td>
+<td>Part of zone</td>
+</tr>
+<tr>
+<td>Zero Trust Policy</td>
+<td>Access application, identity provider, allow/deny rules</td>
+<td>Account-owned</td>
+</tr>
+<tr>
+<td>Tunnel</td>
+<td>Named tunnel, connector, ingress rules</td>
+<td>Account-owned</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Adding a Website (Zone)</h3>
+<ol>
+<li>User clicks &quot;Add a Site&quot; → enters domain name</li>
+<li>Cloudflare scans existing DNS records → imports them</li>
+<li>User selects plan (Free, Pro, Business, Enterprise)</li>
+<li>Cloudflare provides two nameservers → user updates at registrar</li>
+<li>DNS propagation completes → Cloudflare activates zone</li>
+<li>SSL certificate auto-provisioned → HTTPS enabled</li>
+<li>User configures caching, security, and performance settings</li>
+</ol>
+<h3>Deploying a Worker</h3>
+<ol>
+<li>User navigates to Workers &amp; Pages → &quot;Create&quot; → &quot;Create Worker&quot;</li>
+<li>Online editor opens with Hello World template</li>
+<li>Edits code → tests with built-in preview (sends test requests)</li>
+<li>Deploys to Cloudflare&#39;s global edge network (200+ cities)</li>
+<li>Configures triggers: HTTP route, cron schedule, or queue consumer</li>
+<li>Binds resources: KV namespace, R2 bucket, D1 database, environment variables</li>
+</ol>
+<h3>Pages Deployment</h3>
+<ol>
+<li>User connects GitHub/GitLab repo</li>
+<li>Configures build settings (framework preset auto-detected for Next.js, Nuxt, Astro, etc.)</li>
+<li>Every push triggers a build → deployed to <code>{project}.pages.dev</code></li>
+<li>PRs get deploy previews with unique URLs</li>
+<li>Custom domain and redirects configured in project settings</li>
+</ol>
+<h3>Zero Trust Access</h3>
+<ol>
+<li>Admin navigates to Zero Trust → Access → Applications</li>
+<li>Creates an application (self-hosted app behind Cloudflare)</li>
+<li>Defines access policy: identity provider (Okta, Azure AD, etc.) + rules (email domain, group, IP)</li>
+<li>Users accessing the app are prompted for authentication</li>
+<li>Cloudflare proxies authenticated requests to the origin server</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>dash.cloudflare.com/</code></td>
+<td>Account home</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{account_id}/workers/services/{name}</code></td>
+<td>Worker service</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{account_id}/pages/{project}</code></td>
+<td>Pages project</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{account_id}/r2/buckets/{bucket}</code></td>
+<td>R2 bucket</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{account_id}/d1/databases/{db}</code></td>
+<td>D1 database</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{zone_name}/dns</code></td>
+<td>Zone DNS</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{zone_name}/security/waf</code></td>
+<td>Zone WAF</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{zone_name}/caching</code></td>
+<td>Zone caching</td>
+</tr>
+<tr>
+<td><code>dash.cloudflare.com/{account_id}/zero-trust/*</code></td>
+<td>Zero Trust dashboard</td>
+</tr>
+<tr>
+<td><code>developers.cloudflare.com/{product}/*</code></td>
+<td>Documentation</td>
+</tr>
+</tbody></table>
+<p>Account ID is a hex string. Zone name is the domain. Nested routing reflects the deep product hierarchy.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Zone search</strong>: Search zones by domain name on account home</li>
+<li><strong>DNS record search</strong>: Filter records by type, name, or content within a zone</li>
+<li><strong>Worker search</strong>: Search workers by name</li>
+<li><strong>R2 object search</strong>: Search objects by key prefix within a bucket</li>
+<li><strong>Analytics filters</strong>: Date range, cache status, country, status code, host</li>
+<li><strong>Firewall event filtering</strong>: Date range, action taken, rule ID, client IP, country, ASN</li>
+<li><strong>Docs search</strong>: Full-text search across all documentation (Algolia-powered)</li>
+<li><strong>Audit log search</strong>: Filter by user, action type, resource, date range</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + content area with data tables, charts, forms</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + full content</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Sidebar as drawer + simplified content layout</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger nav + single-column layout; data tables scroll horizontally</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Dashboard data tables (DNS records, firewall events) have horizontal scroll on narrow screens</li>
+<li>Analytics charts resize and simplify (fewer data points)</li>
+<li>Worker code editor is desktop-only (redirects to Wrangler CLI recommendation on mobile)</li>
+<li>Settings forms stack vertically with full-width inputs</li>
+<li>Zero Trust dashboard is complex enough to warrant desktop-only use</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, docs, learning center</td>
+</tr>
+<tr>
+<td>Free plan</td>
+<td>Unlimited sites, basic CDN/DNS/SSL, 100K Worker requests/day, 10GB R2 storage</td>
+</tr>
+<tr>
+<td>Pro ($20/domain/mo)</td>
+<td>WAF managed rules, image optimization, mobile optimization, enhanced analytics</td>
+</tr>
+<tr>
+<td>Business ($200/domain/mo)</td>
+<td>Custom WAF rules, 100% SLA, priority support, custom SSL</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Custom pricing, advanced DDoS, bot management, dedicated support, SLA</td>
+</tr>
+<tr>
+<td>Account roles</td>
+<td>Super Admin → Admin → Member (varies by product area)</td>
+</tr>
+<tr>
+<td>Per-zone roles</td>
+<td>Administrator, Firewall Admin, DNS Admin, Cache Admin, Analytics (granular)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, SSO (Enterprise), 2FA mandatory for all accounts</li>
+<li>API tokens: Fine-grained tokens with specific zone/resource permissions (replacing legacy API keys)</li>
+<li>Multi-user accounts: Invite members with role-based access per zone or account-wide</li>
+<li>Audit log: All actions logged with user, timestamp, affected resource (Enterprise)</li>
+<li>Zero Trust: Separate access control system for protecting internal applications</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

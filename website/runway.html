@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Runway — IA.md | getIA.md</title>
+  <meta name="description" content="AI video generation. Gen-2, motion brush, green screen. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=64" alt="Runway" onerror="this.parentElement.textContent='R'">
+      </div>
+      <h1 class="detail-brand-name">Runway</h1>
+      <p class="detail-brand-tagline">AI video generation. Gen-2, motion brush, green screen.</p>
+      <span class="detail-category-badge">AI</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/runway/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://runwayml.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/runway/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Runway — Information Architecture</h1>
+<h2>Overview</h2>
+<p>Runway is an AI-powered creative suite focused on video generation and editing. The IA is structured as a <strong>creative tools dashboard</strong> where each AI capability (Gen-3 Alpha video generation, motion brush, image-to-video, text-to-video, inpainting, style transfer, background removal, etc.) lives as a distinct tool within a unified workspace. The platform bridges the gap between professional video editing and generative AI, targeting filmmakers, content creators, and creative teams. The workspace model borrows from professional creative tools (think Adobe Creative Cloud) with project-based organization, asset libraries, and collaborative features.</p>
+<h2>Site Map</h2>
+<pre><code>runwayml.com
+├── / (Marketing home)
+├── /app (Dashboard — all tools)
+├── /app/video (Gen-3 Alpha video generation)
+├── /app/image (Image generation)
+├── /app/tools
+│   ├── /text-to-video
+│   ├── /image-to-video
+│   ├── /motion-brush
+│   ├── /camera-motion
+│   ├── /inpainting
+│   ├── /expand-image
+│   ├── /remove-background
+│   ├── /frame-interpolation
+│   ├── /color-grade
+│   ├── /super-slow-motion
+│   ├── /erase-replace
+│   └── /3d-capture
+├── /app/projects
+│   └── /{project_id}
+├── /app/assets (Asset library)
+├── /app/team (Team management)
+├── /app/settings
+│   ├── /account
+│   ├── /billing
+│   └── /api
+├── /research (Research papers)
+├── /studios (Runway Studios — creative collaborations)
+├── /pricing
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — Home (dashboard), Generate (video/image), Tools (individual AI tools), Projects, Assets, Team</li>
+<li><strong>Tools grid</strong>: Dashboard shows all available tools as icon cards — click to open individual tool</li>
+<li><strong>Project navigation</strong>: Within a project — asset list, generation history, shared members</li>
+<li><strong>Utility navigation</strong>: Bottom-left sidebar — Settings, Billing, Credits balance, Help</li>
+<li><strong>Contextual navigation</strong>: Within a tool — input panel (left/top), preview/output (center/right), parameters (right panel)</li>
+<li><strong>Top bar</strong>: Credits remaining indicator, upgrade CTA, account avatar</li>
+<li><strong>Mobile</strong>: Not optimized for mobile — desktop/tablet-first creative tool</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Generation</td>
+<td>Video/image output + input prompt/image + parameters + seed</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Named folder containing generations, assets, and settings</td>
+<td>User/Team-owned</td>
+</tr>
+<tr>
+<td>Asset</td>
+<td>Uploaded image, video, or audio file for use in tools</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Tool Preset</td>
+<td>Saved parameter configuration for a specific tool</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Video Composition</td>
+<td>Multi-clip timeline for combining generated clips</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Team Workspace</td>
+<td>Shared environment with shared projects, assets, and credits</td>
+<td>Team-owned</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Gen-3 Alpha Video Generation</h3>
+<ol>
+<li>User navigates to Generate → Video</li>
+<li>Chooses mode: Text-to-Video, Image-to-Video, or Video-to-Video</li>
+<li>Enters text prompt and/or uploads reference image</li>
+<li>Adjusts parameters: duration (5s/10s), aspect ratio, motion intensity, camera movement</li>
+<li>Clicks Generate → video renders (1-5 minutes depending on duration)</li>
+<li>Preview plays in-browser → download, extend, or iterate with variations</li>
+</ol>
+<h3>Motion Brush Workflow</h3>
+<ol>
+<li>User uploads or selects a still image</li>
+<li>Opens Motion Brush tool → paints brush strokes on areas to animate</li>
+<li>Direction and intensity of strokes define the motion vector</li>
+<li>Generates short video clip with localized motion</li>
+<li>Can combine with camera motion controls for cinematic effect</li>
+</ol>
+<h3>Project-Based Workflow</h3>
+<ol>
+<li>User creates a Project (e.g., &quot;Music Video Concept&quot;)</li>
+<li>Generates multiple video clips using various tools</li>
+<li>All outputs automatically organized in the Project</li>
+<li>Team members invited to collaborate — can view, generate, download</li>
+<li>Assets (reference images, style guides) uploaded to Project asset library</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/app</code></td>
+<td>Main dashboard</td>
+</tr>
+<tr>
+<td><code>/app/video</code></td>
+<td>Video generation</td>
+</tr>
+<tr>
+<td><code>/app/image</code></td>
+<td>Image generation</td>
+</tr>
+<tr>
+<td><code>/app/tools/{tool_slug}</code></td>
+<td>Individual tool page</td>
+</tr>
+<tr>
+<td><code>/app/projects/{uuid}</code></td>
+<td>Project workspace</td>
+</tr>
+<tr>
+<td><code>/app/assets</code></td>
+<td>Asset library</td>
+</tr>
+<tr>
+<td><code>/app/generation/{uuid}</code></td>
+<td>Individual generation detail</td>
+</tr>
+<tr>
+<td><code>/app/team</code></td>
+<td>Team management</td>
+</tr>
+<tr>
+<td><code>/app/settings/*</code></td>
+<td>Account settings</td>
+</tr>
+</tbody></table>
+<p>All app routes are behind <code>/app</code> prefix. UUIDs for projects and generations. Tool routes use slugified names.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Asset search</strong>: Search uploaded assets by filename</li>
+<li><strong>Generation history</strong>: Filter by tool used, date range, project</li>
+<li><strong>Tool discovery</strong>: Tools displayed as categorized grid — no search needed (limited number of tools)</li>
+<li><strong>No public marketplace</strong>: Unlike Midjourney, no community gallery or public model sharing</li>
+<li><strong>Project filtering</strong>: List projects by name, date, team membership</li>
+<li><strong>No prompt search</strong>: Generations are browseable but not searchable by prompt text</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + tool workspace with input/output panels + parameter sidebar</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + tool workspace, parameters in dropdown</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Minimal sidebar (icons only) + simplified tool UI</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Not officially supported — tool UIs require desktop-scale interaction</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Video preview scales to available width while maintaining aspect ratio</li>
+<li>Tool input panels stack vertically on narrower viewports</li>
+<li>Motion Brush and painting tools require pointer precision (not touch-optimized)</li>
+<li>Dashboard tool grid reflows from 4-column to 2-column</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing pages only; no tool access</td>
+</tr>
+<tr>
+<td>Free</td>
+<td>125 credits (one-time), watermarked outputs, limited tools</td>
+</tr>
+<tr>
+<td>Standard ($15/mo)</td>
+<td>625 credits/mo, Gen-3, no watermark, 3 projects</td>
+</tr>
+<tr>
+<td>Pro ($35/mo)</td>
+<td>2250 credits/mo, all tools, unlimited projects, higher resolution</td>
+</tr>
+<tr>
+<td>Unlimited ($95/mo)</td>
+<td>Unlimited generations (relaxed mode), priority GPU</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Custom credits, team management, API access, SSO, dedicated support</td>
+</tr>
+<tr>
+<td>Team roles</td>
+<td>Admin (manage members, billing) → Editor (generate, manage projects) → Viewer (view only)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Email/password, Google OAuth</li>
+<li>Credits system: Different tools consume different credit amounts (Gen-3 video costs more than image generation)</li>
+<li>API: Separate API access for programmatic generation (Enterprise/custom plans)</li>
+<li>Outputs: Users own generated content; commercial use allowed on paid plans</li>
+<li>Watermark: Free tier adds Runway watermark to all outputs</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

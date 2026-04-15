@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skillshare — IA.md | getIA.md</title>
+  <meta name="description" content="Creative classes. Projects, workshops. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=skillshare.com&sz=64" alt="Skillshare" onerror="this.parentElement.textContent='S'">
+      </div>
+      <h1 class="detail-brand-name">Skillshare</h1>
+      <p class="detail-brand-tagline">Creative classes. Projects, workshops.</p>
+      <span class="detail-category-badge">Education</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/skillshare/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://skillshare.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/skillshare/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Skillshare</h1>
+<h2>1. Overview</h2>
+<p>Skillshare is a creative learning platform offering short, project-based video classes taught by industry professionals. The IA is organized around class categories (illustration, design, photography, writing, business) with a strong emphasis on hands-on projects that students share in a class community. Unlike academic MOOCs, Skillshare focuses on practical creative skills, with classes typically 20-60 minutes broken into digestible lessons.</p>
+<h2>2. Site Map</h2>
+<pre><code>Skillshare
+├── Home
+│   ├── Continue Watching
+│   ├── Recommended for You
+│   ├── Trending Classes
+│   ├── New Classes
+│   ├── Staff Picks
+│   └── Seasonal Collections
+├── Browse
+│   ├── Creative Arts
+│   │   ├── Illustration
+│   │   ├── Drawing
+│   │   ├── Painting
+│   │   ├── Calligraphy &amp; Lettering
+│   │   └── Crafts
+│   ├── Design
+│   │   ├── Graphic Design
+│   │   ├── UI/UX Design
+│   │   ├── Web Design
+│   │   ├── Logo Design
+│   │   └── Motion Graphics
+│   ├── Photography &amp; Film
+│   │   ├── Photography
+│   │   ├── Film &amp; Video
+│   │   └── Mobile Photography
+│   ├── Writing
+│   │   ├── Creative Writing
+│   │   ├── Copywriting
+│   │   └── Journaling
+│   ├── Business &amp; Marketing
+│   │   ├── Freelancing
+│   │   ├── Social Media Marketing
+│   │   ├── Entrepreneurship
+│   │   └── Productivity
+│   ├── Technology
+│   │   ├── Data Science
+│   │   ├── Web Development
+│   │   └── App Development
+│   └── Lifestyle
+│       ├── Cooking
+│       ├── Music
+│       └── Wellness
+├── Class Detail
+│   ├── Intro Video (preview)
+│   ├── Lessons (video list with durations)
+│   ├── Class Project (assignment)
+│   ├── Resources (downloadable)
+│   ├── Reviews &amp; Ratings
+│   ├── Student Projects Gallery
+│   ├── Discussion
+│   ├── Teacher Profile
+│   └── Related Classes
+├── Workshops (live sessions)
+│   ├── Upcoming
+│   ├── Recorded
+│   └── Interactive Q&amp;A
+├── My Classes
+│   ├── In Progress
+│   ├── Completed
+│   ├── Saved / Wishlist
+│   └── My Projects
+├── Search
+│   ├── Classes
+│   ├── Teachers
+│   └── Topics / Skills
+├── Profile
+│   ├── Projects Shared
+│   ├── Classes Taken
+│   ├── Following / Followers
+│   ├── Skills
+│   └── Portfolio
+├── Teach on Skillshare
+│   ├── Teacher Dashboard
+│   ├── Class Creation Studio
+│   ├── Analytics
+│   ├── Earnings
+│   └── Teaching Resources
+└── Settings
+    ├── Account
+    ├── Subscription
+    ├── Notifications
+    ├── Payment / Billing
+    └── Privacy
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar (desktop), bottom tab bar (mobile)</li>
+<li><strong>Desktop Top Bar</strong>: Logo (home), Browse (mega dropdown), Workshops | Search, My Classes, Teach, Profile</li>
+<li><strong>Mobile Bottom Tabs</strong>: Home, Search, My Classes, Profile</li>
+<li><strong>Browse Mega Menu</strong>: Categories with subcategories; popular topics highlighted</li>
+<li><strong>Class Viewing</strong>: Sequential lesson playlist (sidebar on desktop, stacked on mobile)</li>
+<li><strong>Project Gallery</strong>: Within each class; students upload project work for community feedback</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Class</td>
+<td>title, teacher, description, category, subcategory, level (beginner/intermediate/advanced), lesson count, total duration, preview video, rating, student count, tags</td>
+<td>→ Lessons, → Project, → Teacher</td>
+</tr>
+<tr>
+<td>Lesson</td>
+<td>title, video, duration, position in class, notes</td>
+<td>→ Class</td>
+</tr>
+<tr>
+<td>Class Project</td>
+<td>description, guidelines, student submissions</td>
+<td>→ Class</td>
+</tr>
+<tr>
+<td>Student Project</td>
+<td>images/files, description, student, feedback/comments</td>
+<td>→ Class Project, → Student</td>
+</tr>
+<tr>
+<td>Workshop</td>
+<td>title, teacher, date/time, topic, interactive flag, recording</td>
+<td>→ Teacher</td>
+</tr>
+<tr>
+<td>Teacher Profile</td>
+<td>name, bio, avatar, expertise, class count, student count, social links</td>
+<td>→ Classes</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), text, student, date</td>
+<td>→ Class</td>
+</tr>
+<tr>
+<td>Resource</td>
+<td>file (PDF, template, brush set), title</td>
+<td>→ Class</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>name, description, classes list, curator</td>
+<td>→ Classes</td>
+</tr>
+<tr>
+<td>List (user)</td>
+<td>name, saved classes</td>
+<td>→ Classes</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Taking a Class</h3>
+<ol>
+<li>Browse or search → Select class → Watch preview video</li>
+<li>Enroll → Class added to &quot;My Classes&quot; → Start Lesson 1</li>
+<li>Watch video lessons sequentially → Download resources</li>
+<li>Complete class project → Upload work to student project gallery</li>
+<li>Receive feedback from classmates and teacher → Iterate</li>
+</ol>
+<h3>Discovering Classes</h3>
+<ol>
+<li>Home → Browse trending or recommended classes</li>
+<li>Filter by category (e.g., Illustration) → Subcategory (e.g., Digital Illustration)</li>
+<li>Sort by popular, newest, trending</li>
+<li>Read reviews, check student count, preview intro video</li>
+<li>Save to list or start immediately</li>
+</ol>
+<h3>Teaching a Class</h3>
+<ol>
+<li>Apply as teacher → Access Class Creation Studio</li>
+<li>Plan lessons → Record and upload videos → Add resources</li>
+<li>Write class project description and guidelines</li>
+<li>Publish → Class appears in catalog → Earn revenue based on watch minutes</li>
+<li>Monitor analytics: enrollments, watch time, completion rate, earnings</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>skillshare.com/                             # Homepage
+skillshare.com/browse                       # Browse all categories
+skillshare.com/browse/{category}            # Category page
+skillshare.com/browse/{category}/{subcategory}  # Subcategory page
+skillshare.com/classes/{slug}/{classId}     # Class detail
+skillshare.com/workshops                    # Live workshops
+skillshare.com/search?query={query}         # Search results
+skillshare.com/profile/{username}           # User profile
+skillshare.com/teach                        # Teach on Skillshare
+skillshare.com/membership                   # Subscription plans
+skillshare.com/lists/{listId}               # Curated list
+skillshare.com/teams                        # Skillshare for Teams
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Class Search</strong>: Keyword search across titles, descriptions, tags, teachers</li>
+<li><strong>Category Filter</strong>: Creative Arts, Design, Photography, Writing, Business, Technology, Lifestyle</li>
+<li><strong>Level Filter</strong>: Beginner, Intermediate, Advanced, All Levels</li>
+<li><strong>Duration Filter</strong>: Short (&lt; 30 min), Medium (30-60 min), Long (&gt; 60 min)</li>
+<li><strong>Sort</strong>: Popular, Trending, Newest, Top Rated</li>
+<li><strong>Teacher Search</strong>: Find classes by specific teachers</li>
+<li><strong>Topic Tags</strong>: Clickable tags on class pages for related content</li>
+<li><strong>Staff Picks</strong>: Curated collections highlighted on home and browse pages</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App</td>
+<td>Bottom tab bar; vertical class cards; full-screen video player; simplified project upload</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Larger class grid; side-by-side video + lesson list; enhanced project gallery</td>
+</tr>
+<tr>
+<td>Desktop (primary)</td>
+<td>Top nav with mega dropdown; class detail with video + lesson sidebar; project gallery grid</td>
+</tr>
+<tr>
+<td>TV Apps</td>
+<td>Lean-back class viewing; simplified browse; no project upload</td>
+</tr>
+<tr>
+<td>Offline (mobile)</td>
+<td>Download classes for offline viewing (Premium feature)</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Free User</td>
+<td>Limited access: select free classes, browse catalog, save classes</td>
+</tr>
+<tr>
+<td>Premium Member</td>
+<td>Unlimited access to all classes, offline downloads, workshops, no ads</td>
+</tr>
+<tr>
+<td>Teams Member</td>
+<td>Premium features + admin dashboard, team learning paths, usage reporting</td>
+</tr>
+<tr>
+<td>Teacher</td>
+<td>Create and publish classes, view analytics, earn revenue from watch minutes, interact with students</td>
+</tr>
+<tr>
+<td>Top Teacher</td>
+<td>Featured placement, &quot;Top Teacher&quot; badge, higher visibility, exclusive teacher programs</td>
+</tr>
+<tr>
+<td>Staff / Curator</td>
+<td>Feature classes, create staff pick collections, moderate content</td>
+</tr>
+<tr>
+<td>Student (project submitter)</td>
+<td>Upload projects, receive/give feedback in class communities</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

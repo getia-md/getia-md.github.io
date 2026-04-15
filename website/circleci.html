@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CircleCI — IA.md | getIA.md</title>
+  <meta name="description" content="CI/CD pipelines. Orbs, insights, parallelism. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=circleci.com&sz=64" alt="CircleCI" onerror="this.parentElement.textContent='C'">
+      </div>
+      <h1 class="detail-brand-name">CircleCI</h1>
+      <p class="detail-brand-tagline">CI/CD pipelines. Orbs, insights, parallelism.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/circleci/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://circleci.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/circleci/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>CircleCI — Information Architecture</h1>
+<h2>Overview</h2>
+<p>CircleCI is a continuous integration and delivery platform that automates software build, test, and deployment pipelines. The IA is organized around a <strong>pipeline-centric workflow model</strong> — code commits trigger Pipelines, which contain Workflows, which orchestrate Jobs, which run Steps on executors (Docker, Linux VM, macOS, Windows, ARM). The architecture emphasizes configurability via <code>.circleci/config.yml</code> and reusability via Orbs (shareable, versioned config packages). CircleCI&#39;s dashboard provides visibility into pipeline status, test results, build artifacts, and Insights (analytics). The platform supports both cloud-hosted and self-hosted (server) deployments.</p>
+<h2>Site Map</h2>
+<pre><code>app.circleci.com
+├── / (Dashboard — recent pipelines)
+├── /pipelines/{vcs}/{org}/{project} (Project pipelines list)
+│   └── /{pipeline_number}
+│       └── /workflows/{workflow_id}
+│           └── /jobs/{job_number} (Job detail — steps, output, artifacts, tests)
+├── /projects (All projects list)
+├── /insights/{vcs}/{org}/{project} (Project analytics)
+│   ├── /workflows (Workflow metrics)
+│   └── /tests (Test metrics — flaky test detection)
+├── /organization/{org_id}
+│   ├── /settings
+│   ├── /contexts (Shared secret contexts)
+│   ├── /orbs (Organization orbs)
+│   ├── /runners (Self-hosted runners)
+│   └── /usage (Usage &amp; billing)
+├── /project/{vcs}/{org}/{project}/settings
+│   ├── /environment-variables
+│   ├── /ssh-keys
+│   ├── /api-permissions
+│   ├── /advanced
+│   └── /triggers (Scheduled pipelines)
+├── /orb-registry (Public orb marketplace)
+│   └── /{namespace}/{orb_name} (Orb detail page)
+├── /account
+│   ├── /personal
+│   ├── /tokens
+│   └── /notifications
+└── /auth
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Left sidebar — Pipelines (dashboard), Projects, Insights, Organization settings</li>
+<li><strong>Pipeline drill-down</strong>: Dashboard → Pipeline → Workflow (graph view) → Job → Steps (hierarchical drill-down)</li>
+<li><strong>Workflow graph</strong>: Visual DAG (directed acyclic graph) showing job dependencies and status</li>
+<li><strong>Project navigation</strong>: Within a project — Pipelines, Insights, Settings (tabs or sidebar)</li>
+<li><strong>Organization navigation</strong>: Sidebar sections — Contexts, Self-Hosted Runners, Usage, Orbs, Settings</li>
+<li><strong>Orb registry</strong>: Browse/search public orbs — separate discovery experience</li>
+<li><strong>Utility navigation</strong>: Top-right — avatar → Account, Notifications, Tokens</li>
+<li><strong>Branch/PR filter</strong>: Pipeline list filterable by branch (critical for monorepo and multi-branch workflows)</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pipeline</td>
+<td>Trigger (push, PR, schedule, API), pipeline number, commit, branch, workflows</td>
+<td>Auto-triggered</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td>Name, jobs (DAG), status, duration, retries</td>
+<td>Part of pipeline</td>
+</tr>
+<tr>
+<td>Job</td>
+<td>Name, executor (docker/vm), steps, output, artifacts, test results, resource class</td>
+<td>Part of workflow</td>
+</tr>
+<tr>
+<td>Step</td>
+<td>Name, command, output log, duration, status</td>
+<td>Part of job</td>
+</tr>
+<tr>
+<td>Orb</td>
+<td>Namespace, name, version, commands, jobs, executors, documentation</td>
+<td>Public or org-private</td>
+</tr>
+<tr>
+<td>Context</td>
+<td>Named set of secrets, shared across projects within an org</td>
+<td>Org-level</td>
+</tr>
+<tr>
+<td>Environment Variable</td>
+<td>Key-value, project-scoped, masked in output</td>
+<td>Project-level</td>
+</tr>
+<tr>
+<td>Artifact</td>
+<td>File(s) produced by a job, downloadable, retained for configurable period</td>
+<td>Part of job</td>
+</tr>
+<tr>
+<td>Test Result</td>
+<td>JUnit XML parsed results — pass/fail, duration, flaky detection</td>
+<td>Part of job</td>
+</tr>
+<tr>
+<td>Insight</td>
+<td>Aggregated metrics — success rate, duration (p50/p95), throughput, credit usage</td>
+<td>Analytics</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Pipeline Triggered by Code Push</h3>
+<ol>
+<li>Developer pushes code to GitHub/GitLab/Bitbucket</li>
+<li>CircleCI triggers Pipeline → reads <code>.circleci/config.yml</code></li>
+<li>Workflow(s) start → jobs execute in defined order/parallelism</li>
+<li>Dashboard updates in real-time — job status badges (running, success, failed)</li>
+<li>Workflow graph shows DAG with colored nodes</li>
+<li>Click a job → see step-by-step output, test results, artifacts</li>
+</ol>
+<h3>Investigating a Failed Build</h3>
+<ol>
+<li>Developer sees red pipeline on dashboard</li>
+<li>Clicks Pipeline → Workflow graph shows which job(s) failed</li>
+<li>Clicks failed job → scrolls to the failing step</li>
+<li>Reads error output → identifies issue (test failure, build error, timeout)</li>
+<li>Can SSH into the executor for interactive debugging (if enabled)</li>
+<li>Fixes code → pushes → new pipeline runs</li>
+</ol>
+<h3>Insights &amp; Optimization</h3>
+<ol>
+<li>Team lead navigates to Insights → selects project</li>
+<li>Views workflow metrics: success rate trend, duration trend (p50, p95), throughput</li>
+<li>Identifies slowest workflows and most common failure points</li>
+<li>Drills into test metrics → sees flaky tests (tests that intermittently fail)</li>
+<li>Optimizes config: adds caching, parallelism, or resource class upgrades</li>
+<li>Measures improvement in next sprint&#39;s metrics</li>
+</ol>
+<h3>Using an Orb</h3>
+<ol>
+<li>Developer browses Orb Registry → finds relevant orb (e.g., <code>circleci/slack</code>)</li>
+<li>Reads orb documentation: available commands, jobs, and parameters</li>
+<li>Adds orb reference to config: <code>orbs: slack: circleci/slack@4.12.0</code></li>
+<li>Uses orb commands in workflow: <code>slack/notify</code> job after deployment</li>
+<li>Orb auto-updates with version pinning</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>app.circleci.com/</code></td>
+<td>Dashboard</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/pipelines/{vcs}/{org}/{project}</code></td>
+<td>Project pipelines</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/pipelines/{vcs}/{org}/{project}/{number}</code></td>
+<td>Pipeline detail</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/pipelines/{vcs}/{org}/{project}/{number}/workflows/{id}</code></td>
+<td>Workflow graph</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/pipelines/{vcs}/{org}/{project}/{number}/workflows/{id}/jobs/{number}</code></td>
+<td>Job detail</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/insights/{vcs}/{org}/{project}/workflows</code></td>
+<td>Workflow insights</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/orb-registry/{namespace}/{name}</code></td>
+<td>Orb detail</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/organization/{id}/contexts</code></td>
+<td>Contexts</td>
+</tr>
+<tr>
+<td><code>app.circleci.com/project/{vcs}/{org}/{project}/settings/*</code></td>
+<td>Project settings</td>
+</tr>
+</tbody></table>
+<p>Deep hierarchical URLs reflecting Pipeline → Workflow → Job hierarchy. VCS type (github, bitbucket) in path.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Pipeline filtering</strong>: Filter by branch (critical), status (success, failed, running), trigger type</li>
+<li><strong>Project search</strong>: Search projects by name</li>
+<li><strong>Orb Registry search</strong>: Full-text search across orb names, descriptions, categories</li>
+<li><strong>Job output search</strong>: Search within step output logs (in-job)</li>
+<li><strong>Insights filtering</strong>: Time range (7d, 30d, 90d), workflow name, branch</li>
+<li><strong>Test search</strong>: Search test results by test name, filter by status (failed, flaky)</li>
+<li><strong>No cross-project pipeline search</strong>: Each project&#39;s pipelines are independent</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1280px)</td>
+<td>Full sidebar + pipeline list/workflow graph + job detail panel</td>
+</tr>
+<tr>
+<td>Desktop (1024-1280px)</td>
+<td>Collapsible sidebar + full content</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Sidebar as drawer + simplified workflow graph</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger nav + pipeline list (simplified), workflow graph scrollable, job output full-width</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Workflow DAG graph is the most challenging responsive element — zooms/pans on mobile, simplified layout</li>
+<li>Pipeline list shows key info (commit, branch, status, duration) at all sizes</li>
+<li>Job output logs are monospace with horizontal scroll</li>
+<li>Insights charts resize and may reduce data density on mobile</li>
+<li>Orb registry cards reflow from grid to single-column</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Marketing site, orb registry (public), docs</td>
+</tr>
+<tr>
+<td>Free</td>
+<td>6,000 build minutes/mo (Linux), 30 concurrent jobs, limited macOS</td>
+</tr>
+<tr>
+<td>Performance ($15/seat/mo)</td>
+<td>Unlimited builds, all resource classes, Docker layer caching, test splitting, priority support</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>Performance + custom concurrency, self-hosted runners, audit logs, SSO</td>
+</tr>
+<tr>
+<td>Server (self-hosted)</td>
+<td>Full CircleCI on customer infrastructure</td>
+</tr>
+<tr>
+<td>Org roles</td>
+<td>Admin (settings, contexts, members) → All Members (view/trigger pipelines)</td>
+</tr>
+<tr>
+<td>Context security</td>
+<td>Restrict context access to specific security groups/teams</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: GitHub OAuth, GitLab OAuth, Bitbucket OAuth (VCS-based)</li>
+<li>API tokens: Personal API tokens for CLI and API access; project tokens for read-only status badges</li>
+<li>Contexts: Org-level secret groups — restrict which projects/branches can access them</li>
+<li>SSH keys: Deploy keys and user keys for checkout and deployment</li>
+<li>IP ranges: Dedicated IP ranges for allowlisting (Performance+ plans)</li>
+<li>Secrets masking: Environment variables and context values are masked in build output</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

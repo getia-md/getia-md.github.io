@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigCommerce — IA.md | getIA.md</title>
+  <meta name="description" content="Enterprise e-commerce. Headless, multi-storefront. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=bigcommerce.com&sz=64" alt="BigCommerce" onerror="this.parentElement.textContent='B'">
+      </div>
+      <h1 class="detail-brand-name">BigCommerce</h1>
+      <p class="detail-brand-tagline">Enterprise e-commerce. Headless, multi-storefront.</p>
+      <span class="detail-category-badge">E-Commerce</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/bigcommerce/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://bigcommerce.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/bigcommerce/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — BigCommerce</h1>
+<h2>1. Overview</h2>
+<p>BigCommerce is an enterprise-grade SaaS e-commerce platform offering hosted storefronts, headless commerce via API, multi-storefront capabilities, and an extensive app marketplace. The IA serves three audiences: <strong>merchants</strong> evaluating the platform, <strong>developers</strong> building integrations, and <strong>partners/agencies</strong> reselling or implementing BigCommerce. Unlike self-hosted WooCommerce, BigCommerce is fully managed — hosting, security, and updates are handled by the platform.</p>
+<h2>2. Site Map</h2>
+<pre><code>bigcommerce.com
+├── Home
+├── Product
+│   ├── Platform overview
+│   ├── Storefront
+│   │   ├── Stencil (theme engine)
+│   │   ├── Page Builder
+│   │   └── Headless commerce
+│   ├── Multi-Storefront
+│   ├── B2B Edition
+│   ├── Omnichannel (Amazon, eBay, social, POS)
+│   ├── Payments
+│   ├── Shipping
+│   ├── International &amp; multi-currency
+│   ├── SEO
+│   └── Security &amp; reliability
+├── Solutions
+│   ├── By industry (Fashion, Food, B2B, etc.)
+│   ├── By business size (SMB, Mid-market, Enterprise)
+│   ├── Headless commerce
+│   ├── Multi-storefront
+│   └── B2B
+├── Pricing
+│   ├── Standard / Plus / Pro / Enterprise
+│   └── Feature comparison
+├── Apps &amp; Integrations
+│   ├── App marketplace
+│   ├── Browse by category
+│   ├── Featured apps
+│   ├── Free apps
+│   └── App detail page
+├── Developers
+│   ├── API documentation
+│   ├── SDKs &amp; tools
+│   ├── Stencil theme docs
+│   ├── Headless / Storefront API
+│   ├── BigDesign (component library)
+│   └── Developer community
+├── Partners
+│   ├── Partner program
+│   ├── Agency directory
+│   ├── Technology partners
+│   └── Become a partner
+├── Resources
+│   ├── Blog
+│   ├── Case studies
+│   ├── Webinars
+│   ├── Guides &amp; reports
+│   ├── University (learning center)
+│   └── Community forum
+├── Support
+│   ├── Help center
+│   ├── Knowledge base
+│   ├── System status
+│   └── Contact
+├── About
+│   ├── Company
+│   ├── Careers
+│   ├── Press
+│   └── Trust &amp; security
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── SLA
+└── Auth
+    ├── Log in
+    └── Start free trial
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Global</td>
+<td>Top nav</td>
+<td>Logo, Products, Solutions, Pricing, Apps, Resources, Request Demo, Start Trial</td>
+</tr>
+<tr>
+<td>Products</td>
+<td>Mega-menu</td>
+<td>Platform features organized by capability area</td>
+</tr>
+<tr>
+<td>Solutions</td>
+<td>Mega-menu</td>
+<td>By industry, by size, by use case</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>Separate docs site</td>
+<td>Left sidebar with API reference, guides, tutorials</td>
+</tr>
+<tr>
+<td>Control Panel</td>
+<td>Left sidebar</td>
+<td>Orders, Products, Customers, Marketing, Analytics, Channel Manager, Apps, Settings</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td>Multi-column</td>
+<td>Product, Solutions, Partners, Resources, Company, Legal</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: The marketing site is comparison-oriented (vs. Shopify, vs. WooCommerce), with ROI calculators and migration guides. The developer docs are a separate subdomain with their own IA.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product (Platform Feature)</td>
+<td>name, description, benefits, screenshots, related features</td>
+</tr>
+<tr>
+<td>App (Marketplace)</td>
+<td>name, developer, description, price, rating, reviews, category, compatibility</td>
+</tr>
+<tr>
+<td>Case Study</td>
+<td>merchant, industry, challenge, solution, results, quote, URL</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>name (Standard/Plus/Pro/Enterprise), price, features, limits</td>
+</tr>
+<tr>
+<td>Blog Post</td>
+<td>title, author, date, category, body, CTA</td>
+</tr>
+<tr>
+<td>API Endpoint</td>
+<td>resource, methods, parameters, examples, versioning</td>
+</tr>
+</tbody></table>
+<h3>Merchant Store Content Model</h3>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product</td>
+<td>name, SKU, price, variants (size/color), images, description, categories, brand, custom fields, inventory</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>name, description, image, parent, sort order</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>number, customer, items, total, status, payment, shipping, channel</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>name, email, addresses, groups, order history, account</td>
+</tr>
+<tr>
+<td>Storefront</td>
+<td>name, domain, channel, locale, currency</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Merchant — Evaluate &amp; sign up</h3>
+<ol>
+<li>Land on home → explore Product features or Solutions by industry</li>
+<li>View pricing → compare plans → start free trial</li>
+<li>Onboarding wizard → store name, industry, products</li>
+<li>Add products, configure payments, choose theme</li>
+<li>Customize with Page Builder → launch store</li>
+</ol>
+<h3>5b. Merchant — Multi-storefront</h3>
+<ol>
+<li>Create primary store → go to Channel Manager</li>
+<li>Add new storefront → assign domain, locale, currency</li>
+<li>Share product catalog or create storefront-specific products</li>
+<li>Unique themes per storefront → launch multiple brands from one dashboard</li>
+</ol>
+<h3>5c. Developer — Headless build</h3>
+<ol>
+<li>Visit developer docs → Storefront API / GraphQL reference</li>
+<li>Choose frontend framework (Next.js, Gatsby, etc.)</li>
+<li>Use BigCommerce as backend (products, cart, checkout API)</li>
+<li>Build custom frontend → connect via API keys</li>
+<li>Deploy independently → BigCommerce handles commerce logic</li>
+</ol>
+<h3>5d. Partner — Agency implementation</h3>
+<ol>
+<li>Join Partner Program → access resources, training</li>
+<li>Client engagement → migrate or build store on BigCommerce</li>
+<li>Use Stencil CLI for theme development, API for custom integrations</li>
+<li>Launch client store → ongoing management via Control Panel</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code># Marketing site
+/                               → Home
+/product/                       → Platform overview
+/product/{feature}/             → Feature detail
+/solutions/{industry}/          → Industry solution
+/essentials/pricing/            → Pricing &amp; plans
+/apps/                          → App marketplace
+/apps/{category}/               → App category
+/apps/{app-slug}/               → App detail
+/partners/                      → Partner program
+/resources/blog/                → Blog
+/resources/blog/{slug}/         → Blog post
+/case-studies/{slug}/           → Case study
+/support/                       → Help center
+
+# Developer docs (developer.bigcommerce.com)
+/docs/                          → Docs home
+/docs/rest-management/          → REST API reference
+/docs/storefront/               → Storefront API
+/docs/stencil-docs/             → Theme development
+
+# Merchant store (customizable)
+/                               → Storefront home
+/categories/{slug}/             → Category page
+/products/{slug}/               → Product page
+/cart.php                       → Cart
+/checkout/                      → Checkout
+/account.php                    → Customer account
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>App marketplace search</td>
+<td>Keyword, category, free/paid, rating, developer</td>
+</tr>
+<tr>
+<td>Help center search</td>
+<td>Full-text knowledge base search</td>
+</tr>
+<tr>
+<td>Blog search</td>
+<td>By category (Marketing, Technology, Operations, Design)</td>
+</tr>
+<tr>
+<td>Developer docs search</td>
+<td>API endpoint search, guide keyword search</td>
+</tr>
+<tr>
+<td>Merchant store (built-in)</td>
+<td>Product search, category facets, price/brand/attribute filters, sort options</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Full mega-menu, comparison tables, multi-column app grid</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Condensed nav, 2-column grid, scrollable comparison</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger menu, single-column, accordion features, mobile CTA bar</td>
+</tr>
+<tr>
+<td>Control Panel</td>
+<td>Responsive admin — works on tablet, limited on phone</td>
+</tr>
+<tr>
+<td>Merchant storefronts</td>
+<td>Responsive themes (Cornerstone default is fully responsive)</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Visitor</td>
+<td>Marketing site, pricing, app marketplace, docs</td>
+</tr>
+<tr>
+<td>Trial User</td>
+<td>Full Control Panel access, limited to trial period</td>
+</tr>
+<tr>
+<td>Store Owner</td>
+<td>Full admin — products, orders, settings, apps, users</td>
+</tr>
+<tr>
+<td>Store Admin</td>
+<td>Configurable permissions — may exclude billing or user management</td>
+</tr>
+<tr>
+<td>Staff (limited)</td>
+<td>Assigned sections only (e.g., orders only, products only)</td>
+</tr>
+<tr>
+<td>Customer (storefront)</td>
+<td>Browse, purchase, account, order history, wishlists</td>
+</tr>
+<tr>
+<td>Developer</td>
+<td>API keys, webhook management, theme development</td>
+</tr>
+<tr>
+<td>Partner / Agency</td>
+<td>Multi-store management, partner dashboard, referral tracking</td>
+</tr>
+<tr>
+<td>Internal (BigCommerce)</td>
+<td>Merchant support, platform operations, partner management</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

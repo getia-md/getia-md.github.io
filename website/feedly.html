@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedly — IA.md | getIA.md</title>
+  <meta name="description" content="RSS reader. AI feeds, boards, Leo AI assistant. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=feedly.com&sz=64" alt="Feedly" onerror="this.parentElement.textContent='F'">
+      </div>
+      <h1 class="detail-brand-name">Feedly</h1>
+      <p class="detail-brand-tagline">RSS reader. AI feeds, boards, Leo AI assistant.</p>
+      <span class="detail-category-badge">Media</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/feedly/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://feedly.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/feedly/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Feedly</h1>
+<h2>1. Overview</h2>
+<p>Feedly is an RSS reader and content intelligence platform that aggregates news, blogs, and research sources into a unified feed. The IA is organized around <strong>Feeds</strong> (RSS subscriptions), <strong>Boards</strong> (curated collections for sharing/organizing), and <strong>Leo</strong> (an AI assistant that prioritizes, summarizes, and filters content). Feedly spans from individual power-readers to enterprise teams tracking competitive intelligence, threat research, and industry trends.</p>
+<h2>2. Site Map</h2>
+<pre><code>feedly.com
+├── Home (marketing)
+├── My Feedly (Auth — core experience)
+│   ├── Today (AI-prioritized)
+│   ├── All feeds
+│   ├── Feed folders
+│   │   ├── /{folder-name}
+│   │   └── Individual feed
+│   ├── Boards
+│   │   ├── Personal boards
+│   │   ├── Team boards (shared)
+│   │   └── /{board-name}
+│   ├── Read Later
+│   ├── Recently Read
+│   ├── Saved searches (Keyword Alerts)
+│   └── Newsletters
+├── Leo AI
+│   ├── Priority articles
+│   ├── Topic tracking
+│   ├── Entity tracking (companies, people, products)
+│   ├── Trend detection
+│   ├── AI summaries
+│   ├── Mute filters
+│   └── Custom AI models
+├── Discover / Add Content
+│   ├── Search sources (blogs, news, YouTube, Reddit, etc.)
+│   ├── Browse by topic
+│   ├── Featured sources
+│   ├── Newsletters integration
+│   └── Twitter / social feeds
+├── Integrations
+│   ├── Slack
+│   ├── Microsoft Teams
+│   ├── Zapier
+│   ├── Buffer
+│   ├── Notion
+│   ├── Evernote
+│   └── ... (many more)
+├── Pricing
+│   ├── Free / Pro / Pro+ / Business / Enterprise
+│   └── Feature comparison
+├── Solutions
+│   ├── Market intelligence
+│   ├── Threat intelligence
+│   ├── Research
+│   ├── PR &amp; communications
+│   └── Content marketing
+├── Help Center
+│   ├── Getting started
+│   ├── Feeds &amp; sources
+│   ├── Leo AI
+│   ├── Boards &amp; sharing
+│   ├── Integrations
+│   └── Contact
+├── Blog
+├── Legal
+│   ├── Terms
+│   ├── Privacy
+│   └── GDPR
+└── Auth
+    ├── Log in
+    └── Get started
+</code></pre>
+<h2>3. Navigation Model</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>App (auth)</td>
+<td>Left sidebar</td>
+<td>Today, Feeds (collapsible folders), Boards, Read Later, Recently Read, Leo (AI)</td>
+</tr>
+<tr>
+<td>Feed view</td>
+<td>Top bar</td>
+<td>All / Unread, view mode (magazine/title-only/cards), sort (newest/oldest/relevance), mark all read</td>
+</tr>
+<tr>
+<td>Article view</td>
+<td>Inline expansion or full view</td>
+<td>Summary, full article, save to board, read later, share, highlight, note</td>
+</tr>
+<tr>
+<td>Leo AI</td>
+<td>Inline badges + sidebar filter</td>
+<td>Priority flag, topic tag, entity tag, summary overlay</td>
+</tr>
+<tr>
+<td>Mobile app</td>
+<td>Bottom tabs</td>
+<td>Today, Feeds, Boards, Search, More</td>
+</tr>
+</tbody></table>
+<p><strong>Key pattern</strong>: The sidebar is the primary organizational structure — feeds grouped into folders, boards as curated output. Leo AI works as an invisible layer that tags and prioritizes articles inline, not as a separate view.</p>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Article</td>
+<td>title, source, author, published date, summary, full text, images, URL, Leo score, topics, entities, read/unread</td>
+</tr>
+<tr>
+<td>Feed (Source)</td>
+<td>name, URL (RSS), category, frequency, last updated, article count</td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>name, feeds, unread count</td>
+</tr>
+<tr>
+<td>Board</td>
+<td>name, articles (saved), owner, shared flag, team, notes</td>
+</tr>
+<tr>
+<td>Keyword Alert</td>
+<td>query, sources scope, results, frequency</td>
+</tr>
+<tr>
+<td>Leo Rule</td>
+<td>type (topic/entity/keyword/mute), criteria, action (prioritize/mute/tag)</td>
+</tr>
+<tr>
+<td>Highlight</td>
+<td>text, article, note, color</td>
+</tr>
+<tr>
+<td>Newsletter</td>
+<td>sender, subject, body, assigned folder</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>5a. Add sources &amp; read</h3>
+<ol>
+<li>Click &quot;+&quot; or Discover → search for blog/site/YouTube channel/subreddit</li>
+<li>Add to folder → articles appear in feed</li>
+<li>Browse feed → read inline or open full article</li>
+<li>Mark as read, save to board, or share</li>
+</ol>
+<h3>5b. Train Leo AI</h3>
+<ol>
+<li>Read articles → Leo learns from your reading patterns</li>
+<li>Set explicit rules: &quot;Prioritize articles about &#39;AI regulation&#39;&quot;</li>
+<li>Set mute filters: &quot;Hide articles about sports&quot;</li>
+<li>Leo adds priority badges → &quot;Today&quot; view shows AI-curated top articles</li>
+<li>Review Leo&#39;s picks → thumbs up/down to improve</li>
+</ol>
+<h3>5c. Team collaboration (Business)</h3>
+<ol>
+<li>Create shared board → invite team members</li>
+<li>Save relevant articles to board → add notes/highlights</li>
+<li>Team sees curated intelligence board</li>
+<li>Share board via Slack integration or email digest</li>
+<li>Track what team members saved and annotated</li>
+</ol>
+<h3>5d. Keyword Alerts</h3>
+<ol>
+<li>Set up keyword alert (e.g., &quot;competitor name&quot; OR &quot;product launch&quot;)</li>
+<li>Feedly monitors all sources for matches</li>
+<li>Matching articles appear in dedicated alert feed</li>
+<li>Optionally forward to Slack or email</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>/                               → Marketing home
+/i/discover/                    → Discover sources
+/i/discover/search/{query}/     → Source search
+/i/latest/                      → All feeds (auth)
+/i/folder/{folder-id}/          → Folder view
+/i/subscription/{feed-id}/      → Individual feed
+/i/board/{board-id}/            → Board view
+/i/saved/                       → Read Later
+/i/recently-read/               → Recently Read
+/i/keyword/{alert-id}/          → Keyword alert
+/i/leo/                         → Leo AI settings
+/i/entry/{entry-id}/            → Full article view
+/pricing/                       → Pricing plans
+/solutions/{use-case}/          → Solution page
+/blog/                          → Blog
+/help/                          → Help center
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Source search</td>
+<td>Find RSS feeds by URL, site name, or topic</td>
+</tr>
+<tr>
+<td>Article search</td>
+<td>Search within subscribed feeds by keyword, date, source</td>
+</tr>
+<tr>
+<td>Leo filters</td>
+<td>Priority level (must-read, important), topic, entity, source</td>
+</tr>
+<tr>
+<td>View modes</td>
+<td>All vs. Unread only</td>
+</tr>
+<tr>
+<td>Sort</td>
+<td>Newest, oldest, relevance (Leo-powered)</td>
+</tr>
+<tr>
+<td>Board search</td>
+<td>Search within board articles</td>
+</tr>
+<tr>
+<td>Keyword alerts</td>
+<td>Persistent keyword monitoring across sources</td>
+</tr>
+</tbody></table>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (≥1024px)</td>
+<td>Sidebar + 3-pane view (folders / article list / article detail), full Leo dashboard</td>
+</tr>
+<tr>
+<td>Tablet (768–1023px)</td>
+<td>Collapsible sidebar, 2-pane (list + detail)</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Hamburger sidebar, single-pane, swipe to mark read, pull-to-refresh</td>
+</tr>
+<tr>
+<td>App (iOS/Android)</td>
+<td>Bottom tabs, offline reading, widget for unread count</td>
+</tr>
+<tr>
+<td>Browser extension</td>
+<td>Quick save to board from any web page</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Free User</td>
+<td>Up to 100 sources, 3 feeds, basic organization</td>
+</tr>
+<tr>
+<td>Pro</td>
+<td>Unlimited sources, Leo AI (basic), boards, notes, power search</td>
+</tr>
+<tr>
+<td>Pro+</td>
+<td>Leo AI (advanced), keyword alerts, AI summaries, integrations (Slack, Teams)</td>
+</tr>
+<tr>
+<td>Business</td>
+<td>Team boards, shared feeds, team analytics, SAML SSO</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Custom AI models, compliance features, dedicated support, API access</td>
+</tr>
+<tr>
+<td>Team Member</td>
+<td>Access to shared boards/feeds, configurable permissions (view/contribute/admin)</td>
+</tr>
+<tr>
+<td>API Developer</td>
+<td>Programmatic access to feeds, entries, boards, search</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>Content indexing, AI model training, infrastructure</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

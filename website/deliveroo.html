@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deliveroo — IA.md | getIA.md</title>
+  <meta name="description" content="Food delivery. Editions dark kitchens, Plus. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=deliveroo.com&sz=64" alt="Deliveroo" onerror="this.parentElement.textContent='D'">
+      </div>
+      <h1 class="detail-brand-name">Deliveroo</h1>
+      <p class="detail-brand-tagline">Food delivery. Editions dark kitchens, Plus.</p>
+      <span class="detail-category-badge">Lifestyle</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/deliveroo/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://deliveroo.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/deliveroo/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Deliveroo</h1>
+<h2>1. Overview</h2>
+<p>Deliveroo is a food delivery platform connecting customers with local restaurants, grocery stores, and its own &quot;Editions&quot; dark kitchens. The IA is location-first — the home screen adapts to the user&#39;s delivery address, showing nearby restaurants with estimated delivery times. The platform supports on-demand delivery (30-45 min) and scheduled delivery, with Deliveroo Plus (subscription) offering free delivery for frequent users.</p>
+<h2>2. Site Map</h2>
+<pre><code>Deliveroo
+├── Home (location-based)
+│   ├── Address Input / Saved Addresses
+│   ├── Offers / Promotions
+│   ├── Categories
+│   │   ├── Restaurants
+│   │   ├── Grocery
+│   │   ├── Convenience
+│   │   ├── Alcohol
+│   │   └── Pharmacy (select markets)
+│   ├── Cuisines
+│   │   ├── Pizza
+│   │   ├── Sushi
+│   │   ├── Indian
+│   │   ├── Chinese
+│   │   ├── Burgers
+│   │   ├── Healthy
+│   │   └── [20+ cuisines]
+│   ├── Featured Collections
+│   │   ├── Top Rated
+│   │   ├── Fastest Delivery
+│   │   ├── New on Deliveroo
+│   │   └── Staff Picks
+│   └── Recently Ordered
+├── Restaurant Page
+│   ├── Menu
+│   │   ├── Categories (Starters, Mains, Desserts, Drinks)
+│   │   └── Menu Items
+│   │       ├── Name, Description, Price
+│   │       ├── Photo
+│   │       ├── Customizations (size, toppings, extras)
+│   │       ├── Dietary Labels (vegan, GF, halal)
+│   │       └── Allergen Info
+│   ├── Restaurant Info
+│   │   ├── Rating
+│   │   ├── Delivery Fee
+│   │   ├── Estimated Delivery Time
+│   │   ├── Minimum Order
+│   │   ├── Distance
+│   │   └── Hours
+│   └── Reviews
+├── Cart
+│   ├── Items (with customizations)
+│   ├── Restaurant name
+│   ├── Subtotal / Delivery Fee / Service Fee
+│   ├── Promo Code
+│   ├── Delivery Instructions
+│   └── Tip for Rider
+├── Checkout
+│   ├── Delivery Address
+│   ├── Delivery Time (ASAP or Scheduled)
+│   ├── Payment Method
+│   ├── Order Summary
+│   └── Place Order
+├── Order Tracking
+│   ├── Order Status (preparing, picked up, on the way)
+│   ├── Live Rider Map
+│   ├── Rider Info
+│   ├── Estimated Arrival
+│   ├── Contact Rider
+│   └── Contact Support
+├── Orders (History)
+│   ├── Past Orders
+│   ├── Receipts
+│   ├── Reorder
+│   └── Rate &amp; Review
+├── Deliveroo Plus (subscription)
+│   ├── Free Delivery (orders over threshold)
+│   ├── Reduced Service Fees
+│   ├── Member Offers
+│   └── Plan Management
+├── Editions (Dark Kitchens)
+│   └── Delivery-only restaurant brands
+├── Grocery &amp; Retail
+│   ├── Store Page
+│   ├── Category Browse
+│   └── Product Search
+├── Account
+│   ├── Profile
+│   ├── Addresses
+│   ├── Payment Methods
+│   ├── Promotions / Credits
+│   ├── Deliveroo Plus
+│   └── Settings
+├── Rider App (separate)
+│   ├── Go Online
+│   ├── Order Queue
+│   ├── Navigation
+│   ├── Earnings
+│   └── Fees / Incentives
+└── Restaurant Hub (partner portal)
+    ├── Menu Management
+    ├── Order Management
+    ├── Analytics
+    ├── Marketing Tools
+    └── Financials
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav (desktop) + bottom tab bar (mobile app)</li>
+<li><strong>Desktop Top Bar</strong>: Deliveroo logo, Address (editable), Search, Offers, Account, Cart</li>
+<li><strong>Mobile Bottom Tabs</strong>: Home, Search, Orders, Account</li>
+<li><strong>Cart</strong>: Persistent floating button showing item count and total; slides up to full cart view</li>
+<li><strong>Restaurant Drill-Down</strong>: Home → Restaurant → Menu → Item customization → Cart → Checkout</li>
+<li><strong>Category Scroll</strong>: Horizontal cuisine/category chips on home; vertical menu categories in restaurant</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Restaurant</td>
+<td>name, logo, banner, cuisine tags, rating, delivery fee, min order, delivery time, distance, hours, Editions flag</td>
+<td>→ Menu, → Reviews</td>
+</tr>
+<tr>
+<td>Menu Category</td>
+<td>name, position</td>
+<td>→ Restaurant, → Menu Items</td>
+</tr>
+<tr>
+<td>Menu Item</td>
+<td>name, description, price, photo, customization groups, dietary labels, allergens, popular flag</td>
+<td>→ Menu Category</td>
+</tr>
+<tr>
+<td>Customization</td>
+<td>name, options (multi-select or single), price adjustments</td>
+<td>→ Menu Item</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>items, restaurant, total, delivery fee, service fee, tip, payment method, delivery address, status, timestamp</td>
+<td>→ Restaurant, → Rider</td>
+</tr>
+<tr>
+<td>Rider</td>
+<td>name, photo, live location, vehicle type</td>
+<td>→ Order</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>rating (1-5), text, order reference, date</td>
+<td>→ Restaurant</td>
+</tr>
+<tr>
+<td>Promotion</td>
+<td>code, discount type (%, fixed, free delivery), conditions, expiry</td>
+<td>→ Order</td>
+</tr>
+<tr>
+<td>Grocery Store</td>
+<td>name, categories, delivery time, min order</td>
+<td>→ Products</td>
+</tr>
+<tr>
+<td>Product (grocery)</td>
+<td>name, price, weight/quantity, brand, photo, category</td>
+<td>→ Grocery Store</td>
+</tr>
+<tr>
+<td>Plus Plan</td>
+<td>tier, price, free delivery threshold, benefits</td>
+<td>→ Account</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Ordering Food</h3>
+<ol>
+<li>Open app → Confirm delivery address → Home shows nearby restaurants</li>
+<li>Browse by cuisine or search → Tap restaurant → View menu</li>
+<li>Select items → Customize (size, toppings, extras) → Add to cart</li>
+<li>View cart → Enter promo code → Add delivery instructions and tip</li>
+<li>Checkout → Select payment → Place order</li>
+<li>Track order: Preparing → Rider picking up → On the way → Delivered</li>
+<li>Receive food → Rate restaurant and rider</li>
+</ol>
+<h3>Scheduling a Delivery</h3>
+<ol>
+<li>Browse and select items → Go to checkout</li>
+<li>Tap &quot;Delivery Time&quot; → Switch from &quot;ASAP&quot; to &quot;Schedule&quot;</li>
+<li>Select date and time slot (30-min windows, up to 7 days ahead)</li>
+<li>Place order → Confirmation with scheduled time → Reminder before delivery</li>
+</ol>
+<h3>Grocery Shopping</h3>
+<ol>
+<li>Home → Grocery category → Browse stores</li>
+<li>Select store → Browse categories or search products</li>
+<li>Add items to cart → View cart with substitution preferences</li>
+<li>Checkout → Rider shops and delivers → Receive within 20-30 min</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>deliveroo.com/                              # Homepage (location prompt)
+deliveroo.com/restaurants/{city}            # City restaurant listing
+deliveroo.com/menu/{city}/{restaurant-slug} # Restaurant menu
+deliveroo.com/menu/{city}/{slug}?item={id}  # Menu item deeplink
+deliveroo.com/checkout                      # Checkout
+deliveroo.com/orders                        # Order history
+deliveroo.com/orders/{orderId}              # Order detail / tracking
+deliveroo.com/plus                          # Deliveroo Plus
+deliveroo.com/grocery                       # Grocery &amp; retail
+deliveroo.com/offers                        # Current promotions
+deliveroo.com/rider                         # Rider signup
+deliveroo.com/restaurants/partner           # Restaurant partner signup
+restaurant-hub.deliveroo.com/              # Partner portal
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Restaurant Search</strong>: By name, cuisine, dish name</li>
+<li><strong>Cuisine Filter</strong>: Pizza, Sushi, Indian, Chinese, Burgers, Healthy, Vegan, etc.</li>
+<li><strong>Sort</strong>: Recommended, Rating, Delivery Time, Distance, Delivery Fee</li>
+<li><strong>Dietary Filter</strong>: Vegan, Vegetarian, Gluten-Free, Halal</li>
+<li><strong>Price Filter</strong>: £ / ££ / £££ price range indicators</li>
+<li><strong>Offers Filter</strong>: Show only restaurants with active promotions</li>
+<li><strong>Free Delivery</strong>: Show only free delivery or Plus-eligible restaurants</li>
+<li><strong>Grocery Search</strong>: Product search within specific stores</li>
+<li><strong>Reorder</strong>: Quick-reorder from past orders (1-tap)</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile App (primary)</td>
+<td>Bottom tab bar; scrollable restaurant cards; full-screen restaurant menu; live tracking map</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>Grid restaurant layout; expanded menu view; split cart + menu</td>
+</tr>
+<tr>
+<td>Desktop Web</td>
+<td>Horizontal restaurant grid; sticky cart sidebar on restaurant page; wider checkout</td>
+</tr>
+<tr>
+<td>Mobile Web</td>
+<td>Responsive web app; prompts to download native app; same functionality as app</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Guest (no account)</td>
+<td>Browse restaurants and menus; must create account to order</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Order food, track delivery, save addresses, rate, view history, use promos</td>
+</tr>
+<tr>
+<td>Plus Subscriber</td>
+<td>Free delivery above threshold, reduced fees, member-only offers</td>
+</tr>
+<tr>
+<td>Rider</td>
+<td>Accept/reject deliveries, navigate, earn per delivery, track earnings</td>
+</tr>
+<tr>
+<td>Restaurant Partner</td>
+<td>Manage menu, accept/reject orders, view analytics, run promotions, manage hours</td>
+</tr>
+<tr>
+<td>Restaurant Manager</td>
+<td>Multi-location management, team access, financial reports</td>
+</tr>
+<tr>
+<td>Deliveroo Staff</td>
+<td>Manage platform operations, support, restaurant onboarding, pricing</td>
+</tr>
+<tr>
+<td>Business Account</td>
+<td>Company ordering, expense tracking, employee meal programs</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>npm — IA.md | getIA.md</title>
+  <meta name="description" content="Node package registry. Package pages, search, stats. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=npmjs.com&sz=64" alt="npm" onerror="this.parentElement.textContent='n'">
+      </div>
+      <h1 class="detail-brand-name">npm</h1>
+      <p class="detail-brand-tagline">Node package registry. Package pages, search, stats.</p>
+      <span class="detail-category-badge">Developer Tools</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/npm/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://npmjs.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/npm/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>npm — Information Architecture</h1>
+<h2>Overview</h2>
+<p>npm (Node Package Manager) is the world&#39;s largest software registry, hosting over 2 million JavaScript/TypeScript packages. The IA is a <strong>package registry with a search-first architecture</strong> — the dominant user flow is searching for a package, reading its documentation, and installing it via the CLI. The website serves as both a discovery platform and a package management interface. Each package page is a dense information hub: README, version history, dependencies, dependents, download stats, and metadata. The platform supports scoped packages (@org/pkg), organizations, and access control for private packages. npm is owned by GitHub/Microsoft, creating integration points with GitHub repositories.</p>
+<h2>Site Map</h2>
+<pre><code>npmjs.com
+├── / (Home — search bar, featured packages)
+├── /search?q={query} (Search results)
+├── /package/{package_name} (Package page)
+│   ├── /v/{version} (Specific version)
+│   ├── /access (Access management)
+│   └── ?activeTab=readme|explore|dependencies|dependents|versions
+├── /~{username} (User profile — packages list)
+├── /org/{org_name} (Organization page)
+│   ├── /members
+│   ├── /teams
+│   └── /packages
+├── /settings/{username}
+│   ├── /profile
+│   ├── /billing
+│   ├── /tokens
+│   ├── /packages (Manage packages)
+│   └── /tfa (Two-factor auth)
+├── /advisories (Security advisories database)
+│   └── /{advisory_id}
+├── /products (Pricing — Pro, Teams, Enterprise)
+├── /docs (Documentation)
+├── /policies (Terms, privacy, conduct)
+└── /signup | /login
+</code></pre>
+<h2>Navigation Model</h2>
+<ul>
+<li><strong>Primary navigation</strong>: Top bar — minimal — logo, global search bar (dominates), Sign Up, Sign In</li>
+<li><strong>Signed-in nav</strong>: Top bar adds avatar dropdown → Profile, Packages, Organizations, Access Tokens, Sign out</li>
+<li><strong>Package page navigation</strong>: Tab bar — Readme (default), Explore (file browser), N Dependencies, N Dependents, N Versions</li>
+<li><strong>Sidebar (package page)</strong>: Right sidebar — Install command, Weekly Downloads chart, Version, License, Repository link, Homepage, npm stats</li>
+<li><strong>Organization navigation</strong>: Members, Teams, Packages tabs</li>
+<li><strong>Footer navigation</strong>: Products, Docs, Policies, Company links</li>
+<li><strong>Mobile</strong>: Search bar stays prominent; package page tabs scroll horizontally</li>
+</ul>
+<h2>Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Structure</th>
+<th>Ownership</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Package</td>
+<td>Name, description, README, keywords, version history, dependencies, maintainers, license</td>
+<td>Maintainer-owned</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>Semver string, tarball, dist-tag (latest, next, beta), publish date, npm signature</td>
+<td>Part of package</td>
+</tr>
+<tr>
+<td>README</td>
+<td>Markdown rendered from package.json readme field or README.md file</td>
+<td>Part of version</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>Name, description, members, teams, packages</td>
+<td>Org members</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>Named group within org with package access permissions</td>
+<td>Part of org</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>Username, avatar, email, packages maintained, organizations</td>
+<td>User-owned</td>
+</tr>
+<tr>
+<td>Security Advisory</td>
+<td>CVE ID, affected versions, severity, patched version, description</td>
+<td>npm-curated</td>
+</tr>
+<tr>
+<td>Access Token</td>
+<td>Token string, type (automation, publish, CIDR-restricted), permissions</td>
+<td>User-owned</td>
+</tr>
+</tbody></table>
+<h2>User Flows</h2>
+<h3>Finding and Installing a Package</h3>
+<ol>
+<li>User arrives at npmjs.com → types in search bar (e.g., &quot;date formatting&quot;)</li>
+<li>Results sorted by relevance (popularity, quality, maintenance metrics)</li>
+<li>Clicks package → reads README for API docs and usage examples</li>
+<li>Checks right sidebar: weekly downloads (popularity indicator), license, last publish date</li>
+<li>Copies install command: <code>npm install date-fns</code></li>
+<li>Optionally checks Dependencies tab for supply chain review</li>
+</ol>
+<h3>Publishing a Package</h3>
+<ol>
+<li>Developer creates <code>package.json</code> with name, version, description</li>
+<li>Writes README.md with usage documentation</li>
+<li>Logs in via CLI: <code>npm login</code></li>
+<li>Publishes: <code>npm publish</code></li>
+<li>Package appears on npmjs.com within minutes</li>
+<li>Subsequent versions published with <code>npm version patch &amp;&amp; npm publish</code></li>
+</ol>
+<h3>Organization Package Management</h3>
+<ol>
+<li>Admin creates organization on npmjs.com</li>
+<li>Creates teams (e.g., &quot;frontend&quot;, &quot;backend&quot;, &quot;devops&quot;)</li>
+<li>Adds members to teams</li>
+<li>Assigns package access to teams (read-only or read-write)</li>
+<li>Scoped packages (@org/pkg-name) automatically associated with org</li>
+<li>Private packages only accessible to authorized team members</li>
+</ol>
+<h3>Security Advisory Review</h3>
+<ol>
+<li>Developer runs <code>npm audit</code> locally → sees vulnerable dependencies</li>
+<li>Clicks advisory link → goes to npmjs.com/advisories/{id}</li>
+<li>Reads severity, affected versions, vulnerability description</li>
+<li>Sees recommended fix: upgrade to patched version</li>
+<li>Runs <code>npm audit fix</code> to auto-update compatible versions</li>
+</ol>
+<h2>URL / Route Structure</h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Home</td>
+</tr>
+<tr>
+<td><code>/search?q={query}</code></td>
+<td>Search results</td>
+</tr>
+<tr>
+<td><code>/package/{name}</code></td>
+<td>Package page (unscoped)</td>
+</tr>
+<tr>
+<td><code>/package/@{scope}/{name}</code></td>
+<td>Package page (scoped)</td>
+</tr>
+<tr>
+<td><code>/package/{name}/v/{version}</code></td>
+<td>Specific version</td>
+</tr>
+<tr>
+<td><code>/~{username}</code></td>
+<td>User profile</td>
+</tr>
+<tr>
+<td><code>/org/{org_name}</code></td>
+<td>Organization</td>
+</tr>
+<tr>
+<td><code>/advisories/{id}</code></td>
+<td>Security advisory</td>
+</tr>
+<tr>
+<td><code>/settings/{username}/tokens</code></td>
+<td>Access tokens</td>
+</tr>
+<tr>
+<td><code>/products</code></td>
+<td>Pricing</td>
+</tr>
+</tbody></table>
+<p>Package names in URLs include the <code>@scope/</code> prefix for scoped packages. User profiles use <code>~</code> prefix. Query-string for search.</p>
+<h2>Search &amp; Filter</h2>
+<ul>
+<li><strong>Package search</strong>: Full-text search across package names, descriptions, keywords, README</li>
+<li><strong>Search ranking</strong>: Combines popularity (downloads), quality (tests, docs, linting), maintenance (recent updates, open issues) into a composite score</li>
+<li><strong>Search filters</strong>: None in the web UI — text search only (no category, license, or framework filters)</li>
+<li><strong>Sort</strong>: Optimal (relevance), Popularity, Quality, Maintenance</li>
+<li><strong>Exact match</strong>: Exact package name match shown prominently above results</li>
+<li><strong>Advisory search</strong>: Search advisories by package name, CVE ID, severity</li>
+<li><strong>CLI search</strong>: <code>npm search {query}</code> mirrors web search</li>
+<li><strong>No tag/category browsing</strong>: Unlike PyPI or RubyGems, npm lacks curated category pages</li>
+</ul>
+<h2>Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Desktop (&gt;1024px)</td>
+<td>Search bar + package content (left) + metadata sidebar (right)</td>
+</tr>
+<tr>
+<td>Tablet (768-1024px)</td>
+<td>Sidebar moves below main content; tab bar remains</td>
+</tr>
+<tr>
+<td>Mobile (&lt;768px)</td>
+<td>Full-width search, single-column package page, sidebar below readme, tabs as horizontal scroll</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Search bar remains large and centered at all breakpoints (critical UX element)</li>
+<li>Package README renders with responsive markdown (images scale, tables scroll)</li>
+<li>Download charts resize with viewport</li>
+<li>Version history table scrolls horizontally on mobile</li>
+<li>Install command copy button remains prominently accessible</li>
+<li>Dependency tree uses nested indentation (can be deep — horizontal scroll on mobile)</li>
+</ul>
+<h2>Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Permissions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous</td>
+<td>Search, view public packages, read READMEs, view advisories</td>
+</tr>
+<tr>
+<td>Free (signed in)</td>
+<td>Publish public packages, manage own packages, npm audit</td>
+</tr>
+<tr>
+<td>Pro ($7/mo)</td>
+<td>Free + unlimited private packages (personal)</td>
+</tr>
+<tr>
+<td>Teams ($7/user/mo)</td>
+<td>Pro + organizations, team-based access control, private org packages</td>
+</tr>
+<tr>
+<td>Enterprise</td>
+<td>Teams + SSO/SAML, audit logs, IP allowlisting, custom registry</td>
+</tr>
+<tr>
+<td>Package roles</td>
+<td>Owner (full control) → Maintainer (publish, unpublish) → Read-only (private package access)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Authentication: Username/password + 2FA (TOTP or security key), GitHub OAuth login</li>
+<li>Access tokens: Granular tokens — publish, automation (no 2FA required for CI), read-only, CIDR-restricted</li>
+<li>Package visibility: Public (default) or Private (Pro/Teams/Enterprise)</li>
+<li>npm provenance: Signed build attestation linking package to source commit and CI job</li>
+<li>2FA: Mandatory for publishing on high-value packages; optional but recommended for all</li>
+<li>Unpublish policy: Can unpublish within 72 hours; after that, requires npm support</li>
+</ul>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

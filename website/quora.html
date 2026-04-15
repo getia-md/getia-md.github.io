@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quora — IA.md | getIA.md</title>
+  <meta name="description" content="Q&A platform. Spaces, Poe AI, monetization. Information Architecture pattern for AI coding agents.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </a>
+      <nav class="nav">
+        <a href="index.html#catalog" class="nav-link">Catalog</a>
+        <a href="index.html#what-is" class="nav-link">What is IA.md?</a>
+        <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link github-link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>Star on GitHub</span>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="document.body.classList.toggle('menu-open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html#catalog" class="nav-link" onclick="document.body.classList.remove('menu-open')">Catalog</a>
+    <a href="index.html#what-is" class="nav-link" onclick="document.body.classList.remove('menu-open')">What is IA.md?</a>
+    <a href="https://github.com/getia-md/getia-md.github.io" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <!-- Back Link -->
+  <div class="detail-back">
+    <div class="detail-back-inner">
+      <a href="index.html#catalog" class="detail-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to catalog
+      </a>
+    </div>
+  </div>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="detail-header-inner">
+      <div class="detail-brand-icon">
+        <img src="https://www.google.com/s2/favicons?domain=quora.com&sz=64" alt="Quora" onerror="this.parentElement.textContent='Q'">
+      </div>
+      <h1 class="detail-brand-name">Quora</h1>
+      <p class="detail-brand-tagline">Q&A platform. Spaces, Poe AI, monetization.</p>
+      <span class="detail-category-badge">Social</span>
+    </div>
+  </section>
+
+  <!-- Usage Section -->
+  <section class="detail-usage">
+    <div class="detail-usage-inner">
+      <div class="detail-usage-left">
+        <div class="detail-usage-label">Quick start</div>
+        <div class="detail-curl-block">
+          <code class="detail-curl-code" id="curl-command">curl -o IA.md https://raw.githubusercontent.com/getia-md/getia-md.github.io/main/catalog/quora/IA.md</code>
+          <button class="detail-copy-btn" onclick="copyCommand()" title="Copy to clipboard" id="copy-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+      </div>
+      <div class="detail-usage-right">
+        <a href="https://quora.com" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Website
+        </a>
+        <a href="https://github.com/getia-md/getia-md.github.io/blob/main/catalog/quora/IA.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markdown Content -->
+  <article class="detail-content">
+    <div class="detail-content-inner">
+      <h1>Information Architecture — Quora</h1>
+<h2>1. Overview</h2>
+<p>Quora is a knowledge-sharing Q&amp;A platform where questions are answered by a community of experts, enthusiasts, and everyday users. The IA is organized around Questions, Answers, Topics, and Spaces (community groups). Content is evergreen — answers accumulate upvotes over years — making Quora both a real-time discussion forum and a durable knowledge base. Quora also hosts Poe, its AI chatbot aggregator platform.</p>
+<h2>2. Site Map</h2>
+<pre><code>Quora
+├── Home Feed (personalized)
+│   ├── Answers from followed topics/people
+│   ├── Suggested questions
+│   └── Space posts
+├── Search
+│   ├── Questions
+│   ├── Answers
+│   ├── People
+│   ├── Spaces
+│   └── Topics
+├── Answer (write)
+│   ├── Answer Requests
+│   ├── Questions for You
+│   └── Drafts
+├── Spaces
+│   ├── Space Feed
+│   ├── Members
+│   ├── About / Rules
+│   ├── Submissions
+│   └── Space Settings (admins)
+├── Notifications
+│   ├── Upvotes
+│   ├── Answers to your questions
+│   ├── Comments
+│   ├── Follow activity
+│   └── Space updates
+├── Profile
+│   ├── Answers
+│   ├── Questions
+│   ├── Posts
+│   ├── Followers / Following
+│   ├── Topics / Spaces
+│   ├── Credentials
+│   └── Stats (views, upvotes)
+├── Quora+ (subscription)
+│   └── Paywalled answers / premium content
+├── Monetization
+│   ├── Quora Partner Program
+│   └── Space subscriptions
+├── Poe (AI platform)
+│   ├── Chat with AI bots
+│   ├── Bot creation
+│   └── API access
+├── Topic Pages
+│   ├── Related Questions
+│   ├── Top Answers
+│   ├── Topic FAQ
+│   └── Related Topics
+└── Settings
+    ├── Account
+    ├── Privacy
+    ├── Email &amp; Notifications
+    ├── Languages
+    └── Content Preferences
+</code></pre>
+<h2>3. Navigation Model</h2>
+<ul>
+<li><strong>Type</strong>: Top nav bar with left sidebar (desktop), bottom tab bar (mobile)</li>
+<li><strong>Desktop Top Bar</strong>: Quora logo (home), Search bar, Add Question, Notifications, Profile avatar</li>
+<li><strong>Desktop Left Sidebar</strong>: Home, Following, Answer, Spaces, Notifications, Poe</li>
+<li><strong>Mobile Bottom Tabs</strong>: Home, Search, Add (+), Notifications, Profile</li>
+<li><strong>Question Page</strong>: Answer list sorted by upvotes; &quot;Related Questions&quot; sidebar</li>
+<li><strong>Topic Navigation</strong>: Topic page → related topics tree → questions within topic</li>
+</ul>
+<h2>4. Content Model</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>Attributes</th>
+<th>Relationships</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Question</td>
+<td>title, details, topics, asker (can be anonymous), answer count, followers, merged questions</td>
+<td>→ Answers, → Topics</td>
+</tr>
+<tr>
+<td>Answer</td>
+<td>body (rich text), author, upvotes, downvotes, comments, views, timestamp, Quora+ flag</td>
+<td>→ Question, → Author</td>
+</tr>
+<tr>
+<td>Post</td>
+<td>body, author, Space (if applicable), upvotes, comments</td>
+<td>→ Space, → Profile</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>name, description, icon, rules, member count, admin list, subscription price (optional)</td>
+<td>→ Posts, → Members</td>
+</tr>
+<tr>
+<td>Topic</td>
+<td>name, description, related topics, follower count, image</td>
+<td>→ Questions, → Answers</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>text, author, timestamp, upvotes</td>
+<td>→ Answer, → Post</td>
+</tr>
+<tr>
+<td>Credential</td>
+<td>text (e.g., &quot;PhD in Physics&quot;), user-added, displayed on relevant answers</td>
+<td>→ User, → Topic</td>
+</tr>
+<tr>
+<td>User Profile</td>
+<td>name, bio, credentials, follower count, answer views, spaces</td>
+<td>→ Answers, → Questions, → Spaces</td>
+</tr>
+</tbody></table>
+<h2>5. User Flows</h2>
+<h3>Asking a Question</h3>
+<ol>
+<li>Click &quot;Add Question&quot; → Type question → Autocomplete suggests existing similar questions</li>
+<li>If duplicate found → Redirect to existing question</li>
+<li>If new → Add topic tags → Submit</li>
+<li>Optionally request answers from specific users or topic experts</li>
+<li>Question appears in topic feeds and followers&#39; home feeds</li>
+</ol>
+<h3>Answering a Question</h3>
+<ol>
+<li>Home feed shows &quot;Questions for You&quot; based on expertise/interests</li>
+<li>Or browse &quot;Answer&quot; tab → Curated answer requests</li>
+<li>Click question → Write answer with rich text editor (formatting, images, links)</li>
+<li>Submit → Answer ranked by upvotes among other answers</li>
+</ol>
+<h3>Exploring Spaces</h3>
+<ol>
+<li>Discover Spaces via home feed, search, or sidebar</li>
+<li>Join Space → See posts from Space members</li>
+<li>Contribute posts → Admins may moderate submissions</li>
+<li>Paid Spaces require subscription to view premium content</li>
+</ol>
+<h2>6. URL / Route Structure</h2>
+<pre><code>quora.com/                                  # Home feed
+quora.com/search?q={query}                  # Search results
+quora.com/{question-slug}                   # Question page
+quora.com/{question-slug}/answer/{answerId} # Specific answer
+quora.com/profile/{username}                # User profile
+quora.com/profile/{username}/answers        # User&#39;s answers
+quora.com/topic/{topic-slug}                # Topic page
+quora.com/spaces/{spaceSlug}                # Space page
+quora.com/q/{spaceSlug}/{postId}            # Space post
+quora.com/about                             # About Quora
+poe.com/                                    # Poe AI platform (separate domain)
+</code></pre>
+<h2>7. Search &amp; Filter</h2>
+<ul>
+<li><strong>Global Search</strong>: Full-text search across questions, answers, people, topics, Spaces</li>
+<li><strong>Autocomplete</strong>: Question deduplication — suggests existing questions matching typed query</li>
+<li><strong>Answer Sorting</strong>: By upvotes (default), recency, or &quot;Related answers&quot;</li>
+<li><strong>Topic Browse</strong>: Hierarchical topic tree; related topics sidebar</li>
+<li><strong>Language Filter</strong>: Content available in 20+ languages; filter by language preference</li>
+<li><strong>Feed Tuning</strong>: Upvote/downvote and &quot;Not interested&quot; signals to tune home feed</li>
+<li><strong>Space Content</strong>: Searchable within specific Spaces</li>
+</ul>
+<h2>8. Responsive Behavior</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mobile (&lt; 768px)</td>
+<td>Single-column feed; bottom tab bar; full-screen question/answer view; simplified editor</td>
+</tr>
+<tr>
+<td>Tablet (768–1024px)</td>
+<td>Single-column with wider margins; sidebar collapses</td>
+</tr>
+<tr>
+<td>Desktop (&gt; 1024px)</td>
+<td>Left sidebar (nav) + center feed + right sidebar (related questions, trending, ads)</td>
+</tr>
+<tr>
+<td>SEO Pages</td>
+<td>Questions and top answers rendered server-side for search engine indexing</td>
+</tr>
+</tbody></table>
+<h2>9. Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Capabilities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Anonymous Visitor</td>
+<td>View questions and answers (with signup prompt after scroll); search; SEO landing pages</td>
+</tr>
+<tr>
+<td>Registered User</td>
+<td>Ask questions, answer, upvote/downvote, comment, follow topics/people/Spaces, create Spaces</td>
+</tr>
+<tr>
+<td>Quora+ Subscriber</td>
+<td>Access paywalled answers, ad-free experience</td>
+</tr>
+<tr>
+<td>Space Admin</td>
+<td>Create/manage Space, set rules, moderate submissions, set subscription pricing</td>
+</tr>
+<tr>
+<td>Space Member</td>
+<td>Post in Space, comment, view member-only content</td>
+</tr>
+<tr>
+<td>Quora Partner</td>
+<td>Earn revenue from questions that generate ad views</td>
+</tr>
+<tr>
+<td>Top Writer</td>
+<td>Badge recognition, invited to Quora events, content prioritized</td>
+</tr>
+<tr>
+<td>Moderator (platform)</td>
+<td>Edit questions, merge duplicates, enforce BNBR (Be Nice Be Respectful) policy</td>
+</tr>
+<tr>
+<td>Blocked / Banned</td>
+<td>Cannot interact with blocking user; banned users lose write access platform-wide</td>
+</tr>
+</tbody></table>
+
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo.svg" alt="getIA.md" class="logo-svg" height="36">
+      </div>
+      <p class="footer-tagline">Drop an IA.md. Ship with structure.</p>
+      <div class="footer-links">
+        <a href="https://github.com/getia-md/getia-md.github.io" target="_blank" rel="noopener">GitHub</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="index.html#what-is">About</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 getIA.md — MIT License</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand() {
+      const code = document.getElementById('curl-command').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.querySelector('span').textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.querySelector('span').textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
